@@ -1,0 +1,7 @@
+{
+ "_comment": "Hand-identified functions of ffxiv.exe (the 2013 beta client), applied by Rhipper's ghidra/ApplyFacts.java after the RTTI names (rtti32.py), so these win. One entry per function: the name, and the evidence.",
+ "functions": {
+  "0x403aa0": {"name": "WinMain", "evidence": "___tmainCRTStartup calls it as (0x400000, 0, its command-line pointer, STARTUPINFO.wShowWindow): hInstance, hPrevInstance, lpCmdLine, nShowCmd"},
+  "0x420900": {"name": "GetMyDocumentsPath", "evidence": "SHGetMalloc, SHGetSpecialFolderLocation(0, 5 = CSIDL_PERSONAL), SHGetPathFromIDListW into its string argument, the item list freed through IMalloc::Free; its caller appends \"/My Games/\""}
+ }
+}

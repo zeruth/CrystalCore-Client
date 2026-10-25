@@ -1,0 +1,24 @@
+{
+  "name": "CrystalCore",
+  "rhipper": "C:/Users/tyler/Documents/code/Rhipper",
+  "exe": "archive/installs/beta-672261/game/ffxiv.exe",
+  "arch": "x86",
+  "image_base": "0x400000",
+  "sources": ["src"],
+  "gen": "src/gen",
+  "build": {"dir": "build/cmake", "config": "Release", "gen_target": "gen", "target": "CrystalCore"},
+  "run": {"exe": "build/cmake/bin/Release/CrystalCore.exe", "cwd": "archive/installs/beta-672261/game",
+          "args": ["DEV.TestSID=0", "DEV.UseSqPack=1", "DEV.DataPathType=1", "DEV.LobbyHost01=127.0.0.1",
+                   "DEV.LobbyPort01=54994", "DEV.LobbyHost02=127.0.0.1", "DEV.LobbyPort02=54994",
+                   "SYS.Region=3", "language=1", "ver=2013.08.09.0001.0000"],
+          "with": [["python", "tools/lobby_sink.py", "54994", "{out}/lobby.log"]],
+          "screenshot": ["powershell", "-NoProfile", "-File", "tools/winshot.ps1", "CrystalCore", "{out}"]},
+  "ghidra": {
+    "install": "C:/Users/tyler/tools/ghidra_*",
+    "projects": "C:/Users/tyler/tools/ghidra-projects",
+    "project": "CrystalCore",
+    "program": "ffxiv.exe",
+    "maxmem": "8G",
+    "shards": 2
+  }
+}

@@ -1,0 +1,4 @@
+{
+ "00a627d0": "C2440: 'type cast': cannot convert from 'int *' to 'float' | piVar2 = (int *)(uintptr_t)gen_fl2bits((float)(param_1 + (int)gen_fl2bits(fVar5) * 5));",
+ "01006840": "C2045: 'joined_r0x01007052': label redefined | joined_r0x01007052: ;"
+}

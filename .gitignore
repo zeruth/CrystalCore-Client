@@ -1,0 +1,8 @@
+# game files and their derivatives stay local; archive/MANIFEST.md is the record
+archive/*
+!archive/MANIFEST.md
+.reference/
+build/
+cmake-build-*/
+.idea/
+__pycache__/
