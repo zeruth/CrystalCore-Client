@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CrystalCore" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="DEV.TestSID=0 DEV.UseSqPack=1 DEV.DataPathType=1 DEV.LobbyHost01=127.0.0.1 DEV.LobbyPort01=54994 DEV.LobbyHost02=127.0.0.1 DEV.LobbyPort02=54994 SYS.Region=3 language=1 ver=2013.08.09.0001.0000" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$/archive/installs/beta-672261/game" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CrystalCore" TARGET_NAME="CrystalCore" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="CrystalCore" RUN_TARGET_NAME="CrystalCore">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
