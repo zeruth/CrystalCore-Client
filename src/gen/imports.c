@@ -85,6 +85,8 @@ gen_real_fn gen_real_DebugActiveProcess;
 unsigned int gen_imp_DebugActiveProcess(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DebugActiveProcess(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_DecodePointer;
 unsigned int gen_imp_DecodePointer();   /* the runtime's */
+gen_real_fn gen_real_DefSubclassProc;
+unsigned int gen_imp_DefSubclassProc(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DefSubclassProc(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_DefWindowProcA;
 unsigned int gen_imp_DefWindowProcA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DefWindowProcA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_DeleteCriticalSection;
@@ -404,7 +406,7 @@ unsigned int gen_imp_LoadIconA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a
 gen_real_fn gen_real_LoadImageA;
 unsigned int gen_imp_LoadImageA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_LoadImageA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_LoadLibraryA;
-unsigned int gen_imp_LoadLibraryA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_LoadLibraryA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_LoadLibraryA();   /* the runtime's */
 gen_real_fn gen_real_LoadLibraryW;
 unsigned int gen_imp_LoadLibraryW(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_LoadLibraryW(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_LoadStringA;
@@ -483,6 +485,8 @@ gen_real_fn gen_real_ReleaseSemaphore;
 unsigned int gen_imp_ReleaseSemaphore(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_ReleaseSemaphore(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_RemoveDirectoryW;
 unsigned int gen_imp_RemoveDirectoryW(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_RemoveDirectoryW(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+gen_real_fn gen_real_RemoveWindowSubclass;
+unsigned int gen_imp_RemoveWindowSubclass(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_RemoveWindowSubclass(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_ResetEvent;
 unsigned int gen_imp_ResetEvent(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_ResetEvent(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_ResumeThread;
@@ -553,6 +557,8 @@ gen_real_fn gen_real_SetWindowLongA;
 unsigned int gen_imp_SetWindowLongA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_SetWindowLongA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_SetWindowPos;
 unsigned int gen_imp_SetWindowPos(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_SetWindowPos(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+gen_real_fn gen_real_SetWindowSubclass;
+unsigned int gen_imp_SetWindowSubclass(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_SetWindowSubclass(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_ShowWindow;
 unsigned int gen_imp_ShowWindow(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_ShowWindow(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_Sleep;
@@ -600,9 +606,9 @@ unsigned int gen_imp_UpdateWindow(int a0, int a1, int a2, int a3, ...) { GEN_RES
 gen_real_fn gen_real_ValidateRect;
 unsigned int gen_imp_ValidateRect(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_ValidateRect(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_VariantClear;
-unsigned int gen_imp_VariantClear(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_VariantClear(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_VariantClear();   /* the runtime's */
 gen_real_fn gen_real_VariantInit;
-unsigned int gen_imp_VariantInit(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_VariantInit(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_VariantInit();   /* the runtime's */
 gen_real_fn gen_real_VerQueryValueA;
 unsigned int gen_imp_VerQueryValueA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_VerQueryValueA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_VirtualAlloc;
@@ -653,6 +659,12 @@ gen_real_fn gen_real_WriteConsoleW;
 unsigned int gen_imp_WriteConsoleW(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WriteConsoleW(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_WriteFile;
 unsigned int gen_imp_WriteFile(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WriteFile(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+gen_real_fn gen_real_XInputEnable;
+unsigned int gen_imp_XInputEnable(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_XInputEnable(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+gen_real_fn gen_real_XInputGetState;
+unsigned int gen_imp_XInputGetState(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_XInputGetState(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+gen_real_fn gen_real_XInputSetState;
+unsigned int gen_imp_XInputSetState(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_XInputSetState(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real___WSAFDIsSet;
 unsigned int gen_imp___WSAFDIsSet(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real___WSAFDIsSet(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_accept;
@@ -766,6 +778,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e5bcu, "d3dx9_43.dll", "D3DXSaveTextureToFileA", (void *)gen_imp_D3DXSaveTextureToFileA, &gen_real_D3DXSaveTextureToFileA},
   {0x107e118u, "KERNEL32.dll", "DebugActiveProcess", (void *)gen_imp_DebugActiveProcess, &gen_real_DebugActiveProcess},
   {0x107e360u, "KERNEL32.dll", "DecodePointer", (void *)gen_imp_DecodePointer, 0},
+  {0x107e01cu, "COMCTL32.dll", "DefSubclassProc", (void *)gen_imp_DefSubclassProc, &gen_real_DefSubclassProc},
   {0x107e484u, "USER32.dll", "DefWindowProcA", (void *)gen_imp_DefWindowProcA, &gen_real_DefWindowProcA},
   {0x107e258u, "KERNEL32.dll", "DeleteCriticalSection", (void *)gen_imp_DeleteCriticalSection, 0},
   {0x107e058u, "GDI32.dll", "DeleteDC", (void *)gen_imp_DeleteDC, &gen_real_DeleteDC},
@@ -925,7 +938,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e494u, "USER32.dll", "LoadCursorA", (void *)gen_imp_LoadCursorA, &gen_real_LoadCursorA},
   {0x107e490u, "USER32.dll", "LoadIconA", (void *)gen_imp_LoadIconA, &gen_real_LoadIconA},
   {0x107e4acu, "USER32.dll", "LoadImageA", (void *)gen_imp_LoadImageA, &gen_real_LoadImageA},
-  {0x107e31cu, "KERNEL32.dll", "LoadLibraryA", (void *)gen_imp_LoadLibraryA, &gen_real_LoadLibraryA},
+  {0x107e31cu, "KERNEL32.dll", "LoadLibraryA", (void *)gen_imp_LoadLibraryA, 0},
   {0x107e19cu, "KERNEL32.dll", "LoadLibraryW", (void *)gen_imp_LoadLibraryW, &gen_real_LoadLibraryW},
   {0x107e488u, "USER32.dll", "LoadStringA", (void *)gen_imp_LoadStringA, &gen_real_LoadStringA},
   {0x107e440u, "USER32.dll", "MapVirtualKeyA", (void *)gen_imp_MapVirtualKeyA, &gen_real_MapVirtualKeyA},
@@ -965,6 +978,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e23cu, "KERNEL32.dll", "ReleaseMutex", (void *)gen_imp_ReleaseMutex, &gen_real_ReleaseMutex},
   {0x107e2dcu, "KERNEL32.dll", "ReleaseSemaphore", (void *)gen_imp_ReleaseSemaphore, &gen_real_ReleaseSemaphore},
   {0x107e300u, "KERNEL32.dll", "RemoveDirectoryW", (void *)gen_imp_RemoveDirectoryW, &gen_real_RemoveDirectoryW},
+  {0x107e020u, "COMCTL32.dll", "RemoveWindowSubclass", (void *)gen_imp_RemoveWindowSubclass, &gen_real_RemoveWindowSubclass},
   {0x107e278u, "KERNEL32.dll", "ResetEvent", (void *)gen_imp_ResetEvent, &gen_real_ResetEvent},
   {0x107e2c8u, "KERNEL32.dll", "ResumeThread", (void *)gen_imp_ResumeThread, &gen_real_ResumeThread},
   {0x107e1d0u, "KERNEL32.dll", "RtlUnwind", (void *)gen_imp_RtlUnwind, &gen_real_RtlUnwind},
@@ -1000,6 +1014,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e110u, "KERNEL32.dll", "SetUnhandledExceptionFilter", (void *)gen_imp_SetUnhandledExceptionFilter, 0},
   {0x107e460u, "USER32.dll", "SetWindowLongA", (void *)gen_imp_SetWindowLongA, &gen_real_SetWindowLongA},
   {0x107e468u, "USER32.dll", "SetWindowPos", (void *)gen_imp_SetWindowPos, &gen_real_SetWindowPos},
+  {0x107e018u, "COMCTL32.dll", "SetWindowSubclass", (void *)gen_imp_SetWindowSubclass, &gen_real_SetWindowSubclass},
   {0x107e45cu, "USER32.dll", "ShowWindow", (void *)gen_imp_ShowWindow, &gen_real_ShowWindow},
   {0x107e230u, "KERNEL32.dll", "Sleep", (void *)gen_imp_Sleep, &gen_real_Sleep},
   {0x107e2b4u, "KERNEL32.dll", "SleepEx", (void *)gen_imp_SleepEx, &gen_real_SleepEx},
@@ -1023,8 +1038,8 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e3acu, "USER32.dll", "UnregisterHotKey", (void *)gen_imp_UnregisterHotKey, &gen_real_UnregisterHotKey},
   {0x107e3b8u, "USER32.dll", "UpdateWindow", (void *)gen_imp_UpdateWindow, &gen_real_UpdateWindow},
   {0x107e49cu, "USER32.dll", "ValidateRect", (void *)gen_imp_ValidateRect, &gen_real_ValidateRect},
-  {0x107e37cu, "OLEAUT32.dll", "VariantClear", (void *)gen_imp_VariantClear, &gen_real_VariantClear},
-  {0x107e36cu, "OLEAUT32.dll", "VariantInit", (void *)gen_imp_VariantInit, &gen_real_VariantInit},
+  {0x107e37cu, "OLEAUT32.dll", "VariantClear", (void *)gen_imp_VariantClear, 0},
+  {0x107e36cu, "OLEAUT32.dll", "VariantInit", (void *)gen_imp_VariantInit, 0},
   {0x107e4c4u, "VERSION.dll", "VerQueryValueA", (void *)gen_imp_VerQueryValueA, &gen_real_VerQueryValueA},
   {0x107e0b8u, "KERNEL32.dll", "VirtualAlloc", (void *)gen_imp_VirtualAlloc, &gen_real_VirtualAlloc},
   {0x107e0bcu, "KERNEL32.dll", "VirtualFree", (void *)gen_imp_VirtualFree, &gen_real_VirtualFree},
@@ -1050,6 +1065,9 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e4f0u, "WINHTTP.dll", "WinHttpSetTimeouts", (void *)gen_imp_WinHttpSetTimeouts, &gen_real_WinHttpSetTimeouts},
   {0x107e0d0u, "KERNEL32.dll", "WriteConsoleW", (void *)gen_imp_WriteConsoleW, &gen_real_WriteConsoleW},
   {0x107e2d4u, "KERNEL32.dll", "WriteFile", (void *)gen_imp_WriteFile, &gen_real_WriteFile},
+  {0x107e5a0u, "XINPUT1_3.dll", "XInputEnable", (void *)gen_imp_XInputEnable, &gen_real_XInputEnable},
+  {0x107e59cu, "XINPUT1_3.dll", "XInputGetState", (void *)gen_imp_XInputGetState, &gen_real_XInputGetState},
+  {0x107e5a4u, "XINPUT1_3.dll", "XInputSetState", (void *)gen_imp_XInputSetState, &gen_real_XInputSetState},
   {0x107e580u, "WS2_32.dll", "__WSAFDIsSet", (void *)gen_imp___WSAFDIsSet, &gen_real___WSAFDIsSet},
   {0x107e554u, "WS2_32.dll", "accept", (void *)gen_imp_accept, &gen_real_accept},
   {0x107e54cu, "WS2_32.dll", "bind", (void *)gen_imp_bind, &gen_real_bind},
@@ -1089,4 +1107,4 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e4fcu, "WINMM.dll", "timeSetEvent", (void *)gen_imp_timeSetEvent, &gen_real_timeSetEvent},
   {0x107e3a4u, "USER32.dll", "wsprintfA", (void *)gen_imp_wsprintfA, &gen_real_wsprintfA},
 };
-const unsigned int g_genImportCount = 358;
+const unsigned int g_genImportCount = 364;
