@@ -1,5 +1,50 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00de0090 */
+uint F_00de0090(void)
+{
+  GEN_ENTER(0xde0090u, 0u, 0u, 0u, 0u);
+  return 0x114a2d8;
+}
+
+/* ref: FUN_00de00a0 */
+uint F_00de00a0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xde00a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  return param_2;
+}
+
+/* ref: FUN_00de00c0 */
+uint F_00de00c0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xde00c0u, gen_a0, 0u, 0u, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)*param_1)(param_1,0);
+  return uVar1;
+}
+
+/* ref: FUN_00de00d0 */
+uint F_00de00d0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xde00d0u, gen_a0, 0u, 0u, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  if (param_1 != (undefined4 *)0x0) {
+    *param_1 = (*(undefined * PTR32 (*)[3])REFP(0x114a860));
+  }
+  return (uint)param_1;
+}
+
+/* ref: FUN_00de00f0 */
+uint F_00de00f0(void)
+{
+  GEN_ENTER(0xde00f0u, 0u, 0u, 0u, 0u);
+  return 0x114a860;
+}
+
 /* ref: FUN_00de0130 */
 uint F_00de0130(unsigned int gen_a0)
 {
@@ -19,26 +64,27 @@ uint F_00de0160(unsigned int gen_a0)
 {
   GEN_ENTER(0xde0160u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
+  int iVar1;
+  uint uVar2;
   
+  iVar1 = *(int *)((int)this + 0x1c);
   *(undefined4 *)((int)this + 0x18) = 0;
-  if (-1 < *(int *)((int)this + 0x1c)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x14),
-               *(int *)((int)this + 0x1c) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x14),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x14) = 0;
   *(undefined4 *)((int)this + 0x1c) = 0x80000000;
-  uVar1 = *(uint *)((int)this + 0x10);
+  uVar2 = *(uint *)((int)this + 0x10);
   *(undefined4 *)((int)this + 0xc) = 0;
-  if (-1 < (int)uVar1) {
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-                      (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 8),uVar1 & 0x3fffffff);
+  if (-1 < (int)uVar2) {
+    uVar2 = ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
+                      (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 8),uVar2 & 0x3fffffff);
   }
   *(undefined4 *)((int)this + 8) = 0;
   *(undefined4 *)((int)this + 0x10) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
-  return uVar1;
+  return uVar2;
 }
 
 /* ref: hkxSparselyAnimatedBool::vf0 */
@@ -119,11 +165,11 @@ uint F_00de02b0(unsigned int gen_a0)
   undefined * this_00;
   int iVar2;
   
+  iVar2 = *(int *)((int)this + 0x20);
   *(undefined4 *)((int)this + 0x1c) = 0;
-  if (-1 < *(int *)((int)this + 0x20)) {
+  if (-1 < iVar2) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x18),
-               *(int *)((int)this + 0x20) << 6);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x18),iVar2 << 6);
   }
   *(undefined4 *)((int)this + 0x18) = 0;
   *(undefined4 *)((int)this + 0x20) = 0x80000000;
@@ -1541,11 +1587,11 @@ uint F_00de1880(unsigned int gen_a0)
     iVar3 = iVar3 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar3 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x1c);
   *(undefined4 *)((int)this + 0x18) = 0;
-  if (-1 < *(int *)((int)this + 0x1c)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x14),
-               *(int *)((int)this + 0x1c) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x14),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x14) = 0;
   *(undefined4 *)((int)this + 0x1c) = 0x80000000;
@@ -2131,11 +2177,11 @@ uint F_00de2150(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x24);
   *(undefined4 *)((int)this + 0x20) = 0;
-  if (-1 < *(int *)((int)this + 0x24)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x1c),
-               *(int *)((int)this + 0x24) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x1c),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x1c) = 0;
   *(undefined4 *)((int)this + 0x24) = 0x80000000;
@@ -2153,11 +2199,11 @@ uint F_00de2150(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x14);
   *(undefined4 *)((int)this + 0x10) = 0;
-  if (-1 < *(int *)((int)this + 0x14)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0xc),*(int *)((int)this + 0x14) * 4
-              );
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0xc),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0xc) = 0;
   *(undefined4 *)((int)this + 0x14) = 0x80000000;
@@ -2315,11 +2361,11 @@ uint F_00de2470(unsigned int gen_a0)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint uVar1;
   
+  uVar1 = *(uint *)((int)this + 0x24);
   *(undefined4 *)((int)this + 0x20) = 0;
-  if (-1 < (int)*(uint *)((int)this + 0x24)) {
+  if (-1 < (int)uVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x1c),
-               *(uint *)((int)this + 0x24) & 0x3fffffff);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x1c),uVar1 & 0x3fffffff);
   }
   *(undefined4 *)((int)this + 0x1c) = 0;
   *(undefined4 *)((int)this + 0x24) = 0x80000000;
@@ -2426,11 +2472,11 @@ uint F_00de2610(unsigned int gen_a0)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint uVar1;
   
+  uVar1 = *(uint *)((int)this + 0x18);
   *(undefined4 *)((int)this + 0x14) = 0;
-  if (-1 < (int)*(uint *)((int)this + 0x18)) {
+  if (-1 < (int)uVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x10),
-               *(uint *)((int)this + 0x18) & 0x3fffffff);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x10),uVar1 & 0x3fffffff);
   }
   *(undefined4 *)((int)this + 0x10) = 0;
   *(undefined4 *)((int)this + 0x18) = 0x80000000;
@@ -2445,22 +2491,23 @@ uint F_00de2660(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde2660u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  uint uVar1;
+  LPVOID pvVar2;
   
+  uVar1 = *(uint *)(this + 0x18);
   *(undefined4 *)(this + 0x14) = 0;
-  if (-1 < (int)*(uint *)(this + 0x18)) {
+  if (-1 < (int)uVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 0x10),
-               *(uint *)(this + 0x18) & 0x3fffffff);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 0x10),uVar1 & 0x3fffffff);
   }
   *(undefined4 *)(this + 0x10) = 0;
   *(undefined4 *)(this + 0x18) = 0x80000000;
   F_00d91510(this + 8);
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -2591,27 +2638,28 @@ uint F_00de2890(unsigned int gen_a0)
 {
   GEN_ENTER(0xde2890u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
+  int iVar1;
+  uint uVar2;
   
+  iVar1 = *(int *)((int)this + 0x20);
   *(undefined4 *)((int)this + 0x1c) = 0;
-  if (-1 < *(int *)((int)this + 0x20)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x18),
-               *(int *)((int)this + 0x20) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x18),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x18) = 0;
   *(undefined4 *)((int)this + 0x20) = 0x80000000;
-  uVar1 = *(uint *)((int)this + 0x14);
+  uVar2 = *(uint *)((int)this + 0x14);
   *(undefined4 *)((int)this + 0x10) = 0;
-  if (-1 < (int)uVar1) {
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
+  if (-1 < (int)uVar2) {
+    uVar2 = ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
                       (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0xc),
-                       (uVar1 & 0x3fffffff) * 2);
+                       (uVar2 & 0x3fffffff) * 2);
   }
   *(undefined4 *)((int)this + 0xc) = 0;
   *(undefined4 *)((int)this + 0x14) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
-  return uVar1;
+  return uVar2;
 }
 
 /* ref: hkxIndexBuffer::vf0 */
@@ -2708,20 +2756,22 @@ uint F_00de2a40(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde2a40u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  int iVar1;
+  LPVOID pvVar2;
   
+  iVar1 = *(int *)(this + 0x10);
   *(undefined4 *)(this + 0xc) = 0;
-  if (-1 < *(int *)(this + 0x10)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),*(int *)(this + 0x10) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),iVar1 * 4);
   }
   *(undefined4 *)(this + 8) = 0;
   *(undefined4 *)(this + 0x10) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -2982,20 +3032,22 @@ uint F_00de2de0(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde2de0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  uint uVar1;
+  LPVOID pvVar2;
   
+  uVar1 = *(uint *)(this + 0x10);
   *(undefined4 *)(this + 0xc) = 0;
-  if (-1 < (int)*(uint *)(this + 0x10)) {
+  if (-1 < (int)uVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),*(uint *)(this + 0x10) & 0x3fffffff);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),uVar1 & 0x3fffffff);
   }
   *(undefined4 *)(this + 8) = 0;
   *(undefined4 *)(this + 0x10) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -3006,23 +3058,24 @@ uint F_00de2e50(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde2e50u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  uint uVar1;
+  LPVOID pvVar2;
   
   F_00d91510(this + 0x1c);
+  uVar1 = *(uint *)(this + 0x18);
   *(undefined4 *)(this + 0x14) = 0;
-  if (-1 < (int)*(uint *)(this + 0x18)) {
+  if (-1 < (int)uVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 0x10),
-               *(uint *)(this + 0x18) & 0x3fffffff);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 0x10),uVar1 & 0x3fffffff);
   }
   *(undefined4 *)(this + 0x10) = 0;
   *(undefined4 *)(this + 0x18) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)(this + 8) = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -3180,20 +3233,22 @@ uint F_00de3090(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde3090u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  int iVar1;
+  LPVOID pvVar2;
   
+  iVar1 = *(int *)(this + 0x10);
   *(undefined4 *)(this + 0xc) = 0;
-  if (-1 < *(int *)(this + 0x10)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),*(int *)(this + 0x10) << 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),iVar1 << 4);
   }
   *(undefined4 *)(this + 8) = 0;
   *(undefined4 *)(this + 0x10) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -3342,20 +3397,22 @@ uint F_00de3330(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde3330u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  int iVar1;
+  LPVOID pvVar2;
   
+  iVar1 = *(int *)(this + 0x10);
   *(undefined4 *)(this + 0xc) = 0;
-  if (-1 < *(int *)(this + 0x10)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),*(int *)(this + 0x10) << 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),iVar1 << 4);
   }
   *(undefined4 *)(this + 8) = 0;
   *(undefined4 *)(this + 0x10) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -3437,20 +3494,22 @@ uint F_00de3490(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde3490u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  int iVar1;
+  LPVOID pvVar2;
   
+  iVar1 = *(int *)(this + 0x10);
   *(undefined4 *)(this + 0xc) = 0;
-  if (-1 < *(int *)(this + 0x10)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),*(int *)(this + 0x10) << 6);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),iVar1 << 6);
   }
   *(undefined4 *)(this + 8) = 0;
   *(undefined4 *)(this + 0x10) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -3532,20 +3591,22 @@ uint F_00de35f0(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde35f0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  int iVar1;
+  LPVOID pvVar2;
   
+  iVar1 = *(int *)(this + 0x10);
   *(undefined4 *)(this + 0xc) = 0;
-  if (-1 < *(int *)(this + 0x10)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),*(int *)(this + 0x10) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 8),iVar1 * 4);
   }
   *(undefined4 *)(this + 8) = 0;
   *(undefined4 *)(this + 0x10) = 0x80000000;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -4390,19 +4451,20 @@ uint F_00de4310(unsigned int gen_a0)
 {
   GEN_ENTER(0xde4310u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
+  int iVar1;
+  uint uVar2;
   
+  iVar1 = *(int *)((int)this + 100);
   *(undefined4 *)((int)this + 0x60) = 0;
-  if (-1 < *(int *)((int)this + 100)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x5c),
-               *(int *)((int)this + 100) << 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x5c),iVar1 << 4);
   }
   *(undefined4 *)((int)this + 0x5c) = 0;
   *(undefined4 *)((int)this + 100) = 0x80000000;
-  uVar1 = F_00ddd4c0((undefined *)((int)this + 8));
+  uVar2 = F_00ddd4c0((undefined *)((int)this + 8));
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
-  return uVar1;
+  return uVar2;
 }
 
 /* ref: hkxVertexBuffer::vf0 */
@@ -4411,21 +4473,23 @@ uint F_00de4360(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xde4360u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  LPVOID pvVar1;
+  int iVar1;
+  LPVOID pvVar2;
   
+  iVar1 = *(int *)(this + 100);
   *(undefined4 *)(this + 0x60) = 0;
-  if (-1 < *(int *)(this + 100)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 0x5c),*(int *)(this + 100) << 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)(this + 0x5c),iVar1 << 4);
   }
   *(undefined4 *)(this + 0x5c) = 0;
   *(undefined4 *)(this + 100) = 0x80000000;
   F_00ddd4c0(this + 8);
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x1099440));
   if ((param_1 & 1) != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-              (*(int * PTR32 *)((int)pvVar1 + 0x2c),this,(uint)*(ushort *)(this + 4));
+    pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar2 + 0x2c) + 8))))
+              (*(int * PTR32 *)((int)pvVar2 + 0x2c),this,(uint)*(ushort *)(this + 4));
   }
   return (uint)this;
 }
@@ -5182,11 +5246,11 @@ uint F_00de4e40(unsigned int gen_a0)
       iVar3 = iVar3 + -1;
     } while (-1 < iVar3);
   }
+  iVar3 = *(int *)((int)this + 0x3c);
   *(undefined4 *)((int)this + 0x38) = 0;
-  if (-1 < *(int *)((int)this + 0x3c)) {
+  if (-1 < iVar3) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x34),
-               *(int *)((int)this + 0x3c) * 8);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x34),iVar3 * 8);
   }
   *(undefined4 *)((int)this + 0x34) = 0;
   *(undefined4 *)((int)this + 0x3c) = 0x80000000;
@@ -5200,11 +5264,11 @@ uint F_00de4e40(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar3 + 4 + iVar4 * 4) = 0;
   }
+  uVar1 = *(uint *)((int)this + 0x30);
   *(undefined4 *)((int)this + 0x2c) = 0;
-  if ((*(uint *)((int)this + 0x30) & 0x80000000) == 0) {
+  if ((uVar1 & 0x80000000) == 0) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x28),
-               *(uint *)((int)this + 0x30) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x28),uVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x28) = 0;
   *(undefined4 *)((int)this + 0x30) = 0x80000000;
@@ -5438,11 +5502,11 @@ uint F_00de5200(unsigned int gen_a0)
   int iVar4;
   
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[3])REFP(0x114a17c));
+  iVar4 = *(int *)((int)this + 0x88);
   *(undefined4 *)((int)this + 0x84) = 0;
-  if (-1 < *(int *)((int)this + 0x88)) {
+  if (-1 < iVar4) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x80),
-               *(int *)((int)this + 0x88) * 8);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x80),iVar4 * 8);
   }
   *(undefined4 *)((int)this + 0x80) = 0;
   *(undefined4 *)((int)this + 0x88) = 0x80000000;
@@ -5460,11 +5524,11 @@ uint F_00de5200(unsigned int gen_a0)
     iVar3 = iVar3 + -1;
     *(undefined4 *)(iVar4 + 4 + iVar3 * 4) = 0;
   }
+  iVar4 = *(int *)((int)this + 0x78);
   *(undefined4 *)((int)this + 0x74) = 0;
-  if (-1 < *(int *)((int)this + 0x78)) {
+  if (-1 < iVar4) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x70),
-               *(int *)((int)this + 0x78) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x70),iVar4 * 4);
   }
   *(undefined4 *)((int)this + 0x70) = 0;
   *(undefined4 *)((int)this + 0x78) = 0x80000000;
@@ -5480,11 +5544,11 @@ uint F_00de5200(unsigned int gen_a0)
       iVar4 = iVar4 + -1;
     } while (-1 < iVar4);
   }
+  uVar1 = *(uint *)((int)this + 0x20);
   *(undefined4 *)((int)this + 0x1c) = 0;
-  if (-1 < (int)*(uint *)((int)this + 0x20)) {
+  if (-1 < (int)uVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x18),
-               (*(uint *)((int)this + 0x20) & 0x3fffffff) * 0xc);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x18),(uVar1 & 0x3fffffff) * 0xc);
   }
   *(undefined4 *)((int)this + 0x18) = 0;
   *(undefined4 *)((int)this + 0x20) = 0x80000000;
@@ -6494,11 +6558,11 @@ uint F_00de6840(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x74);
   *(undefined4 *)((int)this + 0x70) = 0;
-  if (-1 < *(int *)((int)this + 0x74)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x6c),
-               *(int *)((int)this + 0x74) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x6c),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x6c) = 0;
   *(undefined4 *)((int)this + 0x74) = 0x80000000;
@@ -6512,11 +6576,11 @@ uint F_00de6840(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x68);
   *(undefined4 *)((int)this + 100) = 0;
-  if (-1 < *(int *)((int)this + 0x68)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x60),
-               *(int *)((int)this + 0x68) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x60),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x60) = 0;
   *(undefined4 *)((int)this + 0x68) = 0x80000000;
@@ -6530,11 +6594,11 @@ uint F_00de6840(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x5c);
   *(undefined4 *)((int)this + 0x58) = 0;
-  if (-1 < *(int *)((int)this + 0x5c)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x54),
-               *(int *)((int)this + 0x5c) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x54),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x54) = 0;
   *(undefined4 *)((int)this + 0x5c) = 0x80000000;
@@ -6548,11 +6612,11 @@ uint F_00de6840(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x50);
   *(undefined4 *)((int)this + 0x4c) = 0;
-  if (-1 < *(int *)((int)this + 0x50)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x48),
-               *(int *)((int)this + 0x50) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x48),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x48) = 0;
   *(undefined4 *)((int)this + 0x50) = 0x80000000;
@@ -6566,11 +6630,11 @@ uint F_00de6840(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x44);
   *(undefined4 *)((int)this + 0x40) = 0;
-  if (-1 < *(int *)((int)this + 0x44)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x3c),
-               *(int *)((int)this + 0x44) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x3c),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x3c) = 0;
   *(undefined4 *)((int)this + 0x44) = 0x80000000;
@@ -6584,11 +6648,11 @@ uint F_00de6840(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x38);
   *(undefined4 *)((int)this + 0x34) = 0;
-  if (-1 < *(int *)((int)this + 0x38)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x30),
-               *(int *)((int)this + 0x38) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x30),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x30) = 0;
   *(undefined4 *)((int)this + 0x38) = 0x80000000;
@@ -6602,11 +6666,11 @@ uint F_00de6840(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x2c);
   *(undefined4 *)((int)this + 0x28) = 0;
-  if (-1 < *(int *)((int)this + 0x2c)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x24),
-               *(int *)((int)this + 0x2c) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x24),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x24) = 0;
   *(undefined4 *)((int)this + 0x2c) = 0x80000000;
@@ -6620,11 +6684,11 @@ uint F_00de6840(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x20);
   *(undefined4 *)((int)this + 0x1c) = 0;
-  if (-1 < *(int *)((int)this + 0x20)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x18),
-               *(int *)((int)this + 0x20) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x18),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x18) = 0;
   *(undefined4 *)((int)this + 0x20) = 0x80000000;
@@ -7123,11 +7187,11 @@ uint F_00de74f0(unsigned int gen_a0)
     iVar4 = iVar4 + -1;
     *(undefined4 *)(iVar1 + 4 + iVar4 * 4) = 0;
   }
+  iVar1 = *(int *)((int)this + 0x1c);
   *(undefined4 *)((int)this + 0x18) = 0;
-  if (-1 < *(int *)((int)this + 0x1c)) {
+  if (-1 < iVar1) {
     ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x14),
-               *(int *)((int)this + 0x1c) * 4);
+              (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)((int)this + 0x14),iVar1 * 4);
   }
   *(undefined4 *)((int)this + 0x14) = 0;
   *(undefined4 *)((int)this + 0x1c) = 0x80000000;
@@ -7960,147 +8024,5 @@ uint F_00de8170(unsigned int gen_a0, unsigned int gen_a1)
   int * in_ecx = (int *)(uintptr_t)gen_a0;
   int param_2 = (int)gen_a1;
   return param_2 * 0x10 + *in_ecx;
-}
-
-/* ref: FUN_00de8180 */
-uint F_00de8180(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xde8180u, gen_a0, gen_a1, 0u, 0u);
-  int * in_ecx = (int *)(uintptr_t)gen_a0;
-  int param_2 = (int)gen_a1;
-  return *in_ecx + param_2 * 8;
-}
-
-/* ref: FUN_00de81b0 */
-unsigned int F_00de81b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xde81b0u, gen_a0, gen_a1, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  int in_ecx;
-  int iVar1;
-  
-  in_ecx = param_1;
-  iVar1 = param_2;
-  if (0 < param_2) {
-    do {
-      if (in_ecx != 0) {
-        F_00de62d0(in_ecx);
-      }
-      in_ecx = in_ecx + 8;
-      iVar1 = iVar1 + -1;
-    } while (iVar1 != 0);
-  }
-  return 0;
-}
-
-/* ref: FUN_00de81e0 */
-uint F_00de81e0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xde81e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  uint uVar2;
-  
-  uVar2 = 0;
-  if (0 < *(int *)((int)this + 8)) {
-    do {
-      uVar1 = F_00da0d70(*((uint *)GEN_TOP((*(int *)((int)this + 4) + uVar2 * 8))) & 0xfffffffe,param_1);
-      if (uVar1 == 0) {
-        return uVar2;
-      }
-      uVar2 = uVar2 + 1;
-    } while ((int)uVar2 < *(int *)((int)this + 8));
-  }
-  return 0xffffffff;
-}
-
-/* ref: FUN_00de8230 */
-uint F_00de8230(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xde8230u, gen_a0, gen_a1, gen_a2, 0u);
-  unsigned int gen_args[3];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  gen_args[2] = gen_a2;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  int iVar1;
-  undefined * pvVar2;
-  bool bVar3;
-  bool bVar4;
-  uint uVar5;
-  undefined4 * puVar6;
-  
-  (*(undefined * PTR32 *)(gen_frame + 0x8)) = (undefined *)0x0;
-  uVar5 = F_00de81e0((*(undefined * PTR32 *)&gen_args[0]),(*(undefined * PTR32 *)&gen_args[2]));
-  (*(undefined4 *)(gen_frame + 0x0)) = 0;
-  (*(undefined4 *)(gen_frame + 0x4)) = 0;
-  if ((int)uVar5 < 0) {
-    bVar4 = true;
-    bVar3 = false;
-    puVar6 = (undefined4 *)F_01059650(&(*(undefined * PTR32 *)(gen_frame + 0x8)),&(*(undefined4 *)(gen_frame + 0x0)));
-  }
-  else {
-    iVar1 = *((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4)));
-    pvVar2 = *(undefined * PTR32 *)(iVar1 + 4 + uVar5 * 8);
-    bVar4 = false;
-    bVar3 = true;
-    if (pvVar2 != (undefined *)0x0) {
-      F_00d919e0(pvVar2);
-    }
-    (*(undefined * PTR32 *)&gen_args[2]) = *(undefined * PTR32 *)(iVar1 + 4 + uVar5 * 8);
-    puVar6 = &(*(undefined * PTR32 *)&gen_args[2]);
-  }
-  pvVar2 = (*(undefined * PTR32 *)&gen_args[2]);
-  if ((undefined *)*puVar6 != (undefined *)0x0) {
-    F_00d919e0((undefined *)*puVar6);
-  }
-  *(*(undefined4 * PTR32 *)&gen_args[1]) = *puVar6;
-  if ((bVar3) && (pvVar2 != (undefined *)0x0)) {
-    F_00d91a80(pvVar2);
-  }
-  if ((bVar4) && ((*(undefined * PTR32 *)(gen_frame + 0x8)) != (undefined *)0x0)) {
-    F_00d91a80((*(undefined * PTR32 *)(gen_frame + 0x8)));
-  }
-  return (uint)(*(undefined4 * PTR32 *)&gen_args[1]);
-}
-
-/* ref: FUN_00de82d0 */
-uint F_00de82d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xde82d0u, gen_a0, gen_a1, gen_a2, 0u);
-  unsigned int gen_args[3];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  gen_args[2] = gen_a2;
-  undefined * pvVar1;
-  int in_ecx;
-  uint uVar2;
-  uint uVar3;
-  
-  F_00de8230((*(undefined * PTR32 *)&gen_args[0]),&(*(undefined * PTR32 *)&gen_args[1]),(*(undefined * PTR32 *)&gen_args[1]));
-  in_ecx = (*(int *)&gen_args[2]);
-  if ((*(undefined * PTR32 *)&gen_args[1]) == (undefined *)0x0) {
-    return 0;
-  }
-  if ((*(int *)&gen_args[2]) != 0) {
-    uVar2 = F_010596b0(&(*(undefined * PTR32 *)&gen_args[1]));
-    uVar2 = F_00d92610(uVar2);
-    uVar3 = F_00d92610(in_ecx);
-    uVar2 = F_00da0d70(uVar3,uVar2);
-    if (uVar2 != 0) {
-      if ((*(undefined * PTR32 *)&gen_args[1]) == (undefined *)0x0) {
-        return 0;
-      }
-      F_00d91a80((*(undefined * PTR32 *)&gen_args[1]));
-      return 0;
-    }
-  }
-  pvVar1 = (*(undefined * PTR32 *)&gen_args[1]);
-  if ((*(undefined * PTR32 *)&gen_args[1]) != (undefined *)0x0) {
-    F_00d91a80((*(undefined * PTR32 *)&gen_args[1]));
-  }
-  return (uint)pvVar1;
 }
 

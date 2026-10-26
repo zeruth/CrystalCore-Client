@@ -1,13 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Apricot::Engine::Data::Communicator::WindmillParticle::vf1 */
-uint F_009e02d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e02d0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 4);
-}
-
 /* ref: Apricot::Engine::Data::Communicator::WindmillParticle::vf0 */
 uint F_009e02e0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -5380,6 +5372,19 @@ uint F_009e4710(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   F_00985e00(this);
+  if ((((param_1 & 1) != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) && (this != (undefined *)0x0)) {
+    ((code *)REFG(gen_code32, 0x14a0a18))(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Data::Communicator::SplineBinder::vf0 */
+uint F_009e4740(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e4740u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  F_00985e70(this);
   if ((((param_1 & 1) != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) && (this != (undefined *)0x0)) {
     ((code *)REFG(gen_code32, 0x14a0a18))(this);
   }

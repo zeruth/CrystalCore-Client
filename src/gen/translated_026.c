@@ -5794,11 +5794,13 @@ unsigned int F_0055c040(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
   undefined4 param_1 = (undefined4)gen_a1;
   undefined4 param_2 = (undefined4)gen_a2;
   __declspec(align(16)) undefined1 gen_frame[0x10];
+  int * piVar1;
   
   if (*(int *)((int)this + 4) != 0) {
+    piVar1 = *(int * PTR32 *)((int)this + 4);
     (*(undefined4 *)(gen_frame + 0x4)) = param_1;
     (*(undefined4 *)(gen_frame + 0x8)) = param_2;
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 8))))(*(int * PTR32 *)((int)this + 4),&(*(undefined4 *)(gen_frame + 0x4)));
+    ((code *)*(gen_code32 *)(*piVar1 + 8))(piVar1,&(*(undefined4 *)(gen_frame + 0x4)));
   }
   return 0;
 }

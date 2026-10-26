@@ -1,20 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00abae70 */
-uint F_00abae70(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xabae70u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_0052ff60(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),param_1,param_2);
-  if (uVar1 == 0) {
-    return 0;
-  }
-  return *(uint *)(uVar1 + 4);
-}
-
 /* ref: FUN_00abaea0 */
 uint F_00abaea0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -7637,5 +7622,49 @@ byte F_00ac28e0(unsigned int gen_a0, unsigned int gen_a1)
   
   uVar1 = F_00ac23f0(this,param_1);
   return uVar1 == 0;
+}
+
+/* ref: FUN_00ac2900 */
+byte F_00ac2900(unsigned int gen_a0)
+{
+  GEN_ENTER(0xac2900u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int * piVar1;
+  byte bVar2;
+  uint uVar3;
+  uint uVar4;
+  undefined * pvVar5;
+  undefined4 uVar6;
+  
+  piVar1 = REFG(int * PTR32, 0x1379694);
+  uVar3 = F_00ab1ed0(param_1);
+  if ((*(char *)(uVar3 + 0x3c) != '\0') &&
+     (uVar4 = ((code *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1), uVar4 != 0)) {
+    uVar6 = 7;
+    pvVar5 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1)));
+    bVar2 = F_00b7aac0(pvVar5,uVar6);
+    if (bVar2 != 0) {
+      return 0;
+    }
+  }
+  if ((*(char *)(uVar3 + 0x1c) == '\x04') &&
+     (uVar4 = ((code *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1), uVar4 != 0)) {
+    uVar6 = 5;
+    pvVar5 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1)));
+    bVar2 = F_00b7aac0(pvVar5,uVar6);
+    if (bVar2 != 0) {
+      return 0;
+    }
+  }
+  if ((*(char *)(uVar3 + 0x1c) == '\x03') &&
+     (uVar3 = ((code *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1), uVar3 != 0)) {
+    uVar6 = 6;
+    pvVar5 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1)));
+    bVar2 = F_00b7aac0(pvVar5,uVar6);
+    if (bVar2 != 0) {
+      return 0;
+    }
+  }
+  return 1;
 }
 

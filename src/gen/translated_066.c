@@ -8471,10 +8471,11 @@ unsigned int F_00770830(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
         *(int *)((int)this + 0x68) = param_3;
       }
       uVar7 = *(undefined4 *)((int)this + 0x68);
+      piVar4 = *(int * PTR32 *)((int)this + 4);
       (*(undefined4 *)(gen_frame + 0xc)) = 0;
       (*(undefined4 *)(gen_frame + 0x14)) = 0;
       uVar6 = 0x12;
-      this_00 = ((undefined *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x18))))(*(int * PTR32 *)((int)this + 4))));
+      this_00 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar4 + 0x18))(piVar4)));
       uVar3 = F_00461bb0(this_00,uVar6,uVar7);
       F_0042e430((undefined *)((int)this + 0x70),uVar3);
       uVar3 = F_0042a990((int)this + 0x70);
@@ -11076,8 +11077,9 @@ uint F_007737a0(unsigned int gen_a0)
       ((uint *)(gen_frame + 0x58))[3] = REFG(undefined4, 0x14a73ac);
     }
     else if ((iVar1 != 0) && (uVar7 = F_00ab1e70(iVar1), uVar7 != 0)) {
+      uVar10 = *(uint *)(uVar7 + 0x10);
       ((uint *)(gen_frame + 0x58))[0] = *(uint *)(uVar7 + 0xc);
-      ((uint *)(gen_frame + 0x58))[1] = *(uint *)(uVar7 + 0x10);
+      ((uint *)(gen_frame + 0x58))[1] = uVar10;
     }
     (*(undefined * PTR32 *)(gen_frame + 0x0)) = (undefined *)((int)this + 0x1ec);
     do {
@@ -12428,6 +12430,7 @@ uint F_00774f20(unsigned int gen_a0, unsigned int gen_a1)
   (*(uint *)(gen_frame + 0x38)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x3c);
   uVar1 = 0;
   if (*(int *)((int)this + 0x24) != 0) {
+    piVar2 = *(int * PTR32 *)((int)this + 4);
     ((undefined4 *)(gen_frame + 0x8))[0] = 0;
     (*(undefined4 *)(gen_frame + 0x10)) = 0;
     (*(undefined4 *)(gen_frame + 0x18)) = 0;
@@ -12435,7 +12438,7 @@ uint F_00774f20(unsigned int gen_a0, unsigned int gen_a1)
     (*(undefined4 *)(gen_frame + 0x28)) = 0;
     (*(undefined4 *)(gen_frame + 0x30)) = 0;
     uVar4 = 0x249;
-    this_00 = ((undefined *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x18))))(*(int * PTR32 *)((int)this + 4))));
+    this_00 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar2 + 0x18))(piVar2)));
     uVar1 = F_00461bb0(this_00,uVar4,param_1);
     F_005a2710(&(*(undefined4 *)(gen_frame + 0x28)),6);
     (*(uint *)(gen_frame + 0x2c)) = uVar1;

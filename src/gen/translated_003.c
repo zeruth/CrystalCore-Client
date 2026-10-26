@@ -1749,8 +1749,9 @@ uint F_0042c080(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
     if ((*(undefined4 * PTR32 *)&gen_args[1])[2] != 1) {
       if ((*(byte * PTR32 *)&gen_args[2]) == (byte *)0xffffffff) {
         uVar2 = F_0042b790((*(undefined * PTR32 *)&gen_args[0]));
+        iVar4 = *((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 8)));
         (*(uint *)(gen_frame + 0x14)) = uVar2;
-        (*(byte * PTR32 *)&gen_args[2]) = ((byte *)GEN_TOP((*(int *)(*(undefined * PTR32 *)&gen_args[0]) + -1 + *((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 8))))));
+        (*(byte * PTR32 *)&gen_args[2]) = ((byte *)GEN_TOP((*(int *)(*(undefined * PTR32 *)&gen_args[0]) + -1 + iVar4)));
         F_0042f260(&(*(byte * PTR32 *)&gen_args[2]),&(*(uint *)(gen_frame + 0x14)));
       }
       else {

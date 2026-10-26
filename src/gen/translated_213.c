@@ -1,5 +1,65 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_01077620 */
+unsigned int F_01077620(void)
+{
+  GEN_ENTER(0x1077620u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15e2774),"hkMemoryMeshVertexBuffer",&REFG(undefined, 0x15e245c),0x1a8,0,0,0,0,
+               &REFG(undefined * PTR32, 0x1148dd8),8,0,0,0,1);
+  return 0;
+}
+
+/* ref: FUN_01077660 */
+uint F_01077660(void)
+{
+  GEN_ENTER(0x1077660u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00dce6e0();
+  *(char * PTR32 *)&REFG(undefined, 0x15e27a4) = "hkMemoryMeshVertexBuffer";
+  *(char * PTR32 *)&REFG(undefined, 0x15e27a8) = "!hkMemoryMeshVertexBuffer";
+  *(gen_code32 *)&REFG(undefined, 0x15e27ac) = ((code *)REFP(0xdce6b0));
+  *(gen_code32 *)&REFG(undefined, 0x15e27b0) = ((code *)REFP(0xdce6d0));
+  *(uint *)&REFG(undefined, 0x15e27b4) = uVar1;
+  *(undefined4 *)&REFG(undefined, 0x15e27b8) = 0x1a8;
+  return uVar1;
+}
+
+/* ref: FUN_010776a0 */
+uint F_010776a0(void)
+{
+  GEN_ENTER(0x10776a0u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x13536e8) = REFG(undefined * PTR32, 0x13533f0);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1353718) = REFG(undefined * PTR32, 0x13533f4);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1353730) = REFG(undefined * PTR32, 0x13533f8);
+  return (uint)REFG(undefined * PTR32, 0x13533f0);
+}
+
+/* ref: FUN_010776d0 */
+unsigned int F_010776d0(void)
+{
+  GEN_ENTER(0x10776d0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15e27bc),"hkMemoryMeshTexture",&REFG(undefined, 0x15e248c),0x20,0,0,0,0,
+               &REFG(undefined * PTR32, 0x13536b0),7,0,0,0,2);
+  return 0;
+}
+
+/* ref: FUN_01077700 */
+uint F_01077700(void)
+{
+  GEN_ENTER(0x1077700u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00dce790();
+  *(char * PTR32 *)&REFG(undefined, 0x15e27ec) = "hkMemoryMeshTexture";
+  *(char * PTR32 *)&REFG(undefined, 0x15e27f0) = "!hkMemoryMeshTexture";
+  *(gen_code32 *)&REFG(undefined, 0x15e27f4) = ((code *)REFP(0xdce770));
+  *(gen_code32 *)&REFG(undefined, 0x15e27f8) = ((code *)REFP(0xdce760));
+  *(uint *)&REFG(undefined, 0x15e27fc) = uVar1;
+  *(undefined4 *)&REFG(undefined, 0x15e2800) = 0x20;
+  return uVar1;
+}
+
 /* ref: FUN_01077740 */
 unsigned int F_01077740(void)
 {
@@ -4820,58 +4880,6 @@ uint F_0107c370(void)
   
   F_009e9d00(&REFG(undefined, 0x14a0a6c),((undefined1 *)(gen_frame + 0x8)),*REFG(undefined4 * PTR32, 0x14a0a70),REFG(undefined4 * PTR32, 0x14a0a70));
   uVar1 = F_00429760(REFG(undefined4 * PTR32, 0x14a0a70),0x14,0xcf);
-  return (uint)uVar1;
-}
-
-/* ref: FUN_0107c3b0 */
-uint F_0107c3b0(void)
-{
-  GEN_ENTER(0x107c3b0u, 0u, 0u, 0u, 0u);
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  ulonglong uVar1;
-  
-  F_009e9dc0(&REFG(undefined, 0x14a0a7c),((undefined1 *)(gen_frame + 0x8)),*REFG(undefined4 * PTR32, 0x14a0a80),REFG(undefined4 * PTR32, 0x14a0a80));
-  uVar1 = F_00429760(REFG(undefined4 * PTR32, 0x14a0a80),0x14,0xd0);
-  return (uint)uVar1;
-}
-
-/* ref: FUN_0107c3f0 */
-unsigned int F_0107c3f0(void)
-{
-  GEN_ENTER(0x107c3f0u, 0u, 0u, 0u, 0u);
-  F_00d9b7c0(&REFG(undefined * PTR32, 0x1333234));
-  return 0;
-}
-
-/* ref: FUN_0107c400 */
-unsigned int F_0107c400(void)
-{
-  GEN_ENTER(0x107c400u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x13334f4) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[2])REFP(0x10909b4))));
-  if (REFG(void * PTR32, 0x13334fc) != (undefined *)0x0) {
-    F_00414620(REFG(void * PTR32, 0x13334fc),&REFG(undefined * PTR32, 0x13334f4));
-  }
-  return 0;
-}
-
-/* ref: FUN_0107c420 */
-uint F_0107c420(void)
-{
-  GEN_ENTER(0x107c420u, 0u, 0u, 0u, 0u);
-  ulonglong uVar1;
-  
-  uVar1 = F_0042c880(&REFG(undefined, 0x14a2680));
-  return (uint)uVar1;
-}
-
-/* ref: FUN_0107c430 */
-uint F_0107c430(void)
-{
-  GEN_ENTER(0x107c430u, 0u, 0u, 0u, 0u);
-  ulonglong uVar1;
-  
-  uVar1 = F_0042c880(&REFG(undefined, 0x14a26d8));
   return (uint)uVar1;
 }
 

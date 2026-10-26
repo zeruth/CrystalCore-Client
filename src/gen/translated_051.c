@@ -1144,11 +1144,12 @@ uint F_006b96b0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2)
   (*(undefined4 *)(gen_frame + 0x118)) = 0;
   (*(float *)(gen_frame + 0x108)) = fVar1;
   pfVar2 = (float *)F_004ee670(&(*(float *)(gen_frame + 0x10)),(uint)&(*(float *)(gen_frame + 0x30)),(uint)((float *)(gen_frame + 0xe0)));
-  (*(float *)(gen_frame + 0x40)) = *pfVar2;
+  fVar6 = *pfVar2;
+  (*(float *)(gen_frame + 0x40)) = fVar6;
   (*(float *)(gen_frame + 0x44)) = pfVar2[1];
   (*(float *)(gen_frame + 0x48)) = pfVar2[2];
   fVar6 = ((float)GEN_TOF(((float10)pfVar2[2] * (float10)(*(float *)(gen_frame + 0x38)) +
-                 ((float10)*pfVar2 * (float10)(*(float *)(gen_frame + 0x30)) + (float10)pfVar2[1] * (float10)(*(float *)(gen_frame + 0x34))))));
+                 ((float10)fVar6 * (float10)(*(float *)(gen_frame + 0x30)) + (float10)pfVar2[1] * (float10)(*(float *)(gen_frame + 0x34))))));
   (*(float *)(gen_frame + 0x5c)) = fVar6;
   if (((float10)REFG(float, 0x1088068) < (float10)fVar6) && ((char)param_3 != '\0')) {
     piVar3 = (int *)F_00a5f8a0(param_1);

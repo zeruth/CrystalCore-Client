@@ -1,16 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00c43e60 */
-uint F_00c43e60(unsigned int gen_a0)
-{
-  GEN_ENTER(0xc43e60u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  if (param_1 == 0) {
-    return 0;
-  }
-  return *(uint *)(param_1 + -8);
-}
-
 /* ref: FUN_00c43e80 */
 unsigned int F_00c43e80(void)
 {
@@ -5253,7 +5242,7 @@ int F_00c47a84(unsigned int gen_a0)
   
   if (((*(undefined * PTR32 (*)[1])REFP(0x11188f8))[0] != (undefined *)0x0) &&
      (BVar1 = F_00c5b7a0((GEN_LPANY)(*(undefined * PTR32 (*)[1])REFP(0x11188f8))), BVar1 != 0)) {
-    (*((code *)GEN_TOP((*(undefined * PTR32 (*)[1])REFP(0x11188f8))[0])))(param_1);
+    F_00c471f6(param_1);
   }
   F_00c56779();
   uVar2 = F_00c47a00(&REFG(undefined, 0x107f5e0),&REFG(undefined, 0x107f604));
@@ -10402,13 +10391,14 @@ ulonglong F_00c4be5a(unsigned int gen_a0, unsigned int gen_a1)
       if (((*(undefined4 *)((char *)&(*(longlong *)(gen_frame + 0x1c)) + 4)) + -1 + (uint)(0x44 < (uint)(*(longlong *)(gen_frame + 0x1c))) != 0) ||
          (0x408 < (uint)(*(longlong *)(gen_frame + 0x1c)) - 0x45)) goto LAB_00c4c0ea;
     }
-    uVar10 = (&REFG(undefined4, 0x134bc34))[*(int *)((int)this + 0x10)];
+    iVar8 = *(int *)((int)this + 0x10);
+    uVar10 = (&REFG(undefined4, 0x134bc34))[iVar8];
     (*(uint *)(gen_frame + 0x10)) = uVar10;
     (*(int *)(gen_frame + 0x14)) = (int)uVar10 >> 0x1f;
     if (((((*(longlong *)(gen_frame + 0x1c)) % 4 == 0) && ((*(longlong *)(gen_frame + 0x1c)) % 100 != 0)) ||
         ((longlong)
          CONCAT44((*(undefined4 *)((char *)&(*(longlong *)(gen_frame + 0x1c)) + 4)) + (uint)(0xfffff893 < (uint)(*(longlong *)(gen_frame + 0x1c))),(uint)(*(longlong *)(gen_frame + 0x1c)) + 0x76c) % 400
-         == 0)) && (1 < *(int *)((int)this + 0x10))) {
+         == 0)) && (1 < iVar8)) {
       (*(uint *)(gen_frame + 0x10)) = uVar10 + 1;
       (*(int *)(gen_frame + 0x14)) = ((int)uVar10 >> 0x1f) + (uint)(0xfffffffe < uVar10);
     }
@@ -10493,6 +10483,17 @@ __time64_t F_00c4c109(unsigned int gen_a0)
   ulonglong uVar1;
   
   uVar1 = F_00c4be5a(_Tm,1);
+  return uVar1;
+}
+
+/* ref: __mkgmtime64 */
+__time64_t F_00c4c11b(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc4c11bu, gen_a0, 0u, 0u, 0u);
+  undefined * _Tm = (undefined *)(uintptr_t)gen_a0;
+  ulonglong uVar1;
+  
+  uVar1 = F_00c4be5a(_Tm,0);
   return uVar1;
 }
 

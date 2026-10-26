@@ -1658,21 +1658,25 @@ uint F_0060e830(unsigned int gen_a0, unsigned int gen_a1)
   __declspec(align(16)) undefined1 gen_frame[0x30];
   float fVar1;
   float fVar2;
-  uint uVar3;
+  float fVar3;
+  float fVar4;
+  uint uVar5;
   
-  (*(float *)(gen_frame + 0x28)) = param_1[3];
-  fVar1 = (float)((float10)*param_1 * (float10)*param_1);
-  (*(float *)(gen_frame + 0x1c)) = fVar1;
-  fVar2 = (float)((float10)param_1[1] * (float10)param_1[1]);
-  (*(float *)(gen_frame + 0x20)) = fVar2;
-  (*(float *)(gen_frame + 0xc)) = fVar1;
-  (*(float *)(gen_frame + 0x10)) = fVar2;
-  fVar1 = (float)((float10)param_1[2] * (float10)param_1[2]);
-  (*(float *)(gen_frame + 0x24)) = fVar1;
-  (*(float *)(gen_frame + 0x14)) = fVar1;
-  (*(float *)(gen_frame + 0x18)) = param_1[3];
-  uVar3 = F_005de250(this,&(*(float *)(gen_frame + 0xc)));
-  return uVar3;
+  fVar1 = param_1[3];
+  (*(float *)(gen_frame + 0x28)) = fVar1;
+  fVar2 = (float)((float10)*param_1 * (float10)*param_1);
+  (*(float *)(gen_frame + 0x1c)) = fVar2;
+  fVar3 = (float)((float10)param_1[1] * (float10)param_1[1]);
+  (*(float *)(gen_frame + 0x20)) = fVar3;
+  fVar4 = param_1[2];
+  (*(float *)(gen_frame + 0xc)) = fVar2;
+  (*(float *)(gen_frame + 0x10)) = fVar3;
+  fVar2 = (float)((float10)fVar4 * (float10)fVar4);
+  (*(float *)(gen_frame + 0x24)) = fVar2;
+  (*(float *)(gen_frame + 0x14)) = fVar2;
+  (*(float *)(gen_frame + 0x18)) = fVar1;
+  uVar5 = F_005de250(this,&(*(float *)(gen_frame + 0xc)));
+  return uVar5;
 }
 
 /* ref: Client::LayoutEngine::Layer::VfxLayoutInstance::vf10 */

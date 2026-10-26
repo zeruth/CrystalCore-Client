@@ -197,26 +197,30 @@ uint F_0072f2c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   undefined4 param_3 = (undefined4)gen_a3;
   undefined4 param_4 = (undefined4)gen_a4;
   __declspec(align(16)) undefined1 gen_frame[0x20];
-  int iVar1;
-  undefined4 uVar2;
+  undefined4 uVar1;
+  int * piVar2;
+  int iVar3;
+  undefined4 uVar4;
   
   (*(uint *)(gen_frame + 0x18)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x1c);
   if ((*param_2 & 0xf) == 0) {
-    iVar1 = 0;
+    iVar3 = 0;
   }
   else {
-    iVar1 = *(int *)(param_2 + 4);
+    iVar3 = *(int *)(param_2 + 4);
   }
-  uVar2 = 1;
-  if ((iVar1 < 0) || (iVar1 == 1)) {
-    uVar2 = 0;
+  uVar4 = 1;
+  if ((iVar3 < 0) || (iVar3 == 1)) {
+    uVar4 = 0;
   }
+  uVar1 = *(undefined4 *)(this + 0x14);
   (*(undefined4 *)(gen_frame + 0x10)) = 0;
   (*(undefined4 *)(gen_frame + 0x14)) = 0;
   (*(undefined4 *)(gen_frame + 0x10)) = *(undefined4 *)(this + 0x10);
-  (*(undefined4 *)(gen_frame + 0xc)) = uVar2;
-  (*(undefined4 *)(gen_frame + 0x14)) = *(undefined4 *)(this + 0x14);
-  ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x13c))))(*(int * PTR32 *)(this + 4),&(*(undefined4 *)(gen_frame + 0xc)),3);
+  piVar2 = *(int * PTR32 *)(this + 4);
+  (*(undefined4 *)(gen_frame + 0xc)) = uVar4;
+  (*(undefined4 *)(gen_frame + 0x14)) = uVar1;
+  ((code *)*(gen_code32 *)(*piVar2 + 0x13c))(piVar2,&(*(undefined4 *)(gen_frame + 0xc)),3);
   ((code *)*(gen_code32 *)(*(int *)this + 8))(this);
   *(undefined4 *)(this + 0x10) = 0;
   *(undefined4 *)(this + 0x14) = 0;

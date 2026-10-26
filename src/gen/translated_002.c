@@ -75,48 +75,49 @@ uint F_004203b0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0x70];
-  byte bVar1;
-  uint uVar2;
+  int * piVar1;
+  byte bVar2;
+  uint uVar3;
   
   (*(uint *)(gen_frame + 0x68)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x6c);
   if ((*(int *)((int)this + 8) != 7) && (*(int *)((int)this + 8) != 7)) {
+    piVar1 = *(int * PTR32 *)((int)this + 0x14);
     (*(int *)(gen_frame + 0x10)) = 0;
     (*(undefined4 *)(gen_frame + 0xc)) = 0;
-    uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x14) + 4))))
-                      (*(int * PTR32 *)((int)this + 0x14),param_1,&(*(int *)(gen_frame + 0x10)),&(*(undefined4 *)(gen_frame + 0xc)));
-    *(uint *)((int)this + 8) = uVar2;
+    uVar3 = ((code *)*(gen_code32 *)(*piVar1 + 4))(piVar1,param_1,&(*(int *)(gen_frame + 0x10)),&(*(undefined4 *)(gen_frame + 0xc)));
+    *(uint *)((int)this + 8) = uVar3;
     if (*(int *)((int)this + 8) != 3) {
       if ((*(int *)(gen_frame + 0x10)) != 0) {
         F_00406b30((*(int *)(gen_frame + 0x10)));
       }
-      uVar2 = *(uint *)((int)this + 8);
+      uVar3 = *(uint *)((int)this + 8);
       F_00c47745((*(uint *)(gen_frame + 0x68)) ^ (uint)(uint)(gen_frame + 0x6c));
-      return uVar2;
+      return uVar3;
     }
     F_0042cc20(((undefined1 *)(gen_frame + 0x14)),(*(int *)(gen_frame + 0x10)),REFG(undefined4, 0x108cc50));
-    bVar1 = F_0042b5a0(((undefined1 *)(gen_frame + 0x14)));
-    if (bVar1 == 0) {
+    bVar2 = F_0042b5a0(((undefined1 *)(gen_frame + 0x14)));
+    if (bVar2 == 0) {
       if ((*(int *)(gen_frame + 0x10)) != 0) {
         F_00406b30((*(int *)(gen_frame + 0x10)));
         (*(int *)(gen_frame + 0x10)) = 0;
       }
       *(undefined4 *)((int)this + 8) = 2;
-      uVar2 = *(uint *)((int)this + 8);
+      uVar3 = *(uint *)((int)this + 8);
     }
     else {
       if ((*(int *)(gen_frame + 0x10)) != 0) {
         F_00406b30((*(int *)(gen_frame + 0x10)));
         (*(int *)(gen_frame + 0x10)) = 0;
       }
-      uVar2 = F_00420340(this,((undefined1 *)(gen_frame + 0x14)));
+      uVar3 = F_00420340(this,((undefined1 *)(gen_frame + 0x14)));
     }
     F_0042c880(((undefined1 *)(gen_frame + 0x14)));
     F_00c47745((*(uint *)(gen_frame + 0x68)) ^ (uint)(uint)(gen_frame + 0x6c));
-    return uVar2;
+    return uVar3;
   }
-  uVar2 = *(uint *)((int)this + 8);
+  uVar3 = *(uint *)((int)this + 8);
   F_00c47745(REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x6c) ^ (uint)(uint)(gen_frame + 0x6c));
-  return uVar2;
+  return uVar3;
 }
 
 /* ref: FUN_004204c0 */
@@ -5596,9 +5597,10 @@ byte F_00425b80(unsigned int gen_a0)
   (*(uint *)(gen_frame + 0xd8)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xdc);
   F_004302b0(this);
   uVar4 = **(uint * PTR32 *)((int)this + 0x434);
+  puVar7 = ((undefined4 *)GEN_TOP((*(uint * PTR32 *)((int)this + 0x434))[1]));
   uVar10 = 0;
   (*(LARGE_INTEGER *)(gen_frame + 0x28)).s.LowPart = uVar4;
-  (*(LARGE_INTEGER *)(gen_frame + 0x28)).s.HighPart = (LONG)(*(uint * PTR32 *)((int)this + 0x434))[1];
+  (*(LARGE_INTEGER *)(gen_frame + 0x28)).s.HighPart = (LONG)puVar7;
   if (uVar4 != 0) {
     do {
       F_00424640(*((undefined4 *)GEN_TOP(((*(LARGE_INTEGER *)(gen_frame + 0x28)).s.HighPart + uVar10 * 4))),"SYS.Language=",
@@ -7916,10 +7918,12 @@ uint F_00429140(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   uint * param_1 = (uint *)(uintptr_t)gen_a1;
   LONG * param_2 = (LONG *)(uintptr_t)gen_a2;
   __declspec(align(16)) undefined1 gen_frame[0x10];
+  HWND hWnd;
   
+  hWnd = *(HWND *)((int)this + 8);
   (*(tagPOINT *)(gen_frame + 0x4)).x = 0;
   (*(tagPOINT *)(gen_frame + 0x4)).y = 0;
-  gen_imp_ClientToScreen(*(HWND *)((int)this + 8),&(*(tagPOINT *)(gen_frame + 0x4)));
+  gen_imp_ClientToScreen(hWnd,&(*(tagPOINT *)(gen_frame + 0x4)));
   *param_1 = (*(tagPOINT *)(gen_frame + 0x4)).x;
   *param_2 = (*(tagPOINT *)(gen_frame + 0x4)).y;
   return (*(tagPOINT *)(gen_frame + 0x4)).x;
@@ -7990,6 +7994,7 @@ uint F_004292d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   undefined4 param_1 = (undefined4)gen_a1;
   undefined4 param_2 = (undefined4)gen_a2;
   __declspec(align(16)) undefined1 gen_frame[0x30];
+  HWND hWnd;
   uint uVar1;
   int iVar2;
   int iVar3;
@@ -8004,9 +8009,10 @@ uint F_004292d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
     REFG(undefined4, 0x12fd1f8) = REFG(undefined4, 0x12fd1f8) | 0x40000;
   }
   if ((char)param_2 == '\0') {
+    hWnd = *(HWND *)((int)this + 8);
     (*(tagPOINT *)(gen_frame + 0x0)).x = 0;
     (*(tagPOINT *)(gen_frame + 0x0)).y = 0;
-    gen_imp_ClientToScreen(*(HWND *)((int)this + 8),&(*(tagPOINT *)(gen_frame + 0x0)));
+    gen_imp_ClientToScreen(hWnd,&(*(tagPOINT *)(gen_frame + 0x0)));
     gen_imp_GetClientRect(*(undefined4 *)((int)this + 8),&(*(tagRECT *)(gen_frame + 0x18)));
     (*(tagRECT *)(gen_frame + 0x18)).left = (*(tagPOINT *)(gen_frame + 0x0)).x;
     *(LONG *)((int)this + 0xc) = (*(tagRECT *)(gen_frame + 0x18)).right;

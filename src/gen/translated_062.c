@@ -8987,11 +8987,12 @@ LAB_00742a52: ;
       *(int *)((int)this + 0x28) = *(int *)((int)this + 0x28) + 1;
       uVar1 = (*(int *)((int)this + 0x1c) - *(int *)((int)this + 0x18)) / 0x54;
       if (uVar1 <= *(uint *)((int)this + 0x28)) {
+        uVar9 = *(undefined4 *)((int)this + 0x18);
         (*(undefined4 *)(gen_frame + 0x8)) = 0;
         (*(undefined4 *)(gen_frame + 0x10)) = 0;
         (*(undefined4 *)(gen_frame + 0x18)) = 0;
         (*(undefined4 *)(gen_frame + 0x20)) = 0;
-        uVar1 = F_0042a990(*(undefined4 *)((int)this + 0x18));
+        uVar1 = F_0042a990(uVar9);
         F_005a2710(&(*(undefined4 *)(gen_frame + 0x8)),6);
         (*(uint *)(gen_frame + 0xc)) = uVar1;
         uVar1 = F_0042a990(*(int *)((int)this + 0x18) + 0x54);
@@ -9062,11 +9063,12 @@ LAB_00742b8f: ;
       *(int *)((int)this + 0x28) = *(int *)((int)this + 0x28) + 1;
       uVar1 = (*(int *)((int)this + 0x1c) - *(int *)((int)this + 0x18)) / 0x54;
       if (uVar1 <= *(uint *)((int)this + 0x28)) {
+        uVar9 = *(undefined4 *)((int)this + 0x18);
         (*(undefined4 *)(gen_frame + 0x8)) = 0;
         (*(undefined4 *)(gen_frame + 0x10)) = 0;
         (*(undefined4 *)(gen_frame + 0x18)) = 0;
         (*(undefined4 *)(gen_frame + 0x20)) = 0;
-        uVar1 = F_0042a990(*(undefined4 *)((int)this + 0x18));
+        uVar1 = F_0042a990(uVar9);
         F_005a2710(&(*(undefined4 *)(gen_frame + 0x8)),6);
         (*(uint *)(gen_frame + 0xc)) = uVar1;
         uVar1 = F_0042a990(*(int *)((int)this + 0x18) + 0x54);

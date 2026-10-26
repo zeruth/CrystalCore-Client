@@ -1,17 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00a2dce0 */
-uint F_00a2dce0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xa2dce0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined1 * param_2 = (undefined1 *)(uintptr_t)gen_a2;
-  *(undefined4 *)this = *param_1;
-  *(undefined1 *)((int)this + 4) = *param_2;
-  return (uint)this;
-}
-
 /* ref: FUN_00a2dd00 */
 uint F_00a2dd00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -10342,5 +10330,52 @@ byte F_00a37a90(unsigned int gen_a0)
     return 0;
   }
   return *(char *)(in_ecx + 0x3088) == '\0';
+}
+
+/* ref: FUN_00a37ab0 */
+unsigned int F_00a37ab0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xa37ab0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  *(undefined4 *)((int)this + 0x308c) = 0;
+  *(undefined4 *)((int)this + 0x3084) = 0;
+  *(undefined1 *)((int)this + 0x3088) = 0;
+  *(undefined4 *)((int)this + 0x3008) = 0;
+  *(undefined4 *)((int)this + 0x300c) = 0;
+  *(undefined4 *)((int)this + 0x3018) = 0;
+  *(undefined4 *)((int)this + 0x301c) = 0;
+  *(undefined1 *)((int)this + 0x3014) = 0;
+  *(undefined1 *)((int)this + 0x302f) = 0;
+  *(undefined4 *)((int)this + 0x3030) = 0;
+  *(undefined1 *)((int)this + 0x3006) = 0;
+  *(undefined4 *)((int)this + 0x303c) = 0;
+  *(undefined2 *)((int)this + 0x3012) = 30000;
+  *(undefined2 *)((int)this + 0x3010) = 0;
+  *(undefined4 *)((int)this + 0x3020) = 0;
+  *(undefined4 *)((int)this + 0x3024) = 0;
+  *(undefined2 *)((int)this + 0x3028) = 0;
+  *(undefined4 *)((int)this + 0x302a) = 0;
+  *(undefined1 *)((int)this + 0x302e) = 0;
+  *(undefined4 *)((int)this + 0x3034) = 0;
+  *(undefined1 *)((int)this + 0x3038) = 0;
+  *(undefined4 *)((int)this + 0x3048) = 0;
+  *(undefined4 *)((int)this + 0x304c) = 0;
+  *(undefined4 *)((int)this + 0x3058) = 0;
+  *(undefined4 *)((int)this + 0x305c) = 0;
+  *(undefined1 *)((int)this + 0x3054) = 0;
+  *(undefined2 *)((int)this + 0x3052) = 30000;
+  *(undefined1 *)((int)this + 0x306f) = 0;
+  *(undefined4 *)((int)this + 0x3070) = 0;
+  *(undefined1 *)((int)this + 0x3046) = 0;
+  *(undefined4 *)((int)this + 0x307c) = 0;
+  *(undefined2 *)((int)this + 0x3050) = 0;
+  *(undefined4 *)((int)this + 0x3060) = 0;
+  *(undefined4 *)((int)this + 0x3064) = 0;
+  *(undefined2 *)((int)this + 0x3068) = 0;
+  *(undefined4 *)((int)this + 0x306a) = 0;
+  *(undefined1 *)((int)this + 0x306e) = 0;
+  *(undefined4 *)((int)this + 0x3074) = 0;
+  *(undefined1 *)((int)this + 0x3078) = 0;
+  return 0;
 }
 

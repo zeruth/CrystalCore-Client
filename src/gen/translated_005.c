@@ -263,82 +263,84 @@ byte F_00442510(unsigned int gen_a0, unsigned int gen_a1)
   byte * param_1 = (byte *)(uintptr_t)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
   int iVar1;
-  byte bVar2;
-  uint uVar3;
-  byte * pbVar4;
-  int iVar5;
-  undefined * this_00;
+  undefined4 uVar2;
+  byte bVar3;
+  uint uVar4;
+  byte * pbVar5;
   int iVar6;
-  byte * pbVar7;
+  undefined * this_00;
+  int iVar7;
   byte * pbVar8;
-  undefined4 * puVar9;
+  byte * pbVar9;
   undefined4 * puVar10;
-  bool bVar11;
+  undefined4 * puVar11;
+  bool bVar12;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
-  uVar3 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x44))))(*(int * PTR32 *)((int)this + 4));
-  iVar6 = *(int *)(uVar3 + 0x34);
-  if (iVar6 != 0) {
-    iVar1 = *(int *)(iVar6 + 0x18);
-    iVar6 = *(int *)(iVar6 + 0x1c);
-    if (iVar1 != 0 || iVar6 != 0) {
-      uVar3 = 0;
-      pbVar8 = (byte *)((int)this + 0xcc);
-      pbVar4 = param_1;
-      pbVar7 = pbVar8;
+  uVar4 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x44))))(*(int * PTR32 *)((int)this + 4));
+  iVar7 = *(int *)(uVar4 + 0x34);
+  if (iVar7 != 0) {
+    iVar1 = *(int *)(iVar7 + 0x18);
+    iVar7 = *(int *)(iVar7 + 0x1c);
+    if (iVar1 != 0 || iVar7 != 0) {
+      uVar4 = 0;
+      pbVar9 = (byte *)((int)this + 0xcc);
+      pbVar5 = param_1;
+      pbVar8 = pbVar9;
 LAB_00442575: ;
-      bVar2 = *pbVar4;
-      bVar11 = bVar2 < *pbVar8;
-      if (bVar2 == *pbVar8) {
-        if (bVar2 != 0) {
-          bVar2 = pbVar4[1];
-          bVar11 = bVar2 < pbVar8[1];
-          if (bVar2 != pbVar8[1]) goto LAB_00442595;
-          pbVar4 = pbVar4 + 2;
-          pbVar8 = pbVar8 + 2;
-          if (bVar2 != 0) goto LAB_00442575;
+      bVar3 = *pbVar5;
+      bVar12 = bVar3 < *pbVar9;
+      if (bVar3 == *pbVar9) {
+        if (bVar3 != 0) {
+          bVar3 = pbVar5[1];
+          bVar12 = bVar3 < pbVar9[1];
+          if (bVar3 != pbVar9[1]) goto LAB_00442595;
+          pbVar5 = pbVar5 + 2;
+          pbVar9 = pbVar9 + 2;
+          if (bVar3 != 0) goto LAB_00442575;
         }
-        iVar5 = 0;
+        iVar6 = 0;
       }
       else {
 LAB_00442595: ;
-        iVar5 = (1 - (uint)bVar11) - (uint)(bVar11 != 0);
+        iVar6 = (1 - (uint)bVar12) - (uint)(bVar12 != 0);
       }
-      if (iVar5 != 0) goto code_r0x0044259e;
+      if (iVar6 != 0) goto code_r0x0044259e;
       this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
       if (this_00 != (undefined *)0x0) {
         (*(int *)(gen_frame + 0x20)) = iVar1;
-        (*(int *)(gen_frame + 0x24)) = iVar6;
-        (*(undefined4 *)(gen_frame + 0x28)) = *(undefined4 *)((int)this + uVar3 * 0x38 + 0xb8);
+        (*(int *)(gen_frame + 0x24)) = iVar7;
+        (*(undefined4 *)(gen_frame + 0x28)) = *(undefined4 *)((int)this + uVar4 * 0x38 + 0xb8);
+        uVar2 = *(undefined4 *)((int)this + uVar4 * 0x38 + 0xbc);
         (*(undefined4 *)(gen_frame + 0x8)) = 0x10f;
         (*(undefined4 *)(gen_frame + 0xc)) = 0x40;
-        (*(undefined4 *)(gen_frame + 0x2c)) = *(undefined4 *)((int)this + uVar3 * 0x38 + 0xbc);
-        puVar9 = (undefined4 *)((int)this + uVar3 * 0x38 + 0xcc);
-        puVar10 = ((undefined4 *)(gen_frame + 0x30));
-        for (iVar6 = 8; iVar6 != 0; iVar6 = iVar6 + -1) {
-          *puVar10 = *puVar9;
-          puVar9 = puVar9 + 1;
+        (*(undefined4 *)(gen_frame + 0x2c)) = uVar2;
+        puVar10 = (undefined4 *)((int)this + uVar4 * 0x38 + 0xcc);
+        puVar11 = ((undefined4 *)(gen_frame + 0x30));
+        for (iVar7 = 8; iVar7 != 0; iVar7 = iVar7 + -1) {
+          *puVar11 = *puVar10;
           puVar10 = puVar10 + 1;
+          puVar11 = puVar11 + 1;
         }
-        bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-        if (bVar2 != 0) {
-          bVar2 = 1;
+        bVar3 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+        if (bVar3 != 0) {
+          bVar3 = 1;
           goto LAB_004425a9;
         }
       }
     }
   }
 LAB_004425a7: ;
-  bVar2 = 0;
+  bVar3 = 0;
 LAB_004425a9: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return bVar2;
+  return bVar3;
 code_r0x0044259e: ;
-  uVar3 = uVar3 + 1;
-  pbVar8 = pbVar7 + 0x38;
-  pbVar4 = param_1;
-  pbVar7 = pbVar8;
-  if (2 < uVar3) goto LAB_004425a7;
+  uVar4 = uVar4 + 1;
+  pbVar9 = pbVar8 + 0x38;
+  pbVar5 = param_1;
+  pbVar8 = pbVar9;
+  if (2 < uVar4) goto LAB_004425a7;
   goto LAB_00442575;
 }
 
@@ -351,57 +353,59 @@ byte F_00442660(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   int param_2 = (int)gen_a2;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
   int iVar1;
-  byte bVar2;
-  uint uVar3;
-  int * piVar4;
+  undefined4 uVar2;
+  byte bVar3;
+  uint uVar4;
+  int * piVar5;
   undefined * this_00;
-  int iVar5;
-  undefined4 * puVar6;
+  int iVar6;
   undefined4 * puVar7;
+  undefined4 * puVar8;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
-  uVar3 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x44))))(*(int * PTR32 *)((int)this + 4));
-  iVar5 = *(int *)(uVar3 + 0x34);
-  if (iVar5 != 0) {
-    iVar1 = *(int *)(iVar5 + 0x18);
-    iVar5 = *(int *)(iVar5 + 0x1c);
-    if (iVar1 != 0 || iVar5 != 0) {
-      uVar3 = 0;
-      piVar4 = (int *)((int)this + 0xb8);
+  uVar4 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x44))))(*(int * PTR32 *)((int)this + 4));
+  iVar6 = *(int *)(uVar4 + 0x34);
+  if (iVar6 != 0) {
+    iVar1 = *(int *)(iVar6 + 0x18);
+    iVar6 = *(int *)(iVar6 + 0x1c);
+    if (iVar1 != 0 || iVar6 != 0) {
+      uVar4 = 0;
+      piVar5 = (int *)((int)this + 0xb8);
 LAB_004426c0: ;
-      if ((*piVar4 != param_1) || (piVar4[1] != param_2)) goto LAB_004426cf;
+      if ((*piVar5 != param_1) || (piVar5[1] != param_2)) goto LAB_004426cf;
       this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
       if (this_00 != (undefined *)0x0) {
         (*(int *)(gen_frame + 0x20)) = iVar1;
-        (*(int *)(gen_frame + 0x24)) = iVar5;
-        (*(undefined4 *)(gen_frame + 0x28)) = *(undefined4 *)((int)this + uVar3 * 0x38 + 0xb8);
+        (*(int *)(gen_frame + 0x24)) = iVar6;
+        (*(undefined4 *)(gen_frame + 0x28)) = *(undefined4 *)((int)this + uVar4 * 0x38 + 0xb8);
+        uVar2 = *(undefined4 *)((int)this + uVar4 * 0x38 + 0xbc);
         (*(undefined4 *)(gen_frame + 0x8)) = 0x10f;
         (*(undefined4 *)(gen_frame + 0xc)) = 0x40;
-        (*(undefined4 *)(gen_frame + 0x2c)) = *(undefined4 *)((int)this + uVar3 * 0x38 + 0xbc);
-        puVar6 = (undefined4 *)((int)this + uVar3 * 0x38 + 0xcc);
-        puVar7 = ((undefined4 *)(gen_frame + 0x30));
-        for (iVar5 = 8; iVar5 != 0; iVar5 = iVar5 + -1) {
-          *puVar7 = *puVar6;
-          puVar6 = puVar6 + 1;
+        (*(undefined4 *)(gen_frame + 0x2c)) = uVar2;
+        puVar7 = (undefined4 *)((int)this + uVar4 * 0x38 + 0xcc);
+        puVar8 = ((undefined4 *)(gen_frame + 0x30));
+        for (iVar6 = 8; iVar6 != 0; iVar6 = iVar6 + -1) {
+          *puVar8 = *puVar7;
           puVar7 = puVar7 + 1;
+          puVar8 = puVar8 + 1;
         }
-        bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-        if (bVar2 != 0) {
-          bVar2 = 1;
+        bVar3 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+        if (bVar3 != 0) {
+          bVar3 = 1;
           goto LAB_004426da;
         }
       }
     }
   }
 LAB_004426d8: ;
-  bVar2 = 0;
+  bVar3 = 0;
 LAB_004426da: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return bVar2;
+  return bVar3;
 LAB_004426cf: ;
-  uVar3 = uVar3 + 1;
-  piVar4 = piVar4 + 0xe;
-  if (2 < uVar3) goto LAB_004426d8;
+  uVar4 = uVar4 + 1;
+  piVar5 = piVar5 + 0xe;
+  if (2 < uVar4) goto LAB_004426d8;
   goto LAB_004426c0;
 }
 
@@ -1236,53 +1240,55 @@ byte F_00443630(unsigned int gen_a0)
   GEN_ENTER(0x443630u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
-  undefined * pvVar2;
-  int * piVar3;
-  uint uVar4;
+  undefined1 IVar1;
+  byte bVar2;
+  undefined * pvVar3;
+  int * piVar4;
   uint uVar5;
   uint uVar6;
-  undefined4 uVar7;
+  uint uVar7;
+  undefined4 uVar8;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
-  pvVar2 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-  if (pvVar2 != (undefined *)0x0) {
+  pvVar3 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
+  if (pvVar3 != (undefined *)0x0) {
     this[0xd] = this[0xc];
     this[0xc] = (undefined1)((char)this[0xc] + '\x01');
     (*(undefined4 *)(gen_frame + 0x20)) = 0;
     (*(undefined4 *)(gen_frame + 0x24)) = 0;
     (*(undefined1 *)(gen_frame + 0x2c)) = 0;
     (*(undefined2 *)(gen_frame + 0x28)) = 0;
+    IVar1 = this[0xd];
     (*(undefined4 *)(gen_frame + 0x8)) = 0xcb;
     (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
     (*(undefined1 *)(gen_frame + 0x2a)) = 0xb;
-    (*(undefined1 *)(gen_frame + 0x2b)) = this[0xd];
-    bVar1 = F_00974da0(pvVar2,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-    if (bVar1 != 0) {
+    (*(undefined1 *)(gen_frame + 0x2b)) = IVar1;
+    bVar2 = F_00974da0(pvVar3,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+    if (bVar2 != 0) {
       ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
       this[0x1c] = (undefined1)0x0;
       *(undefined2 *)(this + 0x88) = 0x100;
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x1c))))(*(int * PTR32 *)(this + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0x24))(piVar3,(uint)(byte)this[0x10]);
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x1c))))(*(int * PTR32 *)(this + 4))));
-      uVar5 = ((code *)*(gen_code32 *)(*piVar3 + 0x28))(piVar3,(uint)(byte)this[0x11]);
-      if ((uVar4 != 0) && (uVar5 != 0)) {
-        if (*((int *)GEN_TOP((*(int *)(uVar4 + 0x20) + 0x1908))) != 0) {
-          *((undefined4 *)GEN_TOP((*(int *)(uVar4 + 0x20) + 0x1908))) = 0;
-          *(undefined1 *)(uVar4 + 0x1d) = 1;
-        }
-        uVar4 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x18))))(*(int * PTR32 *)(this + 4));
-        if (*(int *)(uVar4 + 600) == 0) {
-          uVar6 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(uVar4 + 0x34) + 8))))(*(int * PTR32 *)(uVar4 + 0x34),"Addon");
-          *(uint *)(uVar4 + 600) = uVar6;
-        }
-        piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(uVar4 + 600) + 0x24))))(*(int * PTR32 *)(uVar4 + 600),299)));
-        uVar7 = 0;
-        pvVar2 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar3 + 8))(piVar3)));
-        uVar4 = F_00cb0950(pvVar2,uVar7);
-        if (uVar4 != **(uint * PTR32 *)(uVar5 + 0x20)) {
-          **(uint * PTR32 *)(uVar5 + 0x20) = uVar4;
+      piVar4 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x1c))))(*(int * PTR32 *)(this + 4))));
+      uVar5 = ((code *)*(gen_code32 *)(*piVar4 + 0x24))(piVar4,(uint)(byte)this[0x10]);
+      piVar4 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x1c))))(*(int * PTR32 *)(this + 4))));
+      uVar6 = ((code *)*(gen_code32 *)(*piVar4 + 0x28))(piVar4,(uint)(byte)this[0x11]);
+      if ((uVar5 != 0) && (uVar6 != 0)) {
+        if (*((int *)GEN_TOP((*(int *)(uVar5 + 0x20) + 0x1908))) != 0) {
+          *((undefined4 *)GEN_TOP((*(int *)(uVar5 + 0x20) + 0x1908))) = 0;
           *(undefined1 *)(uVar5 + 0x1d) = 1;
+        }
+        uVar5 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x18))))(*(int * PTR32 *)(this + 4));
+        if (*(int *)(uVar5 + 600) == 0) {
+          uVar7 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(uVar5 + 0x34) + 8))))(*(int * PTR32 *)(uVar5 + 0x34),"Addon");
+          *(uint *)(uVar5 + 600) = uVar7;
+        }
+        piVar4 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(uVar5 + 600) + 0x24))))(*(int * PTR32 *)(uVar5 + 600),299)));
+        uVar8 = 0;
+        pvVar3 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar4 + 8))(piVar4)));
+        uVar5 = F_00cb0950(pvVar3,uVar8);
+        if (uVar5 != **(uint * PTR32 *)(uVar6 + 0x20)) {
+          **(uint * PTR32 *)(uVar6 + 0x20) = uVar5;
+          *(undefined1 *)(uVar6 + 0x1d) = 1;
         }
       }
       F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
@@ -1300,11 +1306,12 @@ uint F_004437d0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
+  undefined1 uVar1;
+  byte bVar2;
   undefined * this_00;
   undefined3 extraout_var = 0;
-  uint uVar2;
-  code * pcVar3;
+  uint uVar3;
+  code * pcVar4;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
   if (this[0xd] == *(undefined *)((int)param_1 + 0xd)) {
@@ -1314,30 +1321,31 @@ uint F_004437d0(unsigned int gen_a0, unsigned int gen_a1)
     ((code *)*(gen_code32 *)(*(int *)this + 4))(this,param_1 + 4,10);
     if (*(short *)(param_1 + 2) != 0) {
       this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-      uVar2 = 0;
+      uVar3 = 0;
       if (this_00 != (undefined *)0x0) {
         (*(undefined4 *)(gen_frame + 0x20)) = *param_1;
         (*(undefined4 *)(gen_frame + 0x24)) = param_1[1];
         (*(undefined2 *)(gen_frame + 0x28)) = *(undefined2 *)(param_1 + 2);
         (*(undefined1 *)(gen_frame + 0x2b)) = *(undefined1 *)((int)param_1 + 0xd);
         (*(undefined1 *)(gen_frame + 0x2a)) = *(undefined1 *)(param_1 + 3);
+        uVar1 = *(undefined1 *)((int)param_1 + 0xe);
         (*(undefined4 *)(gen_frame + 0x8)) = 0xcb;
         (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
-        (*(undefined1 *)(gen_frame + 0x2c)) = *(undefined1 *)((int)param_1 + 0xe);
-        bVar1 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-        uVar2 = CONCAT31(extraout_var,bVar1);
+        (*(undefined1 *)(gen_frame + 0x2c)) = uVar1;
+        bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+        uVar3 = CONCAT31(extraout_var,bVar2);
       }
       goto LAB_004438ac;
     }
-    pcVar3 = *(gen_code32 *)(*(int *)this + 0x14);
+    pcVar4 = *(gen_code32 *)(*(int *)this + 0x14);
   }
   else {
-    pcVar3 = *(gen_code32 *)(*(int *)this + 0xc);
+    pcVar4 = *(gen_code32 *)(*(int *)this + 0xc);
   }
-  uVar2 = (*pcVar3)(this);
+  uVar3 = (*pcVar4)(this);
 LAB_004438ac: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return uVar2;
+  return uVar3;
 }
 
 /* ref: FUN_004438d0 */
@@ -1420,43 +1428,45 @@ byte F_00443a10(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
-  uint uVar2;
+  undefined4 uVar1;
+  byte bVar2;
+  uint uVar3;
   undefined * this_00;
-  int iVar3;
   int iVar4;
-  undefined4 * puVar5;
+  int iVar5;
   undefined4 * puVar6;
+  undefined4 * puVar7;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
-  uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 0x18))(this);
-  if ((param_1 < uVar2) &&
+  uVar3 = ((code *)*(gen_code32 *)(*(int *)this + 0x18))(this);
+  if ((param_1 < uVar3) &&
      (iVar4 = param_1 * 0x48,
      *((int *)GEN_TOP((iVar4 + *(int *)((int)this + 0x18)))) != 0 ||
      *((int *)GEN_TOP((iVar4 + 4 + *(int *)((int)this + 0x18)))) != 0)) {
     this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
     if (this_00 != (undefined *)0x0) {
-      iVar3 = *(int *)((int)this + 0x18) + iVar4;
-      (*(undefined4 *)(gen_frame + 0x24)) = *(undefined4 *)(iVar3 + 4);
+      uVar1 = *((undefined4 *)GEN_TOP((*(int *)((int)this + 0x18) + iVar4)));
+      iVar4 = *(int *)((int)this + 0x18) + iVar4;
+      (*(undefined4 *)(gen_frame + 0x24)) = *(undefined4 *)(iVar4 + 4);
       (*(undefined4 *)(gen_frame + 0x8)) = 0xe6;
       (*(undefined4 *)(gen_frame + 0xc)) = 0x38;
-      (*(undefined4 *)(gen_frame + 0x20)) = *((undefined4 *)GEN_TOP((*(int *)((int)this + 0x18) + iVar4)));
-      puVar5 = (undefined4 *)(iVar3 + 0x1c);
-      puVar6 = ((undefined4 *)(gen_frame + 0x28));
-      for (iVar4 = 8; iVar4 != 0; iVar4 = iVar4 + -1) {
-        *puVar6 = *puVar5;
-        puVar5 = puVar5 + 1;
+      (*(undefined4 *)(gen_frame + 0x20)) = uVar1;
+      puVar6 = (undefined4 *)(iVar4 + 0x1c);
+      puVar7 = ((undefined4 *)(gen_frame + 0x28));
+      for (iVar5 = 8; iVar5 != 0; iVar5 = iVar5 + -1) {
+        *puVar7 = *puVar6;
         puVar6 = puVar6 + 1;
+        puVar7 = puVar7 + 1;
       }
       F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-      bVar1 = 1;
+      bVar2 = 1;
       goto LAB_00443abf;
     }
   }
-  bVar1 = 0;
+  bVar2 = 0;
 LAB_00443abf: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return bVar1;
+  return bVar2;
 }
 
 /* ref: FUN_00443ae0 */
@@ -1498,34 +1508,36 @@ byte F_00443b90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   uint param_1 = (uint)gen_a1;
   undefined4 param_2 = (undefined4)gen_a2;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  int iVar1;
-  byte bVar2;
-  uint uVar3;
+  undefined4 uVar1;
+  int iVar2;
+  byte bVar3;
+  uint uVar4;
   undefined * this_00;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
-  uVar3 = ((code *)*(gen_code32 *)(*(int *)this + 0x18))(this);
-  if ((param_1 < uVar3) &&
-     (iVar1 = param_1 * 0x48,
-     *((int *)GEN_TOP((iVar1 + *(int *)((int)this + 0x18)))) != 0 ||
-     *((int *)GEN_TOP((iVar1 + 4 + *(int *)((int)this + 0x18)))) != 0)) {
+  uVar4 = ((code *)*(gen_code32 *)(*(int *)this + 0x18))(this);
+  if ((param_1 < uVar4) &&
+     (iVar2 = param_1 * 0x48,
+     *((int *)GEN_TOP((iVar2 + *(int *)((int)this + 0x18)))) != 0 ||
+     *((int *)GEN_TOP((iVar2 + 4 + *(int *)((int)this + 0x18)))) != 0)) {
     this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
     if (this_00 != (undefined *)0x0) {
-      (*(undefined4 *)(gen_frame + 0x24)) = *((undefined4 *)GEN_TOP((iVar1 + 4 + *(int *)((int)this + 0x18))));
+      uVar1 = *((undefined4 *)GEN_TOP((iVar2 + *(int *)((int)this + 0x18))));
+      (*(undefined4 *)(gen_frame + 0x24)) = *((undefined4 *)GEN_TOP((iVar2 + 4 + *(int *)((int)this + 0x18))));
       (*(undefined4 *)(gen_frame + 0x8)) = 0xca;
       (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
-      (*(undefined4 *)(gen_frame + 0x20)) = *((undefined4 *)GEN_TOP((iVar1 + *(int *)((int)this + 0x18))));
+      (*(undefined4 *)(gen_frame + 0x20)) = uVar1;
       (*(undefined1 *)(gen_frame + 0x28)) = 2;
       (*(undefined1 *)(gen_frame + 0x29)) = (undefined1)param_2;
       F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-      bVar2 = 1;
+      bVar3 = 1;
       goto LAB_00443c3e;
     }
   }
-  bVar2 = 0;
+  bVar3 = 0;
 LAB_00443c3e: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return bVar2;
+  return bVar3;
 }
 
 /* ref: Client::UI::Info::InfoProxyItemSearch::vf4 */
@@ -1562,11 +1574,12 @@ uint F_00443d10(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int param_1 = (int)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
+  undefined1 uVar1;
+  byte bVar2;
   undefined * this_00;
   undefined3 extraout_var = 0;
-  uint uVar2;
-  code * pcVar3;
+  uint uVar3;
+  code * pcVar4;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
   if (this[0xd] == *(undefined *)(param_1 + 0x462)) {
@@ -1576,26 +1589,27 @@ uint F_00443d10(unsigned int gen_a0, unsigned int gen_a1)
     ((code *)*(gen_code32 *)(*(int *)this + 4))(this,param_1,10);
     if (*(char *)(param_1 + 0x460) != '\0') {
       this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-      uVar2 = 0;
+      uVar3 = 0;
       if (this_00 != (undefined *)0x0) {
+        uVar1 = *(undefined1 *)(param_1 + 0x462);
         (*(undefined1 *)(gen_frame + 0x20)) = *(undefined1 *)(param_1 + 0x460);
         (*(undefined4 *)(gen_frame + 0x8)) = 0x105;
         (*(undefined4 *)(gen_frame + 0xc)) = 0x18;
-        (*(undefined1 *)(gen_frame + 0x21)) = *(undefined1 *)(param_1 + 0x462);
-        bVar1 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-        uVar2 = CONCAT31(extraout_var,bVar1);
+        (*(undefined1 *)(gen_frame + 0x21)) = uVar1;
+        bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+        uVar3 = CONCAT31(extraout_var,bVar2);
       }
       goto LAB_00443dcc;
     }
-    pcVar3 = *(gen_code32 *)(*(int *)this + 0x14);
+    pcVar4 = *(gen_code32 *)(*(int *)this + 0x14);
   }
   else {
-    pcVar3 = *(gen_code32 *)(*(int *)this + 0xc);
+    pcVar4 = *(gen_code32 *)(*(int *)this + 0xc);
   }
-  uVar2 = (*pcVar3)(this);
+  uVar3 = (*pcVar4)(this);
 LAB_00443dcc: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return uVar2;
+  return uVar3;
 }
 
 /* ref: FUN_00443df0 */
@@ -1673,19 +1687,21 @@ byte F_00443fb0(unsigned int gen_a0)
   GEN_ENTER(0x443fb0u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
+  undefined4 uVar1;
+  byte bVar2;
   undefined * this_00;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
   if (*(int *)((int)this + 0x1c90) != 0 || *(int *)((int)this + 0x1c94) != 0) {
     this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
     if (this_00 != (undefined *)0x0) {
+      uVar1 = *(undefined4 *)((int)this + 0x1c94);
       (*(undefined4 *)(gen_frame + 0x20)) = *(undefined4 *)((int)this + 0x1c90);
       (*(undefined4 *)(gen_frame + 0x8)) = 0x108;
       (*(undefined4 *)(gen_frame + 0xc)) = 0x18;
-      (*(undefined4 *)(gen_frame + 0x24)) = *(undefined4 *)((int)this + 0x1c94);
-      bVar1 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-      if (bVar1 != 0) {
+      (*(undefined4 *)(gen_frame + 0x24)) = uVar1;
+      bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+      if (bVar2 != 0) {
         F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
         return 1;
       }
@@ -1746,8 +1762,9 @@ uint F_00444130(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int param_1 = (int)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
-  uint uVar2;
+  undefined1 uVar1;
+  byte bVar2;
+  uint uVar3;
   undefined * this_00;
   undefined3 extraout_var = 0;
   
@@ -1759,28 +1776,29 @@ uint F_00444130(unsigned int gen_a0, unsigned int gen_a1)
     }
     ((code *)*(gen_code32 *)(*(int *)this + 4))(this,param_1,5);
     if (*(char *)(param_1 + 800) == '\0') {
-      uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 0x14))(this);
+      uVar3 = ((code *)*(gen_code32 *)(*(int *)this + 0x14))(this);
     }
     else {
       this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-      uVar2 = 0;
+      uVar3 = 0;
       if (this_00 != (undefined *)0x0) {
+        uVar1 = *(undefined1 *)(param_1 + 0x322);
         (*(undefined1 *)(gen_frame + 0x20)) = *(undefined1 *)(param_1 + 800);
         (*(undefined4 *)(gen_frame + 0x8)) = 0xfc;
         (*(undefined4 *)(gen_frame + 0xc)) = 0x18;
-        (*(undefined1 *)(gen_frame + 0x21)) = *(undefined1 *)(param_1 + 0x322);
-        bVar1 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-        uVar2 = CONCAT31(extraout_var,bVar1);
+        (*(undefined1 *)(gen_frame + 0x21)) = uVar1;
+        bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+        uVar3 = CONCAT31(extraout_var,bVar2);
       }
     }
   }
   else {
-    uVar2 = 0;
+    uVar3 = 0;
     *(undefined4 *)(this + 8) = 0;
     this[0x51b8] = (undefined1)0x0;
   }
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return uVar2;
+  return uVar3;
 }
 
 /* ref: FUN_00444210 */
@@ -1844,58 +1862,60 @@ byte F_00444300(unsigned int gen_a0, unsigned int gen_a1)
   uint param_1 = (uint)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
   undefined4 * puVar1;
-  byte bVar2;
-  undefined * pvVar3;
-  int * piVar4;
-  uint uVar5;
+  undefined4 uVar2;
+  byte bVar3;
+  undefined * pvVar4;
+  int * piVar5;
   uint uVar6;
-  int iVar7;
+  uint uVar7;
+  int iVar8;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
   if (*(int *)((int)this + 0x5160) < 0) {
-    pvVar3 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-    if ((pvVar3 != (undefined *)0x0) && (param_1 < *(uint *)((int)this + 8))) {
+    pvVar4 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
+    if ((pvVar4 != (undefined *)0x0) && (param_1 < *(uint *)((int)this + 8))) {
       puVar1 = (undefined4 *)(param_1 * 0xa0 + 0x20 + (int)this);
       (*(undefined4 *)(gen_frame + 0x20)) = *puVar1;
       (*(undefined4 *)(gen_frame + 0x24)) = puVar1[1];
+      uVar2 = puVar1[2];
       (*(undefined4 *)(gen_frame + 0x8)) = 0xfd;
       (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
-      (*(undefined4 *)(gen_frame + 0x28)) = puVar1[2];
+      (*(undefined4 *)(gen_frame + 0x28)) = uVar2;
       (*(undefined1 *)(gen_frame + 0x2c)) = 1;
-      bVar2 = F_00974da0(pvVar3,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-      if (bVar2 != 0) {
-        piVar4 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x1c))))(*(int * PTR32 *)((int)this + 4))));
-        uVar5 = ((code *)*(gen_code32 *)(*piVar4 + 0x24))(piVar4,0x12);
-        piVar4 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x1c))))(*(int * PTR32 *)((int)this + 4))));
-        pvVar3 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar4 + 0x28))(piVar4,0x10)));
-        if ((uVar5 != 0) && (pvVar3 != (undefined *)0x0)) {
+      bVar3 = F_00974da0(pvVar4,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+      if (bVar3 != 0) {
+        piVar5 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x1c))))(*(int * PTR32 *)((int)this + 4))));
+        uVar6 = ((code *)*(gen_code32 *)(*piVar5 + 0x24))(piVar5,0x12);
+        piVar5 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x1c))))(*(int * PTR32 *)((int)this + 4))));
+        pvVar4 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar5 + 0x28))(piVar5,0x10)));
+        if ((uVar6 != 0) && (pvVar4 != (undefined *)0x0)) {
           (*(undefined4 * PTR32 *)(gen_frame + 0x4)) = puVar1 + 3;
-          iVar7 = 0x224;
+          iVar8 = 0x224;
           do {
-            uVar6 = F_00ab65a0(*(*(undefined4 * PTR32 *)(gen_frame + 0x4)),0);
-            if (*((uint *)GEN_TOP((*(int *)(uVar5 + 0x20) + iVar7))) != uVar6) {
-              *((uint *)GEN_TOP((*(int *)(uVar5 + 0x20) + iVar7))) = uVar6;
-              *(undefined1 *)(uVar5 + 0x1d) = 1;
+            uVar7 = F_00ab65a0(*(*(undefined4 * PTR32 *)(gen_frame + 0x4)),0);
+            if (*((uint *)GEN_TOP((*(int *)(uVar6 + 0x20) + iVar8))) != uVar7) {
+              *((uint *)GEN_TOP((*(int *)(uVar6 + 0x20) + iVar8))) = uVar7;
+              *(undefined1 *)(uVar6 + 0x1d) = 1;
             }
             (*(undefined4 * PTR32 *)(gen_frame + 0x4)) = (*(undefined4 * PTR32 *)(gen_frame + 0x4)) + 2;
-            iVar7 = iVar7 + 4;
-          } while (iVar7 < 0x238);
-          if (*((int *)GEN_TOP((*(int *)(uVar5 + 0x20) + 0x220))) != puVar1[0xe]) {
-            *((undefined4 *)GEN_TOP((*(int *)(uVar5 + 0x20) + 0x220))) = puVar1[0xe];
-            *(undefined1 *)(uVar5 + 0x1d) = 1;
+            iVar8 = iVar8 + 4;
+          } while (iVar8 < 0x238);
+          if (*((int *)GEN_TOP((*(int *)(uVar6 + 0x20) + 0x220))) != puVar1[0xe]) {
+            *((undefined4 *)GEN_TOP((*(int *)(uVar6 + 0x20) + 0x220))) = puVar1[0xe];
+            *(undefined1 *)(uVar6 + 0x1d) = 1;
           }
-          F_00431250(pvVar3,0x187,&REFG(undefined, 0x108d0d7),0,1,0);
+          F_00431250(pvVar4,0x187,&REFG(undefined, 0x108d0d7),0,1,0);
         }
         *(uint *)((int)this + 0x5160) = param_1;
-        bVar2 = 1;
+        bVar3 = 1;
         goto LAB_0044449c;
       }
     }
   }
-  bVar2 = 0;
+  bVar3 = 0;
 LAB_0044449c: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return bVar2;
+  return bVar3;
 }
 
 /* ref: FUN_004444c0 */
@@ -1906,6 +1926,7 @@ byte F_004444c0(unsigned int gen_a0, unsigned int gen_a1)
   uint param_1 = (uint)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
   undefined4 * puVar1;
+  undefined4 uVar2;
   undefined * this_00;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
@@ -1913,10 +1934,11 @@ byte F_004444c0(unsigned int gen_a0, unsigned int gen_a1)
   if ((this_00 != (undefined *)0x0) && (param_1 < *(uint *)((int)this + 8))) {
     puVar1 = (undefined4 *)(param_1 * 0xa0 + 0x20 + (int)this);
     (*(undefined4 *)(gen_frame + 0x20)) = *puVar1;
+    uVar2 = puVar1[2];
     (*(undefined4 *)(gen_frame + 0x24)) = puVar1[1];
     (*(undefined4 *)(gen_frame + 0x8)) = 0xfb;
     (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
-    (*(undefined4 *)(gen_frame + 0x28)) = puVar1[2];
+    (*(undefined4 *)(gen_frame + 0x28)) = uVar2;
     F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
     F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
     return 1;
@@ -1967,56 +1989,63 @@ byte F_004445d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   uint param_1 = (uint)gen_a1;
   int param_2 = (int)gen_a2;
   __declspec(align(16)) undefined1 gen_frame[0xc70];
-  byte bVar1;
-  undefined * pvVar2;
-  int iVar3;
-  undefined4 * puVar4;
-  undefined4 * puVar5;
+  undefined4 uVar1;
+  undefined4 uVar2;
+  byte bVar3;
+  undefined * pvVar4;
+  int iVar5;
+  undefined4 * puVar6;
+  undefined4 * puVar7;
   
   (*(uint *)(gen_frame + 0xc5c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc60);
-  pvVar2 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-  (*(undefined * PTR32 *)(gen_frame + 0x34)) = pvVar2;
-  if ((pvVar2 == (undefined *)0x0) || (*(uint *)((int)this + 8) <= param_1)) {
-    bVar1 = 0;
+  pvVar4 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
+  (*(undefined * PTR32 *)(gen_frame + 0x34)) = pvVar4;
+  if ((pvVar4 == (undefined *)0x0) || (*(uint *)((int)this + 8) <= param_1)) {
+    bVar3 = 0;
   }
   else {
-    puVar4 = (undefined4 *)(param_1 * 0xa0 + 0x20 + (int)this);
+    puVar6 = (undefined4 *)(param_1 * 0xa0 + 0x20 + (int)this);
     F_00c48350(((undefined4 *)(gen_frame + 0x4)),0,0x30);
     if (param_2 < 0) {
-      ((undefined4 *)(gen_frame + 0x4))[0] = puVar4[3];
-      ((undefined4 *)(gen_frame + 0x4))[1] = puVar4[4];
-      ((undefined4 *)(gen_frame + 0x4))[2] = puVar4[5];
-      ((undefined4 *)(gen_frame + 0x4))[3] = puVar4[6];
-      (*(undefined4 *)(gen_frame + 0x14)) = puVar4[7];
-      (*(undefined4 *)(gen_frame + 0x18)) = puVar4[8];
-      (*(undefined4 *)(gen_frame + 0x1c)) = puVar4[9];
-      (*(undefined4 *)(gen_frame + 0x20)) = puVar4[10];
-      (*(undefined4 *)(gen_frame + 0x24)) = puVar4[0xb];
-      (*(undefined4 *)(gen_frame + 0x28)) = puVar4[0xc];
-      (*(undefined4 *)(gen_frame + 0x2c)) = puVar4[0xd];
-      (*(undefined4 *)(gen_frame + 0x30)) = puVar4[0xe];
+      uVar1 = puVar6[4];
+      uVar2 = puVar6[5];
+      ((undefined4 *)(gen_frame + 0x4))[0] = puVar6[3];
+      ((undefined4 *)(gen_frame + 0x4))[1] = uVar1;
+      ((undefined4 *)(gen_frame + 0x4))[2] = uVar2;
+      ((undefined4 *)(gen_frame + 0x4))[3] = puVar6[6];
+      (*(undefined4 *)(gen_frame + 0x14)) = puVar6[7];
+      (*(undefined4 *)(gen_frame + 0x18)) = puVar6[8];
+      (*(undefined4 *)(gen_frame + 0x1c)) = puVar6[9];
+      (*(undefined4 *)(gen_frame + 0x20)) = puVar6[10];
+      (*(undefined4 *)(gen_frame + 0x24)) = puVar6[0xb];
+      (*(undefined4 *)(gen_frame + 0x28)) = puVar6[0xc];
+      (*(undefined4 *)(gen_frame + 0x2c)) = puVar6[0xd];
+      (*(undefined4 *)(gen_frame + 0x30)) = puVar6[0xe];
     }
     else {
-      ((undefined4 *)(gen_frame + 0x4))[0] = puVar4[param_2 * 2 + 3];
-      ((undefined4 *)(gen_frame + 0x4))[1] = puVar4[param_2 * 2 + 4];
+      uVar1 = puVar6[param_2 * 2 + 4];
+      ((undefined4 *)(gen_frame + 0x4))[0] = puVar6[param_2 * 2 + 3];
+      ((undefined4 *)(gen_frame + 0x4))[1] = uVar1;
     }
-    (*(undefined4 *)(gen_frame + 0x50)) = *puVar4;
+    uVar1 = puVar6[1];
+    uVar2 = puVar6[2];
+    (*(undefined4 *)(gen_frame + 0x50)) = *puVar6;
     (*(undefined4 *)(gen_frame + 0x38)) = 0xff;
     (*(undefined4 *)(gen_frame + 0x3c)) = 0x50;
-    (*(undefined4 *)(gen_frame + 0x54)) = puVar4[1];
-    (*(undefined4 *)(gen_frame + 0x58)) = puVar4[2];
-    puVar4 = ((undefined4 *)(gen_frame + 0x4));
-    puVar5 = ((undefined4 *)(gen_frame + 0x5c));
-    for (iVar3 = 0xc; iVar3 != 0; iVar3 = iVar3 + -1) {
-      *puVar5 = *puVar4;
-      puVar4 = puVar4 + 1;
-      puVar5 = puVar5 + 1;
+    (*(undefined4 *)(gen_frame + 0x54)) = uVar1;
+    (*(undefined4 *)(gen_frame + 0x58)) = uVar2;
+    puVar6 = ((undefined4 *)(gen_frame + 0x4));
+    puVar7 = ((undefined4 *)(gen_frame + 0x5c));
+    for (iVar5 = 0xc; iVar5 != 0; iVar5 = iVar5 + -1) {
+      *puVar7 = *puVar6;
+      puVar6 = puVar6 + 1;
+      puVar7 = puVar7 + 1;
     }
     F_00974da0((*(undefined * PTR32 *)(gen_frame + 0x34)),&(*(undefined4 *)(gen_frame + 0x38)),0,0);
-    bVar1 = 1;
+    bVar3 = 1;
   }
   F_00c47745((*(uint *)(gen_frame + 0xc5c)) ^ (uint)(uint)(gen_frame + 0xc60));
-  return bVar1;
+  return bVar3;
 }
 
 /* ref: FUN_00444740 */
@@ -2026,40 +2055,44 @@ byte F_00444740(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc70];
-  byte bVar1;
-  undefined * pvVar2;
-  int iVar3;
-  undefined4 * puVar4;
-  undefined4 * puVar5;
+  undefined4 uVar1;
+  undefined4 uVar2;
+  byte bVar3;
+  undefined * pvVar4;
+  int iVar5;
+  undefined4 * puVar6;
+  undefined4 * puVar7;
   
   (*(uint *)(gen_frame + 0xc5c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc60);
-  pvVar2 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-  (*(undefined * PTR32 *)(gen_frame + 0x34)) = pvVar2;
-  if ((pvVar2 == (undefined *)0x0) || (*(uint *)((int)this + 8) <= param_1)) {
-    bVar1 = 0;
+  pvVar4 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
+  (*(undefined * PTR32 *)(gen_frame + 0x34)) = pvVar4;
+  if ((pvVar4 == (undefined *)0x0) || (*(uint *)((int)this + 8) <= param_1)) {
+    bVar3 = 0;
   }
   else {
-    puVar4 = (undefined4 *)(param_1 * 0xa0 + 0x20 + (int)this);
+    puVar6 = (undefined4 *)(param_1 * 0xa0 + 0x20 + (int)this);
     F_00c48350(((undefined4 *)(gen_frame + 0x4)),0,0x30);
-    (*(undefined4 *)(gen_frame + 0x50)) = *puVar4;
-    (*(undefined4 *)(gen_frame + 0x2c)) = puVar4[0xd];
-    (*(undefined4 *)(gen_frame + 0x30)) = puVar4[0xe];
+    (*(undefined4 *)(gen_frame + 0x50)) = *puVar6;
+    (*(undefined4 *)(gen_frame + 0x2c)) = puVar6[0xd];
+    uVar1 = puVar6[1];
+    (*(undefined4 *)(gen_frame + 0x30)) = puVar6[0xe];
+    uVar2 = puVar6[2];
     (*(undefined4 *)(gen_frame + 0x38)) = 0xff;
     (*(undefined4 *)(gen_frame + 0x3c)) = 0x50;
-    (*(undefined4 *)(gen_frame + 0x54)) = puVar4[1];
-    (*(undefined4 *)(gen_frame + 0x58)) = puVar4[2];
-    puVar4 = ((undefined4 *)(gen_frame + 0x4));
-    puVar5 = ((undefined4 *)(gen_frame + 0x5c));
-    for (iVar3 = 0xc; iVar3 != 0; iVar3 = iVar3 + -1) {
-      *puVar5 = *puVar4;
-      puVar4 = puVar4 + 1;
-      puVar5 = puVar5 + 1;
+    (*(undefined4 *)(gen_frame + 0x54)) = uVar1;
+    (*(undefined4 *)(gen_frame + 0x58)) = uVar2;
+    puVar6 = ((undefined4 *)(gen_frame + 0x4));
+    puVar7 = ((undefined4 *)(gen_frame + 0x5c));
+    for (iVar5 = 0xc; iVar5 != 0; iVar5 = iVar5 + -1) {
+      *puVar7 = *puVar6;
+      puVar6 = puVar6 + 1;
+      puVar7 = puVar7 + 1;
     }
     F_00974da0((*(undefined * PTR32 *)(gen_frame + 0x34)),&(*(undefined4 *)(gen_frame + 0x38)),0,0);
-    bVar1 = 1;
+    bVar3 = 1;
   }
   F_00c47745((*(uint *)(gen_frame + 0xc5c)) ^ (uint)(uint)(gen_frame + 0xc60));
-  return bVar1;
+  return bVar3;
 }
 
 /* ref: Client::UI::Info::InfoProxyLinkshell::vf4 */
@@ -2322,20 +2355,22 @@ byte F_00444e40(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   char * param_1 = (char *)(uintptr_t)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  int * piVar1;
+  int iVar1;
+  int * piVar2;
   undefined * this_00;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
   if ((param_1 != (char *)0x0) && (*param_1 != '\0')) {
-    piVar1 = (int *)F_00439150(this,param_1,((undefined1 *)(gen_frame + 0x4)));
-    if ((piVar1 != (int *)0x0) && ((piVar1[4] & 0x700U) == 0x200)) {
+    piVar2 = (int *)F_00439150(this,param_1,((undefined1 *)(gen_frame + 0x4)));
+    if ((piVar2 != (int *)0x0) && ((piVar2[4] & 0x700U) == 0x200)) {
       this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
       if (this_00 != (undefined *)0x0) {
-        if (*piVar1 != 0 || piVar1[1] != 0) {
-          (*(int *)(gen_frame + 0x20)) = *piVar1;
+        iVar1 = piVar2[1];
+        if (*piVar2 != 0 || iVar1 != 0) {
+          (*(int *)(gen_frame + 0x20)) = *piVar2;
           (*(undefined4 *)(gen_frame + 0x8)) = 0xf9;
           (*(undefined4 *)(gen_frame + 0xc)) = 0x18;
-          (*(int *)(gen_frame + 0x24)) = piVar1[1];
+          (*(int *)(gen_frame + 0x24)) = iVar1;
           F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
           F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
           return 1;
@@ -2354,46 +2389,48 @@ uint F_00444f20(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
+  undefined1 uVar1;
+  byte bVar2;
   undefined * this_00;
   undefined3 extraout_var = 0;
-  uint uVar2;
-  code * pcVar3;
+  uint uVar3;
+  code * pcVar4;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
   if (this[0xd] == *(undefined *)((int)param_1 + 0xd)) {
     if (*(short *)((int)param_1 + 10) == 0) {
       ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
     }
-    uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 4))(this,param_1 + 4,10);
+    uVar3 = ((code *)*(gen_code32 *)(*(int *)this + 4))(this,param_1 + 4,10);
     if (*(short *)(param_1 + 2) != 0) {
       if (this[0x30] == (undefined1)0x0) {
         this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-        uVar2 = 0;
+        uVar3 = 0;
         if (this_00 != (undefined *)0x0) {
           (*(undefined4 *)(gen_frame + 0x20)) = *param_1;
           (*(undefined4 *)(gen_frame + 0x24)) = param_1[1];
           (*(undefined2 *)(gen_frame + 0x28)) = *(undefined2 *)(param_1 + 2);
           (*(undefined1 *)(gen_frame + 0x2b)) = *(undefined1 *)((int)param_1 + 0xd);
           (*(undefined1 *)(gen_frame + 0x2a)) = *(undefined1 *)(param_1 + 3);
+          uVar1 = *(undefined1 *)((int)param_1 + 0xe);
           (*(undefined4 *)(gen_frame + 0x8)) = 0xcb;
           (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
-          (*(undefined1 *)(gen_frame + 0x2c)) = *(undefined1 *)((int)param_1 + 0xe);
-          bVar1 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-          uVar2 = CONCAT31(extraout_var,bVar1);
+          (*(undefined1 *)(gen_frame + 0x2c)) = uVar1;
+          bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+          uVar3 = CONCAT31(extraout_var,bVar2);
         }
       }
       goto LAB_00445002;
     }
-    pcVar3 = *(gen_code32 *)(*(int *)this + 0x14);
+    pcVar4 = *(gen_code32 *)(*(int *)this + 0x14);
   }
   else {
-    pcVar3 = *(gen_code32 *)(*(int *)this + 0xc);
+    pcVar4 = *(gen_code32 *)(*(int *)this + 0xc);
   }
-  uVar2 = (*pcVar3)(this);
+  uVar3 = (*pcVar4)(this);
 LAB_00445002: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return uVar2;
+  return uVar3;
 }
 
 /* ref: FUN_00445020 */
@@ -2523,7 +2560,8 @@ byte F_00445260(unsigned int gen_a0)
   GEN_ENTER(0x445260u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
+  undefined1 IVar1;
+  byte bVar2;
   undefined * this_00;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
@@ -2535,12 +2573,13 @@ byte F_00445260(unsigned int gen_a0)
     (*(undefined2 *)(gen_frame + 0x28)) = 0;
     (*(undefined1 *)(gen_frame + 0x2c)) = 0;
     (*(undefined4 *)(gen_frame + 0x24)) = *(undefined4 *)(this + 0x24);
+    IVar1 = this[0xd];
     (*(undefined4 *)(gen_frame + 0x8)) = 0xcb;
     (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
     (*(undefined1 *)(gen_frame + 0x2a)) = 0xc;
-    (*(undefined1 *)(gen_frame + 0x2b)) = this[0xd];
-    bVar1 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-    if (bVar1 != 0) {
+    (*(undefined1 *)(gen_frame + 0x2b)) = IVar1;
+    bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+    if (bVar2 != 0) {
       ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
       this[0x1c] = (undefined1)0x0;
       this[0x30] = (undefined1)0x0;
@@ -2559,45 +2598,49 @@ byte F_00445410(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
-  uint uVar2;
+  undefined4 uVar1;
+  undefined4 uVar2;
+  byte bVar3;
+  uint uVar4;
   undefined * this_00;
-  int iVar3;
-  int iVar4;
-  undefined4 * puVar5;
-  undefined4 * puVar6;
+  int iVar5;
+  int iVar6;
+  undefined4 * puVar7;
+  undefined4 * puVar8;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
-  uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 0x18))(this);
-  if ((param_1 < uVar2) &&
-     (iVar4 = param_1 * 0x48,
-     *((int *)GEN_TOP((iVar4 + *(int *)((int)this + 0x18)))) != 0 ||
-     *((int *)GEN_TOP((iVar4 + 4 + *(int *)((int)this + 0x18)))) != 0)) {
+  uVar4 = ((code *)*(gen_code32 *)(*(int *)this + 0x18))(this);
+  if ((param_1 < uVar4) &&
+     (iVar5 = param_1 * 0x48,
+     *((int *)GEN_TOP((iVar5 + *(int *)((int)this + 0x18)))) != 0 ||
+     *((int *)GEN_TOP((iVar5 + 4 + *(int *)((int)this + 0x18)))) != 0)) {
     this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
     if (this_00 != (undefined *)0x0) {
-      iVar3 = *(int *)((int)this + 0x18) + iVar4;
-      (*(undefined4 *)(gen_frame + 0x2c)) = *(undefined4 *)(iVar3 + 4);
+      uVar1 = *((undefined4 *)GEN_TOP((*(int *)((int)this + 0x18) + iVar5)));
+      iVar5 = *(int *)((int)this + 0x18) + iVar5;
+      (*(undefined4 *)(gen_frame + 0x2c)) = *(undefined4 *)(iVar5 + 4);
       (*(undefined4 *)(gen_frame + 0x20)) = *(undefined4 *)((int)this + 0x20);
+      uVar2 = *(undefined4 *)((int)this + 0x24);
       (*(undefined4 *)(gen_frame + 0x8)) = 0xf5;
       (*(undefined4 *)(gen_frame + 0xc)) = 0x40;
-      (*(undefined4 *)(gen_frame + 0x24)) = *(undefined4 *)((int)this + 0x24);
-      (*(undefined4 *)(gen_frame + 0x28)) = *((undefined4 *)GEN_TOP((*(int *)((int)this + 0x18) + iVar4)));
-      puVar5 = (undefined4 *)(iVar3 + 0x1c);
-      puVar6 = ((undefined4 *)(gen_frame + 0x30));
-      for (iVar4 = 8; iVar4 != 0; iVar4 = iVar4 + -1) {
-        *puVar6 = *puVar5;
-        puVar5 = puVar5 + 1;
-        puVar6 = puVar6 + 1;
+      (*(undefined4 *)(gen_frame + 0x24)) = uVar2;
+      (*(undefined4 *)(gen_frame + 0x28)) = uVar1;
+      puVar7 = (undefined4 *)(iVar5 + 0x1c);
+      puVar8 = ((undefined4 *)(gen_frame + 0x30));
+      for (iVar6 = 8; iVar6 != 0; iVar6 = iVar6 + -1) {
+        *puVar8 = *puVar7;
+        puVar7 = puVar7 + 1;
+        puVar8 = puVar8 + 1;
       }
       F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-      bVar1 = 1;
+      bVar3 = 1;
       goto LAB_004454df;
     }
   }
-  bVar1 = 0;
+  bVar3 = 0;
 LAB_004454df: ;
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return bVar1;
+  return bVar3;
 }
 
 /* ref: FUN_00445500 */
@@ -2653,37 +2696,39 @@ byte F_004455e0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
+  undefined4 uVar1;
+  byte bVar2;
   undefined * this_00;
-  int iVar2;
-  undefined4 * puVar3;
+  int iVar3;
   undefined4 * puVar4;
-  ulonglong uVar5;
+  undefined4 * puVar5;
+  ulonglong uVar6;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
-  uVar5 = F_00435f70(this,param_1);
+  uVar6 = F_00435f70(this,param_1);
   this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-  if ((this_00 == (undefined *)0x0) || (uVar5 == 0)) {
-    bVar1 = 0;
+  if ((this_00 == (undefined *)0x0) || (uVar6 == 0)) {
+    bVar2 = 0;
   }
   else {
-    (*(ulonglong *)(gen_frame + 0x28)) = uVar5;
+    (*(ulonglong *)(gen_frame + 0x28)) = uVar6;
     (*(undefined4 *)(gen_frame + 0x20)) = *(undefined4 *)((int)this + 0x20);
+    uVar1 = *(undefined4 *)((int)this + 0x24);
     (*(undefined4 *)(gen_frame + 0x8)) = 0xf4;
     (*(undefined4 *)(gen_frame + 0xc)) = 0x40;
-    (*(undefined4 *)(gen_frame + 0x24)) = *(undefined4 *)((int)this + 0x24);
-    puVar3 = param_1;
-    puVar4 = ((undefined4 *)(gen_frame + 0x30));
-    for (iVar2 = 8; iVar2 != 0; iVar2 = iVar2 + -1) {
-      *puVar4 = *puVar3;
-      puVar3 = puVar3 + 1;
+    (*(undefined4 *)(gen_frame + 0x24)) = uVar1;
+    puVar4 = param_1;
+    puVar5 = ((undefined4 *)(gen_frame + 0x30));
+    for (iVar3 = 8; iVar3 != 0; iVar3 = iVar3 + -1) {
+      *puVar5 = *puVar4;
       puVar4 = puVar4 + 1;
+      puVar5 = puVar5 + 1;
     }
     F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-    bVar1 = 1;
+    bVar2 = 1;
   }
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return bVar1;
+  return bVar2;
 }
 
 /* ref: Client::UI::Info::InfoProxyPartyInvite::vf7 */
@@ -2758,7 +2803,8 @@ byte F_004457f0(unsigned int gen_a0)
   GEN_ENTER(0x4457f0u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
+  undefined1 IVar1;
+  byte bVar2;
   undefined * this_00;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
@@ -2770,12 +2816,13 @@ byte F_004457f0(unsigned int gen_a0)
     (*(undefined4 *)(gen_frame + 0x24)) = 0;
     (*(undefined1 *)(gen_frame + 0x2c)) = 0;
     (*(undefined2 *)(gen_frame + 0x28)) = 0;
+    IVar1 = this[0xd];
     (*(undefined4 *)(gen_frame + 0x8)) = 0xcb;
     (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
     (*(undefined1 *)(gen_frame + 0x2a)) = 2;
-    (*(undefined1 *)(gen_frame + 0x2b)) = this[0xd];
-    bVar1 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-    if (bVar1 != 0) {
+    (*(undefined1 *)(gen_frame + 0x2b)) = IVar1;
+    bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+    if (bVar2 != 0) {
       F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
       return 1;
     }
@@ -3057,34 +3104,35 @@ uint F_00445df0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
+  undefined1 uVar1;
+  byte bVar2;
   undefined * this_00;
   undefined3 extraout_var = 0;
-  int * piVar2;
-  uint uVar3;
+  int * piVar3;
+  uint uVar4;
   
   (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
   *(uint *)((int)this + 0xd8) = param_1;
   if ((int)param_1 < 1) {
-    uVar3 = param_1;
+    uVar4 = param_1;
     if (param_1 == 0) {
       ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
-      piVar2 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x1c))))(*(int * PTR32 *)((int)this + 4))));
-      uVar3 = ((code *)*(gen_code32 *)(*piVar2 + 0x24))(piVar2,(uint)*(byte *)((int)this + 0x10));
-      if (uVar3 != 0) {
-        if (*((int *)GEN_TOP((*(int *)(uVar3 + 0x20) + (uint)*(ushort *)((int)this + 0x14) * 4))) !=
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x1c))))(*(int * PTR32 *)((int)this + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0x24))(piVar3,(uint)*(byte *)((int)this + 0x10));
+      if (uVar4 != 0) {
+        if (*((int *)GEN_TOP((*(int *)(uVar4 + 0x20) + (uint)*(ushort *)((int)this + 0x14) * 4))) !=
             *(int *)((int)this + 8)) {
-          *((int *)GEN_TOP((*(int *)(uVar3 + 0x20) + (uint)*(ushort *)((int)this + 0x14) * 4))) =
+          *((int *)GEN_TOP((*(int *)(uVar4 + 0x20) + (uint)*(ushort *)((int)this + 0x14) * 4))) =
                *(int *)((int)this + 8);
-          *(undefined1 *)(uVar3 + 0x1d) = 1;
+          *(undefined1 *)(uVar4 + 0x1d) = 1;
         }
       }
-      uVar3 = ((code *)*(gen_code32 *)(*(int *)this + 0x14))(this);
+      uVar4 = ((code *)*(gen_code32 *)(*(int *)this + 0x14))(this);
     }
   }
   else {
     this_00 = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-    uVar3 = 0;
+    uVar4 = 0;
     if (this_00 != (undefined *)0x0) {
       *(char *)((int)this + 0xd) = *(char *)((int)this + 0xc);
       *(char *)((int)this + 0xc) = *(char *)((int)this + 0xc) + '\x01';
@@ -3092,16 +3140,17 @@ uint F_00445df0(unsigned int gen_a0, unsigned int gen_a1)
       (*(undefined4 *)(gen_frame + 0x24)) = 0;
       (*(undefined1 *)(gen_frame + 0x2c)) = 0;
       (*(undefined2 *)(gen_frame + 0x28)) = 0;
+      uVar1 = *(undefined1 *)((int)this + 0xd);
       (*(undefined4 *)(gen_frame + 0x8)) = 0xcb;
       (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
       (*(undefined1 *)(gen_frame + 0x2a)) = 0xe;
-      (*(undefined1 *)(gen_frame + 0x2b)) = *(undefined1 *)((int)this + 0xd);
-      bVar1 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-      uVar3 = CONCAT31(extraout_var,bVar1);
+      (*(undefined1 *)(gen_frame + 0x2b)) = uVar1;
+      bVar2 = F_00974da0(this_00,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
+      uVar4 = CONCAT31(extraout_var,bVar2);
     }
   }
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return uVar3;
+  return uVar4;
 }
 
 /* ref: FUN_00445f00 */
@@ -16736,12 +16785,12 @@ uint F_00455e50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   piVar6 = (int *)0x0;
   if (uVar4 != 0) {
     uVar4 = *(uint *)((int)this + 0x3c);
+    piVar1 = *(int * PTR32 *)((int)this + 0x30);
     uVar8 = *(int *)((int)this + 0x40) + uVar4;
     (*(char *)(gen_frame + 0x1b)) = '\0';
     ((int * PTR32 *)(gen_frame + 0x8))[0] = (int *)0x0;
     piVar6 = ((int * PTR32 *)(gen_frame + 0x8))[0];
-    if ((*(int * PTR32 *)((int)this + 0x30) != (int *)0x0) &&
-       (puVar2 = ((undefined4 *)GEN_TOP(**(int * PTR32 *)((int)this + 0x30))), puVar2 != (undefined4 *)0x0)) {
+    if ((piVar1 != (int *)0x0) && (puVar2 = (undefined4 *)*piVar1, puVar2 != (undefined4 *)0x0)) {
       ((int * PTR32 *)(gen_frame + 0x8))[0] = (int *)*puVar2;
       piVar6 = ((int * PTR32 *)(gen_frame + 0x8))[0];
     }
@@ -19018,9 +19067,10 @@ uint F_00458910(unsigned int gen_a0)
              (*(byte *)((*(int * PTR32 *)(gen_frame + 0x40)) + 5) == (byte)((uint)piVar4[-3] >> 0x1c))) {
             iVar9 = piVar5[0x16];
             piVar4 = (int *)F_00408810(((undefined1 *)(gen_frame + 0x30)));
+            iVar8 = piVar5[0x13];
             (*(int * PTR32 *)(gen_frame + 0x38)) = piVar4;
             (*(int *)(gen_frame + 0x8)) = *piVar10;
-            (*(int *)(gen_frame + 0xc)) = piVar5[0x13];
+            (*(int *)(gen_frame + 0xc)) = iVar8;
             (*(undefined1 *)(gen_frame + 0x10)) = 1;
             (*(undefined1 *)(gen_frame + 0x12)) = 0;
             _Var11 = F_00c4b7c2((__time64_t *)0x0);
@@ -19072,9 +19122,10 @@ uint F_00458910(unsigned int gen_a0)
       }
       iVar9 = piVar4[0x16];
       piVar5 = (int *)F_00408810(((undefined1 *)(gen_frame + 0x30)));
+      iVar8 = piVar4[0x13];
       (*(int * PTR32 *)(gen_frame + 0x40)) = piVar5;
       (*(int *)(gen_frame + 0x8)) = *piVar3;
-      (*(int *)(gen_frame + 0xc)) = piVar4[0x13];
+      (*(int *)(gen_frame + 0xc)) = iVar8;
       (*(undefined1 *)(gen_frame + 0x10)) = 1;
       (*(undefined1 *)(gen_frame + 0x12)) = 0;
       _Var11 = F_00c4b7c2((__time64_t *)0x0);
@@ -19214,10 +19265,11 @@ LAB_00458e48: ;
   *(char *)((int)this + 9) = cVar1;
   *(uint *)((int)this + 4) = uVar3;
   if (cVar1 != '\a') goto LAB_00458f56;
+  iVar6 = *param_1;
   (*(undefined4 *)(gen_frame + 0x18)) = 0;
   (*(undefined4 *)(gen_frame + 0x1c)) = 0;
   (*(undefined4 *)(gen_frame + 0x20)) = 0;
-  uVar4 = ((code *)*(gen_code32 *)(*param_1 + 0x2c))(param_1);
+  uVar4 = ((code *)*(gen_code32 *)(iVar6 + 0x2c))(param_1);
   pvVar5 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*param_1 + 0x20))(param_1)));
   uVar3 = F_00abe8a0(pvVar5,((uVar3 >> 8 & 0xff) * 100 + (uVar3 & 0xff)) * 0x544 + 0x94 + uVar4,
                        ((short *)(gen_frame + 0x8)));
@@ -19904,12 +19956,12 @@ uint F_00459b00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   byte bVar3;
   uint uVar4;
   undefined * pvVar5;
-  undefined4 * puVar6;
-  int * piVar7;
+  int iVar6;
+  undefined4 * puVar7;
   int * piVar8;
-  int iVar9;
-  int * piVar10;
-  int iVar11;
+  int * piVar9;
+  int iVar10;
+  int * piVar11;
   int iVar12;
   undefined * this_00;
   uint uVar13;
@@ -19991,46 +20043,47 @@ uint F_00459b00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   while( true ) {
     uVar4 = *(uint *)(pLVar1 + 0xc);
     if (*(int * PTR32 *)pLVar1 == (int *)0x0) {
-      iVar11 = 0;
+      iVar12 = 0;
     }
     else {
-      iVar11 = **(int * PTR32 *)pLVar1;
+      iVar12 = **(int * PTR32 *)pLVar1;
     }
-    if (*(uint *)(iVar11 + 8) <= uVar4) {
-      uVar4 = uVar4 - *(uint *)(iVar11 + 8);
+    if (*(uint *)(iVar12 + 8) <= uVar4) {
+      uVar4 = uVar4 - *(uint *)(iVar12 + 8);
     }
-    iVar11 = *((int *)GEN_TOP((*(int *)(iVar11 + 4) + uVar4 * 4)));
+    iVar12 = *((int *)GEN_TOP((*(int *)(iVar12 + 4) + uVar4 * 4)));
     uVar4 = F_00b00040((*(undefined * PTR32 *)(gen_frame + 0x14)));
-    if ((int)uVar4 <= *(int *)(iVar11 + 4)) break;
-    piVar10 = *(int * PTR32 *)pLVar1;
+    if ((int)uVar4 <= *(int *)(iVar12 + 4)) break;
+    piVar11 = *(int * PTR32 *)pLVar1;
     uVar4 = *(uint *)(pLVar1 + 0xc);
-    if (piVar10 == (int *)0x0) {
-      iVar11 = 0;
+    if (piVar11 == (int *)0x0) {
+      iVar12 = 0;
     }
     else {
-      iVar11 = *piVar10;
+      iVar12 = *piVar11;
     }
     uVar13 = uVar4;
-    if (*(uint *)(iVar11 + 8) <= uVar4) {
-      uVar13 = uVar4 - *(uint *)(iVar11 + 8);
+    if (*(uint *)(iVar12 + 8) <= uVar4) {
+      uVar13 = uVar4 - *(uint *)(iVar12 + 8);
     }
-    (*(uint *)(gen_frame + 0x20)) = (uint)**((ushort * PTR32 *)GEN_TOP((*(int *)(iVar11 + 4) + uVar13 * 4)));
-    iVar11 = 0;
-    if (piVar10 != (int *)0x0) {
-      iVar11 = *piVar10;
+    (*(uint *)(gen_frame + 0x20)) = (uint)**((ushort * PTR32 *)GEN_TOP((*(int *)(iVar12 + 4) + uVar13 * 4)));
+    iVar12 = 0;
+    if (piVar11 != (int *)0x0) {
+      iVar12 = *piVar11;
     }
-    if (*(uint *)(iVar11 + 8) <= uVar4) {
-      uVar4 = uVar4 - *(uint *)(iVar11 + 8);
+    if (*(uint *)(iVar12 + 8) <= uVar4) {
+      uVar4 = uVar4 - *(uint *)(iVar12 + 8);
     }
-    (*(undefined4 *)(gen_frame + 0x4)) = *((undefined4 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar11 + 4) + uVar4 * 4))) + 4)));
-    if (*(int *)(pLVar1 + 0x10) != 0) {
+    iVar6 = *(int *)(pLVar1 + 0x10);
+    (*(undefined4 *)(gen_frame + 0x4)) = *((undefined4 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar12 + 4) + uVar4 * 4))) + 4)));
+    if (iVar6 != 0) {
       *(int *)(pLVar1 + 0xc) = *(int *)(pLVar1 + 0xc) + 1;
       if (*(uint *)(pLVar1 + 8) <= *(uint *)(pLVar1 + 0xc)) {
         *(int *)(pLVar1 + 0xc) = 0;
       }
-      iVar11 = *(int *)(pLVar1 + 0x10) + -1;
-      *(int *)(pLVar1 + 0x10) = iVar11;
-      if (iVar11 == 0) {
+      iVar6 = iVar6 + -1;
+      *(int *)(pLVar1 + 0x10) = iVar6;
+      if (iVar6 == 0) {
         *(int *)(pLVar1 + 0xc) = 0;
       }
     }
@@ -20040,11 +20093,11 @@ uint F_00459b00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   (*(int *)(gen_frame + 0x24)) = 0;
   (*(uint *)(gen_frame + 0x1c)) = uVar4;
   do {
-    iVar11 = *(int *)((*(undefined * PTR32 *)(gen_frame + 0x14)) + (*(int *)(gen_frame + 0x24)) * 0x754 + 0x980);
-    bVar14 = (*(uint *)(iVar11 + uVar4) & 1 << (bVar3 & 0x1f)) != 0;
+    iVar12 = *(int *)((*(undefined * PTR32 *)(gen_frame + 0x14)) + (*(int *)(gen_frame + 0x24)) * 0x754 + 0x980);
+    bVar14 = (*(uint *)(iVar12 + uVar4) & 1 << (bVar3 & 0x1f)) != 0;
     pLVar1 = (*(undefined * PTR32 *)(gen_frame + 0x14)) + (*(int *)(gen_frame + 0x24)) * 0x754 + 0x268;
     (*(undefined * PTR32 *)(gen_frame + 0x2c)) = pLVar1;
-    (*(int *)(gen_frame + 0xc)) = iVar11;
+    (*(int *)(gen_frame + 0xc)) = iVar12;
     (*(bool *)(gen_frame + 0x33)) = bVar14;
     if ((!bVar14) || ((ushort)(*(uint *)(gen_frame + 0x20)) != -1)) {
       if ((*(short *)(pLVar1 + 0x750) == 0) || (pLVar1[0x752] == (undefined1)0x0)) goto LAB_0045a007;
@@ -20055,7 +20108,7 @@ uint F_00459b00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
       uVar2 = *(ushort *)(pLVar1 + 0x700);
       if ((uint)uVar2 < (uint)(int)*(short *)(pLVar1 + 0x750)) {
         if (((ushort)(*(uint *)(gen_frame + 0x20)) == -1) ||
-           ((*((uint *)GEN_TOP((iVar11 + (((*(uint *)(gen_frame + 0x20)) & 0xffff) >> 5) * 4))) &
+           ((*((uint *)GEN_TOP((iVar12 + (((*(uint *)(gen_frame + 0x20)) & 0xffff) >> 5) * 4))) &
             1 << ((byte)((*(uint *)(gen_frame + 0x20)) & 0xffff) & 0x1f)) != 0)) {
           if (!bVar14) {
             if (uVar2 == 0) {
@@ -20081,17 +20134,17 @@ LAB_00459f39: ;
           (*(uint *)(gen_frame + 0x230)) = uVar4;
           (*(undefined4 *)(gen_frame + 0x234)) = (*(undefined4 *)(gen_frame + 0x1d8));
           F_0042cbc0(((undefined1 *)(gen_frame + 0x238)),((undefined1 *)(gen_frame + 0x1dc)));
-          puVar6 = (undefined4 *)F_004296a0(0x6c,0,0x192);
-          *puVar6 = *(undefined4 *)(pLVar1 + 0x730);
-          puVar6[1] = *(undefined4 *)(pLVar1 + 0x730);
-          puVar6[2] = *(undefined4 *)(pLVar1 + 0x730);
-          *(undefined2 *)(puVar6 + 0x1a) = 0;
-          if (puVar6 + 3 != (uint *)0x0) {
-            puVar6[3] = (*(uint *)(gen_frame + 0x230));
-            puVar6[4] = (*(undefined4 *)(gen_frame + 0x234));
-            F_0042cbc0(puVar6 + 5,((undefined1 *)(gen_frame + 0x238)));
+          puVar7 = (undefined4 *)F_004296a0(0x6c,0,0x192);
+          *puVar7 = *(undefined4 *)(pLVar1 + 0x730);
+          puVar7[1] = *(undefined4 *)(pLVar1 + 0x730);
+          puVar7[2] = *(undefined4 *)(pLVar1 + 0x730);
+          *(undefined2 *)(puVar7 + 0x1a) = 0;
+          if (puVar7 + 3 != (uint *)0x0) {
+            puVar7[3] = (*(uint *)(gen_frame + 0x230));
+            puVar7[4] = (*(undefined4 *)(gen_frame + 0x234));
+            F_0042cbc0(puVar7 + 5,((undefined1 *)(gen_frame + 0x238)));
           }
-          F_00488480(pLVar1 + 0x72c,((uint *)(gen_frame + 0x290)),puVar6,0);
+          F_00488480(pLVar1 + 0x72c,((uint *)(gen_frame + 0x290)),puVar7,0);
           F_0042c880(((undefined1 *)(gen_frame + 0x238)));
           F_0042c880(((undefined1 *)(gen_frame + 0x1dc)));
           F_0042aca0(pLVar1 + 0x54);
@@ -20107,59 +20160,59 @@ LAB_0045a007: ;
           *(uint *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x6e8) = (*(uint *)(gen_frame + 0x18));
         }
         else {
-          piVar10 = *(int * PTR32 *)((*(undefined * PTR32 *)(gen_frame + 0x14)) + 0x271c);
-          iVar11 = 0;
-          (*(int * PTR32 *)(gen_frame + 0x8)) = piVar10;
-          if (0 < (int)piVar10) {
-            iVar12 = *(int *)((*(undefined * PTR32 *)(gen_frame + 0x10)) + 0xc);
-            piVar7 = *(int * PTR32 *)(*(undefined * PTR32 *)(gen_frame + 0x10));
-            (*(int *)(gen_frame + 0x28)) = iVar12;
+          piVar11 = *(int * PTR32 *)((*(undefined * PTR32 *)(gen_frame + 0x14)) + 0x271c);
+          iVar12 = 0;
+          (*(int * PTR32 *)(gen_frame + 0x8)) = piVar11;
+          if (0 < (int)piVar11) {
+            iVar6 = *(int *)((*(undefined * PTR32 *)(gen_frame + 0x10)) + 0xc);
+            piVar8 = *(int * PTR32 *)(*(undefined * PTR32 *)(gen_frame + 0x10));
+            (*(int *)(gen_frame + 0x28)) = iVar6;
             do {
-              piVar8 = (int *)0x0;
-              if ((piVar7 != (int *)0x0) && ((undefined4 *)*piVar7 != (undefined4 *)0x0)) {
-                piVar8 = *(int * PTR32 *)*piVar7;
+              piVar9 = (int *)0x0;
+              if ((piVar8 != (int *)0x0) && ((undefined4 *)*piVar8 != (undefined4 *)0x0)) {
+                piVar9 = *(int * PTR32 *)*piVar8;
               }
-              uVar4 = iVar12 + iVar11;
-              if (((piVar8 == (int *)0x0) || ((int *)*piVar8 == (int *)0x0)) ||
-                 (piVar8 = *(int * PTR32 *)*piVar8, piVar8 == (int *)0x0)) {
-                iVar9 = 0;
+              uVar4 = iVar6 + iVar12;
+              if (((piVar9 == (int *)0x0) || ((int *)*piVar9 == (int *)0x0)) ||
+                 (piVar9 = *(int * PTR32 *)*piVar9, piVar9 == (int *)0x0)) {
+                iVar10 = 0;
               }
               else {
-                iVar9 = *piVar8;
+                iVar10 = *piVar9;
               }
-              if (*(uint *)(iVar9 + 8) <= uVar4) {
-                uVar4 = uVar4 - *(uint *)(iVar9 + 8);
+              if (*(uint *)(iVar10 + 8) <= uVar4) {
+                uVar4 = uVar4 - *(uint *)(iVar10 + 8);
               }
-              uVar2 = **((ushort * PTR32 *)GEN_TOP((*(int *)(iVar9 + 4) + uVar4 * 4)));
+              uVar2 = **((ushort * PTR32 *)GEN_TOP((*(int *)(iVar10 + 4) + uVar4 * 4)));
               if ((*((uint *)GEN_TOP((*(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x718) + (uint)(uVar2 >> 5) * 4))) &
                   1 << ((byte)uVar2 & 0x1f)) == 0) {
-                piVar10 = (int *)0x0;
-                if ((piVar7 != (int *)0x0) && ((undefined4 *)*piVar7 != (undefined4 *)0x0)) {
-                  piVar10 = *(int * PTR32 *)*piVar7;
+                piVar11 = (int *)0x0;
+                if ((piVar8 != (int *)0x0) && ((undefined4 *)*piVar8 != (undefined4 *)0x0)) {
+                  piVar11 = *(int * PTR32 *)*piVar8;
                 }
-                uVar4 = iVar12 + iVar11;
-                if (((piVar10 == (int *)0x0) || ((int *)*piVar10 == (int *)0x0)) ||
-                   (piVar10 = *(int * PTR32 *)*piVar10, piVar10 == (int *)0x0)) {
-                  iVar11 = 0;
+                uVar4 = iVar6 + iVar12;
+                if (((piVar11 == (int *)0x0) || ((int *)*piVar11 == (int *)0x0)) ||
+                   (piVar11 = *(int * PTR32 *)*piVar11, piVar11 == (int *)0x0)) {
+                  iVar12 = 0;
                 }
                 else {
-                  iVar11 = *piVar10;
+                  iVar12 = *piVar11;
                 }
-                if (*(uint *)(iVar11 + 8) <= uVar4) {
-                  uVar4 = uVar4 - *(uint *)(iVar11 + 8);
+                if (*(uint *)(iVar12 + 8) <= uVar4) {
+                  uVar4 = uVar4 - *(uint *)(iVar12 + 8);
                 }
-                iVar11 = *((int *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar11 + 4) + uVar4 * 4))) + 4)));
-                *(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x6e8) = iVar11;
-                if (*(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x73c) < iVar11) {
-                  *(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x73c) = iVar11;
+                iVar12 = *((int *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar12 + 4) + uVar4 * 4))) + 4)));
+                *(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x6e8) = iVar12;
+                if (*(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x73c) < iVar12) {
+                  *(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x73c) = iVar12;
                 }
-                if (*(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x744) < iVar11) {
-                  *(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x744) = iVar11;
+                if (*(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x744) < iVar12) {
+                  *(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x744) = iVar12;
                 }
                 break;
               }
-              iVar11 = iVar11 + 1;
-            } while (iVar11 < (int)piVar10);
+              iVar12 = iVar12 + 1;
+            } while (iVar12 < (int)piVar11);
           }
           if (*(short *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x6f6) != 0) {
             *(short *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x6f6) = *(short *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x6f6) + -1;
@@ -20172,19 +20225,62 @@ LAB_0045a007: ;
         if (!bVar14) {
           (*(int *)(gen_frame + 0x28)) = *(int *)((*(undefined * PTR32 *)(gen_frame + 0x14)) + 0x271c);
           uVar4 = *(uint *)((*(undefined * PTR32 *)(gen_frame + 0x10)) + 0xc);
-          piVar10 = *(int * PTR32 *)(*(undefined * PTR32 *)(gen_frame + 0x10));
-          (*(int * PTR32 *)(gen_frame + 0x8)) = piVar10;
-          if (piVar10 == (int *)0x0) {
+          piVar11 = *(int * PTR32 *)(*(undefined * PTR32 *)(gen_frame + 0x10));
+          (*(int * PTR32 *)(gen_frame + 0x8)) = piVar11;
+          if (piVar11 == (int *)0x0) {
+            iVar6 = 0;
+          }
+          else {
+            iVar6 = *piVar11;
+          }
+          uVar13 = uVar4;
+          if (*(uint *)(iVar6 + 8) <= uVar4) {
+            uVar13 = uVar4 - *(uint *)(iVar6 + 8);
+          }
+          iVar6 = *(int *)(pLVar1 + 0x73c) -
+                  *((int *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar6 + 4) + uVar13 * 4))) + 4)));
+          if (iVar6 < 0) {
+            iVar6 = 0;
+          }
+          else {
+            iVar6 = iVar6 + 1;
+          }
+          for (; iVar6 < *(int *)((*(undefined * PTR32 *)(gen_frame + 0x14)) + 0x271c); iVar6 = iVar6 + 1) {
+            piVar8 = (int *)0x0;
+            if ((piVar11 != (int *)0x0) && ((undefined4 *)*piVar11 != (undefined4 *)0x0)) {
+              piVar8 = *(int * PTR32 *)*piVar11;
+            }
+            uVar13 = uVar4 + iVar6;
+            if (((piVar8 == (int *)0x0) || ((int *)*piVar8 == (int *)0x0)) ||
+               (piVar8 = *(int * PTR32 *)*piVar8, piVar8 == (int *)0x0)) {
+              iVar10 = 0;
+            }
+            else {
+              iVar10 = *piVar8;
+            }
+            if (*(uint *)(iVar10 + 8) <= uVar13) {
+              uVar13 = uVar13 - *(uint *)(iVar10 + 8);
+            }
+            uVar2 = **((ushort * PTR32 *)GEN_TOP((*(int *)(iVar10 + 4) + uVar13 * 4)));
+            if ((*((uint *)GEN_TOP((iVar12 + (uint)(uVar2 >> 5) * 4))) & 1 << ((byte)uVar2 & 0x1f)) == 0) {
+              uVar4 = F_00486d00((*(undefined * PTR32 *)(gen_frame + 0x10)),iVar6);
+              *(undefined4 *)(pLVar1 + 0x73c) = *(undefined4 *)(uVar4 + 4);
+              break;
+            }
+          }
+          piVar11 = *(int * PTR32 *)(*(undefined * PTR32 *)(gen_frame + 0x10));
+          uVar4 = *(uint *)((*(undefined * PTR32 *)(gen_frame + 0x10)) + 0xc);
+          if (piVar11 == (int *)0x0) {
             iVar12 = 0;
           }
           else {
-            iVar12 = *piVar10;
+            iVar12 = *piVar11;
           }
           uVar13 = uVar4;
           if (*(uint *)(iVar12 + 8) <= uVar4) {
             uVar13 = uVar4 - *(uint *)(iVar12 + 8);
           }
-          iVar12 = *(int *)(pLVar1 + 0x73c) -
+          iVar12 = *(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x744) -
                    *((int *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar12 + 4) + uVar13 * 4))) + 4)));
           if (iVar12 < 0) {
             iVar12 = 0;
@@ -20192,84 +20288,41 @@ LAB_0045a007: ;
           else {
             iVar12 = iVar12 + 1;
           }
-          for (; iVar12 < *(int *)((*(undefined * PTR32 *)(gen_frame + 0x14)) + 0x271c); iVar12 = iVar12 + 1) {
-            piVar7 = (int *)0x0;
-            if ((piVar10 != (int *)0x0) && ((undefined4 *)*piVar10 != (undefined4 *)0x0)) {
-              piVar7 = *(int * PTR32 *)*piVar10;
+          for (; iVar12 < (*(int *)(gen_frame + 0x28)); iVar12 = iVar12 + 1) {
+            piVar8 = (int *)0x0;
+            if ((piVar11 != (int *)0x0) && ((undefined4 *)*piVar11 != (undefined4 *)0x0)) {
+              piVar8 = *(int * PTR32 *)*piVar11;
             }
             uVar13 = uVar4 + iVar12;
-            if (((piVar7 == (int *)0x0) || ((int *)*piVar7 == (int *)0x0)) ||
-               (piVar7 = *(int * PTR32 *)*piVar7, piVar7 == (int *)0x0)) {
-              iVar9 = 0;
+            if (((piVar8 == (int *)0x0) || ((int *)*piVar8 == (int *)0x0)) ||
+               (piVar8 = *(int * PTR32 *)*piVar8, piVar8 == (int *)0x0)) {
+              iVar6 = 0;
             }
             else {
-              iVar9 = *piVar7;
+              iVar6 = *piVar8;
             }
-            if (*(uint *)(iVar9 + 8) <= uVar13) {
-              uVar13 = uVar13 - *(uint *)(iVar9 + 8);
+            if (*(uint *)(iVar6 + 8) <= uVar13) {
+              uVar13 = uVar13 - *(uint *)(iVar6 + 8);
             }
-            uVar2 = **((ushort * PTR32 *)GEN_TOP((*(int *)(iVar9 + 4) + uVar13 * 4)));
-            if ((*((uint *)GEN_TOP((iVar11 + (uint)(uVar2 >> 5) * 4))) & 1 << ((byte)uVar2 & 0x1f)) == 0) {
-              uVar4 = F_00486d00((*(undefined * PTR32 *)(gen_frame + 0x10)),iVar12);
-              *(undefined4 *)(pLVar1 + 0x73c) = *(undefined4 *)(uVar4 + 4);
-              break;
-            }
-          }
-          piVar10 = *(int * PTR32 *)(*(undefined * PTR32 *)(gen_frame + 0x10));
-          uVar4 = *(uint *)((*(undefined * PTR32 *)(gen_frame + 0x10)) + 0xc);
-          if (piVar10 == (int *)0x0) {
-            iVar11 = 0;
-          }
-          else {
-            iVar11 = *piVar10;
-          }
-          uVar13 = uVar4;
-          if (*(uint *)(iVar11 + 8) <= uVar4) {
-            uVar13 = uVar4 - *(uint *)(iVar11 + 8);
-          }
-          iVar11 = *(int *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x744) -
-                   *((int *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar11 + 4) + uVar13 * 4))) + 4)));
-          if (iVar11 < 0) {
-            iVar11 = 0;
-          }
-          else {
-            iVar11 = iVar11 + 1;
-          }
-          for (; iVar11 < (*(int *)(gen_frame + 0x28)); iVar11 = iVar11 + 1) {
-            piVar7 = (int *)0x0;
-            if ((piVar10 != (int *)0x0) && ((undefined4 *)*piVar10 != (undefined4 *)0x0)) {
-              piVar7 = *(int * PTR32 *)*piVar10;
-            }
-            uVar13 = uVar4 + iVar11;
-            if (((piVar7 == (int *)0x0) || ((int *)*piVar7 == (int *)0x0)) ||
-               (piVar7 = *(int * PTR32 *)*piVar7, piVar7 == (int *)0x0)) {
-              iVar12 = 0;
-            }
-            else {
-              iVar12 = *piVar7;
-            }
-            if (*(uint *)(iVar12 + 8) <= uVar13) {
-              uVar13 = uVar13 - *(uint *)(iVar12 + 8);
-            }
-            uVar2 = **((ushort * PTR32 *)GEN_TOP((*(int *)(iVar12 + 4) + uVar13 * 4)));
+            uVar2 = **((ushort * PTR32 *)GEN_TOP((*(int *)(iVar6 + 4) + uVar13 * 4)));
             if ((*((uint *)GEN_TOP(((*(int *)(gen_frame + 0xc)) + (uint)(uVar2 >> 5) * 4))) & 1 << ((byte)uVar2 & 0x1f)) == 0) {
-              piVar7 = (int *)0x0;
-              if ((piVar10 != (int *)0x0) && ((undefined4 *)*piVar10 != (undefined4 *)0x0)) {
-                piVar7 = *(int * PTR32 *)*piVar10;
+              piVar8 = (int *)0x0;
+              if ((piVar11 != (int *)0x0) && ((undefined4 *)*piVar11 != (undefined4 *)0x0)) {
+                piVar8 = *(int * PTR32 *)*piVar11;
               }
-              uVar4 = uVar4 + iVar11;
-              if (((piVar7 == (int *)0x0) || ((int *)*piVar7 == (int *)0x0)) ||
-                 (piVar10 = *(int * PTR32 *)*piVar7, piVar10 == (int *)0x0)) {
-                iVar11 = 0;
+              uVar4 = uVar4 + iVar12;
+              if (((piVar8 == (int *)0x0) || ((int *)*piVar8 == (int *)0x0)) ||
+                 (piVar11 = *(int * PTR32 *)*piVar8, piVar11 == (int *)0x0)) {
+                iVar12 = 0;
               }
               else {
-                iVar11 = *piVar10;
+                iVar12 = *piVar11;
               }
-              if (*(uint *)(iVar11 + 8) <= uVar4) {
-                uVar4 = uVar4 - *(uint *)(iVar11 + 8);
+              if (*(uint *)(iVar12 + 8) <= uVar4) {
+                uVar4 = uVar4 - *(uint *)(iVar12 + 8);
               }
               *(undefined4 *)((*(undefined * PTR32 *)(gen_frame + 0x2c)) + 0x744) =
-                   *((undefined4 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar11 + 4) + uVar4 * 4))) + 4)));
+                   *((undefined4 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar12 + 4) + uVar4 * 4))) + 4)));
               break;
             }
           }
@@ -20277,7 +20330,7 @@ LAB_0045a007: ;
           goto LAB_00459f39;
         }
         if ((ushort)(*(uint *)(gen_frame + 0x20)) != -1) {
-          if ((*((uint *)GEN_TOP((iVar11 + (((*(uint *)(gen_frame + 0x20)) & 0xffff) >> 5) * 4))) &
+          if ((*((uint *)GEN_TOP((iVar12 + (((*(uint *)(gen_frame + 0x20)) & 0xffff) >> 5) * 4))) &
               1 << ((byte)((*(uint *)(gen_frame + 0x20)) & 0xffff) & 0x1f)) == 0) {
             F_00489fa0(pLVar1 + 0x72c,&(*(undefined4 *)(gen_frame + 0x4)));
             if (*(uint *)(pLVar1 + 0x734) < (uint)(int)*(short *)(pLVar1 + 0x750)) {
@@ -20295,9 +20348,9 @@ LAB_0045a426: ;
       uVar4 = (*(uint *)(gen_frame + 0x1c));
     }
 LAB_0045a091: ;
-    iVar11 = (*(int *)(gen_frame + 0x24)) + 1;
-    (*(int *)(gen_frame + 0x24)) = iVar11;
-    if (3 < iVar11) {
+    iVar12 = (*(int *)(gen_frame + 0x24)) + 1;
+    (*(int *)(gen_frame + 0x24)) = iVar12;
+    if (3 < iVar12) {
       F_0042c880(((undefined1 *)(gen_frame + 0x184)));
       uVar4 = (*(uint *)(gen_frame + 0x18));
       F_00c47745(((uint *)(gen_frame + 0x290))[2] ^ (uint)(uint)(gen_frame + 0x29c));
@@ -20579,52 +20632,53 @@ uint F_0045aa20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   uint * param_4 = (uint *)(uintptr_t)gen_a4;
   __declspec(align(16)) undefined1 gen_frame[0x170];
   byte bVar1;
-  uint uVar2;
-  undefined1 * puVar3;
-  int * piVar4;
-  byte * pbVar5;
-  char * pcVar6;
-  uint uVar7;
-  undefined * pvVar8;
-  uint * puVar9;
-  int iVar10;
+  int iVar2;
+  uint uVar3;
+  undefined1 * puVar4;
+  int * piVar5;
+  byte * pbVar6;
+  char * pcVar7;
+  uint uVar8;
+  undefined * pvVar9;
+  uint * puVar10;
   int iVar11;
-  uint uVar12;
-  undefined1 * puVar13;
+  int iVar12;
+  uint uVar13;
+  undefined1 * puVar14;
   
   (*(uint *)(gen_frame + 0x168)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x16c);
   (*(int * PTR32 *)(gen_frame + 0xc)) = param_2;
-  piVar4 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0xc))))(*(int * PTR32 *)(this + 4))));
-  if (((*piVar4 != 4) &&
-      (piVar4 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0xc))))(*(int * PTR32 *)(this + 4)))), *piVar4 != 5)
+  piVar5 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0xc))))(*(int * PTR32 *)(this + 4))));
+  if (((*piVar5 != 4) &&
+      (piVar5 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0xc))))(*(int * PTR32 *)(this + 4)))), *piVar5 != 5)
       ) || ((*(char *)(gen_frame + 0x17)) = '\x01', (short)*param_4 != 0x68)) {
     (*(char *)(gen_frame + 0x17)) = '\0';
   }
   if ((short)*param_4 != 0xcf) {
-    pbVar5 = (byte *)F_00cb0910(param_3,10);
-    if ((*(int *)(this + 0x820) != 0) && ((int)(uint)*pbVar5 < *(int *)(this + 0x820))) {
+    pbVar6 = (byte *)F_00cb0910(param_3,10);
+    if ((*(int *)(this + 0x820) != 0) && ((int)(uint)*pbVar6 < *(int *)(this + 0x820))) {
       F_00c47745((*(uint *)(gen_frame + 0x168)) ^ (uint)(uint)(gen_frame + 0x16c));
       return 10;
     }
   }
-  pbVar5 = (byte *)F_00cb0910(param_3,1);
-  *(ushort *)((int)param_4 + 2) = (ushort)*pbVar5;
+  pbVar6 = (byte *)F_00cb0910(param_3,1);
+  *(ushort *)((int)param_4 + 2) = (ushort)*pbVar6;
   F_0042b630(((undefined1 *)(gen_frame + 0xc0)));
-  uVar12 = 0;
+  uVar13 = 0;
   (*(uint *)(gen_frame + 0x10)) = 0;
-  puVar9 = param_4;
+  puVar10 = param_4;
   do {
-    puVar9 = puVar9 + 1;
+    puVar10 = puVar10 + 1;
     if (((*(uint *)(gen_frame + 0x10)) < *(ushort *)((int)param_4 + 2)) &&
        ((*(uint *)(gen_frame + 0x10)) + 1 < (uint)(((*(int * PTR32 *)(gen_frame + 0xc))[1] - *(*(int * PTR32 *)(gen_frame + 0xc))) / 0x54))) {
       (*(uint *)(gen_frame + 0x4)) = 0xffffffff;
-      pcVar6 = (char *)F_00cb0910(param_3,(*(uint *)(gen_frame + 0x10)) + 2);
-      if (*pcVar6 == -1) {
+      pcVar7 = (char *)F_00cb0910(param_3,(*(uint *)(gen_frame + 0x10)) + 2);
+      if (*pcVar7 == -1) {
         (*(char *)(gen_frame + 0x16)) = '\0';
-        F_0042ccf0(((undefined1 *)(gen_frame + 0xc0)),*(*(int * PTR32 *)(gen_frame + 0xc)) + 0x54 + uVar12);
+        F_0042ccf0(((undefined1 *)(gen_frame + 0xc0)),*(*(int * PTR32 *)(gen_frame + 0xc)) + 0x54 + uVar13);
         F_0042cc20(((undefined1 *)(gen_frame + 0x114)),&REFG(undefined, 0x10903b8),REFG(undefined4, 0x108cc50));
-        uVar7 = F_0042d5d0(((undefined1 *)(gen_frame + 0xc0)),((undefined1 *)(gen_frame + 0x114)),REFG(undefined4, 0x108cc50));
-        (*(bool *)(gen_frame + 0xb)) = uVar7 != REFG(undefined4, 0x108cc50);
+        uVar8 = F_0042d5d0(((undefined1 *)(gen_frame + 0xc0)),((undefined1 *)(gen_frame + 0x114)),REFG(undefined4, 0x108cc50));
+        (*(bool *)(gen_frame + 0xb)) = uVar8 != REFG(undefined4, 0x108cc50);
         F_0042c880(((undefined1 *)(gen_frame + 0x114)));
         if ((*(bool *)(gen_frame + 0xb)) != false) {
           F_0042cc20(((undefined1 *)(gen_frame + 0x18)),&REFG(undefined, 0x108d41e),REFG(undefined4, 0x108cc50));
@@ -20633,99 +20687,100 @@ uint F_0045aa20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
           F_0042c880(((undefined1 *)(gen_frame + 0x114)));
           F_0042c880(((undefined1 *)(gen_frame + 0x18)));
           F_0042cc20(((undefined1 *)(gen_frame + 0x18)),&REFG(undefined, 0x10903c0),REFG(undefined4, 0x108cc50));
-          uVar7 = F_0042c910(((undefined1 *)(gen_frame + 0xc0)),((undefined1 *)(gen_frame + 0x18)),REFG(undefined4, 0x108cc50));
-          if (uVar7 == REFG(undefined4, 0x108cc50)) {
+          uVar8 = F_0042c910(((undefined1 *)(gen_frame + 0xc0)),((undefined1 *)(gen_frame + 0x18)),REFG(undefined4, 0x108cc50));
+          if (uVar8 == REFG(undefined4, 0x108cc50)) {
             F_0042aca0(((undefined1 *)(gen_frame + 0xc0)));
           }
           else {
-            F_0042b9e0(((undefined1 *)(gen_frame + 0xc0)),uVar7 + 1,REFG(undefined4, 0x108cc50));
+            F_0042b9e0(((undefined1 *)(gen_frame + 0xc0)),uVar8 + 1,REFG(undefined4, 0x108cc50));
           }
           F_0042c880(((undefined1 *)(gen_frame + 0x18)));
           (*(char *)(gen_frame + 0x16)) = '\x01';
         }
-        uVar7 = F_00abe5d0(this,((undefined1 *)(gen_frame + 0xc0)),0xffffffff,&(*(uint *)(gen_frame + 0x4)));
-        *puVar9 = uVar7;
-        if ((-1 < (int)uVar7) && ((*(char *)(gen_frame + 0x16)) != '\0')) {
-          *puVar9 = uVar7 + 1000000;
+        uVar8 = F_00abe5d0(this,((undefined1 *)(gen_frame + 0xc0)),0xffffffff,&(*(uint *)(gen_frame + 0x4)));
+        *puVar10 = uVar8;
+        if ((-1 < (int)uVar8) && ((*(char *)(gen_frame + 0x16)) != '\0')) {
+          *puVar10 = uVar8 + 1000000;
         }
       }
       else {
-        uVar7 = F_00abe5d0(this,*(*(int * PTR32 *)(gen_frame + 0xc)) + 0x54 + uVar12,(int)*pcVar6,&(*(uint *)(gen_frame + 0x4)));
-        *puVar9 = uVar7;
+        uVar8 = F_00abe5d0(this,*(*(int * PTR32 *)(gen_frame + 0xc)) + 0x54 + uVar13,(int)*pcVar7,&(*(uint *)(gen_frame + 0x4)));
+        *puVar10 = uVar8;
       }
     }
     else {
-      *puVar9 = 0xffffffff;
+      *puVar10 = 0xffffffff;
     }
-    uVar12 = uVar12 + 0x54;
+    uVar13 = uVar13 + 0x54;
     (*(uint *)(gen_frame + 0x10)) = (*(uint *)(gen_frame + 0x10)) + 1;
-  } while (uVar12 < 0xfc);
-  pbVar5 = (byte *)F_00cb0910(param_3,0);
-  bVar1 = *pbVar5;
+  } while (uVar13 < 0xfc);
+  pbVar6 = (byte *)F_00cb0910(param_3,0);
+  bVar1 = *pbVar6;
   F_0042b630(((undefined1 *)(gen_frame + 0x6c)));
-  uVar12 = F_0042a990(param_1);
-  uVar7 = F_00abde90(uVar12,((undefined1 *)(gen_frame + 0x6c)));
-  iVar11 = uVar12 + uVar7;
-  (*(uint *)(gen_frame + 0x4)) = uVar7;
+  uVar13 = F_0042a990(param_1);
+  uVar8 = F_00abde90(uVar13,((undefined1 *)(gen_frame + 0x6c)));
+  iVar12 = uVar13 + uVar8;
+  (*(uint *)(gen_frame + 0x4)) = uVar8;
   (*(uint *)(gen_frame + 0x0)) = 1;
   (*(uint *)(gen_frame + 0x10)) = 1;
   if (1 < bVar1) {
-    iVar10 = 0x54;
+    iVar11 = 0x54;
     do {
-      piVar4 = (*(int * PTR32 *)(gen_frame + 0xc));
+      piVar5 = (*(int * PTR32 *)(gen_frame + 0xc));
       if ((uint)(((*(int * PTR32 *)(gen_frame + 0xc))[1] - *(*(int * PTR32 *)(gen_frame + 0xc))) / 0x54) <= (*(uint *)(gen_frame + 0x10))) break;
-      uVar12 = F_00abde90(iVar11,((undefined1 *)(gen_frame + 0x6c)));
-      (*(uint *)(gen_frame + 0x4)) = (*(uint *)(gen_frame + 0x4)) + uVar12;
-      iVar11 = iVar11 + uVar12;
-      uVar12 = param_4[5];
-      puVar9 = param_4 + 4;
-      uVar7 = *piVar4 + iVar10;
-      if ((uVar7 < uVar12) && (uVar2 = *puVar9, uVar2 <= uVar7)) {
-        if (uVar12 == param_4[6]) {
-          F_00488ca0(puVar9,1);
+      uVar13 = F_00abde90(iVar12,((undefined1 *)(gen_frame + 0x6c)));
+      iVar2 = *piVar5;
+      (*(uint *)(gen_frame + 0x4)) = (*(uint *)(gen_frame + 0x4)) + uVar13;
+      iVar12 = iVar12 + uVar13;
+      uVar13 = param_4[5];
+      puVar10 = param_4 + 4;
+      uVar8 = iVar2 + iVar11;
+      if ((uVar8 < uVar13) && (uVar3 = *puVar10, uVar3 <= uVar8)) {
+        if (uVar13 == param_4[6]) {
+          F_00488ca0(puVar10,1);
         }
-        pvVar8 = (undefined *)param_4[5];
-        if (pvVar8 != (undefined *)0x0) {
-          uVar7 = ((int)(uVar7 - uVar2) / 0x54) * 0x54 + *puVar9;
+        pvVar9 = (undefined *)param_4[5];
+        if (pvVar9 != (undefined *)0x0) {
+          uVar8 = ((int)(uVar8 - uVar3) / 0x54) * 0x54 + *puVar10;
 LAB_0045ae0d: ;
-          F_0042cbc0(pvVar8,uVar7);
+          F_0042cbc0(pvVar9,uVar8);
         }
       }
       else {
-        if (uVar12 == param_4[6]) {
-          F_00488ca0(puVar9,1);
+        if (uVar13 == param_4[6]) {
+          F_00488ca0(puVar10,1);
         }
-        pvVar8 = (undefined *)param_4[5];
-        if (pvVar8 != (undefined *)0x0) goto LAB_0045ae0d;
+        pvVar9 = (undefined *)param_4[5];
+        if (pvVar9 != (undefined *)0x0) goto LAB_0045ae0d;
       }
       param_4[5] = param_4[5] + 0x54;
-      pcVar6 = (char *)F_0042a7e0(*(*(int * PTR32 *)(gen_frame + 0xc)) + iVar10,0);
-      if (*pcVar6 == '<') {
+      pcVar7 = (char *)F_0042a7e0(*(*(int * PTR32 *)(gen_frame + 0xc)) + iVar11,0);
+      if (*pcVar7 == '<') {
 LAB_0045aebc: ;
         (*(uint *)(gen_frame + 0x10)) = (*(uint *)(gen_frame + 0x10)) + 1;
-        iVar10 = iVar10 + 0x54;
+        iVar11 = iVar11 + 0x54;
       }
       else if ((*(char *)(gen_frame + 0x17)) != '\0') {
         F_0042cc20(((undefined1 *)(gen_frame + 0x114)),&REFG(undefined, 0x108d41f),REFG(undefined4, 0x108cc50));
-        puVar13 = (undefined1 *)param_4[5];
-        if ((((undefined1 *)(gen_frame + 0x114)) < puVar13) && (puVar3 = (undefined1 *)*puVar9, puVar3 <= ((undefined1 *)(gen_frame + 0x114)))) {
-          if (puVar13 == (undefined1 *)param_4[6]) {
-            F_00488ca0(puVar9,1);
+        puVar14 = (undefined1 *)param_4[5];
+        if ((((undefined1 *)(gen_frame + 0x114)) < puVar14) && (puVar4 = (undefined1 *)*puVar10, puVar4 <= ((undefined1 *)(gen_frame + 0x114)))) {
+          if (puVar14 == (undefined1 *)param_4[6]) {
+            F_00488ca0(puVar10,1);
           }
-          pvVar8 = (undefined *)param_4[5];
-          if (pvVar8 != (undefined *)0x0) {
-            puVar13 = ((undefined1 *)GEN_TOP(((((int)((undefined1 *)(gen_frame + 0x114)) - (int)puVar3) / 0x54) * 0x54 + *puVar9)));
+          pvVar9 = (undefined *)param_4[5];
+          if (pvVar9 != (undefined *)0x0) {
+            puVar14 = ((undefined1 *)GEN_TOP(((((int)((undefined1 *)(gen_frame + 0x114)) - (int)puVar4) / 0x54) * 0x54 + *puVar10)));
 LAB_0045aeab: ;
-            F_0042cbc0(pvVar8,puVar13);
+            F_0042cbc0(pvVar9,puVar14);
           }
         }
         else {
-          if (puVar13 == (undefined1 *)param_4[6]) {
-            F_00488ca0(puVar9,1);
+          if (puVar14 == (undefined1 *)param_4[6]) {
+            F_00488ca0(puVar10,1);
           }
-          pvVar8 = (undefined *)param_4[5];
-          if (pvVar8 != (undefined *)0x0) {
-            puVar13 = ((undefined1 *)(gen_frame + 0x114));
+          pvVar9 = (undefined *)param_4[5];
+          if (pvVar9 != (undefined *)0x0) {
+            puVar14 = ((undefined1 *)(gen_frame + 0x114));
             goto LAB_0045aeab;
           }
         }
@@ -20734,34 +20789,34 @@ LAB_0045aeab: ;
         goto LAB_0045aebc;
       }
       (*(uint *)(gen_frame + 0x0)) = (*(uint *)(gen_frame + 0x0)) + 1;
-      uVar12 = (*(uint *)(gen_frame + 0x10)) + 1;
-      iVar10 = iVar10 + 0x54;
-      (*(uint *)(gen_frame + 0x10)) = uVar12;
-    } while (uVar12 < bVar1);
+      uVar13 = (*(uint *)(gen_frame + 0x10)) + 1;
+      iVar11 = iVar11 + 0x54;
+      (*(uint *)(gen_frame + 0x10)) = uVar13;
+    } while (uVar13 < bVar1);
   }
   if ((uint)(((*(int * PTR32 *)(gen_frame + 0xc))[1] - *(*(int * PTR32 *)(gen_frame + 0xc))) / 0x54) <= (*(uint *)(gen_frame + 0x0))) goto LAB_0045afb8;
-  uVar12 = F_0042d2c0(param_1,((undefined1 *)(gen_frame + 0x18)),(*(uint *)(gen_frame + 0x4)),REFG(undefined4, 0x108cc50));
-  F_0042ccf0(((undefined1 *)(gen_frame + 0x6c)),uVar12);
+  uVar13 = F_0042d2c0(param_1,((undefined1 *)(gen_frame + 0x18)),(*(uint *)(gen_frame + 0x4)),REFG(undefined4, 0x108cc50));
+  F_0042ccf0(((undefined1 *)(gen_frame + 0x6c)),uVar13);
   F_0042c880(((undefined1 *)(gen_frame + 0x18)));
-  puVar13 = (undefined1 *)param_4[5];
-  if ((((undefined1 *)(gen_frame + 0x6c)) < puVar13) && (puVar3 = (undefined1 *)param_4[4], puVar3 <= ((undefined1 *)(gen_frame + 0x6c)))) {
-    if (puVar13 == (undefined1 *)param_4[6]) {
+  puVar14 = (undefined1 *)param_4[5];
+  if ((((undefined1 *)(gen_frame + 0x6c)) < puVar14) && (puVar4 = (undefined1 *)param_4[4], puVar4 <= ((undefined1 *)(gen_frame + 0x6c)))) {
+    if (puVar14 == (undefined1 *)param_4[6]) {
       F_00488ca0(param_4 + 4,1);
     }
-    pvVar8 = (undefined *)param_4[5];
-    if (pvVar8 != (undefined *)0x0) {
-      puVar13 = ((undefined1 *)GEN_TOP(((((int)((undefined1 *)(gen_frame + 0x6c)) - (int)puVar3) / 0x54) * 0x54 + param_4[4])));
+    pvVar9 = (undefined *)param_4[5];
+    if (pvVar9 != (undefined *)0x0) {
+      puVar14 = ((undefined1 *)GEN_TOP(((((int)((undefined1 *)(gen_frame + 0x6c)) - (int)puVar4) / 0x54) * 0x54 + param_4[4])));
 LAB_0045afaf: ;
-      F_0042cbc0(pvVar8,puVar13);
+      F_0042cbc0(pvVar9,puVar14);
     }
   }
   else {
-    if (puVar13 == (undefined1 *)param_4[6]) {
+    if (puVar14 == (undefined1 *)param_4[6]) {
       F_00488ca0(param_4 + 4,1);
     }
-    pvVar8 = (undefined *)param_4[5];
-    if (pvVar8 != (undefined *)0x0) {
-      puVar13 = ((undefined1 *)(gen_frame + 0x6c));
+    pvVar9 = (undefined *)param_4[5];
+    if (pvVar9 != (undefined *)0x0) {
+      puVar14 = ((undefined1 *)(gen_frame + 0x6c));
       goto LAB_0045afaf;
     }
   }
@@ -23026,36 +23081,38 @@ uint F_0045dcb0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int param_1 = (int)gen_a1;
   __declspec(align(16)) undefined1 gen_frame[0x80];
-  uint uVar1;
+  undefined4 uVar1;
   uint uVar2;
-  ulonglong uVar3;
+  uint uVar3;
+  ulonglong uVar4;
   
   (*(uint *)(gen_frame + 0x78)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x7c);
   (*(int *)(gen_frame + 0x10)) = param_1;
-  uVar2 = *(uint *)((int)this + 0xc7c) & 0xffff | *(int *)((int)this + 0xc78) << 0x10;
-  (*(uint *)(gen_frame + 0x8)) = uVar2;
+  uVar3 = *(uint *)((int)this + 0xc7c) & 0xffff | *(int *)((int)this + 0xc78) << 0x10;
+  (*(uint *)(gen_frame + 0x8)) = uVar3;
   F_004847d0((undefined *)((int)this + 0xcd8),&(*(int *)(gen_frame + 0xc)),&(*(uint *)(gen_frame + 0x8)));
   if ((*(int *)(gen_frame + 0xc)) != *(int *)((int)this + 0xcdc)) {
-    uVar2 = F_0045d320(((undefined1 *)(gen_frame + 0x24)),(*(int *)(gen_frame + 0x10)) + 0xa8);
-    F_0042ccf0((undefined *)((*(int *)(gen_frame + 0xc)) + 0x18),uVar2);
-    uVar3 = F_0042c880(((undefined1 *)(gen_frame + 0x24)));
+    uVar3 = F_0045d320(((undefined1 *)(gen_frame + 0x24)),(*(int *)(gen_frame + 0x10)) + 0xa8);
+    F_0042ccf0((undefined *)((*(int *)(gen_frame + 0xc)) + 0x18),uVar3);
+    uVar4 = F_0042c880(((undefined1 *)(gen_frame + 0x24)));
     F_00c47745((*(uint *)(gen_frame + 0x78)) ^ (uint)(uint)(gen_frame + 0x7c));
-    return (uint)uVar3;
+    return (uint)uVar4;
   }
-  uVar1 = F_0045d320(((undefined1 *)(gen_frame + 0x24)),(*(int *)(gen_frame + 0x10)) + 0xa8);
-  F_0042ccf0((undefined *)((int)this + 0xc80),uVar1);
+  uVar2 = F_0045d320(((undefined1 *)(gen_frame + 0x24)),(*(int *)(gen_frame + 0x10)) + 0xa8);
+  F_0042ccf0((undefined *)((int)this + 0xc80),uVar2);
   F_0042c880(((undefined1 *)(gen_frame + 0x24)));
   *(undefined1 *)((int)this + 0xcd4) = 1;
+  uVar1 = *(undefined4 *)((int)this + 0xc78);
   (*(undefined4 *)(gen_frame + 0x1c)) = *(undefined4 *)((int)this + 0xc7c);
-  (*(uint *)(gen_frame + 0x14)) = uVar2;
-  (*(undefined4 *)(gen_frame + 0x18)) = *(undefined4 *)((int)this + 0xc78);
+  (*(uint *)(gen_frame + 0x14)) = uVar3;
+  (*(undefined4 *)(gen_frame + 0x18)) = uVar1;
   F_0042cbc0(((undefined1 *)(gen_frame + 0x20)),(int)this + 0xc80);
   (*(undefined1 *)(gen_frame + 0x74)) = *(undefined1 *)((int)this + 0xcd4);
   F_00489640((undefined *)((int)this + 0xcd8),((undefined1 *)(gen_frame + 0x4)),&(*(uint *)(gen_frame + 0x14)));
-  uVar3 = F_0042c880(((undefined1 *)(gen_frame + 0x20)));
+  uVar4 = F_0042c880(((undefined1 *)(gen_frame + 0x20)));
   *(undefined1 *)((int)this + 0xcd4) = 0;
   F_00c47745((*(uint *)(gen_frame + 0x78)) ^ (uint)(uint)(gen_frame + 0x7c));
-  return (uint)uVar3;
+  return (uint)uVar4;
 }
 
 /* ref: FUN_0045dde0 */
@@ -24315,14 +24372,15 @@ byte F_0045f7f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   int param_3 = (int)gen_a3;
   undefined4 param_4 = (undefined4)gen_a4;
   __declspec(align(16)) undefined1 gen_frame[0xf0];
-  uint uVar1;
-  char * pcVar2;
-  undefined1 * puVar3;
+  char cVar1;
+  uint uVar2;
+  char * pcVar3;
+  undefined1 * puVar4;
   undefined4 * this_00;
-  int iVar4;
+  int iVar5;
   undefined * this_01;
-  float fVar5;
-  undefined4 uVar6;
+  float fVar6;
+  undefined4 uVar7;
   
   (*(uint *)(gen_frame + 0xe8)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xec);
   (*(undefined * PTR32 *)(gen_frame + 0x28)) = this;
@@ -24344,58 +24402,59 @@ byte F_0045f7f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
     F_00ada1b0(((undefined1 *)(gen_frame + 0x40)),((undefined1 *)(gen_frame + 0x94)),&(*(int *)(gen_frame + 0x2c)));
     F_0042c880(((undefined1 *)(gen_frame + 0x40)));
     F_0042c880(((undefined1 *)(gen_frame + 0x94)));
-    iVar4 = (*(int *)(gen_frame + 0x30)) - (*(int *)(gen_frame + 0x2c)) >> 0x1f;
+    iVar5 = (*(int *)(gen_frame + 0x30)) - (*(int *)(gen_frame + 0x2c)) >> 0x1f;
     this_01 = (undefined *)0x0;
     (*(uint *)(gen_frame + 0x3c)) = 0;
-    if (((*(int *)(gen_frame + 0x30)) - (*(int *)(gen_frame + 0x2c))) / 0x54 + iVar4 != iVar4) {
-      iVar4 = 0;
+    if (((*(int *)(gen_frame + 0x30)) - (*(int *)(gen_frame + 0x2c))) / 0x54 + iVar5 != iVar5) {
+      iVar5 = 0;
       do {
-        uVar1 = F_0042b790((undefined *)(iVar4 + (*(int *)(gen_frame + 0x2c))));
-        if (2 < uVar1) {
-          pcVar2 = (char *)F_0042a7f0((*(int *)(gen_frame + 0x2c)) + iVar4,0);
-          if (*pcVar2 == 'n') {
-            uVar6 = REFG(undefined4, 0x108cc50);
-            uVar1 = F_0042a7f0(iVar4 + (*(int *)(gen_frame + 0x2c)),2);
-            uVar1 = F_0042cc20(((undefined1 *)(gen_frame + 0x94)),uVar1,uVar6);
-            this_01 = (undefined *)F_0045f750((*(undefined * PTR32 *)(gen_frame + 0x28)),uVar1);
+        uVar2 = F_0042b790((undefined *)(iVar5 + (*(int *)(gen_frame + 0x2c))));
+        if (2 < uVar2) {
+          pcVar3 = (char *)F_0042a7f0((*(int *)(gen_frame + 0x2c)) + iVar5,0);
+          if (*pcVar3 == 'n') {
+            uVar7 = REFG(undefined4, 0x108cc50);
+            uVar2 = F_0042a7f0(iVar5 + (*(int *)(gen_frame + 0x2c)),2);
+            uVar2 = F_0042cc20(((undefined1 *)(gen_frame + 0x94)),uVar2,uVar7);
+            this_01 = (undefined *)F_0045f750((*(undefined * PTR32 *)(gen_frame + 0x28)),uVar2);
             F_0042c880(((undefined1 *)(gen_frame + 0x94)));
           }
           else if (this_01 != (undefined *)0x0) {
-            puVar3 = (undefined1 *)F_0042a7f0((*(int *)(gen_frame + 0x2c)) + iVar4,0);
-            switch((unsigned int)(uintptr_t)(*puVar3)) {
+            puVar4 = (undefined1 *)F_0042a7f0((*(int *)(gen_frame + 0x2c)) + iVar5,0);
+            switch((unsigned int)(uintptr_t)(*puVar4)) {
             case 0x62: ;
-              pcVar2 = (char *)F_0042a7f0(iVar4 + (*(int *)(gen_frame + 0x2c)),2);
+              pcVar3 = (char *)F_0042a7f0(iVar5 + (*(int *)(gen_frame + 0x2c)),2);
+              cVar1 = *pcVar3;
               (*(undefined4 *)(gen_frame + 0x18)) = 2;
-              (*(bool *)(gen_frame + 0x1c)) = *pcVar2 != '0';
+              (*(bool *)(gen_frame + 0x1c)) = cVar1 != '0';
               F_00490b70(this_01,&(*(undefined4 *)(gen_frame + 0x18)));
               this_00 = &(*(undefined4 *)(gen_frame + 0x18));
               break;
             default: ;
               goto switchD_0045f96e_caseD_63;
             case 0x66: ;
-              uVar1 = F_0042a7f0(iVar4 + (*(int *)(gen_frame + 0x2c)),2);
-              fVar5 = F_0046f660(uVar1);
-              (*(float *)(gen_frame + 0x14)) = fVar5;
-              (*(float *)(gen_frame + 0x10)) = fVar5;
+              uVar2 = F_0042a7f0(iVar5 + (*(int *)(gen_frame + 0x2c)),2);
+              fVar6 = F_0046f660(uVar2);
+              (*(float *)(gen_frame + 0x14)) = fVar6;
+              (*(float *)(gen_frame + 0x10)) = fVar6;
               (*(undefined4 *)(gen_frame + 0xc)) = 5;
               F_00490b70(this_01,&(*(undefined4 *)(gen_frame + 0xc)));
               this_00 = &(*(undefined4 *)(gen_frame + 0xc));
               break;
             case 0x69: ;
-              uVar6 = 10;
-              uVar1 = F_0042a7f0(iVar4 + (*(int *)(gen_frame + 0x2c)),2);
-              uVar1 = F_0046f610(uVar1,uVar6);
-              (*(uint *)(gen_frame + 0x24)) = uVar1;
+              uVar7 = 10;
+              uVar2 = F_0042a7f0(iVar5 + (*(int *)(gen_frame + 0x2c)),2);
+              uVar2 = F_0046f610(uVar2,uVar7);
+              (*(uint *)(gen_frame + 0x24)) = uVar2;
               (*(undefined4 *)(gen_frame + 0x20)) = 3;
               F_00490b70(this_01,&(*(undefined4 *)(gen_frame + 0x20)));
               this_00 = &(*(undefined4 *)(gen_frame + 0x20));
               break;
             case 0x75: ;
-              uVar6 = 10;
-              uVar1 = F_0042a7f0((*(int *)(gen_frame + 0x2c)) + iVar4,2);
-              uVar1 = F_0046f610(uVar1,uVar6);
+              uVar7 = 10;
+              uVar2 = F_0042a7f0((*(int *)(gen_frame + 0x2c)) + iVar5,2);
+              uVar2 = F_0046f610(uVar2,uVar7);
               (*(undefined4 *)(gen_frame + 0x4)) = 4;
-              (*(uint *)(gen_frame + 0x8)) = uVar1;
+              (*(uint *)(gen_frame + 0x8)) = uVar2;
               F_00490b70(this_01,&(*(undefined4 *)(gen_frame + 0x4)));
               this_00 = &(*(undefined4 *)(gen_frame + 0x4));
             }
@@ -24403,10 +24462,10 @@ byte F_0045f7f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
           }
         }
 switchD_0045f96e_caseD_63: ;
-        uVar1 = (*(uint *)(gen_frame + 0x3c)) + 1;
-        (*(uint *)(gen_frame + 0x3c)) = uVar1;
-        iVar4 = iVar4 + 0x54;
-      } while (uVar1 < (uint)(((*(int *)(gen_frame + 0x30)) - (*(int *)(gen_frame + 0x2c))) / 0x54));
+        uVar2 = (*(uint *)(gen_frame + 0x3c)) + 1;
+        (*(uint *)(gen_frame + 0x3c)) = uVar2;
+        iVar5 = iVar5 + 0x54;
+      } while (uVar2 < (uint)(((*(int *)(gen_frame + 0x30)) - (*(int *)(gen_frame + 0x2c))) / 0x54));
     }
     F_004876d0(&(*(int *)(gen_frame + 0x2c)));
     (*(undefined * PTR32 *)(gen_frame + 0x28))[0x34] = (undefined1)0x1;

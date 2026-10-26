@@ -4211,10 +4211,10 @@ uint F_00747f00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   bool bVar3;
   
   puVar2 = *((undefined4 * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4)));
+  puVar1 = (undefined4 *)puVar2[1];
   gen_piece_set(&(*(undefined4 *)(gen_frame + 0x8)), 1, 3, (unsigned long long)((undefined3)((uint)(*(undefined * PTR32 *)&gen_args[0]) >> 8)));
   (*(undefined4 *)(gen_frame + 0x8)) = CONCAT31(GEN_PIECE(&(*(undefined4 *)(gen_frame + 0x8)), 1, 3),1);
-  if (*(char *)((int)puVar2[1] + 0x31) == '\0') {
-    puVar1 = (undefined4 *)puVar2[1];
+  if (*(char *)((int)puVar1 + 0x31) == '\0') {
     do {
       puVar2 = puVar1;
       if ((char)(*(undefined4 *)&gen_args[3]) == '\0') {
@@ -4253,10 +4253,10 @@ uint F_00747f70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   bool bVar3;
   
   puVar2 = *((undefined4 * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4)));
+  puVar1 = (undefined4 *)puVar2[1];
   gen_piece_set(&(*(undefined4 *)(gen_frame + 0x8)), 1, 3, (unsigned long long)((undefined3)((uint)(*(undefined * PTR32 *)&gen_args[0]) >> 8)));
   (*(undefined4 *)(gen_frame + 0x8)) = CONCAT31(GEN_PIECE(&(*(undefined4 *)(gen_frame + 0x8)), 1, 3),1);
-  if (*(char *)((int)puVar2[1] + 0x1d) == '\0') {
-    puVar1 = (undefined4 *)puVar2[1];
+  if (*(char *)((int)puVar1 + 0x1d) == '\0') {
     do {
       puVar2 = puVar1;
       if ((char)(*(undefined4 *)&gen_args[3]) == '\0') {
@@ -4295,10 +4295,10 @@ uint F_00747fe0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   bool bVar3;
   
   puVar2 = *((undefined4 * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4)));
+  puVar1 = (undefined4 *)puVar2[1];
   gen_piece_set(&(*(undefined4 *)(gen_frame + 0x8)), 1, 3, (unsigned long long)((undefined3)((uint)(*(undefined * PTR32 *)&gen_args[0]) >> 8)));
   (*(undefined4 *)(gen_frame + 0x8)) = CONCAT31(GEN_PIECE(&(*(undefined4 *)(gen_frame + 0x8)), 1, 3),1);
-  if (*(char *)((int)puVar2[1] + 0x25) == '\0') {
-    puVar1 = (undefined4 *)puVar2[1];
+  if (*(char *)((int)puVar1 + 0x25) == '\0') {
     do {
       puVar2 = puVar1;
       if ((char)(*(undefined4 *)&gen_args[3]) == '\0') {
@@ -4337,10 +4337,10 @@ uint F_00748050(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   bool bVar3;
   
   puVar2 = *((undefined4 * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4)));
+  puVar1 = (undefined4 *)puVar2[1];
   gen_piece_set(&(*(undefined4 *)(gen_frame + 0x8)), 1, 3, (unsigned long long)((undefined3)((uint)(*(undefined * PTR32 *)&gen_args[0]) >> 8)));
   (*(undefined4 *)(gen_frame + 0x8)) = CONCAT31(GEN_PIECE(&(*(undefined4 *)(gen_frame + 0x8)), 1, 3),1);
-  if (*(char *)((int)puVar2[1] + 0x15) == '\0') {
-    puVar1 = (undefined4 *)puVar2[1];
+  if (*(char *)((int)puVar1 + 0x15) == '\0') {
     do {
       puVar2 = puVar1;
       if ((char)(*(undefined4 *)&gen_args[3]) == '\0') {

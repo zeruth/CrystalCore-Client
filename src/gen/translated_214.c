@@ -1,5 +1,57 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_0107c3b0 */
+uint F_0107c3b0(void)
+{
+  GEN_ENTER(0x107c3b0u, 0u, 0u, 0u, 0u);
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  ulonglong uVar1;
+  
+  F_009e9dc0(&REFG(undefined, 0x14a0a7c),((undefined1 *)(gen_frame + 0x8)),*REFG(undefined4 * PTR32, 0x14a0a80),REFG(undefined4 * PTR32, 0x14a0a80));
+  uVar1 = F_00429760(REFG(undefined4 * PTR32, 0x14a0a80),0x14,0xd0);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_0107c3f0 */
+unsigned int F_0107c3f0(void)
+{
+  GEN_ENTER(0x107c3f0u, 0u, 0u, 0u, 0u);
+  F_00d9b7c0(&REFG(undefined * PTR32, 0x1333234));
+  return 0;
+}
+
+/* ref: FUN_0107c400 */
+unsigned int F_0107c400(void)
+{
+  GEN_ENTER(0x107c400u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x13334f4) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[2])REFP(0x10909b4))));
+  if (REFG(void * PTR32, 0x13334fc) != (undefined *)0x0) {
+    F_00414620(REFG(void * PTR32, 0x13334fc),&REFG(undefined * PTR32, 0x13334f4));
+  }
+  return 0;
+}
+
+/* ref: FUN_0107c420 */
+uint F_0107c420(void)
+{
+  GEN_ENTER(0x107c420u, 0u, 0u, 0u, 0u);
+  ulonglong uVar1;
+  
+  uVar1 = F_0042c880(&REFG(undefined, 0x14a2680));
+  return (uint)uVar1;
+}
+
+/* ref: FUN_0107c430 */
+uint F_0107c430(void)
+{
+  GEN_ENTER(0x107c430u, 0u, 0u, 0u, 0u);
+  ulonglong uVar1;
+  
+  uVar1 = F_0042c880(&REFG(undefined, 0x14a26d8));
+  return (uint)uVar1;
+}
+
 /* ref: FUN_0107c440 */
 uint F_0107c440(void)
 {

@@ -1,18 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Apricot::Engine::Data::Communicator::SplineBinder::vf0 */
-uint F_009e4740(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e4740u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  F_00985e70(this);
-  if ((((param_1 & 1) != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) && (this != (undefined *)0x0)) {
-    ((code *)REFG(gen_code32, 0x14a0a18))(this);
-  }
-  return (uint)this;
-}
-
 /* ref: Apricot::Engine::Data::Communicator::RadialBlurEffector::vf0 */
 uint F_009e4770(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -4574,19 +4561,21 @@ uint F_009e7c70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   undefined4 param_5 = (undefined4)gen_a4;
   undefined4 param_6 = (undefined4)gen_a5;
   __declspec(align(16)) undefined1 gen_frame[0x20];
-  uint uVar1;
+  undefined4 uVar1;
+  uint uVar2;
   
   (*(undefined4 *)(gen_frame + 0x10)) = *(undefined4 *)(param_2 + -0xc);
+  uVar1 = *(undefined4 *)(param_2 + -4);
   (*(undefined4 *)(gen_frame + 0xc)) = *(undefined4 *)(param_2 + -0x10);
-  (*(undefined4 *)(gen_frame + 0x18)) = *(undefined4 *)(param_2 + -4);
+  (*(undefined4 *)(gen_frame + 0x18)) = uVar1;
   (*(undefined4 *)(gen_frame + 0x14)) = *(undefined4 *)(param_2 + -8);
   *(undefined4 *)(param_2 + -0x10) = *param_1;
   *(undefined4 *)(param_2 + -0xc) = param_1[1];
   *(undefined4 *)(param_2 + -8) = param_1[2];
   *(undefined4 *)(param_2 + -4) = param_1[3];
-  uVar1 = F_009e3f40(param_1,0,(param_2 - (int)param_1) + -0x10 >> 4,&(*(undefined4 *)(gen_frame + 0xc)),param_3,param_4,
+  uVar2 = F_009e3f40(param_1,0,(param_2 - (int)param_1) + -0x10 >> 4,&(*(undefined4 *)(gen_frame + 0xc)),param_3,param_4,
                        param_5,param_6);
-  return uVar1;
+  return uVar2;
 }
 
 /* ref: Apricot::Engine::Data::Communicator::Binder::vf0 */
@@ -6275,19 +6264,21 @@ uint F_009e9560(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   undefined4 param_5 = (undefined4)gen_a4;
   undefined4 param_6 = (undefined4)gen_a5;
   __declspec(align(16)) undefined1 gen_frame[0x20];
-  uint uVar1;
+  undefined4 uVar1;
+  uint uVar2;
   
   (*(undefined4 *)(gen_frame + 0x10)) = *(undefined4 *)(param_2 + -0xc);
+  uVar1 = *(undefined4 *)(param_2 + -4);
   (*(undefined4 *)(gen_frame + 0xc)) = *(undefined4 *)(param_2 + -0x10);
-  (*(undefined4 *)(gen_frame + 0x18)) = *(undefined4 *)(param_2 + -4);
+  (*(undefined4 *)(gen_frame + 0x18)) = uVar1;
   (*(undefined4 *)(gen_frame + 0x14)) = *(undefined4 *)(param_2 + -8);
   *(undefined4 *)(param_2 + -0x10) = *param_1;
   *(undefined4 *)(param_2 + -0xc) = param_1[1];
   *(undefined4 *)(param_2 + -8) = param_1[2];
   *(undefined4 *)(param_2 + -4) = param_1[3];
-  uVar1 = F_009e3f40(param_1,0,(param_2 - (int)param_1) + -0x10 >> 4,&(*(undefined4 *)(gen_frame + 0xc)),param_3,param_4,
+  uVar2 = F_009e3f40(param_1,0,(param_2 - (int)param_1) + -0x10 >> 4,&(*(undefined4 *)(gen_frame + 0xc)),param_3,param_4,
                        param_5,param_6);
-  return uVar1;
+  return uVar2;
 }
 
 /* ref: Apricot::Engine::Data::Runtime::Document::vf0 */
@@ -6746,5 +6737,19 @@ uint F_009e9d00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   }
   *param_1 = piVar3;
   return (uint)param_1;
+}
+
+/* ref: FUN_009e9da0 */
+uint F_009e9da0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e9da0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  uint uVar1;
+  
+  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
+  uVar1 = F_009e9d00(this,&(*(undefined * PTR32 *)(gen_frame + 0x8)),**(undefined4 * PTR32 *)((int)this + 4),
+                       *(undefined4 * PTR32 *)((int)this + 4));
+  return uVar1;
 }
 
