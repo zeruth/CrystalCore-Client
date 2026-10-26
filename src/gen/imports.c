@@ -104,9 +104,9 @@ unsigned int gen_imp_Direct3DCreate9();   /* the runtime's */
 gen_real_fn gen_real_DirectInput8Create;
 unsigned int gen_imp_DirectInput8Create();   /* the runtime's */
 gen_real_fn gen_real_DispatchMessageA;
-unsigned int gen_imp_DispatchMessageA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DispatchMessageA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_DispatchMessageA();   /* the runtime's */
 gen_real_fn gen_real_DispatchMessageW;
-unsigned int gen_imp_DispatchMessageW(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DispatchMessageW(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_DispatchMessageW();   /* the runtime's */
 gen_real_fn gen_real_DuplicateHandle;
 unsigned int gen_imp_DuplicateHandle(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DuplicateHandle(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_Ellipse;
@@ -236,7 +236,7 @@ unsigned int gen_imp_GetLogicalDrives(int a0, int a1, int a2, int a3, ...) { GEN
 gen_real_fn gen_real_GetLogicalProcessorInformation;
 unsigned int gen_imp_GetLogicalProcessorInformation();   /* the runtime's */
 gen_real_fn gen_real_GetMessageW;
-unsigned int gen_imp_GetMessageW(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_GetMessageW(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_GetMessageW();   /* the runtime's */
 gen_real_fn gen_real_GetModuleFileNameA;
 unsigned int gen_imp_GetModuleFileNameA();   /* the runtime's */
 gen_real_fn gen_real_GetModuleFileNameExA;
@@ -444,9 +444,9 @@ unsigned int gen_imp_OpenProcess(int a0, int a1, int a2, int a3, ...) { GEN_REST
 gen_real_fn gen_real_OutputDebugStringA;
 unsigned int gen_imp_OutputDebugStringA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_OutputDebugStringA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_PeekMessageA;
-unsigned int gen_imp_PeekMessageA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_PeekMessageA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_PeekMessageA();   /* the runtime's */
 gen_real_fn gen_real_PeekMessageW;
-unsigned int gen_imp_PeekMessageW(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_PeekMessageW(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_PeekMessageW();   /* the runtime's */
 gen_real_fn gen_real_PeekNamedPipe;
 unsigned int gen_imp_PeekNamedPipe(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_PeekNamedPipe(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_PostMessageA;
@@ -592,9 +592,9 @@ unsigned int gen_imp_ToAscii(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3)
 gen_real_fn gen_real_ToUnicode;
 unsigned int gen_imp_ToUnicode(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_ToUnicode(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_TranslateAcceleratorA;
-unsigned int gen_imp_TranslateAcceleratorA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_TranslateAcceleratorA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_TranslateAcceleratorA();   /* the runtime's */
 gen_real_fn gen_real_TranslateMessage;
-unsigned int gen_imp_TranslateMessage(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_TranslateMessage(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_TranslateMessage();   /* the runtime's */
 gen_real_fn gen_real_TryEnterCriticalSection;
 unsigned int gen_imp_TryEnterCriticalSection();   /* the runtime's */
 gen_real_fn gen_real_UnhandledExceptionFilter;
@@ -787,8 +787,8 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e03cu, "GDI32.dll", "DeleteObject", (void *)gen_imp_DeleteObject, &gen_real_DeleteObject},
   {0x107e5acu, "d3d9.dll", "Direct3DCreate9", (void *)gen_imp_Direct3DCreate9, 0},
   {0x107e028u, "DINPUT8.dll", "DirectInput8Create", (void *)gen_imp_DirectInput8Create, 0},
-  {0x107e3e4u, "USER32.dll", "DispatchMessageA", (void *)gen_imp_DispatchMessageA, &gen_real_DispatchMessageA},
-  {0x107e3c8u, "USER32.dll", "DispatchMessageW", (void *)gen_imp_DispatchMessageW, &gen_real_DispatchMessageW},
+  {0x107e3e4u, "USER32.dll", "DispatchMessageA", (void *)gen_imp_DispatchMessageA, 0},
+  {0x107e3c8u, "USER32.dll", "DispatchMessageW", (void *)gen_imp_DispatchMessageW, 0},
   {0x107e1c0u, "KERNEL32.dll", "DuplicateHandle", (void *)gen_imp_DuplicateHandle, &gen_real_DuplicateHandle},
   {0x107e050u, "GDI32.dll", "Ellipse", (void *)gen_imp_Ellipse, &gen_real_Ellipse},
   {0x107e35cu, "KERNEL32.dll", "EncodePointer", (void *)gen_imp_EncodePointer, 0},
@@ -853,7 +853,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e1b0u, "KERNEL32.dll", "GetLocaleInfoW", (void *)gen_imp_GetLocaleInfoW, &gen_real_GetLocaleInfoW},
   {0x107e328u, "KERNEL32.dll", "GetLogicalDrives", (void *)gen_imp_GetLogicalDrives, &gen_real_GetLogicalDrives},
   {0x107e2b0u, "KERNEL32.dll", "GetLogicalProcessorInformation", (void *)gen_imp_GetLogicalProcessorInformation, 0},
-  {0x107e3d4u, "USER32.dll", "GetMessageW", (void *)gen_imp_GetMessageW, &gen_real_GetMessageW},
+  {0x107e3d4u, "USER32.dll", "GetMessageW", (void *)gen_imp_GetMessageW, 0},
   {0x107e348u, "KERNEL32.dll", "GetModuleFileNameA", (void *)gen_imp_GetModuleFileNameA, 0},
   {0x107e38cu, "PSAPI.DLL", "GetModuleFileNameExA", (void *)gen_imp_GetModuleFileNameExA, &gen_real_GetModuleFileNameExA},
   {0x107e11cu, "KERNEL32.dll", "GetModuleFileNameW", (void *)gen_imp_GetModuleFileNameW, 0},
@@ -957,8 +957,8 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e240u, "KERNEL32.dll", "OpenMutexA", (void *)gen_imp_OpenMutexA, &gen_real_OpenMutexA},
   {0x107e32cu, "KERNEL32.dll", "OpenProcess", (void *)gen_imp_OpenProcess, &gen_real_OpenProcess},
   {0x107e2a0u, "KERNEL32.dll", "OutputDebugStringA", (void *)gen_imp_OutputDebugStringA, &gen_real_OutputDebugStringA},
-  {0x107e3f0u, "USER32.dll", "PeekMessageA", (void *)gen_imp_PeekMessageA, &gen_real_PeekMessageA},
-  {0x107e3d8u, "USER32.dll", "PeekMessageW", (void *)gen_imp_PeekMessageW, &gen_real_PeekMessageW},
+  {0x107e3f0u, "USER32.dll", "PeekMessageA", (void *)gen_imp_PeekMessageA, 0},
+  {0x107e3d8u, "USER32.dll", "PeekMessageW", (void *)gen_imp_PeekMessageW, 0},
   {0x107e248u, "KERNEL32.dll", "PeekNamedPipe", (void *)gen_imp_PeekNamedPipe, &gen_real_PeekNamedPipe},
   {0x107e4a8u, "USER32.dll", "PostMessageA", (void *)gen_imp_PostMessageA, &gen_real_PostMessageA},
   {0x107e4a0u, "USER32.dll", "PostQuitMessage", (void *)gen_imp_PostQuitMessage, &gen_real_PostQuitMessage},
@@ -1031,8 +1031,8 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e194u, "KERNEL32.dll", "TlsSetValue", (void *)gen_imp_TlsSetValue, &gen_real_TlsSetValue},
   {0x107e404u, "USER32.dll", "ToAscii", (void *)gen_imp_ToAscii, &gen_real_ToAscii},
   {0x107e44cu, "USER32.dll", "ToUnicode", (void *)gen_imp_ToUnicode, &gen_real_ToUnicode},
-  {0x107e3d0u, "USER32.dll", "TranslateAcceleratorA", (void *)gen_imp_TranslateAcceleratorA, &gen_real_TranslateAcceleratorA},
-  {0x107e3ccu, "USER32.dll", "TranslateMessage", (void *)gen_imp_TranslateMessage, &gen_real_TranslateMessage},
+  {0x107e3d0u, "USER32.dll", "TranslateAcceleratorA", (void *)gen_imp_TranslateAcceleratorA, 0},
+  {0x107e3ccu, "USER32.dll", "TranslateMessage", (void *)gen_imp_TranslateMessage, 0},
   {0x107e350u, "KERNEL32.dll", "TryEnterCriticalSection", (void *)gen_imp_TryEnterCriticalSection, 0},
   {0x107e218u, "KERNEL32.dll", "UnhandledExceptionFilter", (void *)gen_imp_UnhandledExceptionFilter, &gen_real_UnhandledExceptionFilter},
   {0x107e3acu, "USER32.dll", "UnregisterHotKey", (void *)gen_imp_UnregisterHotKey, &gen_real_UnregisterHotKey},

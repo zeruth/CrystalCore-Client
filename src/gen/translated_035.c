@@ -1,35 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Component::GUI2::AtkImageNode::vf0 */
-uint F_005cf4d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5cf4d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[3])REFP(0x10a0d80));
-  F_00577af0(this);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x10a0964));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Component::GUI2::AtkNineGridNode::vf0 */
-uint F_005cf500(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5cf500u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[3])REFP(0x10a0d80));
-  F_00577af0(this);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x10a0964));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
 /* ref: Component::GUI2::AtkCounterNode::vf0 */
 uint F_005cf530(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -8255,5 +8225,35 @@ unsigned int F_005d6aa0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   return 0;
+}
+
+/* ref: Client::LayoutEngine::Group::SGActionController::vf1 */
+unsigned int F_005d6ab0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5d6ab0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: FUN_005d6ad0 */
+uint F_005d6ad0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5d6ad0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined4 *)((int)this + 0xc) = 3;
+  *(undefined4 *)((int)this + 0x1c) = 3;
+  *(undefined4 *)((int)this + 0x10) = 0;
+  *(undefined4 *)((int)this + 0x20) = *(undefined4 *)(param_1 + 4);
+  *(undefined4 *)((int)this + 0x24) = *(undefined4 *)(param_1 + 0x18);
+  *(undefined4 *)((int)this + 0x28) = *(undefined4 *)(param_1 + 0x1c);
+  *(undefined4 *)((int)this + 0x30) = *(undefined4 *)(param_1 + 8);
+  *(undefined4 *)((int)this + 0x34) = *(undefined4 *)(param_1 + 0xc);
+  *(undefined4 *)((int)this + 0x38) = *(undefined4 *)(param_1 + 0x10);
+  if (4 < *(int *)((int)this + 0x24)) {
+    *(undefined4 *)((int)this + 0x24) = 1;
+  }
+  return param_1;
 }
 

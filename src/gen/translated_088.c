@@ -1,221 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0091e6c0 */
-uint F_0091e6c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e6c0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e6d0 */
-uint F_0091e6d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e6d0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e6e0 */
-uint F_0091e6e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e6e0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e6f0 */
-uint F_0091e6f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e6f0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e700 */
-uint F_0091e700(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e700u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e710 */
-uint F_0091e710(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e710u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e720 */
-uint F_0091e720(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e720u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e730 */
-uint F_0091e730(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e730u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e740 */
-uint F_0091e740(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e740u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e750 */
-uint F_0091e750(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e750u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e760 */
-uint F_0091e760(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e760u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e770 */
-uint F_0091e770(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e770u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e780 */
-uint F_0091e780(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e780u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e790 */
-uint F_0091e790(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e790u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e7a0 */
-uint F_0091e7a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e7a0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e7b0 */
-uint F_0091e7b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e7b0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e7c0 */
-uint F_0091e7c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e7c0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e7d0 */
-uint F_0091e7d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e7d0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e7e0 */
-uint F_0091e7e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e7e0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e7f0 */
-uint F_0091e7f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e7f0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e800 */
-uint F_0091e800(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e800u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e810 */
-uint F_0091e810(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e810u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e820 */
-uint F_0091e820(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e820u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e830 */
-uint F_0091e830(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e830u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e840 */
-uint F_0091e840(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e840u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e850 */
-uint F_0091e850(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e850u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_0091e860 */
-uint F_0091e860(unsigned int gen_a0)
-{
-  GEN_ENTER(0x91e860u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
 /* ref: FUN_0091e870 */
 uint F_0091e870(unsigned int gen_a0)
 {
@@ -5730,6 +5514,452 @@ uint F_009231e0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c54bc));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonListColorChooser::vf0 */
+uint F_00923210(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923210u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c55bc));
+  if (*(int *)(this + 0x1a8) != 0) {
+    F_00406b30(*(int *)(this + 0x1a8));
+    *(undefined4 *)(this + 0x1a8) = 0;
+  }
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonContextIconMenu::vf0 */
+uint F_00923260(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923260u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c56bc));
+  if (*(int *)(this + 0x1a4) != 0) {
+    F_00406b30(*(int *)(this + 0x1a4));
+    *(undefined4 *)(this + 0x1a4) = 0;
+  }
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonCreditCast::vf0 */
+uint F_009232b0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9232b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c57bc));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonCreditEnd::vf0 */
+uint F_009232e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9232e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c58bc));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonHud::vf0 */
+uint F_00923310(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923310u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c59bc));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonHudTargetInfo::vf0 */
+uint F_00923340(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923340u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c5abc));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonTargetCursor::vf0 */
+uint F_00923370(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923370u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c5bbc));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonTargetCursorGround::vf0 */
+uint F_009233a0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9233a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c5cbc));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonBattleTalk::vf0 */
+uint F_009233d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9233d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c5dbc));
+  F_0058d4b0(this + 400);
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: FUN_00923410 */
+uint F_00923410(unsigned int gen_a0)
+{
+  GEN_ENTER(0x923410u, gen_a0, 0u, 0u, 0u);
+  uint in_ecx = (uint)gen_a0;
+  F_0042b630(in_ecx + 4);
+  F_0042b630(in_ecx + 0x5c);
+  return in_ecx;
+}
+
+/* ref: FUN_00923430 */
+uint F_00923430(unsigned int gen_a0)
+{
+  GEN_ENTER(0x923430u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  ulonglong uVar1;
+  
+  F_0042c880((undefined *)((int)this + 0x5c));
+  uVar1 = F_0042c880((undefined *)((int)this + 4));
+  return (uint)uVar1;
+}
+
+/* ref: Client::UI2::AddonMainCommand::vf0 */
+uint F_00923450(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923450u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined * this_00;
+  int iVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[66])REFP(0x10c6544));
+  this_00 = this + 0xff0;
+  iVar1 = 0x2b;
+  do {
+    this_00 = this_00 + -0x54;
+    F_0042c880(this_00);
+    iVar1 = iVar1 + -1;
+  } while (-1 < iVar1);
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonParameter::vf0 */
+uint F_009234a0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9234a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6654));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonExp::vf0 */
+uint F_009234d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9234d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int iVar1;
+  undefined * this_00;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6754));
+  this_00 = this + 0x238;
+  iVar1 = 1;
+  do {
+    this_00 = this_00 + -0x30;
+    F_0058d4b0(this_00);
+    iVar1 = iVar1 + -1;
+  } while (-1 < iVar1);
+  F_00580e00(this + 0x198);
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonEnemyList::vf0 */
+uint F_00923530(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923530u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6854));
+  if (*(int *)(this + 0x180) != 0) {
+    F_00406b30(*(int *)(this + 0x180));
+    *(undefined4 *)(this + 0x180) = 0;
+  }
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonBagStatus::vf0 */
+uint F_00923580(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923580u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6954));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonMoney::vf0 */
+uint F_009235b0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9235b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6a54));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonNotification::vf0 */
+uint F_009235e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9235e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined * this_00;
+  int iVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6b54));
+  iVar1 = 7;
+  this_00 = this + 0x39c;
+  do {
+    this_00 = this_00 + -0x40;
+    F_0058d4b0(this_00);
+    iVar1 = iVar1 + -1;
+  } while (-1 < iVar1);
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonNotificationItem::vf0 */
+uint F_00923630(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923630u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6c54));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonDTR::vf0 */
+uint F_00923660(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923660u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6d74));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonCastBar::vf0 */
+uint F_00923690(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923690u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6e74));
+  F_0042c880(this + 0x1b4);
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonNaviMap::vf0 */
+uint F_009236d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9236d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c6f74));
+  *(undefined * PTR32 * PTR32 *)(this + 0x1b50) = (*(undefined * PTR32 (*)[5])REFP(0x10a0b78));
+  *(undefined * PTR32 * PTR32 *)(this + 0x1b44) = (*(undefined * PTR32 (*)[5])REFP(0x10a0b78));
+  F_0055c5b0(this + 0x1b3c);
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: FUN_00923720 */
+unsigned int F_00923720(unsigned int gen_a0)
+{
+  GEN_ENTER(0x923720u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 uVar1;
+  undefined4 * puVar2;
+  int iVar3;
+  
+  uVar1 = REFG(float, 0x1087f04);
+  *(undefined2 *)((int)this + 0x34) = 0;
+  *(undefined4 *)this = 0;
+  *(undefined4 *)((int)this + 4) = 0;
+  *(undefined4 *)((int)this + 8) = 0;
+  *(undefined4 *)((int)this + 0xc) = 0;
+  *(undefined4 *)((int)this + 0x10) = 0;
+  *(undefined4 *)((int)this + 0x14) = 0;
+  *(undefined4 *)((int)this + 0x18) = uVar1;
+  *(undefined4 *)((int)this + 0x1c) = uVar1;
+  *(undefined4 *)((int)this + 0x20) = 0;
+  *(undefined4 *)((int)this + 0x24) = 0;
+  *(undefined4 *)((int)this + 0x28) = 0;
+  *(undefined4 *)((int)this + 0x2c) = 0;
+  puVar2 = (undefined4 *)((int)this + 0x48);
+  iVar3 = 100;
+  do {
+    *puVar2 = 0;
+    puVar2[1] = 0;
+    puVar2[2] = 0;
+    puVar2[3] = 0;
+    puVar2[4] = 0;
+    puVar2[5] = 0;
+    *(undefined2 *)(puVar2 + 6) = 0;
+    *(undefined2 *)((int)puVar2 + 0x1a) = 0;
+    *(undefined1 *)(puVar2 + 7) = 0;
+    puVar2 = puVar2 + 8;
+    iVar3 = iVar3 + -1;
+  } while (-1 < iVar3);
+  return 0;
+}
+
+/* ref: Client::UI2::AddonPartyList::vf0 */
+uint F_009237a0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9237a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c707c));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonFocusTargetInfo::vf0 */
+uint F_009237d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9237d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c719c));
+  F_00590600(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonMainCrossNotification::vf0 */
+uint F_00923800(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923800u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  F_00790ee0(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonLimitBreak::vf0 */
+uint F_00923830(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x923830u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c739c));
   F_00590600(this);
   if ((param_1 & 1) != 0) {
     F_00406ad0(this);

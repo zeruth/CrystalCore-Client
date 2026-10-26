@@ -1,584 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbGilItem::vf3 */
-uint F_00e86510(void)
-{
-  GEN_ENTER(0xe86510u, 0u, 0u, 0u, 0u);
-  return 0x135eeac;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage_TypeInfo::vf3 */
-uint F_00e865a0(void)
-{
-  GEN_ENTER(0xe865a0u, 0u, 0u, 0u, 0u);
-  return 0x1c;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage_TypeInfo::vf4 */
-uint F_00e865b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe865b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
-  if (uVar1 < 0x51) {
-    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
-    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
-  }
-  *param_1 = 0;
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage_TypeInfo::vf5 */
-uint F_00e865f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe865f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e82f80(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage_TypeInfo::vf6 */
-uint F_00e86610(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86610u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e830a0(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage_TypeInfo::vf7 */
-uint F_00e86630(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86630u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e831d0(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage_TypeInfo::vf8 */
-uint F_00e86650(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86650u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e83330(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage_TypeInfo::vf9 */
-uint F_00e86670(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86670u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int * param_2 = (int *)(uintptr_t)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
-  uVar1 = F_00e833a0(param_1,uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage::vf1 */
-uint F_00e86690(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86690u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage::vf2 */
-uint F_00e866a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe866a0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  if (in_ecx != -0xa4) {
-    return in_ecx + 0x220;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemBaggage::vf3 */
-uint F_00e866d0(void)
-{
-  GEN_ENTER(0xe866d0u, 0u, 0u, 0u, 0u);
-  return 0x135eedc;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin_TypeInfo::vf3 */
-uint F_00e86760(void)
-{
-  GEN_ENTER(0xe86760u, 0u, 0u, 0u, 0u);
-  return 0x1d;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin_TypeInfo::vf4 */
-uint F_00e86770(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86770u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
-  if (uVar1 < 0x51) {
-    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
-    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
-  }
-  *param_1 = 0;
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin_TypeInfo::vf5 */
-uint F_00e867b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe867b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e82f80(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin_TypeInfo::vf6 */
-uint F_00e867d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe867d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e830a0(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin_TypeInfo::vf7 */
-uint F_00e867f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe867f0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e831d0(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin_TypeInfo::vf8 */
-uint F_00e86810(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86810u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e83330(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin_TypeInfo::vf9 */
-uint F_00e86830(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86830u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int * param_2 = (int *)(uintptr_t)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
-  uVar1 = F_00e833a0(param_1,uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin::vf1 */
-uint F_00e86850(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86850u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin::vf2 */
-uint F_00e86860(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86860u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  if (in_ecx != -0xa4) {
-    return in_ecx + 0x220;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMannequin::vf3 */
-uint F_00e86890(void)
-{
-  GEN_ENTER(0xe86890u, 0u, 0u, 0u, 0u);
-  return 0x135ef0c;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear_TypeInfo::vf3 */
-uint F_00e86920(void)
-{
-  GEN_ENTER(0xe86920u, 0u, 0u, 0u, 0u);
-  return 0x1e;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear_TypeInfo::vf4 */
-uint F_00e86930(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86930u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
-  if (uVar1 < 0x51) {
-    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
-    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
-  }
-  *param_1 = 0;
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear_TypeInfo::vf5 */
-uint F_00e86970(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86970u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e82f80(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear_TypeInfo::vf6 */
-uint F_00e86990(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86990u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e830a0(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear_TypeInfo::vf7 */
-uint F_00e869b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe869b0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e831d0(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear_TypeInfo::vf8 */
-uint F_00e869d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe869d0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e83330(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear_TypeInfo::vf9 */
-uint F_00e869f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe869f0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int * param_2 = (int *)(uintptr_t)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
-  uVar1 = F_00e833a0(param_1,uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear::vf1 */
-uint F_00e86a10(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86a10u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear::vf2 */
-uint F_00e86a20(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86a20u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  if (in_ecx != -0xa4) {
-    return in_ecx + 0x220;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryGear::vf3 */
-uint F_00e86a50(void)
-{
-  GEN_ENTER(0xe86a50u, 0u, 0u, 0u, 0u);
-  return 0x135ef3c;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing_TypeInfo::vf3 */
-uint F_00e86ae0(void)
-{
-  GEN_ENTER(0xe86ae0u, 0u, 0u, 0u, 0u);
-  return 0x1f;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing_TypeInfo::vf4 */
-uint F_00e86af0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86af0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
-  if (uVar1 < 0x51) {
-    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
-    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
-  }
-  *param_1 = 0;
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing_TypeInfo::vf5 */
-uint F_00e86b30(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86b30u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e82f80(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing_TypeInfo::vf6 */
-uint F_00e86b50(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86b50u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e830a0(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing_TypeInfo::vf7 */
-uint F_00e86b70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86b70u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e831d0(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing_TypeInfo::vf8 */
-uint F_00e86b90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86b90u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e83330(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing_TypeInfo::vf9 */
-uint F_00e86bb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86bb0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int * param_2 = (int *)(uintptr_t)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
-  uVar1 = F_00e833a0(param_1,uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing::vf1 */
-uint F_00e86bd0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86bd0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing::vf2 */
-uint F_00e86be0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86be0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  if (in_ecx != -0xa4) {
-    return in_ecx + 0x220;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryRing::vf3 */
-uint F_00e86c10(void)
-{
-  GEN_ENTER(0xe86c10u, 0u, 0u, 0u, 0u);
-  return 0x135ef6c;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone_TypeInfo::vf3 */
-uint F_00e86ca0(void)
-{
-  GEN_ENTER(0xe86ca0u, 0u, 0u, 0u, 0u);
-  return 0x20;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone_TypeInfo::vf4 */
-uint F_00e86cb0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86cb0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
-  if (uVar1 < 0x51) {
-    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
-    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
-  }
-  *param_1 = 0;
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone_TypeInfo::vf5 */
-uint F_00e86cf0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86cf0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e82f80(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone_TypeInfo::vf6 */
-uint F_00e86d10(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe86d10u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e830a0(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone_TypeInfo::vf7 */
-uint F_00e86d30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86d30u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e831d0(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone_TypeInfo::vf8 */
-uint F_00e86d50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86d50u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e83330(uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone_TypeInfo::vf9 */
-uint F_00e86d70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe86d70u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int * param_2 = (int *)(uintptr_t)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
-  uVar1 = F_00e833a0(param_1,uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone::vf1 */
-uint F_00e86d90(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86d90u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
-}
-
 /* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemArmoryJobStone::vf2 */
 uint F_00e86da0(unsigned int gen_a0)
 {
@@ -4718,5 +4139,584 @@ uint F_00e8aae0(unsigned int gen_a0)
     return in_ecx + 0x230;
   }
   return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf3 */
+uint F_00e8ab10(void)
+{
+  GEN_ENTER(0xe8ab10u, 0u, 0u, 0u, 0u);
+  return 0x135f62c;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem_TypeInfo::vf3 */
+uint F_00e8aba0(void)
+{
+  GEN_ENTER(0xe8aba0u, 0u, 0u, 0u, 0u);
+  return 0x44;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem_TypeInfo::vf4 */
+uint F_00e8abb0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8abb0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
+  if (uVar1 < 0x51) {
+    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
+    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
+  }
+  *param_1 = 0;
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem_TypeInfo::vf5 */
+uint F_00e8abf0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8abf0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e82f80(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem_TypeInfo::vf6 */
+uint F_00e8ac10(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8ac10u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e830a0(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem_TypeInfo::vf7 */
+uint F_00e8ac30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8ac30u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e831d0(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem_TypeInfo::vf8 */
+uint F_00e8ac50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8ac50u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e83330(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem_TypeInfo::vf9 */
+uint F_00e8ac70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8ac70u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int * param_2 = (int *)(uintptr_t)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
+  uVar1 = F_00e833a0(param_1,uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf1 */
+uint F_00e8ac90(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8ac90u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 4;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf2 */
+uint F_00e8aca0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8aca0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (in_ecx != -0x84) {
+    return in_ecx + 0x140;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf3 */
+uint F_00e8acd0(void)
+{
+  GEN_ENTER(0xe8acd0u, 0u, 0u, 0u, 0u);
+  return 0x135f65c;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer_TypeInfo::vf3 */
+uint F_00e8ad60(void)
+{
+  GEN_ENTER(0xe8ad60u, 0u, 0u, 0u, 0u);
+  return 0x45;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer_TypeInfo::vf4 */
+uint F_00e8ad70(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8ad70u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
+  if (uVar1 < 0x51) {
+    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
+    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
+  }
+  *param_1 = 0;
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer_TypeInfo::vf5 */
+uint F_00e8adb0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8adb0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e82f80(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer_TypeInfo::vf6 */
+uint F_00e8add0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8add0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e830a0(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer_TypeInfo::vf7 */
+uint F_00e8adf0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8adf0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e831d0(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer_TypeInfo::vf8 */
+uint F_00e8ae10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8ae10u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e83330(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer_TypeInfo::vf9 */
+uint F_00e8ae30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8ae30u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int * param_2 = (int *)(uintptr_t)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
+  uVar1 = F_00e833a0(param_1,uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf1 */
+uint F_00e8ae50(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8ae50u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 4;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf2 */
+uint F_00e8ae60(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8ae60u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (in_ecx != -0x84) {
+    return in_ecx + 0x1a0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf3 */
+uint F_00e8ae90(void)
+{
+  GEN_ENTER(0xe8ae90u, 0u, 0u, 0u, 0u);
+  return 0x135f68c;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem_TypeInfo::vf3 */
+uint F_00e8af20(void)
+{
+  GEN_ENTER(0xe8af20u, 0u, 0u, 0u, 0u);
+  return 0x46;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem_TypeInfo::vf4 */
+uint F_00e8af30(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8af30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
+  if (uVar1 < 0x51) {
+    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
+    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
+  }
+  *param_1 = 0;
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem_TypeInfo::vf5 */
+uint F_00e8af70(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8af70u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e82f80(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem_TypeInfo::vf6 */
+uint F_00e8af90(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8af90u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e830a0(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem_TypeInfo::vf7 */
+uint F_00e8afb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8afb0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e831d0(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem_TypeInfo::vf8 */
+uint F_00e8afd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8afd0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e83330(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem_TypeInfo::vf9 */
+uint F_00e8aff0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8aff0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int * param_2 = (int *)(uintptr_t)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
+  uVar1 = F_00e833a0(param_1,uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf1 */
+uint F_00e8b010(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8b010u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 4;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf2 */
+uint F_00e8b020(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8b020u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (in_ecx != -0x84) {
+    return in_ecx + 0x1a0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf3 */
+uint F_00e8b050(void)
+{
+  GEN_ENTER(0xe8b050u, 0u, 0u, 0u, 0u);
+  return 0x135f6bc;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory_TypeInfo::vf3 */
+uint F_00e8b0e0(void)
+{
+  GEN_ENTER(0xe8b0e0u, 0u, 0u, 0u, 0u);
+  return 0x47;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory_TypeInfo::vf4 */
+uint F_00e8b0f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8b0f0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
+  if (uVar1 < 0x51) {
+    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
+    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
+  }
+  *param_1 = 0;
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory_TypeInfo::vf5 */
+uint F_00e8b130(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8b130u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e82f80(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory_TypeInfo::vf6 */
+uint F_00e8b150(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8b150u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e830a0(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory_TypeInfo::vf7 */
+uint F_00e8b170(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8b170u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e831d0(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory_TypeInfo::vf8 */
+uint F_00e8b190(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8b190u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e83330(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory_TypeInfo::vf9 */
+uint F_00e8b1b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8b1b0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int * param_2 = (int *)(uintptr_t)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
+  uVar1 = F_00e833a0(param_1,uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf1 */
+uint F_00e8b1d0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8b1d0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 4;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf2 */
+uint F_00e8b1e0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8b1e0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (in_ecx != -0x84) {
+    return in_ecx + 0xc50;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf3 */
+uint F_00e8b210(void)
+{
+  GEN_ENTER(0xe8b210u, 0u, 0u, 0u, 0u);
+  return 0x135f6ec;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer_TypeInfo::vf3 */
+uint F_00e8b2a0(void)
+{
+  GEN_ENTER(0xe8b2a0u, 0u, 0u, 0u, 0u);
+  return 0x48;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer_TypeInfo::vf4 */
+uint F_00e8b2b0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8b2b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this);
+  if (uVar1 < 0x51) {
+    *param_1 = *(undefined4 *)(&REFG(undefined, 0x135fd10) + uVar1 * 4);
+    return (uint)(&REFG(undefined * PTR32, 0x135fbc8))[uVar1];
+  }
+  *param_1 = 0;
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer_TypeInfo::vf5 */
+uint F_00e8b2f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8b2f0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e82f80(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer_TypeInfo::vf6 */
+uint F_00e8b310(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8b310u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e830a0(uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer_TypeInfo::vf7 */
+uint F_00e8b330(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8b330u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e831d0(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer_TypeInfo::vf8 */
+uint F_00e8b350(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8b350u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
+  uVar1 = F_00e83330(uVar1,param_2);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer_TypeInfo::vf9 */
+uint F_00e8b370(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8b370u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int * param_2 = (int *)(uintptr_t)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
+  uVar1 = F_00e833a0(param_1,uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer::vf1 */
+uint F_00e8b390(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe8b390u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 4;
 }
 
