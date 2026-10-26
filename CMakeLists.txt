@@ -42,41 +42,16 @@ target_compile_options(gen PRIVATE /W1 /bigobj /O2 /GS- /TC /Zi
   /wd4554 /wd4700 /wd4715 /wd4716)
 
 # ---- the runtime and the executable --------------------------------------------------------------
-add_executable(CrystalCore
-  ${RUNTIME32}/Main.cpp
-  ${RUNTIME32}/RefImage.cpp
-  ${RUNTIME32}/Adapters.cpp
-  ${RUNTIME32}/Trace.cpp
-  ${RUNTIME32}/Com32.cpp
-  ${RUNTIME32}/Com32Gen.cpp
-  ${RUNTIME32}/DxDiagBridge.cpp
-  $<TARGET_OBJECTS:gen>)
-# the runtime's 32-bit helpers, next to the executable: DxDiag32.exe answers DxDiag as the reference's
-# 32-bit provider does (runtime32/DxDiagBridge.cpp)
-set(DXDIAG32 ${CMAKE_BINARY_DIR}/bin/$<CONFIG>/DxDiag32.exe)
-add_custom_command(OUTPUT ${DXDIAG32}
-  COMMAND cmd /c ${RUNTIME32}/helpers32/build32.bat ${RUNTIME32}/helpers32/DxDiag32.cpp ${DXDIAG32}
-  DEPENDS ${RUNTIME32}/helpers32/DxDiag32.cpp ${RUNTIME32}/helpers32/DxDiagWire.h
-  COMMENT "DxDiag32.exe (x86)" VERBATIM)
-add_custom_target(helpers32 ALL DEPENDS ${DXDIAG32})
-add_dependencies(CrystalCore helpers32)
-target_compile_options(CrystalCore PRIVATE /W3 /Zi)
-target_link_libraries(CrystalCore PRIVATE dbghelp)
-# a PDB in every configuration: the runtime's hang dump and crash reports name the translated
-# functions (F_<address>) through it
-target_link_options(CrystalCore PRIVATE /DEBUG:FULL /OPT:REF /OPT:ICF)
-target_compile_definitions(CrystalCore PRIVATE WIN32_LEAN_AND_MEAN NOMINMAX UNICODE _UNICODE
-  # the runtime's names for this project: log prefix, environment variables (CRYSTALCORE_REF,
-  # CRYSTALCORE_HANGDUMP, CRYSTALCORE_TRACE), the reference's file name
-  RHIPPER_NAME="CrystalCore" RHIPPER_ENV="CRYSTALCORE" RHIPPER_REF=L"ffxiv.exe")
-# Everything of the process below 2 GB, the port itself at a fixed base above the reference's
-# image (0x400000 + 0x16d8000), so the reference's 4-byte slots hold any address it is given and a
-# jmp rel32 reaches the port from the reference's code (runtime32/Main.cpp)
+include(${RUNTIME32}/Runtime32.cmake)
+add_executable(CrystalCore $<TARGET_OBJECTS:gen>)
+# the runtime (runtime32/Runtime32.cmake: its sources, the memory model's fixed base below 2 GB,
+# subsystem 5.02 as the reference's 5.1, DxDiag32.exe beside the executable) and its names for this
+# project: log prefix, environment variables (CRYSTALCORE_REF, CRYSTALCORE_HANGDUMP,
+# CRYSTALCORE_TRACE, CRYSTALCORE_WATCH), the reference's file name
 # (the main thread keeps the default 1 MB stack: Windows makes it before the launcher can reserve
 # the reference's range, and an 8 MB one did not fit below 0x400000 and took the range itself.
 # The reference runs on a thread of its own with a large stack, runtime32/RefImage.cpp)
-# (subsystem version 5.02, the lowest x64 takes, as the reference's 5.1: below 6.0 Windows gives a
-# window the legacy frame, and AdjustWindowRect's sizes with it. At 6.0 the port's window took a
-# WM_SIZE the reference's never did, its message pump parted from the reference's, 2026-10-25)
-target_link_options(CrystalCore PRIVATE /LARGEADDRESSAWARE:NO /DYNAMICBASE:NO /FIXED /BASE:0x60000000
-  /SUBSYSTEM:CONSOLE,5.02)
+rhipper_runtime32(CrystalCore NAME CrystalCore ENV CRYSTALCORE REF ffxiv.exe)
+# a PDB in every configuration: the runtime's hang dump and crash reports name the translated
+# functions (F_<address>) through it
+target_link_options(CrystalCore PRIVATE /DEBUG:FULL /OPT:REF /OPT:ICF)
