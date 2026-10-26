@@ -1,5 +1,33 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::System::Resource::Handle::ModelResourceHandle::vf42 */
+unsigned int F_0052d8c0(void)
+{
+  GEN_ENTER(0x52d8c0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: Client::System::Resource::Handle::ModelResourceHandle::vf43 */
+unsigned int F_0052d8d0(void)
+{
+  GEN_ENTER(0x52d8d0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: Client::System::Resource::Handle::ModelResourceHandle::vf12 */
+byte F_0052d8e0(void)
+{
+  GEN_ENTER(0x52d8e0u, 0u, 0u, 0u, 0u);
+  return 1;
+}
+
+/* ref: Client::System::Resource::Handle::ModelResourceHandle::vf15 */
+uint F_0052d8f0(void)
+{
+  GEN_ENTER(0x52d8f0u, 0u, 0u, 0u, 0u);
+  return 0x180;
+}
+
 /* ref: Client::System::Resource::Handle::ModelResourceHandle::vf1 */
 byte F_0052d900(unsigned int gen_a0)
 {
@@ -7296,43 +7324,5 @@ byte F_00534620(unsigned int gen_a0)
     return 0;
   }
   return 1;
-}
-
-/* ref: FUN_00534650 */
-byte F_00534650(unsigned int gen_a0)
-{
-  GEN_ENTER(0x534650u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 == 0xf;
-}
-
-/* ref: FUN_00534660 */
-byte F_00534660(unsigned int gen_a0)
-{
-  GEN_ENTER(0x534660u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 == 10;
-}
-
-/* ref: FUN_00534670 */
-byte F_00534670(unsigned int gen_a0)
-{
-  GEN_ENTER(0x534670u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  if ((6 < param_1) && (param_1 < 10)) {
-    return 1;
-  }
-  return 0;
-}
-
-/* ref: FUN_00534690 */
-byte F_00534690(unsigned int gen_a0)
-{
-  GEN_ENTER(0x534690u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  if ((0 < param_1) && ((param_1 < 7 || (param_1 == 10)))) {
-    return 1;
-  }
-  return 0;
 }
 

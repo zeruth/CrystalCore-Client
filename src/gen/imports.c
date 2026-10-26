@@ -576,7 +576,7 @@ unsigned int gen_imp_SysStringLen(int a0, int a1, int a2, int a3, ...) { GEN_RES
 gen_real_fn gen_real_SystemTimeToFileTime;
 unsigned int gen_imp_SystemTimeToFileTime(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_SystemTimeToFileTime(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_TerminateProcess;
-unsigned int gen_imp_TerminateProcess(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_TerminateProcess(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_TerminateProcess();   /* the runtime's */
 gen_real_fn gen_real_TextOutA;
 unsigned int gen_imp_TextOutA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_TextOutA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_TlsAlloc;
@@ -626,7 +626,7 @@ unsigned int gen_imp_WSAGetLastError(int a0, int a1, int a2, int a3, ...) { GEN_
 gen_real_fn gen_real_WSAIoctl;
 unsigned int gen_imp_WSAIoctl(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WSAIoctl(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_WSAStartup;
-unsigned int gen_imp_WSAStartup(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WSAStartup(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_WSAStartup();   /* the runtime's */
 gen_real_fn gen_real_WaitForMultipleObjects;
 unsigned int gen_imp_WaitForMultipleObjects(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WaitForMultipleObjects(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_WaitForSingleObject;
@@ -1023,7 +1023,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e370u, "OLEAUT32.dll", "SysFreeString", (void *)gen_imp_SysFreeString, &gen_real_SysFreeString},
   {0x107e378u, "OLEAUT32.dll", "SysStringLen", (void *)gen_imp_SysStringLen, &gen_real_SysStringLen},
   {0x107e2a4u, "KERNEL32.dll", "SystemTimeToFileTime", (void *)gen_imp_SystemTimeToFileTime, &gen_real_SystemTimeToFileTime},
-  {0x107e210u, "KERNEL32.dll", "TerminateProcess", (void *)gen_imp_TerminateProcess, &gen_real_TerminateProcess},
+  {0x107e210u, "KERNEL32.dll", "TerminateProcess", (void *)gen_imp_TerminateProcess, 0},
   {0x107e048u, "GDI32.dll", "TextOutA", (void *)gen_imp_TextOutA, &gen_real_TextOutA},
   {0x107e198u, "KERNEL32.dll", "TlsAlloc", (void *)gen_imp_TlsAlloc, &gen_real_TlsAlloc},
   {0x107e190u, "KERNEL32.dll", "TlsFree", (void *)gen_imp_TlsFree, &gen_real_TlsFree},
@@ -1048,7 +1048,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e57cu, "WS2_32.dll", "WSACleanup", (void *)gen_imp_WSACleanup, &gen_real_WSACleanup},
   {0x107e51cu, "WS2_32.dll", "WSAGetLastError", (void *)gen_imp_WSAGetLastError, &gen_real_WSAGetLastError},
   {0x107e53cu, "WS2_32.dll", "WSAIoctl", (void *)gen_imp_WSAIoctl, &gen_real_WSAIoctl},
-  {0x107e578u, "WS2_32.dll", "WSAStartup", (void *)gen_imp_WSAStartup, &gen_real_WSAStartup},
+  {0x107e578u, "WS2_32.dll", "WSAStartup", (void *)gen_imp_WSAStartup, 0},
   {0x107e0c0u, "KERNEL32.dll", "WaitForMultipleObjects", (void *)gen_imp_WaitForMultipleObjects, &gen_real_WaitForMultipleObjects},
   {0x107e270u, "KERNEL32.dll", "WaitForSingleObject", (void *)gen_imp_WaitForSingleObject, &gen_real_WaitForSingleObject},
   {0x107e294u, "KERNEL32.dll", "WideCharToMultiByte", (void *)gen_imp_WideCharToMultiByte, &gen_real_WideCharToMultiByte},

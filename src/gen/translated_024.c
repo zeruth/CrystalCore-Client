@@ -1,5 +1,43 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00534650 */
+byte F_00534650(unsigned int gen_a0)
+{
+  GEN_ENTER(0x534650u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 == 0xf;
+}
+
+/* ref: FUN_00534660 */
+byte F_00534660(unsigned int gen_a0)
+{
+  GEN_ENTER(0x534660u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 == 10;
+}
+
+/* ref: FUN_00534670 */
+byte F_00534670(unsigned int gen_a0)
+{
+  GEN_ENTER(0x534670u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  if ((6 < param_1) && (param_1 < 10)) {
+    return 1;
+  }
+  return 0;
+}
+
+/* ref: FUN_00534690 */
+byte F_00534690(unsigned int gen_a0)
+{
+  GEN_ENTER(0x534690u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  if ((0 < param_1) && ((param_1 < 7 || (param_1 == 10)))) {
+    return 1;
+  }
+  return 0;
+}
+
 /* ref: FUN_005346b0 */
 uint F_005346b0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -16387,45 +16425,5 @@ byte F_0054b990(unsigned int gen_a0, unsigned int gen_a1)
   undefined4 param_2 = (undefined4)gen_a1;
   *(byte *)(in_ecx + 0x39) = (byte)param_2;
   return (byte)param_2;
-}
-
-/* ref: FUN_0054b9b0 */
-byte F_0054b9b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x54b9b0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(byte *)(in_ecx + 0x3a) = (byte)param_2;
-  return (byte)param_2;
-}
-
-/* ref: FUN_0054b9d0 */
-byte F_0054b9d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x54b9d0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(byte *)(in_ecx + 0x3b) = (byte)param_2;
-  return (byte)param_2;
-}
-
-/* ref: FUN_0054b9f0 */
-byte F_0054b9f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x54b9f0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(byte *)(in_ecx + 0x3c) = (byte)param_2;
-  return (byte)param_2;
-}
-
-/* ref: FUN_0054ba10 */
-uint F_0054ba10(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x54ba10u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0x40) = param_2;
-  return param_2;
 }
 

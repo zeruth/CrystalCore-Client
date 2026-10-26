@@ -1,5 +1,115 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_0055d9c0 */
+uint F_0055d9c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x55d9c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  uint uVar1;
+  int * piVar2;
+  
+  piVar2 = *(int * PTR32 *)((int)this + 0x30);
+  if ((piVar2 == (int *)0x0) || (*piVar2 != param_1)) {
+    uVar1 = 0;
+    if (*(short *)((int)this + 0x10) != 0) {
+      piVar2 = *(int * PTR32 *)this;
+      do {
+        if (*piVar2 == param_1) {
+          piVar2 = *(int * PTR32 *)this + uVar1 * 4;
+          *(int * PTR32 *)((int)this + 0x30) = piVar2;
+          return (uint)piVar2;
+        }
+        uVar1 = uVar1 + 1;
+        piVar2 = piVar2 + 4;
+      } while (uVar1 < *(ushort *)((int)this + 0x10));
+    }
+    piVar2 = (int *)0x0;
+  }
+  return (uint)piVar2;
+}
+
+/* ref: FUN_0055da10 */
+uint F_0055da10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x55da10u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  uint * puVar1;
+  uint uVar2;
+  
+  uVar2 = 0;
+  if (param_1 == 0) {
+    return uVar2;
+  }
+  if ((*(int *)(param_1 + 0x8c) != 0) &&
+     (puVar1 = ((uint *)GEN_TOP((*((int *)GEN_TOP((*(int *)(param_1 + 0x8c) + 8))) +
+                       (uint)*(ushort *)(param_1 + 0x90) * 0xc))), puVar1 != (uint *)0x0)) {
+    uVar2 = *puVar1;
+  }
+  return uVar2;
+}
+
+/* ref: FUN_0055da50 */
+uint F_0055da50(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x55da50u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  ushort uVar1;
+  int * piVar2;
+  int * piVar3;
+  uint uVar4;
+  
+  uVar1 = *(ushort *)((int)this + 0x12);
+  piVar2 = (int *)0x0;
+  if (uVar1 == 0) {
+    return (uint)piVar2;
+  }
+  uVar4 = 0;
+  if (uVar1 != 0) {
+    piVar3 = *(int * PTR32 *)((int)this + 4);
+    while (*piVar3 != param_1) {
+      uVar4 = uVar4 + 1;
+      piVar3 = piVar3 + 3;
+      if (uVar1 <= uVar4) {
+        return (uint)piVar2;
+      }
+    }
+    piVar2 = *(int * PTR32 *)((int)this + 4) + uVar4 * 3;
+  }
+  return (uint)piVar2;
+}
+
+/* ref: FUN_0055daa0 */
+uint F_0055daa0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x55daa0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_0055d920(this,param_1);
+  if ((uVar1 == 0) || (*(short *)(uVar1 + 0x18) != 2)) {
+    uVar1 = 0;
+  }
+  return uVar1;
+}
+
+/* ref: FUN_0055dac0 */
+uint F_0055dac0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x55dac0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_0055d920(this,param_1);
+  if ((uVar1 == 0) || (*(short *)(uVar1 + 0x18) != 3)) {
+    uVar1 = 0;
+  }
+  return uVar1;
+}
+
 /* ref: FUN_0055dae0 */
 uint F_0055dae0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9188,66 +9298,6 @@ uint F_00567620(unsigned int gen_a0, unsigned int gen_a1)
   uint uVar1;
   
   uVar1 = F_00564e90(this + 0x20de0,param_1);
-  return uVar1;
-}
-
-/* ref: Component::GUI2::AtkModule::vf10 */
-uint F_00567630(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x567630u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00564f00(this + 0x20de0,param_1);
-  return uVar1;
-}
-
-/* ref: Component::GUI2::AtkModule::vf11 */
-uint F_00567640(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x567640u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00564f70(this + 0x20de0,param_1);
-  return uVar1;
-}
-
-/* ref: Component::GUI2::AtkModule::vf12 */
-uint F_00567650(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x567650u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00564fe0(this + 0x20de0,param_1);
-  return uVar1;
-}
-
-/* ref: Component::GUI2::AtkModule::vf13 */
-uint F_00567660(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x567660u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00565040(this + 0x20de0,param_1);
-  return uVar1;
-}
-
-/* ref: Component::GUI2::AtkModule::vf14 */
-uint F_00567670(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x567670u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_005650a0(this + 0x20de0,param_1);
   return uVar1;
 }
 

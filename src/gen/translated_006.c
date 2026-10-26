@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_004601f0 */
+uint F_004601f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x4601f0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[9])REFP(0x1090a64));
+  *(undefined4 *)((int)this + 8) = 0;
+  *(undefined4 *)((int)this + 0xc) = 0;
+  *(undefined4 *)((int)this + 0x10) = param_1;
+  *(undefined4 *)((int)this + 0x14) = 0;
+  *(undefined4 *)((int)this + 0x18) = 0;
+  *(undefined4 *)((int)this + 0x1c) = 0;
+  *(undefined2 *)((int)this + 0x2c) = 0;
+  F_00c49908((int)this + 0x20,0xc,"ADDON.DAT");
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[9])REFP(0x109181c));
+  *(undefined4 *)((int)this + 0x30) = param_1;
+  *(undefined1 *)((int)this + 0x34) = 0;
+  *(undefined4 *)((int)this + 0x40) = 0;
+  uVar1 = F_004296a0(0x74,0,400);
+  *(uint *)((int)this + 0x3c) = uVar1;
+  *(uint *)uVar1 = uVar1;
+  *((int *)GEN_TOP((*(int *)((int)this + 0x3c) + 4))) = *(int *)((int)this + 0x3c);
+  *((int *)GEN_TOP((*(int *)((int)this + 0x3c) + 8))) = *(int *)((int)this + 0x3c);
+  *((undefined1 *)GEN_TOP((*(int *)((int)this + 0x3c) + 0x70))) = 1;
+  *((undefined1 *)GEN_TOP((*(int *)((int)this + 0x3c) + 0x71))) = 1;
+  return (uint)this;
+}
+
 /* ref: FUN_00460270 */
 uint F_00460270(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -4596,7 +4627,7 @@ uint F_00466940(unsigned int gen_a0, unsigned int gen_a1)
       iVar5 = *(int *)(param_1 + 0xa8) + (*(int *)(gen_frame + 0x4));
       if ((uVar2 == 0) ||
          (((-1 < (int)uVar2 && ((int)uVar2 < 7)) &&
-          (*(uint *)(iVar5 + 0x1b4) == (uint)(byte)(&REFG(undefined, 0x1372328))[uVar2])))) {
+          (*(uint *)(iVar5 + 0x1b4) == (uint)(byte)(&REFG(undefined, 0x1372328))[(int)(uVar2)])))) {
         if (uVar2 == 2) {
           bVar1 = F_0042b740((undefined *)(iVar5 + 0x160),"Important");
           uVar2 = CONCAT31(extraout_var_00,bVar1);
@@ -7932,7 +7963,7 @@ uint F_0046adf0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
     return param_1;
   }
   if (param_1 + 1 < 0xd) {
-    uVar1 = (uint)(&REFG(byte, 0x46af79))[param_1];
+    uVar1 = (uint)(&REFG(byte, 0x46af79))[(int)(param_1)];
     switch((unsigned int)(uintptr_t)(param_1)) {
     case 0: ;
       goto switchD_0046ae4f_caseD_0;
@@ -13994,21 +14025,6 @@ uint F_00471610(unsigned int gen_a0, unsigned int gen_a1)
   
   pfVar1 = param_1;
   if (!((float10)*param_1 < (float10)*param_2)) {
-    pfVar1 = param_2;
-  }
-  return (uint)pfVar1;
-}
-
-/* ref: FUN_00471630 */
-uint F_00471630(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x471630u, gen_a0, gen_a1, 0u, 0u);
-  float * param_1 = (float *)(uintptr_t)gen_a0;
-  float * param_2 = (float *)(uintptr_t)gen_a1;
-  float * pfVar1;
-  
-  pfVar1 = param_1;
-  if (!((float10)*param_2 < (float10)*param_1)) {
     pfVar1 = param_2;
   }
   return (uint)pfVar1;

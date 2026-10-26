@@ -1,5 +1,61 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00724350 */
+uint F_00724350(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x724350u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 4,800);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_00724380 */
+uint F_00724380(unsigned int gen_a0)
+{
+  GEN_ENTER(0x724380u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 0xc;
+}
+
+/* ref: FUN_007243b0 */
+uint F_007243b0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x7243b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 0x18,800);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_00724400 */
+uint F_00724400(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x724400u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 8,800);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_00724440 */
+uint F_00724440(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x724440u, gen_a0, gen_a1, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_004296a0(param_1 * 4,param_2,800);
+  return uVar1;
+}
+
 /* ref: FUN_00724470 */
 uint F_00724470(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -4744,58 +4800,6 @@ uint F_00728050(unsigned int gen_a0)
 uint F_00728060(unsigned int gen_a0)
 {
   GEN_ENTER(0x728060u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00728070 */
-uint F_00728070(unsigned int gen_a0)
-{
-  GEN_ENTER(0x728070u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00728080 */
-uint F_00728080(unsigned int gen_a0)
-{
-  GEN_ENTER(0x728080u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_007280c0 */
-uint F_007280c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7280c0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  uint uVar1;
-  
-  if (param_1 == 0) {
-    return 0;
-  }
-  if ((param_1 < 0x40000000) && (uVar1 = F_004069f0(param_1 * 4), uVar1 != 0)) {
-    return uVar1;
-  }
-  (*(undefined4 *)(gen_frame + 0x8)) = 0;
-  (*(undefined * PTR32 * PTR32 *)(gen_frame + 0x4)) = (*(undefined * PTR32 (*)[3])REFP(0x1090534));
-                    
-  F_0046e060(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x4)));
-}
-
-/* ref: FUN_00728120 */
-uint F_00728120(unsigned int gen_a0)
-{
-  GEN_ENTER(0x728120u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00728150 */
-uint F_00728150(unsigned int gen_a0)
-{
-  GEN_ENTER(0x728150u, gen_a0, 0u, 0u, 0u);
   uint param_1 = (uint)gen_a0;
   return param_1;
 }

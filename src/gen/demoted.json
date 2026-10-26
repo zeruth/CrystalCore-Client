@@ -1,6 +1,6 @@
 {
  "0040ea50": "C2143: syntax error: missing ';' before 'constant' | this[uVar1] = (((code *)REFP(0xc4630f)))0x0;",
- "009919e0": "C2440: '=': cannot convert from 'float' to 'undefined *' | puVar1 = (&REFG(float, 0x10defa0))[(*(int *)&gen_args[2])];",
+ "009919e0": "C2440: '=': cannot convert from 'float' to 'undefined *' | puVar1 = (&REFG(float, 0x10defa0))[(int)((*(int *)&gen_args[2]))];",
  "009cd420": "C2440: 'type cast': cannot convert from 'undefined *' to 'float' | (*(undefined * PTR32 *)(gen_frame + 0x28)) = (undefined *)(uintptr_t)gen_fl2bits((float)(this + (int)gen_fl2bits(fVar5) * 2 + 0x210));",
  "009cda00": "C2440: 'type cast': cannot convert from 'undefined *' to 'float' | (*(undefined * PTR32 *)(gen_frame + 0x24)) = (undefined *)(uintptr_t)gen_fl2bits((float)(this + (int)gen_fl2bits(fVar4) * 2 + 0x210));",
  "009ce010": "C2440: 'type cast': cannot convert from 'undefined *' to 'float' | (*(undefined * PTR32 *)(gen_frame + 0x24)) = (undefined *)(uintptr_t)gen_fl2bits((float)(this + (int)gen_fl2bits(fVar4) * 2 + 0x210));",

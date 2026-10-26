@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00475db0 */
+uint F_00475db0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x475db0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_00476330((undefined *)((int)this + -0x20),param_1);
+  return uVar1;
+}
+
 /* ref: FUN_00475dc0 */
 uint F_00475dc0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -213,7 +225,7 @@ uint F_00475fd0(unsigned int gen_a0)
   if (0x157 < param_1) {
     return 0;
   }
-  return (&REFG(undefined4, 0x14a31f0))[param_1];
+  return (&REFG(undefined4, 0x14a31f0))[(int)(param_1)];
 }
 
 /* ref: FUN_00476000 */
@@ -6770,19 +6782,6 @@ uint F_0047cd60(unsigned int gen_a0, unsigned int gen_a1)
     return (uint)this;
   }
   *(undefined4 *)this = 0;
-  return (uint)this;
-}
-
-/* ref: FUN_0047cdb0 */
-uint F_0047cdb0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x47cdb0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  F_0042c880(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
   return (uint)this;
 }
 

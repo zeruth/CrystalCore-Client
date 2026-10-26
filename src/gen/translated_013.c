@@ -1,5 +1,40 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_004be7c0 */
+unsigned int F_004be7c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3)
+{
+  GEN_ENTER(0x4be7c0u, gen_a0, gen_a1, gen_a2, gen_trace_f(gen_a3));
+  float * param_1 = (float *)(uintptr_t)gen_a0;
+  float * param_2 = (float *)(uintptr_t)gen_a1;
+  float * param_3 = (float *)(uintptr_t)gen_a2;
+  float param_4 = (float)gen_a3;
+  float10 fVar1;
+  float10 fVar2;
+  
+  fVar1 = (float10)param_4;
+  fVar2 = (float10)(float)((float10)1 - fVar1);
+  *param_1 = (float)((float10)*param_3 * fVar1 + fVar2 * (float10)*param_2);
+  param_1[1] = (float)((float10)param_3[1] * fVar1 + (float10)param_2[1] * fVar2);
+  param_1[2] = (float)((float10)param_3[2] * fVar1 + (float10)param_2[2] * fVar2);
+  param_1[3] = (float)((float10)param_3[3] * fVar1 + (float10)param_2[3] * fVar2);
+  param_1[4] = (float)((float10)param_3[4] * fVar1 + (float10)param_2[4] * fVar2);
+  param_1[5] = (float)((float10)param_3[5] * fVar1 + (float10)param_2[5] * fVar2);
+  param_1[6] = (float)((float10)param_3[6] * fVar1 + (float10)param_2[6] * fVar2);
+  param_1[7] = (float)((float10)param_3[7] * fVar1 + (float10)param_2[7] * fVar2);
+  param_1[8] = (float)(fVar2 * (float10)param_2[8] + (float10)param_3[8] * fVar1);
+  return 0;
+}
+
+/* ref: FUN_004be870 */
+unsigned int F_004be870(unsigned int gen_a0, float gen_a1)
+{
+  GEN_ENTER(0x4be870u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  float * in_ecx = (float *)(uintptr_t)gen_a0;
+  float param_2 = (float)gen_a1;
+  *in_ecx = (float)((float10)*(float *)&REFG(undefined, 0x1097920) * (float10)param_2 + (float10)*in_ecx);
+  return 0;
+}
+
 /* ref: FUN_004be890 */
 unsigned int F_004be890(unsigned int gen_a0, float gen_a1, unsigned int gen_a2, float gen_a3)
 {
@@ -11048,124 +11083,6 @@ uint F_004ca660(unsigned int gen_a0)
   *(uint *)(in_esi + 0x7c) = (uint)uVar1;
   *(undefined4 *)(in_esi + 0x78) = 2;
   *(undefined4 *)(in_esi + 0x60) = 2;
-  return 2;
-}
-
-/* ref: FUN_004ca6f0 */
-uint F_004ca6f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4ca6f0u, gen_a0, gen_a1, 0u, 0u);
-  unsigned int gen_args[2];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  char * pcVar1;
-  uint uVar2;
-  char * pcVar3;
-  char * pcVar4;
-  char * pcVar5;
-  char * pcVar6;
-  char * pcVar7;
-  uint local_14;
-  uint local_10;
-  uint local_c;
-  char local_6;
-  char local_5;
-  
-  uVar2 = *(uint *)((*(int *)&gen_args[0]) + 0x6c);
-  local_c = *(uint *)((*(int *)&gen_args[0]) + 0x7c);
-  pcVar4 = ((char *)GEN_TOP((*(int *)((*(int *)&gen_args[0]) + 0x38) + uVar2)));
-  pcVar3 = *(char * PTR32 *)((*(int *)&gen_args[0]) + 0x78);
-  if (*(int *)((*(int *)&gen_args[0]) + 0x2c) - 0x106U < uVar2) {
-    local_14 = (uVar2 - *(int *)((*(int *)&gen_args[0]) + 0x2c)) + 0x106;
-  }
-  else {
-    local_14 = 0;
-  }
-  local_5 = pcVar4[(int)(pcVar3 + -1)];
-  local_6 = pcVar4[(int)pcVar3];
-  pcVar1 = pcVar4 + 0x102;
-  if (*(char * PTR32 *)((*(int *)&gen_args[0]) + 0x8c) <= pcVar3) {
-    local_c = local_c >> 2;
-  }
-  local_10 = *(uint *)((*(int *)&gen_args[0]) + 0x90);
-  if (*(uint *)((*(int *)&gen_args[0]) + 0x74) < *(uint *)((*(int *)&gen_args[0]) + 0x90)) {
-    local_10 = *(uint *)((*(int *)&gen_args[0]) + 0x74);
-  }
-  do {
-    pcVar7 = ((char *)GEN_TOP((*(int *)((*(int *)&gen_args[0]) + 0x38) + (*(uint *)&gen_args[1]))));
-    if ((((pcVar7[(int)pcVar3] == local_6) && (pcVar7[(int)(pcVar3 + -1)] == local_5)) &&
-        (*pcVar7 == *pcVar4)) && (pcVar7[1] == pcVar4[1])) {
-      pcVar7 = pcVar7 + 2;
-      pcVar5 = pcVar4 + 2;
-      while (((((pcVar6 = pcVar5 + 1, pcVar5[1] == pcVar7[1] &&
-                (pcVar6 = pcVar5 + 2, pcVar5[2] == pcVar7[2])) &&
-               ((pcVar6 = pcVar5 + 3, pcVar5[3] == pcVar7[3] &&
-                ((pcVar6 = pcVar5 + 4, pcVar5[4] == pcVar7[4] &&
-                 (pcVar6 = pcVar5 + 5, pcVar5[5] == pcVar7[5])))))) &&
-              (pcVar6 = pcVar5 + 6, pcVar5[6] == pcVar7[6])) &&
-             (pcVar6 = pcVar5 + 7, pcVar5[7] == pcVar7[7]))) {
-        pcVar6 = pcVar5 + 8;
-        pcVar7 = pcVar7 + 8;
-        if ((pcVar5[8] != *pcVar7) || (pcVar5 = pcVar6, pcVar1 <= pcVar6)) break;
-      }
-      pcVar7 = pcVar6 + (0x102 - (int)pcVar1);
-      if ((int)pcVar3 < (int)pcVar7) {
-        *(uint *)((*(int *)&gen_args[0]) + 0x70) = (*(uint *)&gen_args[1]);
-        if ((int)local_10 <= (int)pcVar7) {
-LAB_004ca83a: ;
-          if (*(char * PTR32 *)((*(int *)&gen_args[0]) + 0x74) < pcVar7) {
-            pcVar7 = *(char * PTR32 *)((*(int *)&gen_args[0]) + 0x74);
-          }
-          return (uint)pcVar7;
-        }
-        local_5 = pcVar4[(int)(pcVar6 + (0x101 - (int)pcVar1))];
-        local_6 = pcVar4[(int)pcVar7];
-        pcVar3 = pcVar7;
-      }
-    }
-    pcVar7 = pcVar3;
-    (*(uint *)&gen_args[1]) = (uint)*((ushort *)GEN_TOP((*(int *)((*(int *)&gen_args[0]) + 0x40) + (*(uint *)((*(int *)&gen_args[0]) + 0x34) & (*(uint *)&gen_args[1])) * 2)));
-    if (((*(uint *)&gen_args[1]) <= local_14) || (local_c = local_c - 1, pcVar3 = pcVar7, local_c == 0))
-    goto LAB_004ca83a;
-  } while( true );
-}
-
-/* ref: FUN_004ca850 */
-uint F_004ca850(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4ca850u, gen_a0, gen_a1, 0u, 0u);
-  int in_edx = (int)gen_a0;
-  int in_esi = (int)gen_a1;
-  char * pcVar1;
-  char * pcVar2;
-  char * pcVar3;
-  char * pcVar4;
-  
-  pcVar1 = ((char *)GEN_TOP((*(int *)(in_esi + 0x6c) + *(int *)(in_esi + 0x38))));
-  pcVar4 = ((char *)GEN_TOP((*(int *)(in_esi + 0x38) + in_edx)));
-  if ((*pcVar4 == *pcVar1) && (pcVar4[1] == pcVar1[1])) {
-    pcVar4 = pcVar4 + 2;
-    pcVar2 = pcVar1 + 2;
-    while (((((pcVar3 = pcVar2 + 1, pcVar2[1] == pcVar4[1] &&
-              (pcVar3 = pcVar2 + 2, pcVar2[2] == pcVar4[2])) &&
-             (pcVar3 = pcVar2 + 3, pcVar2[3] == pcVar4[3])) &&
-            ((pcVar3 = pcVar2 + 4, pcVar2[4] == pcVar4[4] &&
-             (pcVar3 = pcVar2 + 5, pcVar2[5] == pcVar4[5])))) &&
-           ((pcVar3 = pcVar2 + 6, pcVar2[6] == pcVar4[6] &&
-            (pcVar3 = pcVar2 + 7, pcVar2[7] == pcVar4[7]))))) {
-      pcVar3 = pcVar2 + 8;
-      pcVar4 = pcVar4 + 8;
-      if ((pcVar2[8] != *pcVar4) || (pcVar2 = pcVar3, pcVar1 + 0x102 <= pcVar3)) break;
-    }
-    pcVar3 = pcVar3 + (0x102 - (int)(pcVar1 + 0x102));
-    if (2 < (int)pcVar3) {
-      *(int *)(in_esi + 0x70) = in_edx;
-      if (pcVar3 <= *(char * PTR32 *)(in_esi + 0x74)) {
-        return (uint)pcVar3;
-      }
-      return (uint)*(char * PTR32 *)(in_esi + 0x74);
-    }
-  }
   return 2;
 }
 

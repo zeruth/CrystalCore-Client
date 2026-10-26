@@ -6350,7 +6350,7 @@ uint F_00430520(unsigned int gen_a0)
 {
   GEN_ENTER(0x430520u, gen_a0, 0u, 0u, 0u);
   int param_1 = (int)gen_a0;
-  return (uint)(&REFG(undefined * PTR32, 0x12fd37c))[param_1];
+  return (uint)(&REFG(undefined * PTR32, 0x12fd37c))[(int)(param_1)];
 }
 
 /* ref: FUN_00430540 */
@@ -7657,7 +7657,7 @@ uint F_00431b20(unsigned int gen_a0)
   
   uVar2 = 0;
   do {
-    pbVar5 = (&REFG(undefined * PTR32, 0x12fd5a8))[uVar2];
+    pbVar5 = (&REFG(undefined * PTR32, 0x12fd5a8))[(int)(uVar2)];
     pbVar3 = param_1;
     do {
       bVar1 = *pbVar3;
