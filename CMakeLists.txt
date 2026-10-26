@@ -49,7 +49,17 @@ add_executable(CrystalCore
   ${RUNTIME32}/Trace.cpp
   ${RUNTIME32}/Com32.cpp
   ${RUNTIME32}/Com32Gen.cpp
+  ${RUNTIME32}/DxDiagBridge.cpp
   $<TARGET_OBJECTS:gen>)
+# the runtime's 32-bit helpers, next to the executable: DxDiag32.exe answers DxDiag as the reference's
+# 32-bit provider does (runtime32/DxDiagBridge.cpp)
+set(DXDIAG32 ${CMAKE_BINARY_DIR}/bin/$<CONFIG>/DxDiag32.exe)
+add_custom_command(OUTPUT ${DXDIAG32}
+  COMMAND cmd /c ${RUNTIME32}/helpers32/build32.bat ${RUNTIME32}/helpers32/DxDiag32.cpp ${DXDIAG32}
+  DEPENDS ${RUNTIME32}/helpers32/DxDiag32.cpp ${RUNTIME32}/helpers32/DxDiagWire.h
+  COMMENT "DxDiag32.exe (x86)" VERBATIM)
+add_custom_target(helpers32 ALL DEPENDS ${DXDIAG32})
+add_dependencies(CrystalCore helpers32)
 target_compile_options(CrystalCore PRIVATE /W3 /Zi)
 target_link_libraries(CrystalCore PRIVATE dbghelp)
 # a PDB in every configuration: the runtime's hang dump and crash reports name the translated
@@ -65,5 +75,8 @@ target_compile_definitions(CrystalCore PRIVATE WIN32_LEAN_AND_MEAN NOMINMAX UNIC
 # (the main thread keeps the default 1 MB stack: Windows makes it before the launcher can reserve
 # the reference's range, and an 8 MB one did not fit below 0x400000 and took the range itself.
 # The reference runs on a thread of its own with a large stack, runtime32/RefImage.cpp)
+# (subsystem version 5.02, the lowest x64 takes, as the reference's 5.1: below 6.0 Windows gives a
+# window the legacy frame, and AdjustWindowRect's sizes with it. At 6.0 the port's window took a
+# WM_SIZE the reference's never did, its message pump parted from the reference's, 2026-10-25)
 target_link_options(CrystalCore PRIVATE /LARGEADDRESSAWARE:NO /DYNAMICBASE:NO /FIXED /BASE:0x60000000
-  /SUBSYSTEM:CONSOLE)
+  /SUBSYSTEM:CONSOLE,5.02)

@@ -1,5 +1,5 @@
 {
-  "rule": "Layouts for types the binary's library matches name but Ghidra has only as empty one-byte placeholders. ApplyFacts applyStructs lays each out in place. These are the Visual Studio 2010 CRT's own (the client is linked with it): _LocaleUpdate from crt/src/setlocal.h, _Lockit from yvals.h, DName from undname.cxx",
+  "rule": "Layouts for types Ghidra has only as empty one-byte placeholders, or not at all. ApplyFacts applyStructs lays each out in place (or makes it). _LocaleUpdate, _Lockit and DName are the Visual Studio 2010 CRT's own (the client is linked with it): _LocaleUpdate from crt/src/setlocal.h, _Lockit from yvals.h, DName from undname.cxx. The others are read off the client's code; each says where",
   "structs": {
     "_LocaleUpdate": {"size": 16, "fields": [
       ["localeinfo", 0, "localeinfo_struct"],
@@ -12,6 +12,23 @@
     "DName": {"size": 8, "fields": [
       ["node", 0, "DNameNode *"],
       ["flags", 4, "uint"]
+    ]},
+    "MD5Context": {"size": 88, "evidence": "MD5Init/MD5Update/MD5Final (0x408da0, 0x40b1f0, 0x40b2a0): state @0, bit count @0x10 (low, high), the 64-byte block buffer @0x18; ReadEncryptionReply keeps one in a 92-byte local", "fields": [
+      ["state", 0, "uint[4]"],
+      ["count", 16, "uint[2]"],
+      ["buffer", 24, "byte[64]"]
+    ]},
+    "Blowfish": {"size": 4168, "evidence": "BlowfishInit (0x409a70): P[18] @0, S[4][256] @0x48; ReadEncryptionReply allocates 0x1048 bytes for it", "fields": [
+      ["p", 0, "uint[18]"],
+      ["s", 72, "uint[1024]"]
+    ]},
+    "LobbyCryptEngine": {"size": 52, "evidence": "its constructor (0xe377b0) and WriteEncryptionInit/ReadEncryptionReply (0xe36880, 0xe38140): +4..+0x30 is the 0x2c-byte block MD5 makes the Blowfish key from; ServiceConsumerConnectionManager embeds it at +0x88..+0xbc", "fields": [
+      ["vftable", 0, "void *"],
+      ["key_magic", 4, "uint"],
+      ["key", 8, "uint"],
+      ["key_version", 12, "uint"],
+      ["key_phrase", 16, "char[32]"],
+      ["blowfish", 48, "Blowfish *"]
     ]}
   }
 }

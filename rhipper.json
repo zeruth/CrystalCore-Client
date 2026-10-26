@@ -18,7 +18,7 @@
     "projects": "C:/Users/tyler/tools/ghidra-projects",
     "project": "CrystalCore",
     "program": "ffxiv.exe",
-    "maxmem": "8G",
-    "shards": 2
+    "maxmem": "6G",
+    "shards": 1
   }
 }
