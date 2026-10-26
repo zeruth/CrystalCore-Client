@@ -1,22 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Application::Network::WorkDefinitions::ActionResult_TypeInfo::vf3 */
-uint F_00ff5650(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xff5650u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return *(uint *)(&REFG(undefined, 0x12afdf8) + param_1 * 4);
-}
-
-/* ref: FUN_00ff5670 */
-uint F_00ff5670(unsigned int gen_a0)
-{
-  GEN_ENTER(0xff5670u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return *(uint *)(&REFG(undefined, 0x12afe18) + param_1 * 4);
-}
-
 /* ref: Application::Network::WorkDefinitions::ActionResult_TypeInfo::vf4 */
 uint F_00ff5690(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -20610,5 +20593,37 @@ uint F_01013c00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   
   uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0x48))(this,param_1,0,param_2);
   return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::ClassJobWork_TypeInfo::vf19 */
+uint F_01013c20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x1013c20u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0x50))(this,0,param_1,param_2);
+  return uVar1;
+}
+
+/* ref: FUN_01013c40 */
+uint F_01013c40(unsigned int gen_a0)
+{
+  GEN_ENTER(0x1013c40u, gen_a0, 0u, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  *in_ecx = (*(undefined * PTR32 (*)[27])REFP(0x12b0964));
+  in_ecx[1] = 0;
+  in_ecx[2] = 0;
+  in_ecx[3] = 0;
+  in_ecx[4] = 0;
+  in_ecx[5] = 0;
+  in_ecx[6] = 0;
+  in_ecx[7] = 0;
+  in_ecx[8] = 0;
+  in_ecx[9] = 0;
+  in_ecx[10] = 0;
+  return (uint)in_ecx;
 }
 

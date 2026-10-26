@@ -1,21 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00c0c6f0 */
-uint F_00c0c6f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xc0c6f0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00c0c700 */
-uint F_00c0c700(unsigned int gen_a0)
-{
-  GEN_ENTER(0xc0c700u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
 /* ref: FUN_00c0c710 */
 uint F_00c0c710(unsigned int gen_a0)
 {
@@ -11851,13 +11835,13 @@ uint F_00c1a150(unsigned int gen_a0)
   GEN_ENTER(0xc1a150u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   float10 fVar1;
-  double dVar2;
-  float fVar3;
+  float fVar2;
+  double dVar3;
   
   fVar1 = F_00b9c960(param_1,2,0.0);
-  fVar3 = F_00b9c8e0(param_1,1);
-  dVar2 = F_00c52da0((longlong)fVar3,(longlong)fVar1);
-  F_00b9ade0(param_1,dVar2);
+  fVar2 = F_00b9c8e0(param_1,1);
+  dVar3 = F_00c52da0((longlong)fVar2,(longlong)fVar1);
+  F_00b9ade0(param_1,dVar3);
   return 1;
 }
 
@@ -11942,5 +11926,42 @@ uint F_00c1a2f0(unsigned int gen_a0)
   }
   F_00b9adc0(param_1);
   return 1;
+}
+
+/* ref: FUN_00c1a3f0 */
+uint F_00c1a3f0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc1a3f0u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  F_00b9adc0(param_1);
+  F_00b9ae20(param_1,((char *)REFP(0x1348a64)),0x1a);
+  return 2;
+}
+
+/* ref: FUN_00c1a420 */
+uint F_00c1a420(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc1a420u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int iVar1;
+  undefined4 * puVar2;
+  int iVar3;
+  int * piVar4;
+  uint uVar5;
+  
+  puVar2 = (undefined4 *)F_00b9c710(param_1,1,((char *)REFP(0x1348a80)));
+  iVar3 = F_00c53c51((undefined *)*puVar2);
+  *puVar2 = 0;
+  piVar4 = F_00c51f85();
+  iVar1 = *piVar4;
+  if (iVar3 != -1) {
+    F_00b9afd0(param_1,1);
+    return 1;
+  }
+  F_00b9adc0(param_1);
+  uVar5 = F_00c51e86(iVar1);
+  F_00b9af00(param_1,&REFG(undefined, 0x1348a0c),uVar5);
+  F_00b9ae00(param_1,iVar1);
+  return 3;
 }
 

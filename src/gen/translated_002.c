@@ -6594,17 +6594,6 @@ uint F_00427320(unsigned int gen_a0, unsigned int gen_a1)
   return (uint)in_ecx;
 }
 
-/* ref: Component::Excel::ExcelModuleInterface::vf2 */
-uint F_00427370(unsigned int gen_a0)
-{
-  GEN_ENTER(0x427370u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  uVar1 = F_0052fba0(*(undefined * PTR32 *)(this + 4));
-  return uVar1;
-}
-
 /* ref: Component::Excel::ExcelModuleInterface::vf4 */
 uint F_00427380(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
 {
@@ -6623,17 +6612,6 @@ uint F_00427380(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP((*(int *)(this + 4) + 0x10))) + 0x38))))
                     (*((int * PTR32 *)GEN_TOP((*(int *)(this + 4) + 0x10))),param_1,param_2,param_3,param_4,param_5,
                      param_6,param_7,param_8);
-  return uVar1;
-}
-
-/* ref: Component::Excel::ExcelModuleInterface::vf1 */
-uint F_00427390(unsigned int gen_a0)
-{
-  GEN_ENTER(0x427390u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  uVar1 = F_0052fbb0(*(undefined * PTR32 *)(this + 4));
   return uVar1;
 }
 
@@ -9157,5 +9135,23 @@ uint F_0042a6c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   F_0042c880(((undefined1 *)(gen_frame + 0x58)));
   F_00c47745((*(uint *)(gen_frame + 0xc8)) ^ (uint)(uint)(gen_frame + 0xcc));
   return (uint)param_1;
+}
+
+/* ref: FUN_0042a7e0 */
+uint F_0042a7e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x42a7e0u, gen_a0, gen_a1, 0u, 0u);
+  int * in_ecx = (int *)(uintptr_t)gen_a0;
+  int param_2 = (int)gen_a1;
+  return *in_ecx + param_2;
+}
+
+/* ref: FUN_0042a7f0 */
+uint F_0042a7f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x42a7f0u, gen_a0, gen_a1, 0u, 0u);
+  int * in_ecx = (int *)(uintptr_t)gen_a0;
+  int param_2 = (int)gen_a1;
+  return *in_ecx + param_2;
 }
 

@@ -1,50 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00798fb0 */
-uint F_00798fb0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x798fb0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  return *(uint *)(in_ecx + 0x2c8) >> ((char)param_2 * '\x02' & 0x1fU) & 3;
-}
-
-/* ref: FUN_00798fd0 */
-uint F_00798fd0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x798fd0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  __declspec(align(16)) undefined1 gen_frame[0x20];
-  uint uVar1;
-  undefined * this_00;
-  undefined1 * this_01;
-  int iVar2;
-  
-  this_01 = (gen_frame + 0x1c);
-  F_0059dde0(*(undefined * PTR32 *)((int)this + 0x1a4),0);
-  if (*(char *)((int)this + 0x2c4) == '\0') {
-    this_00 = *((undefined * PTR32 *)GEN_TOP(((int)this + (uint)*(byte *)((int)this + 0x2c5) * 4 + 0x18c)));
-  }
-  else {
-    if (*(char *)((int)this + 0x2c4) != '\x01') goto LAB_00799013;
-    this_00 = *(undefined * PTR32 *)((int)this + 0x1a0);
-  }
-  F_0059dde0(this_00,1);
-LAB_00799013: ;
-  (*(undefined4 *)(gen_frame + 0xc)) = 0;
-  (*(undefined4 *)(gen_frame + 0x14)) = 0;
-  F_005a2710(&(*(undefined4 *)(gen_frame + 0xc)),3);
-  (*(undefined4 *)(gen_frame + 0x10)) = 2;
-  F_005a9110(this,2,&(*(undefined4 *)(gen_frame + 0xc)));
-  iVar2 = 1;
-  do {
-    this_01 = this_01 + -8;
-    uVar1 = F_005a2670(this_01);
-    iVar2 = iVar2 + -1;
-  } while (-1 < iVar2);
-  return uVar1;
-}
-
 /* ref: FUN_00799060 */
 byte F_00799060(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -10322,5 +10277,21 @@ byte F_007a3ac0(unsigned int gen_a0)
   
   bVar1 = F_00572e60(this,"MateriaAttachedRepair",0,6);
   return bVar1;
+}
+
+/* ref: FUN_007a3ad0 */
+uint F_007a3ad0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7a3ad0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1 & 0xf;
+}
+
+/* ref: FUN_007a3ae0 */
+uint F_007a3ae0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7a3ae0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1 >> 4 & 0xf;
 }
 

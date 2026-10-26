@@ -1,21 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Apricot::Engine::Data::Communicator::Particle::vf50 */
-uint F_009ef950(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9ef950u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x2cb0;
-}
-
-/* ref: Apricot::Engine::Data::Communicator::Particle::vf51 */
-uint F_009ef960(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9ef960u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x2cb8;
-}
-
 /* ref: Apricot::Engine::Data::Communicator::Particle::vf52 */
 uint F_009ef970(unsigned int gen_a0)
 {
@@ -9969,6 +9953,36 @@ uint F_009fc8e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 uint F_009fc910(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
   GEN_ENTER(0x9fc910u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  *param_1 = param_2;
+  param_1[1] = param_3;
+  return (uint)param_1;
+}
+
+/* ref: FUN_009fc930 */
+uint F_009fc930(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x9fc930u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
+  undefined4 uVar1;
+  undefined4 uVar2;
+  
+  uVar2 = param_2[1];
+  *param_1 = *param_2;
+  uVar1 = *param_3;
+  param_1[1] = uVar2;
+  param_1[2] = uVar1;
+  return (uint)param_1;
+}
+
+/* ref: FUN_009fc950 */
+uint F_009fc950(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x9fc950u, gen_a0, gen_a1, gen_a2, 0u);
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
   undefined4 param_2 = (undefined4)gen_a1;
   undefined4 param_3 = (undefined4)gen_a2;

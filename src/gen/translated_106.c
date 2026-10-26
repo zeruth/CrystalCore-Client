@@ -1,25 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00a05ba0 */
-unsigned int F_00a05ba0(unsigned int gen_a0, float gen_a1)
-{
-  GEN_ENTER(0xa05ba0u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  float param_2 = (float)gen_a1;
-  *(float *)(in_ecx + 0x94) = param_2;
-  return 0;
-}
-
-/* ref: FUN_00a05be0 */
-uint F_00a05be0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xa05be0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0x810) = param_2;
-  return param_2;
-}
-
 /* ref: FUN_00a05c00 */
 uint F_00a05c00(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -430,7 +410,7 @@ uint F_00a06210(void)
   int iVar5;
   
   (*(uint *)(gen_frame + 0x18)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x1c);
-  piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
+  piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),"PhysicsGroup");
   uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0x44))(piVar1);
   uVar3 = uVar2;
   if (0 < (int)uVar2) {
@@ -779,7 +759,7 @@ uint F_00a06720(void)
   int iVar10;
   uint local_8;
   
-  piVar5 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
+  piVar5 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),"AnimationLOD");
   uVar6 = ((code *)*(gen_code32 *)(*piVar5 + 0x44))(piVar5);
   local_8 = in_ECX;
   if (0 < (int)uVar6) {
@@ -2890,7 +2870,7 @@ unsigned int F_00a087e0(void)
   uint local_14;
   int local_8;
   
-  piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
+  piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),"PhysicsWind");
   uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0x44))(piVar1);
   if (0 < (int)uVar2) {
     uVar3 = F_00406bb0(-(uint)((int)((ulonglong)uVar2 * 0x84 >> 0x20) != 0) |
@@ -4373,7 +4353,7 @@ uint F_00a09e50(void)
   int * piVar4;
   int iVar5;
   
-  piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
+  piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),"PhysicsOffGroup");
   uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0x44))(piVar1);
   uVar3 = uVar2;
   if (0 < (int)uVar2) {
@@ -4505,7 +4485,7 @@ unsigned int F_00a0a020(void)
   int iVar11;
   int iVar12;
   
-  piVar2 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
+  piVar2 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),"MotionTimelineBlendTable");
   uVar3 = ((code *)*(gen_code32 *)(*piVar2 + 0x44))(piVar2);
   iVar11 = 0;
   (*(int *)(gen_frame + 0x8)) = 0;
@@ -4714,7 +4694,7 @@ unsigned int F_00a0a350(void)
   int iVar8;
   int local_8;
   
-  piVar2 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
+  piVar2 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),"MotionTimeline");
   uVar3 = ((code *)*(gen_code32 *)(*piVar2 + 0x44))(piVar2);
   if (0 < (int)uVar3) {
     uVar7 = 0;
@@ -12022,5 +12002,39 @@ uint F_00a14430(unsigned int gen_a0)
   GEN_ENTER(0xa14430u, gen_a0, 0u, 0u, 0u);
   uint param_1 = (uint)gen_a0;
   return param_1;
+}
+
+/* ref: FUN_00a14470 */
+uint F_00a14470(unsigned int gen_a0)
+{
+  GEN_ENTER(0xa14470u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00a14480 */
+uint F_00a14480(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xa14480u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  F_0042ccf0(this,param_1);
+  F_0042ccf0((undefined *)((int)this + 0x54),param_1 + 0x54);
+  F_0042ccf0((undefined *)((int)this + 0xa8),param_1 + 0xa8);
+  F_0042ccf0((undefined *)((int)this + 0xfc),param_1 + 0xfc);
+  F_0042ccf0((undefined *)((int)this + 0x150),param_1 + 0x150);
+  F_0042ccf0((undefined *)((int)this + 0x1a4),param_1 + 0x1a4);
+  F_0042ccf0((undefined *)((int)this + 0x1f8),param_1 + 0x1f8);
+  F_0042ccf0((undefined *)((int)this + 0x24c),param_1 + 0x24c);
+  F_0042ccf0((undefined *)((int)this + 0x2a0),param_1 + 0x2a0);
+  F_0042ccf0((undefined *)((int)this + 0x2f4),param_1 + 0x2f4);
+  F_0042ccf0((undefined *)((int)this + 0x348),param_1 + 0x348);
+  F_0042ccf0((undefined *)((int)this + 0x39c),param_1 + 0x39c);
+  F_0042ccf0((undefined *)((int)this + 0x3f0),param_1 + 0x3f0);
+  F_0042ccf0((undefined *)((int)this + 0x444),param_1 + 0x444);
+  F_0042ccf0((undefined *)((int)this + 0x498),param_1 + 0x498);
+  F_0042ccf0((undefined *)((int)this + 0x4ec),param_1 + 0x4ec);
+  F_0042ccf0((undefined *)((int)this + 0x540),param_1 + 0x540);
+  return (uint)this;
 }
 

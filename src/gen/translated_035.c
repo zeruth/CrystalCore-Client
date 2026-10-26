@@ -1,47 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_005d0600 */
-unsigned int F_005d0600(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x5d0600u, gen_a0, gen_a1, gen_a2, 0u);
-  int param_1 = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
-  undefined4 * puVar1;
-  
-  if (param_1 != param_2) {
-    puVar1 = param_3;
-    do {
-      if (puVar1 != (undefined4 *)0x0) {
-        *puVar1 = *((undefined4 *)GEN_TOP(((param_1 - (int)param_3) + (int)puVar1)));
-      }
-      puVar1 = puVar1 + 1;
-    } while ((param_1 - (int)param_3) + (int)puVar1 != param_2);
-  }
-  return 0;
-}
-
-/* ref: FUN_005d0630 */
-unsigned int F_005d0630(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x5d0630u, gen_a0, gen_a1, gen_a2, 0u);
-  int param_1 = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
-  undefined4 * puVar1;
-  
-  if (param_1 != param_2) {
-    puVar1 = param_3;
-    do {
-      if (puVar1 != (undefined4 *)0x0) {
-        *puVar1 = *((undefined4 *)GEN_TOP(((param_1 - (int)param_3) + (int)puVar1)));
-      }
-      puVar1 = puVar1 + 1;
-    } while ((param_1 - (int)param_3) + (int)puVar1 != param_2);
-  }
-  return 0;
-}
-
 /* ref: FUN_005d0660 */
 unsigned int F_005d0660(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -7984,5 +7942,36 @@ uint F_005d75c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xbc))
                     (this,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
   return uVar1;
+}
+
+/* ref: Client::LayoutEngine::Layer::VfxLayoutInstance::vf8 */
+uint F_005d7650(unsigned int gen_a0)
+{
+  GEN_ENTER(0x5d7650u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint uVar1;
+  
+  if (*(int *)(in_ecx + 0x30) != 0) {
+    uVar1 = F_00690020(*(int *)(in_ecx + 0x30));
+    return uVar1;
+  }
+  return 0;
+}
+
+/* ref: Client::LayoutEngine::Layer::VfxLayoutInstance::vf19 */
+unsigned int F_005d7660(unsigned int gen_a0)
+{
+  GEN_ENTER(0x5d7660u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint uVar1;
+  
+  if (*(undefined * PTR32 *)(this + 0x30) != (undefined *)0x0) {
+    uVar1 = F_0068b710(*(undefined * PTR32 *)(this + 0x30));
+    if ((char)uVar1 != '\0') {
+      ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x30) + 200))))(*(int * PTR32 *)(this + 0x30));
+      this[0x8c] = (undefined1)((byte)this[0x8c] | 8);
+    }
+  }
+  return 0;
 }
 

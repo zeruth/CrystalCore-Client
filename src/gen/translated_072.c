@@ -1,85 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::UI2::AddonSynthesisSimpleDialog::vf25 */
-uint F_007aff00(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7aff00u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  uint uVar1;
-  
-  (*(undefined4 *)(gen_frame + 0x4)) = 3;
-  (*(undefined4 *)(gen_frame + 0x8)) = 0xffffffff;
-  F_005a9110(this,1,&(*(undefined4 *)(gen_frame + 0x4)));
-  uVar1 = F_005a2670(&(*(undefined4 *)(gen_frame + 0x4)));
-  return uVar1;
-}
-
-/* ref: FUN_007aff30 */
-uint F_007aff30(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7aff30u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  F_005903f0(this);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10cd7cc));
-  *(undefined4 *)((int)this + 0x854) = 0;
-  *(undefined4 *)((int)this + 0x8f8) = 0;
-  *(undefined4 *)((int)this + 0x8fc) = 0;
-  *(undefined4 *)((int)this + 0x910) = 0;
-  *(undefined2 *)((int)this + 0x914) = 0;
-  *(undefined4 *)((int)this + 0x94c) = 0;
-  *(undefined4 *)((int)this + 0x950) = 0;
-  *(undefined4 *)((int)this + 0x954) = 0;
-  *(undefined4 *)((int)this + 0x958) = 0;
-  *(undefined4 *)((int)this + 0x95c) = 0;
-  *(undefined4 *)((int)this + 0x960) = 0;
-  *(undefined4 *)((int)this + 0x964) = 0;
-  *(undefined4 *)((int)this + 0x968) = 0;
-  *(undefined4 *)((int)this + 0x96c) = 0;
-  *(undefined4 *)((int)this + 0x970) = 0;
-  *(undefined4 *)((int)this + 0x974) = 0;
-  *(undefined4 *)((int)this + 0x978) = 0;
-  *(undefined4 *)((int)this + 0x97c) = 0;
-  *(undefined4 *)((int)this + 0x980) = 0;
-  *(undefined4 *)((int)this + 0x984) = 0;
-  *(undefined4 *)((int)this + 0x988) = 0;
-  *(undefined4 *)((int)this + 0x98c) = 0;
-  *(undefined4 *)((int)this + 0x990) = 0;
-  *(undefined4 *)((int)this + 400) = 0;
-  *(undefined4 *)((int)this + 0x194) = 0;
-  *(undefined4 *)((int)this + 0x198) = 0;
-  *(undefined4 *)((int)this + 0x19c) = 0;
-  *(undefined4 *)((int)this + 0x1a0) = 0;
-  *(undefined4 *)((int)this + 0x1a4) = 0;
-  *(undefined4 *)((int)this + 0x1a8) = 0;
-  *(undefined4 *)((int)this + 0x1ac) = 0;
-  *(undefined4 *)((int)this + 0x1b0) = 0;
-  *(undefined4 *)((int)this + 0x1b4) = 0;
-  *(byte *)((int)this + 0xfb) = *(byte *)((int)this + 0xfb) | 8;
-  *(byte *)((int)this + 0xf8) = *(byte *)((int)this + 0xf8) | 0x20;
-  *(undefined2 *)((int)this + 0x136) = 0x17;
-  F_0055e2a0(this,0x1000000,1);
-  *(undefined4 *)((int)this + 0x954) = 0;
-  *(undefined4 *)((int)this + 0x94c) = 0x40;
-  *(undefined4 *)((int)this + 0x95c) = 0x1000;
-  *(undefined4 *)((int)this + 0x964) = 0x2000;
-  *(undefined4 *)((int)this + 0x96c) = 0x80000;
-  *(undefined4 *)((int)this + 0x974) = 0x100000;
-  *(undefined4 *)((int)this + 0x984) = 0x800000;
-  *(undefined4 *)((int)this + 0x97c) = 0x400000;
-  *(undefined4 *)((int)this + 0x98c) = 0x1000000;
-  *(undefined4 *)((int)this + 0x950) = 0xe;
-  *(undefined4 *)((int)this + 0x958) = 0x15;
-  *(undefined4 *)((int)this + 0x960) = 0xf;
-  *(undefined4 *)((int)this + 0x968) = 0x10;
-  *(undefined4 *)((int)this + 0x970) = 0x11;
-  *(undefined4 *)((int)this + 0x978) = 0x12;
-  *(undefined4 *)((int)this + 0x988) = 0x14;
-  *(undefined4 *)((int)this + 0x980) = 0x13;
-  *(undefined4 *)((int)this + 0x990) = 0x19;
-  return (uint)this;
-}
-
 /* ref: Client::UI2::AddonActionMenu::vf37 */
 uint F_007b0110(unsigned int gen_a0)
 {
@@ -14201,5 +14121,34 @@ uint F_007be8f0(unsigned int gen_a0)
   }
   F_00c47745(((uint *)(gen_frame + 0x4))[5] ^ (uint)(uint)(gen_frame + 0x1c));
   return uVar2;
+}
+
+/* ref: FUN_007be9b0 */
+uint F_007be9b0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x7be9b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint in_EAX = 0;
+  
+  if (*(undefined * PTR32 *)((int)this + 0x180) != (undefined *)0x0) {
+    *(undefined1 *)((int)this + 0x188) = 1;
+    in_EAX = F_0059f6f0(*(undefined * PTR32 *)((int)this + 0x180),param_1,1);
+    *(undefined1 *)((int)this + 0x188) = 0;
+  }
+  return in_EAX;
+}
+
+/* ref: FUN_007be9e0 */
+uint F_007be9e0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7be9e0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  *((undefined4 *)GEN_TOP(((int)this + *(int *)((int)this + 0x57c) * 4 + 0x580))) = 0;
+  if (*(int *)((int)this + 0x180) != 0) {
+    this = (undefined *)F_00574c80(*(int *)((int)this + 0x180),
+                                *((uint *)GEN_TOP(((int)this + *(int *)((int)this + 0x57c) * 4 + 0x580))),1,1);
+  }
+  return (uint)this;
 }
 

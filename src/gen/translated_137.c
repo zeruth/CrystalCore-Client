@@ -1,48 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00bb0700 */
-byte F_00bb0700(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbb0700u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  return *(int *)this == *param_1;
-}
-
-/* ref: FUN_00bb0750 */
-uint F_00bb0750(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbb0750u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint * param_1 = (uint *)(uintptr_t)gen_a1;
-  uint * puVar1;
-  uint uVar2;
-  
-  uVar2 = *param_1;
-  *param_1 = *(uint *)(uVar2 + 8);
-  if (*((char *)GEN_TOP((*(int *)(uVar2 + 8) + 0x21))) == '\0') {
-    *((uint * PTR32 *)GEN_TOP((*(int *)(uVar2 + 8) + 4))) = param_1;
-  }
-  *(uint *)(uVar2 + 4) = param_1[1];
-  if (param_1 == *((uint * PTR32 *)GEN_TOP((*(int *)((int)this + 4) + 4)))) {
-    *((uint *)GEN_TOP((*(int *)((int)this + 4) + 4))) = uVar2;
-    *(uint * PTR32 *)(uVar2 + 8) = param_1;
-    param_1[1] = uVar2;
-    return uVar2;
-  }
-  puVar1 = (uint *)param_1[1];
-  if (param_1 == (uint *)puVar1[2]) {
-    puVar1[2] = uVar2;
-    *(uint * PTR32 *)(uVar2 + 8) = param_1;
-    param_1[1] = uVar2;
-    return uVar2;
-  }
-  *puVar1 = uVar2;
-  *(uint * PTR32 *)(uVar2 + 8) = param_1;
-  param_1[1] = uVar2;
-  return uVar2;
-}
-
 /* ref: FUN_00bb07b0 */
 uint F_00bb07b0(unsigned int gen_a0)
 {
@@ -9981,6 +9938,56 @@ uint F_00bb9ca0(unsigned int gen_a0)
       }
     }
     piVar2 = (int *)piVar4[3];
+    piVar1 = piVar4;
+  } while( true );
+}
+
+/* ref: FUN_00bb9d00 */
+uint F_00bb9d00(unsigned int gen_a0)
+{
+  GEN_ENTER(0xbb9d00u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint uVar1;
+  
+  uVar1 = F_00bb9ca0(this);
+  return uVar1;
+}
+
+/* ref: FUN_00bb9d10 */
+uint F_00bb9d10(unsigned int gen_a0)
+{
+  GEN_ENTER(0xbb9d10u, gen_a0, 0u, 0u, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  int * piVar1;
+  int * piVar2;
+  uint uVar3;
+  int * piVar4;
+  
+  piVar2 = (int *)param_1[4];
+  piVar1 = param_1;
+  do {
+    piVar4 = piVar2;
+    if (piVar4 == (int *)0x0) {
+      return 0;
+    }
+    uVar3 = ((code *)*(gen_code32 *)(*piVar4 + 0x10))(piVar4);
+    if (uVar3 == 1) {
+      return (uint)piVar4;
+    }
+    if (uVar3 == 2) {
+      piVar4 = (int *)piVar1[3];
+      if (piVar4 == (int *)0x0) {
+        return 0;
+      }
+      uVar3 = ((code *)*(gen_code32 *)(*piVar4 + 0x10))(piVar4);
+      if (uVar3 == 1) {
+        return (uint)piVar4;
+      }
+      if (uVar3 != 0) {
+        return 0;
+      }
+    }
+    piVar2 = (int *)piVar4[4];
     piVar1 = piVar4;
   } while( true );
 }

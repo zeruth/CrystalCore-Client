@@ -1,36 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::LayoutEngine::Layer::VfxLayoutInstance::vf8 */
-uint F_005d7650(unsigned int gen_a0)
-{
-  GEN_ENTER(0x5d7650u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint uVar1;
-  
-  if (*(int *)(in_ecx + 0x30) != 0) {
-    uVar1 = F_00690020(*(int *)(in_ecx + 0x30));
-    return uVar1;
-  }
-  return 0;
-}
-
-/* ref: Client::LayoutEngine::Layer::VfxLayoutInstance::vf19 */
-unsigned int F_005d7660(unsigned int gen_a0)
-{
-  GEN_ENTER(0x5d7660u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  if (*(undefined * PTR32 *)(this + 0x30) != (undefined *)0x0) {
-    uVar1 = F_0068b710(*(undefined * PTR32 *)(this + 0x30));
-    if ((char)uVar1 != '\0') {
-      ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x30) + 200))))(*(int * PTR32 *)(this + 0x30));
-      this[0x8c] = (undefined1)((byte)this[0x8c] | 8);
-    }
-  }
-  return 0;
-}
-
 /* ref: Client::LayoutEngine::Layer::VfxLayoutInstance::vf20 */
 unsigned int F_005d7690(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -11461,6 +11430,42 @@ unsigned int F_005e47e0(unsigned int gen_a0, float gen_a1)
       *(float *)(iVar1 + 0x20) = *pfVar2;
     }
   }
+  return 0;
+}
+
+/* ref: FUN_005e4860 */
+unsigned int F_005e4860(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x5e4860u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  ((code *)*(gen_code32 *)(*(int *)this + 0xe0))(this,param_1);
+  ((code *)*(gen_code32 *)(*(int *)this + 200))(this,param_2);
+  F_005de400(this,*(uint *)((int)this + 0x30));
+  return 0;
+}
+
+/* ref: Client::LayoutEngine::Layer::VfxLayoutInstance::vf25 */
+unsigned int F_005e48a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x5e48a0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  *(int *)(this + 0x30) = param_1;
+  *(undefined4 *)(param_1 + 0x30) = *param_2;
+  *(undefined4 *)(param_1 + 0x34) = param_2[1];
+  *(undefined4 *)(param_1 + 0x38) = param_2[2];
+  *(undefined4 *)(param_1 + 0x40) = param_2[4];
+  *(undefined4 *)(param_1 + 0x44) = param_2[5];
+  *(undefined4 *)(param_1 + 0x48) = param_2[6];
+  *(undefined4 *)(param_1 + 0x4c) = param_2[7];
+  *(undefined4 *)(param_1 + 0x50) = param_2[8];
+  *(undefined4 *)(param_1 + 0x54) = param_2[9];
+  *(undefined4 *)(param_1 + 0x58) = param_2[10];
+  *(uint *)(param_1 + 0x24) = *(uint *)(param_1 + 0x24) | 2;
   return 0;
 }
 

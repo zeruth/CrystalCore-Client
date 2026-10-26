@@ -1,33 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00d9a460 */
-unsigned int F_00d9a460(unsigned int gen_a0)
-{
-  GEN_ENTER(0xd9a460u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  LPVOID pvVar1;
-  
-  if (param_1 != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))(*(int * PTR32 *)((int)pvVar1 + 0x2c),param_1,0xc);
-  }
-  return 0;
-}
-
-/* ref: FUN_00d9a490 */
-unsigned int F_00d9a490(unsigned int gen_a0)
-{
-  GEN_ENTER(0xd9a490u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  LPVOID pvVar1;
-  
-  if (param_1 != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))(*(int * PTR32 *)((int)pvVar1 + 0x2c),param_1,0x10);
-  }
-  return 0;
-}
-
 /* ref: FUN_00d9a4c0 */
 unsigned int F_00d9a4c0(unsigned int gen_a0)
 {
@@ -6201,11 +6173,13 @@ uint F_00da00e0(unsigned int gen_a0, unsigned int gen_a1, ...)
 }
 
 /* ref: FUN_00da0140 */
-unsigned int F_00da0140(unsigned int gen_a0)
+unsigned int F_00da0140(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
-  GEN_ENTER(0xda0140u, gen_a0, 0u, 0u, 0u);
+  GEN_ENTER(0xda0140u, gen_a0, gen_a1, gen_a2, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
-  ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 8) + 0x10))))(*(int * PTR32 *)((int)this + 8));
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 8) + 0x10))))(*(int * PTR32 *)((int)this + 8),param_1,param_2);
   return 0;
 }
 
@@ -7138,5 +7112,37 @@ unsigned int F_00da0e20(unsigned int gen_a0, unsigned int gen_a1)
     pcVar2 = pcVar2 + 1;
   } while (cVar1 != '\0');
   return 0;
+}
+
+/* ref: FUN_00da0e40 */
+uint F_00da0e40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xda0e40u, gen_a0, gen_a1, gen_a2, 0u);
+  char * param_1 = (char *)(uintptr_t)gen_a0;
+  char * param_2 = (char *)(uintptr_t)gen_a1;
+  gen_size32 param_3 = (gen_size32)gen_a2;
+  char * pcVar1;
+  
+  pcVar1 = (char *)0x0;
+  if (param_3 != 0) {
+    pcVar1 = F_00c52620(param_1,param_2,param_3);
+  }
+  return (uint)pcVar1;
+}
+
+/* ref: FUN_00da0e60 */
+uint F_00da0e60(unsigned int gen_a0)
+{
+  GEN_ENTER(0xda0e60u, gen_a0, 0u, 0u, 0u);
+  char * param_1 = (char *)(uintptr_t)gen_a0;
+  char cVar1;
+  char * pcVar2;
+  
+  pcVar2 = param_1;
+  do {
+    cVar1 = *pcVar2;
+    pcVar2 = pcVar2 + 1;
+  } while (cVar1 != '\0');
+  return (int)pcVar2 - (int)(param_1 + 1);
 }
 

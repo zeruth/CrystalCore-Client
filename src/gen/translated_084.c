@@ -1,28 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::UI2::Agent::AgentMap::MapStructCompare::vf0 */
-uint F_00908590(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x908590u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x10c3f38));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_009085f0 */
-byte F_009085f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9085f0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(byte *)(in_ecx + 0x61) = (byte)param_2;
-  return (byte)param_2;
-}
-
 /* ref: FUN_00908600 */
 byte F_00908600(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -5869,6 +5846,32 @@ uint F_0090f1b0(unsigned int gen_a0, unsigned int gen_a1)
 uint F_0090f1e0(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0x90f1e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonConfigCharacterHotBar::CXhb::vf0 */
+uint F_0090f210(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x90f210u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonConfigCharacterHud::CGeneral::vf0 */
+uint F_0090f280(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x90f280u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));

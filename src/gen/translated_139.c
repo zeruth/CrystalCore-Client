@@ -1,46 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::System::Scheduler::Base::TimelineControler::vf48 */
-unsigned int F_00bc3940(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbc3940u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  return 0;
-}
-
-/* ref: FUN_00bc3950 */
-uint F_00bc3950(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbc3950u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  int iVar1;
-  int iVar2;
-  
-  iVar1 = *param_1;
-  if (*param_1 == 0) {
-    *(undefined4 *)this = 0;
-    *(undefined4 *)((int)this + 4) = 0;
-    *param_1 = (int)this + -0x18;
-    return 0;
-  }
-  do {
-    iVar2 = iVar1;
-    iVar1 = *(int *)(iVar2 + 0x1c);
-  } while (*(int *)(iVar2 + 0x1c) != 0);
-  if (this != (undefined *)0x0) {
-    *(uint *)(iVar2 + 0x1c) = (int)this - 0x18U;
-    *(int *)this = iVar2;
-    *(undefined4 *)((int)this + 4) = 0;
-    return (int)this - 0x18U;
-  }
-  *(undefined4 *)(iVar2 + 0x1c) = 0;
-  *(int *)&REFG(undefined, 0x0) = iVar2;
-  *(undefined4 *)&REFG(undefined, 0x4) = 0;
-  return 0;
-}
-
 /* ref: FUN_00bc39a0 */
 byte F_00bc39a0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9959,6 +9918,26 @@ uint F_00bcdd90(unsigned int gen_a0, unsigned int gen_a1)
   int in_ecx = (int)gen_a0;
   uint param_2 = (uint)gen_a1;
   *(uint *)(in_ecx + 0x1c) = param_2;
+  return param_2;
+}
+
+/* ref: FUN_00bcdde0 */
+uint F_00bcdde0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbcdde0u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  *(uint *)(in_ecx + 0x20) = param_2;
+  return param_2;
+}
+
+/* ref: FUN_00bcddf0 */
+uint F_00bcddf0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbcddf0u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  *(uint *)(in_ecx + 0xd8) = param_2;
   return param_2;
 }
 

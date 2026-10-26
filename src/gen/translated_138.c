@@ -1,55 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00bb9d00 */
-uint F_00bb9d00(unsigned int gen_a0)
-{
-  GEN_ENTER(0xbb9d00u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  uVar1 = F_00bb9ca0(this);
-  return uVar1;
-}
-
-/* ref: FUN_00bb9d10 */
-uint F_00bb9d10(unsigned int gen_a0)
-{
-  GEN_ENTER(0xbb9d10u, gen_a0, 0u, 0u, 0u);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  int * piVar1;
-  int * piVar2;
-  uint uVar3;
-  int * piVar4;
-  
-  piVar2 = (int *)param_1[4];
-  piVar1 = param_1;
-  do {
-    piVar4 = piVar2;
-    if (piVar4 == (int *)0x0) {
-      return 0;
-    }
-    uVar3 = ((code *)*(gen_code32 *)(*piVar4 + 0x10))(piVar4);
-    if (uVar3 == 1) {
-      return (uint)piVar4;
-    }
-    if (uVar3 == 2) {
-      piVar4 = (int *)piVar1[3];
-      if (piVar4 == (int *)0x0) {
-        return 0;
-      }
-      uVar3 = ((code *)*(gen_code32 *)(*piVar4 + 0x10))(piVar4);
-      if (uVar3 == 1) {
-        return (uint)piVar4;
-      }
-      if (uVar3 != 0) {
-        return 0;
-      }
-    }
-    piVar2 = (int *)piVar4[4];
-    piVar1 = piVar4;
-  } while( true );
-}
-
 /* ref: FUN_00bb9d70 */
 uint F_00bb9d70(unsigned int gen_a0)
 {
@@ -9839,6 +9789,47 @@ uint F_00bc3920(void)
 unsigned int F_00bc3930(void)
 {
   GEN_ENTER(0xbc3930u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: Client::System::Scheduler::Base::TimelineControler::vf48 */
+unsigned int F_00bc3940(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbc3940u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: FUN_00bc3950 */
+uint F_00bc3950(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbc3950u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  int iVar1;
+  int iVar2;
+  
+  iVar1 = *param_1;
+  if (*param_1 == 0) {
+    *(undefined4 *)this = 0;
+    *(undefined4 *)((int)this + 4) = 0;
+    *param_1 = (int)this + -0x18;
+    return 0;
+  }
+  do {
+    iVar2 = iVar1;
+    iVar1 = *(int *)(iVar2 + 0x1c);
+  } while (*(int *)(iVar2 + 0x1c) != 0);
+  if (this != (undefined *)0x0) {
+    *(uint *)(iVar2 + 0x1c) = (int)this - 0x18U;
+    *(int *)this = iVar2;
+    *(undefined4 *)((int)this + 4) = 0;
+    return (int)this - 0x18U;
+  }
+  *(undefined4 *)(iVar2 + 0x1c) = 0;
+  *(int *)&REFG(undefined, 0x0) = iVar2;
+  *(undefined4 *)&REFG(undefined, 0x4) = 0;
   return 0;
 }
 

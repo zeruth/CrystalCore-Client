@@ -1,31 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLandSet_TypeInfo::vf0 */
-uint F_00eb07c0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xeb07c0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[10])REFP(0x1159938));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLand_TypeInfo::vf0 */
-uint F_00eb07f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xeb07f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[10])REFP(0x1159938));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
 /* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbHouse_TypeInfo::vf0 */
 uint F_00eb0820(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9335,5 +9309,20 @@ unsigned int F_00eb8480(unsigned int gen_a0)
   F_00eb1c30(this);
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[7])REFP(0x11598e8));
   return 0;
+}
+
+/* ref: PoolAllocator_USetParameterInfo_WorkDefinitions_Network_Application_ME::vf1 */
+uint F_00eb84a0(void)
+{
+  GEN_ENTER(0xeb84a0u, 0u, 0u, 0u, 0u);
+  return 0x5555555;
+}
+
+/* ref: PoolAllocator_USetParameterInfo_WorkDefinitions_Network_Application_ME::vf2 */
+uint F_00eb84b0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xeb84b0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(int *)(in_ecx + 0x24d8) << 5;
 }
 

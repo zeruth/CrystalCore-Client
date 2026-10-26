@@ -1,27 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00e06580 */
-uint F_00e06580(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe06580u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x15e3738) + 0x10))))(REFG(int * PTR32, 0x15e3738));
-  uVar1 = F_00e06430(param_1,uVar1,param_2);
-  return uVar1;
-}
-
-/* ref: FUN_00e065b0 */
-uint F_00e065b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe065b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return param_2;
-}
-
 /* ref: FUN_00e065c0 */
 uint F_00e065c0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -3923,7 +3901,7 @@ uint F_00e09fa0(unsigned int gen_a0)
   if (0 < (int)uVar4) {
     pvVar2 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
     uVar3 = F_00d92460(*(undefined4 *)((int)pvVar2 + 0x2c),uVar4 + 1);
-    F_0105afb0(this_00);
+    F_0105afb0(this_00,uVar3,uVar4);
     *(undefined1 *)(uVar4 + uVar3) = 0;
     if (*(uint *)((int)this + 0x2c) == (*(uint *)((int)this + 0x30) & 0x3fffffff)) {
       F_00d95710(&REFG(undefined * PTR32, 0x13516ac),(int *)((int)this + 0x28),4);
@@ -9869,6 +9847,27 @@ unsigned int F_00e10750(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xe10750u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: RealArrayView::vf2 */
+unsigned int F_00e10760(void)
+{
+  GEN_ENTER(0xe10760u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: RealArrayView::vf8 */
+uint F_00e10770(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe10770u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  param_1[2] = *(undefined4 *)(this + 0x10);
+  param_1[3] = *(undefined4 *)(this + 0x14);
+  param_1[4] = 4;
+  param_1[1] = 1;
+  *param_1 = 0xb;
   return 0;
 }
 

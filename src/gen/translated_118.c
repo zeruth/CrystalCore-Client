@@ -1,32 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00ab0300 */
-uint F_00ab0300(void)
-{
-  GEN_ENTER(0xab0300u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00530100(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),0x6e);
-  return uVar1;
-}
-
-/* ref: FUN_00ab0320 */
-byte F_00ab0320(void)
-{
-  GEN_ENTER(0xab0320u, 0u, 0u, 0u, 0u);
-  int * piVar1;
-  uint uVar2;
-  
-  piVar1 = (int *)F_0052fbb0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
-  if (piVar1 != (int *)0x0) {
-    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 4))(piVar1);
-    if ((char)uVar2 == '\0') {
-      return 1;
-    }
-  }
-  return 0;
-}
-
 /* ref: FUN_00ab0350 */
 uint F_00ab0350(void)
 {
@@ -9676,6 +9649,36 @@ uint F_00abadb0(unsigned int gen_a0, unsigned int gen_a1)
 uint F_00abade0(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0xabade0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_0052ff60(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),param_1,param_2);
+  if (uVar1 == 0) {
+    return 0;
+  }
+  return *(uint *)(uVar1 + 4);
+}
+
+/* ref: FUN_00abae10 */
+uint F_00abae10(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xabae10u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_0052ff60(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),param_1,param_2);
+  if (uVar1 == 0) {
+    return 0;
+  }
+  return *(uint *)(uVar1 + 4);
+}
+
+/* ref: FUN_00abae40 */
+uint F_00abae40(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xabae40u, gen_a0, gen_a1, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   undefined4 param_2 = (undefined4)gen_a1;
   uint uVar1;

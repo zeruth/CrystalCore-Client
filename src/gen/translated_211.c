@@ -1,27 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Unwind@01070210 */
-uint F_01070210(unsigned int gen_a0)
-{
-  GEN_ENTER(0x1070210u, gen_a0, 0u, 0u, 0u);
-  int in_ebp = (int)gen_a0;
-  uint uVar1;
-  
-  uVar1 = F_00cb5fd0(in_ebp + -0x140);
-  return uVar1;
-}
-
-/* ref: Unwind@0107021b */
-uint F_0107021b(unsigned int gen_a0)
-{
-  GEN_ENTER(0x107021bu, gen_a0, 0u, 0u, 0u);
-  int in_ebp = (int)gen_a0;
-  uint uVar1;
-  
-  uVar1 = F_00cb5fd0(in_ebp + -0x248);
-  return uVar1;
-}
-
 /* ref: Unwind@01070226 */
 unsigned int F_01070226(unsigned int gen_a0)
 {
@@ -4285,6 +4263,24 @@ unsigned int F_01073780(void)
 {
   GEN_ENTER(0x1073780u, 0u, 0u, 0u, 0u);
   *(undefined4 *)&REFG(undefined, 0x14c592c) = REFG(float, 0x1340c00);
+  return 0;
+}
+
+/* ref: FUN_010737a0 */
+uint F_010737a0(void)
+{
+  GEN_ENTER(0x10737a0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107c930)));
+  return uVar1;
+}
+
+/* ref: FUN_010737b0 */
+unsigned int F_010737b0(void)
+{
+  GEN_ENTER(0x10737b0u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5930) = REFG(float, 0x1340ef8);
   return 0;
 }
 

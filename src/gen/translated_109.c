@@ -1,26 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00a2dcb0 */
-uint F_00a2dcb0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xa2dcb0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  F_00a2c290(this);
-  return (uint)this;
-}
-
-/* ref: FUN_00a2dcc0 */
-uint F_00a2dcc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xa2dcc0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined1 * param_2 = (undefined1 *)(uintptr_t)gen_a2;
-  *(undefined4 *)this = *param_1;
-  *(undefined1 *)((int)this + 4) = *param_2;
-  return (uint)this;
-}
-
 /* ref: FUN_00a2dce0 */
 uint F_00a2dce0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -10320,5 +10299,48 @@ uint F_00a37970(unsigned int gen_a0, unsigned int gen_a1)
   
   uVar1 = F_00a51200(0x34,param_1,(uint)((char)param_2 != '\0'),0,0);
   return uVar1;
+}
+
+/* ref: FUN_00a379a0 */
+byte F_00a379a0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xa379a0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  byte bVar1;
+  
+  bVar1 = *(int *)((int)this + 0x2178) != 0 || *(int *)((int)this + 0x217c) != 0;
+  if (*(int *)((int)this + 0x21b0) != 0 || *(int *)((int)this + 0x21b4) != 0) {
+    bVar1 = bVar1 + 1;
+  }
+  if (*(int *)((int)this + 0x21e8) != 0 || *(int *)((int)this + 0x21ec) != 0) {
+    bVar1 = bVar1 + 1;
+  }
+  if (*(int *)((int)this + 0x2220) != 0 || *(int *)((int)this + 0x2224) != 0) {
+    bVar1 = bVar1 + 1;
+  }
+  if (*(int *)((int)this + 0x2258) != 0 || *(int *)((int)this + 0x225c) != 0) {
+    bVar1 = bVar1 + 1;
+  }
+  if (*(int *)((int)this + 0x2290) != 0 || *(int *)((int)this + 0x2294) != 0) {
+    bVar1 = bVar1 + 1;
+  }
+  if (*(int *)((int)this + 0x22c8) != 0 || *(int *)((int)this + 0x22cc) != 0) {
+    bVar1 = bVar1 + 1;
+  }
+  if (*(int *)((int)this + 0x2300) != 0 || *(int *)((int)this + 0x2304) != 0) {
+    bVar1 = bVar1 + 1;
+  }
+  return bVar1;
+}
+
+/* ref: FUN_00a37a90 */
+byte F_00a37a90(unsigned int gen_a0)
+{
+  GEN_ENTER(0xa37a90u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (*(char *)(in_ecx + 0x311e) != '\0') {
+    return 0;
+  }
+  return *(char *)(in_ecx + 0x3088) == '\0';
 }
 

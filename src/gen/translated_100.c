@@ -1,37 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_009db180 */
-uint F_009db180(unsigned int gen_a0, float gen_a1)
-{
-  GEN_ENTER(0x9db180u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
-  float * in_ecx = (float *)(uintptr_t)gen_a0;
-  float param_2 = (float)gen_a1;
-  float10 fVar1;
-  
-  fVar1 = (float10)param_2;
-  *in_ecx = (float)(fVar1 * (float10)*in_ecx);
-  in_ecx[1] = (float)((float10)in_ecx[1] * fVar1);
-  in_ecx[2] = (float)(fVar1 * (float10)in_ecx[2]);
-  in_ecx[3] = (float)(fVar1 * (float10)in_ecx[3]);
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_009db1b0 */
-uint F_009db1b0(unsigned int gen_a0, float gen_a1)
-{
-  GEN_ENTER(0x9db1b0u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
-  float * in_ecx = (float *)(uintptr_t)gen_a0;
-  float param_2 = (float)gen_a1;
-  float10 fVar1;
-  
-  fVar1 = (float10)param_2;
-  *in_ecx = (float)((float10)*in_ecx / fVar1);
-  in_ecx[1] = (float)((float10)in_ecx[1] / fVar1);
-  in_ecx[2] = (float)((float10)in_ecx[2] / fVar1);
-  in_ecx[3] = (float)((float10)in_ecx[3] / fVar1);
-  return (uint)in_ecx;
-}
-
 /* ref: FUN_009db1e0 */
 uint F_009db1e0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -4902,5 +4870,26 @@ uint F_009e0280(unsigned int gen_a0)
   GEN_ENTER(0x9e0280u, gen_a0, 0u, 0u, 0u);
   int in_ecx = (int)gen_a0;
   return *(uint *)(in_ecx + 8);
+}
+
+/* ref: Apricot::Engine::Data::Communicator::PowderParticle::vf3 */
+unsigned int F_009e0290(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e0290u, gen_a0, 0u, 0u, 0u);
+  undefined4 in_ecx = (undefined4)gen_a0;
+  return 0;
+}
+
+/* ref: Apricot::Engine::Data::Communicator::PowderParticle::vf0 */
+uint F_009e02a0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e02a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[4])REFP(0x10dd500));
+  if (((param_1 & 1) != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) {
+    ((code *)REFG(gen_code32, 0x14a0a18))(this);
+  }
+  return (uint)this;
 }
 

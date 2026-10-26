@@ -1,35 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0055e470 */
-byte F_0055e470(unsigned int gen_a0)
-{
-  GEN_ENTER(0x55e470u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  if (*(char *)(in_ecx + 0x13b) == '\0') {
-    if (*(char *)(in_ecx + 0x13c) != '\0') goto LAB_0055e497;
-    if ((*(byte *)(in_ecx + 0xfb) & 8) == 0) {
-      return 1;
-    }
-  }
-  if (*(char *)(in_ecx + 0x13c) == '\0') {
-    return 0;
-  }
-LAB_0055e497: ;
-  if (((*(byte *)(in_ecx + 0xfb) & 2) == 0) && ((*(byte *)(in_ecx + 0xf8) & 1) == 0)) {
-    return 1;
-  }
-  return 0;
-}
-
-/* ref: Component::GUI2::AtkUnitBase::vf50 */
-unsigned int F_0055e4b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x55e4b0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  ((code *)*(gen_code32 *)(*(int *)this + 0x78))(this);
-  return 0;
-}
-
 /* ref: Component::GUI2::AtkUnitBase::vf26 */
 byte F_0055e4c0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -10733,5 +10703,34 @@ uint F_005694a0(unsigned int gen_a0)
   }
   *((undefined4 *)GEN_TOP((*(int *)((int)this + 0x104) + 0x24))) = 0;
   return 0;
+}
+
+/* ref: FUN_0056a3d0 */
+uint F_0056a3d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
+{
+  GEN_ENTER(0x56a3d0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 param_4 = (undefined4)gen_a4;
+  uint param_5 = (uint)gen_a5;
+  uint uVar1;
+  
+  uVar1 = F_00565340((undefined *)((int)this + 0x23c),param_1,param_2,param_4,this,param_3,0);
+  if (uVar1 != 0) {
+    *(uint *)(uVar1 + 0x14) =
+         *(uint *)(uVar1 + 0x14) ^ ((param_5 & 0xff) << 0x16 ^ *(uint *)(uVar1 + 0x14)) & 0x400000;
+  }
+  return uVar1;
+}
+
+/* ref: FUN_0056a410 */
+uint F_0056a410(unsigned int gen_a0)
+{
+  GEN_ENTER(0x56a410u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  F_00c472af(&REFG(undefined, 0x1379720),0x40,&REFG(undefined, 0x10a00c0),param_1);
+  return 0x1379720;
 }
 

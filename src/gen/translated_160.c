@@ -1,19 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: SQEX::CDev::Engine::Sd::Driver::IVoice::vf1 */
-uint F_00cf8fd0(void)
-{
-  GEN_ENTER(0xcf8fd0u, 0u, 0u, 0u, 0u);
-  return 0xffffffff;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::IVoice::vf2 */
-byte F_00cf8fe0(void)
-{
-  GEN_ENTER(0xcf8fe0u, 0u, 0u, 0u, 0u);
-  return 1;
-}
-
 /* ref: SQEX::CDev::Engine::Sd::Driver::IVoice::vf3 */
 byte F_00cf8ff0(void)
 {
@@ -11327,5 +11313,59 @@ uint F_00d06220(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
     uVar2 = extraout_EAX;
   }
   return uVar2;
+}
+
+/* ref: FUN_00d06270 */
+uint F_00d06270(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xd06270u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float * param_1 = (float *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  float10 fVar1;
+  int * piVar2;
+  
+  *(undefined1 *)((int)this + 0xf0) = 1;
+  gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)((int)this + 0xd8));
+  piVar2 = (int *)F_00d05480(this,param_2);
+  if (piVar2 == (int *)0x0) {
+    fVar1 = (float10)0;
+    *param_1 = (float)fVar1;
+    param_1[1] = (float)fVar1;
+    param_1[2] = (float)fVar1;
+    param_1[3] = (float)(float10)1;
+  }
+  else {
+    ((code *)*(gen_code32 *)(*piVar2 + 0x2c))(piVar2,param_1);
+  }
+  if (*(char *)((int)this + 0xf0) != '\0') {
+    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)((int)this + 0xd8));
+  }
+  return (uint)param_1;
+}
+
+/* ref: FUN_00d062d0 */
+uint F_00d062d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xd062d0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined * this_00;
+  uint uVar1;
+  uint extraout_EAX = 0;
+  
+  *(undefined1 *)((int)this + 0xf0) = 1;
+  gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)((int)this + 0xd8));
+  this_00 = (undefined *)F_00d05480(this,param_1);
+  uVar1 = 0;
+  if (this_00 != (undefined *)0x0) {
+    uVar1 = F_00d21010(this_00,1,param_2);
+  }
+  if (*(char *)((int)this + 0xf0) != '\0') {
+    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)((int)this + 0xd8));
+    uVar1 = extraout_EAX;
+  }
+  return uVar1;
 }
 

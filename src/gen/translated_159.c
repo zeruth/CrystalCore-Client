@@ -1,43 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00ce2310 */
-uint F_00ce2310(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
-{
-  GEN_ENTER(0xce2310u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  undefined4 param_4 = (undefined4)gen_a3;
-  int param_5 = (int)gen_a4;
-  __declspec(align(16)) undefined1 gen_frame[0x810];
-  uint uVar1;
-  
-  (*(uint *)(gen_frame + 0x808)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x80c);
-  if (param_5 == 0) {
-    F_00c472ec(((undefined1 *)(gen_frame + 0x8)),0x800,0x7ff,"%s(%d): <assert> (%s) %s\n",param_3,param_4);
-  }
-  else {
-    F_00c472ec(((undefined1 *)(gen_frame + 0x8)),0x800,0x7ff,"%s(%d):[%s] <assert> (%s) %s\n",param_3,param_4,param_5);
-  }
-  uVar1 = (*(code *)REFG(undefined * PTR32, 0x134c5ac))(((undefined1 *)(gen_frame + 0x8)),6);
-  *(undefined4 *)&REFG(undefined, 0x0) = 0;
-  F_00c47745((*(uint *)(gen_frame + 0x808)) ^ (uint)(uint)(gen_frame + 0x80c));
-  return uVar1;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::IStreamReadThreadEventReceiver::vf0 */
-uint F_00ce2b40(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xce2b40u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x112f30c));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
 /* ref: FUN_00ce2b80 */
 unsigned int F_00ce2b80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -17817,5 +17779,19 @@ uint F_00cf8f50(unsigned int gen_a0, unsigned int gen_a1)
   }
   uVar1 = F_00ceab20(this + (uint)(byte)param_1 * 0x54 + 0x9c);
   return uVar1;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::IVoice::vf1 */
+uint F_00cf8fd0(void)
+{
+  GEN_ENTER(0xcf8fd0u, 0u, 0u, 0u, 0u);
+  return 0xffffffff;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::IVoice::vf2 */
+byte F_00cf8fe0(void)
+{
+  GEN_ENTER(0xcf8fe0u, 0u, 0u, 0u, 0u);
+  return 1;
 }
 

@@ -1146,7 +1146,7 @@ LAB_00402e48: ;
       if (0x30d < param_2) {
         if (param_2 != 0x312) {
           if (param_2 != 0x8001) goto switchD_0040279d_caseD_4;
-          F_00410aa0(REFG(void * PTR32, 0x1370c0c));
+          F_00410aa0(REFG(void * PTR32, 0x1370c0c),param_3,(*(uint *)(gen_frame + 0x0)));
         }
         if ((*(uint *)(gen_frame + 0x0)) >> 0x10 == 0x2c) {
           uVar7 = 0;

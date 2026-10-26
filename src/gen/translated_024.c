@@ -1,46 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00535b40 */
-byte F_00535b40(unsigned int gen_a0)
-{
-  GEN_ENTER(0x535b40u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  byte bVar1;
-  undefined * this_00;
-  
-  if ((*(undefined * PTR32 *)((int)this + 0x10) == (undefined *)0x0) ||
-     (this_00 = (undefined *)F_00a5f290(*(undefined * PTR32 *)((int)this + 0x10)), this_00 == (undefined *)0x0)) {
-    return 1;
-  }
-  if (((*(byte *)((int)this_00 + 0x2dd3) & 2) == 0) && (bVar1 = F_00aa33d0(this_00), bVar1 == 0))
-  {
-    bVar1 = F_00a9f620(this_00);
-    if (bVar1 == 0) {
-      return 1;
-    }
-    if (*(char *)((int)this_00 + 0x2ebc) == '\0') {
-      return 1;
-    }
-  }
-  return 0;
-}
-
-/* ref: FUN_00535b90 */
-float10 F_00535b90(unsigned int gen_a0)
-{
-  GEN_ENTER(0x535b90u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  float fVar1;
-  float local_8;
-  
-  fVar1 = *((float *)GEN_TOP((*(int *)(in_ecx + 0x10) + 0xc0)));
-  local_8 = REFG(float, 0x1087f04);
-  if (REFG(float, 0x1087f04) < fVar1) {
-    local_8 = fVar1;
-  }
-  return (float10)local_8;
-}
-
 /* ref: FUN_00535bc0 */
 uint F_00535bc0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -15579,5 +15538,25 @@ byte F_0054c100(unsigned int gen_a0, unsigned int gen_a1)
   undefined4 param_2 = (undefined4)gen_a1;
   *(byte *)(in_ecx + 0x22c) = (byte)param_2;
   return (byte)param_2;
+}
+
+/* ref: FUN_0054c130 */
+byte F_0054c130(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x54c130u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  *(byte *)(in_ecx + 0x22f) = (byte)param_2;
+  return (byte)param_2;
+}
+
+/* ref: FUN_0054c140 */
+byte F_0054c140(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x54c140u, gen_a0, gen_a1, 0u, 0u);
+  unsigned int gen_args[2];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  return (*(uint *)((*(int *)&gen_args[0]) + 0x230) & (*(uint *)&gen_args[1])) != 0;
 }
 

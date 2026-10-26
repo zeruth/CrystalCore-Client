@@ -1,21 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00add1a0 */
-uint F_00add1a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xadd1a0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00add1b0 */
-uint F_00add1b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xadd1b0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
 /* ref: FUN_00add1c0 */
 uint F_00add1c0(unsigned int gen_a0)
 {
@@ -4627,13 +4611,17 @@ byte F_00ae0f80(unsigned int gen_a0)
 }
 
 /* ref: FUN_00ae0fa0 */
-uint F_00ae0fa0(unsigned int gen_a0)
+uint F_00ae0fa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
-  GEN_ENTER(0xae0fa0u, gen_a0, 0u, 0u, 0u);
+  GEN_ENTER(0xae0fa0u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x1a8) + 0x24))))(*(int * PTR32 *)((int)this + 0x1a8));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x1a8) + 0x24))))
+                    (*(int * PTR32 *)((int)this + 0x1a8),param_1,param_2,param_3);
   return uVar1;
 }
 
@@ -8149,6 +8137,26 @@ byte F_00ae4640(unsigned int gen_a0, unsigned int gen_a1)
   int in_ecx = (int)gen_a0;
   undefined4 param_2 = (undefined4)gen_a1;
   *(byte *)(in_ecx + 0x62) = (byte)param_2;
+  return (byte)param_2;
+}
+
+/* ref: FUN_00ae4670 */
+byte F_00ae4670(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xae4670u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  *(byte *)(in_ecx + 0x80) = (byte)param_2;
+  return (byte)param_2;
+}
+
+/* ref: FUN_00ae4690 */
+byte F_00ae4690(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xae4690u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  *(byte *)(in_ecx + 0x81) = (byte)param_2;
   return (byte)param_2;
 }
 

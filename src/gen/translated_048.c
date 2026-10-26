@@ -1,38 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::Graphics::Scene::Monster::vf68 */
-uint F_0068a3e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x68a3e0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0x120))(this);
-  if ((char)uVar1 != '\0') {
-    F_00c472af(param_1,param_2,"chara/monster/m%04d/skeleton/base/b0001/skl_m%04db0001.skp",
-               (uint)*(ushort *)(this + 0x730),(uint)*(ushort *)(this + 0x730));
-    return param_1;
-  }
-  F_00c472af(param_1,param_2,"chara/monster/m%04d/skeleton/base/b0001/skl_m%04db0001.skp",1,1);
-  return param_1;
-}
-
-/* ref: Client::Graphics::Scene::Monster::vf69 */
-uint F_0068a440(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x68a440u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  F_00c472af(param_1,param_2,"chara/monster/m%04d/skeleton/base/b0001/phy_m%04db0001.phyb",
-             (uint)*(ushort *)(this + 0x730),(uint)*(ushort *)(this + 0x730));
-  return param_1;
-}
-
 /* ref: Client::Graphics::Scene::Monster::vf67 */
 uint F_0068a470(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -16326,5 +16293,58 @@ uint F_006a04e0(unsigned int gen_a0)
     } while (uVar4 < uVar2);
   }
   return uVar3;
+}
+
+/* ref: FUN_006a0520 */
+unsigned int F_006a0520(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6a0520u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  byte bVar1;
+  int iVar2;
+  uint uVar3;
+  int iVar4;
+  uint uVar5;
+  
+  iVar2 = *(int *)((int)this + 0x7c);
+  uVar3 = *(uint *)((int)this + 0x74);
+  bVar1 = *(byte *)((int)this + 100);
+  uVar5 = 0;
+  if (uVar3 != 0) {
+    do {
+      iVar4 = *(int *)(iVar2 + uVar5 * 4);
+      if (iVar4 != 0) {
+        *(uint *)(iVar4 + 0x10) =
+             (uint)((bVar1 >> 1 & 1) != 0) << 6 | *(uint *)(iVar4 + 0x10) & 0xffffffbf;
+      }
+      uVar5 = uVar5 + 1;
+    } while (uVar5 < uVar3);
+  }
+  return 0;
+}
+
+/* ref: FUN_006a0570 */
+float10 F_006a0570(unsigned int gen_a0, float gen_a1)
+{
+  GEN_ENTER(0x6a0570u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  float param_2 = (float)gen_a1;
+  float fVar1;
+  uint uVar3;
+  float10 fVar4;
+  
+  if ((*(byte *)(param_1 + 0x1c) >> 4 & 1) != 0) {
+    return (float10)0;
+  }
+  fVar1 = *(float *)(REFG(int, 0x1371278) + 0x2c);
+  uVar3 = ((code *)*(gen_code32 *)(*param_1 + 0x74))(param_1);
+  fVar4 = (float10)(int)uVar3;
+  if ((int)uVar3 < 0) {
+    fVar4 = fVar4 + (float10)*(float *)&REFG(undefined, 0x1088110);
+  }
+  fVar4 = ((float10)GEN_TOD(pow((float10)param_2,
+                               (float10)((float)GEN_TOF(((fVar4 * (float10)*(double *)&REFG(undefined, 0x10ac058)) *
+                                                (float10)fVar1 + (float10)REFG(double, 0x1088130)))))));
+  return (float10)(float)fVar4;
 }
 

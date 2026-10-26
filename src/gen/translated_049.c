@@ -1,58 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_006a0520 */
-unsigned int F_006a0520(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6a0520u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  byte bVar1;
-  int iVar2;
-  uint uVar3;
-  int iVar4;
-  uint uVar5;
-  
-  iVar2 = *(int *)((int)this + 0x7c);
-  uVar3 = *(uint *)((int)this + 0x74);
-  bVar1 = *(byte *)((int)this + 100);
-  uVar5 = 0;
-  if (uVar3 != 0) {
-    do {
-      iVar4 = *(int *)(iVar2 + uVar5 * 4);
-      if (iVar4 != 0) {
-        *(uint *)(iVar4 + 0x10) =
-             (uint)((bVar1 >> 1 & 1) != 0) << 6 | *(uint *)(iVar4 + 0x10) & 0xffffffbf;
-      }
-      uVar5 = uVar5 + 1;
-    } while (uVar5 < uVar3);
-  }
-  return 0;
-}
-
-/* ref: FUN_006a0570 */
-float10 F_006a0570(unsigned int gen_a0, float gen_a1)
-{
-  GEN_ENTER(0x6a0570u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  float param_2 = (float)gen_a1;
-  float fVar1;
-  uint uVar3;
-  float10 fVar4;
-  
-  if ((*(byte *)(param_1 + 0x1c) >> 4 & 1) != 0) {
-    return (float10)0;
-  }
-  fVar1 = *(float *)(REFG(int, 0x1371278) + 0x2c);
-  uVar3 = ((code *)*(gen_code32 *)(*param_1 + 0x74))(param_1);
-  fVar4 = (float10)(int)uVar3;
-  if ((int)uVar3 < 0) {
-    fVar4 = fVar4 + (float10)*(float *)&REFG(undefined, 0x1088110);
-  }
-  fVar4 = ((float10)GEN_TOD(pow((float10)param_2,
-                               (float10)((float)GEN_TOF(((fVar4 * (float10)*(double *)&REFG(undefined, 0x10ac058)) *
-                                                (float10)fVar1 + (float10)REFG(double, 0x1088130)))))));
-  return (float10)(float)fVar4;
-}
-
 /* ref: FUN_006a05e0 */
 uint F_006a05e0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -13168,5 +13115,21 @@ uint F_006b1c90(unsigned int gen_a0)
   GEN_ENTER(0x6b1c90u, gen_a0, 0u, 0u, 0u);
   uint param_1 = (uint)gen_a0;
   return param_1;
+}
+
+/* ref: FUN_006b1ca0 */
+uint F_006b1ca0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6b1ca0u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 4;
+}
+
+/* ref: FUN_006b1cb0 */
+uint F_006b1cb0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6b1cb0u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 8;
 }
 

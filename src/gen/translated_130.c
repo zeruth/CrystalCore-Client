@@ -1,51 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00b5e0a0 */
-unsigned int F_00b5e0a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xb5e0a0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10f2de8));
-  if (*(int *)((int)this + 0x74) != 0) {
-    piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
-    if (piVar1 != (int *)0x0) {
-      ((code *)*(gen_code32 *)(*piVar1 + 0x18))(piVar1);
-    }
-  }
-  if (*(int *)((int)this + 0x74) != 0) {
-    F_00406ad0(*(int *)((int)this + 0x74));
-    *(undefined4 *)((int)this + 0x74) = 0;
-  }
-  REFG(undefined4, 0x14c4e90) = 0;
-  gen_imp_DeleteCriticalSection((LPCRITICAL_SECTION)((int)this + 8));
-  return 0;
-}
-
-/* ref: FUN_00b5e100 */
-unsigned int F_00b5e100(unsigned int gen_a0)
-{
-  GEN_ENTER(0xb5e100u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  
-  if (*(char *)((int)this + 0x78) == '\0') {
-    if (*(int *)((int)this + 0x74) != 0) {
-      piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
-      if (piVar1 != (int *)0x0) {
-        ((code *)*(gen_code32 *)(*piVar1 + 0x18))(piVar1);
-      }
-    }
-    if (*(int *)((int)this + 0x74) != 0) {
-      F_00406ad0(*(int *)((int)this + 0x74));
-      *(undefined4 *)((int)this + 0x74) = 0;
-    }
-    *(undefined1 *)((int)this + 0x78) = 1;
-  }
-  return 0;
-}
-
 /* ref: FUN_00b5e150 */
 uint F_00b5e150(unsigned int gen_a0)
 {
@@ -55,7 +9,7 @@ uint F_00b5e150(unsigned int gen_a0)
   uint uVar2;
   
   if (*(int *)((int)this + 0x74) != 0) {
-    piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
+    piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),*(int *)((int)this + 0x74));
     if (piVar1 != (int *)0x0) {
       ((code *)*(gen_code32 *)(*piVar1 + 0x18))(piVar1);
     }
@@ -4016,13 +3970,14 @@ uint F_00b61dc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
 }
 
 /* ref: Client::System::Scheduler::SchedulerInstanceObject::vf35 */
-uint F_00b61dd0(unsigned int gen_a0)
+uint F_00b61dd0(unsigned int gen_a0, unsigned int gen_a1)
 {
-  GEN_ENTER(0xb61dd0u, gen_a0, 0u, 0u, 0u);
+  GEN_ENTER(0xb61dd0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
   uint uVar1;
   
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0x78))(this);
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0x78))(this,param_1);
   return uVar1;
 }
 
@@ -8861,6 +8816,22 @@ uint F_00b676f0(unsigned int gen_a0, unsigned int gen_a1)
 uint F_00b67710(void)
 {
   GEN_ENTER(0xb67710u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: Client::DevEnv::Common::ControlPoint::IControlPoint::vf5 */
+uint F_00b67720(void)
+{
+  GEN_ENTER(0xb67720u, 0u, 0u, 0u, 0u);
+  return 1;
+}
+
+/* ref: Client::DevEnv::Common::ControlPoint::IControlPoint::vf6 */
+uint F_00b67730(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xb67730u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
   return 0;
 }
 

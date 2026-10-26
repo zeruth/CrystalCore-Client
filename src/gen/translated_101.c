@@ -1,26 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Apricot::Engine::Data::Communicator::PowderParticle::vf3 */
-unsigned int F_009e0290(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0290u, gen_a0, 0u, 0u, 0u);
-  undefined4 in_ecx = (undefined4)gen_a0;
-  return 0;
-}
-
-/* ref: Apricot::Engine::Data::Communicator::PowderParticle::vf0 */
-uint F_009e02a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e02a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[4])REFP(0x10dd500));
-  if (((param_1 & 1) != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) {
-    ((code *)REFG(gen_code32, 0x14a0a18))(this);
-  }
-  return (uint)this;
-}
-
 /* ref: Apricot::Engine::Data::Communicator::WindmillParticle::vf1 */
 uint F_009e02d0(unsigned int gen_a0)
 {
@@ -5375,6 +5354,32 @@ uint F_009e46b0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   F_00985d20(this);
+  if ((((param_1 & 1) != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) && (this != (undefined *)0x0)) {
+    ((code *)REFG(gen_code32, 0x14a0a18))(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Data::Communicator::LinearBinder::vf0 */
+uint F_009e46e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e46e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  F_00985d90(this);
+  if ((((param_1 & 1) != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) && (this != (undefined *)0x0)) {
+    ((code *)REFG(gen_code32, 0x14a0a18))(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Data::Communicator::PointBinder::vf0 */
+uint F_009e4710(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e4710u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  F_00985e00(this);
   if ((((param_1 & 1) != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) && (this != (undefined *)0x0)) {
     ((code *)REFG(gen_code32, 0x14a0a18))(this);
   }

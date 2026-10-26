@@ -1,74 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLandSet::vf4 */
-unsigned int F_00e989b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe989b0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x194);
-  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLandSet::vf7 */
-unsigned int F_00e98ab0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe98ab0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
 /* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLandSet::vf8 */
 unsigned int F_00e98b10(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -12448,6 +12379,51 @@ uint F_00ea8170(unsigned int gen_a0)
     *(undefined4 *)((int)this + 8) = 0;
   }
   *(undefined4 *)((int)this + 0x10) = 0;
+  return (uint)this;
+}
+
+/* ref: FUN_00ea8190 */
+uint F_00ea8190(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xea8190u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * param_1 = (undefined *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  F_00ea7c20(param_1);
+  uVar1 = *(uint *)((int)this + 8);
+  *(uint *)((int)param_1 + 8) = uVar1;
+  *(undefined4 *)((int)param_1 + 0x10) = *(undefined4 *)((int)this + 0x10);
+  *(undefined4 *)((int)this + 8) = 0;
+  return uVar1;
+}
+
+/* ref: FUN_00ea81c0 */
+uint F_00ea81c0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xea81c0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * pvVar1;
+  uint uVar2;
+  
+  if (*(int *)((int)this + 8) != 5) {
+    F_00ea7c20(this);
+    *(undefined4 *)((int)this + 8) = 5;
+    pvVar1 = (undefined *)F_004069f0(0x10);
+    if (pvVar1 == (undefined *)0x0) {
+      uVar2 = 0;
+    }
+    else {
+      uVar2 = F_00ed08c0(pvVar1);
+    }
+    *(uint *)((int)this + 0x10) = uVar2;
+  }
+  pvVar1 = *(undefined * PTR32 *)((int)this + 0x10);
+  F_00eca9b0(pvVar1,*((undefined4 *)GEN_TOP((*(int *)((int)pvVar1 + 4) + 4))));
+  *((int *)GEN_TOP((*(int *)((int)pvVar1 + 4) + 4))) = *(int *)((int)pvVar1 + 4);
+  *(undefined4 *)*(undefined4 *)((int)pvVar1 + 4) = *(undefined4 *)((int)pvVar1 + 4);
+  *((int *)GEN_TOP((*(int *)((int)pvVar1 + 4) + 8))) = *(int *)((int)pvVar1 + 4);
+  *(undefined4 *)((int)pvVar1 + 8) = 0;
   return (uint)this;
 }
 

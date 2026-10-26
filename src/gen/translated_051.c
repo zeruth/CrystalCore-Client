@@ -1,24 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::Graphics::Scene::CharacterBase::vf61 */
-unsigned int F_006b8420(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6b8420u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  return 0;
-}
-
-/* ref: Client::Graphics::Scene::CharacterBase::vf62 */
-unsigned int F_006b8430(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x6b8430u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  return 0;
-}
-
 /* ref: Client::Graphics::Scene::CharacterBase::vf73 */
 uint F_006b8440(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
 {
@@ -6147,5 +6128,36 @@ uint F_006bd990(unsigned int gen_a0, unsigned int gen_a1)
     uVar4 = uVar4 + (**(int * PTR32 *)(this + 0x26c) - (*(int * PTR32 *)(this + 0x26c))[1]);
   }
   return uVar4;
+}
+
+/* ref: Client::Game::Event::GuildleveAssignmentEventHandler::vf110 */
+uint F_006bd9f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6bd9f0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * param_1 = (undefined *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_0042ccf0(param_1,this + 0x1d4);
+  return uVar1;
+}
+
+/* ref: FUN_006bda10 */
+byte F_006bda10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6bda10u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int * piVar1;
+  uint in_ecx;
+  undefined4 uVar2;
+  
+  piVar1 = (int *)F_00424750(REFG(undefined4, 0x137104c));
+  uVar2 = 0x18;
+  in_ecx = ((code *)*(gen_code32 *)(*piVar1 + 0x48))(piVar1);
+  piVar1 = (int *)F_00763050(in_ecx,uVar2);
+  if (piVar1 != (int *)0x0) {
+    ((code *)*(gen_code32 *)(*piVar1 + 8))(piVar1);
+  }
+  return 0;
 }
 

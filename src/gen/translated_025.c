@@ -1,25 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0054c130 */
-byte F_0054c130(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x54c130u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(byte *)(in_ecx + 0x22f) = (byte)param_2;
-  return (byte)param_2;
-}
-
-/* ref: FUN_0054c140 */
-byte F_0054c140(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x54c140u, gen_a0, gen_a1, 0u, 0u);
-  unsigned int gen_args[2];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  return (*(uint *)((*(int *)&gen_args[0]) + 0x230) & (*(uint *)&gen_args[1])) != 0;
-}
-
 /* ref: FUN_0054c160 */
 uint F_0054c160(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -4623,28 +4603,37 @@ byte F_00551750(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, unsigned
 byte F_005517f0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7)
 {
   GEN_ENTER(0x5517f0u, gen_a0, gen_a1, gen_trace_f(gen_a2), gen_a3);
-  int param_1 = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  float param_3 = (float)gen_a2;
-  undefined4 param_4 = (undefined4)gen_a3;
-  undefined4 * param_5 = (undefined4 *)(uintptr_t)gen_a4;
-  undefined4 param_6 = (undefined4)gen_a5;
-  undefined4 param_7 = (undefined4)gen_a6;
-  undefined4 param_8 = (undefined4)gen_a7;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
+  unsigned int gen_args[8];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  memcpy(&gen_args[2], &gen_a2, sizeof gen_a2);
+  gen_args[3] = gen_a3;
+  gen_args[4] = gen_a4;
+  gen_args[5] = gen_a5;
+  gen_args[6] = gen_a6;
+  gen_args[7] = gen_a7;
+  __declspec(align(16)) undefined1 gen_frame[0x30];
   LPCRITICAL_SECTION lpCriticalSection;
   byte bVar1;
+  float10 fVar2;
   
-  lpCriticalSection = (LPCRITICAL_SECTION)(param_1 + 0xc);
+  lpCriticalSection = (LPCRITICAL_SECTION)((*(int *)&gen_args[0]) + 0xc);
   gen_imp_EnterCriticalSection(lpCriticalSection);
-  *(undefined4 *)(param_2 + 0x44) = 0;
-  if (*(int *)(param_1 + 8) != 0) {
-    (*(undefined4 *)(gen_frame + 0x0)) = *param_5;
-    (*(undefined4 *)(gen_frame + 0x4)) = param_5[1];
-    (*(undefined4 *)(gen_frame + 0x8)) = param_5[2];
-    F_00553ac0(&(*(undefined4 *)(gen_frame + 0x0)));
-    fcos((float10)param_3);
-    bVar1 = F_00c975b0(*(undefined * PTR32 *)(param_1 + 8));
+  *(undefined4 *)((*(uint *)&gen_args[1]) + 0x44) = 0;
+  if (*(int *)((*(int *)&gen_args[0]) + 8) != 0) {
+    (*(undefined4 *)(gen_frame + 0x20)) = *(*(undefined4 * PTR32 *)&gen_args[4]);
+    (*(undefined4 *)(gen_frame + 0x24)) = (*(undefined4 * PTR32 *)&gen_args[4])[1];
+    (*(undefined4 *)(gen_frame + 0x28)) = (*(undefined4 * PTR32 *)&gen_args[4])[2];
+    F_00553ac0(&(*(undefined4 *)(gen_frame + 0x20)));
+    (*(undefined4 *)(gen_frame + 0x0)) = 7;
+    (*(undefined4 *)(gen_frame + 0x4)) = (*(undefined4 *)&gen_args[3]);
+    (*(undefined4 * PTR32 *)(gen_frame + 0x8)) = &(*(undefined4 *)(gen_frame + 0x20));
+    (*(undefined4 * PTR32 *)(gen_frame + 0xc)) = &(*(undefined4 *)&gen_args[5]);
+    fVar2 = ((float10)GEN_TOD(fcos((float10)(*(float *)&gen_args[2]))));
+    (*(float *)(gen_frame + 0x10)) = (float)fVar2;
+    (*(undefined4 *)(gen_frame + 0x14)) = (*(undefined4 *)&gen_args[7]);
+    (*(undefined4 *)(gen_frame + 0x1c)) = 0;
+    bVar1 = F_00c975b0(*(undefined * PTR32 *)((*(int *)&gen_args[0]) + 8),(*(uint *)&gen_args[1]),(*(undefined4 *)&gen_args[6]),&(*(undefined4 *)(gen_frame + 0x0)));
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return bVar1;
   }
@@ -4656,26 +4645,38 @@ byte F_005517f0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, unsigned
 byte F_005518b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6)
 {
   GEN_ENTER(0x5518b0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
+  unsigned int gen_args[7];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  gen_args[2] = gen_a2;
+  gen_args[3] = gen_a3;
+  gen_args[4] = gen_a4;
+  gen_args[5] = gen_a5;
+  gen_args[6] = gen_a6;
+  __declspec(align(16)) undefined1 gen_frame[0x40];
   LPCRITICAL_SECTION lpCriticalSection;
   byte bVar1;
   
-  lpCriticalSection = (LPCRITICAL_SECTION)((int)this + 0xc);
+  lpCriticalSection = (LPCRITICAL_SECTION)((int)(*(undefined * PTR32 *)&gen_args[0]) + 0xc);
   gen_imp_EnterCriticalSection(lpCriticalSection);
-  *(undefined4 *)(param_1 + 0x44) = 0;
-  if (*(int *)((int)this + 8) != 0) {
-    (*(undefined4 *)(gen_frame + 0x0)) = *param_3;
-    (*(undefined4 *)(gen_frame + 0x4)) = param_3[1];
-    (*(undefined4 *)(gen_frame + 0x8)) = param_3[2];
-    F_00553ac0(&(*(undefined4 *)(gen_frame + 0x0)));
-    bVar1 = F_00c975b0(*(undefined * PTR32 *)((int)this + 8));
+  *(undefined4 *)((*(int *)&gen_args[1]) + 0x44) = 0;
+  if (*((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 8))) != 0) {
+    (*(undefined4 *)(gen_frame + 0x20)) = *(*(undefined4 * PTR32 *)&gen_args[2]);
+    (*(undefined4 *)(gen_frame + 0x24)) = (*(undefined4 * PTR32 *)&gen_args[2])[1];
+    (*(undefined4 *)(gen_frame + 0x28)) = (*(undefined4 * PTR32 *)&gen_args[2])[2];
+    (*(undefined4 *)(gen_frame + 0x2c)) = REFG(float, 0x109cc48);
+    (*(undefined4 *)(gen_frame + 0x30)) = *(*(undefined4 * PTR32 *)&gen_args[3]);
+    (*(undefined4 *)(gen_frame + 0x34)) = (*(undefined4 * PTR32 *)&gen_args[3])[1];
+    (*(undefined4 *)(gen_frame + 0x38)) = (*(undefined4 * PTR32 *)&gen_args[3])[2];
+    F_00553ac0(&(*(undefined4 *)(gen_frame + 0x30)));
+    (*(undefined4 * PTR32 *)(gen_frame + 0x8)) = &(*(undefined4 *)(gen_frame + 0x30));
+    (*(undefined4 * PTR32 *)(gen_frame + 0xc)) = &(*(undefined4 *)&gen_args[4]);
+    (*(undefined4 * PTR32 *)(gen_frame + 0x4)) = &(*(undefined4 *)(gen_frame + 0x20));
+    (*(undefined4 *)(gen_frame + 0x0)) = 4;
+    (*(undefined4 *)(gen_frame + 0x10)) = 0;
+    (*(undefined4 *)(gen_frame + 0x14)) = (*(undefined4 *)&gen_args[6]);
+    (*(undefined4 *)(gen_frame + 0x1c)) = 0;
+    bVar1 = F_00c975b0(*((undefined * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 8))),(*(int *)&gen_args[1]),(*(undefined4 *)&gen_args[5]),&(*(undefined4 *)(gen_frame + 0x0)));
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return bVar1;
   }
@@ -4687,28 +4688,41 @@ byte F_005518b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
 byte F_005519a0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7)
 {
   GEN_ENTER(0x5519a0u, gen_a0, gen_a1, gen_trace_f(gen_a2), gen_a3);
-  int param_1 = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  float param_3 = (float)gen_a2;
-  undefined4 param_4 = (undefined4)gen_a3;
-  undefined4 * param_5 = (undefined4 *)(uintptr_t)gen_a4;
-  undefined4 param_6 = (undefined4)gen_a5;
-  undefined4 param_7 = (undefined4)gen_a6;
-  undefined4 param_8 = (undefined4)gen_a7;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
+  unsigned int gen_args[8];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  memcpy(&gen_args[2], &gen_a2, sizeof gen_a2);
+  gen_args[3] = gen_a3;
+  gen_args[4] = gen_a4;
+  gen_args[5] = gen_a5;
+  gen_args[6] = gen_a6;
+  gen_args[7] = gen_a7;
+  __declspec(align(16)) undefined1 gen_frame[0x40];
   LPCRITICAL_SECTION lpCriticalSection;
   byte bVar1;
+  float10 fVar2;
   
-  lpCriticalSection = (LPCRITICAL_SECTION)(param_1 + 0xc);
+  lpCriticalSection = (LPCRITICAL_SECTION)((*(int *)&gen_args[0]) + 0xc);
   gen_imp_EnterCriticalSection(lpCriticalSection);
-  *(undefined4 *)(param_2 + 0x44) = 0;
-  if (*(int *)(param_1 + 8) != 0) {
-    (*(undefined4 *)(gen_frame + 0x0)) = *param_5;
-    (*(undefined4 *)(gen_frame + 0x4)) = param_5[1];
-    (*(undefined4 *)(gen_frame + 0x8)) = param_5[2];
-    F_00553ac0(&(*(undefined4 *)(gen_frame + 0x0)));
-    fcos((float10)param_3);
-    bVar1 = F_00c975b0(*(undefined * PTR32 *)(param_1 + 8));
+  *(undefined4 *)((*(uint *)&gen_args[1]) + 0x44) = 0;
+  if (*(int *)((*(int *)&gen_args[0]) + 8) != 0) {
+    (*(undefined4 *)(gen_frame + 0x20)) = *(*(undefined4 * PTR32 *)&gen_args[3]);
+    (*(undefined4 *)(gen_frame + 0x24)) = (*(undefined4 * PTR32 *)&gen_args[3])[1];
+    (*(undefined4 *)(gen_frame + 0x28)) = (*(undefined4 * PTR32 *)&gen_args[3])[2];
+    (*(undefined4 *)(gen_frame + 0x2c)) = REFG(float, 0x109cc48);
+    (*(undefined4 *)(gen_frame + 0x30)) = *(*(undefined4 * PTR32 *)&gen_args[4]);
+    (*(undefined4 *)(gen_frame + 0x34)) = (*(undefined4 * PTR32 *)&gen_args[4])[1];
+    (*(undefined4 *)(gen_frame + 0x38)) = (*(undefined4 * PTR32 *)&gen_args[4])[2];
+    F_00553ac0(&(*(undefined4 *)(gen_frame + 0x30)));
+    (*(undefined4 *)(gen_frame + 0x0)) = 6;
+    (*(undefined4 * PTR32 *)(gen_frame + 0x4)) = &(*(undefined4 *)(gen_frame + 0x20));
+    (*(undefined4 * PTR32 *)(gen_frame + 0x8)) = &(*(undefined4 *)(gen_frame + 0x30));
+    (*(undefined4 * PTR32 *)(gen_frame + 0xc)) = &(*(undefined4 *)&gen_args[5]);
+    fVar2 = ((float10)GEN_TOD(fcos((float10)(*(float *)&gen_args[2]))));
+    (*(float *)(gen_frame + 0x10)) = (float)fVar2;
+    (*(undefined4 *)(gen_frame + 0x14)) = (*(undefined4 *)&gen_args[7]);
+    (*(undefined4 *)(gen_frame + 0x1c)) = 0;
+    bVar1 = F_00c975b0(*(undefined * PTR32 *)((*(int *)&gen_args[0]) + 8),(*(uint *)&gen_args[1]),(*(undefined4 *)&gen_args[6]),&(*(undefined4 *)(gen_frame + 0x0)));
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return bVar1;
   }
@@ -4730,7 +4744,7 @@ byte F_00551a90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   lpCriticalSection = (LPCRITICAL_SECTION)((int)this + 0xc);
   gen_imp_EnterCriticalSection(lpCriticalSection);
   if (*(undefined * PTR32 *)((int)this + 8) != (undefined *)0x0) {
-    bVar1 = F_00c975d0(*(undefined * PTR32 *)((int)this + 8));
+    bVar1 = F_00c975d0(*(undefined * PTR32 *)((int)this + 8),param_1,param_3,param_2);
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return bVar1;
   }
@@ -4746,7 +4760,7 @@ unsigned int F_00551ae0(unsigned int gen_a0, unsigned int gen_a1)
   int param_1 = (int)gen_a1;
   gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)((int)this + 0xc));
   if ((*(undefined * PTR32 *)((int)this + 8) != (undefined *)0x0) && (param_1 != 0)) {
-    F_00c97130(*(undefined * PTR32 *)((int)this + 8));
+    F_00c97130(*(undefined * PTR32 *)((int)this + 8),param_1);
   }
   gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)((int)this + 0xc));
   return 0;
@@ -4870,7 +4884,7 @@ uint F_00551cd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   lpCriticalSection = (LPCRITICAL_SECTION)((int)this + 0xc);
   gen_imp_EnterCriticalSection(lpCriticalSection);
   if (*(undefined * PTR32 *)((int)this + 8) != (undefined *)0x0) {
-    uVar1 = F_00c970f0(*(undefined * PTR32 *)((int)this + 8));
+    uVar1 = F_00c970f0(*(undefined * PTR32 *)((int)this + 8),param_4,param_1,param_2,param_3);
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return uVar1;
   }
@@ -4885,15 +4899,19 @@ uint F_00551d20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a3;
   undefined4 param_4 = (undefined4)gen_a4;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
   LPCRITICAL_SECTION lpCriticalSection;
   uint uVar1;
   
   lpCriticalSection = (LPCRITICAL_SECTION)((int)this + 0xc);
   gen_imp_EnterCriticalSection(lpCriticalSection);
+  (*(undefined4 *)(gen_frame + 0x0)) = *param_3;
+  (*(undefined4 *)(gen_frame + 0x4)) = param_3[1];
+  (*(undefined4 *)(gen_frame + 0x8)) = *param_3;
   if (*(undefined * PTR32 *)((int)this + 8) != (undefined *)0x0) {
-    uVar1 = F_00c97100(*(undefined * PTR32 *)((int)this + 8));
+    uVar1 = F_00c97100(*(undefined * PTR32 *)((int)this + 8),param_4,param_1,param_2,&(*(undefined4 *)(gen_frame + 0x0)));
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return uVar1;
   }
@@ -4908,17 +4926,23 @@ uint F_00551da0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a3;
   undefined4 param_4 = (undefined4)gen_a4;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
   LPCRITICAL_SECTION lpCriticalSection;
-  uint uVar1;
+  undefined4 uVar1;
+  uint uVar2;
   
   lpCriticalSection = (LPCRITICAL_SECTION)((int)this + 0xc);
   gen_imp_EnterCriticalSection(lpCriticalSection);
+  uVar1 = *param_3;
+  (*(undefined4 *)(gen_frame + 0x0)) = uVar1;
+  (*(undefined4 *)(gen_frame + 0x4)) = uVar1;
+  (*(undefined4 *)(gen_frame + 0x8)) = uVar1;
   if (*(undefined * PTR32 *)((int)this + 8) != (undefined *)0x0) {
-    uVar1 = F_00c97110(*(undefined * PTR32 *)((int)this + 8));
+    uVar2 = F_00c97110(*(undefined * PTR32 *)((int)this + 8),param_4,param_1,param_2,&(*(undefined4 *)(gen_frame + 0x0)));
     gen_imp_LeaveCriticalSection(lpCriticalSection);
-    return uVar1;
+    return uVar2;
   }
   gen_imp_LeaveCriticalSection(lpCriticalSection);
   return 0;
@@ -4939,7 +4963,7 @@ uint F_00551e10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   lpCriticalSection = (LPCRITICAL_SECTION)((int)this + 0xc);
   gen_imp_EnterCriticalSection(lpCriticalSection);
   if (*(undefined * PTR32 *)((int)this + 8) != (undefined *)0x0) {
-    uVar1 = F_00c97120(*(undefined * PTR32 *)((int)this + 8));
+    uVar1 = F_00c97120(*(undefined * PTR32 *)((int)this + 8),param_4,param_1,param_2,param_3);
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return uVar1;
   }
@@ -7948,5 +7972,36 @@ uint F_005568b0(unsigned int gen_a0, unsigned int gen_a1)
   *in_ecx = 6;
   in_ecx[1] = param_2;
   return (uint)in_ecx;
+}
+
+/* ref: FUN_00556970 */
+uint F_00556970(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x556970u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  in_ecx[1] = param_2;
+  *in_ecx = (*(undefined * PTR32 (*)[2])REFP(0x10a091c));
+  *(undefined2 *)(in_ecx + 7) = 0;
+  in_ecx[3] = 0;
+  in_ecx[4] = 0;
+  in_ecx[5] = 0;
+  in_ecx[6] = 0;
+  return (uint)in_ecx;
+}
+
+/* ref: FUN_005569d0 */
+uint F_005569d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5569d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  char cVar1;
+  
+  cVar1 = *(char *)((int)this + 0x1c);
+  *(undefined1 *)((int)cVar1 + 0xcU + (int)this) = (undefined1)param_1;
+  *(char *)((int)this + 0x1c) = *(char *)((int)this + 0x1c) + '\x01';
+  *(undefined1 *)((int)this + 0x1d) = 2;
+  return (int)cVar1;
 }
 

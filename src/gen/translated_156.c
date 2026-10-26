@@ -1,47 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00cbbe20 */
-byte F_00cbbe20(unsigned int gen_a0)
-{
-  GEN_ENTER(0xcbbe20u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  byte bVar1;
-  
-  bVar1 = F_00cc56d0(*(undefined4 *)((int)this + 4));
-  return bVar1;
-}
-
-/* ref: FUN_00cbbe30 */
-unsigned int F_00cbbe30(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcbbe30u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int iVar1;
-  uint uVar2;
-  
-  gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x15d939c));
-  iVar1 = *(int *)((int)this + 4);
-  if ((iVar1 == 0) || (iVar1 < 0)) {
-LAB_00cbbe57: ;
-    uVar2 = *(uint *)((int)this + 4);
-    if (uVar2 == 0) goto LAB_00cbbe8a;
-  }
-  else {
-    uVar2 = F_00cc46a0(iVar1);
-    if (uVar2 == 0) goto LAB_00cbbe57;
-  }
-  if ((int)uVar2 < 0) {
-    F_00d07000(*(undefined * PTR32 *)((int)this + 8),uVar2,param_1);
-    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x15d939c));
-    return 0;
-  }
-  F_00cc2880(uVar2,param_1);
-LAB_00cbbe8a: ;
-  gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x15d939c));
-  return 0;
-}
-
 /* ref: FUN_00cbbea0 */
 unsigned int F_00cbbea0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -1659,7 +1617,7 @@ LAB_00cbdc2f: ;
   (*(undefined4 *)(gen_frame + 0x18)) = 0x80002;
   (*(uint *)(gen_frame + 0x1c)) = uVar2;
   (*(uint *)(gen_frame + 0x38)) = param_1;
-  F_00d2cf60();
+  F_00d2cf60(&(*(undefined4 *)(gen_frame + 0x18)),0x30);
   if (uVar2 != 0) {
     if ((int)uVar2 < 0) {
       F_00d057a0(*(undefined * PTR32 *)((int)this + 8),uVar2,param_1);
@@ -10288,6 +10246,71 @@ uint F_00cc9450(unsigned int gen_a0)
 unsigned int F_00cc94a0(void)
 {
   GEN_ENTER(0xcc94a0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::Bus::vf4 */
+unsigned int F_00cc9aa0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcc9aa0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined * pBVar1;
+  undefined * this_00;
+  uint uVar2;
+  
+  this[0xdc] = (undefined1)0x1;
+  gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)(this + 0xc4));
+  pBVar1 = this;
+  if (*(undefined * PTR32 *)(this + 0xc) != (undefined *)0x0) {
+    pBVar1 = *(undefined * PTR32 *)(this + 0xc);
+  }
+  for (this_00 = (undefined *)F_00d2ff90(pBVar1 + 0xb4,0); this_00 != (undefined *)0x0;
+      this_00 = (undefined *)F_00d2ff90(pBVar1 + 0xb4,this_00)) {
+    uVar2 = F_00cbcc20(this_00);
+    if (uVar2 == *(uint *)(this + 4)) {
+      F_00cbdbf0(this_00,param_1);
+    }
+  }
+  this[0xe4] = (undefined1)0x0;
+  if (this[0xdc] != (undefined1)0x0) {
+    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)(this + 0xc4));
+  }
+  return 0;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::Bus::vf5 */
+unsigned int F_00cc9b30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xcc9b30u, gen_a0, gen_a1, gen_a2, 0u);
+  unsigned int gen_args[3];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  gen_args[2] = gen_a2;
+  undefined * pBVar1;
+  undefined * this_00;
+  uint uVar2;
+  
+  if (((*(undefined * PTR32 *)&gen_args[0])[0xe5] == (undefined1)0x0) || ((*(undefined1 *)((char *)&(*(undefined4 *)&gen_args[2]) + 0)) != (undefined1)0x0)) {
+    (*(undefined * PTR32 *)&gen_args[0])[0xdc] = (undefined1)0x1;
+    gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)((*(undefined * PTR32 *)&gen_args[0]) + 0xc4));
+    pBVar1 = *((undefined * PTR32 *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0xc)));
+    if (pBVar1 == (undefined *)0x0) {
+      pBVar1 = (*(undefined * PTR32 *)&gen_args[0]);
+    }
+    for (this_00 = (undefined *)F_00d2ff90(pBVar1 + 0xb4,0); this_00 != (undefined *)0x0;
+        this_00 = (undefined *)F_00d2ff90(pBVar1 + 0xb4,this_00)) {
+      uVar2 = F_00cbcc20(this_00);
+      if (uVar2 == *((uint *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 4)))) {
+        F_00cbc120(this_00,(*(undefined4 *)&gen_args[1]));
+      }
+    }
+    (*(undefined * PTR32 *)&gen_args[0])[0xe4] = (undefined1)0x1;
+    (*(undefined * PTR32 *)&gen_args[0])[0xe5] = (*(undefined1 *)((char *)&(*(undefined4 *)&gen_args[2]) + 0));
+    if ((*(undefined * PTR32 *)&gen_args[0])[0xdc] != (undefined1)0x0) {
+      gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)((*(undefined * PTR32 *)&gen_args[0]) + 0xc4));
+    }
+  }
   return 0;
 }
 

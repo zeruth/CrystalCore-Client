@@ -1,25 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0107c420 */
-uint F_0107c420(void)
-{
-  GEN_ENTER(0x107c420u, 0u, 0u, 0u, 0u);
-  ulonglong uVar1;
-  
-  uVar1 = F_0042c880(&REFG(undefined, 0x14a2680));
-  return (uint)uVar1;
-}
-
-/* ref: FUN_0107c430 */
-uint F_0107c430(void)
-{
-  GEN_ENTER(0x107c430u, 0u, 0u, 0u, 0u);
-  ulonglong uVar1;
-  
-  uVar1 = F_0042c880(&REFG(undefined, 0x14a26d8));
-  return (uint)uVar1;
-}
-
 /* ref: FUN_0107c440 */
 uint F_0107c440(void)
 {

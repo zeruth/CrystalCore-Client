@@ -9,6 +9,8 @@ byte F_00422230(void) { GEN_ENTER(0x422230u, 0u, 0u, 0u, 0u); GenUnimplemented(0
 byte F_00422240(void) { GEN_ENTER(0x422240u, 0u, 0u, 0u, 0u); GenUnimplemented(0x422240); return 0; }
 byte F_004225c0(void) { GEN_ENTER(0x4225c0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4225c0); return 0; }
 uint F_00424d41(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, double gen_a3, unsigned int gen_a4) { GEN_ENTER(0x424d41u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x424d41); return 0; }
+uint F_00427370(unsigned int gen_a0) { GEN_ENTER(0x427370u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x427370); return 0; }
+uint F_00427390(unsigned int gen_a0) { GEN_ENTER(0x427390u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x427390); return 0; }
 uint F_00438a90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x438a90u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x438a90); return 0; }
 uint F_0043bbc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { GEN_ENTER(0x43bbc0u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x43bbc0); return 0; }
 unsigned int F_0043e2d0(unsigned int gen_a0) { GEN_ENTER(0x43e2d0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x43e2d0); return 0; }

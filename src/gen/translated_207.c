@@ -1,33 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_01048470 */
-uint F_01048470(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1048470u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * puVar1;
-  
-  puVar1 = (undefined4 *)((int)this + 0xc);
-  if (puVar1 != param_1) {
-    *puVar1 = *param_1;
-    *(undefined4 *)((int)this + 0x10) = param_1[1];
-  }
-  return (uint)puVar1;
-}
-
-/* ref: FUN_010484a0 */
-uint F_010484a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x10484a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00406ad0(param_1);
-  return uVar1;
-}
-
 /* ref: FUN_010484d0 */
 uint F_010484d0(unsigned int gen_a0)
 {
@@ -9775,5 +9747,27 @@ unsigned int F_01050c80(unsigned int gen_a0)
   undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
   *in_ecx = (*(undefined * PTR32 (*)[1])REFP(0x12b21c8));
   return 0;
+}
+
+/* ref: FUN_01050c90 */
+uint F_01050c90(unsigned int gen_a0)
+{
+  GEN_ENTER(0x1050c90u, gen_a0, 0u, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  *in_ecx = (*(undefined * PTR32 (*)[1])REFP(0x12b21c8));
+  return (uint)in_ecx;
+}
+
+/* ref: Component::Network::IpcChannel::NetBufferBase::vf0 */
+uint F_01050ca0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x1050ca0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x12b21c8));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
 }
 

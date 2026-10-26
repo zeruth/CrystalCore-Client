@@ -1,23 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00f63370 */
-uint F_00f63370(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xf63370u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  return in_ecx + 0x5484 + param_2 * 0x18;
-}
-
-/* ref: FUN_00f633f0 */
-uint F_00f633f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xf633f0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  return param_2 * 0x70 + 0x10 + in_ecx;
-}
-
 /* ref: FUN_00f63420 */
 uint F_00f63420(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -46709,5 +46691,23 @@ LAB_00fb907d: ;
 LAB_00fb8ffb: ;
   F_00c47745((*(uint *)(gen_frame + 0x48)) ^ (uint)(uint)(gen_frame + 0x4c));
   return 0;
+}
+
+/* ref: FUN_00fb91c0 */
+uint F_00fb91c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xfb91c0u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  return param_2 * 0x40 + 0x3b0 + in_ecx;
+}
+
+/* ref: FUN_00fb91e0 */
+uint F_00fb91e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xfb91e0u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  return in_ecx + 0x6f0 + param_2 * 0x14;
 }
 

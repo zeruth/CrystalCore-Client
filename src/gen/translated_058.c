@@ -1,21 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00725620 */
-uint F_00725620(unsigned int gen_a0)
-{
-  GEN_ENTER(0x725620u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 4;
-}
-
-/* ref: FUN_00725630 */
-uint F_00725630(unsigned int gen_a0)
-{
-  GEN_ENTER(0x725630u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 8;
-}
-
 /* ref: FUN_00725640 */
 uint F_00725640(unsigned int gen_a0)
 {
@@ -5798,6 +5782,52 @@ uint F_00729c50(unsigned int gen_a0)
   do {
     if (*(short *)(iVar2 + 4) == (short)param_1) {
       return (uint)CONCAT11(*(undefined1 *)(iVar2 + 0xc),*(undefined1 *)(iVar2 + 0xd));
+    }
+    iVar3 = iVar3 + 1;
+    iVar2 = iVar2 + 0x10;
+  } while (iVar3 < 0x1e);
+  return 0;
+}
+
+/* ref: FUN_00729c90 */
+uint F_00729c90(unsigned int gen_a0)
+{
+  GEN_ENTER(0x729c90u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  int iVar2;
+  int iVar3;
+  
+  uVar1 = F_00a4ffd0();
+  iVar2 = uVar1 + 0x13b4;
+  iVar3 = 0;
+  do {
+    if (*(short *)(iVar2 + 4) == (short)param_1) {
+      return CONCAT31(CONCAT21(CONCAT11(*(undefined1 *)(iVar2 + 8),*(undefined1 *)(iVar2 + 9)),
+                               *(undefined1 *)(iVar2 + 10)),*(undefined1 *)(iVar2 + 0xb));
+    }
+    iVar3 = iVar3 + 1;
+    iVar2 = iVar2 + 0x10;
+  } while (iVar3 < 0x1e);
+  return 0;
+}
+
+/* ref: FUN_00729ce0 */
+uint F_00729ce0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x729ce0u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  int iVar2;
+  int iVar3;
+  
+  uVar1 = F_00a4ffd0();
+  iVar2 = uVar1 + 0x13b4;
+  iVar3 = 0;
+  do {
+    if (*(short *)(iVar2 + 4) == (short)param_1) {
+      return CONCAT31(CONCAT21(CONCAT11(*(undefined1 *)(iVar2 + 8),*(undefined1 *)(iVar2 + 9)),
+                               *(undefined1 *)(iVar2 + 10)),*(undefined1 *)(iVar2 + 0xb));
     }
     iVar3 = iVar3 + 1;
     iVar2 = iVar2 + 0x10;

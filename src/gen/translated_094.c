@@ -1,34 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::UI2::AddonScreenInfoChild::IconLoader::vf0 */
-uint F_0095aa10(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x95aa10u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10d6bd0));
-  F_00954060(this + 4);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_0095aa40 */
-uint F_0095aa40(unsigned int gen_a0)
-{
-  GEN_ENTER(0x95aa40u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[67])REFP(0x10d6bdc));
-  *(undefined * PTR32 * PTR32 *)((int)this + 0x1a0) = (*(undefined * PTR32 (*)[1])REFP(0x10d6bd0));
-  F_00954060((undefined *)((int)this + 0x1a4));
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[67])REFP(0x10c3f6c));
-  uVar1 = F_00590600(this);
-  return uVar1;
-}
-
 /* ref: Client::UI2::AddonGrandCompanyBase::vf0 */
 uint F_0095aa70(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -12427,5 +12398,29 @@ unsigned int F_00967260(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
   undefined4 param_3 = (undefined4)gen_a2;
   F_00961c70(param_1,param_2,param_3);
   return 0;
+}
+
+/* ref: FUN_00967270 */
+unsigned int F_00967270(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x967270u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  F_00961d30(param_1,param_2,param_3);
+  return 0;
+}
+
+/* ref: FUN_00967280 */
+uint F_00967280(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x967280u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = F_00961da0(param_1,param_2,param_3);
+  return uVar1;
 }
 

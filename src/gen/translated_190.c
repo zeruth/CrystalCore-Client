@@ -1,31 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaInfoLetterBox_TypeInfo::vf5 */
-uint F_00e87e70(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe87e70u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e82f80(uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaInfoLetterBox_TypeInfo::vf6 */
-uint F_00e87e90(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe87e90u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(*param_1 + 8))(param_1);
-  uVar1 = F_00e830a0(uVar1);
-  return uVar1;
-}
-
 /* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaInfoLetterBox_TypeInfo::vf7 */
 uint F_00e87eb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -4870,6 +4844,32 @@ uint F_00e8c460(unsigned int gen_a0, unsigned int gen_a1)
 uint F_00e8c490(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0xe8c490u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 4))(this);
+  *param_1 = *(undefined4 *)(&REFG(undefined, 0x136066c) + uVar1 * 4);
+  return (uint)(&REFG(undefined * PTR32, 0x1360638))[uVar1];
+}
+
+/* ref: FUN_00e8c4c0 */
+uint F_00e8c4c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8c4c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 4))(this);
+  *param_1 = *(undefined4 *)(&REFG(undefined, 0x136066c) + uVar1 * 4);
+  return (uint)(&REFG(undefined * PTR32, 0x1360638))[uVar1];
+}
+
+/* ref: FUN_00e8c4f0 */
+uint F_00e8c4f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8c4f0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
   uint uVar1;

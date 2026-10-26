@@ -1,32 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::UI2::AddonExp::vf40 */
-uint F_0078d660(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x78d660u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  return param_1;
-}
-
-/* ref: Client::UI2::AddonExp::vf2 */
-unsigned int F_0078d670(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
-{
-  GEN_ENTER(0x78d670u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  if ((short)param_1 == 0x3a) {
-    F_005609b0(this + 0x198);
-    F_00588be0(this + 0x198,0x3a,param_2,this);
-    F_0055a300(*(undefined * PTR32 *)(this + 0x1c0),0);
-  }
-  return 0;
-}
-
 /* ref: FUN_0078d6c0 */
 uint F_0078d6c0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -10804,5 +10777,50 @@ uint F_00798f70(unsigned int gen_a0, unsigned int gen_a1)
     }
   }
   return (uint)this;
+}
+
+/* ref: FUN_00798fb0 */
+uint F_00798fb0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x798fb0u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  return *(uint *)(in_ecx + 0x2c8) >> ((char)param_2 * '\x02' & 0x1fU) & 3;
+}
+
+/* ref: FUN_00798fd0 */
+uint F_00798fd0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x798fd0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x20];
+  uint uVar1;
+  undefined * this_00;
+  undefined1 * this_01;
+  int iVar2;
+  
+  this_01 = (gen_frame + 0x1c);
+  F_0059dde0(*(undefined * PTR32 *)((int)this + 0x1a4),0);
+  if (*(char *)((int)this + 0x2c4) == '\0') {
+    this_00 = *((undefined * PTR32 *)GEN_TOP(((int)this + (uint)*(byte *)((int)this + 0x2c5) * 4 + 0x18c)));
+  }
+  else {
+    if (*(char *)((int)this + 0x2c4) != '\x01') goto LAB_00799013;
+    this_00 = *(undefined * PTR32 *)((int)this + 0x1a0);
+  }
+  F_0059dde0(this_00,1);
+LAB_00799013: ;
+  (*(undefined4 *)(gen_frame + 0xc)) = 0;
+  (*(undefined4 *)(gen_frame + 0x14)) = 0;
+  F_005a2710(&(*(undefined4 *)(gen_frame + 0xc)),3);
+  (*(undefined4 *)(gen_frame + 0x10)) = 2;
+  F_005a9110(this,2,&(*(undefined4 *)(gen_frame + 0xc)));
+  iVar2 = 1;
+  do {
+    this_01 = this_01 + -8;
+    uVar1 = F_005a2670(this_01);
+    iVar2 = iVar2 + -1;
+  } while (-1 < iVar2);
+  return uVar1;
 }
 

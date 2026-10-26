@@ -1,54 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_004cbad0 */
-unsigned int F_004cbad0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4cbad0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *((undefined4 *)GEN_TOP((*(int *)((int)GEN_TLS_ARRAY + REFG(int, 0x15d6870) * 4) + 0x118))) = 0xffffffff;
-  F_004cb680(param_2);
-                    
-  F_004cb700(param_1);
-}
-
-/* ref: FUN_004cbb10 */
-uint F_004cbb10(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4cbb10u, gen_a0, gen_a1, 0u, 0u);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  int * param_2 = (int *)(uintptr_t)gen_a1;
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  int * piVar4;
-  int * piVar5;
-  
-  iVar1 = *(int *)((int)GEN_TLS_ARRAY + REFG(int, 0x15d6870) * 4);
-  iVar2 = *(int *)(iVar1 + 0x118);
-  piVar5 = param_1;
-  if (iVar2 == -1) {
-    return 0;
-  }
-  do {
-    if (param_2 <= piVar5) {
-      return 0;
-    }
-    iVar3 = 0;
-    if (-1 < iVar2) {
-      piVar4 = (int *)(iVar1 + 0x120);
-      do {
-        if (*piVar4 == *piVar5) {
-          return *(uint *)(iVar1 + 0x120 + iVar3 * 4);
-        }
-        iVar3 = iVar3 + 1;
-        piVar4 = piVar4 + 1;
-      } while (iVar3 <= iVar2);
-    }
-    piVar5 = piVar5 + 1;
-  } while( true );
-}
-
 /* ref: FUN_004cbb80 */
 uint F_004cbb80(unsigned int gen_a0)
 {
@@ -14041,5 +13992,79 @@ unsigned int F_004db060(unsigned int gen_a0, unsigned int gen_a1)
 switchD_004db132_caseD_0: ;
   param_1[0xd] = 0x80000000;
   return 0;
+}
+
+/* ref: FUN_004db190 */
+uint F_004db190(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4db190u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * piVar1;
+  int iVar2;
+  uint uVar3;
+  
+  F_00510db0();
+  ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x40) + 0x14))))(*(int * PTR32 *)((int)this + 0x40));
+  gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x1375a44));
+  for (piVar1 = REFG(int * PTR32, 0x1375a40); piVar1 != (int *)0x0; piVar1 = (int *)piVar1[2]) {
+    ((code *)*(gen_code32 *)(*piVar1 + 4))(piVar1);
+  }
+  gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x1375a44));
+  iVar2 = *(int *)((int)this + 0x2c);
+  if (*(undefined * PTR32 *)(iVar2 + 0x38) != (undefined *)0x0) {
+    F_004d9cc0(*(undefined * PTR32 *)(iVar2 + 0x38));
+  }
+  if (*(undefined * PTR32 *)(iVar2 + 0x34) != (undefined *)0x0) {
+    F_004d9cc0(*(undefined * PTR32 *)(iVar2 + 0x34));
+  }
+  piVar1 = *(int * PTR32 *)(iVar2 + 0x3c);
+  uVar3 = 0;
+  if (piVar1 != (int *)0x0) {
+    uVar3 = ((code *)*(gen_code32 *)(*piVar1 + 8))(piVar1);
+    *(undefined4 *)(iVar2 + 0x3c) = 0;
+  }
+  *(undefined4 *)((int)this + 0x38) = 3;
+  *(undefined4 *)((int)this + 0x54) = 6;
+  return uVar3;
+}
+
+/* ref: FUN_004db220 */
+byte F_004db220(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4db220u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 in_ecx;
+  undefined * pvVar1;
+  BOOL BVar2;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  
+  if (0x20 < *(uint *)((int)this + 0x88)) {
+    return 0;
+  }
+  *(undefined4 *)((int)this + 0x38) = 5;
+  *(uint *)((int)this + 0x88) = *(uint *)((int)this + 0x88) + 1;
+  if (*((int *)GEN_TOP(((int)*(undefined * PTR32 *)((int)this + 0x84) + 0x24))) != 0) {
+    F_004d93c0(*(undefined * PTR32 *)((int)this + 0x84));
+    return 1;
+  }
+  in_ecx = *(undefined4 *)(REFG(int, 0x137104c) + 0x10);
+  uVar4 = 1;
+  uVar3 = 0x500;
+  pvVar1 = (undefined *)F_00414500(in_ecx,0xf);
+  F_00414a40(pvVar1,uVar3,uVar4);
+  uVar4 = 1;
+  uVar3 = 0x2d0;
+  pvVar1 = (undefined *)F_00414500(in_ecx,0x10);
+  F_00414a40(pvVar1,uVar3,uVar4);
+  uVar4 = 1;
+  uVar3 = 0;
+  pvVar1 = (undefined *)F_00414500(in_ecx,0x11);
+  F_00414a40(pvVar1,uVar3,uVar4);
+  BVar2 = gen_imp_IsZoomed(*(HWND *)((int)this + 0x5c));
+  if (BVar2 != 0) {
+    gen_imp_ShowWindow(*(HWND *)((int)this + 0x5c),1);
+  }
+  return 1;
 }
 

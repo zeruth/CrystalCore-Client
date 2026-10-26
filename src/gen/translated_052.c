@@ -1,36 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::Game::Event::GuildleveAssignmentEventHandler::vf110 */
-uint F_006bd9f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6bd9f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_0042ccf0(param_1,this + 0x1d4);
-  return uVar1;
-}
-
-/* ref: FUN_006bda10 */
-byte F_006bda10(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6bda10u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  int * piVar1;
-  uint in_ecx;
-  undefined4 uVar2;
-  
-  piVar1 = (int *)F_00424750(REFG(undefined4, 0x137104c));
-  uVar2 = 0x18;
-  in_ecx = ((code *)*(gen_code32 *)(*piVar1 + 0x48))(piVar1);
-  piVar1 = (int *)F_00763050(in_ecx,uVar2);
-  if (piVar1 != (int *)0x0) {
-    ((code *)*(gen_code32 *)(*piVar1 + 8))(piVar1);
-  }
-  return 0;
-}
-
 /* ref: FUN_006bda50 */
 byte F_006bda50(void)
 {
@@ -11645,6 +11614,52 @@ uint F_006cbe50(unsigned int gen_a0)
 LAB_006cbea7: ;
   F_00a01ea0(((byte *)(gen_frame + 0xc)),(uint)(cVar1 != '\0'));
   F_00a01890(((byte *)(gen_frame + 0xc)));
+  return 1;
+}
+
+/* ref: FUN_006cbee0 */
+byte F_006cbee0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6cbee0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  uint uVar1;
+  uint uVar2;
+  
+  uVar1 = F_00a4ffd0();
+  uVar2 = param_1 >> 3 & 0x1fff;
+  if (199 < uVar2) {
+    return 0;
+  }
+  return (*(byte *)(uVar2 + 0x12ea + uVar1) & (byte)(0x80 >> ((byte)param_1 & 7))) != 0;
+}
+
+/* ref: FUN_006cbf20 */
+uint F_006cbf20(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6cbf20u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x30];
+  uint uVar1;
+  uint uVar2;
+  uint uVar3;
+  bool bVar4;
+  
+  F_00a01860(((byte *)(gen_frame + 0x8)),param_1);
+  uVar1 = F_00a01d20(((byte *)(gen_frame + 0x8)),1);
+  F_00b9c710((*(undefined4 *)((char *)((byte *)(gen_frame + 0x8)) + 8)),1,uVar1);
+  uVar1 = F_00b9c9b0((*(undefined4 *)((char *)((byte *)(gen_frame + 0x8)) + 8)),2);
+  uVar2 = F_00a4ffd0();
+  uVar3 = (uVar1 & 0xffff) >> 3;
+  if (uVar3 < 200) {
+    bVar4 = (*(byte *)(uVar3 + 0x12ea + uVar2) & (byte)(0x80 >> ((byte)(uVar1 & 0xffff) & 7))) != 0;
+    ((byte *)(gen_frame + 0x8))[0x20] = bVar4;
+  }
+  else {
+    ((byte *)(gen_frame + 0x8))[0x20] = 0;
+    (*(undefined4 *)((char *)((byte *)(gen_frame + 0x8)) + 32)) = (uint)(uint3)GEN_PIECE(((byte *)(gen_frame + 0x8)), 33, 3) << 8;
+  }
+  F_00a01ea0(((byte *)(gen_frame + 0x8)),(*(undefined4 *)((char *)((byte *)(gen_frame + 0x8)) + 32)));
+  F_00a01890(((byte *)(gen_frame + 0x8)));
   return 1;
 }
 

@@ -1,36 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00556970 */
-uint F_00556970(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x556970u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  in_ecx[1] = param_2;
-  *in_ecx = (*(undefined * PTR32 (*)[2])REFP(0x10a091c));
-  *(undefined2 *)(in_ecx + 7) = 0;
-  in_ecx[3] = 0;
-  in_ecx[4] = 0;
-  in_ecx[5] = 0;
-  in_ecx[6] = 0;
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_005569d0 */
-uint F_005569d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5569d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  char cVar1;
-  
-  cVar1 = *(char *)((int)this + 0x1c);
-  *(undefined1 *)((int)cVar1 + 0xcU + (int)this) = (undefined1)param_1;
-  *(char *)((int)this + 0x1c) = *(char *)((int)this + 0x1c) + '\x01';
-  *(undefined1 *)((int)this + 0x1d) = 2;
-  return (int)cVar1;
-}
-
 /* ref: FUN_005569f0 */
 uint F_005569f0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -8078,6 +8047,36 @@ unsigned int F_0055e430(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
     return 0;
   }
   F_0055e3d0(this,param_1,param_2,*(undefined4 *)(param_3 + 0x70));
+  return 0;
+}
+
+/* ref: FUN_0055e470 */
+byte F_0055e470(unsigned int gen_a0)
+{
+  GEN_ENTER(0x55e470u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (*(char *)(in_ecx + 0x13b) == '\0') {
+    if (*(char *)(in_ecx + 0x13c) != '\0') goto LAB_0055e497;
+    if ((*(byte *)(in_ecx + 0xfb) & 8) == 0) {
+      return 1;
+    }
+  }
+  if (*(char *)(in_ecx + 0x13c) == '\0') {
+    return 0;
+  }
+LAB_0055e497: ;
+  if (((*(byte *)(in_ecx + 0xfb) & 2) == 0) && ((*(byte *)(in_ecx + 0xf8) & 1) == 0)) {
+    return 1;
+  }
+  return 0;
+}
+
+/* ref: Component::GUI2::AtkUnitBase::vf50 */
+unsigned int F_0055e4b0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x55e4b0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  ((code *)*(gen_code32 *)(*(int *)this + 0x78))(this);
   return 0;
 }
 

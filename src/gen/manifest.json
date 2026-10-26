@@ -1,8 +1,8 @@
 {
- "translated": 85867,
- "stubbed": 1561,
+ "translated": 85865,
+ "stubbed": 1563,
  "reasons": {
-  "a register the decompiler lost": 1376,
+  "a register the decompiler lost": 1378,
   "a name C cannot take": 69,
   "local of type unkbyte10": 18,
   "undeclared name ZEXT812": 8,
@@ -58,6 +58,8 @@
   "00422240": "a register the decompiler lost (unaff_ECX)",
   "004225c0": "a register the decompiler lost (unaff_ECX)",
   "00424d41": "a register the decompiler lost (unaff_retaddr)",
+  "00427370": "a register the decompiler lost (in_stack_00000004)",
+  "00427390": "a register the decompiler lost (in_stack_00000004)",
   "00438a90": "a register the decompiler lost (unaff_EDI)",
   "0043bbc0": "a register the decompiler lost (unaff_EDI)",
   "0043e2d0": "a register the decompiler lost (extraout_EDX)",

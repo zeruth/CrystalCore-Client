@@ -1,21 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Client::DevEnv::Common::ControlPoint::IControlPoint::vf5 */
-uint F_00b67720(void)
-{
-  GEN_ENTER(0xb67720u, 0u, 0u, 0u, 0u);
-  return 1;
-}
-
-/* ref: Client::DevEnv::Common::ControlPoint::IControlPoint::vf6 */
-uint F_00b67730(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xb67730u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  return 0;
-}
-
 /* ref: Client::DevEnv::Common::ControlPoint::IControlPoint::vf7 */
 unsigned int F_00b67740(void)
 {
@@ -3404,22 +3388,22 @@ uint F_00b6b740(unsigned int gen_a0)
   GEN_ENTER(0xb6b740u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint uVar1;
-  float fVar2;
-  float fVar3;
-  double dVar4;
-  double dVar5;
+  double dVar2;
+  double dVar3;
+  float fVar4;
+  float fVar5;
   
-  fVar2 = *(float *)((int)this + 0x10c);
-  if ((GEN_ISNAN(fVar2) != (GEN_ISNAN(fVar2) || fVar2 == 0.0)) &&
-     (fVar2 = *(float *)((int)this + 0x110), GEN_ISNAN(fVar2) != (GEN_ISNAN(fVar2) || fVar2 == 0.0))) {
+  fVar4 = *(float *)((int)this + 0x10c);
+  if ((GEN_ISNAN(fVar4) != (GEN_ISNAN(fVar4) || fVar4 == 0.0)) &&
+     (fVar4 = *(float *)((int)this + 0x110), GEN_ISNAN(fVar4) != (GEN_ISNAN(fVar4) || fVar4 == 0.0))) {
     return 4;
   }
-  fVar2 = F_0053b3a0();
-  dVar4 = F_0053b320();
-  fVar3 = F_0053b3e0();
-  dVar5 = F_0053b360();
-  if ((((!((float10)((float)GEN_TOF(ABS((float10)fVar2))) < (float10)((float)GEN_TOF(ABS((float10)(float)dVar4))))) &&
-       (!((float10)((float)GEN_TOF(ABS((float10)fVar3))) < (float10)((float)GEN_TOF(ABS((float10)(float)dVar5)))))) &&
+  fVar4 = F_0053b3a0();
+  dVar2 = F_0053b320();
+  fVar5 = F_0053b3e0();
+  dVar3 = F_0053b360();
+  if ((((!((float10)((float)GEN_TOF(ABS((float10)fVar4))) < (float10)((float)GEN_TOF(ABS((float10)(float)dVar2))))) &&
+       (!((float10)((float)GEN_TOF(ABS((float10)fVar5))) < (float10)((float)GEN_TOF(ABS((float10)(float)dVar3)))))) &&
       (REFG(int, 0x1375b64) != 1)) &&
      ((uVar1 = F_0053b420(&REFG(undefined, 0x1375b30),0x20), (char)uVar1 == '\0' &&
       (uVar1 = F_0053b420(&REFG(undefined, 0x1375b30),0x21), (char)uVar1 == '\0')))) {
@@ -8878,7 +8862,7 @@ uint F_00b75790(unsigned int gen_a0, unsigned int gen_a1)
   *(undefined4 *)(this + 0x1b4) = REFG(float, 0x10f3960);
   *(undefined4 *)(this + 0x1b8) = REFG(float, 0x10f396c);
   *(undefined4 *)(this + 0x154) = REFG(float, 0x10928e4);
-  piVar4 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8));
+  piVar4 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),"Lobby");
   *(int * PTR32 *)(this + 0x2c8) = piVar4;
   iVar6 = 0;
   if (piVar4 != (int *)0x0) {
@@ -12143,6 +12127,90 @@ uint F_00b79ca0(unsigned int gen_a0, unsigned int gen_a1)
       return 1;
     }
   }
+  return 0;
+}
+
+/* ref: FUN_00b79d60 */
+unsigned int F_00b79d60(float gen_a0)
+{
+  GEN_ENTER(0xb79d60u, gen_trace_f(gen_a0), 0u, 0u, 0u);
+  float param_1 = (float)gen_a0;
+  return 0;
+}
+
+/* ref: FUN_00b79d80 */
+unsigned int F_00b79d80(unsigned int gen_a0)
+{
+  GEN_ENTER(0xb79d80u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint uVar1;
+  
+  *(undefined4 *)((int)this + 8) = 0x2f20;
+  *(undefined4 *)((int)this + 0xc) = 400;
+  uVar1 = F_00406bb0(0x75d00,0,0);
+  *(uint *)this = uVar1;
+  uVar1 = F_00406bb0(*(int *)((int)this + 0xc) * 0x14,0,0);
+  *(uint *)((int)this + 4) = uVar1;
+  *(undefined4 *)((int)this + 0x10) = 0;
+  *(undefined4 *)((int)this + 0x14) = 0;
+  *(undefined4 *)((int)this + 0x18) = 0;
+  *(undefined4 *)((int)this + 0x1c) = 0;
+  *(undefined4 *)((int)this + 0x20) = 0;
+  *(undefined4 *)((int)this + 0x24) = 0;
+  *(undefined4 *)((int)this + 0x28) = 0;
+  *(undefined4 *)((int)this + 0x2c) = 0;
+  *(undefined4 *)((int)this + 0x30) = 0;
+  *(undefined4 *)((int)this + 0x34) = 0;
+  *(undefined4 *)((int)this + 0x38) = 0;
+  *(undefined4 *)((int)this + 0x3c) = 0;
+  *(undefined4 *)((int)this + 0x40) = 0;
+  *(undefined4 *)((int)this + 0x44) = 0;
+  *(undefined4 *)((int)this + 0x48) = 0;
+  *(undefined4 *)((int)this + 0x4c) = 0;
+  *(undefined4 *)((int)this + 0x50) = 0;
+  *(undefined4 *)((int)this + 0x54) = 0;
+  *(undefined4 *)((int)this + 0x58) = 0;
+  *(undefined4 *)((int)this + 0x5c) = 0;
+  *(undefined4 *)((int)this + 0x60) = 0;
+  *(undefined4 *)((int)this + 100) = 0;
+  *(undefined4 *)((int)this + 0x68) = 0;
+  *(undefined4 *)((int)this + 0x6c) = 0;
+  *(undefined4 *)((int)this + 0x70) = 0;
+  *(undefined4 *)((int)this + 0x74) = 0;
+  *(undefined4 *)((int)this + 0x78) = 0;
+  *(undefined4 *)((int)this + 0x7c) = 0;
+  *(undefined4 *)((int)this + 0x80) = 0;
+  *(undefined4 *)((int)this + 0x84) = 0;
+  *(undefined4 *)((int)this + 0x88) = 0;
+  *(undefined4 *)((int)this + 0x8c) = 0;
+  *(undefined4 *)((int)this + 0x90) = 0;
+  *(undefined4 *)((int)this + 0x94) = 0;
+  *(undefined4 *)((int)this + 0x98) = 0;
+  *(undefined4 *)((int)this + 0x9c) = 0;
+  *(undefined4 *)((int)this + 0xa0) = 0;
+  *(undefined4 *)((int)this + 0xa4) = 0;
+  *(undefined4 *)((int)this + 0xa8) = 0;
+  *(undefined4 *)((int)this + 0xac) = 0;
+  *(undefined4 *)((int)this + 0xb0) = 0;
+  *(undefined4 *)((int)this + 0xb4) = 0;
+  *(undefined4 *)((int)this + 0xb8) = 0;
+  *(undefined4 *)((int)this + 0xbc) = 0;
+  *(undefined4 *)((int)this + 0xc0) = 0;
+  *(undefined4 *)((int)this + 0xc4) = 0;
+  *(undefined4 *)((int)this + 200) = 0;
+  *(undefined4 *)((int)this + 0xcc) = 0;
+  *(undefined4 *)((int)this + 0xd0) = 0;
+  *(undefined4 *)((int)this + 0xd4) = 0;
+  *(undefined4 *)((int)this + 0xd8) = 0;
+  *(undefined4 *)((int)this + 0xdc) = 0;
+  *(undefined4 *)((int)this + 0xe0) = 0;
+  *(undefined4 *)((int)this + 0xe4) = 0;
+  *(undefined4 *)((int)this + 0xe8) = 0;
+  *(undefined4 *)((int)this + 0xec) = 0;
+  *(undefined4 *)((int)this + 0xf0) = 0;
+  *(undefined4 *)((int)this + 0xf4) = 0;
+  *(undefined4 *)((int)this + 0xf8) = 0;
+  *(undefined4 *)((int)this + 0xfc) = 0;
   return 0;
 }
 

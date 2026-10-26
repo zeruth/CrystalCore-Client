@@ -1,29 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_004bf490 */
-uint F_004bf490(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4bf490u, gen_a0, gen_a1, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_004296a0(param_1 * 8,param_2,0xce);
-  return uVar1;
-}
-
-/* ref: FUN_004bf4e0 */
-uint F_004bf4e0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4bf4e0u, gen_a0, gen_a1, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_004296a0(param_1 * 4,param_2,0xce);
-  return uVar1;
-}
-
 /* ref: FUN_004bf530 */
 uint F_004bf530(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -11509,5 +11485,54 @@ unsigned int F_004cba90(unsigned int gen_a0)
   F_004cb680(param_1);
                     
   F_004cb700(0x4dbd);
+}
+
+/* ref: FUN_004cbad0 */
+unsigned int F_004cbad0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x4cbad0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  *((undefined4 *)GEN_TOP((*(int *)((int)GEN_TLS_ARRAY + REFG(int, 0x15d6870) * 4) + 0x118))) = 0xffffffff;
+  F_004cb680(param_2);
+                    
+  F_004cb700(param_1);
+}
+
+/* ref: FUN_004cbb10 */
+uint F_004cbb10(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x4cbb10u, gen_a0, gen_a1, 0u, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  int * param_2 = (int *)(uintptr_t)gen_a1;
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  int * piVar4;
+  int * piVar5;
+  
+  iVar1 = *(int *)((int)GEN_TLS_ARRAY + REFG(int, 0x15d6870) * 4);
+  iVar2 = *(int *)(iVar1 + 0x118);
+  piVar5 = param_1;
+  if (iVar2 == -1) {
+    return 0;
+  }
+  do {
+    if (param_2 <= piVar5) {
+      return 0;
+    }
+    iVar3 = 0;
+    if (-1 < iVar2) {
+      piVar4 = (int *)(iVar1 + 0x120);
+      do {
+        if (*piVar4 == *piVar5) {
+          return *(uint *)(iVar1 + 0x120 + iVar3 * 4);
+        }
+        iVar3 = iVar3 + 1;
+        piVar4 = piVar4 + 1;
+      } while (iVar3 <= iVar2);
+    }
+    piVar5 = piVar5 + 1;
+  } while( true );
 }
 

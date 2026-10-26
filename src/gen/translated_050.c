@@ -1,21 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_006b1ca0 */
-uint F_006b1ca0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6b1ca0u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 4;
-}
-
-/* ref: FUN_006b1cb0 */
-uint F_006b1cb0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6b1cb0u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 8;
-}
-
 /* ref: FUN_006b1cc0 */
 uint F_006b1cc0(unsigned int gen_a0)
 {
@@ -7691,6 +7675,25 @@ unsigned int F_006b8410(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0x6b8410u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: Client::Graphics::Scene::CharacterBase::vf61 */
+unsigned int F_006b8420(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6b8420u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: Client::Graphics::Scene::CharacterBase::vf62 */
+unsigned int F_006b8430(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x6b8430u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
   return 0;
 }
 

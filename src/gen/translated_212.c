@@ -1,23 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_010737a0 */
-uint F_010737a0(void)
-{
-  GEN_ENTER(0x10737a0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107c930)));
-  return uVar1;
-}
-
-/* ref: FUN_010737b0 */
-unsigned int F_010737b0(void)
-{
-  GEN_ENTER(0x10737b0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5930) = REFG(float, 0x1340ef8);
-  return 0;
-}
-
 /* ref: FUN_010737d0 */
 unsigned int F_010737d0(void)
 {
@@ -3710,5 +3692,30 @@ uint F_010776a0(void)
   *(undefined * PTR32 *)&REFG(undefined, 0x1353718) = REFG(undefined * PTR32, 0x13533f4);
   *(undefined * PTR32 *)&REFG(undefined, 0x1353730) = REFG(undefined * PTR32, 0x13533f8);
   return (uint)REFG(undefined * PTR32, 0x13533f0);
+}
+
+/* ref: FUN_010776d0 */
+unsigned int F_010776d0(void)
+{
+  GEN_ENTER(0x10776d0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15e27bc),"hkMemoryMeshTexture",&REFG(undefined, 0x15e248c),0x20,0,0,0,0,
+               &REFG(undefined * PTR32, 0x13536b0),7,0,0,0,2);
+  return 0;
+}
+
+/* ref: FUN_01077700 */
+uint F_01077700(void)
+{
+  GEN_ENTER(0x1077700u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00dce790();
+  *(char * PTR32 *)&REFG(undefined, 0x15e27ec) = "hkMemoryMeshTexture";
+  *(char * PTR32 *)&REFG(undefined, 0x15e27f0) = "!hkMemoryMeshTexture";
+  *(gen_code32 *)&REFG(undefined, 0x15e27f4) = ((code *)REFP(0xdce770));
+  *(gen_code32 *)&REFG(undefined, 0x15e27f8) = ((code *)REFP(0xdce760));
+  *(uint *)&REFG(undefined, 0x15e27fc) = uVar1;
+  *(undefined4 *)&REFG(undefined, 0x15e2800) = 0x20;
+  return uVar1;
 }
 

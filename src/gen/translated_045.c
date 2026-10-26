@@ -1,31 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00663180 */
-uint F_00663180(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x663180u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  return in_ecx + 0x11fc + (uint)(ushort)param_2 * 8;
-}
-
-/* ref: FUN_006631b0 */
-uint F_006631b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6631b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  float * param_1 = (float *)(uintptr_t)gen_a1;
-  ushort uVar1;
-  short sVar2;
-  
-  uVar1 = *(ushort *)((int)this + 8);
-  sVar2 = *(short *)((int)this + 0xc);
-  *param_1 = (float)(int)((int)*(short *)((int)this + 10) * (uint)uVar1 + (uint)(uVar1 >> 1));
-  param_1[1] = 0.0;
-  param_1[2] = (float)(int)((int)sVar2 * (uint)uVar1 + (uint)(uVar1 >> 1));
-  return (uint)param_1;
-}
-
 /* ref: FUN_00663230 */
 byte F_00663230(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -6093,6 +6067,31 @@ uint F_00669610(unsigned int gen_a0)
 uint F_00669630(unsigned int gen_a0)
 {
   GEN_ENTER(0x669630u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 4) + 8))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 4),param_1,0x10);
+  return uVar1;
+}
+
+/* ref: FUN_00669650 */
+uint F_00669650(unsigned int gen_a0)
+{
+  GEN_ENTER(0x669650u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  uint uVar1;
+  
+  uVar1 = 0;
+  if (param_1 != 0) {
+    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 4) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 4),param_1);
+  }
+  return uVar1;
+}
+
+/* ref: FUN_00669670 */
+uint F_00669670(unsigned int gen_a0)
+{
+  GEN_ENTER(0x669670u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   uint uVar1;
   

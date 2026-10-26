@@ -1,25 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00bcdde0 */
-uint F_00bcdde0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbcdde0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0x20) = param_2;
-  return param_2;
-}
-
-/* ref: FUN_00bcddf0 */
-uint F_00bcddf0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbcddf0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0xd8) = param_2;
-  return param_2;
-}
-
 /* ref: FUN_00bcde10 */
 uint F_00bcde10(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -10882,6 +10862,83 @@ byte F_00bd9ce0(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xbd9ce0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
+  return 1;
+}
+
+/* ref: FUN_00bd9cf0 */
+uint F_00bd9cf0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xbd9cf0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 uVar1;
+  int iVar2;
+  undefined * pvVar3;
+  undefined * pvVar4;
+  
+  pvVar4 = *(undefined * PTR32 *)((int)this + 0x78);
+  if (pvVar4 == (undefined *)0x0) {
+    iVar2 = *(int *)((int)this + 0x6c);
+    if (iVar2 == 0) {
+      if (*(int *)((int)this + 4) != 0) {
+        *(undefined4 *)((int)this + 0x6c) = *((undefined4 *)GEN_TOP((*(int *)((int)this + 4) + 4)));
+      }
+      iVar2 = *(int *)((int)this + 0x6c);
+      pvVar3 = (undefined *)0x0;
+      if (iVar2 != 0) goto LAB_00bd9d16;
+    }
+    else {
+LAB_00bd9d16: ;
+      uVar1 = *(undefined4 *)(iVar2 + 0x20);
+      *(undefined4 *)((int)this + 0x78) = uVar1;
+      pvVar3 = (undefined *)F_00b595f0(uVar1);
+    }
+    pvVar4 = *(undefined * PTR32 *)((int)this + 0x78);
+    if (pvVar4 == (undefined *)0x0) {
+      pvVar4 = (undefined *)0x0;
+      goto LAB_00bd9d3a;
+    }
+  }
+  pvVar3 = (undefined *)F_00bbaf90(pvVar4);
+  pvVar4 = pvVar3;
+LAB_00bd9d3a: ;
+  iVar2 = REFG(int, 0x1379694);
+  if ((pvVar4 != (undefined *)0x0) && (REFG(int, 0x1379694) != 0)) {
+    F_00aa2260(pvVar4,0,*(undefined4 *)(REFG(int, 0x1379694) + 0x2d90));
+    F_00aa2260(pvVar4,1,*(undefined4 *)(iVar2 + 0x2d94));
+    F_00aa2260(pvVar4,2,*(undefined4 *)(iVar2 + 0x2d98));
+    F_00aa2260(pvVar4,3,*(undefined4 *)(iVar2 + 0x2d9c));
+    F_00aa2260(pvVar4,4,*(undefined4 *)(iVar2 + 0x2da0));
+    F_00aa80c0(pvVar4,0,*(undefined4 *)(iVar2 + 0x16b0),*(undefined4 *)(iVar2 + 0x16b4));
+    pvVar3 = (undefined *)F_00aa80c0(pvVar4,1,*(undefined4 *)(iVar2 + 0x1e50),
+                                  *(undefined4 *)(iVar2 + 0x1e54));
+  }
+  return (uint)pvVar3;
+}
+
+/* ref: Client::System::Scheduler::Clip::SetHigherEquipmentClip::vf19 */
+byte F_00bd9dd0(void)
+{
+  GEN_ENTER(0xbd9dd0u, 0u, 0u, 0u, 0u);
+  int * piVar1;
+  uint uVar2;
+  int * piVar3;
+  int iVar4;
+  
+  piVar1 = (int *)F_0052fba0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8),"CharaMakeClassEquip");
+  if (piVar1 != (int *)0x0) {
+    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0x44))(piVar1);
+    iVar4 = 0;
+    if (0 < (int)uVar2) {
+      do {
+        piVar3 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0x24))(piVar1,iVar4)));
+        if (piVar3 == (int *)0x0) {
+          return 0;
+        }
+        ((code *)*(gen_code32 *)(*piVar3 + 4))(piVar3);
+        iVar4 = iVar4 + 1;
+      } while (iVar4 < (int)uVar2);
+    }
+  }
   return 1;
 }
 

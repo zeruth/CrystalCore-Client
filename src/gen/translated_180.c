@@ -1,26 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: RealArrayView::vf2 */
-unsigned int F_00e10760(void)
-{
-  GEN_ENTER(0xe10760u, 0u, 0u, 0u, 0u);
-  return 0;
-}
-
-/* ref: RealArrayView::vf8 */
-uint F_00e10770(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe10770u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  param_1[2] = *(undefined4 *)(this + 0x10);
-  param_1[3] = *(undefined4 *)(this + 0x14);
-  param_1[4] = 4;
-  param_1[1] = 1;
-  *param_1 = 0xb;
-  return 0;
-}
-
 /* ref: RealArrayView::vf28 */
 uint F_00e107a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -8783,5 +8762,41 @@ uint F_00e18660(unsigned int gen_a0, unsigned int gen_a1)
   }
   *(undefined * PTR32 *)this = param_1;
   return (uint)this;
+}
+
+/* ref: FUN_00e18680 */
+unsigned int F_00e18680(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe18680u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  if (*(undefined * PTR32 *)this != (undefined *)0x0) {
+    F_00d91a80(*(undefined * PTR32 *)this);
+  }
+  *(undefined4 *)this = 0;
+  return 0;
+}
+
+/* ref: FUN_00e186b0 */
+unsigned int F_00e186b0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe186b0u, gen_a0, gen_a1, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  int in_ecx;
+  int iVar1;
+  
+  in_ecx = param_1;
+  iVar1 = param_2;
+  if (0 < param_2) {
+    do {
+      if (in_ecx != 0) {
+        F_00d91340(in_ecx);
+        F_00d91340(in_ecx + 4);
+      }
+      in_ecx = in_ecx + 8;
+      iVar1 = iVar1 + -1;
+    } while (iVar1 != 0);
+  }
+  return 0;
 }
 

@@ -1,32 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00d79c30 */
-uint F_00d79c30(unsigned int gen_a0)
-{
-  GEN_ENTER(0xd79c30u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  uVar1 = *(uint *)((int)this + 8);
-  *(undefined4 *)((int)this + 4) = 0;
-  if (-1 < (int)uVar1) {
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x13516ac) + 0x10))))
-                      (&REFG(undefined * PTR32, 0x13516ac),*(undefined4 *)this,uVar1 * 8);
-  }
-  *(undefined4 *)((int)this + 8) = 0x80000000;
-  *(undefined4 *)this = 0;
-  return uVar1;
-}
-
-/* ref: FUN_00d79c70 */
-uint F_00d79c70(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xd79c70u, gen_a0, gen_a1, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  return param_2 - param_1;
-}
-
 /* ref: FUN_00d79c80 */
 uint F_00d79c80(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -14772,5 +14745,45 @@ uint F_00d8fd60(unsigned int gen_a0, unsigned int gen_a1)
   int * in_ecx = (int *)(uintptr_t)gen_a0;
   int param_2 = (int)gen_a1;
   return param_2 * 0x10 + *in_ecx;
+}
+
+/* ref: FUN_00d8fd80 */
+uint F_00d8fd80(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xd8fd80u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 uVar1;
+  
+  uVar1 = *(undefined4 *)this;
+  *(undefined4 *)this = *param_1;
+  *param_1 = uVar1;
+  uVar1 = *(undefined4 *)((int)this + 4);
+  *(undefined4 *)((int)this + 4) = param_1[1];
+  param_1[1] = uVar1;
+  uVar1 = *(undefined4 *)((int)this + 8);
+  *(undefined4 *)((int)this + 8) = param_1[2];
+  param_1[2] = uVar1;
+  return (uint)param_1;
+}
+
+/* ref: FUN_00d8fdb0 */
+uint F_00d8fdb0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xd8fdb0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 uVar1;
+  
+  uVar1 = *(undefined4 *)this;
+  *(undefined4 *)this = *param_1;
+  *param_1 = uVar1;
+  uVar1 = *(undefined4 *)((int)this + 4);
+  *(undefined4 *)((int)this + 4) = param_1[1];
+  param_1[1] = uVar1;
+  uVar1 = *(undefined4 *)((int)this + 8);
+  *(undefined4 *)((int)this + 8) = param_1[2];
+  param_1[2] = uVar1;
+  return (uint)param_1;
 }
 

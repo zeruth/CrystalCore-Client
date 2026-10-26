@@ -1,50 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00ea8190 */
-uint F_00ea8190(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xea8190u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  F_00ea7c20(param_1);
-  uVar1 = *(uint *)((int)this + 8);
-  *(uint *)((int)param_1 + 8) = uVar1;
-  *(undefined4 *)((int)param_1 + 0x10) = *(undefined4 *)((int)this + 0x10);
-  *(undefined4 *)((int)this + 8) = 0;
-  return uVar1;
-}
-
-/* ref: FUN_00ea81c0 */
-uint F_00ea81c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xea81c0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined * pvVar1;
-  uint uVar2;
-  
-  if (*(int *)((int)this + 8) != 5) {
-    F_00ea7c20(this);
-    *(undefined4 *)((int)this + 8) = 5;
-    pvVar1 = (undefined *)F_004069f0(0x10);
-    if (pvVar1 == (undefined *)0x0) {
-      uVar2 = 0;
-    }
-    else {
-      uVar2 = F_00ed08c0(pvVar1);
-    }
-    *(uint *)((int)this + 0x10) = uVar2;
-  }
-  pvVar1 = *(undefined * PTR32 *)((int)this + 0x10);
-  F_00eca9b0(pvVar1,*((undefined4 *)GEN_TOP((*(int *)((int)pvVar1 + 4) + 4))));
-  *((int *)GEN_TOP((*(int *)((int)pvVar1 + 4) + 4))) = *(int *)((int)pvVar1 + 4);
-  *(undefined4 *)*(undefined4 *)((int)pvVar1 + 4) = *(undefined4 *)((int)pvVar1 + 4);
-  *((int *)GEN_TOP((*(int *)((int)pvVar1 + 4) + 8))) = *(int *)((int)pvVar1 + 4);
-  *(undefined4 *)((int)pvVar1 + 8) = 0;
-  return (uint)this;
-}
-
 /* ref: FUN_00ea8220 */
 uint F_00ea8220(unsigned int gen_a0)
 {
@@ -7498,6 +7453,32 @@ uint F_00eb0760(unsigned int gen_a0, unsigned int gen_a1)
 uint F_00eb0790(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0xeb0790u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[10])REFP(0x1159938));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLandSet_TypeInfo::vf0 */
+uint F_00eb07c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xeb07c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[10])REFP(0x1159938));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLand_TypeInfo::vf0 */
+uint F_00eb07f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xeb07f0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[10])REFP(0x1159938));

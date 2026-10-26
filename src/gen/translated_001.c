@@ -3950,33 +3950,43 @@ uint F_00410a70(unsigned int gen_a0)
 }
 
 /* ref: FUN_00410aa0 */
-unsigned int F_00410aa0(unsigned int gen_a0)
+unsigned int F_00410aa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
-  GEN_ENTER(0x410aa0u, gen_a0, 0u, 0u, 0u);
+  GEN_ENTER(0x410aa0u, gen_a0, gen_a1, gen_a2, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
-  ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x28) + 0x58))))(*(int * PTR32 *)((int)this + 0x28));
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x28) + 0x58))))(*(int * PTR32 *)((int)this + 0x28),param_1,param_2);
   return 0;
 }
 
 /* ref: FUN_00410ab0 */
-byte F_00410ab0(unsigned int gen_a0)
+byte F_00410ab0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
-  GEN_ENTER(0x410ab0u, gen_a0, 0u, 0u, 0u);
+  GEN_ENTER(0x410ab0u, gen_a0, gen_a1, gen_a2, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x28) + 0x5c))))(*(int * PTR32 *)((int)this + 0x28));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x28) + 0x5c))))
+                    (*(int * PTR32 *)((int)this + 0x28),param_1,param_2);
   return (byte)uVar1;
 }
 
 /* ref: FUN_00410ac0 */
-byte F_00410ac0(unsigned int gen_a0)
+byte F_00410ac0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
 {
-  GEN_ENTER(0x410ac0u, gen_a0, 0u, 0u, 0u);
+  GEN_ENTER(0x410ac0u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 param_4 = (undefined4)gen_a4;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x28) + 0x60))))(*(int * PTR32 *)((int)this + 0x28));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x28) + 0x60))))
+                    (*(int * PTR32 *)((int)this + 0x28),param_1,param_2,param_3,param_4);
   return (byte)uVar1;
 }
 

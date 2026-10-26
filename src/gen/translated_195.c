@@ -1,20 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: PoolAllocator_USetParameterInfo_WorkDefinitions_Network_Application_ME::vf1 */
-uint F_00eb84a0(void)
-{
-  GEN_ENTER(0xeb84a0u, 0u, 0u, 0u, 0u);
-  return 0x5555555;
-}
-
-/* ref: PoolAllocator_USetParameterInfo_WorkDefinitions_Network_Application_ME::vf2 */
-uint F_00eb84b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xeb84b0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(int *)(in_ecx + 0x24d8) << 5;
-}
-
 /* ref: PoolAllocator_USetParameterInfo_WorkDefinitions_Network_Application_ME::vf3 */
 uint F_00eb84c0(void)
 {
@@ -8804,6 +8789,36 @@ uint F_00ec0250(unsigned int gen_a0, unsigned int gen_a1)
   *(undefined * PTR32 * PTR32 *)this =
        (*(undefined * PTR32 (*)[1])REFP(0x115d534));
   F_00ebc7d0((undefined *)((int)this + 4));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Array_USetParameterInfo_WorkDefinitions_Network_Application_WorkDefinitions::vf0_00ec0280 */
+uint F_00ec0280(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xec0280u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this =
+       (*(undefined * PTR32 (*)[1])REFP(0x115d53c));
+  F_00ebc860((undefined *)((int)this + 4));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Array_USetParameterInfo_WorkDefinitions_Network_Application_WorkDefinitions::vf0_00ec02b0 */
+uint F_00ec02b0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xec02b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this =
+       (*(undefined * PTR32 (*)[1])REFP(0x115d544));
+  F_00ebc8f0((undefined *)((int)this + 4));
   if ((param_1 & 1) != 0) {
     F_00406ad0(this);
   }
