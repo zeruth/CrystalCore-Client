@@ -4,6 +4,5 @@
  "00a627d0": "C2440: 'type cast': cannot convert from 'int *' to 'float' | piVar2 = (int *)(uintptr_t)gen_fl2bits((float)(param_1 + (int)gen_fl2bits(fVar5) * 5));",
  "00c45f56": "C2143: syntax error: missing ';' before 'constant' | this[4] = (((code *)REFP(0xc45f56)))0x0;",
  "00c4630f": "C2143: syntax error: missing ';' before 'constant' | *this = (((code *)REFP(0xc4630f)))0x0;",
- "00d15130": "C2440: 'type cast': cannot convert from 'float' to 'HGDIOBJ' | (*(HGDIOBJ *)(gen_frame + 0x8c)) = (HGDIOBJ)(float)fVar10;",
- "01006840": "C2045: 'joined_r0x01007052': label redefined | joined_r0x01007052: ;"
+ "00d15130": "C2440: 'type cast': cannot convert from 'float' to 'HGDIOBJ' | (*(HGDIOBJ *)(gen_frame + 0x8c)) = (HGDIOBJ)(float)fVar10;"
 }

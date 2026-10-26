@@ -1,221 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_01074770 */
-unsigned int F_01074770(void)
-{
-  GEN_ENTER(0x1074770u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bb0) = REFG(float, 0x1346a1c);
-  return 0;
-}
-
-/* ref: FUN_01074790 */
-unsigned int F_01074790(void)
-{
-  GEN_ENTER(0x1074790u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bb4) = REFG(float, 0x1346bb0);
-  return 0;
-}
-
-/* ref: FUN_010747b0 */
-unsigned int F_010747b0(void)
-{
-  GEN_ENTER(0x10747b0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bb8) = REFG(float, 0x1346be0);
-  return 0;
-}
-
-/* ref: FUN_010747d0 */
-unsigned int F_010747d0(void)
-{
-  GEN_ENTER(0x10747d0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bbc) = REFG(float, 0x1346e44);
-  return 0;
-}
-
-/* ref: FUN_010747f0 */
-unsigned int F_010747f0(void)
-{
-  GEN_ENTER(0x10747f0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bc0) = REFG(float, 0x1346e74);
-  return 0;
-}
-
-/* ref: FUN_01074810 */
-unsigned int F_01074810(void)
-{
-  GEN_ENTER(0x1074810u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bc4) = REFG(float, 0x1346fdc);
-  return 0;
-}
-
-/* ref: FUN_01074830 */
-unsigned int F_01074830(void)
-{
-  GEN_ENTER(0x1074830u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bc8) = REFG(float, 0x134700c);
-  return 0;
-}
-
-/* ref: FUN_01074850 */
-unsigned int F_01074850(void)
-{
-  GEN_ENTER(0x1074850u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bcc) = REFG(float, 0x13470b4);
-  return 0;
-}
-
-/* ref: FUN_01074870 */
-unsigned int F_01074870(void)
-{
-  GEN_ENTER(0x1074870u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bd0) = REFG(float, 0x13470e4);
-  return 0;
-}
-
-/* ref: FUN_01074890 */
-unsigned int F_01074890(void)
-{
-  GEN_ENTER(0x1074890u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bd4) = REFG(float, 0x134718c);
-  return 0;
-}
-
-/* ref: FUN_010748b0 */
-unsigned int F_010748b0(void)
-{
-  GEN_ENTER(0x10748b0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bd8) = REFG(float, 0x13471bc);
-  return 0;
-}
-
-/* ref: FUN_010748d0 */
-unsigned int F_010748d0(void)
-{
-  GEN_ENTER(0x10748d0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bdc) = REFG(float, 0x13473f0);
-  return 0;
-}
-
-/* ref: FUN_010748f0 */
-unsigned int F_010748f0(void)
-{
-  GEN_ENTER(0x10748f0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5be0) = REFG(float, 0x1347420);
-  return 0;
-}
-
-/* ref: FUN_01074910 */
-unsigned int F_01074910(void)
-{
-  GEN_ENTER(0x1074910u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5be8) = REFG(float, 0x1347aec);
-  return 0;
-}
-
-/* ref: FUN_01074930 */
-unsigned int F_01074930(void)
-{
-  GEN_ENTER(0x1074930u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bec) = REFG(float, 0x1347b1c);
-  return 0;
-}
-
-/* ref: FUN_01074950 */
-unsigned int F_01074950(void)
-{
-  GEN_ENTER(0x1074950u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bf8) = REFG(float, 0x13497f0);
-  return 0;
-}
-
-/* ref: FUN_01074970 */
-unsigned int F_01074970(void)
-{
-  GEN_ENTER(0x1074970u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5bfc) = REFG(float, 0x1349820);
-  return 0;
-}
-
-/* ref: FUN_01074990 */
-unsigned int F_01074990(void)
-{
-  GEN_ENTER(0x1074990u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c00) = REFG(float, 0x13499e0);
-  return 0;
-}
-
-/* ref: FUN_010749b0 */
-unsigned int F_010749b0(void)
-{
-  GEN_ENTER(0x10749b0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c04) = REFG(float, 0x1349a10);
-  return 0;
-}
-
-/* ref: FUN_010749d0 */
-unsigned int F_010749d0(void)
-{
-  GEN_ENTER(0x10749d0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c08) = REFG(float, 0x1349bc4);
-  return 0;
-}
-
-/* ref: FUN_010749f0 */
-unsigned int F_010749f0(void)
-{
-  GEN_ENTER(0x10749f0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c0c) = REFG(float, 0x1349bf4);
-  return 0;
-}
-
-/* ref: FUN_01074a10 */
-unsigned int F_01074a10(void)
-{
-  GEN_ENTER(0x1074a10u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c10) = REFG(float, 0x1349cdc);
-  return 0;
-}
-
-/* ref: FUN_01074a30 */
-unsigned int F_01074a30(void)
-{
-  GEN_ENTER(0x1074a30u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c14) = REFG(float, 0x1349d0c);
-  return 0;
-}
-
-/* ref: FUN_01074a50 */
-unsigned int F_01074a50(void)
-{
-  GEN_ENTER(0x1074a50u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c18) = REFG(float, 0x1349e58);
-  return 0;
-}
-
-/* ref: FUN_01074a70 */
-unsigned int F_01074a70(void)
-{
-  GEN_ENTER(0x1074a70u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c1c) = REFG(float, 0x1349e88);
-  return 0;
-}
-
-/* ref: FUN_01074a90 */
-unsigned int F_01074a90(void)
-{
-  GEN_ENTER(0x1074a90u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c20) = REFG(float, 0x134a190);
-  return 0;
-}
-
-/* ref: FUN_01074ab0 */
-unsigned int F_01074ab0(void)
-{
-  GEN_ENTER(0x1074ab0u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x14c5c24) = REFG(float, 0x134a1c0);
-  return 0;
-}
-
 /* ref: FUN_01074ad0 */
 uint F_01074ad0(void)
 {
@@ -4102,6 +3886,324 @@ uint F_01078f20(void)
   uint uVar1;
   
   uVar1 = F_00c47de6(((code *)REFP(0x107cd40)));
+  return uVar1;
+}
+
+/* ref: FUN_01078f30 */
+uint F_01078f30(void)
+{
+  GEN_ENTER(0x1078f30u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107cd50)));
+  return uVar1;
+}
+
+/* ref: FUN_01078f40 */
+uint F_01078f40(void)
+{
+  GEN_ENTER(0x1078f40u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107cd60)));
+  return uVar1;
+}
+
+/* ref: FUN_01078f50 */
+uint F_01078f50(void)
+{
+  GEN_ENTER(0x1078f50u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107cd70)));
+  return uVar1;
+}
+
+/* ref: FUN_01078f60 */
+uint F_01078f60(void)
+{
+  GEN_ENTER(0x1078f60u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107cd80)));
+  return uVar1;
+}
+
+/* ref: FUN_01078f70 */
+uint F_01078f70(void)
+{
+  GEN_ENTER(0x1078f70u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107cd90)));
+  return uVar1;
+}
+
+/* ref: FUN_01078f80 */
+uint F_01078f80(void)
+{
+  GEN_ENTER(0x1078f80u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107cda0)));
+  return uVar1;
+}
+
+/* ref: FUN_01078f90 */
+uint F_01078f90(void)
+{
+  GEN_ENTER(0x1078f90u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107cdb0)));
+  return uVar1;
+}
+
+/* ref: FUN_01078fa0 */
+uint F_01078fa0(void)
+{
+  GEN_ENTER(0x1078fa0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107cdc0)));
+  return uVar1;
+}
+
+/* ref: FUN_01078fb0 */
+uint F_01078fb0(void)
+{
+  GEN_ENTER(0x1078fb0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107d2e0)));
+  return uVar1;
+}
+
+/* ref: FUN_01078fc0 */
+uint F_01078fc0(void)
+{
+  GEN_ENTER(0x1078fc0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ebc0) = REFG(undefined * PTR32, 0x13632ac);
+  uVar1 = F_00c47de6(((code *)REFP(0x107cdd0)));
+  return uVar1;
+}
+
+/* ref: FUN_01078fe0 */
+uint F_01078fe0(void)
+{
+  GEN_ENTER(0x1078fe0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ebcc) = REFG(undefined * PTR32, 0x1362adc);
+  uVar1 = F_00c47de6(((code *)REFP(0x107cde0)));
+  return uVar1;
+}
+
+/* ref: FUN_01079000 */
+uint F_01079000(void)
+{
+  GEN_ENTER(0x1079000u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ebd8) = REFG(undefined * PTR32, 0x1362b30);
+  uVar1 = F_00c47de6(((code *)REFP(0x107cdf0)));
+  return uVar1;
+}
+
+/* ref: FUN_01079020 */
+uint F_01079020(void)
+{
+  GEN_ENTER(0x1079020u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ebe4) = REFG(undefined * PTR32, 0x1362b90);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce00)));
+  return uVar1;
+}
+
+/* ref: FUN_01079040 */
+uint F_01079040(void)
+{
+  GEN_ENTER(0x1079040u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ebf0) = REFG(undefined * PTR32, 0x1362bec);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce10)));
+  return uVar1;
+}
+
+/* ref: FUN_01079060 */
+uint F_01079060(void)
+{
+  GEN_ENTER(0x1079060u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ebfc) = REFG(undefined * PTR32, 0x1362c48);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce20)));
+  return uVar1;
+}
+
+/* ref: FUN_01079080 */
+uint F_01079080(void)
+{
+  GEN_ENTER(0x1079080u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec08) = REFG(undefined * PTR32, 0x1362cb0);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce30)));
+  return uVar1;
+}
+
+/* ref: FUN_010790a0 */
+uint F_010790a0(void)
+{
+  GEN_ENTER(0x10790a0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec14) = REFG(undefined * PTR32, 0x1362d14);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce40)));
+  return uVar1;
+}
+
+/* ref: FUN_010790c0 */
+uint F_010790c0(void)
+{
+  GEN_ENTER(0x10790c0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec20) = REFG(undefined * PTR32, 0x1362d74);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce50)));
+  return uVar1;
+}
+
+/* ref: FUN_010790e0 */
+uint F_010790e0(void)
+{
+  GEN_ENTER(0x10790e0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec2c) = REFG(undefined * PTR32, 0x1362dd0);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce60)));
+  return uVar1;
+}
+
+/* ref: FUN_01079100 */
+uint F_01079100(void)
+{
+  GEN_ENTER(0x1079100u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec38) = REFG(undefined * PTR32, 0x1362e2c);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce70)));
+  return uVar1;
+}
+
+/* ref: FUN_01079120 */
+uint F_01079120(void)
+{
+  GEN_ENTER(0x1079120u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec44) = REFG(undefined * PTR32, 0x1362e84);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce80)));
+  return uVar1;
+}
+
+/* ref: FUN_01079140 */
+uint F_01079140(void)
+{
+  GEN_ENTER(0x1079140u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec50) = REFG(undefined * PTR32, 0x1362edc);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ce90)));
+  return uVar1;
+}
+
+/* ref: FUN_01079160 */
+uint F_01079160(void)
+{
+  GEN_ENTER(0x1079160u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec5c) = REFG(undefined * PTR32, 0x1362f30);
+  uVar1 = F_00c47de6(((code *)REFP(0x107cea0)));
+  return uVar1;
+}
+
+/* ref: FUN_01079180 */
+uint F_01079180(void)
+{
+  GEN_ENTER(0x1079180u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec68) = REFG(undefined * PTR32, 0x1362f88);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ceb0)));
+  return uVar1;
+}
+
+/* ref: FUN_010791a0 */
+uint F_010791a0(void)
+{
+  GEN_ENTER(0x10791a0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec70) = REFG(undefined * PTR32, 0x1363004);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec74) = REFG(undefined * PTR32, 0x1363008);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec78) = REFG(undefined * PTR32, 0x1363000);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec7c) = REFG(undefined * PTR32, 0x1362ffc);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec80) = REFG(undefined * PTR32, 0x1362ff8);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec84) = REFG(undefined * PTR32, 0x1362ff4);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec88) = REFG(undefined * PTR32, 0x1362ff0);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec8c) = REFG(undefined * PTR32, 0x1362fec);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec90) = REFG(undefined * PTR32, 0x1362fe8);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec94) = REFG(undefined * PTR32, 0x1362fe4);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ec98) = REFG(undefined * PTR32, 0x1362fe0);
+  uVar1 = F_00c47de6(((code *)REFP(0x107cec0)));
+  return uVar1;
+}
+
+/* ref: FUN_01079230 */
+uint F_01079230(void)
+{
+  GEN_ENTER(0x1079230u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135eca0) = REFG(undefined * PTR32, 0x136085c);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135eca4) = REFG(undefined * PTR32, 0x1360860);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135eca8) = REFG(undefined * PTR32, 0x1360858);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecac) = REFG(undefined * PTR32, 0x1360854);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecb0) = REFG(undefined * PTR32, 0x1360850);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecb4) = REFG(undefined * PTR32, 0x136084c);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecb8) = REFG(undefined * PTR32, 0x1360848);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecbc) = REFG(undefined * PTR32, 0x1360844);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecc0) = REFG(undefined * PTR32, 0x1360840);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecc4) = REFG(undefined * PTR32, 0x136083c);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecc8) = REFG(undefined * PTR32, 0x1360838);
+  uVar1 = F_00c47de6(((code *)REFP(0x107ced0)));
+  return uVar1;
+}
+
+/* ref: FUN_010792c0 */
+uint F_010792c0(void)
+{
+  GEN_ENTER(0x10792c0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecd0) = REFG(undefined * PTR32, 0x13608e4);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecd4) = REFG(undefined * PTR32, 0x13608e8);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecd8) = REFG(undefined * PTR32, 0x13608e0);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecdc) = REFG(undefined * PTR32, 0x13608dc);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ece0) = REFG(undefined * PTR32, 0x13608d8);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ece4) = REFG(undefined * PTR32, 0x13608d4);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ece8) = REFG(undefined * PTR32, 0x13608d0);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecec) = REFG(undefined * PTR32, 0x13608cc);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecf0) = REFG(undefined * PTR32, 0x13608c8);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecf4) = REFG(undefined * PTR32, 0x13608c4);
+  *(undefined * PTR32 *)&REFG(undefined, 0x135ecf8) = REFG(undefined * PTR32, 0x13608c0);
+  uVar1 = F_00c47de6(((code *)REFP(0x107cee0)));
   return uVar1;
 }
 

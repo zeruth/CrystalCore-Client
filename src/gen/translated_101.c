@@ -1,668 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Apricot::Engine::Data::Runtime::ConeEmitter::vf3 */
-uint F_009e06c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e06c0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x20;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeEmitter::vf4 */
-uint F_009e06d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e06d0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x38;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeEmitter::vf5 */
-uint F_009e06e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e06e0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x50;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeEmitter::vf6 */
-uint F_009e06f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e06f0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x68;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeEmitter::vf7 */
-uint F_009e0700(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0700u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x80;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeEmitter::vf8 */
-uint F_009e0710(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0710u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x98;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf1 */
-uint F_009e0720(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0720u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 4);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf2 */
-uint F_009e0730(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0730u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 5);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf3 */
-uint F_009e0740(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0740u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 6);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf4 */
-uint F_009e0750(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0750u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 7);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf5 */
-uint F_009e0760(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0760u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 8;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf6 */
-uint F_009e0770(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0770u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x20;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf7 */
-uint F_009e0780(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0780u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x38;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf8 */
-uint F_009e0790(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0790u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x50;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf9 */
-uint F_009e07a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e07a0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x68;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ConeModelEmitter::vf10 */
-uint F_009e07b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e07b0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x80;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf1 */
-uint F_009e07c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e07c0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 4);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf2 */
-uint F_009e07d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e07d0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 5);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf3 */
-uint F_009e07e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e07e0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 6);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf4 */
-uint F_009e07f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e07f0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 7);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf5 */
-uint F_009e0800(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0800u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 8;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf6 */
-uint F_009e0810(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0810u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x20;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf7 */
-uint F_009e0820(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0820u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x38;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf8 */
-uint F_009e0830(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0830u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x50;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf9 */
-uint F_009e0840(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0840u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x68;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf10 */
-uint F_009e0850(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0850u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x80;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelEmitter::vf1 */
-uint F_009e0860(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0860u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 4);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelEmitter::vf2 */
-uint F_009e0870(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0870u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 5);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelEmitter::vf3 */
-uint F_009e0880(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0880u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 6);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelEmitter::vf4 */
-uint F_009e0890(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0890u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 8;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelEmitter::vf5 */
-uint F_009e08a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e08a0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x20;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelEmitter::vf6 */
-uint F_009e08b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e08b0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x38;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelEmitter::vf7 */
-uint F_009e08c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e08c0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x50;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::PointEmitter::vf0 */
-uint F_009e08d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e08d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *in_ecx = (*(undefined * PTR32 (*)[1])REFP(0x10dd36c));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf1 */
-uint F_009e08e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e08e0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 4);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf2 */
-uint F_009e08f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e08f0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 5);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf3 */
-uint F_009e0900(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0900u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 6);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf4 */
-uint F_009e0910(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0910u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 7);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf5 */
-uint F_009e0920(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0920u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 8;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf6 */
-uint F_009e0930(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0930u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x20;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf7 */
-uint F_009e0940(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0940u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x38;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf8 */
-uint F_009e0950(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0950u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x50;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf9 */
-uint F_009e0960(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0960u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x68;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::Axis3Parameter::vf1 */
-uint F_009e0970(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0970u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 4);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf1 */
-uint F_009e0980(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0980u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf2 */
-uint F_009e0990(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0990u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (uint)*(byte *)(in_ecx + 0x2b);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf3 */
-uint F_009e09a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e09a0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(byte *)(in_ecx + 0x2a) >> 1 & 3;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf4 */
-uint F_009e09b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e09b0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(byte *)(in_ecx + 0x2a) >> 3 & 7;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf7 */
-uint F_009e09c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e09c0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(byte *)(in_ecx + 0x2a) & 1;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf5 */
-uint F_009e09d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e09d0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(short *)(in_ecx + 0x24);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf6 */
-uint F_009e09e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e09e0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(short *)(in_ecx + 0x26);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf8 */
-uint F_009e09f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e09f0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(short *)(in_ecx + 0x28);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf9 */
-unsigned int F_009e0a00(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0a00u, gen_a0, 0u, 0u, 0u);
-  undefined4 in_ecx = (undefined4)gen_a0;
-  return 0;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf10 */
-unsigned int F_009e0a10(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0a10u, gen_a0, 0u, 0u, 0u);
-  undefined4 in_ecx = (undefined4)gen_a0;
-  return 0;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf11 */
-unsigned int F_009e0a20(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0a20u, gen_a0, 0u, 0u, 0u);
-  undefined4 in_ecx = (undefined4)gen_a0;
-  return 0;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf12 */
-unsigned int F_009e0a30(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0a30u, gen_a0, 0u, 0u, 0u);
-  undefined4 in_ecx = (undefined4)gen_a0;
-  return 0;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::BindPointProperty::vf13 */
-uint F_009e0a40(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0a40u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x2c;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ColorFunctionCurve::vf1 */
-uint F_009e0a50(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0a50u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 4);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::FunctionCurve::vf0 */
-uint F_009e0a60(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0a60u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *in_ecx = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::RgbFunctionCurve::vf0 */
-uint F_009e0a70(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0a70u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *in_ecx = (*(undefined * PTR32 (*)[2])REFP(0x10dd28c));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::Value::vf0 */
-uint F_009e0a80(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0a80u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *in_ecx = (*(undefined * PTR32 (*)[4])REFP(0x10dd358));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ValueFunctionCurve::vf0 */
-uint F_009e0a90(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0a90u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  in_ecx[3] = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  in_ecx[1] = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *in_ecx = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::TextureUvSet::vf1 */
-uint F_009e0ab0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0ab0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 4);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::TextureUvSet::vf2 */
-uint F_009e0ac0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0ac0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return **(uint * PTR32 *)(in_ecx + 4) >> 1 & 1;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::TextureProperty_Color1::vf0 */
-uint F_009e0ad0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0ad0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  in_ecx[7] = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  in_ecx[5] = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  in_ecx[4] = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
-  *in_ecx = (*(undefined * PTR32 (*)[13])REFP(0x10dd680));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::TextureProperty_Color2::vf0 */
-uint F_009e0af0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0af0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *in_ecx = (*(undefined * PTR32 (*)[11])REFP(0x10dd6b8));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::TextureProperty_Normal::vf0 */
-uint F_009e0b00(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0b00u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  in_ecx[2] = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *in_ecx = (*(undefined * PTR32 (*)[8])REFP(0x10dd6e8));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::TextureProperty_Reflection::vf0 */
-uint F_009e0b20(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0b20u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  in_ecx[2] = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *in_ecx = (*(undefined * PTR32 (*)[7])REFP(0x10dd70c));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::TextureProperty_Distortion::vf0 */
-uint F_009e0b40(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0b40u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  in_ecx[2] = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *in_ecx = (*(undefined * PTR32 (*)[12])REFP(0x10dd72c));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::TextureProperty_Palette::vf0 */
-uint F_009e0b60(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0b60u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  in_ecx[2] = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *in_ecx = (*(undefined * PTR32 (*)[5])REFP(0x10dd760));
-  return (uint)in_ecx;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::LaserParticle::vf0 */
-unsigned int F_009e0b80(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0b80u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  *(undefined * PTR32 * PTR32 *)(this + 0x28) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *(undefined * PTR32 * PTR32 *)(this + 0x20) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *(undefined * PTR32 * PTR32 *)(this + 0x1c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
-  *(undefined * PTR32 * PTR32 *)(this + 0x10) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *(undefined * PTR32 * PTR32 *)(this + 8) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
-  *(undefined * PTR32 * PTR32 *)(this + 4) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[3])REFP(0x10dd534));
-  return 0;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::LineParticle::vf1 */
-uint F_009e0bb0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0bb0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return (int)*(char *)(in_ecx + 4);
-}
-
-/* ref: Apricot::Engine::Data::Runtime::LineParticle::vf2 */
-uint F_009e0bc0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0bc0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 8;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::LineParticle::vf3 */
-uint F_009e0bd0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0bd0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x20;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::LineParticle::vf4 */
-uint F_009e0be0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0be0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x8c;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelParticle::vf1 */
-uint F_009e0bf0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0bf0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 0xc) >> 8 & 1;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelParticle::vf2 */
-uint F_009e0c00(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0c00u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 0xc) >> 9 & 3;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::ModelParticle::vf3 */
-uint F_009e0c10(unsigned int gen_a0)
-{
-  GEN_ENTER(0x9e0c10u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 0xc) >> 0xb & 3;
-}
-
 /* ref: Apricot::Engine::Data::Runtime::ModelParticle::vf4 */
 uint F_009e0c20(unsigned int gen_a0)
 {
@@ -4780,46 +4117,6 @@ uint F_009e4280(unsigned int gen_a0, unsigned int gen_a1)
   return in_EAX & 0xffffff00;
 }
 
-/* ref: FUN_009e4340 */
-uint F_009e4340(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e4340u, gen_a0, gen_a1, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  float fVar1;
-  float fVar2;
-  uint uVar3;
-  double dVar4;
-  double dVar5;
-  uint in_EAX = 0;
-  float10 fVar6;
-  
-  dVar5 = *(double *)&REFG(undefined, 0x1088118);
-  fVar6 = (float10)*(float *)param_2;
-  fVar1 = ((float)GEN_TOF(SQRT((float10)((float)GEN_TOF(((float10)*(float *)(param_2 + 8) *
-                                       (float10)*(float *)(param_2 + 8) +
-                                      (fVar6 * fVar6 +
-                                      (float10)*(float *)(param_2 + 4) *
-                                      (float10)*(float *)(param_2 + 4))))))));
-  fVar6 = (float10)fVar1;
-  if ((float10)0 < fVar6) {
-    fVar2 = *(float *)(param_2 + 8);
-    dVar4 = (double)((float)GEN_TOF(((float10)*(float *)(param_2 + 4) / fVar6))) * *(double *)&REFG(undefined, 0x1088118);
-    *(char *)(param_1 + 0x46) =
-         (char)(int)((double)(float)((float10)*(float *)param_2 / fVar6) * *(double *)&REFG(undefined, 0x1088118))
-    ;
-    *(char *)(param_1 + 0x47) = (char)(int)dVar4;
-    uVar3 = (uint)(dVar5 * (double)(float)((float10)fVar2 / fVar6));
-    *(float *)(param_1 + 0x28) = fVar1;
-    *(char *)(param_1 + 0x48) = (char)uVar3;
-    return uVar3;
-  }
-  *(undefined2 *)(param_1 + 0x46) = 0;
-  *(undefined4 *)(param_1 + 0x28) = 0;
-  *(undefined1 *)(param_1 + 0x48) = 0;
-  return in_EAX & 0xffffff00;
-}
-
 /* ref: FUN_009e4400 */
 float10 F_009e4400(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -5308,5 +4605,639 @@ uint F_009e4a20(unsigned int gen_a0)
   GEN_ENTER(0x9e4a20u, gen_a0, 0u, 0u, 0u);
   int in_ecx = (int)gen_a0;
   return (int)*(char *)(in_ecx + 0x18);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf3 */
+uint F_009e4a30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4a30u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x19);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf4 */
+uint F_009e4a40(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4a40u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1a);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf5 */
+uint F_009e4a50(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4a50u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1b);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf6 */
+uint F_009e4a60(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4a60u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x28);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf7 */
+uint F_009e4a70(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4a70u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x24);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf8 */
+uint F_009e4a80(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4a80u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0xc);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf9 */
+uint F_009e4a90(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4a90u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x10);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf10 */
+uint F_009e4aa0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4aa0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x14);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf11 */
+uint F_009e4ab0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ab0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1f);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf12 */
+uint F_009e4ac0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ac0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x2c;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf13 */
+uint F_009e4ad0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ad0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x3c;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf14 */
+uint F_009e4ae0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ae0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x54;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf15 */
+uint F_009e4af0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4af0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x6c;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf16 */
+uint F_009e4b00(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b00u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x84;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf17 */
+uint F_009e4b10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b10u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x9c;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf18 */
+uint F_009e4b20(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b20u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x108;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf19 */
+uint F_009e4b30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b30u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x140;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf20 */
+uint F_009e4b40(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b40u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x178;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf21 */
+uint F_009e4b50(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b50u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x1b0;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf22 */
+uint F_009e4b60(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b60u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x1c8;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf23 */
+uint F_009e4b70(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b70u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x1e0;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf24 */
+uint F_009e4b80(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b80u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x1f8;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf25 */
+uint F_009e4b90(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4b90u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x210;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf26 */
+uint F_009e4ba0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ba0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x228;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf27 */
+uint F_009e4bb0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4bb0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x240);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf28 */
+uint F_009e4bc0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4bc0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x240);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf29 */
+uint F_009e4bd0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4bd0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x240);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf30 */
+uint F_009e4be0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4be0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x240);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf31 */
+uint F_009e4bf0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4bf0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x240);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf32 */
+uint F_009e4c00(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4c00u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x240);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf33 */
+uint F_009e4c10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4c10u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1c);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf34 */
+uint F_009e4c20(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4c20u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1d);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf35 */
+byte F_009e4c30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4c30u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(char *)(in_ecx + 0x1e) != '\0';
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf36 */
+uint F_009e4c40(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e4c40u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(int *)(this + 4) + param_1 * 0x44;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Emitter::vf37 */
+uint F_009e4c60(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e4c60u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(int *)(this + 8) + param_1 * 0x44;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf2 */
+uint F_009e4c80(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4c80u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x2c;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf3 */
+uint F_009e4c90(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4c90u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x3c;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf4 */
+uint F_009e4ca0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ca0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x54;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf5 */
+uint F_009e4cb0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4cb0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x6c;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf6 */
+uint F_009e4cc0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4cc0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0xd8;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf7 */
+uint F_009e4cd0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4cd0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x110;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf8 */
+uint F_009e4ce0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ce0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x148;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf9 */
+uint F_009e4cf0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4cf0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x180;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf10 */
+uint F_009e4d00(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d00u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x198;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf11 */
+uint F_009e4d10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d10u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x1b0;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf12 */
+uint F_009e4d20(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d20u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1c);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf13 */
+uint F_009e4d30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d30u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1d);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf14 */
+uint F_009e4d40(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d40u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1e);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf15 */
+uint F_009e4d50(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d50u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1f);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf16 */
+uint F_009e4d60(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d60u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x20);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf17 */
+uint F_009e4d70(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d70u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x21);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf18 */
+unsigned int F_009e4d80(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d80u, gen_a0, 0u, 0u, 0u);
+  undefined4 in_ecx = (undefined4)gen_a0;
+  return 0;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf19 */
+unsigned int F_009e4d90(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4d90u, gen_a0, 0u, 0u, 0u);
+  undefined4 in_ecx = (undefined4)gen_a0;
+  return 0;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf20 */
+unsigned int F_009e4da0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4da0u, gen_a0, 0u, 0u, 0u);
+  undefined4 in_ecx = (undefined4)gen_a0;
+  return 0;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf21 */
+unsigned int F_009e4db0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4db0u, gen_a0, 0u, 0u, 0u);
+  undefined4 in_ecx = (undefined4)gen_a0;
+  return 0;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf22 */
+uint F_009e4dc0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4dc0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 0x29) >> 6 & 1;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf23 */
+uint F_009e4dd0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4dd0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (uint)(*(byte *)(in_ecx + 0x29) >> 7);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf24 */
+uint F_009e4de0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4de0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x27);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf25 */
+unsigned int F_009e4df0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4df0u, gen_a0, 0u, 0u, 0u);
+  undefined4 in_ecx = (undefined4)gen_a0;
+  return 0;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf26 */
+uint F_009e4e00(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e00u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x23);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf27 */
+uint F_009e4e10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e10u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 0x29) & 1;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf28 */
+uint F_009e4e20(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e20u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 0x29) >> 1 & 1;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf29 */
+uint F_009e4e30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e30u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 0x29) >> 2 & 1;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf30 */
+uint F_009e4e40(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e40u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 0x29) >> 3 & 1;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf31 */
+uint F_009e4e50(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e50u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 0x29) >> 4 & 1;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf32 */
+uint F_009e4e60(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e60u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)(char)(*(char *)(in_ecx + 0x28) << 4) >> 4;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf33 */
+uint F_009e4e70(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e70u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(short *)(in_ecx + 0x18);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf34 */
+uint F_009e4e80(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e80u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(short *)(in_ecx + 0x1a);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf35 */
+uint F_009e4e90(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4e90u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x22);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf36 */
+uint F_009e4ea0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ea0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)(char)(*(char *)(in_ecx + 0x28) * '\x04') >> 6;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf37 */
+uint F_009e4eb0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4eb0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x24);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf38 */
+uint F_009e4ec0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ec0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x28) >> 6;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf39 */
+uint F_009e4ed0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ed0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x25);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf40 */
+uint F_009e4ee0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ee0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x26);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf41 */
+uint F_009e4ef0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4ef0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 0x29) >> 5 & 1;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf42 */
+uint F_009e4f00(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4f00u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x1c8);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf43 */
+uint F_009e4f10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4f10u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x1c8);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf44 */
+uint F_009e4f20(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4f20u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x1c8);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf45 */
+uint F_009e4f30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9e4f30u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x1c8);
 }
 

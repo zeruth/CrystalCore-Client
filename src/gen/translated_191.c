@@ -1,1792 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf4 */
-unsigned int F_00e8f0c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe8f0c0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x194);
-  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf7 */
-unsigned int F_00e8f1c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f1c0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf8 */
-unsigned int F_00e8f220(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8f220u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf9 */
-unsigned int F_00e8f290(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f290u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf10 */
-byte F_00e8f2d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f2d0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x194);
-  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf6 */
-unsigned int F_00e8f330(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8f330u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x2b4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x2b8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x2b4) + *(int *)(this + 0x2b8) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf5 */
-unsigned int F_00e8f3b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe8f3b0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x2b4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x2b8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x2b4) + *(int *)(this + 0x2b8) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf4 */
-unsigned int F_00e8f440(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe8f440u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x2b4);
-  if (iVar8 != iVar8 + *(int *)(this + 0x2b8) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x2b4) + *(int *)(this + 0x2b8) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x2b4) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf7 */
-unsigned int F_00e8f540(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f540u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x2b4);
-  if (iVar1 != iVar1 + *(int *)(this + 0x2b8) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x2b4) + *(int *)(this + 0x2b8) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf8 */
-unsigned int F_00e8f5a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8f5a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x2b4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x2b8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x2b4) + *(int *)(this + 0x2b8) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf9 */
-unsigned int F_00e8f610(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f610u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x2b4);
-  if (iVar1 != iVar1 + *(int *)(this + 0x2b8) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x2b4) + *(int *)(this + 0x2b8) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf10 */
-byte F_00e8f650(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f650u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x2b4);
-  if (iVar2 != iVar2 + *(int *)(this + 0x2b8) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x2b8) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_GrandCompany::vf6 */
-unsigned int F_00e8f6b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8f6b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_GrandCompany::vf5 */
-unsigned int F_00e8f730(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe8f730u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_GrandCompany::vf4 */
-unsigned int F_00e8f7c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe8f7c0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x194);
-  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_GrandCompany::vf7 */
-unsigned int F_00e8f8c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f8c0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_GrandCompany::vf8 */
-unsigned int F_00e8f920(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8f920u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_GrandCompany::vf9 */
-unsigned int F_00e8f990(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f990u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_GrandCompany::vf10 */
-byte F_00e8f9d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8f9d0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x194);
-  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_HpParams::vf6 */
-unsigned int F_00e8fa30(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8fa30u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x294);
-  if (iVar3 != iVar3 + *(int *)(this + 0x298) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x294) + *(int *)(this + 0x298) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_HpParams::vf5 */
-unsigned int F_00e8fab0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe8fab0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x294);
-  if (iVar3 != iVar3 + *(int *)(this + 0x298) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x294) + *(int *)(this + 0x298) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_HpParams::vf4 */
-unsigned int F_00e8fb40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe8fb40u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x294);
-  if (iVar8 != iVar8 + *(int *)(this + 0x298) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x294) + *(int *)(this + 0x298) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x294) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_HpParams::vf7 */
-unsigned int F_00e8fc40(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8fc40u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x294);
-  if (iVar1 != iVar1 + *(int *)(this + 0x298) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x294) + *(int *)(this + 0x298) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_HpParams::vf8 */
-unsigned int F_00e8fca0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8fca0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x294);
-  if (iVar3 != iVar3 + *(int *)(this + 0x298) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x294) + *(int *)(this + 0x298) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_HpParams::vf9 */
-unsigned int F_00e8fd10(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8fd10u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x294);
-  if (iVar1 != iVar1 + *(int *)(this + 0x298) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x294) + *(int *)(this + 0x298) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_HpParams::vf10 */
-byte F_00e8fd50(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8fd50u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x294);
-  if (iVar2 != iVar2 + *(int *)(this + 0x298) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x298) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_MpParams::vf6 */
-unsigned int F_00e8fdb0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8fdb0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_MpParams::vf5 */
-unsigned int F_00e8fe30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe8fe30u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_MpParams::vf4 */
-unsigned int F_00e8fec0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe8fec0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x194);
-  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_MpParams::vf7 */
-unsigned int F_00e8ffc0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8ffc0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_MpParams::vf8 */
-unsigned int F_00e90020(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90020u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_MpParams::vf9 */
-unsigned int F_00e90090(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90090u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_MpParams::vf10 */
-byte F_00e900d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe900d0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x194);
-  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_TpParams::vf6 */
-unsigned int F_00e90130(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90130u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 500);
-  if (iVar3 != iVar3 + *(int *)(this + 0x1f8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 500) + *(int *)(this + 0x1f8) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_TpParams::vf5 */
-unsigned int F_00e901b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe901b0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 500);
-  if (iVar3 != iVar3 + *(int *)(this + 0x1f8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 500) + *(int *)(this + 0x1f8) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_TpParams::vf4 */
-unsigned int F_00e90240(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe90240u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 500);
-  if (iVar8 != iVar8 + *(int *)(this + 0x1f8) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 500) + *(int *)(this + 0x1f8) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 500) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_TpParams::vf7 */
-unsigned int F_00e90340(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90340u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 500);
-  if (iVar1 != iVar1 + *(int *)(this + 0x1f8) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 500) + *(int *)(this + 0x1f8) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_TpParams::vf8 */
-unsigned int F_00e903a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe903a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 500);
-  if (iVar3 != iVar3 + *(int *)(this + 0x1f8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 500) + *(int *)(this + 0x1f8) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_TpParams::vf9 */
-unsigned int F_00e90410(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90410u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 500);
-  if (iVar1 != iVar1 + *(int *)(this + 0x1f8) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 500) + *(int *)(this + 0x1f8) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_TpParams::vf10 */
-byte F_00e90450(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90450u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 500);
-  if (iVar2 != iVar2 + *(int *)(this + 0x1f8) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x1f8) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbChara::vf6 */
-unsigned int F_00e90500(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90500u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0xa64);
-  if (iVar3 != iVar3 + *(int *)(this + 0xa68) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0xa64) + *(int *)(this + 0xa68) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbChara::vf5 */
-unsigned int F_00e90580(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe90580u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0xa64);
-  if (iVar3 != iVar3 + *(int *)(this + 0xa68) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0xa64) + *(int *)(this + 0xa68) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbChara::vf4 */
-unsigned int F_00e90610(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe90610u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0xa64);
-  if (iVar8 != iVar8 + *(int *)(this + 0xa68) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0xa64) + *(int *)(this + 0xa68) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0xa64) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbChara::vf7 */
-unsigned int F_00e90710(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90710u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0xa64);
-  if (iVar1 != iVar1 + *(int *)(this + 0xa68) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0xa64) + *(int *)(this + 0xa68) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbChara::vf8 */
-unsigned int F_00e90770(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90770u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0xa64);
-  if (iVar3 != iVar3 + *(int *)(this + 0xa68) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0xa64) + *(int *)(this + 0xa68) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbChara::vf9 */
-unsigned int F_00e907e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe907e0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0xa64);
-  if (iVar1 != iVar1 + *(int *)(this + 0xa68) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0xa64) + *(int *)(this + 0xa68) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbChara::vf10 */
-byte F_00e90820(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90820u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0xa64);
-  if (iVar2 != iVar2 + *(int *)(this + 0xa68) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0xa68) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaStatus::vf6 */
-unsigned int F_00e90860(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90860u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x274);
-  if (iVar3 != iVar3 + *(int *)(this + 0x278) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x274) + *(int *)(this + 0x278) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaStatus::vf5 */
-unsigned int F_00e908e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe908e0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x274);
-  if (iVar3 != iVar3 + *(int *)(this + 0x278) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x274) + *(int *)(this + 0x278) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaStatus::vf4 */
-unsigned int F_00e90970(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe90970u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x274);
-  if (iVar8 != iVar8 + *(int *)(this + 0x278) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x274) + *(int *)(this + 0x278) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x274) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaStatus::vf7 */
-unsigned int F_00e90a70(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90a70u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x274);
-  if (iVar1 != iVar1 + *(int *)(this + 0x278) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x274) + *(int *)(this + 0x278) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaStatus::vf8 */
-unsigned int F_00e90ad0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90ad0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x274);
-  if (iVar3 != iVar3 + *(int *)(this + 0x278) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x274) + *(int *)(this + 0x278) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaStatus::vf9 */
-unsigned int F_00e90b40(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90b40u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x274);
-  if (iVar1 != iVar1 + *(int *)(this + 0x278) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x274) + *(int *)(this + 0x278) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaStatus::vf10 */
-byte F_00e90b80(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90b80u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x274);
-  if (iVar2 != iVar2 + *(int *)(this + 0x278) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x278) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaAchievement::vf6 */
-unsigned int F_00e90bc0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90bc0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x3f4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x3f8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x3f4) + *(int *)(this + 0x3f8) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaAchievement::vf5 */
-unsigned int F_00e90c40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe90c40u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x3f4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x3f8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x3f4) + *(int *)(this + 0x3f8) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaAchievement::vf4 */
-unsigned int F_00e90cd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe90cd0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x3f4);
-  if (iVar8 != iVar8 + *(int *)(this + 0x3f8) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x3f4) + *(int *)(this + 0x3f8) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x3f4) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaAchievement::vf7 */
-unsigned int F_00e90dd0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90dd0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x3f4);
-  if (iVar1 != iVar1 + *(int *)(this + 0x3f8) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x3f4) + *(int *)(this + 0x3f8) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaAchievement::vf8 */
-unsigned int F_00e90e30(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90e30u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x3f4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x3f8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x3f4) + *(int *)(this + 0x3f8) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaAchievement::vf9 */
-unsigned int F_00e90ea0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90ea0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x3f4);
-  if (iVar1 != iVar1 + *(int *)(this + 0x3f8) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x3f4) + *(int *)(this + 0x3f8) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaAchievement::vf10 */
-byte F_00e90ee0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe90ee0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x3f4);
-  if (iVar2 != iVar2 + *(int *)(this + 0x3f8) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x3f8) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaCountFreq::vf6 */
-unsigned int F_00e90f20(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe90f20u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x2d4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x2d8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x2d4) + *(int *)(this + 0x2d8) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaCountFreq::vf5 */
-unsigned int F_00e90fa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe90fa0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x2d4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x2d8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x2d4) + *(int *)(this + 0x2d8) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaCountFreq::vf4 */
-unsigned int F_00e91030(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe91030u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x2d4);
-  if (iVar8 != iVar8 + *(int *)(this + 0x2d8) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
-      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x2d4) + *(int *)(this + 0x2d8) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x2d4) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaCountFreq::vf7 */
-unsigned int F_00e91130(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe91130u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x2d4);
-  if (iVar1 != iVar1 + *(int *)(this + 0x2d8) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x2d4) + *(int *)(this + 0x2d8) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaCountFreq::vf8 */
-unsigned int F_00e91190(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe91190u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x2d4);
-  if (iVar3 != iVar3 + *(int *)(this + 0x2d8) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
-      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x2d4) + *(int *)(this + 0x2d8) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
 /* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaCountFreq::vf9 */
 unsigned int F_00e91200(unsigned int gen_a0)
 {
@@ -10761,6 +8974,1761 @@ unsigned int F_00e9b230(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
         *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
       } while (iVar7 <= param_3);
     }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf7 */
+unsigned int F_00e9b330(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9b330u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x914);
+  if (iVar1 != iVar1 + *(int *)(this + 0x918) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf8 */
+unsigned int F_00e9b390(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9b390u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x914);
+  if (iVar3 != iVar3 + *(int *)(this + 0x918) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf9 */
+unsigned int F_00e9b400(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9b400u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x914);
+  if (iVar1 != iVar1 + *(int *)(this + 0x918) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf10 */
+byte F_00e9b440(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9b440u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x914);
+  if (iVar2 != iVar2 + *(int *)(this + 0x918) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x918) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf6 */
+unsigned int F_00e9b480(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9b480u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x224);
+  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf5 */
+unsigned int F_00e9b500(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9b500u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x224);
+  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf4 */
+unsigned int F_00e9b590(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9b590u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x224);
+  if (iVar8 != iVar8 + *(int *)(this + 0x228) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x224) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf7 */
+unsigned int F_00e9b690(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9b690u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x224);
+  if (iVar1 != iVar1 + *(int *)(this + 0x228) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf8 */
+unsigned int F_00e9b6f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9b6f0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x224);
+  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf9 */
+unsigned int F_00e9b760(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9b760u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x224);
+  if (iVar1 != iVar1 + *(int *)(this + 0x228) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf10 */
+byte F_00e9b7a0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9b7a0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x224);
+  if (iVar2 != iVar2 + *(int *)(this + 0x228) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x228) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf6 */
+unsigned int F_00e9b7e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9b7e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf5 */
+unsigned int F_00e9b860(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9b860u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf4 */
+unsigned int F_00e9b8f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9b8f0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x134);
+  if (iVar8 != iVar8 + *(int *)(this + 0x138) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x134) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf7 */
+unsigned int F_00e9b9f0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9b9f0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x134);
+  if (iVar1 != iVar1 + *(int *)(this + 0x138) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf8 */
+unsigned int F_00e9ba50(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9ba50u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf9 */
+unsigned int F_00e9bac0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9bac0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x134);
+  if (iVar1 != iVar1 + *(int *)(this + 0x138) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayerItem::vf10 */
+byte F_00e9bb00(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9bb00u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x134);
+  if (iVar2 != iVar2 + *(int *)(this + 0x138) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x138) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf6 */
+unsigned int F_00e9bb40(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9bb40u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf5 */
+unsigned int F_00e9bbc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9bbc0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf4 */
+unsigned int F_00e9bc50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9bc50u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x194);
+  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf7 */
+unsigned int F_00e9bd50(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9bd50u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf8 */
+unsigned int F_00e9bdb0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9bdb0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf9 */
+unsigned int F_00e9be20(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9be20u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainer::vf10 */
+byte F_00e9be60(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9be60u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x194);
+  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf6 */
+unsigned int F_00e9bea0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9bea0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf5 */
+unsigned int F_00e9bf20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9bf20u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf4 */
+unsigned int F_00e9bfb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9bfb0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x194);
+  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf7 */
+unsigned int F_00e9c0b0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c0b0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf8 */
+unsigned int F_00e9c110(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9c110u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf9 */
+unsigned int F_00e9c180(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c180u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyRetainerItem::vf10 */
+byte F_00e9c1c0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c1c0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x194);
+  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf6 */
+unsigned int F_00e9c200(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9c200u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0xc44);
+  if (iVar3 != iVar3 + *(int *)(this + 0xc48) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0xc44) + *(int *)(this + 0xc48) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf5 */
+unsigned int F_00e9c280(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9c280u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0xc44);
+  if (iVar3 != iVar3 + *(int *)(this + 0xc48) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0xc44) + *(int *)(this + 0xc48) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf4 */
+unsigned int F_00e9c310(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9c310u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0xc44);
+  if (iVar8 != iVar8 + *(int *)(this + 0xc48) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0xc44) + *(int *)(this + 0xc48) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0xc44) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf7 */
+unsigned int F_00e9c410(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c410u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0xc44);
+  if (iVar1 != iVar1 + *(int *)(this + 0xc48) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0xc44) + *(int *)(this + 0xc48) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf8 */
+unsigned int F_00e9c470(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9c470u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0xc44);
+  if (iVar3 != iVar3 + *(int *)(this + 0xc48) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0xc44) + *(int *)(this + 0xc48) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf9 */
+unsigned int F_00e9c4e0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c4e0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0xc44);
+  if (iVar1 != iVar1 + *(int *)(this + 0xc48) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0xc44) + *(int *)(this + 0xc48) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketHistory::vf10 */
+byte F_00e9c520(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c520u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0xc44);
+  if (iVar2 != iVar2 + *(int *)(this + 0xc48) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0xc48) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer::vf6 */
+unsigned int F_00e9c560(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9c560u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x374);
+  if (iVar3 != iVar3 + *(int *)(this + 0x378) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x374) + *(int *)(this + 0x378) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer::vf5 */
+unsigned int F_00e9c5e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9c5e0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x374);
+  if (iVar3 != iVar3 + *(int *)(this + 0x378) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x374) + *(int *)(this + 0x378) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer::vf4 */
+unsigned int F_00e9c670(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9c670u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x374);
+  if (iVar8 != iVar8 + *(int *)(this + 0x378) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x374) + *(int *)(this + 0x378) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x374) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer::vf7 */
+unsigned int F_00e9c770(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c770u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x374);
+  if (iVar1 != iVar1 + *(int *)(this + 0x378) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x374) + *(int *)(this + 0x378) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer::vf8 */
+unsigned int F_00e9c7d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9c7d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x374);
+  if (iVar3 != iVar3 + *(int *)(this + 0x378) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x374) + *(int *)(this + 0x378) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer::vf9 */
+unsigned int F_00e9c840(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c840u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x374);
+  if (iVar1 != iVar1 + *(int *)(this + 0x378) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x374) + *(int *)(this + 0x378) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbMarketRetainer::vf10 */
+byte F_00e9c880(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9c880u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x374);
+  if (iVar2 != iVar2 + *(int *)(this + 0x378) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x378) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbOdin::vf6 */
+unsigned int F_00e9c8c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9c8c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x3a4);
+  if (iVar3 != iVar3 + *(int *)(this + 0x3a8) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x3a4) + *(int *)(this + 0x3a8) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbOdin::vf5 */
+unsigned int F_00e9c940(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9c940u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x3a4);
+  if (iVar3 != iVar3 + *(int *)(this + 0x3a8) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x3a4) + *(int *)(this + 0x3a8) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbOdin::vf4 */
+unsigned int F_00e9c9d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9c9d0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x3a4);
+  if (iVar8 != iVar8 + *(int *)(this + 0x3a8) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x3a4) + *(int *)(this + 0x3a8) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x3a4) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbOdin::vf7 */
+unsigned int F_00e9cad0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9cad0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x3a4);
+  if (iVar1 != iVar1 + *(int *)(this + 0x3a8) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x3a4) + *(int *)(this + 0x3a8) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbOdin::vf8 */
+unsigned int F_00e9cb30(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9cb30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x3a4);
+  if (iVar3 != iVar3 + *(int *)(this + 0x3a8) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x3a4) + *(int *)(this + 0x3a8) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbOdin::vf9 */
+unsigned int F_00e9cba0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9cba0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x3a4);
+  if (iVar1 != iVar1 + *(int *)(this + 0x3a8) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x3a4) + *(int *)(this + 0x3a8) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbOdin::vf10 */
+byte F_00e9cbe0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9cbe0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x3a4);
+  if (iVar2 != iVar2 + *(int *)(this + 0x3a8) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x3a8) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbRevision::vf6 */
+unsigned int F_00e9cc20(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9cc20u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbRevision::vf5 */
+unsigned int F_00e9cca0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9cca0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbRevision::vf4 */
+unsigned int F_00e9cd30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9cd30u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x194);
+  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbRevision::vf7 */
+unsigned int F_00e9ce30(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9ce30u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbRevision::vf8 */
+unsigned int F_00e9ce90(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9ce90u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbRevision::vf9 */
+unsigned int F_00e9cf00(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9cf00u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbRevision::vf10 */
+byte F_00e9cf40(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9cf40u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x194);
+  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbTerritory::vf6 */
+unsigned int F_00e9cf80(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9cf80u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbTerritory::vf5 */
+unsigned int F_00e9d000(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe9d000u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbTerritory::vf4 */
+unsigned int F_00e9d090(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe9d090u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x194);
+  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4))));
+      uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbTerritory::vf7 */
+unsigned int F_00e9d190(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9d190u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbTerritory::vf8 */
+unsigned int F_00e9d1f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe9d1f0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4))));
+      uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbTerritory::vf9 */
+unsigned int F_00e9d260(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe9d260u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
   }
   return 0;
 }
