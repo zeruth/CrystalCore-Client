@@ -25,7 +25,9 @@ $game = Join-Path $root $cfg.run.cwd
 $tag = if ($From) { "-from-" + $From.ToLower().Replace("0x", "") } else { "" }
 $env:RHIPPER_PROJECT = $root
 $env:CRYSTALCORE_TRACE = "$b\shadow-port$tag.bin"
-$env:CRYSTALCORE_TRACE_MAX = "$Max"
+# (fixed, whatever -Max: the variable is in both runs' environment, and 4000000 against 30000000
+# was a character more for the port's C runtime to copy)
+$env:CRYSTALCORE_TRACE_MAX = "30000000"
 $env:CRYSTALCORE_TRACE_FROM = $From
 # (a message box answered, not left open: the port's runtime reads it; the reference has it in its
 # environment too, unread, so the two blocks are the same)
