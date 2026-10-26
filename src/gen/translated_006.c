@@ -9728,6 +9728,34 @@ unsigned int F_0046f0c0(unsigned int gen_a0)
   return 0;
 }
 
+/* ref: FUN_0046f0e0 */
+uint F_0046f0e0(unsigned int gen_a0, float gen_a1)
+{
+  GEN_ENTER(0x46f0e0u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  float * param_1 = (float *)(uintptr_t)gen_a0;
+  float param_2 = (float)gen_a1;
+  uint in_EAX = 0;
+  float10 fVar1;
+  float10 fVar2;
+  float10 fVar3;
+  
+  fVar1 = (float10)param_1[1];
+  fVar2 = (float10)*param_1;
+  fVar3 = (float10)param_1[2];
+  fVar1 = (float10)((float)GEN_TOF((fVar3 * fVar3 + (fVar2 * fVar2 + fVar1 * fVar1))));
+  if (fVar1 <= (float10)REFG(float, 0x10905c4)) {
+    *param_1 = 0.0;
+    param_1[1] = 0.0;
+    param_1[2] = 0.0;
+    return in_EAX;
+  }
+  fVar1 = (float10)(float)((float10)param_2 / (float10)((float)GEN_TOF(SQRT(fVar1))));
+  *param_1 = (float)(fVar1 * (float10)*param_1);
+  param_1[1] = (float)((float10)param_1[1] * fVar1);
+  param_1[2] = (float)(fVar1 * (float10)param_1[2]);
+  return in_EAX;
+}
+
 /* ref: FUN_0046f180 */
 uint F_0046f180(unsigned int gen_a0)
 {
@@ -12494,15 +12522,6 @@ uint F_004719e0(unsigned int gen_a0, unsigned int gen_a1)
 uint F_00471a10(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0x471a10u, gen_a0, gen_a1, 0u, 0u);
-  int * in_ecx = (int *)(uintptr_t)gen_a0;
-  int param_2 = (int)gen_a1;
-  return param_2 * 0x1b8 + *in_ecx;
-}
-
-/* ref: FUN_00471a30 */
-uint F_00471a30(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x471a30u, gen_a0, gen_a1, 0u, 0u);
   int * in_ecx = (int *)(uintptr_t)gen_a0;
   int param_2 = (int)gen_a1;
   return param_2 * 0x1b8 + *in_ecx;
