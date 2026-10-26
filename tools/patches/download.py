@@ -6,6 +6,7 @@ Each file from its first URL that answers (Square Enix's CDN first, archive.org 
 where a partial download stopped (HTTP Range), then checked: its size, its SHA-1 against the
 list's where the list has one, and every ZiPatch chunk's CRC32. The SHA-1 is written beside it
 (<file>.sha1) for tools/patches/patchlist.py; a file that fails a check is kept as <file>.bad.
+A file every URL answers 404 for is taken off the list and recorded in patches/missing.json.
 --rollups also fetches the H rollup parts (the 2017 and 2024 full installs).
 """
 import argparse, hashlib, json, os, struct, sys, time, urllib.error, urllib.request, zlib
@@ -91,24 +92,33 @@ def main():
     DEST.mkdir(parents=True, exist_ok=True)
     total = sum(e.get("size", 0) for e in todo)
     print(f"{len(todo)} files, {total / 1e9:.1f} GB -> {DEST}")
-    failed = []
+    failed, missing = [], []
     for i, e in enumerate(todo, 1):
         path = DEST / e["file"]
         mark = DEST / (e["file"] + ".sha1")
         if mark.exists() and path.exists() and path.stat().st_size == e.get("size"):
             continue
         print(f"[{i}/{len(todo)}] {e['file']} ({e.get('size', 0) / 1e6:,.0f} MB)")
-        ok = False
+        ok, gone = False, 0
         for url in e["urls"]:
             for attempt in range(5):
                 try:
                     ok = fetch(url, path, e["size"])
+                    break
+                except urllib.error.HTTPError as ex:
+                    if ex.code != 404:
+                        raise
+                    print(f"  {url}: not there")
+                    gone += 1
                     break
                 except (urllib.error.URLError, OSError, TimeoutError) as ex:
                     print(f"\n  {url}: {ex}; retrying")
                     time.sleep(5 * (attempt + 1))
             if ok:
                 break
+        if not ok and gone == len(e["urls"]):
+            missing.append(e["file"])
+            continue
         if not ok:
             failed.append(e["file"])
             continue
@@ -123,6 +133,17 @@ def main():
             continue
         mark.write_text(f"{digest}  {e['file']}\n")
         print(f"  ok {digest}")
+    if missing:
+        # (on no source any more: off the list, and kept off it in patches/missing.json, which
+        # tools/patches/patchlist.py reads)
+        gone_path = ROOT / "patches" / "missing.json"
+        known = json.loads(gone_path.read_text()) if gone_path.exists() else []
+        gone_path.write_text(json.dumps(sorted(set(known) | set(missing)), indent=1) + "\n")
+        drop = set(missing)
+        lst["patches"] = [e for e in lst["patches"] if e["file"] not in drop]
+        lst["rollups"] = [e for e in lst["rollups"] if e["file"] not in drop]
+        (ROOT / "patches" / "game.json").write_text(json.dumps(lst, indent=1))
+        print(f"{len(missing)} on no source, taken off the list: {missing}")
     print(f"done; {len(failed)} failed: {failed}" if failed else "done, all verified")
 
 

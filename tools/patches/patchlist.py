@@ -10,6 +10,7 @@ Sources, merged by file name:
   - Thaliak (thaliak.xiv.dev), which records Square Enix's live patch lists since 2017: the
     versions, their prerequisites and the rollups (H patches)
   - archive/patches/game/*.sha1: the SHA-1 of each file downloaded here (tools/patches/download.py)
+  - patches/missing.json: the files no URL has any more (download.py's 404s), left out
 
 Written to patches/game.json: the disc's version, CrystalCore's reference version, and each
 version in order with its file, size, SHA-1 (where known), URLs and the version it applies to.
@@ -142,6 +143,11 @@ def main():
                 e["sha1_mismatch"] = got
             e["sha1"] = e.get("sha1") or got
             e["downloaded"] = True
+
+    # what no source has any more (tools/patches/download.py's 404s)
+    gone = ROOT / "patches" / "missing.json"
+    for n in json.loads(gone.read_text()) if gone.exists() else []:
+        files.pop(n, None)
 
     # the D chain in order, each from the version before it (the disc's first); the H rollups apart
     d = sorted((e for e in files.values() if e["version"] and not e["version"].startswith("H")),

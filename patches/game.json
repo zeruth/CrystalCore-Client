@@ -1497,39 +1497,6 @@
    "release": "5.5"
   },
   {
-   "file": "D2021.04.20.0000.0001.patch",
-   "version": "2021.04.20.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.04.20.0000.0001.patch"
-   ],
-   "size": 60108591,
-   "thaliak": true,
-   "from": "2021.03.30.0000.0000",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.04.21.0000.0000.patch",
-   "version": "2021.04.21.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.04.21.0000.0000.patch"
-   ],
-   "size": 25118560,
-   "thaliak": true,
-   "from": "2021.04.20.0000.0001",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.04.29.0000.0000.patch",
-   "version": "2021.04.29.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.04.29.0000.0000.patch"
-   ],
-   "size": 350668326,
-   "thaliak": true,
-   "from": "2021.04.21.0000.0000",
-   "release": "5.5 hotfix"
-  },
-  {
    "file": "D2021.04.29.0000.0001.patch",
    "version": "2021.04.29.0000.0001",
    "urls": [
@@ -1556,83 +1523,6 @@
    "release": "5.5 hotfix"
   },
   {
-   "file": "D2021.05.17.0000.0001.patch",
-   "version": "2021.05.17.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.05.17.0000.0001.patch"
-   ],
-   "size": 59952007,
-   "thaliak": true,
-   "from": "2021.05.07.0000.0001",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.05.18.0000.0000.patch",
-   "version": "2021.05.18.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.05.18.0000.0000.patch"
-   ],
-   "size": 24922968,
-   "thaliak": true,
-   "from": "2021.05.17.0000.0001",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.05.28.0000.0000.patch",
-   "version": "2021.05.28.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.05.28.0000.0000.patch"
-   ],
-   "size": 24914512,
-   "thaliak": true,
-   "from": "2021.05.18.0000.0000",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.05.28.0000.0001.patch",
-   "version": "2021.05.28.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.05.28.0000.0001.patch"
-   ],
-   "size": 59952815,
-   "thaliak": true,
-   "from": "2021.05.07.0000.0001",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.05.29.0000.0000.patch",
-   "version": "2021.05.29.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.05.29.0000.0000.patch"
-   ],
-   "size": 24971952,
-   "thaliak": true,
-   "from": "2021.05.28.0000.0001",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.06.15.0000.0000.patch",
-   "version": "2021.06.15.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.06.15.0000.0000.patch"
-   ],
-   "size": 35147610,
-   "thaliak": true,
-   "from": "2021.05.29.0000.0000",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.06.16.0000.0000.patch",
-   "version": "2021.06.16.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.06.16.0000.0000.patch"
-   ],
-   "size": 25444009,
-   "thaliak": true,
-   "from": "2021.06.15.0000.0000",
-   "release": "5.5 hotfix"
-  },
-  {
    "file": "D2021.06.16.0000.0001.patch",
    "version": "2021.06.16.0000.0001",
    "urls": [
@@ -1643,39 +1533,6 @@
    "sha1": "35d7992ef4bf2f453426e68f44ed4f363d663c38",
    "thaliak": true,
    "from": "2021.05.07.0000.0001",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.07.14.0000.0001.patch",
-   "version": "2021.07.14.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.07.14.0000.0001.patch"
-   ],
-   "size": 38948619,
-   "thaliak": true,
-   "from": "2021.06.16.0000.0000",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.07.15.0000.0000.patch",
-   "version": "2021.07.15.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.07.15.0000.0000.patch"
-   ],
-   "size": 24995376,
-   "thaliak": true,
-   "from": "2021.07.14.0000.0001",
-   "release": "5.5 hotfix"
-  },
-  {
-   "file": "D2021.08.17.0000.0000.patch",
-   "version": "2021.08.17.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.08.17.0000.0000.patch"
-   ],
-   "size": 25848304,
-   "thaliak": true,
-   "from": "2021.07.15.0000.0000",
    "release": "5.5 hotfix"
   },
   {
@@ -1744,28 +1601,6 @@
    "release": "6.0 early access"
   },
   {
-   "file": "D2021.11.27.0000.0001.patch",
-   "version": "2021.11.27.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.11.27.0000.0001.patch"
-   ],
-   "size": 51307128,
-   "thaliak": true,
-   "from": "2021.11.20.0000.0001",
-   "release": "6.0 early access"
-  },
-  {
-   "file": "D2021.11.28.0000.0000.patch",
-   "version": "2021.11.28.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.11.28.0000.0000.patch"
-   ],
-   "size": 29544433,
-   "thaliak": true,
-   "from": "2021.11.27.0000.0001",
-   "release": "6.0 early access"
-  },
-  {
    "file": "D2021.11.28.0000.0001.patch",
    "version": "2021.11.28.0000.0001",
    "urls": [
@@ -1777,39 +1612,6 @@
    "thaliak": true,
    "from": "2021.11.20.0000.0001",
    "release": "6.0 early access"
-  },
-  {
-   "file": "D2021.12.15.0000.0001.patch",
-   "version": "2021.12.15.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.12.15.0000.0001.patch"
-   ],
-   "size": 163918763,
-   "thaliak": true,
-   "from": "2021.11.28.0000.0000",
-   "release": "6.0 Endwalker hotfix"
-  },
-  {
-   "file": "D2021.12.16.0000.0000.patch",
-   "version": "2021.12.16.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.12.16.0000.0000.patch"
-   ],
-   "size": 30929174,
-   "thaliak": true,
-   "from": "2021.12.15.0000.0001",
-   "release": "6.0 Endwalker hotfix"
-  },
-  {
-   "file": "D2021.12.23.0000.0000.patch",
-   "version": "2021.12.23.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2021.12.23.0000.0000.patch"
-   ],
-   "size": 113756474,
-   "thaliak": true,
-   "from": "2021.12.16.0000.0000",
-   "release": "6.0 Endwalker hotfix"
   },
   {
    "file": "D2021.12.23.0000.0001.patch",
@@ -1872,17 +1674,6 @@
    "sha1": "fc572d28b73551f6ce9280dd6f1ca0a501bc4788",
    "thaliak": true,
    "from": "2022.01.19.0000.0001",
-   "release": "6.0 Endwalker hotfix"
-  },
-  {
-   "file": "D2022.01.25.0000.0001.patch",
-   "version": "2022.01.25.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.01.25.0000.0001.patch"
-   ],
-   "size": 44267845,
-   "thaliak": true,
-   "from": "2021.12.24.0000.0001",
    "release": "6.0 Endwalker hotfix"
   },
   {
@@ -1962,28 +1753,6 @@
    "release": "6.1"
   },
   {
-   "file": "D2022.04.05.0000.0000.patch",
-   "version": "2022.04.05.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.04.05.0000.0000.patch"
-   ],
-   "size": 31898281,
-   "thaliak": true,
-   "from": "2022.04.03.0000.0001",
-   "release": "6.1"
-  },
-  {
-   "file": "D2022.04.06.0000.0000.patch",
-   "version": "2022.04.06.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.04.06.0000.0000.patch"
-   ],
-   "size": 35575233,
-   "thaliak": true,
-   "from": "2022.04.05.0000.0000",
-   "release": "6.1"
-  },
-  {
    "file": "D2022.04.06.0000.0001.patch",
    "version": "2022.04.06.0000.0001",
    "urls": [
@@ -2049,17 +1818,6 @@
    "release": "6.1 hotfix"
   },
   {
-   "file": "D2022.05.18.0000.0001.patch",
-   "version": "2022.05.18.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.05.18.0000.0001.patch"
-   ],
-   "size": 249073040,
-   "thaliak": true,
-   "from": "2022.04.03.0000.0001",
-   "release": "6.1 hotfix"
-  },
-  {
    "file": "D2022.05.19.0000.0000.patch",
    "version": "2022.05.19.0000.0000",
    "urls": [
@@ -2110,28 +1868,6 @@
    "release": "6.1 hotfix"
   },
   {
-   "file": "D2022.06.16.0000.0001.patch",
-   "version": "2022.06.16.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.06.16.0000.0001.patch"
-   ],
-   "size": 34237511,
-   "thaliak": true,
-   "from": "2022.05.27.0000.0000",
-   "release": "6.1 hotfix"
-  },
-  {
-   "file": "D2022.06.17.0000.0000.patch",
-   "version": "2022.06.17.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.06.17.0000.0000.patch"
-   ],
-   "size": 26137664,
-   "thaliak": true,
-   "from": "2022.06.16.0000.0001",
-   "release": "6.1 hotfix"
-  },
-  {
    "file": "D2022.06.17.0000.0001.patch",
    "version": "2022.06.17.0000.0001",
    "urls": [
@@ -2155,17 +1891,6 @@
    "sha1": "88d31245c16dadbecf465f829a30f32bff66471d",
    "thaliak": true,
    "from": "2022.06.17.0000.0000",
-   "release": "6.1 hotfix"
-  },
-  {
-   "file": "D2022.06.21.0000.0001.patch",
-   "version": "2022.06.21.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.06.21.0000.0001.patch"
-   ],
-   "size": 35578079,
-   "thaliak": true,
-   "from": "2022.05.27.0000.0001",
    "release": "6.1 hotfix"
   },
   {
@@ -2219,28 +1944,6 @@
    "release": "6.2"
   },
   {
-   "file": "D2022.08.09.0000.0000.patch",
-   "version": "2022.08.09.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.08.09.0000.0000.patch"
-   ],
-   "size": 60917948,
-   "thaliak": true,
-   "from": "2022.08.05.0001.0000",
-   "release": "6.2"
-  },
-  {
-   "file": "D2022.08.10.0000.0000.patch",
-   "version": "2022.08.10.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.08.10.0000.0000.patch"
-   ],
-   "size": 120103658,
-   "thaliak": true,
-   "from": "2022.08.09.0000.0000",
-   "release": "6.2"
-  },
-  {
    "file": "D2022.08.10.0000.0001.patch",
    "version": "2022.08.10.0000.0001",
    "urls": [
@@ -2264,28 +1967,6 @@
    "sha1": "7b5b6c9d35aa7914bc58e645e243cf226eab5583",
    "thaliak": true,
    "from": "2022.08.10.0000.0001",
-   "release": "6.2"
-  },
-  {
-   "file": "D2022.08.13.0000.0000.patch",
-   "version": "2022.08.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.08.13.0000.0000.patch"
-   ],
-   "size": 46226101,
-   "thaliak": true,
-   "from": "2022.08.12.0000.0001",
-   "release": "6.2"
-  },
-  {
-   "file": "D2022.08.16.0000.0000.patch",
-   "version": "2022.08.16.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.08.16.0000.0000.patch"
-   ],
-   "size": 40729248,
-   "thaliak": true,
-   "from": "2022.08.13.0000.0000",
    "release": "6.2"
   },
   {
@@ -2378,28 +2059,6 @@
    "release": "6.2 hotfix"
   },
   {
-   "file": "D2022.10.01.0000.0001.patch",
-   "version": "2022.10.01.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.10.01.0000.0001.patch"
-   ],
-   "size": 31826865,
-   "thaliak": true,
-   "from": "2022.09.29.0000.0000",
-   "release": "6.2 hotfix"
-  },
-  {
-   "file": "D2022.10.04.0000.0000.patch",
-   "version": "2022.10.04.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.10.04.0000.0000.patch"
-   ],
-   "size": 28963937,
-   "thaliak": true,
-   "from": "2022.10.01.0000.0001",
-   "release": "6.2 hotfix"
-  },
-  {
    "file": "D2022.10.04.0000.0001.patch",
    "version": "2022.10.04.0000.0001",
    "urls": [
@@ -2436,17 +2095,6 @@
    "sha1": "cfb9df52ddae193f03865e693a5fb09255023b65",
    "thaliak": true,
    "from": "2022.10.05.0000.0000",
-   "release": "6.2 hotfix"
-  },
-  {
-   "file": "D2022.10.25.0000.0001.patch",
-   "version": "2022.10.25.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.10.25.0000.0001.patch"
-   ],
-   "size": 63779509,
-   "thaliak": true,
-   "from": "2022.09.29.0000.0001",
    "release": "6.2 hotfix"
   },
   {
@@ -2589,17 +2237,6 @@
    "release": "6.3"
   },
   {
-   "file": "D2022.12.22.0000.0001.patch",
-   "version": "2022.12.22.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.12.22.0000.0001.patch"
-   ],
-   "size": 61535582,
-   "thaliak": true,
-   "from": "2022.12.20.0000.0000",
-   "release": "6.3"
-  },
-  {
    "file": "D2022.12.23.0000.0000.patch",
    "version": "2022.12.23.0000.0000",
    "urls": [
@@ -2613,61 +2250,6 @@
    "release": "6.3"
   },
   {
-   "file": "D2022.12.23.0000.0001.patch",
-   "version": "2022.12.23.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2022.12.23.0000.0001.patch"
-   ],
-   "size": 65398966,
-   "thaliak": true,
-   "from": "2022.12.20.0000.0001",
-   "release": "6.3"
-  },
-  {
-   "file": "D2023.01.11.0000.0000.patch",
-   "version": "2023.01.11.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.01.11.0000.0000.patch"
-   ],
-   "size": 27272497,
-   "thaliak": true,
-   "from": "2022.12.23.0000.0000",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.01.17.0000.0000.patch",
-   "version": "2023.01.17.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.01.17.0000.0000.patch"
-   ],
-   "size": 112355463,
-   "thaliak": true,
-   "from": "2023.01.11.0000.0000",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.02.03.0000.0000.patch",
-   "version": "2023.02.03.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.02.03.0000.0000.patch"
-   ],
-   "size": 37946838,
-   "thaliak": true,
-   "from": "2023.01.17.0000.0000",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.02.14.0000.0000.patch",
-   "version": "2023.02.14.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.02.14.0000.0000.patch"
-   ],
-   "size": 174198744,
-   "thaliak": true,
-   "from": "2021.03.30.0000.0000",
-   "release": "6.3 hotfix"
-  },
-  {
    "file": "D2023.02.14.0000.0001.patch",
    "version": "2023.02.14.0000.0001",
    "urls": [
@@ -2676,83 +2258,6 @@
    "size": 261590454,
    "thaliak": true,
    "from": "2022.12.20.0000.0001",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.02.16.0000.0001.patch",
-   "version": "2023.02.16.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.02.16.0000.0001.patch"
-   ],
-   "size": 43853827,
-   "thaliak": true,
-   "from": "2023.02.14.0000.0000",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.02.21.0000.0000.patch",
-   "version": "2023.02.21.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.02.21.0000.0000.patch"
-   ],
-   "size": 38388176,
-   "thaliak": true,
-   "from": "2023.02.16.0000.0001",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.02.21.0000.0001.patch",
-   "version": "2023.02.21.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.02.21.0000.0001.patch"
-   ],
-   "size": 48467193,
-   "thaliak": true,
-   "from": "2023.02.14.0000.0000",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.02.28.0000.0000.patch",
-   "version": "2023.02.28.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.02.28.0000.0000.patch"
-   ],
-   "size": 30138834,
-   "thaliak": true,
-   "from": "2022.08.05.0000.0000",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.03.21.0000.0000.patch",
-   "version": "2023.03.21.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.03.21.0000.0000.patch"
-   ],
-   "size": 41270924,
-   "thaliak": true,
-   "from": "2023.02.28.0000.0000",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.03.21.0000.0001.patch",
-   "version": "2023.03.21.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.03.21.0000.0001.patch"
-   ],
-   "size": 56904015,
-   "thaliak": true,
-   "from": "2023.02.14.0000.0001",
-   "release": "6.3 hotfix"
-  },
-  {
-   "file": "D2023.03.24.0000.0000.patch",
-   "version": "2023.03.24.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.03.24.0000.0000.patch"
-   ],
-   "size": 33405290,
-   "thaliak": true,
-   "from": "2023.03.21.0000.0000",
    "release": "6.3 hotfix"
   },
   {
@@ -2822,72 +2327,6 @@
    "release": "6.4"
   },
   {
-   "file": "D2023.05.12.0000.0000.patch",
-   "version": "2023.05.12.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.05.12.0000.0000.patch"
-   ],
-   "size": 55742107,
-   "thaliak": true,
-   "from": "2023.05.11.0000.0001",
-   "release": "6.4"
-  },
-  {
-   "file": "D2023.05.13.0000.0000.patch",
-   "version": "2023.05.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.05.13.0000.0000.patch"
-   ],
-   "size": 27718172,
-   "thaliak": true,
-   "from": "2023.05.12.0000.0000",
-   "release": "6.4"
-  },
-  {
-   "file": "D2023.05.13.0000.0001.patch",
-   "version": "2023.05.13.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.05.13.0000.0001.patch"
-   ],
-   "size": 55768275,
-   "thaliak": true,
-   "from": "2023.05.11.0000.0001",
-   "release": "6.4"
-  },
-  {
-   "file": "D2023.05.18.0000.0000.patch",
-   "version": "2023.05.18.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.05.18.0000.0000.patch"
-   ],
-   "size": 27739756,
-   "thaliak": true,
-   "from": "2023.05.13.0000.0001",
-   "release": "6.4"
-  },
-  {
-   "file": "D2023.05.31.0000.0000.patch",
-   "version": "2023.05.31.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.05.31.0000.0000.patch"
-   ],
-   "size": 48261317,
-   "thaliak": true,
-   "from": "2022.08.05.0000.0000",
-   "release": "6.4 hotfix"
-  },
-  {
-   "file": "D2023.06.13.0000.0000.patch",
-   "version": "2023.06.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.06.13.0000.0000.patch"
-   ],
-   "size": 62882282,
-   "thaliak": true,
-   "from": "2023.05.31.0000.0000",
-   "release": "6.4 hotfix"
-  },
-  {
    "file": "D2023.06.14.0000.0000.patch",
    "version": "2023.06.14.0000.0000",
    "urls": [
@@ -2907,28 +2346,6 @@
    "size": 234916687,
    "thaliak": true,
    "from": "2023.06.14.0000.0000",
-   "release": "6.4 hotfix"
-  },
-  {
-   "file": "D2023.06.28.0000.0000.patch",
-   "version": "2023.06.28.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.06.28.0000.0000.patch"
-   ],
-   "size": 27773692,
-   "thaliak": true,
-   "from": "2023.06.27.0000.0000",
-   "release": "6.4 hotfix"
-  },
-  {
-   "file": "D2023.06.29.0000.0000.patch",
-   "version": "2023.06.29.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.06.29.0000.0000.patch"
-   ],
-   "size": 32942386,
-   "thaliak": true,
-   "from": "2023.06.28.0000.0000",
    "release": "6.4 hotfix"
   },
   {
@@ -2998,28 +2415,6 @@
    "release": "6.5"
   },
   {
-   "file": "D2023.09.23.0000.0001.patch",
-   "version": "2023.09.23.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.09.23.0000.0001.patch"
-   ],
-   "size": 63776300,
-   "thaliak": true,
-   "from": "2023.09.21.0000.0001",
-   "release": "6.5"
-  },
-  {
-   "file": "D2023.09.26.0000.0000.patch",
-   "version": "2023.09.26.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.09.26.0000.0000.patch"
-   ],
-   "size": 32384649,
-   "thaliak": true,
-   "from": "2023.09.23.0000.0001",
-   "release": "6.5"
-  },
-  {
    "file": "D2023.09.26.0000.0001.patch",
    "version": "2023.09.26.0000.0001",
    "urls": [
@@ -3042,28 +2437,6 @@
    "release": "6.5"
   },
   {
-   "file": "D2023.10.11.0000.0000.patch",
-   "version": "2023.10.11.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.10.11.0000.0000.patch"
-   ],
-   "size": 452852125,
-   "thaliak": true,
-   "from": "2023.09.28.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2023.10.12.0000.0000.patch",
-   "version": "2023.10.12.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.10.12.0000.0000.patch"
-   ],
-   "size": 69585082,
-   "thaliak": true,
-   "from": "2023.10.11.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
    "file": "D2023.10.12.0000.0001.patch",
    "version": "2023.10.12.0000.0001",
    "urls": [
@@ -3072,28 +2445,6 @@
    "size": 454818089,
    "thaliak": true,
    "from": "2023.09.28.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2023.10.13.0000.0000.patch",
-   "version": "2023.10.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.10.13.0000.0000.patch"
-   ],
-   "size": 34192554,
-   "thaliak": true,
-   "from": "2023.10.12.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2023.10.19.0000.0000.patch",
-   "version": "2023.10.19.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.10.19.0000.0000.patch"
-   ],
-   "size": 41753623,
-   "thaliak": true,
-   "from": "2023.10.13.0000.0000",
    "release": "6.5 hotfix"
   },
   {
@@ -3163,28 +2514,6 @@
    "release": "6.5 hotfix"
   },
   {
-   "file": "D2023.12.19.0000.0001.patch",
-   "version": "2023.12.19.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.12.19.0000.0001.patch"
-   ],
-   "size": 52441384,
-   "thaliak": true,
-   "from": "2023.12.05.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2023.12.27.0000.0000.patch",
-   "version": "2023.12.27.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2023.12.27.0000.0000.patch"
-   ],
-   "size": 28978716,
-   "thaliak": true,
-   "from": "2023.12.19.0000.0001",
-   "release": "6.5 hotfix"
-  },
-  {
    "file": "D2023.12.27.0000.0001.patch",
    "version": "2023.12.27.0000.0001",
    "urls": [
@@ -3207,28 +2536,6 @@
    "release": "6.5 hotfix"
   },
   {
-   "file": "D2024.01.23.0000.0000.patch",
-   "version": "2024.01.23.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.01.23.0000.0000.patch"
-   ],
-   "size": 28486556,
-   "thaliak": true,
-   "from": "2024.01.06.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2024.01.30.0000.0000.patch",
-   "version": "2024.01.30.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.01.30.0000.0000.patch"
-   ],
-   "size": 61457142,
-   "thaliak": true,
-   "from": "2024.01.23.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
    "file": "D2024.01.30.0000.0001.patch",
    "version": "2024.01.30.0000.0001",
    "urls": [
@@ -3248,39 +2555,6 @@
    "size": 28852684,
    "thaliak": true,
    "from": "2024.01.30.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2024.02.27.0000.0000.patch",
-   "version": "2024.02.27.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.02.27.0000.0000.patch"
-   ],
-   "size": 222383495,
-   "thaliak": true,
-   "from": "2024.02.05.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2024.03.05.0000.0000.patch",
-   "version": "2024.03.05.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.03.05.0000.0000.patch"
-   ],
-   "size": 83259867,
-   "thaliak": true,
-   "from": "2024.02.27.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2024.03.07.0000.0000.patch",
-   "version": "2024.03.07.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.03.07.0000.0000.patch"
-   ],
-   "size": 18511413,
-   "thaliak": true,
-   "from": "2024.03.05.0000.0000",
    "release": "6.5 hotfix"
   },
   {
@@ -3328,28 +2602,6 @@
    "release": "6.5 hotfix"
   },
   {
-   "file": "D2024.04.19.0000.0000.patch",
-   "version": "2024.04.19.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.04.19.0000.0000.patch"
-   ],
-   "size": 16640164,
-   "thaliak": true,
-   "from": "2024.03.27.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
-   "file": "D2024.04.22.0000.0000.patch",
-   "version": "2024.04.22.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.04.22.0000.0000.patch"
-   ],
-   "size": 16576220,
-   "thaliak": true,
-   "from": "2021.11.17.0000.0000",
-   "release": "6.5 hotfix"
-  },
-  {
    "file": "D2024.04.23.0000.0000.patch",
    "version": "2024.04.23.0000.0000",
    "urls": [
@@ -3361,50 +2613,6 @@
    "release": "6.5 hotfix"
   },
   {
-   "file": "D2024.06.10.0000.0001.patch",
-   "version": "2024.06.10.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.06.10.0000.0001.patch"
-   ],
-   "size": 396829764,
-   "thaliak": true,
-   "from": "2024.05.31.0000.0000",
-   "release": "7.0 early access"
-  },
-  {
-   "file": "D2024.06.11.0000.0000.patch",
-   "version": "2024.06.11.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.06.11.0000.0000.patch"
-   ],
-   "size": 68791350,
-   "thaliak": true,
-   "from": "2024.06.10.0000.0001",
-   "release": "7.0 early access"
-  },
-  {
-   "file": "D2024.06.12.0000.0000.patch",
-   "version": "2024.06.12.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.06.12.0000.0000.patch"
-   ],
-   "size": 191241721,
-   "thaliak": true,
-   "from": "2024.06.11.0000.0000",
-   "release": "7.0 early access"
-  },
-  {
-   "file": "D2024.06.13.0000.0000.patch",
-   "version": "2024.06.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.06.13.0000.0000.patch"
-   ],
-   "size": 94582810,
-   "thaliak": true,
-   "from": "2024.06.12.0000.0000",
-   "release": "7.0 early access"
-  },
-  {
    "file": "D2024.06.13.0000.0001.patch",
    "version": "2024.06.13.0000.0001",
    "urls": [
@@ -3413,50 +2621,6 @@
    "size": 544882114,
    "thaliak": true,
    "from": "2024.05.31.0000.0000",
-   "release": "7.0 early access"
-  },
-  {
-   "file": "D2024.06.14.0000.0000.patch",
-   "version": "2024.06.14.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.06.14.0000.0000.patch"
-   ],
-   "size": 51985324,
-   "thaliak": true,
-   "from": "2024.06.13.0000.0000",
-   "release": "7.0 early access"
-  },
-  {
-   "file": "D2024.06.15.0000.0000.patch",
-   "version": "2024.06.15.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.06.15.0000.0000.patch"
-   ],
-   "size": 42482106,
-   "thaliak": true,
-   "from": "2024.06.14.0000.0000",
-   "release": "7.0 early access"
-  },
-  {
-   "file": "D2024.06.15.0000.0001.patch",
-   "version": "2024.06.15.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.06.15.0000.0001.patch"
-   ],
-   "size": 61953689,
-   "thaliak": true,
-   "from": "2024.06.13.0000.0001",
-   "release": "7.0 early access"
-  },
-  {
-   "file": "D2024.06.18.0000.0000.patch",
-   "version": "2024.06.18.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.06.18.0000.0000.patch"
-   ],
-   "size": 25480236,
-   "thaliak": true,
-   "from": "2024.06.15.0000.0000",
    "release": "7.0 early access"
   },
   {
@@ -3471,50 +2635,6 @@
    "release": "7.0 early access"
   },
   {
-   "file": "D2024.07.03.0000.0001.patch",
-   "version": "2024.07.03.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.03.0000.0001.patch"
-   ],
-   "size": 20166489,
-   "thaliak": true,
-   "from": "2024.06.18.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.05.0000.0000.patch",
-   "version": "2024.07.05.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.05.0000.0000.patch"
-   ],
-   "size": 18757104,
-   "thaliak": true,
-   "from": "2024.07.03.0000.0001",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.05.0000.0001.patch",
-   "version": "2024.07.05.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.05.0000.0001.patch"
-   ],
-   "size": 20150233,
-   "thaliak": true,
-   "from": "2024.06.18.0000.0001",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.06.0000.0000.patch",
-   "version": "2024.07.06.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.06.0000.0000.patch"
-   ],
-   "size": 18762992,
-   "thaliak": true,
-   "from": "2024.07.05.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
    "file": "D2024.07.06.0000.0001.patch",
    "version": "2024.07.06.0000.0001",
    "urls": [
@@ -3526,50 +2646,6 @@
    "release": "7.0 Dawntrail hotfix"
   },
   {
-   "file": "D2024.07.09.0000.0000.patch",
-   "version": "2024.07.09.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.09.0000.0000.patch"
-   ],
-   "size": 389634300,
-   "thaliak": true,
-   "from": "2024.07.06.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.10.0000.0000.patch",
-   "version": "2024.07.10.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.10.0000.0000.patch"
-   ],
-   "size": 19441916,
-   "thaliak": true,
-   "from": "2024.07.09.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.10.0000.0001.patch",
-   "version": "2024.07.10.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.10.0000.0001.patch"
-   ],
-   "size": 389484804,
-   "thaliak": true,
-   "from": "2024.07.06.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.10.0001.0000.patch",
-   "version": "2024.07.10.0001.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.10.0001.0000.patch"
-   ],
-   "size": 18917608,
-   "thaliak": true,
-   "from": "2024.07.10.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
    "file": "D2024.07.10.0001.0001.patch",
    "version": "2024.07.10.0001.0001",
    "urls": [
@@ -3578,105 +2654,6 @@
    "size": 389476289,
    "thaliak": true,
    "from": "2024.07.06.0000.0001",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.19.0000.0000.patch",
-   "version": "2024.07.19.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.19.0000.0000.patch"
-   ],
-   "size": 267194242,
-   "thaliak": true,
-   "from": "2024.07.10.0001.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.23.0000.0000.patch",
-   "version": "2024.07.23.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.23.0000.0000.patch"
-   ],
-   "size": 62135829,
-   "thaliak": true,
-   "from": "2024.07.19.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.23.0000.0001.patch",
-   "version": "2024.07.23.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.23.0000.0001.patch"
-   ],
-   "size": 291340661,
-   "thaliak": true,
-   "from": "2024.07.10.0001.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.24.0000.0000.patch",
-   "version": "2024.07.24.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.24.0000.0000.patch"
-   ],
-   "size": 24014440,
-   "thaliak": true,
-   "from": "2024.07.23.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.07.24.0000.0001.patch",
-   "version": "2024.07.24.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.07.24.0000.0001.patch"
-   ],
-   "size": 288251002,
-   "thaliak": true,
-   "from": "2024.07.10.0001.0001",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.08.02.0000.0000.patch",
-   "version": "2024.08.02.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.08.02.0000.0000.patch"
-   ],
-   "size": 19733024,
-   "thaliak": true,
-   "from": "2024.07.24.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.08.20.0000.0000.patch",
-   "version": "2024.08.20.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.08.20.0000.0000.patch"
-   ],
-   "size": 65323080,
-   "thaliak": true,
-   "from": "2024.08.02.0000.0000",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.08.20.0000.0001.patch",
-   "version": "2024.08.20.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.08.20.0000.0001.patch"
-   ],
-   "size": 300157901,
-   "thaliak": true,
-   "from": "2024.07.10.0001.0001",
-   "release": "7.0 Dawntrail hotfix"
-  },
-  {
-   "file": "D2024.08.21.0000.0000.patch",
-   "version": "2024.08.21.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.08.21.0000.0000.patch"
-   ],
-   "size": 22878305,
-   "thaliak": true,
-   "from": "2024.08.20.0000.0001",
    "release": "7.0 Dawntrail hotfix"
   },
   {
@@ -3735,28 +2712,6 @@
    "release": "7.1"
   },
   {
-   "file": "D2024.10.29.0000.0001.patch",
-   "version": "2024.10.29.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.10.29.0000.0001.patch"
-   ],
-   "size": 55916342,
-   "thaliak": true,
-   "from": "2024.10.25.0003.0000",
-   "release": "7.1"
-  },
-  {
-   "file": "D2024.10.30.0000.0000.patch",
-   "version": "2024.10.30.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.10.30.0000.0000.patch"
-   ],
-   "size": 75969490,
-   "thaliak": true,
-   "from": "2024.10.29.0000.0001",
-   "release": "7.1"
-  },
-  {
    "file": "D2024.10.30.0000.0001.patch",
    "version": "2024.10.30.0000.0001",
    "urls": [
@@ -3768,83 +2723,6 @@
    "release": "7.1"
   },
   {
-   "file": "D2024.11.01.0000.0000.patch",
-   "version": "2024.11.01.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.11.01.0000.0000.patch"
-   ],
-   "size": 65533077,
-   "thaliak": true,
-   "from": "2024.10.30.0000.0000",
-   "release": "7.1"
-  },
-  {
-   "file": "D2024.11.02.0000.0000.patch",
-   "version": "2024.11.02.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.11.02.0000.0000.patch"
-   ],
-   "size": 28426460,
-   "thaliak": true,
-   "from": "2024.11.01.0000.0000",
-   "release": "7.1"
-  },
-  {
-   "file": "D2024.11.02.0000.0001.patch",
-   "version": "2024.11.02.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.11.02.0000.0001.patch"
-   ],
-   "size": 67455589,
-   "thaliak": true,
-   "from": "2024.10.30.0000.0001",
-   "release": "7.1"
-  },
-  {
-   "file": "D2024.11.06.0000.0000.patch",
-   "version": "2024.11.06.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.11.06.0000.0000.patch"
-   ],
-   "size": 25416275,
-   "thaliak": true,
-   "from": "2024.11.02.0000.0000",
-   "release": "7.1"
-  },
-  {
-   "file": "D2024.11.19.0000.0000.patch",
-   "version": "2024.11.19.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.11.19.0000.0000.patch"
-   ],
-   "size": 152580633,
-   "thaliak": true,
-   "from": "2024.11.06.0000.0000",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2024.11.19.0000.0001.patch",
-   "version": "2024.11.19.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.11.19.0000.0001.patch"
-   ],
-   "size": 181203060,
-   "thaliak": true,
-   "from": "2024.10.30.0000.0001",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2024.11.20.0000.0000.patch",
-   "version": "2024.11.20.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.11.20.0000.0000.patch"
-   ],
-   "size": 19139987,
-   "thaliak": true,
-   "from": "2024.08.02.0000.0000",
-   "release": "7.1 hotfix"
-  },
-  {
    "file": "D2024.11.20.0000.0001.patch",
    "version": "2024.11.20.0000.0001",
    "urls": [
@@ -3854,160 +2732,6 @@
    "thaliak": true,
    "from": "2024.10.30.0000.0001",
    "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2024.12.04.0000.0000.patch",
-   "version": "2024.12.04.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.12.04.0000.0000.patch"
-   ],
-   "size": 231904905,
-   "thaliak": true,
-   "from": "2024.11.20.0000.0000",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2024.12.05.0000.0000.patch",
-   "version": "2024.12.05.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.12.05.0000.0000.patch"
-   ],
-   "size": 23144187,
-   "thaliak": true,
-   "from": "2024.12.04.0000.0000",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2024.12.05.0000.0001.patch",
-   "version": "2024.12.05.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.12.05.0000.0001.patch"
-   ],
-   "size": 231977625,
-   "thaliak": true,
-   "from": "2024.11.20.0000.0000",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2024.12.07.0000.0000.patch",
-   "version": "2024.12.07.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2024.12.07.0000.0000.patch"
-   ],
-   "size": 28856044,
-   "thaliak": true,
-   "from": "2024.08.21.0000.0000",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2025.01.09.0000.0000.patch",
-   "version": "2025.01.09.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.01.09.0000.0000.patch"
-   ],
-   "size": 112008581,
-   "thaliak": true,
-   "from": "2024.11.06.0000.0000",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2025.01.09.0000.0001.patch",
-   "version": "2025.01.09.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.01.09.0000.0001.patch"
-   ],
-   "size": 278869658,
-   "thaliak": true,
-   "from": "2024.11.20.0000.0001",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2025.01.14.0000.0000.patch",
-   "version": "2025.01.14.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.01.14.0000.0000.patch"
-   ],
-   "size": 26433661,
-   "thaliak": true,
-   "from": "2025.01.09.0000.0000",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2025.01.14.0000.0001.patch",
-   "version": "2025.01.14.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.01.14.0000.0001.patch"
-   ],
-   "size": 279853698,
-   "thaliak": true,
-   "from": "2024.11.20.0000.0001",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2025.01.28.0000.0000.patch",
-   "version": "2025.01.28.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.01.28.0000.0000.patch"
-   ],
-   "size": 19038859,
-   "thaliak": true,
-   "from": "2025.01.14.0000.0001",
-   "release": "7.1 hotfix"
-  },
-  {
-   "file": "D2025.02.18.0000.0000.patch",
-   "version": "2025.02.18.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.02.18.0000.0000.patch"
-   ],
-   "size": 36139054,
-   "thaliak": true,
-   "from": "2025.01.28.0000.0000",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.02.18.0000.0001.patch",
-   "version": "2025.02.18.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.02.18.0000.0001.patch"
-   ],
-   "size": 280420466,
-   "thaliak": true,
-   "from": "2024.11.20.0000.0001",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.02.19.0000.0000.patch",
-   "version": "2025.02.19.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.02.19.0000.0000.patch"
-   ],
-   "size": 19076395,
-   "thaliak": true,
-   "from": "2025.02.18.0000.0000",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.02.19.0000.0001.patch",
-   "version": "2025.02.19.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.02.19.0000.0001.patch"
-   ],
-   "size": 280457746,
-   "thaliak": true,
-   "from": "2024.11.20.0000.0001",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.02.27.0000.0000.patch",
-   "version": "2025.02.27.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.02.27.0000.0000.patch"
-   ],
-   "size": 19056555,
-   "thaliak": true,
-   "from": "2024.10.25.0000.0000",
-   "release": "7.2"
   },
   {
    "file": "D2025.02.27.0000.0001.patch",
@@ -4054,39 +2778,6 @@
    "release": "7.2"
   },
   {
-   "file": "D2025.03.11.0000.0000.patch",
-   "version": "2025.03.11.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.11.0000.0000.patch"
-   ],
-   "size": 48887180,
-   "thaliak": true,
-   "from": "2025.03.07.0002.0000",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.03.12.0000.0000.patch",
-   "version": "2025.03.12.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.12.0000.0000.patch"
-   ],
-   "size": 93487178,
-   "thaliak": true,
-   "from": "2024.07.06.0000.0000",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.03.13.0000.0000.patch",
-   "version": "2025.03.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.13.0000.0000.patch"
-   ],
-   "size": 85656539,
-   "thaliak": true,
-   "from": "2025.03.11.0000.0000",
-   "release": "7.2"
-  },
-  {
    "file": "D2025.03.13.0000.0001.patch",
    "version": "2025.03.13.0000.0001",
    "urls": [
@@ -4096,83 +2787,6 @@
    "thaliak": true,
    "from": "2025.03.07.0002.0000",
    "release": "7.2"
-  },
-  {
-   "file": "D2025.03.14.0000.0000.patch",
-   "version": "2025.03.14.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.14.0000.0000.patch"
-   ],
-   "size": 48044757,
-   "thaliak": true,
-   "from": "2025.03.13.0000.0000",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.03.15.0000.0000.patch",
-   "version": "2025.03.15.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.15.0000.0000.patch"
-   ],
-   "size": 45111235,
-   "thaliak": true,
-   "from": "2025.03.14.0000.0000",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.03.15.0000.0001.patch",
-   "version": "2025.03.15.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.15.0000.0001.patch"
-   ],
-   "size": 63366671,
-   "thaliak": true,
-   "from": "2025.03.13.0000.0000",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.03.18.0000.0000.patch",
-   "version": "2025.03.18.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.18.0000.0000.patch"
-   ],
-   "size": 20895166,
-   "thaliak": true,
-   "from": "2025.03.15.0000.0000",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.03.18.0000.0001.patch",
-   "version": "2025.03.18.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.18.0000.0001.patch"
-   ],
-   "size": 63456383,
-   "thaliak": true,
-   "from": "2025.03.13.0000.0001",
-   "release": "7.2"
-  },
-  {
-   "file": "D2025.03.27.0000.0000.patch",
-   "version": "2025.03.27.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.03.27.0000.0000.patch"
-   ],
-   "size": 25820404,
-   "thaliak": true,
-   "from": "2025.03.13.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.04.08.0000.0000.patch",
-   "version": "2025.04.08.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.04.08.0000.0000.patch"
-   ],
-   "size": 547508790,
-   "thaliak": true,
-   "from": "2025.03.27.0000.0000",
-   "release": "7.2 hotfix"
   },
   {
    "file": "D2025.04.08.0000.0001.patch",
@@ -4186,50 +2800,6 @@
    "release": "7.2 hotfix"
   },
   {
-   "file": "D2025.04.12.0000.0001.patch",
-   "version": "2025.04.12.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.04.12.0000.0001.patch"
-   ],
-   "size": 59071015,
-   "thaliak": true,
-   "from": "2025.04.08.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.04.15.0000.0000.patch",
-   "version": "2025.04.15.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.04.15.0000.0000.patch"
-   ],
-   "size": 19705382,
-   "thaliak": true,
-   "from": "2025.04.12.0000.0001",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.04.15.0000.0001.patch",
-   "version": "2025.04.15.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.04.15.0000.0001.patch"
-   ],
-   "size": 59048359,
-   "thaliak": true,
-   "from": "2025.04.08.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.04.16.0000.0000.patch",
-   "version": "2025.04.16.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.04.16.0000.0000.patch"
-   ],
-   "size": 19655270,
-   "thaliak": true,
-   "from": "2024.11.06.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
    "file": "D2025.04.16.0000.0001.patch",
    "version": "2025.04.16.0000.0001",
    "urls": [
@@ -4239,171 +2809,6 @@
    "thaliak": true,
    "from": "2025.04.08.0000.0001",
    "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.04.30.0000.0000.patch",
-   "version": "2025.04.30.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.04.30.0000.0000.patch"
-   ],
-   "size": 578112091,
-   "thaliak": true,
-   "from": "2025.04.16.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.01.0000.0000.patch",
-   "version": "2025.05.01.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.01.0000.0000.patch"
-   ],
-   "size": 83149458,
-   "thaliak": true,
-   "from": "2025.04.30.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.01.0000.0001.patch",
-   "version": "2025.05.01.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.01.0000.0001.patch"
-   ],
-   "size": 588443754,
-   "thaliak": true,
-   "from": "2025.04.16.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.02.0000.0000.patch",
-   "version": "2025.05.02.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.02.0000.0000.patch"
-   ],
-   "size": 58720897,
-   "thaliak": true,
-   "from": "2025.05.01.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.02.0000.0001.patch",
-   "version": "2025.05.02.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.02.0000.0001.patch"
-   ],
-   "size": 598388442,
-   "thaliak": true,
-   "from": "2025.04.16.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.09.0000.0000.patch",
-   "version": "2025.05.09.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.09.0000.0000.patch"
-   ],
-   "size": 64331344,
-   "thaliak": true,
-   "from": "2025.05.02.0000.0001",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.13.0000.0000.patch",
-   "version": "2025.05.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.13.0000.0000.patch"
-   ],
-   "size": 42003008,
-   "thaliak": true,
-   "from": "2025.05.09.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.13.0000.0001.patch",
-   "version": "2025.05.13.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.13.0000.0001.patch"
-   ],
-   "size": 601120978,
-   "thaliak": true,
-   "from": "2025.04.16.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.17.0000.0000.patch",
-   "version": "2025.05.17.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.17.0000.0000.patch"
-   ],
-   "size": 43410213,
-   "thaliak": true,
-   "from": "2025.02.27.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.05.17.0000.0001.patch",
-   "version": "2025.05.17.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.05.17.0000.0001.patch"
-   ],
-   "size": 601332306,
-   "thaliak": true,
-   "from": "2025.04.16.0000.0001",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.06.10.0000.0000.patch",
-   "version": "2025.06.10.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.06.10.0000.0000.patch"
-   ],
-   "size": 26804894,
-   "thaliak": true,
-   "from": "2025.04.08.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.06.10.0000.0001.patch",
-   "version": "2025.06.10.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.06.10.0000.0001.patch"
-   ],
-   "size": 602146050,
-   "thaliak": true,
-   "from": "2025.04.16.0000.0001",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.06.19.0000.0000.patch",
-   "version": "2025.06.19.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.06.19.0000.0000.patch"
-   ],
-   "size": 21654638,
-   "thaliak": true,
-   "from": "2025.06.10.0000.0000",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.06.19.0000.0001.patch",
-   "version": "2025.06.19.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.06.19.0000.0001.patch"
-   ],
-   "size": 602125698,
-   "thaliak": true,
-   "from": "2025.04.16.0000.0001",
-   "release": "7.2 hotfix"
-  },
-  {
-   "file": "D2025.06.28.0000.0000.patch",
-   "version": "2025.06.28.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.06.28.0000.0000.patch"
-   ],
-   "size": 20308270,
-   "thaliak": true,
-   "from": "2025.06.19.0000.0000",
-   "release": "7.3"
   },
   {
    "file": "D2025.06.28.0000.0001.patch",
@@ -4461,39 +2866,6 @@
    "release": "7.3"
   },
   {
-   "file": "D2025.07.23.0000.0000.patch",
-   "version": "2025.07.23.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.07.23.0000.0000.patch"
-   ],
-   "size": 470579015,
-   "thaliak": true,
-   "from": "2025.07.18.0000.0000",
-   "release": "7.3"
-  },
-  {
-   "file": "D2025.07.24.0000.0000.patch",
-   "version": "2025.07.24.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.07.24.0000.0000.patch"
-   ],
-   "size": 54326428,
-   "thaliak": true,
-   "from": "2025.07.23.0000.0000",
-   "release": "7.3"
-  },
-  {
-   "file": "D2025.07.25.0000.0000.patch",
-   "version": "2025.07.25.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.07.25.0000.0000.patch"
-   ],
-   "size": 75120547,
-   "thaliak": true,
-   "from": "2025.07.24.0000.0000",
-   "release": "7.3"
-  },
-  {
    "file": "D2025.07.25.0000.0001.patch",
    "version": "2025.07.25.0000.0001",
    "urls": [
@@ -4503,72 +2875,6 @@
    "thaliak": true,
    "from": "2025.07.18.0003.0000",
    "release": "7.3"
-  },
-  {
-   "file": "D2025.07.28.0000.0000.patch",
-   "version": "2025.07.28.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.07.28.0000.0000.patch"
-   ],
-   "size": 48820024,
-   "thaliak": true,
-   "from": "2025.07.25.0000.0000",
-   "release": "7.3"
-  },
-  {
-   "file": "D2025.07.29.0000.0000.patch",
-   "version": "2025.07.29.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.07.29.0000.0000.patch"
-   ],
-   "size": 36221438,
-   "thaliak": true,
-   "from": "2025.07.28.0000.0000",
-   "release": "7.3"
-  },
-  {
-   "file": "D2025.07.29.0000.0001.patch",
-   "version": "2025.07.29.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.07.29.0000.0001.patch"
-   ],
-   "size": 56944470,
-   "thaliak": true,
-   "from": "2025.07.25.0000.0000",
-   "release": "7.3"
-  },
-  {
-   "file": "D2025.07.30.0000.0000.patch",
-   "version": "2025.07.30.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.07.30.0000.0000.patch"
-   ],
-   "size": 20533054,
-   "thaliak": true,
-   "from": "2025.07.29.0000.0000",
-   "release": "7.3"
-  },
-  {
-   "file": "D2025.07.30.0000.0001.patch",
-   "version": "2025.07.30.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.07.30.0000.0001.patch"
-   ],
-   "size": 56904702,
-   "thaliak": true,
-   "from": "2025.07.25.0000.0001",
-   "release": "7.3"
-  },
-  {
-   "file": "D2025.08.07.0000.0000.patch",
-   "version": "2025.08.07.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.08.07.0000.0000.patch"
-   ],
-   "size": 31624342,
-   "thaliak": true,
-   "from": "2025.07.30.0000.0000",
-   "release": "7.3 hotfix"
   },
   {
    "file": "D2025.08.07.0000.0001.patch",
@@ -4593,83 +2899,6 @@
    "release": "7.3 hotfix"
   },
   {
-   "file": "D2025.08.19.0000.0001.patch",
-   "version": "2025.08.19.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.08.19.0000.0001.patch"
-   ],
-   "size": 47319574,
-   "thaliak": true,
-   "from": "2025.08.14.0000.0001",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.08.21.0000.0000.patch",
-   "version": "2025.08.21.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.08.21.0000.0000.patch"
-   ],
-   "size": 26760648,
-   "thaliak": true,
-   "from": "2025.08.19.0000.0001",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.08.21.0000.0001.patch",
-   "version": "2025.08.21.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.08.21.0000.0001.patch"
-   ],
-   "size": 47698534,
-   "thaliak": true,
-   "from": "2025.08.14.0000.0001",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.08.22.0000.0000.patch",
-   "version": "2025.08.22.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.08.22.0000.0000.patch"
-   ],
-   "size": 19745382,
-   "thaliak": true,
-   "from": "2025.08.21.0000.0000",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.08.22.0000.0001.patch",
-   "version": "2025.08.22.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.08.22.0000.0001.patch"
-   ],
-   "size": 47721574,
-   "thaliak": true,
-   "from": "2025.08.14.0000.0001",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.09.04.0000.0000.patch",
-   "version": "2025.09.04.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.09.04.0000.0000.patch"
-   ],
-   "size": 19758022,
-   "thaliak": true,
-   "from": "2025.03.07.0000.0000",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.09.09.0000.0000.patch",
-   "version": "2025.09.09.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.09.09.0000.0000.patch"
-   ],
-   "size": 834172369,
-   "thaliak": true,
-   "from": "2025.09.04.0000.0000",
-   "release": "7.3 hotfix"
-  },
-  {
    "file": "D2025.09.09.0000.0001.patch",
    "version": "2025.09.09.0000.0001",
    "urls": [
@@ -4689,72 +2918,6 @@
    "size": 57183896,
    "thaliak": true,
    "from": "2025.09.09.0000.0000",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.09.17.0000.0000.patch",
-   "version": "2025.09.17.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.09.17.0000.0000.patch"
-   ],
-   "size": 47754587,
-   "thaliak": true,
-   "from": "2025.09.11.0000.0001",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.09.24.0000.0000.patch",
-   "version": "2025.09.24.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.09.24.0000.0000.patch"
-   ],
-   "size": 35976350,
-   "thaliak": true,
-   "from": "2025.09.17.0000.0000",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.09.24.0000.0001.patch",
-   "version": "2025.09.24.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.09.24.0000.0001.patch"
-   ],
-   "size": 55844263,
-   "thaliak": true,
-   "from": "2025.09.11.0000.0001",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.09.30.0000.0000.patch",
-   "version": "2025.09.30.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.09.30.0000.0000.patch"
-   ],
-   "size": 28422750,
-   "thaliak": true,
-   "from": "2025.09.24.0000.0000",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.09.30.0000.0001.patch",
-   "version": "2025.09.30.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.09.30.0000.0001.patch"
-   ],
-   "size": 58243927,
-   "thaliak": true,
-   "from": "2025.09.11.0000.0001",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.10.13.0000.0000.patch",
-   "version": "2025.10.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.10.13.0000.0000.patch"
-   ],
-   "size": 19808190,
-   "thaliak": true,
-   "from": "2025.02.19.0000.0000",
    "release": "7.3 hotfix"
   },
   {
@@ -4824,50 +2987,6 @@
    "release": "7.3 hotfix"
   },
   {
-   "file": "D2025.12.03.0000.0001.patch",
-   "version": "2025.12.03.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.12.03.0000.0001.patch"
-   ],
-   "size": 66394735,
-   "thaliak": true,
-   "from": "2025.11.27.0000.0000",
-   "release": "7.3 hotfix"
-  },
-  {
-   "file": "D2025.12.04.0000.0000.patch",
-   "version": "2025.12.04.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.12.04.0000.0000.patch"
-   ],
-   "size": 84624656,
-   "thaliak": true,
-   "from": "2025.12.03.0000.0001",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2025.12.05.0000.0000.patch",
-   "version": "2025.12.05.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.12.05.0000.0000.patch"
-   ],
-   "size": 60115567,
-   "thaliak": true,
-   "from": "2025.12.04.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2025.12.08.0000.0000.patch",
-   "version": "2025.12.08.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2025.12.08.0000.0000.patch"
-   ],
-   "size": 42467452,
-   "thaliak": true,
-   "from": "2025.06.10.0000.0000",
-   "release": "after 7.3"
-  },
-  {
    "file": "D2025.12.08.0000.0001.patch",
    "version": "2025.12.08.0000.0001",
    "urls": [
@@ -4923,28 +3042,6 @@
    "release": "after 7.3"
   },
   {
-   "file": "D2026.01.19.0000.0001.patch",
-   "version": "2026.01.19.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.01.19.0000.0001.patch"
-   ],
-   "size": 51926487,
-   "thaliak": true,
-   "from": "2026.01.09.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.01.20.0000.0000.patch",
-   "version": "2026.01.20.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.01.20.0000.0000.patch"
-   ],
-   "size": 20082071,
-   "thaliak": true,
-   "from": "2026.01.19.0000.0001",
-   "release": "after 7.3"
-  },
-  {
    "file": "D2026.01.20.0000.0001.patch",
    "version": "2026.01.20.0000.0001",
    "urls": [
@@ -4978,28 +3075,6 @@
    "release": "after 7.3"
   },
   {
-   "file": "D2026.02.06.0000.0000.patch",
-   "version": "2026.02.06.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.02.06.0000.0000.patch"
-   ],
-   "size": 369930773,
-   "thaliak": true,
-   "from": "2026.01.30.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.02.09.0000.0000.patch",
-   "version": "2026.02.09.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.02.09.0000.0000.patch"
-   ],
-   "size": 89613647,
-   "thaliak": true,
-   "from": "2026.02.06.0000.0000",
-   "release": "after 7.3"
-  },
-  {
    "file": "D2026.02.09.0000.0001.patch",
    "version": "2026.02.09.0000.0001",
    "urls": [
@@ -5008,28 +3083,6 @@
    "size": 393360111,
    "thaliak": true,
    "from": "2026.01.30.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.02.17.0000.0001.patch",
-   "version": "2026.02.17.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.02.17.0000.0001.patch"
-   ],
-   "size": 47861030,
-   "thaliak": true,
-   "from": "2026.02.09.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.02.18.0000.0000.patch",
-   "version": "2026.02.18.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.02.18.0000.0000.patch"
-   ],
-   "size": 22791158,
-   "thaliak": true,
-   "from": "2026.02.17.0000.0001",
    "release": "after 7.3"
   },
   {
@@ -5052,28 +3105,6 @@
    "size": 20985790,
    "thaliak": true,
    "from": "2026.02.18.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.03.05.0000.0000.patch",
-   "version": "2026.03.05.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.03.05.0000.0000.patch"
-   ],
-   "size": 23488751,
-   "thaliak": true,
-   "from": "2026.02.20.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.03.06.0000.0000.patch",
-   "version": "2026.03.06.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.03.06.0000.0000.patch"
-   ],
-   "size": 20092694,
-   "thaliak": true,
-   "from": "2026.03.05.0000.0000",
    "release": "after 7.3"
   },
   {
@@ -5143,39 +3174,6 @@
    "release": "after 7.3"
   },
   {
-   "file": "D2026.04.13.0000.0000.patch",
-   "version": "2026.04.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.04.13.0000.0000.patch"
-   ],
-   "size": 20596921,
-   "thaliak": true,
-   "from": "2026.04.10.0002.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.04.14.0000.0000.patch",
-   "version": "2026.04.14.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.04.14.0000.0000.patch"
-   ],
-   "size": 83945142,
-   "thaliak": true,
-   "from": "2026.04.13.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.04.15.0000.0000.patch",
-   "version": "2026.04.15.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.04.15.0000.0000.patch"
-   ],
-   "size": 74251650,
-   "thaliak": true,
-   "from": "2026.04.14.0000.0000",
-   "release": "after 7.3"
-  },
-  {
    "file": "D2026.04.15.0000.0001.patch",
    "version": "2026.04.15.0000.0001",
    "urls": [
@@ -5184,28 +3182,6 @@
    "size": 122088572,
    "thaliak": true,
    "from": "2026.04.10.0002.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.04.16.0000.0000.patch",
-   "version": "2026.04.16.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.04.16.0000.0000.patch"
-   ],
-   "size": 52649884,
-   "thaliak": true,
-   "from": "2026.04.15.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.04.17.0000.0000.patch",
-   "version": "2026.04.17.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.04.17.0000.0000.patch"
-   ],
-   "size": 30450179,
-   "thaliak": true,
-   "from": "2026.04.16.0000.0000",
    "release": "after 7.3"
   },
   {
@@ -5253,50 +3229,6 @@
    "release": "after 7.3"
   },
   {
-   "file": "D2026.05.11.0000.0000.patch",
-   "version": "2026.05.11.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.05.11.0000.0000.patch"
-   ],
-   "size": 633160550,
-   "thaliak": true,
-   "from": "2026.05.01.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.05.12.0000.0000.patch",
-   "version": "2026.05.12.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.05.12.0000.0000.patch"
-   ],
-   "size": 114257051,
-   "thaliak": true,
-   "from": "2026.05.11.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.05.13.0000.0000.patch",
-   "version": "2026.05.13.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.05.13.0000.0000.patch"
-   ],
-   "size": 40254586,
-   "thaliak": true,
-   "from": "2026.05.12.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.05.15.0000.0000.patch",
-   "version": "2026.05.15.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.05.15.0000.0000.patch"
-   ],
-   "size": 85454819,
-   "thaliak": true,
-   "from": "2026.05.13.0000.0000",
-   "release": "after 7.3"
-  },
-  {
    "file": "D2026.05.15.0000.0001.patch",
    "version": "2026.05.15.0000.0001",
    "urls": [
@@ -5305,28 +3237,6 @@
    "size": 677181410,
    "thaliak": true,
    "from": "2026.05.01.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.05.18.0000.0000.patch",
-   "version": "2026.05.18.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.05.18.0000.0000.patch"
-   ],
-   "size": 32887225,
-   "thaliak": true,
-   "from": "2026.05.15.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.05.20.0000.0000.patch",
-   "version": "2026.05.20.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.05.20.0000.0000.patch"
-   ],
-   "size": 25050521,
-   "thaliak": true,
-   "from": "2026.05.18.0000.0000",
    "release": "after 7.3"
   },
   {
@@ -5396,39 +3306,6 @@
    "release": "after 7.3"
   },
   {
-   "file": "D2026.07.03.0000.0000.patch",
-   "version": "2026.07.03.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.07.03.0000.0000.patch"
-   ],
-   "size": 783100803,
-   "thaliak": true,
-   "from": "2026.06.18.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.07.06.0000.0000.patch",
-   "version": "2026.07.06.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.07.06.0000.0000.patch"
-   ],
-   "size": 76063125,
-   "thaliak": true,
-   "from": "2026.07.03.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.07.07.0000.0000.patch",
-   "version": "2026.07.07.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.07.07.0000.0000.patch"
-   ],
-   "size": 55900237,
-   "thaliak": true,
-   "from": "2026.07.06.0000.0000",
-   "release": "after 7.3"
-  },
-  {
    "file": "D2026.07.07.0000.0001.patch",
    "version": "2026.07.07.0000.0001",
    "urls": [
@@ -5437,28 +3314,6 @@
    "size": 786047547,
    "thaliak": true,
    "from": "2026.06.18.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.07.13.0000.0001.patch",
-   "version": "2026.07.13.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.07.13.0000.0001.patch"
-   ],
-   "size": 49215802,
-   "thaliak": true,
-   "from": "2026.07.07.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.07.16.0000.0000.patch",
-   "version": "2026.07.16.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.07.16.0000.0000.patch"
-   ],
-   "size": 41096662,
-   "thaliak": true,
-   "from": "2026.07.13.0000.0001",
    "release": "after 7.3"
   },
   {
@@ -5517,28 +3372,6 @@
    "release": "after 7.3"
   },
   {
-   "file": "D2026.08.28.0000.0001.patch",
-   "version": "2026.08.28.0000.0001",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.08.28.0000.0001.patch"
-   ],
-   "size": 66223953,
-   "thaliak": true,
-   "from": "2026.08.19.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.08.31.0000.0000.patch",
-   "version": "2026.08.31.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.08.31.0000.0000.patch"
-   ],
-   "size": 25789705,
-   "thaliak": true,
-   "from": "2026.08.28.0000.0001",
-   "release": "after 7.3"
-  },
-  {
    "file": "D2026.08.31.0000.0001.patch",
    "version": "2026.08.31.0000.0001",
    "urls": [
@@ -5569,17 +3402,6 @@
    "size": 36199365,
    "thaliak": true,
    "from": "2026.09.01.0000.0000",
-   "release": "after 7.3"
-  },
-  {
-   "file": "D2026.09.29.0000.0000.patch",
-   "version": "2026.09.29.0000.0000",
-   "urls": [
-    "http://patch-dl.ffxiv.com/game/4e9a232b/D2026.09.29.0000.0000.patch"
-   ],
-   "size": 20561897,
-   "thaliak": true,
-   "from": "2026.09.15.0000.0000",
    "release": "after 7.3"
   },
   {
