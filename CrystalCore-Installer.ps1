@@ -47,7 +47,17 @@ param(
     [string]$InstallDir = (Get-Location).Path,
     [string]$WorkDir,
     [string]$BaseInstall,
-    [switch]$NoPause
+    [switch]$NoPause,
+    # the game version to patch to (default: chosen in the window, CrystalCore's reference
+    # 2013.08.09.0001.0000 preselected; with -NoUI, that reference)
+    [string]$Version,
+    [switch]$NoUI,
+    # download the disc image and the patches (to -WorkDir), checked, and install nothing: for an
+    # archive. With -All, every patch in the list, not only those up to the version chosen
+    [switch]$DownloadOnly,
+    [switch]$All,
+    # the patch list: patches\game.json beside this script, else CrystalCore's on GitHub
+    [string]$PatchList
 )
 
 $ErrorActionPreference = "Stop"
@@ -76,8 +86,11 @@ $Patches = @(
        Size = 1104799732; Sha1 = "57e3bcd92c0d57883e4ef277e113ecb0aac247cb" }
 )
 $BaseVersion = "2013.06.29.0004.0000"
-$FinalVersion = "2013.08.09.0001.0000"
+# CrystalCore's reference: the build the port is of, its ffxiv.exe checked by SHA-1
+$ReferenceVersion = "2013.08.09.0001.0000"
+$FinalVersion = $ReferenceVersion
 $ExeSha1 = "dcd3d87c545c20fab5ad6f7039f4e3ca3cb02948"
+$PatchListUrl = "https://raw.githubusercontent.com/zeruth/CrystalCore-Client/2013.08.09.672261/patches/game.json"
 $LaunchArgs = '"DEV.TestSID=0" "DEV.UseSqPack=1" "DEV.DataPathType=1" "DEV.LobbyHost01=127.0.0.1" ' +
               '"DEV.LobbyPort01=54994" "DEV.LobbyHost02=127.0.0.1" "DEV.LobbyPort02=54994" ' +
               '"SYS.Region=3" "language=1" "ver=2013.08.09.0001.0000"'
@@ -448,6 +461,33 @@ function Get-Download($item, $dir, $algo, $hash) {
     return $path
 }
 
+# a patch from the list: from its first URL that answers (Square Enix's CDN first), checked by its
+# SHA-1 where the list has one, else by its size (the ZiPatch applier checks every chunk's CRC too)
+function Get-Patch($p, $dir) {
+    $path = Join-Path $dir $p.file
+    $have = if (Test-Path -LiteralPath $path) { (Get-Item -LiteralPath $path).Length } else { 0 }
+    if ($have -ne $p.size) {
+        $done = $false
+        foreach ($url in $p.urls) {
+            try {
+                Note ("downloading {0} ({1}) from {2}" -f $p.file, (Format-Size $p.size), ([Uri]$url).Host)
+                [CrystalCoreInstaller.Fetch]::Download($url, $path, [long]$p.size, (New-Progress "Downloading $($p.file)"))
+                Write-Progress -Id 1 -Activity "Downloading $($p.file)" -Completed
+                $done = $true
+                break
+            } catch { Note "  $(([Uri]$url).Host): $($_.Exception.Message)" }
+        }
+        if (-not $done) { throw "$($p.file): no source answered" }
+    } else { Note "have $($p.file)" }
+    if ($p.sha1) {
+        $got = [CrystalCoreInstaller.Fetch]::Hash($path, "SHA1", (New-Progress "Checking $($p.file) (SHA1)"))
+        Write-Progress -Id 1 -Activity "Checking $($p.file)" -Completed
+        if ($got -ne $p.sha1) { throw "$($p.file): SHA1 $got, expected $($p.sha1) (delete it to download again)" }
+        Note "SHA1 ok"
+    }
+    return $path
+}
+
 # the install folder holding game\ffxivgame.ver: the one asked for, or where the disc's installer
 # put it (its own default, or a SquareEnix folder under the one chosen)
 function Find-Install {
@@ -459,9 +499,199 @@ function Find-Install {
     return $null
 }
 
+# ---- the patch list and the version picker --------------------------------------------------------
+# patches\game.json (tools/patches/patchlist.py): every base-game patch from the disc on, in version
+# order, each with its file, size, SHA-1 where known, and URLs (Square Enix's CDN first)
+function Get-PatchList {
+    $local = Join-Path (Split-Path -Parent $PSCommandPath) "patches\game.json"
+    $src = if ($PatchList) { $PatchList } elseif (Test-Path -LiteralPath $local) { $local } else { $PatchListUrl }
+    try {
+        $text = if ($src -match '^https?://') {
+            (New-Object Net.WebClient).DownloadString($src)
+        } else { Get-Content -LiteralPath $src -Raw }
+        $list = $text | ConvertFrom-Json
+        Note "patch list: $src ($(@($list.patches).Count) patches, latest $($list.latest))"
+        return $list
+    } catch {
+        Note "patch list unavailable (${src}: $($_.Exception.Message)); the reference build's two patches only"
+        return [pscustomobject]@{
+            latest = $ReferenceVersion
+            patches = @($Patches | ForEach-Object {
+                [pscustomobject]@{ file = $_.Name; version = $_.Name.Substring(1, 20); size = $_.Size
+                                   sha1 = $_.Sha1; urls = @($_.Url) } })
+        }
+    }
+}
+
+# the patches from the disc's version up to $target, in order
+function Get-UpdatePath($list, [string]$target) {
+    @($list.patches | Where-Object { $_.version -gt $BaseVersion -and $_.version -le $target })
+}
+
+# a window: every version, CrystalCore's reference marked, and the update path to the one picked
+function Show-Picker($list) {
+    Add-Type -AssemblyName System.Windows.Forms, System.Drawing
+    [Windows.Forms.Application]::EnableVisualStyles()
+    $form = New-Object Windows.Forms.Form -Property @{
+        Text = "CrystalCore Installer"; Size = New-Object Drawing.Size(860, 710); StartPosition = "CenterScreen"
+        Font = New-Object Drawing.Font("Segoe UI", 9) }
+    $head = New-Object Windows.Forms.Label -Property @{
+        Location = New-Object Drawing.Point(12, 10); Size = New-Object Drawing.Size(820, 44)
+        Text = "CrystalCore's reference: game $ReferenceVersion (build 672261), the ARR beta client the port is of.`n" +
+               "Pick a version: its update path from the retail disc (game $BaseVersion) is shown below." }
+    $view = New-Object Windows.Forms.ListView -Property @{
+        Location = New-Object Drawing.Point(12, 60); Size = New-Object Drawing.Size(820, 330); View = "Details"
+        FullRowSelect = $true; MultiSelect = $false; HideSelection = $false }
+    [void]$view.Columns.Add("Version", 150); [void]$view.Columns.Add("Release", 210)
+    [void]$view.Columns.Add("Patch file", 200); [void]$view.Columns.Add("Size", 80); [void]$view.Columns.Add("Source", 110)
+    [void]$view.Columns.Add("", 160)
+    $selected = $null
+    foreach ($p in $list.patches) {
+        if ($p.version -le $BaseVersion) { continue }
+        $item = New-Object Windows.Forms.ListViewItem($p.version)
+        # (the release it belongs to, betas and early access included: tools/patches/patchlist.py)
+        $rel = if ($p.release) { $p.release } elseif ($p.version -like "2013.08.09.*") { "Beta phase 4" } else { "" }
+        [void]$item.SubItems.Add($rel)
+        if ($rel -match 'Beta|pre-release|early access') { $item.ForeColor = [Drawing.Color]::DarkMagenta }
+        [void]$item.SubItems.Add($p.file)
+        [void]$item.SubItems.Add((Format-Size $p.size))
+        $srcs = @($p.urls | ForEach-Object { if ($_ -match 'ffxiv\.com') { "Square Enix" } elseif ($_ -match 'archive\.org') { "archive.org" } })
+        [void]$item.SubItems.Add((($srcs | Select-Object -Unique) -join ", "))
+        if ($p.version -eq $ReferenceVersion) {
+            [void]$item.SubItems.Add("CrystalCore")
+            $item.Font = New-Object Drawing.Font($form.Font, [Drawing.FontStyle]::Bold)
+            $selected = $item
+        } elseif ($p.version -eq $list.latest) {
+            [void]$item.SubItems.Add("latest")
+        } else { [void]$item.SubItems.Add("") }
+        if (-not $p.urls) { $item.ForeColor = [Drawing.Color]::Gray }
+        $item.Tag = $p.version
+        [void]$view.Items.Add($item)
+    }
+    # (each column as wide as its widest cell or its header, whichever is wider)
+    foreach ($col in $view.Columns) {
+        $col.AutoResize([Windows.Forms.ColumnHeaderAutoResizeStyle]::ColumnContent)
+        $content = $col.Width
+        $col.AutoResize([Windows.Forms.ColumnHeaderAutoResizeStyle]::HeaderSize)
+        $col.Width = [math]::Max($content, $col.Width) + 8
+    }
+    # (and the window wide enough for them all, no column cut off)
+    $need = ($view.Columns | Measure-Object -Property Width -Sum).Sum + [Windows.Forms.SystemInformation]::VerticalScrollBarWidth + 6
+    if ($need -gt $view.Width) {
+        $form.Width += $need - $view.Width
+        $view.Width = $need
+    }
+    $pathBox = New-Object Windows.Forms.TextBox -Property @{
+        Location = New-Object Drawing.Point(12, 400); Size = New-Object Drawing.Size(820, 150); Multiline = $true
+        ReadOnly = $true; ScrollBars = "Vertical"; Font = New-Object Drawing.Font("Consolas", 9) }
+    # the two folders, each with a Browse button: where the game is installed, and where the disc
+    # image and the patches are downloaded (an archive: disc\ and patches\game\ under it)
+    $folderRow = {
+        param([int]$y, [string]$label, [string]$value)
+        $l = New-Object Windows.Forms.Label -Property @{ Text = $label; Location = New-Object Drawing.Point(12, ($y + 4))
+            Size = New-Object Drawing.Size(110, 20) }
+        $t = New-Object Windows.Forms.TextBox -Property @{ Text = $value; Location = New-Object Drawing.Point(124, $y)
+            Size = New-Object Drawing.Size(610, 24) }
+        $b = New-Object Windows.Forms.Button -Property @{ Text = "Browse..."; Location = New-Object Drawing.Point(740, ($y - 1))
+            Size = New-Object Drawing.Size(92, 26) }
+        $b.Add_Click({
+            $d = New-Object Windows.Forms.FolderBrowserDialog -Property @{ SelectedPath = $t.Text; ShowNewFolderButton = $true }
+            if ($d.ShowDialog() -eq "OK") { $t.Text = $d.SelectedPath }
+        }.GetNewClosure())
+        $form.Controls.AddRange(@($l, $t, $b))
+        return $t
+    }
+    $installBox = & $folderRow 560 "Install folder:" $InstallDir
+    $downloadBox = & $folderRow 592 "Download folder:" $WorkDir
+    $ok = New-Object Windows.Forms.Button -Property @{ Text = "Install"; Location = New-Object Drawing.Point(740, 630)
+        Size = New-Object Drawing.Size(92, 30); DialogResult = "OK" }
+    # (or download only: the disc image and the path's patches, nothing installed; with every
+    # version's patches when "every version" is ticked)
+    $dl = New-Object Windows.Forms.Button -Property @{ Text = "Download only (no install)"; Location = New-Object Drawing.Point(124, 630)
+        Size = New-Object Drawing.Size(190, 30); DialogResult = "Yes" }
+    $allBox = New-Object Windows.Forms.CheckBox -Property @{ Text = "every version's patches, not only the path"
+        Location = New-Object Drawing.Point(324, 635); Size = New-Object Drawing.Size(300, 22); Checked = [bool]$All }
+    $cancel = New-Object Windows.Forms.Button -Property @{ Text = "Cancel"; Location = New-Object Drawing.Point(640, 630)
+        Size = New-Object Drawing.Size(92, 30); DialogResult = "Cancel" }
+    $form.AcceptButton = $ok; $form.CancelButton = $cancel
+    $show = {
+        if ($view.SelectedItems.Count -eq 0) { $pathBox.Text = ""; $ok.Enabled = $false; return }
+        $target = $view.SelectedItems[0].Tag
+        $path = Get-UpdatePath $list $target
+        $total = ($path | Measure-Object -Property size -Sum).Sum
+        $missing = @($path | Where-Object { -not $_.urls })
+        # (the download in full: the disc image under the patches, unless it is already here)
+        $haveDisc = Test-Path -LiteralPath (Join-Path (Join-Path $downloadBox.Text "disc") $Disc.Name)
+        $discSize = if ($haveDisc) { 0 } else { $Disc.Size }
+        $lines = @("Update path: disc $BaseVersion -> $target, $($path.Count) patches",
+                   ("  disc image {0}{1} + patches {2} = {3} to download" -f (Format-Size $Disc.Size),
+                    $(if ($haveDisc) { " (already downloaded)" } else { "" }), (Format-Size $total),
+                    (Format-Size ($discSize + $total))))
+        if ($missing) { $lines += "NOT AVAILABLE from any source: $(($missing | ForEach-Object file) -join ', ')" }
+        $lines += ($path | ForEach-Object { "  {0,-30} {1,10}  {2,-26} {3}" -f $_.file, (Format-Size $_.size), $_.release,
+                                            $(if ($_.sha1) { "sha1 " + $_.sha1.Substring(0, 12) } else { "size check" }) })
+        $pathBox.Text = $lines -join "`r`n"
+        $ok.Enabled = -not $missing
+    }
+    $view.Add_SelectedIndexChanged($show)
+    $downloadBox.Add_TextChanged($show)
+    $form.Controls.AddRange(@($head, $view, $pathBox, $dl, $allBox, $ok, $cancel))
+    if ($selected) { $selected.Selected = $true; $selected.EnsureVisible() }
+    & $show
+    $answer = $form.ShowDialog()
+    if ($answer -eq "Cancel" -or $view.SelectedItems.Count -eq 0) { return $null }
+    $script:InstallDir = [IO.Path]::GetFullPath($installBox.Text)
+    $script:WorkDir = [IO.Path]::GetFullPath($downloadBox.Text)
+    if ($answer -eq "Yes") {
+        $script:DownloadOnly = $true
+        $script:All = $allBox.Checked
+    }
+    return $view.SelectedItems[0].Tag
+}
+
+# -DownloadOnly: the disc image and the patches, each checked, into -WorkDir; nothing installed
+function Get-Archive($list, $patches) {
+    New-Item -ItemType Directory -Force (Join-Path $WorkDir "disc"), (Join-Path $WorkDir "patches\game") | Out-Null
+    Step "the retail disc"
+    Get-Download $Disc (Join-Path $WorkDir "disc") "MD5" $Disc.Md5 | Out-Null
+    $total = ($patches | Measure-Object -Property size -Sum).Sum
+    $i = 0
+    foreach ($p in $patches) {
+        $i++
+        Step ("[{0}/{1}] {2}" -f $i, $patches.Count, $p.file)
+        if (-not $p.urls) { Note "not available from any source; skipped"; continue }
+        Get-Patch $p (Join-Path $WorkDir "patches\game") | Out-Null
+    }
+    Write-Host ""
+    Write-Host ("Done: the disc image ({0}) and {1} patches ({2}), {3} in all, in {4}" -f (Format-Size $Disc.Size),
+                $patches.Count, (Format-Size $total), (Format-Size ($Disc.Size + $total)), $WorkDir) -ForegroundColor Green
+}
+
 # ---- the steps ------------------------------------------------------------------------------------
 function Install {
-    Write-Host "FINAL FANTASY XIV: A Realm Reborn beta client, build 672261, into $InstallDir"
+    # the version to install, and the patches that reach it from the disc
+    $list = Get-PatchList
+    $target = if ($Version) { $Version } elseif ($NoUI) { $ReferenceVersion } else { Show-Picker $list }
+    if (-not $target) { throw "no version chosen" }
+    $script:FinalVersion = $target
+    $Patches = @(Get-UpdatePath $list $target)
+    if ($target -ne $BaseVersion -and (-not $Patches -or $Patches[-1].version -ne $target)) {
+        throw "no patch in the list reaches $target"
+    }
+    if ($DownloadOnly) {
+        $want = if ($All) { @($list.patches | Where-Object { $_.version -gt $BaseVersion }) } else { $Patches }
+        Write-Host ("Downloading only: the disc and {0} patches{1}, into {2}" -f $want.Count,
+                    $(if ($All) { " (every version)" } else { " up to $target" }), $WorkDir)
+        Get-Archive $list $want
+        return
+    }
+    $unavailable = @($Patches | Where-Object { -not $_.urls })
+    if ($unavailable) { throw "not available from any source: $(($unavailable | ForEach-Object file) -join ', ')" }
+    Write-Host ("FINAL FANTASY XIV: A Realm Reborn, game {0}{1}, into {2}" -f $target,
+                $(if ($target -eq $ReferenceVersion) { " (CrystalCore's reference, build 672261)" } else { "" }), $InstallDir)
+    $patchBytes = ($Patches | Measure-Object -Property size -Sum).Sum
+    Note ("{0} patches from the disc's {1}: disc image {2} + patches {3} = {4} to download" -f $Patches.Count,
+          $BaseVersion, (Format-Size $Disc.Size), (Format-Size $patchBytes), (Format-Size ($Disc.Size + $patchBytes)))
     New-Item -ItemType Directory -Force $InstallDir, (Join-Path $WorkDir "disc"), (Join-Path $WorkDir "patches\game") | Out-Null
 
     # 1, 2: the base install
@@ -499,43 +729,50 @@ function Install {
     $version = (Get-Content -LiteralPath (Join-Path $gameDir "ffxivgame.ver") -Raw).Trim()
     Note "game version $version"
 
-    # 3, 4: the patches, in order
+    # 3, 4: the patches, in order: each applied to the version before it (the version file says so
+    # first), then the version file set to the patch's own
     if ($version -eq $FinalVersion) {
-        Step "already patched to $FinalVersion"
+        Step "already at $FinalVersion"
+    } elseif ($version -gt $FinalVersion) {
+        throw "the install is at game $version, past ${FinalVersion}: start from a fresh disc install"
     } else {
-        if ($version -ne $BaseVersion -and $version -ne $Patches[0].Name.Substring(1, 20)) {
-            throw "the install is at game $version; expected the disc's $BaseVersion"
-        }
+        $prev = $BaseVersion
         foreach ($p in $Patches) {
-            $v = $p.Name.Substring(1, $p.Name.Length - ".patch".Length - 1)
+            $v = $p.version
             $now = (Get-Content -LiteralPath (Join-Path $gameDir "ffxivgame.ver") -Raw).Trim()
-            if ($now -eq $v) { Note "$($p.Name) already applied"; continue }
-            Step "patch $($p.Name)"
-            $path = Get-Download $p (Join-Path $WorkDir "patches\game") "SHA1" $p.Sha1
-            $stats = [CrystalCoreInstaller.ZiPatch]::Apply($gameDir, $path, (New-Progress "Applying $($p.Name)"))
-            Write-Progress -Id 1 -Activity "Applying $($p.Name)" -Completed
+            if ($now -ge $v) { Note "$($p.file) already applied"; $prev = $v; continue }
+            if ($now -ne $prev) { throw "the install is at game $now; $($p.file) applies to $prev" }
+            Step "patch $($p.file)"
+            $path = Get-Patch $p (Join-Path $WorkDir "patches\game")
+            $stats = [CrystalCoreInstaller.ZiPatch]::Apply($gameDir, $path, (New-Progress "Applying $($p.file)"))
+            Write-Progress -Id 1 -Activity "Applying $($p.file)" -Completed
             # (the version file is the patch's name: the launcher writes it from the patch list)
             [IO.File]::WriteAllText((Join-Path $gameDir "ffxivgame.ver"), $v)
             Note "applied: $stats"
             Note "game version $v"
+            $prev = $v
         }
     }
 
-    # 5: checked
+    # 5: checked: the version, and for CrystalCore's reference ffxiv.exe's SHA-1
     Step "checking the result"
     $version = (Get-Content -LiteralPath (Join-Path $gameDir "ffxivgame.ver") -Raw).Trim()
     if ($version -ne $FinalVersion) { throw "ffxivgame.ver is $version, not $FinalVersion" }
-    $sha = [CrystalCoreInstaller.Fetch]::Hash((Join-Path $gameDir "ffxiv.exe"), "SHA1", (New-Progress "Checking ffxiv.exe"))
-    Write-Progress -Id 1 -Activity "Checking ffxiv.exe" -Completed
-    if ($sha -ne $ExeSha1) { throw "ffxiv.exe SHA-1 $sha, expected $ExeSha1" }
-    Write-Host "    ffxivgame.ver $version, ffxiv.exe $sha" -ForegroundColor Green
+    if ($FinalVersion -eq $ReferenceVersion) {
+        $sha = [CrystalCoreInstaller.Fetch]::Hash((Join-Path $gameDir "ffxiv.exe"), "SHA1", (New-Progress "Checking ffxiv.exe"))
+        Write-Progress -Id 1 -Activity "Checking ffxiv.exe" -Completed
+        if ($sha -ne $ExeSha1) { throw "ffxiv.exe SHA-1 $sha, expected $ExeSha1" }
+        Write-Host "    ffxivgame.ver $version, ffxiv.exe $sha (CrystalCore's reference)" -ForegroundColor Green
+    } else {
+        Write-Host "    ffxivgame.ver $version" -ForegroundColor Green
+    }
 
     Write-Host ""
-    Write-Host "Done. The beta client is at $gameDir." -ForegroundColor Green
+    Write-Host "Done. Game $FinalVersion is at $gameDir." -ForegroundColor Green
     Write-Host "It runs straight from ffxiv.exe (the boot updater never run), with the launcher's arguments"
     Write-Host "and the lobby on localhost:"
     Write-Host "    cd `"$gameDir`""
-    Write-Host "    .\ffxiv.exe $LaunchArgs"
+    Write-Host ("    .\ffxiv.exe " + ($LaunchArgs -replace 'ver=[\d.]+', "ver=$FinalVersion"))
 }
 
 $failed = $false
