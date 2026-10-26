@@ -1,5 +1,16 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_010725f0 */
+uint F_010725f0(void)
+{
+  GEN_ENTER(0x10725f0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  gen_imp_InitializeCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x14a0aa4));
+  uVar1 = F_00c47de6(((code *)REFP(0x107c340)));
+  return uVar1;
+}
+
 /* ref: FUN_01072610 */
 unsigned int F_01072610(void)
 {
@@ -3687,15 +3698,6 @@ unsigned int F_01075e20(void)
   GEN_ENTER(0x1075e20u, 0u, 0u, 0u, 0u);
   F_00d92c40(&REFG(undefined, 0x15d9f58),"hkSetunsignedinthkContainerHeapAllocatorhkMapOperationsunsignedint",0,
                0x10,0,0,0,0,&REFG(undefined * PTR32, 0x1139db4),2,0,0,0,0);
-  return 0;
-}
-
-/* ref: FUN_01075e50 */
-unsigned int F_01075e50(void)
-{
-  GEN_ENTER(0x1075e50u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15d9f88),"hkRefCountedPropertiesEntry",0,8,0,0,0,0,&REFG(undefined * PTR32, 0x1139eb8),3,0,0,
-               0,0);
   return 0;
 }
 

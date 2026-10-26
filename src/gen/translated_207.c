@@ -1,5 +1,73 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Application::Network::WorkDefinitions::SyncHpParams::vf17 */
+byte F_010307a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x10307a0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  uint * param_2 = (uint *)(uintptr_t)gen_a2;
+  __declspec(align(16)) undefined1 gen_frame[0x50];
+  char cVar1;
+  undefined * pSVar2;
+  int * piVar3;
+  uint uVar4;
+  char * pcVar5;
+  int iVar6;
+  uint uVar7;
+  uint uVar8;
+  ulonglong uVar9;
+  
+  (*(uint *)(gen_frame + 0x48)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x4c);
+  piVar3 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*(int *)this + 4))(this)));
+  uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 4))(piVar3);
+  F_00c472af(((char *)(gen_frame + 0x8)),0x40,"\"classid\":%llu",uVar4 & 0xffff,0);
+  pcVar5 = ((char *)(gen_frame + 0x8));
+  do {
+    cVar1 = *pcVar5;
+    pcVar5 = pcVar5 + 1;
+  } while (cVar1 != '\0');
+  iVar6 = F_00c4b813((char *)(param_1 + 1),((char *)(gen_frame + 0x8)),(gen_size32)(pcVar5 + (-1 - (int)(((char *)(gen_frame + 0x8)) + 1))));
+  if (iVar6 != 0) {
+    F_00c47745((*(uint *)(gen_frame + 0x48)) ^ (uint)(uint)(gen_frame + 0x4c));
+    return 0;
+  }
+  uVar4 = F_00c51da0((char *)(param_1 + 1),0x5b);
+  uVar7 = F_00fb9a80(uVar4,0x5b,0x5d);
+  (*(int *)(gen_frame + 0x0)) = 0;
+  pSVar2 = this;
+  while( true ) {
+    (*(undefined * PTR32 *)(gen_frame + 0x4)) = pSVar2 + 4;
+    uVar8 = uVar4 + 3;
+    uVar4 = F_00c51da0(uVar8,0x22);
+    if ((uVar7 < uVar8) || (uVar7 < uVar4)) break;
+    uVar9 = F_00e505e0(uVar8);
+    *(int *)(*(undefined * PTR32 *)(gen_frame + 0x4)) = (int)uVar9;
+    (*(int *)(gen_frame + 0x0)) = (*(int *)(gen_frame + 0x0)) + 1;
+    pSVar2 = (*(undefined * PTR32 *)(gen_frame + 0x4));
+    if (3 < (*(int *)(gen_frame + 0x0))) {
+LAB_0103088a: ;
+      uVar7 = F_00c51da0(uVar4 + 4,0x22);
+      uVar9 = F_00e505e0(uVar4 + 4);
+      *(int *)(this + 0x14) = (int)uVar9;
+      uVar4 = F_00c51da0(uVar7 + 3,0x22);
+      uVar9 = F_00e505e0(uVar7 + 3);
+      *(int *)(this + 0x18) = (int)uVar9;
+      uVar7 = F_00c51da0(uVar4 + 3,0x22);
+      uVar9 = F_00e505e0(uVar4 + 3);
+      *(int *)(this + 0x1c) = (int)uVar9;
+      if (param_2 != (uint *)0x0) {
+        uVar4 = F_00c51da0(uVar7,0x7d);
+        *param_2 = uVar4;
+      }
+      F_00c47745((*(uint *)(gen_frame + 0x48)) ^ (uint)(uint)(gen_frame + 0x4c));
+      return 1;
+    }
+  }
+  uVar4 = uVar7 - 1;
+  goto LAB_0103088a;
+}
+
 /* ref: Application::Network::WorkDefinitions::SyncHpParams::vf10 */
 uint F_01030900(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -17630,16 +17698,5 @@ uint F_01045c90(unsigned int gen_a0)
   uVar1 = *(uint *)(param_1 + 0x24);
   *(uint *)(uVar1 + 0x90) = uVar1 + 0x68;
   return uVar1;
-}
-
-/* ref: FUN_01045cb0 */
-unsigned int F_01045cb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x1045cb0u, gen_a0, gen_a1, gen_a2, 0u);
-  int param_1 = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  F_010451d0(*(undefined * PTR32 *)(param_1 + 0x24),param_1,param_2,param_3);
-  return 0;
 }
 

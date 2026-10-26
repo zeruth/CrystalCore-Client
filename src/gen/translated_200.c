@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00efa2c0 */
+uint F_00efa2c0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xefa2c0u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 - 0x1e5;
+}
+
 /* ref: Application::Network::WorkDefinitions::Weather_TypeInfo::vf6 */
 uint F_00efa2d0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -32085,14 +32093,5 @@ uint F_00f35c10(unsigned int gen_a0)
   GEN_ENTER(0xf35c10u, gen_a0, 0u, 0u, 0u);
   int param_1 = (int)gen_a0;
   return param_1 - 0x3e9;
-}
-
-/* ref: Application::Network::WorkDefinitions::ClientSelectData_TypeInfo::vf6 */
-uint F_00f35c20(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xf35c20u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return (uint)(&REFG(undefined * PTR32, 0x136a498))[(int)(param_1)];
 }
 

@@ -18381,8 +18381,8 @@ uint F_00d6ceb0(unsigned int gen_a0, unsigned int gen_a1)
   char cVar2;
   bool bVar3;
   char * pcVar4;
-  float fVar5;
-  double dVar6;
+  double dVar5;
+  float fVar6;
   
   bVar1 = *(byte *)((int)this + 0x19);
   pcVar4 = (char *)F_00d6cba0(&(*(char *)(gen_frame + 0x21b)),(uint)bVar1);
@@ -18408,8 +18408,8 @@ LAB_00d6cf1d: ;
   else {
     bVar3 = false;
   }
-  dVar6 = F_00d6cc30((uint)bVar1);
-  if ((double)(*(float *)(gen_frame + 0x214)) < dVar6) {
+  dVar5 = F_00d6cc30((uint)bVar1);
+  if ((double)(*(float *)(gen_frame + 0x214)) < dVar5) {
     F_00da0a80(((undefined1 *)(gen_frame + 0x204)),((undefined1 *)(gen_frame + 0x0)),0x200);
     F_00d9fe80(((undefined1 *)(gen_frame + 0x204)),
                  "Quantization may be limiting translation quality.  If artifacts are visible, try increasing the number of translation quantization bits."
@@ -18419,8 +18419,8 @@ LAB_00d6cf1d: ;
                "Animation\\SplineCompressed\\hkaSplineCompressedAnimation.cpp",0x4f);
     F_00d9fda0(((undefined1 *)(gen_frame + 0x204)));
   }
-  dVar6 = F_00d6cc30((uint)*(byte *)((int)this + 0x1a));
-  if ((double)*(float *)((int)this + 8) < dVar6) {
+  dVar5 = F_00d6cc30((uint)*(byte *)((int)this + 0x1a));
+  if ((double)*(float *)((int)this + 8) < dVar5) {
     F_00da0a80(((undefined1 *)(gen_frame + 0x204)),((undefined1 *)(gen_frame + 0x0)),0x200);
     F_00d9fe80(((undefined1 *)(gen_frame + 0x204)),
                  "Quantization may be limiting scale quality.  If artifacts are visible, try increasing the number of scale quantization bits."
@@ -18430,8 +18430,8 @@ LAB_00d6cf1d: ;
                "Animation\\SplineCompressed\\hkaSplineCompressedAnimation.cpp",0x54);
     F_00d9fda0(((undefined1 *)(gen_frame + 0x204)));
   }
-  dVar6 = F_00d6cc30((uint)*(byte *)((int)this + 0x1b));
-  if ((double)*(float *)((int)this + 0xc) < dVar6) {
+  dVar5 = F_00d6cc30((uint)*(byte *)((int)this + 0x1b));
+  if ((double)*(float *)((int)this + 0xc) < dVar5) {
     F_00da0a80(((undefined1 *)(gen_frame + 0x204)),((undefined1 *)(gen_frame + 0x0)),0x200);
     F_00d9fe80(((undefined1 *)(gen_frame + 0x204)),
                  "Quantization may be limiting float quality.  If artifacts are visible, try increasing the number of float quantization bits."
@@ -18442,8 +18442,8 @@ LAB_00d6cf1d: ;
     F_00d9fda0(((undefined1 *)(gen_frame + 0x204)));
   }
   (*(float *)(gen_frame + 0x214)) = *(float *)this;
-  fVar5 = F_00d6cbd0((uint)*(byte *)((int)this + 0x18));
-  if ((float10)(*(float *)(gen_frame + 0x214)) < (float10)fVar5 * (float10)*(float *)&REFG(undefined, 0x11373f4)) {
+  fVar6 = F_00d6cbd0((uint)*(byte *)((int)this + 0x18));
+  if ((float10)(*(float *)(gen_frame + 0x214)) < (float10)fVar6 * (float10)*(float *)&REFG(undefined, 0x11373f4)) {
     F_00da0a80(((undefined1 *)(gen_frame + 0x204)),((undefined1 *)(gen_frame + 0x0)),0x200);
     F_00d9fe80(((undefined1 *)(gen_frame + 0x204)),
                  "Quantization may be limiting rotation quality.  If artifacts are visible, try increasing the number of rotation quantization bits."

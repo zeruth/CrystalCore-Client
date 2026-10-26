@@ -7441,6 +7441,58 @@ uint F_00d919e0(unsigned int gen_a0)
   return (uint)in_EAX;
 }
 
+/* ref: FUN_00d91a80 */
+uint F_00d91a80(unsigned int gen_a0)
+{
+  GEN_ENTER(0xd91a80u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  LPVOID in_EAX = 0;
+  uint uVar2;
+  LPVOID pvVar3;
+  LPVOID extraout_EAX = 0;
+  int iVar4;
+  
+  iVar1 = REFG(int, 0x15d9a84);
+  if (*(short *)((int)this + 4) != 0) {
+    if (*(short *)((int)this + 6) == 1) {
+      *(undefined2 *)((int)this + 6) = 0;
+      uVar2 = (*((code *)GEN_TOP(**(undefined4 * PTR32 *)this)))(this,1);
+      return uVar2;
+    }
+    pvVar3 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    if ((*(int *)(iVar1 + 8) == 1) && (*(int *)((int)pvVar3 + 0x3c) != 0x23df4554)) {
+      pvVar3 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+      if (*(int *)((int)pvVar3 + 0x3c) == 0x23df4554) {
+        *(int *)(iVar1 + 0xc) = *(int *)(iVar1 + 0xc) + 1;
+      }
+      else {
+        gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)(iVar1 + 0x1c));
+        *(undefined4 *)(iVar1 + 0xc) = 1;
+        *(undefined4 *)((int)pvVar3 + 0x3c) = 0x23df4554;
+      }
+      iVar4 = (int)*(short *)((int)this + 6);
+      *(short *)((int)this + 6) = *(short *)((int)this + 6) + -1;
+      in_EAX = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+      *(int *)(iVar1 + 0xc) = *(int *)(iVar1 + 0xc) + -1;
+      if (*(int *)(iVar1 + 0xc) < 1) {
+        *(undefined4 *)((int)in_EAX + 0x3c) = 0;
+        gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)(iVar1 + 0x1c));
+        in_EAX = extraout_EAX;
+      }
+    }
+    else {
+      iVar4 = (int)*(short *)((int)this + 6);
+      in_EAX = (LPVOID)(iVar4 + -1);
+      *(short *)((int)this + 6) = (short)in_EAX;
+    }
+    if (iVar4 == 1) {
+      in_EAX = (LPVOID)(*((code *)GEN_TOP(**(undefined4 * PTR32 *)this)))(this,1);
+    }
+  }
+  return (uint)in_EAX;
+}
+
 /* ref: FUN_00d91b50 */
 unsigned int F_00d91b50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -12890,31 +12942,6 @@ uint F_00d96f70(unsigned int gen_a0)
   in_ecx[2] = 0;
   in_ecx[3] = 0;
   in_ecx[4] = 0;
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_00d96f90 */
-uint F_00d96f90(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xd96f90u, gen_a0, gen_a1, 0u, 0u);
-  int * in_ecx = (int *)(uintptr_t)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  int iVar1;
-  undefined4 * puVar2;
-  undefined4 * puVar3;
-  
-  puVar2 = (undefined4 *)(in_ecx[2] * 0x80 + *in_ecx);
-  puVar3 = param_2;
-  for (iVar1 = 0x20; iVar1 != 0; iVar1 = iVar1 + -1) {
-    *puVar3 = *puVar2;
-    puVar2 = puVar2 + 1;
-    puVar3 = puVar3 + 1;
-  }
-  in_ecx[2] = in_ecx[2] + 1;
-  in_ecx[4] = in_ecx[4] + -1;
-  if (in_ecx[2] == in_ecx[1]) {
-    in_ecx[2] = 0;
-  }
   return (uint)in_ecx;
 }
 

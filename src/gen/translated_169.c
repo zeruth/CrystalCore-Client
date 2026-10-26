@@ -1,5 +1,30 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00d96f90 */
+uint F_00d96f90(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xd96f90u, gen_a0, gen_a1, 0u, 0u);
+  int * in_ecx = (int *)(uintptr_t)gen_a0;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
+  int iVar1;
+  undefined4 * puVar2;
+  undefined4 * puVar3;
+  
+  puVar2 = (undefined4 *)(in_ecx[2] * 0x80 + *in_ecx);
+  puVar3 = param_2;
+  for (iVar1 = 0x20; iVar1 != 0; iVar1 = iVar1 + -1) {
+    *puVar3 = *puVar2;
+    puVar2 = puVar2 + 1;
+    puVar3 = puVar3 + 1;
+  }
+  in_ecx[2] = in_ecx[2] + 1;
+  in_ecx[4] = in_ecx[4] + -1;
+  if (in_ecx[2] == in_ecx[1]) {
+    in_ecx[2] = 0;
+  }
+  return (uint)in_ecx;
+}
+
 /* ref: FUN_00d96fd0 */
 uint F_00d96fd0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -7760,13 +7785,5 @@ unsigned int F_00d9f3c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
     } while (-1 < iVar1);
   }
   return 0;
-}
-
-/* ref: hkCpuJobThreadPool::vf5 */
-byte F_00d9f400(unsigned int gen_a0)
-{
-  GEN_ENTER(0xd9f400u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(char *)(in_ecx + 600) != '\0';
 }
 

@@ -1,5 +1,16 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_01045cb0 */
+unsigned int F_01045cb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x1045cb0u, gen_a0, gen_a1, gen_a2, 0u);
+  int param_1 = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  F_010451d0(*(undefined * PTR32 *)(param_1 + 0x24),param_1,param_2,param_3);
+  return 0;
+}
+
 /* ref: FUN_01045cd0 */
 uint F_01045cd0(unsigned int gen_a0)
 {
@@ -9242,13 +9253,6 @@ uint F_0104dd40(unsigned int gen_a0)
 unsigned int F_0104de90(void)
 {
   GEN_ENTER(0x104de90u, 0u, 0u, 0u, 0u);
-  return 0;
-}
-
-/* ref: NetBufferFactoryTmpl_LF_TZoneProtoDown_ZoneProtoChannel_Network_Application_IpcChannel::vf6 */
-unsigned int F_0104dea0(void)
-{
-  GEN_ENTER(0x104dea0u, 0u, 0u, 0u, 0u);
   return 0;
 }
 

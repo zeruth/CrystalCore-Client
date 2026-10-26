@@ -1,5 +1,22 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Application::Network::WorkDefinitions::NpcTradeItem::vf21 */
+uint F_00fe86e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xfe86e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 * puVar1;
+  uint uVar2;
+  
+  puVar1 = param_1;
+  if (0xf < (uint)param_1[5]) {
+    puVar1 = (undefined4 *)*param_1;
+  }
+  uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 0x50))(this,puVar1);
+  return uVar2;
+}
+
 /* ref: Application::Network::WorkDefinitions::Position::vf6 */
 unsigned int F_00fe8700(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -20167,23 +20184,6 @@ uint F_01005c00(unsigned int gen_a0, unsigned int gen_a1)
     puVar1 = (undefined4 *)*param_1;
   }
   uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 0x44))(this,puVar1,0);
-  return uVar2;
-}
-
-/* ref: Application::Network::WorkDefinitions::RetainerListTemporary::vf19 */
-uint F_01005c20(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1005c20u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * puVar1;
-  uint uVar2;
-  
-  puVar1 = param_1;
-  if (0xf < (uint)param_1[5]) {
-    puVar1 = (undefined4 *)*param_1;
-  }
-  uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 0x48))(this,puVar1,0);
   return uVar2;
 }
 

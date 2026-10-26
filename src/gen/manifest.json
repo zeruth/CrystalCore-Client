@@ -1,8 +1,8 @@
 {
- "translated": 86398,
- "stubbed": 1030,
+ "translated": 86399,
+ "stubbed": 1029,
  "reasons": {
-  "a register the decompiler lost": 900,
+  "a register the decompiler lost": 899,
   "local of type unkbyte10": 19,
   "a name C cannot take": 15,
   "demoted": 12,
@@ -955,7 +955,6 @@
   "00d8cae0": "a register the decompiler lost (extraout_ST1)",
   "00d8f370": "a register the decompiler lost (in_ST0)",
   "00d8fa10": "a register the decompiler lost (in_ecx)",
-  "00d91a80": "a register the decompiler lost (extraout_EAX)",
   "00d92720": "a register the decompiler lost (extraout_ECX)",
   "00d92800": "a register the decompiler lost (extraout_ECX)",
   "00d929e0": "a register the decompiler lost (extraout_ECX_00)",

@@ -6335,8 +6335,9 @@ uint F_00a0cbe0(unsigned int gen_a0)
       }
       F_0042e370(((undefined1 *)(gen_frame + 0xd4)),pcVar7);
     }
-    pHVar3 = gen_imp_GetModuleHandleA("kernel32.dll","GetProductInfo");
-    pFVar4 = gen_imp_GetProcAddress(pHVar3);
+    pcVar7 = "GetProductInfo";
+    pHVar3 = gen_imp_GetModuleHandleA("kernel32.dll");
+    pFVar4 = gen_imp_GetProcAddress(pHVar3,pcVar7);
     ((code *)pFVar4)((*(_OSVERSIONINFOA *)(gen_frame + 0x38)).dwMajorVersion,(*(_OSVERSIONINFOA *)(gen_frame + 0x38)).dwMinorVersion,0,0,&(*(undefined4 *)(gen_frame + 0x34)));
     switch((unsigned int)(uintptr_t)((*(undefined4 *)(gen_frame + 0x34)))) {
     case 1: ;

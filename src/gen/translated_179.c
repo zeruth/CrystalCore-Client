@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: hkDataClassNative::vf10 */
+uint F_00df7e40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xdf7e40u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int param_2 = (int)gen_a2;
+  uint uVar1;
+  
+  uVar1 = F_00d92800(*(undefined * PTR32 *)(this + 0xc),param_1);
+  F_00df7ce0(this,*(undefined4 *)(this + 0x10),uVar1,param_2);
+  uVar1 = F_00d92ae0(*(undefined * PTR32 *)(this + 0xc),param_1);
+  *(uint *)(param_2 + 0xc) = uVar1;
+  return uVar1;
+}
+
 /* ref: hkDataClassNative::vf12 */
 uint F_00df7e80(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9845,20 +9861,5 @@ LAB_00e020cf: ;
     *(int *)(iVar6 + 8) = *(int *)(iVar6 + 8) + 1;
   }
   return (uint)param_1;
-}
-
-/* ref: FUN_00e02100 */
-uint F_00e02100(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
-{
-  GEN_ENTER(0xe02100u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  uint uVar1;
-  
-  uVar1 = F_00e01b70(this,&REFG(undefined * PTR32, 0x13516ac),param_1,param_2,param_3,param_4);
-  return uVar1;
 }
 

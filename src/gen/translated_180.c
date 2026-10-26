@@ -1,5 +1,20 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00e02100 */
+uint F_00e02100(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
+{
+  GEN_ENTER(0xe02100u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 param_4 = (undefined4)gen_a4;
+  uint uVar1;
+  
+  uVar1 = F_00e01b70(this,&REFG(undefined * PTR32, 0x13516ac),param_1,param_2,param_3,param_4);
+  return uVar1;
+}
+
 /* ref: FUN_00e02130 */
 unsigned int F_00e02130(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -10028,7 +10043,7 @@ uint F_00e0c190(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
     if ((*(uint *)(gen_frame + 0x248)) == (*(uint *)(gen_frame + 0x23c))) {
       (*(uint *)(gen_frame + 0x240)) = 0;
     }
-    pvVar7 = gen_imp_TlsGetValue(0,REFG(undefined4, 0x15d9a88));
+    pvVar7 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
     uVar6 = uVar6 * 0x10 + 0x7f & 0xffffff80;
     if (((*(int *)((int)pvVar7 + 8) < (int)uVar6) || (uVar6 + uVar13 != *(int *)((int)pvVar7 + 0xc))
         ) || (*(uint *)((int)pvVar7 + 0x14) == uVar13)) {
@@ -12342,18 +12357,5 @@ uint F_00e0f010(unsigned int gen_a0)
   local_8 = (uint)this & 0xffffff00;
   F_00da3de0(this,local_8);
   return (uint)this;
-}
-
-/* ref: FUN_00e0f030 */
-uint F_00e0f030(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe0f030u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = F_00da3a20(this,param_1,param_2);
-  return uVar1;
 }
 

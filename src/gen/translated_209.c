@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: NetBufferFactoryTmpl_LF_TZoneProtoDown_ZoneProtoChannel_Network_Application_IpcChannel::vf6 */
+unsigned int F_0104dea0(void)
+{
+  GEN_ENTER(0x104dea0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
 /* ref: FUN_0104deb0 */
 uint F_0104deb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -10673,19 +10680,5 @@ uint F_0105a130(unsigned int gen_a0, unsigned int gen_a1)
   }
   *param_2 = uVar1;
   return (uint)uVar1;
-}
-
-/* ref: FUN_0105a160 */
-uint F_0105a160(unsigned int gen_a0)
-{
-  GEN_ENTER(0x105a160u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  LPVOID pvVar1;
-  uint uVar2;
-  
-  pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-                    (*(int * PTR32 *)((int)pvVar1 + 0x2c),param_1,(uint)*(ushort *)(param_1 + 4));
-  return uVar2;
 }
 

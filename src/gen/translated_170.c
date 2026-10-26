@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: hkCpuJobThreadPool::vf5 */
+byte F_00d9f400(unsigned int gen_a0)
+{
+  GEN_ENTER(0xd9f400u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(char *)(in_ecx + 600) != '\0';
+}
+
 /* ref: hkCpuJobThreadPool::vf6 */
 uint F_00d9f410(unsigned int gen_a0)
 {
@@ -9273,14 +9281,5 @@ unsigned int F_00da99d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
   param_2[2] = ~-(uint)(fVar6 <= 0.0) & (uint)gen_fl2bits((fVar2 * fVar11) * fVar6);
   param_2[3] = ~-(uint)(fVar3 <= 0.0) & (uint)gen_fl2bits((fVar7 * fVar12) * fVar3);
   return 0;
-}
-
-/* ref: FUN_00da9a70 */
-uint F_00da9a70(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xda9a70u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return param_2;
 }
 

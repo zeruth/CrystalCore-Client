@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00e3c4d0 */
+unsigned int F_00e3c4d0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe3c4d0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  if (*(char *)((int)this + 0x20) != '\0') {
+    F_00e3c3d0(this);
+    return 0;
+  }
+  return 0;
+}
+
 /* ref: FUN_00e3c4e0 */
 uint F_00e3c4e0(unsigned int gen_a0)
 {
@@ -7951,16 +7963,6 @@ uint F_00e440d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 uint F_00e440e0(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0xe440e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *param_1 = param_2;
-  return (uint)param_1;
-}
-
-/* ref: FUN_00e440f0 */
-uint F_00e440f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe440f0u, gen_a0, gen_a1, 0u, 0u);
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
   undefined4 param_2 = (undefined4)gen_a1;
   *param_1 = param_2;

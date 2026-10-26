@@ -1,5 +1,18 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00e0f030 */
+uint F_00e0f030(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe0f030u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = F_00da3a20(this,param_1,param_2);
+  return uVar1;
+}
+
 /* ref: FUN_00e0f040 */
 uint F_00e0f040(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -7657,31 +7670,6 @@ uint F_00e156e0(unsigned int gen_a0, unsigned int gen_a1)
       iVar2 = iVar2 + 1;
       piVar3 = piVar3 + 2;
     } while (iVar2 < iVar1);
-  }
-  return 0;
-}
-
-/* ref: StructArrayImplementation::Object::vf26 */
-uint F_00e15730(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe15730u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  int iVar1;
-  int * piVar2;
-  int iVar3;
-  
-  iVar1 = *((int *)GEN_TOP((*(int *)(this + 0xc) + 0x10)));
-  iVar3 = 0;
-  if (0 < iVar1) {
-    piVar2 = *((int * PTR32 *)GEN_TOP((*(int *)(this + 0xc) + 0xc)));
-    do {
-      if (*param_1 == *piVar2) {
-        return 1;
-      }
-      iVar3 = iVar3 + 1;
-      piVar2 = piVar2 + 2;
-    } while (iVar3 < iVar1);
   }
   return 0;
 }

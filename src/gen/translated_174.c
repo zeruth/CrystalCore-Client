@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00dc5ac0 */
+unsigned int F_00dc5ac0(void)
+{
+  GEN_ENTER(0xdc5ac0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
 /* ref: FUN_00dc5ad0 */
 uint F_00dc5ad0(unsigned int gen_a0)
 {
@@ -11101,19 +11108,5 @@ unsigned int F_00dd4830(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
     } while (iVar3 != 0);
   }
   return 0;
-}
-
-/* ref: FUN_00dd4880 */
-uint F_00dd4880(unsigned int gen_a0)
-{
-  GEN_ENTER(0xdd4880u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  LPVOID pvVar1;
-  uint uVar2;
-  
-  pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
-                    (*(int * PTR32 *)((int)pvVar1 + 0x2c),param_1,(uint)*(ushort *)(param_1 + 4));
-  return uVar2;
 }
 

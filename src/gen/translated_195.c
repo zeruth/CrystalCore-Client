@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00eaed10 */
+uint F_00eaed10(unsigned int gen_a0)
+{
+  GEN_ENTER(0xeaed10u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
 /* ref: FUN_00eaed20 */
 uint F_00eaed20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -9617,54 +9625,5 @@ LAB_00eb7143: ;
 LAB_00eb71c1: ;
   F_00c45be8(&(*(undefined4 *)(gen_frame + 0x0)));
   return uVar3;
-}
-
-/* ref: FUN_00eb71e0 */
-uint F_00eb71e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
-{
-  GEN_ENTER(0xeb71e0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  int * param_4 = (int *)(uintptr_t)gen_a3;
-  byte * param_5 = (byte *)(uintptr_t)gen_a4;
-  int param_6 = (int)gen_a5;
-  byte bVar1;
-  int * piVar2;
-  byte * pbVar3;
-  uint uVar4;
-  int iVar5;
-  byte * pbVar6;
-  
-  pbVar6 = param_5;
-  iVar5 = param_6;
-  do {
-    if (iVar5 == 0) {
-      *param_2 = param_3;
-      param_2[1] = param_4;
-      return (uint)param_2;
-    }
-    if (param_4 == (int *)0x0) {
-LAB_00eb722f: ;
-      uVar4 = (uint)param_3 >> 8;
-      param_3 = CONCAT31((int3)uVar4,1);
-    }
-    else {
-      bVar1 = *pbVar6;
-      if ((*(int *)param_4[9] == 0) || (piVar2 = (int *)param_4[0xd], *piVar2 < 1)) {
-        uVar4 = ((code *)*(gen_code32 *)(*param_4 + 0xc))(param_4,(uint)bVar1);
-      }
-      else {
-        *piVar2 = *piVar2 + -1;
-        pbVar3 = *(byte * PTR32 *)param_4[9];
-        *(byte * PTR32 *)param_4[9] = pbVar3 + 1;
-        *pbVar3 = bVar1;
-        uVar4 = (uint)bVar1;
-      }
-      if (uVar4 == 0xffffffff) goto LAB_00eb722f;
-    }
-    pbVar6 = pbVar6 + 1;
-    iVar5 = iVar5 + -1;
-  } while( true );
 }
 

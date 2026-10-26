@@ -1,5 +1,19 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00dd4880 */
+uint F_00dd4880(unsigned int gen_a0)
+{
+  GEN_ENTER(0xdd4880u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  LPVOID pvVar1;
+  uint uVar2;
+  
+  pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))
+                    (*(int * PTR32 *)((int)pvVar1 + 0x2c),param_1,(uint)*(ushort *)(param_1 + 4));
+  return uVar2;
+}
+
 /* ref: FUN_00dd48b0 */
 uint F_00dd48b0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -10265,15 +10279,6 @@ uint F_00ddeca0(unsigned int gen_a0, unsigned int gen_a1)
 uint F_00ddece0(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0xddece0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return param_2;
-}
-
-/* ref: FUN_00ddecf0 */
-uint F_00ddecf0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xddecf0u, gen_a0, gen_a1, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   uint param_2 = (uint)gen_a1;
   return param_2;

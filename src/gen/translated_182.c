@@ -1,5 +1,30 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: StructArrayImplementation::Object::vf26 */
+uint F_00e15730(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe15730u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  int iVar1;
+  int * piVar2;
+  int iVar3;
+  
+  iVar1 = *((int *)GEN_TOP((*(int *)(this + 0xc) + 0x10)));
+  iVar3 = 0;
+  if (0 < iVar1) {
+    piVar2 = *((int * PTR32 *)GEN_TOP((*(int *)(this + 0xc) + 0xc)));
+    do {
+      if (*param_1 == *piVar2) {
+        return 1;
+      }
+      iVar3 = iVar3 + 1;
+      piVar2 = piVar2 + 2;
+    } while (iVar3 < iVar1);
+  }
+  return 0;
+}
+
 /* ref: StructArrayImplementation::Object::vf6 */
 uint F_00e15770(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9047,14 +9072,5 @@ uint F_00e1e3a0(unsigned int gen_a0)
   unsigned int gen_args[1];
   gen_args[0] = gen_a0;
   return (uint)(((*(uint *)&gen_args[0]) - 1 & (*(uint *)&gen_args[0])) == 0);
-}
-
-/* ref: FUN_00e1e3c0 */
-uint F_00e1e3c0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe1e3c0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return param_2;
 }
 
