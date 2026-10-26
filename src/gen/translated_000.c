@@ -1065,6 +1065,149 @@ unsigned int F_00402290(unsigned int gen_a0)
   return 0;
 }
 
+/* ref: FUN_004022b0 */
+uint F_004022b0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4022b0u, gen_a0, 0u, 0u, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x14aa0];
+  char cVar1;
+  uint * puVar2;
+  int iVar3;
+  uint uVar4;
+  char * pcVar5;
+  char * pcVar6;
+  HANDLE pvVar7;
+  DWORD DVar8;
+  HANDLE pvVar9;
+  undefined4 unaff_EDI = 0;
+  undefined4 uVar10;
+  DWORD * pDVar11;
+  undefined4 uVar12;
+  undefined4 uVar13;
+  
+  (*(uint *)(gen_frame + 0x14a98)) = 0x4022bd;
+  (*(uint *)(gen_frame + 0x14a98)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x0);
+  iVar3 = param_1[1];
+  (*(undefined4 *)(gen_frame + 0x14474)) = *(undefined4 *)(iVar3 + 0xb8);
+  (*(undefined4 *)(gen_frame + 0x14478)) = *(undefined4 *)(iVar3 + 0xb4);
+  (*(undefined4 *)(gen_frame + 0x1447c)) = *(undefined4 *)(iVar3 + 0xc4);
+  (*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)) = (*(undefined * PTR32 (*)[2])REFP(0x1080528));
+  ((CHAR *)(gen_frame + 0x10010))[0] = '\0';
+  if (REFG(int, 0x136fc08) != 0) {
+    uVar10 = REFG(undefined4, 0x136fc04);
+    F_00401960(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)),REFG(undefined4, 0x136fc04),unaff_EDI);
+    F_00401960(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)),REFG(int, 0x136fc08),uVar10);
+  }
+  puVar2 = (uint *)*param_1;
+  uVar4 = *puVar2;
+  if (uVar4 < 0xc0000095) {
+    if (uVar4 == 0xc0000094) {
+      uVar4 = 0xc0000094;
+      pcVar5 = "error:int divid by zero 0x%08lx";
+    }
+    else if (uVar4 < 0xc000001e) {
+      if (uVar4 == 0xc000001d) {
+        uVar4 = 0xc000001d;
+        pcVar5 = "error:illegal instruction 0x%08lx";
+      }
+      else if (uVar4 == 0x80000002) {
+        uVar4 = 0x80000002;
+        pcVar5 = "error:datatype misalignment 0x%08lx";
+      }
+      else {
+        if (uVar4 != 0xc0000005) goto LAB_0040240a;
+        if (puVar2[4] == 2) {
+          F_00401be0(((undefined1 *)(gen_frame + 0x14698)),"error:access violation %c 0x%08lx",
+                       (-(uint)(puVar2[5] != 0) & 5) + 0x72,puVar2[6]);
+          goto LAB_00402451;
+        }
+        uVar4 = 0xc0000005;
+        pcVar5 = "error:access violation 0x%08lx";
+      }
+    }
+    else if (uVar4 == 0xc000008c) {
+      pcVar5 = "error:array bounds execeeded 0x%08lx";
+    }
+    else {
+LAB_0040240a: ;
+      pcVar5 = "error: 0x%08lx";
+    }
+  }
+  else if (uVar4 == 0xc0000095) {
+    uVar4 = 0xc0000095;
+    pcVar5 = "error:int overflow 0x%08lx";
+  }
+  else if (uVar4 == 0xc0000096) {
+    uVar4 = 0xc0000096;
+    pcVar5 = "error:priv instruction 0x%08lx";
+  }
+  else {
+    if (uVar4 != 0xc00000fd) goto LAB_0040240a;
+    uVar4 = 0xc00000fd;
+    pcVar5 = "error:stack overflow 0x%08lx";
+  }
+  F_00401be0(((undefined1 *)(gen_frame + 0x14698)),pcVar5,uVar4);
+LAB_00402451: ;
+  F_00401960(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)),((undefined1 *)(gen_frame + 0x14698)),unaff_EDI);
+  F_00401960(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)),"reg Eip:%08x Esp:%08x Ebp:%08x EFlags:%08x",
+               *(undefined4 *)(param_1[1] + 0xb8));
+  F_00401960(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)),"reg Eax:%08x Ebx:%08x Ecx:%08x Edx:%08x Esi:%08x Edi:%08x",
+               *(undefined4 *)(param_1[1] + 0xb0));
+  F_00401960(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)),"reg Cs :%08x Ss :%08x Gs :%08x Fs :%08x Es :%08x Ds :%08x",
+               *(undefined4 *)(param_1[1] + 0xbc));
+  F_00430bd0(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)),&(*(undefined4 *)(gen_frame + 0x14474)),1);
+  if ((REFG(int, 0x136fbec) == 0) || (REFG(short, 0x136fc10) == 0)) {
+    gen_imp_MessageBoxA((HWND)0x0,((CHAR *)(gen_frame + 0x10010)),"error",0);
+  }
+  else {
+    F_00401960(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x1000c)),&REFG(undefined, 0x10805f4),unaff_EDI);
+    iVar3 = gen_imp_MessageBoxA((HWND)0x0,((CHAR *)(gen_frame + 0x10010)),"error",4);
+    if (iVar3 == 6) {
+      gen_imp_GetLocalTime(&(*(_SYSTEMTIME *)(gen_frame + 0x14480)));
+      uVar4 = F_004308f0(REFG(void * PTR32, 0x137104c));
+      F_0042e170(((undefined1 *)(gen_frame + 0x14420)),uVar4);
+      F_0042a3a0(((undefined1 *)(gen_frame + 0x14010)),((undefined1 *)(gen_frame + 0x14420)),1);
+      F_0042c880(((undefined1 *)(gen_frame + 0x14420)));
+      F_0042a6c0(((undefined1 *)(gen_frame + 0x14010)),((WCHAR *)(gen_frame + 0x14218)),"DebugDump");
+      gen_imp_CreateDirectoryW(((WCHAR *)(gen_frame + 0x14218)),(GEN_LPANY)0x0);
+      iVar3 = 0;
+      pcVar5 = F_00c46a10(((char *)REFP(0x12fa250)),((char *)GEN_TOP((*(undefined * PTR32 (*)[1])REFP(0x10805dc)))));
+      if (pcVar5 != (char *)0x0) {
+        pcVar6 = pcVar5 + 3;
+        cVar1 = pcVar5[3];
+        while ((cVar1 != '\0' && ((byte)(cVar1 - 0x30U) < 10))) {
+          pcVar6 = pcVar6 + 1;
+          iVar3 = cVar1 + -0x30 + iVar3 * 10;
+          cVar1 = *pcVar6;
+        }
+      }
+      F_00c4780f(((WCHAR *)(gen_frame + 0x14490)),0x104,(*(undefined * PTR32 (*)[1])REFP(0x1080578)),((WCHAR *)(gen_frame + 0x14218)),&REFG(short, 0x136fc10),iVar3,
+                  (uint)(*(_SYSTEMTIME *)(gen_frame + 0x14480)).wYear,(uint)(*(_SYSTEMTIME *)(gen_frame + 0x14480)).wMonth,(uint)(*(_SYSTEMTIME *)(gen_frame + 0x14480)).wDay,
+                  (uint)(*(_SYSTEMTIME *)(gen_frame + 0x14480)).wHour,(uint)(*(_SYSTEMTIME *)(gen_frame + 0x14480)).wMinute,(uint)(*(_SYSTEMTIME *)(gen_frame + 0x14480)).wSecond);
+      pvVar7 = gen_imp_CreateFileW(((WCHAR *)(gen_frame + 0x14490)),0xc0000000,3,(GEN_LPANY)0x0,2,0,(HANDLE)0x0);
+      DVar8 = gen_imp_GetCurrentThreadId();
+      uVar13 = 0;
+      uVar12 = 0;
+      pDVar11 = &(*(DWORD *)(gen_frame + 0x10000));
+      uVar10 = 1;
+      (*(DWORD *)(gen_frame + 0x10000)) = DVar8;
+      (*(int * PTR32 *)(gen_frame + 0x10004)) = param_1;
+      (*(undefined4 *)(gen_frame + 0x10008)) = 1;
+      DVar8 = gen_imp_GetCurrentProcessId();
+      pvVar9 = gen_imp_GetCurrentProcess();
+      gen_imp_MiniDumpWriteDump(pvVar9,DVar8,pvVar7,uVar10,pDVar11,uVar12,uVar13);
+      gen_imp_MessageBoxW((HWND)0x0,((WCHAR *)(gen_frame + 0x14490)),
+                  L"以下のファイルをプログラマーに渡してください(DBに添付とか)"
+                  ,0);
+      F_00429fa0();
+      F_00429fa0();
+    }
+  }
+  F_00c47745((*(uint *)(gen_frame + 0x14a98)) ^ (uint)(uint)(gen_frame + 0x0));
+  return 1;
+}
+
 /* ref: FUN_00402730 */
 uint F_00402730(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -10669,39 +10812,6 @@ uint F_0040d140(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   } while (local_8 != 0);
   uVar2 = *(uint *)((int)this + 4) ^ uVar2;
   *param_1 = *(uint *)this ^ uVar1;
-  *param_2 = uVar2;
-  return uVar2;
-}
-
-/* ref: Global::BlowfishEncryptBlock */
-uint F_0040d1d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x40d1d0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint * param_1 = (uint *)(uintptr_t)gen_a1;
-  uint * param_2 = (uint *)(uintptr_t)gen_a2;
-  uint uVar1;
-  uint uVar2;
-  uint uVar3;
-  uint * puVar4;
-  int local_8;
-  
-  uVar2 = *param_1;
-  local_8 = 0x10;
-  uVar3 = *param_2;
-  puVar4 = this;
-  do {
-    uVar1 = uVar2 ^ *puVar4;
-    puVar4 = puVar4 + 1;
-    uVar2 = (*((int *)GEN_TOP(((int)this + (uVar1 >> 0x18) * 4 + 0x48))) +
-             *((int *)GEN_TOP(((int)this + (uVar1 >> 0x10 & 0xff) * 4 + 0x448))) ^
-            *((uint *)GEN_TOP(((int)this + (uVar1 >> 8 & 0xff) * 4 + 0x848)))) +
-            *((int *)GEN_TOP(((int)this + (uVar1 & 0xff) * 4 + 0xc48))) ^ uVar3;
-    local_8 = local_8 + -1;
-    uVar3 = uVar1;
-  } while (local_8 != 0);
-  uVar2 = *(uint *)((int)this + 0x40) ^ uVar2;
-  *param_1 = *(uint *)((int)this + 0x44) ^ uVar1;
   *param_2 = uVar2;
   return uVar2;
 }
