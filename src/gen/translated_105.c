@@ -4666,7 +4666,8 @@ unsigned int F_009fea70(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, 
   do {
     piVar2 = piVar2 + 1;
     if (*piVar2 != 0) {
-      ((code *)*(gen_code32 *)(*(int *)*piVar2 + 0x10))(param_1 + -2,(undefined4)gen_fl2bits(param_3),param_4);
+      ((code *)*(gen_code32 *)(*(int *)*piVar2 + 0x10))
+                ((int *)*piVar2,param_1 + -2,(undefined4)gen_fl2bits(param_3),param_4);
     }
     iVar1 = iVar1 + -1;
   } while (iVar1 != 0);
@@ -4689,7 +4690,8 @@ unsigned int F_009feab0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, 
   do {
     piVar2 = piVar2 + 1;
     if (*piVar2 != 0) {
-      ((code *)*(gen_code32 *)(*(int *)*piVar2 + 0x14))(param_1 + -2,(undefined4)gen_fl2bits(param_3),param_4);
+      ((code *)*(gen_code32 *)(*(int *)*piVar2 + 0x14))
+                ((int *)*piVar2,param_1 + -2,(undefined4)gen_fl2bits(param_3),param_4);
     }
     iVar1 = iVar1 + -1;
   } while (iVar1 != 0);
@@ -4711,7 +4713,8 @@ unsigned int F_009feaf0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
   do {
     piVar2 = piVar2 + 1;
     if (*piVar2 != 0) {
-      ((code *)*(gen_code32 *)(*(int *)*piVar2 + 8))(param_1 + -2,(undefined4)gen_fl2bits(param_3));
+      ((code *)*(gen_code32 *)(*(int *)*piVar2 + 8))
+                ((int *)*piVar2,param_1 + -2,(undefined4)gen_fl2bits(param_3));
     }
     iVar1 = iVar1 + -1;
   } while (iVar1 != 0);
@@ -4725,19 +4728,21 @@ unsigned int F_009feb30(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
   int * param_1 = (int *)(uintptr_t)gen_a0;
   undefined4 param_2 = (undefined4)gen_a1;
   float param_3 = (float)gen_a2;
-  int iVar1;
-  int * piVar2;
+  int * piVar1;
+  int iVar2;
+  int * piVar3;
   
-  iVar1 = 4;
-  piVar2 = param_1;
+  iVar2 = 4;
+  piVar3 = param_1;
   do {
-    piVar2 = piVar2 + 1;
-    if ((int *)*piVar2 != (int *)0x0) {
-      ((code *)*(gen_code32 *)(*(int *)*piVar2 + 0xc))(param_1 + -2,(undefined4)gen_fl2bits(param_3));
-      *piVar2 = 0;
+    piVar3 = piVar3 + 1;
+    piVar1 = (int *)*piVar3;
+    if (piVar1 != (int *)0x0) {
+      ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,param_1 + -2,(undefined4)gen_fl2bits(param_3));
+      *piVar3 = 0;
     }
-    iVar1 = iVar1 + -1;
-  } while (iVar1 != 0);
+    iVar2 = iVar2 + -1;
+  } while (iVar2 != 0);
   return 0;
 }
 

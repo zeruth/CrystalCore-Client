@@ -10518,13 +10518,13 @@ LAB_007162e6: ;
     (*(float *)(gen_frame + 0x58)) = *(float *)((int)this + 4);
     F_006d7550(&(*(float * PTR32 *)(gen_frame + 0x50)),pvVar11);
     if ((*(float * PTR32 *)(gen_frame + 0x50)) != *(float * PTR32 *)((int)gen_fl2bits((*(float *)(gen_frame + 0x58))) + 0x30)) {
-      uVar19 = ((code *)*(gen_code32 *)*(*(undefined4 * PTR32 *)(gen_frame + 0x4c)))();
+      uVar19 = ((gen_lcode *)*(gen_code32 *)*(*(undefined4 * PTR32 *)(gen_frame + 0x4c)))();
       *(undefined8 *)((*(float * PTR32 *)(gen_frame + 0x50)) + 0x1c) = uVar19;
       (*(float * PTR32 *)(gen_frame + 0x50))[0x1e] = gen_bits2f((uint)*(ushort *)((*(undefined4 * PTR32 *)(gen_frame + 0x4c)) + 0x22));
       *(undefined1 *)((*(float * PTR32 *)(gen_frame + 0x50)) + 0x1f) = 1;
       uVar23 = 0;
       uVar22 = 0xffffffff;
-      uVar19 = ((code *)*(gen_code32 *)*(*(undefined4 * PTR32 *)(gen_frame + 0x4c)))();
+      uVar19 = ((gen_lcode *)*(gen_code32 *)*(*(undefined4 * PTR32 *)(gen_frame + 0x4c)))();
       F_00aa7a30((*(float * PTR32 *)(gen_frame + 0x54)),(int)uVar19,(int)((ulonglong)uVar19 >> 0x20),uVar22,uVar23);
     }
   }

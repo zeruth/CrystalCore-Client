@@ -1,26 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00db2980 */
-uint F_00db2980(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xdb2980u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00dbe420(this,param_1);
-  return uVar1;
-}
-
-/* ref: FUN_00db29d0 */
-unsigned int F_00db29d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xdb29d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  return 0;
-}
-
 /* ref: FUN_00db29e0 */
 unsigned int F_00db29e0(void)
 {
@@ -8878,5 +8857,65 @@ uint F_00dbac30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
     }
   }
   return uVar1;
+}
+
+/* ref: FUN_00dbac90 */
+uint F_00dbac90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
+{
+  GEN_ENTER(0xdbac90u, gen_a0, gen_a1, gen_a2, gen_a3);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  int param_3 = (int)gen_a2;
+  int param_4 = (int)gen_a3;
+  int param_5 = (int)gen_a4;
+  uint uVar1;
+  undefined * this;
+  undefined * pvVar2;
+  int iVar3;
+  int iVar4;
+  
+  iVar3 = *param_1;
+  uVar1 = F_00d92610(param_2);
+  this = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(iVar3 + 0x1c))(param_1,uVar1)));
+  pvVar2 = this;
+  if (((this != (undefined *)0x0) && (*(int *)((int)this + 8) != 0)) &&
+     (iVar3 = param_4, iVar4 = param_3, 0 < param_4)) {
+    do {
+      pvVar2 = (undefined *)F_00dc25f0(this,iVar4,1);
+      iVar4 = iVar4 + param_5;
+      iVar3 = iVar3 + -1;
+    } while (iVar3 != 0);
+  }
+  return (uint)pvVar2;
+}
+
+/* ref: FUN_00dbace0 */
+uint F_00dbace0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
+{
+  GEN_ENTER(0xdbace0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  int param_3 = (int)gen_a2;
+  int param_4 = (int)gen_a3;
+  int param_5 = (int)gen_a4;
+  uint uVar1;
+  undefined * this;
+  undefined * pvVar2;
+  int iVar3;
+  int iVar4;
+  
+  iVar3 = *param_1;
+  uVar1 = F_00d92610(param_2);
+  this = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(iVar3 + 0x1c))(param_1,uVar1)));
+  pvVar2 = this;
+  if (((this != (undefined *)0x0) && (*(int *)((int)this + 8) != 0)) &&
+     (iVar3 = param_4, iVar4 = param_3, 0 < param_4)) {
+    do {
+      pvVar2 = (undefined *)F_00dc2610(this,iVar4);
+      iVar4 = iVar4 + param_5;
+      iVar3 = iVar3 + -1;
+    } while (iVar3 != 0);
+  }
+  return (uint)pvVar2;
 }
 

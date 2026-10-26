@@ -1,115 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_01055030 */
-unsigned int F_01055030(unsigned int gen_a0)
-{
-  GEN_ENTER(0x1055030u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[75])REFP(0x12b47fc));
-  if ((REFG(int, 0x15d8c04) != 0) && (REFG(int, 0x15d8c04) != -0xa0)) {
-    F_00ce3b10(1);
-    F_00ce3530();
-  }
-  *(undefined1 *)((int)this + 0x2c) = 0;
-  F_00cc5320();
-  F_00cc27e0();
-  F_00ce9fe0();
-  F_00cc6d60();
-  F_00cbf410();
-  gen_imp_DeleteCriticalSection((LPCRITICAL_SECTION)((int)this + 0x30));
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[75])REFP(0x12b46cc));
-  return 0;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::SoundDriver::vf7 */
-byte F_01055090(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x1055090u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  LPCRITICAL_SECTION lpCriticalSection;
-  byte bVar1;
-  undefined * this_00;
-  int * piVar2;
-  uint uVar3;
-  
-  lpCriticalSection = (LPCRITICAL_SECTION)(this + 0x30);
-  this[0x48] = (undefined1)0x1;
-  gen_imp_EnterCriticalSection(lpCriticalSection);
-  if ((char)param_2 != '\0') {
-    this_00 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*(int *)this + 0x48))(this,((undefined1 *)(gen_frame + 0x0)),param_1)));
-    F_00cbe4b0(this_00);
-    F_00cbe3b0(((undefined1 *)(gen_frame + 0x0)));
-  }
-  piVar2 = (int *)F_00cc6e00(param_1);
-  if (piVar2 == (int *)0x0) {
-    if (this[0x48] != (undefined1)0x0) {
-      gen_imp_LeaveCriticalSection(lpCriticalSection);
-    }
-    return 1;
-  }
-  bVar1 = F_00cc2b60(piVar2);
-  if ((bVar1 == 0) && ((short)piVar2[8] < 1)) {
-    if ((*(byte *)(piVar2 + 0x12) & 8) != 0) {
-      uVar3 = ((code *)*(gen_code32 *)(*piVar2 + 4))(piVar2);
-      if (uVar3 != 3) {
-        bVar1 = F_00ce3460(piVar2[5]);
-        if (bVar1 != 0) goto LAB_0105513a;
-      }
-    }
-    bVar1 = F_00cc8a70(param_1);
-    if (this[0x48] != (undefined1)0x0) {
-      gen_imp_LeaveCriticalSection(lpCriticalSection);
-    }
-    return bVar1;
-  }
-LAB_0105513a: ;
-  if (this[0x48] != (undefined1)0x0) {
-    gen_imp_LeaveCriticalSection(lpCriticalSection);
-  }
-  return 0;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::SoundDriver::vf8 */
-byte F_01055170(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1055170u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  LPCRITICAL_SECTION lpCriticalSection;
-  byte bVar1;
-  int * piVar2;
-  uint uVar3;
-  
-  lpCriticalSection = (LPCRITICAL_SECTION)(this + 0x30);
-  this[0x48] = (undefined1)0x1;
-  gen_imp_EnterCriticalSection(lpCriticalSection);
-  piVar2 = (int *)F_00cc6e00(param_1);
-  if (piVar2 != (int *)0x0) {
-    bVar1 = F_00cc2b60(piVar2);
-    if ((bVar1 != 0) || (0 < (short)piVar2[8])) {
-LAB_010551ce: ;
-      if (this[0x48] != (undefined1)0x0) {
-        gen_imp_LeaveCriticalSection(lpCriticalSection);
-      }
-      return 0;
-    }
-    if ((*(byte *)(piVar2 + 0x12) & 8) != 0) {
-      uVar3 = ((code *)*(gen_code32 *)(*piVar2 + 4))(piVar2);
-      if (uVar3 != 3) {
-        bVar1 = F_00ce3460(piVar2[5]);
-        if (bVar1 != 0) goto LAB_010551ce;
-      }
-    }
-  }
-  if (this[0x48] != (undefined1)0x0) {
-    gen_imp_LeaveCriticalSection(lpCriticalSection);
-  }
-  return 1;
-}
-
 /* ref: FUN_01055200 */
 uint F_01055200(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
 {
@@ -7457,6 +7347,39 @@ unsigned int F_0105d540(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
 unsigned int F_0105d550(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
   GEN_ENTER(0x105d550u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return 0;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf89 */
+unsigned int F_0105d560(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d560u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return 0;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf90 */
+unsigned int F_0105d570(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d570u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return 0;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf91 */
+unsigned int F_0105d580(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d580u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   undefined4 param_2 = (undefined4)gen_a2;

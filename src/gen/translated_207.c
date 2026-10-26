@@ -1,26 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Application::Network::WorkDefinitions::SyncRecipeDivisionOpenFlags::vf1 */
-uint F_01043d20(void)
-{
-  GEN_ENTER(0x1043d20u, 0u, 0u, 0u, 0u);
-  return 0x136c548;
-}
-
-/* ref: Application::Network::WorkDefinitions::SyncRecipeCreateFlags_TypeInfo::vf5 */
-uint F_01043d30(void)
-{
-  GEN_ENTER(0x1043d30u, 0u, 0u, 0u, 0u);
-  return 1;
-}
-
-/* ref: Application::Network::WorkDefinitions::SyncRecipeCreateFlags::vf1 */
-uint F_01043d40(void)
-{
-  GEN_ENTER(0x1043d40u, 0u, 0u, 0u, 0u);
-  return 0x136c54c;
-}
-
 /* ref: Application::Network::WorkDefinitions::SyncJournalConfig_TypeInfo::vf5 */
 uint F_01043d50(void)
 {
@@ -8343,5 +8322,50 @@ uint F_0104b6d0(unsigned int gen_a0)
   }
   uVar3 = F_00406ad0(*(undefined4 *)this);
   return uVar3;
+}
+
+/* ref: FUN_0104b710 */
+uint F_0104b710(unsigned int gen_a0)
+{
+  GEN_ENTER(0x104b710u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * piVar1;
+  
+  piVar1 = ((int *)GEN_TOP(**(int * PTR32 *)this));
+  if (piVar1 != *(int * PTR32 *)this) {
+    *(int *)piVar1[1] = *piVar1;
+    *(int *)(*piVar1 + 4) = piVar1[1];
+    piVar1 = (int *)F_00406ad0(piVar1);
+    *(int *)((int)this + 4) = *(int *)((int)this + 4) + -1;
+  }
+  return (uint)piVar1;
+}
+
+/* ref: FUN_0104b740 */
+uint F_0104b740(unsigned int gen_a0)
+{
+  GEN_ENTER(0x104b740u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  uint uVar1;
+  
+  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
+  uVar1 = F_0104b390(this,&(*(undefined * PTR32 *)(gen_frame + 0x8)),**(undefined4 * PTR32 *)((int)this + 4),
+                       *(undefined4 * PTR32 *)((int)this + 4));
+  return uVar1;
+}
+
+/* ref: FUN_0104b760 */
+uint F_0104b760(unsigned int gen_a0)
+{
+  GEN_ENTER(0x104b760u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  uint uVar1;
+  
+  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
+  uVar1 = F_0104b430(this,&(*(undefined * PTR32 *)(gen_frame + 0x8)),**(undefined4 * PTR32 *)((int)this + 4),
+                       *(undefined4 * PTR32 *)((int)this + 4));
+  return uVar1;
 }
 

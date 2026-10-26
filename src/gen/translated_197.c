@@ -1,56 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00ec60e0 */
-uint F_00ec60e0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xec60e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * puVar1;
-  
-  if (*(int *)((int)this + 0xb0) == *(int *)((int)this + 0xb4)) {
-    F_00ec6040(this,*(int *)((int)this + 0xb4) * 2);
-  }
-  puVar1 = ((undefined4 *)GEN_TOP((*(int *)((int)this + 0xac) + *(int *)((int)this + 0xb0) * 4)));
-  if (puVar1 != (undefined4 *)0x0) {
-    *puVar1 = *param_1;
-  }
-  *(int *)((int)this + 0xb0) = *(int *)((int)this + 0xb0) + 1;
-  return (uint)puVar1;
-}
-
-/* ref: FUN_00ec6130 */
-uint F_00ec6130(unsigned int gen_a0)
-{
-  GEN_ENTER(0xec6130u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x115d728));
-  uVar1 = F_00ebfee0((undefined *)((int)this + 4));
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x1159920));
-  return uVar1;
-}
-
-/* ref: TaggedBases_WorkDefinitions_Network_Application::vf1_00ec6150 */
-uint F_00ec6150(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xec6150u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 * puVar1;
-  
-  if (*(int *)((int)this + 0xb8) == *(int *)((int)this + 0xbc)) {
-    F_00ec6040((undefined *)((int)this + 8),*(int *)((int)this + 0xbc) * 2);
-  }
-  puVar1 = ((undefined4 *)GEN_TOP((*(int *)((int)this + 0xb4) + *(int *)((int)this + 0xb8) * 4)));
-  if (puVar1 != (undefined4 *)0x0) {
-    *puVar1 = param_1;
-  }
-  *(int *)((int)this + 0xb8) = *(int *)((int)this + 0xb8) + 1;
-  return (uint)puVar1;
-}
-
 /* ref: FUN_00ec61a0 */
 uint F_00ec61a0(unsigned int gen_a0)
 {
@@ -10497,5 +10446,32 @@ uint F_00ed1340(unsigned int gen_a0)
   GEN_ENTER(0xed1340u, gen_a0, 0u, 0u, 0u);
   int param_1 = (int)gen_a0;
   return param_1 - 0x17;
+}
+
+/* ref: Application::Network::WorkDefinitions::Warp_TypeInfo::vf6 */
+uint F_00ed1350(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xed1350u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return (uint)(&REFG(undefined * PTR32, 0x136951c))[param_1];
+}
+
+/* ref: Application::Network::WorkDefinitions::Warp_TypeInfo::vf7 */
+uint F_00ed1370(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xed1370u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(uint *)(&REFG(undefined, 0x12a8f04) + param_1 * 4);
+}
+
+/* ref: Application::Network::WorkDefinitions::Warp_TypeInfo::vf8 */
+uint F_00ed1390(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xed1390u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(uint *)(&REFG(undefined, 0x12a8f44) + param_1 * 4);
 }
 

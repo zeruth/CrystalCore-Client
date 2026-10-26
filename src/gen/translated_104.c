@@ -2220,7 +2220,7 @@ uint F_009f06b0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2)
   piVar1 = *(int * PTR32 *)(param_1 + 0xb4 + param_3 * 4);
   uVar2 = param_3;
   if (piVar1 != (int *)0x0) {
-    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))((undefined4)gen_fl2bits(param_2));
+    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,(undefined4)gen_fl2bits(param_2));
   }
   return uVar2;
 }
@@ -3531,8 +3531,9 @@ unsigned int F_009f26e0(unsigned int gen_a0, float gen_a1)
     param_1[0x10] = 0x3f800000;
     param_1[0x11] = 0x3f800000;
     param_1[0x12] = 0x3f800000;
-    if (((int *)param_1[0x14])[5] != 0) {
-      ((code *)*(gen_code32 *)(*(int *)param_1[0x14] + 0xc))((undefined4)gen_fl2bits(param_2));
+    piVar3 = (int *)param_1[0x14];
+    if (piVar3[5] != 0) {
+      ((code *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3,(undefined4)gen_fl2bits(param_2));
       uVar1 = *(undefined4 *)((int)param_1[0x15] + 0x30);
       puVar2 = (undefined4 *)F_00d314f0((undefined *)param_1[0x15]);
       ((code *)*(gen_code32 *)(*(int *)param_1[0x14] + 0x10))((int *)param_1[0x14],*puVar2,uVar1);
@@ -3590,8 +3591,9 @@ unsigned int F_009f27e0(unsigned int gen_a0, float gen_a1)
       puVar2[0x10] = 0x3f800000;
       puVar2[0x11] = 0x3f800000;
       puVar2[0x12] = 0x3f800000;
-      if (((int *)puVar2[0x14])[5] != 0) {
-        ((code *)*(gen_code32 *)(*(int *)puVar2[0x14] + 0xc))((undefined4)gen_fl2bits(param_2));
+      piVar5 = (int *)puVar2[0x14];
+      if (piVar5[5] != 0) {
+        ((code *)*(gen_code32 *)(*piVar5 + 0xc))(piVar5,(undefined4)gen_fl2bits(param_2));
         uVar1 = *(undefined4 *)((int)puVar2[0x15] + 0x30);
         puVar4 = (undefined4 *)F_00d314f0((undefined *)puVar2[0x15]);
         ((code *)*(gen_code32 *)(*(int *)puVar2[0x14] + 0x10))((int *)puVar2[0x14],*puVar4,uVar1);

@@ -3881,7 +3881,8 @@ uint F_004109b0(unsigned int gen_a0, float gen_a1)
   float param_2 = (float)gen_a1;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0x28) + 4))))((undefined4)gen_fl2bits(param_2));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0x28) + 4))))
+                    (*(int * PTR32 *)(param_1 + 0x28),(undefined4)gen_fl2bits(param_2));
   return uVar1;
 }
 
@@ -4798,7 +4799,8 @@ uint F_00411830(unsigned int gen_a0, unsigned int gen_a1)
   uint uVar1;
   
   ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0x28) + 0x4c))))
-            ((undefined4)
+            (*(int * PTR32 *)(param_1 + 0x28),
+             (undefined4)
              gen_fl2bits((float)((float10)*(float *)param_2 * (float10)*(double *)&REFG(undefined, 0x1088070))));
   uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0x28) + 0x50))))(*(int * PTR32 *)(param_1 + 0x28));
   return uVar1;

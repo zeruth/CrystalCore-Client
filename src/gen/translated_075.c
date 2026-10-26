@@ -4367,7 +4367,7 @@ byte F_007e5eb0(unsigned int gen_a0, unsigned int gen_a1)
     else if (REFG(int * PTR32, 0x148a44c) != (int *)0x0) {
       ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x28))))(REFG(int * PTR32, 0x148a44c),6,0);
     }
-    ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x48))))(param_1);
+    ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x48))))(REFG(int * PTR32, 0x148a44c),param_1);
     F_007e5bb0();
     F_00782390();
     return 1;
@@ -4518,7 +4518,7 @@ byte F_007e6180(unsigned int gen_a0, unsigned int gen_a1)
     F_00aa0560(REFG(int * PTR32, 0x148a44c),3);
     F_00aa4270(REFG(int * PTR32, 0x148a44c),3,0,0);
   }
-  ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x48))))(local_8);
+  ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x48))))(REFG(int * PTR32, 0x148a44c),local_8);
   iVar4 = REFG(int, 0x1371290);
   if (2 < REFG(short, 0x13282d8)) {
 LAB_007e62a4: ;

@@ -10232,7 +10232,7 @@ LAB_006d7e61: ;
         (*(undefined4 *)(gen_frame + 0x4)) = uVar1;
         (*(undefined4 *)(gen_frame + 0x8)) = uVar2;
         (*pcVar4)((*(int * PTR32 *)(gen_frame + 0x1c)),&(*(undefined4 *)(gen_frame + 0x0)));
-        ((code *)*(gen_code32 *)(*(*(int * PTR32 *)(gen_frame + 0x1c)) + 0x48))(puVar7[3]);
+        ((code *)*(gen_code32 *)(*(*(int * PTR32 *)(gen_frame + 0x1c)) + 0x48))((*(int * PTR32 *)(gen_frame + 0x1c)),puVar7[3]);
         this[0x3c] = (undefined1)0x1;
         return 0;
       }

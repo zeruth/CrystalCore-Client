@@ -1,29 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_01071440 */
-unsigned int F_01071440(void)
-{
-  GEN_ENTER(0x1071440u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x1379c64) = REFG(float, 0x131f348);
-  return 0;
-}
-
-/* ref: FUN_01071460 */
-unsigned int F_01071460(void)
-{
-  GEN_ENTER(0x1071460u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x1379c68) = REFG(float, 0x131f378);
-  return 0;
-}
-
-/* ref: FUN_01071480 */
-unsigned int F_01071480(void)
-{
-  GEN_ENTER(0x1071480u, 0u, 0u, 0u, 0u);
-  *(undefined4 *)&REFG(undefined, 0x1379cbc) = REFG(float, 0x131f428);
-  return 0;
-}
-
 /* ref: FUN_010714a0 */
 unsigned int F_010714a0(void)
 {
@@ -3814,5 +3790,48 @@ unsigned int F_01074ab0(void)
   GEN_ENTER(0x1074ab0u, 0u, 0u, 0u, 0u);
   *(undefined4 *)&REFG(undefined, 0x14c5c24) = REFG(float, 0x134a1c0);
   return 0;
+}
+
+/* ref: FUN_01074ad0 */
+uint F_01074ad0(void)
+{
+  GEN_ENTER(0x1074ad0u, 0u, 0u, 0u, 0u);
+  short sVar1;
+  uint uVar2;
+  short sVar3;
+  short sVar4;
+  
+  sVar1 = (short)REFG(undefined4, 0x134a8d8) + *(short *)&REFG(undefined, 0x159249c);
+  sVar3 = (short)((uint)REFG(undefined4, 0x134a8d8) >> 0x10) + sVar1;
+  *(undefined4 *)&REFG(undefined, 0x159249c) = CONCAT22(sVar1,*(short *)&REFG(undefined, 0x159249c));
+  sVar1 = (short)REFG(undefined4, 0x134a8dc) + sVar3;
+  sVar4 = (short)((uint)REFG(undefined4, 0x134a8dc) >> 0x10) + sVar1;
+  *(undefined4 *)&REFG(undefined, 0x15924a0) = CONCAT22(sVar1,sVar3);
+  sVar1 = (short)REFG(undefined4, 0x134a8e0) + sVar4;
+  sVar3 = (short)((uint)REFG(undefined4, 0x134a8e0) >> 0x10) + sVar1;
+  *(undefined4 *)&REFG(undefined, 0x15924a4) = CONCAT22(sVar1,sVar4);
+  *(int *)&REFG(undefined, 0x15924a8) = CONCAT22(*(undefined2 *)&REFG(undefined, 0x15924aa),sVar3);
+  uVar2 = REFG(int, 0x134a8e4) + *(int *)&REFG(undefined, 0x15924a8);
+  *(int *)&REFG(undefined, 0x15924a8) = CONCAT22((short)uVar2,sVar3);
+  return uVar2;
+}
+
+/* ref: FUN_01074b50 */
+unsigned int F_01074b50(void)
+{
+  GEN_ENTER(0x1074b50u, 0u, 0u, 0u, 0u);
+  *(float *)&REFG(undefined, 0x1592498) = REFG(float, 0x134a8d4) * REFG(float, 0x134a8d4);
+  return 0;
+}
+
+/* ref: FUN_01074b6c */
+uint F_01074b6c(void)
+{
+  GEN_ENTER(0x1074b6cu, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  F_00c45afd((undefined *)&REFG(undefined, 0x15d6778));
+  uVar1 = F_00c47de6(((code *)REFP(0x107c95a)));
+  return uVar1;
 }
 

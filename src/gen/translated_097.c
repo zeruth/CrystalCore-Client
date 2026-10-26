@@ -273,20 +273,22 @@ byte F_0097bc40(unsigned int gen_a0, float gen_a1)
   float param_2 = (float)gen_a1;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 8) + 0xc))))((undefined4)gen_fl2bits(param_2));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 8) + 0xc))))(param_1 + 8,(undefined4)gen_fl2bits(param_2));
   if ((char)uVar1 == '\0') {
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x10) + 0xc))))((undefined4)gen_fl2bits(param_2));
+    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x10) + 0xc))))
+                      (param_1 + 0x10,(undefined4)gen_fl2bits(param_2));
     if ((char)uVar1 == '\0') {
-      uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x18) + 0xc))))((undefined4)gen_fl2bits(param_2));
+      uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x18) + 0xc))))
+                        (param_1 + 0x18,(undefined4)gen_fl2bits(param_2));
       if ((char)uVar1 == '\0') {
         uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x20) + 0xc))))
-                          ((undefined4)gen_fl2bits((float)(float10)0));
+                          (param_1 + 0x20,(undefined4)gen_fl2bits((float)(float10)0));
         if ((char)uVar1 == '\0') {
           uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x28) + 0xc))))
-                            ((undefined4)gen_fl2bits((float)(float10)0));
+                            (param_1 + 0x28,(undefined4)gen_fl2bits((float)(float10)0));
           if ((char)uVar1 == '\0') {
             uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x30) + 0xc))))
-                              ((undefined4)gen_fl2bits((float)(float10)0));
+                              (param_1 + 0x30,(undefined4)gen_fl2bits((float)(float10)0));
             return (char)uVar1 != '\0';
           }
         }
@@ -301,8 +303,8 @@ uint F_0097bce0(unsigned int gen_a0)
 {
   GEN_ENTER(0x97bce0u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  bool bVar2;
+  int * piVar1;
+  uint uVar2;
   bool bVar3;
   bool bVar4;
   bool bVar5;
@@ -312,99 +314,99 @@ uint F_0097bce0(unsigned int gen_a0)
   bool bVar9;
   bool bVar10;
   bool bVar11;
+  bool bVar12;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 8) + 8))))((int)this + 8);
-  bVar2 = (char)uVar1 != '\0';
-  if (bVar2) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 8) + 8))))((int)this + 8);
+  bVar3 = (char)uVar2 != '\0';
+  if (bVar3) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 2;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x10) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)1));
-  bVar3 = (char)uVar1 != '\0';
-  if (bVar3) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x10) + 0xc))))
+                    ((int)this + 0x10,(undefined4)gen_fl2bits((float)(float10)1));
+  bVar4 = (char)uVar2 != '\0';
+  if (bVar4) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 4;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x38) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)0));
-  bVar4 = (char)uVar1 != '\0';
-  if (bVar4) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x38) + 0xc))))
+                    ((int)this + 0x38,(undefined4)gen_fl2bits((float)(float10)0));
+  bVar5 = (char)uVar2 != '\0';
+  if (bVar5) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x10;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x40) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)0));
-  bVar5 = (char)uVar1 != '\0';
-  if (bVar5) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x40) + 0xc))))
+                    ((int)this + 0x40,(undefined4)gen_fl2bits((float)(float10)0));
+  bVar6 = (char)uVar2 != '\0';
+  if (bVar6) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x20;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x48) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)0));
-  bVar6 = (char)uVar1 != '\0';
-  if (bVar6) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x48) + 0xc))))
+                    ((int)this + 0x48,(undefined4)gen_fl2bits((float)(float10)0));
+  bVar7 = (char)uVar2 != '\0';
+  if (bVar7) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x40;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x50) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)0));
-  bVar7 = (char)uVar1 != '\0';
-  if (bVar7) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x50) + 0xc))))
+                    ((int)this + 0x50,(undefined4)gen_fl2bits((float)(float10)0));
+  bVar8 = (char)uVar2 != '\0';
+  if (bVar8) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x80;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x18) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)1));
-  bVar8 = (char)uVar1 != '\0';
-  if (bVar8) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x18) + 0xc))))
+                    ((int)this + 0x18,(undefined4)gen_fl2bits((float)(float10)1));
+  bVar9 = (char)uVar2 != '\0';
+  if (bVar9) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x100;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x20) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)1));
-  bVar9 = (char)uVar1 != '\0';
-  if (bVar9) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x20) + 0xc))))
+                    ((int)this + 0x20,(undefined4)gen_fl2bits((float)(float10)1));
+  bVar10 = (char)uVar2 != '\0';
+  if (bVar10) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x200;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x28) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)1));
-  bVar10 = (char)uVar1 != '\0';
-  if (bVar10) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x28) + 0xc))))
+                    ((int)this + 0x28,(undefined4)gen_fl2bits((float)(float10)1));
+  bVar11 = (char)uVar2 != '\0';
+  if (bVar11) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x400;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x30) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)1));
-  bVar11 = (char)uVar1 != '\0';
-  if (bVar11) {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x30) + 0xc))))
+                    ((int)this + 0x30,(undefined4)gen_fl2bits((float)(float10)1));
+  bVar12 = (char)uVar2 != '\0';
+  if (bVar12) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x800;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x58) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)1));
-  if ((char)uVar1 != '\0') {
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x60) + 0xc))))
-                      ((undefined4)gen_fl2bits((float)(float10)0));
-    if ((char)uVar1 != '\0') {
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x58) + 0xc))))
+                    ((int)this + 0x58,(undefined4)gen_fl2bits((float)(float10)1));
+  piVar1 = (int *)((int)this + 0x60);
+  if ((char)uVar2 != '\0') {
+    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,(undefined4)gen_fl2bits((float)(float10)0));
+    if ((char)uVar2 != '\0') {
       *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 0x3000;
       *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 1;
-      return uVar1;
+      return uVar2;
     }
-    uVar1 = *(uint *)((int)this + 0x68) & 0xffffdfff | 0x1000;
-    *(uint *)((int)this + 0x68) = uVar1;
+    uVar2 = *(uint *)((int)this + 0x68) & 0xffffdfff | 0x1000;
+    *(uint *)((int)this + 0x68) = uVar2;
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 1;
-    return uVar1;
+    return uVar2;
   }
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x60) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)0));
-  if ((char)uVar1 != '\0') {
+  uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,(undefined4)gen_fl2bits((float)(float10)0));
+  if ((char)uVar2 != '\0') {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) & 0xffffefff | 0x2000;
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 1;
-    return uVar1;
+    return uVar2;
   }
   *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) & 0xffffcfff;
-  uVar1 = *(uint *)((int)this + 0x68);
-  if (bVar11 || (bVar10 ||
-                (bVar9 || (bVar8 || (bVar7 || (bVar6 || (bVar5 || (bVar4 || (bVar3 || bVar2)))))))))
-  {
+  uVar2 = *(uint *)((int)this + 0x68);
+  if (bVar12 || (bVar11 ||
+                (bVar10 || (bVar9 || (bVar8 || (bVar7 || (bVar6 || (bVar5 || (bVar4 || bVar3))))))))
+     ) {
     *(uint *)((int)this + 0x68) = *(uint *)((int)this + 0x68) | 1;
-    return uVar1;
+    return uVar2;
   }
-  uVar1 = uVar1 & 0xfffffffe;
-  *(uint *)((int)this + 0x68) = uVar1;
-  return uVar1;
+  uVar2 = uVar2 & 0xfffffffe;
+  *(uint *)((int)this + 0x68) = uVar2;
+  return uVar2;
 }
 
 /* ref: Apricot::Engine::Data::Runtime::ColorFunctionCurve::vf4 */
@@ -1346,10 +1348,10 @@ uint F_0097d070(unsigned int gen_a0, float gen_a1)
   float param_2 = (float)gen_a1;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 4) + 0xc))))((undefined4)gen_fl2bits(param_2));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 4) + 0xc))))(param_1 + 4,(undefined4)gen_fl2bits(param_2));
   if ((char)uVar1 == '\0') {
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0xc) + 0xc))))((undefined4)gen_fl2bits((float)(float10)0))
-    ;
+    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0xc) + 0xc))))
+                      (param_1 + 0xc,(undefined4)gen_fl2bits((float)(float10)0));
     if ((char)uVar1 == '\0') {
       return 0;
     }

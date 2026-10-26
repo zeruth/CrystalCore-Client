@@ -9744,7 +9744,7 @@ byte F_00434210(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, f
   byte bVar1;
   uint uVar2;
   
-  uVar2 = ((code *)*(gen_code32 *)(*param_1 + 0x1c))();
+  uVar2 = ((code *)*(gen_code32 *)(*param_1 + 0x1c))(param_1);
   bVar1 = F_00820c80(uVar2,param_2,param_3,param_4);
   return bVar1;
 }

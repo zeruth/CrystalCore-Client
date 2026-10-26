@@ -7920,8 +7920,8 @@ uint F_005d7040(unsigned int gen_a0, float gen_a1)
     ((code *)*(gen_code32 *)(*piVar1 + 0x68))(piVar1,(undefined4)gen_fl2bits(param_2));
   }
   uVar2 = ((code *)*(gen_code32 *)(*param_1 + 0x11c))(param_1);
-  if ((uVar2 != 0xffffffff) && (*(int * PTR32 *)(param_1[0xc] + 0xf0) != (int *)0x0)) {
-    uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1[0xc] + 0xf0) + 0xd4))))((undefined4)gen_fl2bits(param_2));
+  if ((uVar2 != 0xffffffff) && (piVar1 = *(int * PTR32 *)(param_1[0xc] + 0xf0), piVar1 != (int *)0x0)) {
+    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1,(undefined4)gen_fl2bits(param_2));
   }
   return uVar2;
 }

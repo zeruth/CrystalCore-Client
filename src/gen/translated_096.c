@@ -6948,20 +6948,22 @@ byte F_00979b90(unsigned int gen_a0, float gen_a1)
   float param_2 = (float)gen_a1;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 8) + 0xc))))((undefined4)gen_fl2bits(param_2));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 8) + 0xc))))(param_1 + 8,(undefined4)gen_fl2bits(param_2));
   if ((char)uVar1 == '\0') {
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x40) + 0xc))))((undefined4)gen_fl2bits(param_2));
+    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x40) + 0xc))))
+                      (param_1 + 0x40,(undefined4)gen_fl2bits(param_2));
     if ((char)uVar1 == '\0') {
-      uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x78) + 0xc))))((undefined4)gen_fl2bits(param_2));
+      uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x78) + 0xc))))
+                        (param_1 + 0x78,(undefined4)gen_fl2bits(param_2));
       if ((char)uVar1 == '\0') {
         uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0xb0) + 0xc))))
-                          ((undefined4)gen_fl2bits((float)(float10)0));
+                          (param_1 + 0xb0,(undefined4)gen_fl2bits((float)(float10)0));
         if ((char)uVar1 == '\0') {
           uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0xe8) + 0xc))))
-                            ((undefined4)gen_fl2bits((float)(float10)0));
+                            (param_1 + 0xe8,(undefined4)gen_fl2bits((float)(float10)0));
           if ((char)uVar1 == '\0') {
             uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x120) + 0xc))))
-                              ((undefined4)gen_fl2bits((float)(float10)0));
+                              (param_1 + 0x120,(undefined4)gen_fl2bits((float)(float10)0));
             return (char)uVar1 != '\0';
           }
         }
@@ -7520,10 +7522,10 @@ uint F_0097a700(unsigned int gen_a0, float gen_a1)
   float param_2 = (float)gen_a1;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 8) + 0xc))))((undefined4)gen_fl2bits(param_2));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 8) + 0xc))))(param_1 + 8,(undefined4)gen_fl2bits(param_2));
   if ((char)uVar1 == '\0') {
     uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x40) + 0xc))))
-                      ((undefined4)gen_fl2bits((float)(float10)0));
+                      (param_1 + 0x40,(undefined4)gen_fl2bits((float)(float10)0));
     if ((char)uVar1 == '\0') {
       return 0;
     }

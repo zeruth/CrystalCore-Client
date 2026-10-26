@@ -10500,7 +10500,8 @@ unsigned int F_0059ff80(unsigned int gen_a0, float gen_a1)
       F_00592220(param_1 + 0x839c,(undefined4)gen_fl2bits(param_2));
       ((code *)*(gen_code32 *)(*param_1 + 0xd4))(param_1,(undefined4)gen_fl2bits(param_2));
       F_00559200(param_1);
-      ((code *)*(gen_code32 *)(*(int *)param_1[0x4c] + 0x14))((undefined4)gen_fl2bits(param_2));
+      ((code *)*(gen_code32 *)(*(int *)param_1[0x4c] + 0x14))
+                ((int *)param_1[0x4c],(undefined4)gen_fl2bits(param_2));
       F_00586fc0(param_1 + 0x49);
     }
   }

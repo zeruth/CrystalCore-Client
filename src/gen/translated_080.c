@@ -16201,7 +16201,7 @@ unsigned int F_00881d20(unsigned int gen_a0, unsigned int gen_a1)
     F_0082be30(this);
     ((code *)*(gen_code32 *)(*(int *)this + 0x88))(this);
     if (REFG(int * PTR32, 0x148a44c) != (int *)0x0) {
-      ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x48))))((undefined4)gen_fl2bits((float)(float10)0));
+      ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x48))))(REFG(int * PTR32, 0x148a44c),(undefined4)gen_fl2bits((float)(float10)0));
     }
     if (REFG(void * PTR32, 0x148a444) != (undefined *)0x0) {
       F_00b75200(REFG(void * PTR32, 0x148a444));

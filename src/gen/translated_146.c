@@ -1863,7 +1863,7 @@ unsigned int F_00c23800(unsigned int gen_a0)
   if (((*(char *)((int)this + 0x10) == '\0') && (*(char *)((int)this + 0xc1) == '\0')) &&
      (*(char *)((int)this + 0xc) == '\0')) {
     fVar2 = (float)(float10)0;
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x20) + 0x34))))();
+    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x20) + 0x34))))(*(int * PTR32 *)((int)this + 0x20));
     F_00699cb0(uVar1,fVar2);
     *(undefined4 *)((int)this + 10) = 0x1010000;
     *(undefined1 *)((int)this + 0xc0) = 1;
@@ -1882,7 +1882,7 @@ uint F_00c23840(unsigned int gen_a0)
   
   if (*(char *)((int)this + 0xc) != '\0') {
     fVar2 = (float)(float10)0;
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x20) + 0x34))))();
+    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x20) + 0x34))))(*(int * PTR32 *)((int)this + 0x20));
     in_EAX = F_0068b730(uVar1,fVar2);
     *(undefined1 *)((int)this + 0xc) = 0;
     *(undefined1 *)((int)this + 0xd) = 1;
@@ -1909,7 +1909,7 @@ byte F_00c23880(unsigned int gen_a0)
       uVar1 = F_0068b710(this_00);
       if ((char)uVar1 == '\0') {
         fVar2 = (float)(float10)0;
-        uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x20) + 0x34))))();
+        uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x20) + 0x34))))(*(int * PTR32 *)((int)this + 0x20));
         F_0068b730(uVar1,fVar2);
         *(undefined1 *)((int)this + 0xc) = 0;
         *(undefined1 *)((int)this + 10) = 0;
@@ -1931,21 +1931,21 @@ uint F_00c238f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   int param_2 = (int)gen_a2;
-  int iVar1;
+  int * piVar1;
   uint in_EAX = 0;
   undefined * this_00;
   uint uVar2;
   float fVar3;
   
   if (*(char *)((int)this + 0xc) != '\0') {
-    iVar1 = **(int * PTR32 *)((int)this + 0x20);
+    piVar1 = *(int * PTR32 *)((int)this + 0x20);
     if (param_2 != 0) {
-      this_00 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(iVar1 + 0x34))(*(int * PTR32 *)((int)this + 0x20))));
+      this_00 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0x34))(piVar1)));
       uVar2 = F_0068b6f0(this_00,param_1,param_2);
       return uVar2;
     }
     fVar3 = (float)(float10)0;
-    uVar2 = ((code *)*(gen_code32 *)(iVar1 + 0x34))();
+    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0x34))(piVar1);
     in_EAX = F_0068b730(uVar2,fVar3);
     *(undefined4 *)((int)this + 10) = 0x1000000;
     *(undefined1 *)((int)this + 0xc0) = 0;

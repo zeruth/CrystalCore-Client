@@ -4118,7 +4118,7 @@ unsigned int F_005fe520(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
          (((!GEN_ISNAN(param_3) && !GEN_ISNAN(*(float *)&REFG(undefined, 0x1088114))) &&
           (!(param_3 < *(float *)&REFG(undefined, 0x1088114)) && param_3 != *(float *)&REFG(undefined, 0x1088114))) << 5 ^ bVar1
          ) & 0x20 ^ bVar1;
-    ((code *)*(gen_code32 *)(*param_1 + 0xd8))((undefined4)gen_fl2bits(param_3));
+    ((code *)*(gen_code32 *)(*param_1 + 0xd8))(param_1,(undefined4)gen_fl2bits(param_3));
   }
   return 0;
 }

@@ -7140,7 +7140,7 @@ uint F_00b7c0a0(unsigned int gen_a0, unsigned int gen_a1)
   undefined4 param_1 = (undefined4)gen_a1;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x2c) + 0xc))))(param_1,REFG(float, 0x10f59a8));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x2c) + 0xc))))((int)this + 0x2c,param_1,REFG(float, 0x10f59a8));
   return uVar1;
 }
 
@@ -7163,11 +7163,12 @@ uint F_00b7c0d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, f
   int param_2 = (int)gen_a1;
   undefined4 param_3 = (undefined4)gen_a2;
   float param_4 = (float)gen_a3;
-  uint uVar1;
+  int * piVar1;
+  uint uVar2;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + param_2 * 4) + 0xc))))
-                    (param_3,(undefined4)gen_fl2bits(param_4));
-  return uVar1;
+  piVar1 = *(int * PTR32 *)(param_1 + param_2 * 4);
+  uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,param_3,(undefined4)gen_fl2bits(param_4));
+  return uVar2;
 }
 
 /* ref: FUN_00b7c0f0 */
@@ -7195,7 +7196,8 @@ uint F_00b7c110(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
   uint uVar2;
   
   iVar1 = **(int * PTR32 *)(param_1 + param_2 * 4);
-  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x2c) + 0x18))))((undefined4)gen_fl2bits(param_3));
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x2c) + 0x18))))
+                    (param_1 + 0x2c,(undefined4)gen_fl2bits(param_3));
   uVar2 = ((code *)*(gen_code32 *)(iVar1 + 0xc))(*(undefined4 *)(param_1 + param_2 * 4),uVar2 & 0xff);
   return uVar2;
 }
@@ -7211,7 +7213,8 @@ uint F_00b7c150(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
   uint uVar2;
   
   iVar1 = **(int * PTR32 *)(param_1 + param_2 * 4);
-  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x2c) + 0x10))))((undefined4)gen_fl2bits(param_3));
+  uVar2 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x2c) + 0x10))))
+                    (param_1 + 0x2c,(undefined4)gen_fl2bits(param_3));
   uVar2 = ((code *)*(gen_code32 *)(iVar1 + 0xc))(*(undefined4 *)(param_1 + param_2 * 4),uVar2 & 0xff);
   return uVar2;
 }

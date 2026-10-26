@@ -677,7 +677,8 @@ uint F_00c973c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   uint uVar1;
   
   uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0xc) + 0x30))))
-                    (param_2,param_3,param_4,param_5,param_6,(undefined4)gen_fl2bits(param_7));
+                    (*(int * PTR32 *)(param_1 + 0xc),param_2,param_3,param_4,param_5,param_6,
+                     (undefined4)gen_fl2bits(param_7));
   return uVar1;
 }
 

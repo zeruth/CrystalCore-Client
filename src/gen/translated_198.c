@@ -1,32 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: Application::Network::WorkDefinitions::Warp_TypeInfo::vf6 */
-uint F_00ed1350(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xed1350u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return (uint)(&REFG(undefined * PTR32, 0x136951c))[param_1];
-}
-
-/* ref: Application::Network::WorkDefinitions::Warp_TypeInfo::vf7 */
-uint F_00ed1370(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xed1370u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return *(uint *)(&REFG(undefined, 0x12a8f04) + param_1 * 4);
-}
-
-/* ref: Application::Network::WorkDefinitions::Warp_TypeInfo::vf8 */
-uint F_00ed1390(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xed1390u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return *(uint *)(&REFG(undefined, 0x12a8f44) + param_1 * 4);
-}
-
 /* ref: Application::Network::WorkDefinitions::Warp_TypeInfo::vf9 */
 uint F_00ed13b0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -19890,5 +19863,41 @@ uint F_00eedcf0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int param_1 = (int)gen_a1;
   return *(uint *)(&REFG(undefined, 0x12a9ccc) + param_1 * 4);
+}
+
+/* ref: FUN_00eedd10 */
+uint F_00eedd10(unsigned int gen_a0)
+{
+  GEN_ENTER(0xeedd10u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return *(uint *)(&REFG(undefined, 0x12a9ce0) + param_1 * 4);
+}
+
+/* ref: Application::Network::WorkDefinitions::DamageWork_TypeInfo::vf4 */
+uint F_00eedd30(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xeedd30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint uVar1;
+  uint uVar2;
+  
+  uVar2 = 0;
+  do {
+    uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this,uVar2);
+    if (uVar1 == param_1) {
+      return uVar2;
+    }
+    uVar2 = uVar2 + 1;
+  } while ((int)uVar2 < 5);
+  return 0xffffffff;
+}
+
+/* ref: FUN_00eedd70 */
+uint F_00eedd70(unsigned int gen_a0)
+{
+  GEN_ENTER(0xeedd70u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 - 0x23;
 }
 

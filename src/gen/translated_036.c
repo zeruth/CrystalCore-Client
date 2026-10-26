@@ -43,7 +43,8 @@ unsigned int F_005d7350(unsigned int gen_a0, float gen_a1)
   int param_1 = (int)gen_a0;
   float param_2 = (float)gen_a1;
   if (*(int *)(param_1 + 0x30) != 0) {
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0x30) + 0x68))))((undefined4)gen_fl2bits(param_2));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0x30) + 0x68))))
+              (*(int * PTR32 *)(param_1 + 0x30),(undefined4)gen_fl2bits(param_2));
   }
   return 0;
 }
@@ -596,7 +597,8 @@ unsigned int F_005d7b80(unsigned int gen_a0, float gen_a1)
   int param_1 = (int)gen_a0;
   float param_2 = (float)gen_a1;
   if (*(int *)(param_1 + 0x30) != 0) {
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0x30) + 0x68))))((undefined4)gen_fl2bits(param_2));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 0x30) + 0x68))))
+              (*(int * PTR32 *)(param_1 + 0x30),(undefined4)gen_fl2bits(param_2));
   }
   return 0;
 }
@@ -2091,16 +2093,18 @@ unsigned int F_005d9500(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0x5d9500u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  uint uVar1;
+  int * piVar1;
   uint uVar2;
+  uint uVar3;
   
-  uVar1 = 0;
-  uVar2 = *(int *)((int)this + 400) - *(int *)((int)this + 0x18c) >> 2;
-  if (uVar2 != 0) {
+  uVar2 = 0;
+  uVar3 = *(int *)((int)this + 400) - *(int *)((int)this + 0x18c) >> 2;
+  if (uVar3 != 0) {
     do {
-      ((code *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP((*(int *)((int)this + 0x18c) + uVar1 * 4))) + 0x24))))(*param_1);
-      uVar1 = uVar1 + 1;
-    } while (uVar1 < uVar2);
+      piVar1 = *((int * PTR32 *)GEN_TOP((*(int *)((int)this + 0x18c) + uVar2 * 4)));
+      ((code *)*(gen_code32 *)(*piVar1 + 0x24))(piVar1,*param_1);
+      uVar2 = uVar2 + 1;
+    } while (uVar2 < uVar3);
   }
   return 0;
 }
@@ -4252,7 +4256,7 @@ unsigned int F_005db8b0(unsigned int gen_a0, float gen_a1)
     do {
       piVar1 = *((int * PTR32 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(param_1 + 0x78) + uVar3 * 4))) + 0x10)));
       if (piVar1 != (int *)0x0) {
-        ((code *)*(gen_code32 *)(*piVar1 + 0xd4))((undefined4)gen_fl2bits(param_2));
+        ((code *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1,(undefined4)gen_fl2bits(param_2));
       }
       uVar3 = uVar3 + 1;
     } while (uVar3 < uVar2);
@@ -4266,17 +4270,18 @@ unsigned int F_005db900(unsigned int gen_a0, float gen_a1)
   GEN_ENTER(0x5db900u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
   int param_1 = (int)gen_a0;
   float param_2 = (float)gen_a1;
-  uint uVar1;
+  int * piVar1;
   uint uVar2;
+  uint uVar3;
   
-  uVar1 = 0;
-  uVar2 = *(int *)(param_1 + 0x7c) - *(int *)(param_1 + 0x78) >> 2;
-  if (uVar2 != 0) {
+  uVar2 = 0;
+  uVar3 = *(int *)(param_1 + 0x7c) - *(int *)(param_1 + 0x78) >> 2;
+  if (uVar3 != 0) {
     do {
-      ((code *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(param_1 + 0x78) + uVar1 * 4))) + 0x10))) + 0xd8))))
-                ((undefined4)gen_fl2bits(param_2));
-      uVar1 = uVar1 + 1;
-    } while (uVar1 < uVar2);
+      piVar1 = *((int * PTR32 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(param_1 + 0x78) + uVar2 * 4))) + 0x10)));
+      ((code *)*(gen_code32 *)(*piVar1 + 0xd8))(piVar1,(undefined4)gen_fl2bits(param_2));
+      uVar2 = uVar2 + 1;
+    } while (uVar2 < uVar3);
   }
   return 0;
 }
@@ -10900,11 +10905,11 @@ unsigned int F_005e38e0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
       piVar1 = *((int * PTR32 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(param_1 + 0x78) + uVar3 * 4))) + 0x10)));
       if ((*(byte *)((int)piVar1 + 0x2b) & 2) == 0) {
         if (*(char *)((int)piVar1 + 0x11) == '\x01') {
-          ((code *)*(gen_code32 *)(*piVar1 + 0x98))(param_2,(undefined4)gen_fl2bits(param_3));
+          ((code *)*(gen_code32 *)(*piVar1 + 0x98))(piVar1,param_2,(undefined4)gen_fl2bits(param_3));
         }
       }
       else {
-        ((code *)*(gen_code32 *)(*piVar1 + 0x98))(param_2,(undefined4)gen_fl2bits(param_3));
+        ((code *)*(gen_code32 *)(*piVar1 + 0x98))(piVar1,param_2,(undefined4)gen_fl2bits(param_3));
       }
       uVar3 = uVar3 + 1;
     } while (uVar3 < uVar2);

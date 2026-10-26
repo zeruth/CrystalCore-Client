@@ -12094,7 +12094,7 @@ uint F_005468d0(unsigned int gen_a0, float gen_a1)
   }
   else {
     ((code *)*(gen_code32 *)(*piVar5 + 0x8c))(piVar5,&(*(undefined4 *)(gen_frame + 0x20)));
-    ((code *)*(gen_code32 *)(*(int *)param_1[2] + 0x7c))((undefined4)gen_fl2bits((*(float *)(gen_frame + 0x5c))));
+    ((code *)*(gen_code32 *)(*(int *)param_1[2] + 0x7c))((int *)param_1[2],(undefined4)gen_fl2bits((*(float *)(gen_frame + 0x5c))));
     puVar6 = ((undefined4 *)GEN_TOP(((code *)*(gen_code32 *)(*(int *)param_1[2] + 0x14))((int *)param_1[2])));
     uVar1 = puVar6[1];
     (*(undefined4 *)(gen_frame + 0x30)) = *puVar6;

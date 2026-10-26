@@ -1,50 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0104b710 */
-uint F_0104b710(unsigned int gen_a0)
-{
-  GEN_ENTER(0x104b710u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  
-  piVar1 = ((int *)GEN_TOP(**(int * PTR32 *)this));
-  if (piVar1 != *(int * PTR32 *)this) {
-    *(int *)piVar1[1] = *piVar1;
-    *(int *)(*piVar1 + 4) = piVar1[1];
-    piVar1 = (int *)F_00406ad0(piVar1);
-    *(int *)((int)this + 4) = *(int *)((int)this + 4) + -1;
-  }
-  return (uint)piVar1;
-}
-
-/* ref: FUN_0104b740 */
-uint F_0104b740(unsigned int gen_a0)
-{
-  GEN_ENTER(0x104b740u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  uint uVar1;
-  
-  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
-  uVar1 = F_0104b390(this,&(*(undefined * PTR32 *)(gen_frame + 0x8)),**(undefined4 * PTR32 *)((int)this + 4),
-                       *(undefined4 * PTR32 *)((int)this + 4));
-  return uVar1;
-}
-
-/* ref: FUN_0104b760 */
-uint F_0104b760(unsigned int gen_a0)
-{
-  GEN_ENTER(0x104b760u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  uint uVar1;
-  
-  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
-  uVar1 = F_0104b430(this,&(*(undefined * PTR32 *)(gen_frame + 0x8)),**(undefined4 * PTR32 *)((int)this + 4),
-                       *(undefined4 * PTR32 *)((int)this + 4));
-  return uVar1;
-}
-
 /* ref: FUN_0104b780 */
 uint F_0104b780(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -10612,5 +10567,115 @@ uint F_01054f70(unsigned int gen_a0, unsigned int gen_a1)
   *(undefined4 *)((int)this + 0x28) = *(undefined4 *)(param_1 + 0x60);
   *(undefined1 *)((int)this + 0x2c) = 1;
   return (uint)this;
+}
+
+/* ref: FUN_01055030 */
+unsigned int F_01055030(unsigned int gen_a0)
+{
+  GEN_ENTER(0x1055030u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[75])REFP(0x12b47fc));
+  if ((REFG(int, 0x15d8c04) != 0) && (REFG(int, 0x15d8c04) != -0xa0)) {
+    F_00ce3b10(1);
+    F_00ce3530();
+  }
+  *(undefined1 *)((int)this + 0x2c) = 0;
+  F_00cc5320();
+  F_00cc27e0();
+  F_00ce9fe0();
+  F_00cc6d60();
+  F_00cbf410();
+  gen_imp_DeleteCriticalSection((LPCRITICAL_SECTION)((int)this + 0x30));
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[75])REFP(0x12b46cc));
+  return 0;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::SoundDriver::vf7 */
+byte F_01055090(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x1055090u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  LPCRITICAL_SECTION lpCriticalSection;
+  byte bVar1;
+  undefined * this_00;
+  int * piVar2;
+  uint uVar3;
+  
+  lpCriticalSection = (LPCRITICAL_SECTION)(this + 0x30);
+  this[0x48] = (undefined1)0x1;
+  gen_imp_EnterCriticalSection(lpCriticalSection);
+  if ((char)param_2 != '\0') {
+    this_00 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*(int *)this + 0x48))(this,((undefined1 *)(gen_frame + 0x0)),param_1)));
+    F_00cbe4b0(this_00);
+    F_00cbe3b0(((undefined1 *)(gen_frame + 0x0)));
+  }
+  piVar2 = (int *)F_00cc6e00(param_1);
+  if (piVar2 == (int *)0x0) {
+    if (this[0x48] != (undefined1)0x0) {
+      gen_imp_LeaveCriticalSection(lpCriticalSection);
+    }
+    return 1;
+  }
+  bVar1 = F_00cc2b60(piVar2);
+  if ((bVar1 == 0) && ((short)piVar2[8] < 1)) {
+    if ((*(byte *)(piVar2 + 0x12) & 8) != 0) {
+      uVar3 = ((code *)*(gen_code32 *)(*piVar2 + 4))(piVar2);
+      if (uVar3 != 3) {
+        bVar1 = F_00ce3460(piVar2[5]);
+        if (bVar1 != 0) goto LAB_0105513a;
+      }
+    }
+    bVar1 = F_00cc8a70(param_1);
+    if (this[0x48] != (undefined1)0x0) {
+      gen_imp_LeaveCriticalSection(lpCriticalSection);
+    }
+    return bVar1;
+  }
+LAB_0105513a: ;
+  if (this[0x48] != (undefined1)0x0) {
+    gen_imp_LeaveCriticalSection(lpCriticalSection);
+  }
+  return 0;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::SoundDriver::vf8 */
+byte F_01055170(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x1055170u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  LPCRITICAL_SECTION lpCriticalSection;
+  byte bVar1;
+  int * piVar2;
+  uint uVar3;
+  
+  lpCriticalSection = (LPCRITICAL_SECTION)(this + 0x30);
+  this[0x48] = (undefined1)0x1;
+  gen_imp_EnterCriticalSection(lpCriticalSection);
+  piVar2 = (int *)F_00cc6e00(param_1);
+  if (piVar2 != (int *)0x0) {
+    bVar1 = F_00cc2b60(piVar2);
+    if ((bVar1 != 0) || (0 < (short)piVar2[8])) {
+LAB_010551ce: ;
+      if (this[0x48] != (undefined1)0x0) {
+        gen_imp_LeaveCriticalSection(lpCriticalSection);
+      }
+      return 0;
+    }
+    if ((*(byte *)(piVar2 + 0x12) & 8) != 0) {
+      uVar3 = ((code *)*(gen_code32 *)(*piVar2 + 4))(piVar2);
+      if (uVar3 != 3) {
+        bVar1 = F_00ce3460(piVar2[5]);
+        if (bVar1 != 0) goto LAB_010551ce;
+      }
+    }
+  }
+  if (this[0x48] != (undefined1)0x0) {
+    gen_imp_LeaveCriticalSection(lpCriticalSection);
+  }
+  return 1;
 }
 

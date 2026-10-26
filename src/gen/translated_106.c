@@ -9129,8 +9129,11 @@ unsigned int F_00a0b350(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xa0b350u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
-  if (*(int * PTR32 *)((int)this + 8) != (int *)0x0) {
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 8) + 0xc))))((undefined4)gen_fl2bits((float)(float10)0));
+  int * piVar1;
+  
+  piVar1 = *(int * PTR32 *)((int)this + 8);
+  if (piVar1 != (int *)0x0) {
+    ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,(undefined4)gen_fl2bits((float)(float10)0));
     F_00bba6a0(*(undefined * PTR32 *)((int)this + 8),(int)this + -4);
     *(undefined4 *)((int)this + 8) = 0;
     *(undefined4 *)((int)this + 0x10) = 0;
@@ -9188,23 +9191,25 @@ uint F_00a0b440(unsigned int gen_a0)
 {
   GEN_ENTER(0xa0b440u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
+  int * piVar1;
+  uint uVar2;
   
+  piVar1 = *(int * PTR32 *)((int)this + 0xc);
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[6])REFP(0x10e1c38));
   *(undefined * PTR32 * PTR32 *)((int)this + 4) = (*(undefined * PTR32 (*)[4])REFP(0x10e1c24));
-  if (*(int * PTR32 *)((int)this + 0xc) != (int *)0x0) {
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0xc) + 0xc))))((undefined4)gen_fl2bits((float)(float10)0));
+  if (piVar1 != (int *)0x0) {
+    ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,(undefined4)gen_fl2bits((float)(float10)0));
     F_00bba6a0(*(undefined * PTR32 *)((int)this + 0xc),this);
     *(undefined4 *)((int)this + 0xc) = 0;
   }
-  uVar1 = *(uint *)((int)this + 0x10);
-  if (uVar1 != 0) {
-    *(undefined4 *)(uVar1 + 0x788) = 0;
+  uVar2 = *(uint *)((int)this + 0x10);
+  if (uVar2 != 0) {
+    *(undefined4 *)(uVar2 + 0x788) = 0;
     *(undefined4 *)((int)this + 0x10) = 0;
   }
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[6])REFP(0x10e1bf4));
   *(undefined * PTR32 * PTR32 *)((int)this + 4) = (*(undefined * PTR32 (*)[4])REFP(0x10e1c10));
-  return uVar1;
+  return uVar2;
 }
 
 /* ref: FUN_00a0b4a0 */

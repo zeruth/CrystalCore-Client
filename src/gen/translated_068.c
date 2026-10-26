@@ -825,7 +825,7 @@ unsigned int F_00782c20(float gen_a0)
   GEN_ENTER(0x782c20u, gen_trace_f(gen_a0), 0u, 0u, 0u);
   float param_1 = (float)gen_a0;
   if (REFG(int * PTR32, 0x148a44c) != (int *)0x0) {
-    ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x48))))((undefined4)gen_fl2bits(param_1));
+    ((code *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x148a44c) + 0x48))))(REFG(int * PTR32, 0x148a44c),(undefined4)gen_fl2bits(param_1));
   }
   return 0;
 }

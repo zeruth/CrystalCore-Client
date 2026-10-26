@@ -1768,7 +1768,8 @@ uint F_00988d10(unsigned int gen_a0, float gen_a1, unsigned int gen_a2, unsigned
   undefined4 param_4 = (undefined4)gen_a3;
   uint uVar1;
   
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 8) + 4))))((undefined4)gen_fl2bits(param_2),param_4);
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 8) + 4))))
+                    (param_1 + 8,(undefined4)gen_fl2bits(param_2),param_4);
   return uVar1;
 }
 
@@ -2419,7 +2420,8 @@ LAB_00989c20: ;
       puVar5 = ((uint *)GEN_TOP(((int)puVar4 + (puVar5[1] + 3 & 0xfffffffc))));
     } while (uVar3 < param_3);
   }
-  uVar3 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 8) + 0xc))))((undefined4)gen_fl2bits((float)(float10)0));
+  uVar3 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 8) + 0xc))))
+                    ((int)this + 8,(undefined4)gen_fl2bits((float)(float10)0));
   if ((char)uVar3 == '\0') {
     *(undefined1 *)((int)this + 5) = 0xff;
   }
@@ -13047,10 +13049,11 @@ uint F_00998af0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
     } while (uVar3 < param_3);
   }
   uVar3 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x14) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)0));
+                    ((int)this + 0x14,(undefined4)gen_fl2bits((float)(float10)0));
   if (((char)uVar3 == '\0') &&
      (uVar3 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x1c) + 0xc))))
-                        ((undefined4)gen_fl2bits((float)(float10)0)), (char)uVar3 == '\0')) {
+                        ((int)this + 0x1c,(undefined4)gen_fl2bits((float)(float10)0)),
+     (char)uVar3 == '\0')) {
     *(undefined1 *)((int)this + 0x26) = 0;
     return uVar3;
   }
@@ -13139,12 +13142,14 @@ LAB_00998d0b: ;
     } while (uVar3 < param_3);
   }
   uVar3 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x20) + 0xc))))
-                    ((undefined4)gen_fl2bits((float)(float10)0));
+                    ((int)this + 0x20,(undefined4)gen_fl2bits((float)(float10)0));
   if ((((char)uVar3 == '\0') &&
       (uVar3 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x28) + 0xc))))
-                         ((undefined4)gen_fl2bits((float)(float10)0)), (char)uVar3 == '\0')) &&
+                         ((int)this + 0x28,(undefined4)gen_fl2bits((float)(float10)0)),
+      (char)uVar3 == '\0')) &&
      (uVar3 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x30) + 0xc))))
-                        ((undefined4)gen_fl2bits((float)(float10)0)), (char)uVar3 == '\0')) {
+                        ((int)this + 0x30,(undefined4)gen_fl2bits((float)(float10)0)),
+     (char)uVar3 == '\0')) {
     **(uint * PTR32 *)((int)this + 4) = **(uint * PTR32 *)((int)this + 4) & 0xfffffffe;
     return uVar3;
   }
@@ -13430,27 +13435,36 @@ uint F_00999190(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
       pcVar6 = pcVar5 + (*(int *)(pcVar6 + 4) + 3U & 0xfffffffc);
     } while (uVar4 < param_3);
   }
-  uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0xc) + 0xc))))((undefined4)gen_fl2bits((float)(float10)1))
-  ;
+  uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0xc) + 0xc))))
+                    ((int)this + 0xc,(undefined4)gen_fl2bits((float)(float10)1));
   if (((((((char)uVar4 == '\0') &&
          (uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x14) + 0xc))))
-                            ((undefined4)gen_fl2bits((float)(float10)1)), (char)uVar4 == '\0')) &&
+                            ((int)this + 0x14,(undefined4)gen_fl2bits((float)(float10)1)),
+         (char)uVar4 == '\0')) &&
         (uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x1c) + 0xc))))
-                           ((undefined4)gen_fl2bits((float)(float10)0)), (char)uVar4 == '\0')) &&
+                           ((int)this + 0x1c,(undefined4)gen_fl2bits((float)(float10)0)),
+        (char)uVar4 == '\0')) &&
        ((uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x24) + 0xc))))
-                           ((undefined4)gen_fl2bits((float)(float10)0)), (char)uVar4 == '\0' &&
+                           ((int)this + 0x24,(undefined4)gen_fl2bits((float)(float10)0)),
+        (char)uVar4 == '\0' &&
         (uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x34) + 0xc))))
-                           ((undefined4)gen_fl2bits((float)(float10)1)), (char)uVar4 == '\0')))) &&
+                           ((int)this + 0x34,(undefined4)gen_fl2bits((float)(float10)1)),
+        (char)uVar4 == '\0')))) &&
       ((uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x3c) + 0xc))))
-                          ((undefined4)gen_fl2bits((float)(float10)1)), (char)uVar4 == '\0' &&
+                          ((int)this + 0x3c,(undefined4)gen_fl2bits((float)(float10)1)),
+       (char)uVar4 == '\0' &&
        ((uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x44) + 0xc))))
-                           ((undefined4)gen_fl2bits((float)(float10)0)), (char)uVar4 == '\0' &&
+                           ((int)this + 0x44,(undefined4)gen_fl2bits((float)(float10)0)),
+        (char)uVar4 == '\0' &&
         (uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x4c) + 0xc))))
-                           ((undefined4)gen_fl2bits((float)(float10)0)), (char)uVar4 == '\0'))))))
-     && ((uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x5c) + 0xc))))
-                            ((undefined4)gen_fl2bits((float)(float10)1)), (char)uVar4 == '\0' &&
-         (uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 100) + 0xc))))
-                            ((undefined4)gen_fl2bits((float)(float10)1)), (char)uVar4 == '\0')))) {
+                           ((int)this + 0x4c,(undefined4)gen_fl2bits((float)(float10)0)),
+        (char)uVar4 == '\0')))))) &&
+     ((uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x5c) + 0xc))))
+                         ((int)this + 0x5c,(undefined4)gen_fl2bits((float)(float10)1)),
+      (char)uVar4 == '\0' &&
+      (uVar4 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 100) + 0xc))))
+                         ((int)this + 100,(undefined4)gen_fl2bits((float)(float10)1)),
+      (char)uVar4 == '\0')))) {
     **(uint * PTR32 *)((int)this + 4) = **(uint * PTR32 *)((int)this + 4) & 0xfffffffe;
     return uVar4;
   }

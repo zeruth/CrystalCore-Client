@@ -11448,8 +11448,8 @@ LAB_004b43eb: ;
           goto LAB_004b447d;
         }
       }
-      ((code *)*(gen_code32 *)(*(int *)*piVar8 + 0x70))(*(undefined4 *)(param_1 + 0x24));
-      uVar3 = ((code *)*(gen_code32 *)(*(int *)*piVar8 + 0x74))(*(undefined4 *)(param_1 + 0x28));
+      ((code *)*(gen_code32 *)(*(int *)*piVar8 + 0x70))((int *)*piVar8,*(undefined4 *)(param_1 + 0x24));
+      uVar3 = ((code *)*(gen_code32 *)(*(int *)*piVar8 + 0x74))((int *)*piVar8,*(undefined4 *)(param_1 + 0x28));
     }
 LAB_004b447d: ;
     piVar8 = piVar8 + 1;

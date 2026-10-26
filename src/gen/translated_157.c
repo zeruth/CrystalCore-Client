@@ -3079,7 +3079,8 @@ unsigned int F_00cc6b10(unsigned int gen_a0, float gen_a1, unsigned int gen_a2, 
   undefined4 param_3 = (undefined4)gen_a2;
   undefined4 param_4 = (undefined4)gen_a3;
   if (*(int *)(param_1 + 4) != 0) {
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 4) + 0xc))))((undefined4)gen_fl2bits(param_2),param_3,param_4);
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(param_1 + 4) + 0xc))))
+              (*(int * PTR32 *)(param_1 + 4),(undefined4)gen_fl2bits(param_2),param_3,param_4);
   }
   return 0;
 }
@@ -8607,7 +8608,7 @@ uint F_00ccd100(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3)
   float param_4 = (float)gen_a3;
   uint uVar1;
   
-  ((code *)*(gen_code32 *)(*param_1 + 0x28))((undefined4)gen_fl2bits(param_2),0);
+  ((code *)*(gen_code32 *)(*param_1 + 0x28))(param_1,(undefined4)gen_fl2bits(param_2),0);
   ((code *)*(gen_code32 *)(*param_1 + 0x2c))(param_1,(undefined4)gen_fl2bits(param_3),0);
   ((code *)*(gen_code32 *)(*param_1 + 0x30))(param_1,(undefined4)gen_fl2bits(param_4),0);
   uVar1 = ((code *)*(gen_code32 *)(*param_1 + 0x24))(param_1);
@@ -8621,9 +8622,10 @@ uint F_00ccd150(unsigned int gen_a0)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint uVar1;
   
-  ((code *)*((gen_code32 *)GEN_TOP((*(int *)(this + 4) + 4))))(*(undefined4 *)&REFG(undefined, 0x112addc));
-  ((code *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x28) + 4))))(*(undefined4 *)&REFG(undefined, 0x112ade0));
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x4c) + 4))))((undefined4)gen_fl2bits((float)(float10)1));
+  ((code *)*((gen_code32 *)GEN_TOP((*(int *)(this + 4) + 4))))(this + 4,*(undefined4 *)&REFG(undefined, 0x112addc));
+  ((code *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x28) + 4))))(this + 0x28,*(undefined4 *)&REFG(undefined, 0x112ade0));
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x4c) + 4))))
+                    (this + 0x4c,(undefined4)gen_fl2bits((float)(float10)1));
   return uVar1;
 }
 
@@ -8871,7 +8873,8 @@ uint F_00ccd4d0(unsigned int gen_a0, unsigned int gen_a1)
   F_00cccb10((int)this + 0x28,*(float *)&REFG(undefined, 0x112ade0));
   F_00cccb10((int)this + 0x4c,(float)(float10)1);
   if (param_1 == 0) {
-    ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 4) + 4))))((undefined4)gen_fl2bits(*(float *)&REFG(undefined, 0x112addc)));
+    ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 4) + 4))))
+              ((int)this + 4,(undefined4)gen_fl2bits(*(float *)&REFG(undefined, 0x112addc)));
     ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x28) + 4))))
               ((int)this + 0x28,(undefined4)gen_fl2bits(*(float *)&REFG(undefined, 0x112ade0)));
     ((code *)*((gen_code32 *)GEN_TOP((*(int *)((int)this + 0x4c) + 4))))

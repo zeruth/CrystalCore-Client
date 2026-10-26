@@ -1,32 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0107d050 */
-unsigned int F_0107d050(void)
-{
-  GEN_ENTER(0x107d050u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x135f11c) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[10])REFP(0x1159938))));
-  return 0;
-}
-
-/* ref: FUN_0107d060 */
-unsigned int F_0107d060(void)
-{
-  GEN_ENTER(0x107d060u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x135f14c) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[10])REFP(0x1159938))));
-  return 0;
-}
-
-/* ref: FUN_0107d070 */
-unsigned int F_0107d070(void)
-{
-  GEN_ENTER(0x107d070u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x135f17c) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[10])REFP(0x1159938))));
-  return 0;
-}
-
 /* ref: FUN_0107d080 */
 unsigned int F_0107d080(void)
 {

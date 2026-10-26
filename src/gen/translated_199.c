@@ -1,41 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00eedd10 */
-uint F_00eedd10(unsigned int gen_a0)
-{
-  GEN_ENTER(0xeedd10u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return *(uint *)(&REFG(undefined, 0x12a9ce0) + param_1 * 4);
-}
-
-/* ref: Application::Network::WorkDefinitions::DamageWork_TypeInfo::vf4 */
-uint F_00eedd30(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xeedd30u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint uVar1;
-  uint uVar2;
-  
-  uVar2 = 0;
-  do {
-    uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this,uVar2);
-    if (uVar1 == param_1) {
-      return uVar2;
-    }
-    uVar2 = uVar2 + 1;
-  } while ((int)uVar2 < 5);
-  return 0xffffffff;
-}
-
-/* ref: FUN_00eedd70 */
-uint F_00eedd70(unsigned int gen_a0)
-{
-  GEN_ENTER(0xeedd70u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 - 0x23;
-}
-
 /* ref: Application::Network::WorkDefinitions::DamageWork_TypeInfo::vf6 */
 uint F_00eedd80(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -33013,5 +32977,32 @@ uint F_00f2c6c0(unsigned int gen_a0)
   GEN_ENTER(0xf2c6c0u, gen_a0, 0u, 0u, 0u);
   int param_1 = (int)gen_a0;
   return param_1 - 0x1ae;
+}
+
+/* ref: Application::Network::WorkDefinitions::FishingTempWork_TypeInfo::vf6 */
+uint F_00f2c6d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xf2c6d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return (uint)(&REFG(undefined * PTR32, 0x136a3d8))[param_1];
+}
+
+/* ref: Application::Network::WorkDefinitions::FishingTempWork_TypeInfo::vf7 */
+uint F_00f2c6f0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xf2c6f0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(uint *)(&REFG(undefined, 0x12abae8) + param_1 * 4);
+}
+
+/* ref: Application::Network::WorkDefinitions::FishingTempWork_TypeInfo::vf8 */
+uint F_00f2c710(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xf2c710u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(uint *)(&REFG(undefined, 0x12abb68) + param_1 * 4);
 }
 
