@@ -94,6 +94,21 @@ void gen_trace_enter(unsigned int addr, unsigned int a0, unsigned int a1, unsign
    its value converted, pi/4 recorded as 0 parted a client's runs at a sincos, 2026-10-26) */
 static __inline unsigned int gen_trace_f(float f) { union { float f; unsigned int u; } v; v.f = f; return v.u; }
 static __inline unsigned long long gen_trace_d(double d) { union { double d; unsigned long long u; } v; v.d = d; return v.u; }
+/* the x87 unit's control word, per thread as the hardware's is: what `fnstcw` reads and `fldcw`
+   writes in the translation (MSVC's default 0x27f; Direct3D's CreateDevice sets 24-bit
+   precision, Com32.cpp). The port computes in SSE whatever it says: the code that reads it, the
+   CRT's math choosing its paths by the precision, takes the reference's way */
+extern __declspec(thread) unsigned short gen_x87_cw;
+/* (`fldcw`'s write: the word, and its rounding control applied to the host's SSE rounding) */
+void gen_set_x87_cw(unsigned short cw);
+/* and its status word, `fnstsw`: the host's floating-point exception flags as x87 bits (IE 1,
+   DE 2, ZE 4, OE 8, UE 0x10, PE 0x20), cleared after the read when `clear` (fnclex) */
+unsigned short gen_fpusw(int clear);
+/* `cdq; idiv r32`: a 32-bit signed division, as the reference's, faulting where it faults (a zero
+   divisor, EXCEPTION_INT_DIVIDE_BY_ZERO; INT_MIN / -1, EXCEPTION_INT_OVERFLOW), the divisor read
+   through a volatile so the host compiler neither folds nor reorders the instruction away */
+static __inline int gen_idiv32(int a, int b) { volatile int d = b; return a / d; }
+static __inline int gen_irem32(int a, int b) { volatile int d = b; return a % d; }
 /* an SSE register's 16 bytes, as Ghidra writes one (`undefined1 [16]`): an array, so a pointer
    to one steps 16 and indexes its bytes as the reference does. An array is not assignable: a
    value stored into one (`*p = (undefined1 [16])0x0`) is GEN_V16_SET's, zero-extended */
@@ -135,6 +150,17 @@ static __inline void gen_vpsllvd_avx2(void *r, const void *a, const void *n) {
     memcpy(x, a, 16); memcpy(c, n, 16);
     for (int k = 0; k < 4; k++) x[k] = c[k] > 31 ? 0 : x[k] << c[k];
     memcpy(r, x, 16);
+}
+/* (AVX-512VL's float to 64-bit integer conversion, truncating, the 128-bit form: its two low
+   floats, behind __isa_available as MSVC 14.51 converts a float to u64. In C, the hardware's
+   0x8000000000000000 for a NaN or one out of range, so the port needs no AVX-512 of its own) */
+static __inline void gen_vcvttps2qq_avx512vl(void *r, const void *a) {
+    float f[4]; long long q[2];
+    memcpy(f, a, 16);
+    for (int k = 0; k < 2; k++)
+        q[k] = (f[k] != f[k] || f[k] >= 9223372036854775808.0f || f[k] < -9223372036854775808.0f)
+            ? (long long)0x8000000000000000ull : (long long)f[k];
+    memcpy(r, q, 16);
 }
 static __inline void gen_v16_or(void *r, const void *a, const void *b) { gen_sti(r, _mm_or_si128(gen_ldi(a), gen_ldi(b))); }
 static __inline void gen_v16_and(void *r, const void *a, const void *b) { gen_sti(r, _mm_and_si128(gen_ldi(a), gen_ldi(b))); }
@@ -411,6 +437,19 @@ static __inline unsigned long long gen_piece_set(void *p, int off, int n, unsign
 #define ABS(x) ((x) < 0 ? -(x) : (x))
 #include <math.h>
 #define SQRT(x) sqrt(x)
+/* the C runtime's x87 math as ApplyFacts' call fixups write it, `fpatan(from_bcd(x), K)`: K the
+   function, helpers32.py's MATH_CODES (exp, log, log10, tan, atan, asin, acos, sinh, cosh, tanh,
+   sin, cos, floor, ceil) */
+static __inline double gen_x87math(double x, int k) {
+    switch (k) {
+    case 1: return exp(x);   case 2: return log(x);   case 3: return log10(x); case 4: return tan(x);
+    case 5: return atan(x);  case 6: return asin(x);  case 7: return acos(x);  case 8: return sinh(x);
+    case 9: return cosh(x);  case 10: return tanh(x); case 11: return sin(x);  case 12: return cos(x);
+    case 13: return floor(x); case 14: return ceil(x);
+    default: return x;
+    }
+}
+#define GEN_X87MATH(x, k) gen_x87math((double)(x), (int)(k))
 #define ROUND(x) nearbyint(x)
 #define TRUNC(x) trunc(x)
 #define FLOOR(x) floor(x)
@@ -430,6 +469,9 @@ static __inline unsigned long long gen_piece_set(void *p, int off, int n, unsign
    code in ecx: a generic one, 7). MSVC's /GS range checks end in one (Ghidra64.h's, 2026-10-23) */
 static unsigned int gen_swi_break(void) { __debugbreak(); return 0; }
 static unsigned int gen_swi_fastfail(void) { __fastfail(7); return 0; }
+/* `hlt`, a privileged instruction in user mode: it faults as the reference's does (translate32.py
+   hlt_loops) */
+static void gen_hlt(void) { __halt(); }
 #define swi(n) ((n) == 0x29 ? gen_swi_fastfail : gen_swi_break)
 /* `ud2`, which Ghidra spells `(code *)invalidInstructionException()` and calls */
 static unsigned int gen_ud2(void) { __ud2(); return 0; }

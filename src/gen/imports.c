@@ -108,7 +108,7 @@ unsigned int gen_imp_DispatchMessageA();   /* the runtime's */
 gen_real_fn gen_real_DispatchMessageW;
 unsigned int gen_imp_DispatchMessageW();   /* the runtime's */
 gen_real_fn gen_real_DuplicateHandle;
-unsigned int gen_imp_DuplicateHandle(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DuplicateHandle(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_DuplicateHandle();   /* the runtime's */
 gen_real_fn gen_real_Ellipse;
 unsigned int gen_imp_Ellipse(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_Ellipse(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_EncodePointer;
@@ -426,7 +426,7 @@ unsigned int gen_imp_MoveFileW(int a0, int a1, int a2, int a3, ...) { GEN_REST(a
 gen_real_fn gen_real_MoveToEx;
 unsigned int gen_imp_MoveToEx(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_MoveToEx(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_MsgWaitForMultipleObjects;
-unsigned int gen_imp_MsgWaitForMultipleObjects(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_MsgWaitForMultipleObjects(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_MsgWaitForMultipleObjects();   /* the runtime's */
 gen_real_fn gen_real_MulDiv;
 unsigned int gen_imp_MulDiv(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_MulDiv(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_MultiByteToWideChar;
@@ -462,7 +462,7 @@ unsigned int gen_imp_QueryPerformanceFrequency(int a0, int a1, int a2, int a3, .
 gen_real_fn gen_real_RaiseException;
 unsigned int gen_imp_RaiseException();   /* the runtime's */
 gen_real_fn gen_real_ReadFile;
-unsigned int gen_imp_ReadFile(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_ReadFile(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_ReadFile();   /* the runtime's */
 gen_real_fn gen_real_RegCloseKey;
 unsigned int gen_imp_RegCloseKey(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_RegCloseKey(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_RegCreateKeyExA;
@@ -628,7 +628,7 @@ unsigned int gen_imp_WSAIoctl(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3
 gen_real_fn gen_real_WSAStartup;
 unsigned int gen_imp_WSAStartup();   /* the runtime's */
 gen_real_fn gen_real_WaitForMultipleObjects;
-unsigned int gen_imp_WaitForMultipleObjects(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WaitForMultipleObjects(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_WaitForMultipleObjects();   /* the runtime's */
 gen_real_fn gen_real_WaitForSingleObject;
 unsigned int gen_imp_WaitForSingleObject(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WaitForSingleObject(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_WideCharToMultiByte;
@@ -658,7 +658,7 @@ unsigned int gen_imp_WinHttpSetTimeouts(int a0, int a1, int a2, int a3, ...) { G
 gen_real_fn gen_real_WriteConsoleW;
 unsigned int gen_imp_WriteConsoleW(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WriteConsoleW(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_WriteFile;
-unsigned int gen_imp_WriteFile(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_WriteFile(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_WriteFile();   /* the runtime's */
 gen_real_fn gen_real_XInputEnable;
 unsigned int gen_imp_XInputEnable(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_XInputEnable(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_XInputGetState;
@@ -789,7 +789,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e028u, "DINPUT8.dll", "DirectInput8Create", (void *)gen_imp_DirectInput8Create, 0},
   {0x107e3e4u, "USER32.dll", "DispatchMessageA", (void *)gen_imp_DispatchMessageA, 0},
   {0x107e3c8u, "USER32.dll", "DispatchMessageW", (void *)gen_imp_DispatchMessageW, 0},
-  {0x107e1c0u, "KERNEL32.dll", "DuplicateHandle", (void *)gen_imp_DuplicateHandle, &gen_real_DuplicateHandle},
+  {0x107e1c0u, "KERNEL32.dll", "DuplicateHandle", (void *)gen_imp_DuplicateHandle, 0},
   {0x107e050u, "GDI32.dll", "Ellipse", (void *)gen_imp_Ellipse, &gen_real_Ellipse},
   {0x107e35cu, "KERNEL32.dll", "EncodePointer", (void *)gen_imp_EncodePointer, 0},
   {0x107e25cu, "KERNEL32.dll", "EnterCriticalSection", (void *)gen_imp_EnterCriticalSection, 0},
@@ -948,7 +948,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e1c8u, "KERNEL32.dll", "MoveFileA", (void *)gen_imp_MoveFileA, &gen_real_MoveFileA},
   {0x107e2e4u, "KERNEL32.dll", "MoveFileW", (void *)gen_imp_MoveFileW, &gen_real_MoveFileW},
   {0x107e038u, "GDI32.dll", "MoveToEx", (void *)gen_imp_MoveToEx, &gen_real_MoveToEx},
-  {0x107e3ecu, "USER32.dll", "MsgWaitForMultipleObjects", (void *)gen_imp_MsgWaitForMultipleObjects, &gen_real_MsgWaitForMultipleObjects},
+  {0x107e3ecu, "USER32.dll", "MsgWaitForMultipleObjects", (void *)gen_imp_MsgWaitForMultipleObjects, 0},
   {0x107e0c4u, "KERNEL32.dll", "MulDiv", (void *)gen_imp_MulDiv, &gen_real_MulDiv},
   {0x107e290u, "KERNEL32.dll", "MultiByteToWideChar", (void *)gen_imp_MultiByteToWideChar, &gen_real_MultiByteToWideChar},
   {0x107e5f4u, "ole32.dll", "OleInitialize", (void *)gen_imp_OleInitialize, &gen_real_OleInitialize},
@@ -966,7 +966,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e264u, "KERNEL32.dll", "QueryPerformanceCounter", (void *)gen_imp_QueryPerformanceCounter, &gen_real_QueryPerformanceCounter},
   {0x107e268u, "KERNEL32.dll", "QueryPerformanceFrequency", (void *)gen_imp_QueryPerformanceFrequency, &gen_real_QueryPerformanceFrequency},
   {0x107e2ccu, "KERNEL32.dll", "RaiseException", (void *)gen_imp_RaiseException, 0},
-  {0x107e124u, "KERNEL32.dll", "ReadFile", (void *)gen_imp_ReadFile, &gen_real_ReadFile},
+  {0x107e124u, "KERNEL32.dll", "ReadFile", (void *)gen_imp_ReadFile, 0},
   {0x107e010u, "ADVAPI32.dll", "RegCloseKey", (void *)gen_imp_RegCloseKey, &gen_real_RegCloseKey},
   {0x107e000u, "ADVAPI32.dll", "RegCreateKeyExA", (void *)gen_imp_RegCreateKeyExA, &gen_real_RegCreateKeyExA},
   {0x107e00cu, "ADVAPI32.dll", "RegEnumKeyExA", (void *)gen_imp_RegEnumKeyExA, &gen_real_RegEnumKeyExA},
@@ -1049,7 +1049,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e51cu, "WS2_32.dll", "WSAGetLastError", (void *)gen_imp_WSAGetLastError, &gen_real_WSAGetLastError},
   {0x107e53cu, "WS2_32.dll", "WSAIoctl", (void *)gen_imp_WSAIoctl, &gen_real_WSAIoctl},
   {0x107e578u, "WS2_32.dll", "WSAStartup", (void *)gen_imp_WSAStartup, 0},
-  {0x107e0c0u, "KERNEL32.dll", "WaitForMultipleObjects", (void *)gen_imp_WaitForMultipleObjects, &gen_real_WaitForMultipleObjects},
+  {0x107e0c0u, "KERNEL32.dll", "WaitForMultipleObjects", (void *)gen_imp_WaitForMultipleObjects, 0},
   {0x107e270u, "KERNEL32.dll", "WaitForSingleObject", (void *)gen_imp_WaitForSingleObject, &gen_real_WaitForSingleObject},
   {0x107e294u, "KERNEL32.dll", "WideCharToMultiByte", (void *)gen_imp_WideCharToMultiByte, &gen_real_WideCharToMultiByte},
   {0x107e4d0u, "WINHTTP.dll", "WinHttpCloseHandle", (void *)gen_imp_WinHttpCloseHandle, &gen_real_WinHttpCloseHandle},
@@ -1064,7 +1064,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e4d8u, "WINHTTP.dll", "WinHttpSetStatusCallback", (void *)gen_imp_WinHttpSetStatusCallback, &gen_real_WinHttpSetStatusCallback},
   {0x107e4f0u, "WINHTTP.dll", "WinHttpSetTimeouts", (void *)gen_imp_WinHttpSetTimeouts, &gen_real_WinHttpSetTimeouts},
   {0x107e0d0u, "KERNEL32.dll", "WriteConsoleW", (void *)gen_imp_WriteConsoleW, &gen_real_WriteConsoleW},
-  {0x107e2d4u, "KERNEL32.dll", "WriteFile", (void *)gen_imp_WriteFile, &gen_real_WriteFile},
+  {0x107e2d4u, "KERNEL32.dll", "WriteFile", (void *)gen_imp_WriteFile, 0},
   {0x107e5a0u, "XINPUT1_3.dll", "XInputEnable", (void *)gen_imp_XInputEnable, &gen_real_XInputEnable},
   {0x107e59cu, "XINPUT1_3.dll", "XInputGetState", (void *)gen_imp_XInputGetState, &gen_real_XInputGetState},
   {0x107e5a4u, "XINPUT1_3.dll", "XInputSetState", (void *)gen_imp_XInputSetState, &gen_real_XInputSetState},

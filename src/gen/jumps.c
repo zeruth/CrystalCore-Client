@@ -41,6 +41,11 @@ static unsigned int W_00410a40(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00410a60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00410a60(gen_a0); }
 static unsigned int W_00410ab0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00410ab0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00410ac0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00410ac0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_00410af0(float gen_a0) { return (double)F_00410af0(gen_a0); }
+static double W_00410be0(unsigned int gen_a0) { return (double)F_00410be0(gen_a0); }
+static double W_00410c00(unsigned int gen_a0) { return (double)F_00410c00(gen_a0); }
+static double W_00411af0(unsigned int gen_a0) { return (double)F_00411af0(gen_a0); }
+static double W_00411b10(unsigned int gen_a0) { return (double)F_00411b10(gen_a0); }
 static unsigned int W_00411b30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00411b30(gen_a0); }
 static unsigned int W_00411b40(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00411b40(gen_a0); }
 static unsigned int W_00411b70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00411b70(gen_a0); }
@@ -48,7 +53,11 @@ static unsigned int W_00411b80(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00411b90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00411b90(gen_a0); }
 static unsigned int W_00411bb0(void) { return (unsigned int)(unsigned char)F_00411bb0(); }
 static unsigned int W_00411bd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00411bd0(gen_a0, gen_a1, gen_a2); }
+static double W_00411c10(unsigned int gen_a0) { return (double)F_00411c10(gen_a0); }
+static double W_00411c40(unsigned int gen_a0) { return (double)F_00411c40(gen_a0); }
 static unsigned int W_00411cd0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00411cd0(gen_a0); }
+static double W_00412100(unsigned int gen_a0) { return (double)F_00412100(gen_a0); }
+static double W_00412130(unsigned int gen_a0) { return (double)F_00412130(gen_a0); }
 static unsigned int W_00412190(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00412190(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00412320(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00412320(gen_a0); }
 static unsigned int W_00412690(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00412690(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
@@ -64,6 +73,7 @@ static unsigned int W_00414080(void) { return (unsigned int)(unsigned char)F_004
 static unsigned int W_00414410(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00414410(gen_a0); }
 static unsigned int W_00414430(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00414430(gen_a0); }
 static unsigned int W_00414450(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00414450(gen_a0); }
+static double W_004144e0(float gen_a0) { return (double)F_004144e0(gen_a0); }
 static unsigned int W_00414a40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00414a40(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00414ad0(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_00414ad0(gen_a0, gen_a1); }
 static unsigned int W_00414b60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10, unsigned int gen_a11, unsigned int gen_a12, unsigned int gen_a13, unsigned int gen_a14, unsigned int gen_a15, unsigned int gen_a16, unsigned int gen_a17, unsigned int gen_a18, unsigned int gen_a19, unsigned int gen_a20, unsigned int gen_a21) { return (unsigned int)(unsigned char)F_00414b60(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8, gen_a9, gen_a10, gen_a11, gen_a12, gen_a13, gen_a14, gen_a15, gen_a16, gen_a17, gen_a18, gen_a19, gen_a20, gen_a21); }
@@ -101,13 +111,14 @@ static unsigned int W_00424300(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00424310(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00424310(gen_a0, gen_a1); }
 static unsigned int W_00424320(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00424320(gen_a0); }
 static unsigned int W_004245a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004245a0(gen_a0); }
+static double W_00424620(float gen_a0) { return (double)F_00424620(gen_a0); }
 static unsigned int W_004247a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_004247a0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00424be0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00424be0(gen_a0); }
 static unsigned int W_00424ee0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00424ee0(gen_a0, gen_a1); }
 static unsigned int W_00425070(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00425070(gen_a0); }
 static unsigned int W_004256e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004256e0(gen_a0); }
-static double W_00425b00(unsigned int gen_a0) { return (double)F_00425b00(gen_a0); }
 static unsigned int W_00425b80(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00425b80(gen_a0); }
+static double W_00427560(unsigned int gen_a0) { return (double)F_00427560(gen_a0); }
 static double W_004275e0(unsigned int gen_a0) { return (double)F_004275e0(gen_a0); }
 static unsigned int W_004276f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004276f0(gen_a0, gen_a1); }
 static unsigned int W_00428220(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00428220(gen_a0, gen_a1); }
@@ -141,6 +152,7 @@ static unsigned int W_00430b20(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00430ff0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00430ff0(gen_a0, gen_a1); }
 static double W_004311f0(float gen_a0) { return (double)F_004311f0(gen_a0); }
 static unsigned int W_00431210(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00431210(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_00431470(float gen_a0) { return (double)F_00431470(gen_a0); }
 static unsigned int W_00431570(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00431570(gen_a0); }
 static unsigned int W_00431b80(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00431b80(gen_a0); }
 static unsigned int W_00431c10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00431c10(gen_a0); }
@@ -437,7 +449,8 @@ static unsigned int W_0046ecb0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_0046ed20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0046ed20(gen_a0); }
 static unsigned int W_0046ed60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0046ed60(gen_a0); }
 static unsigned int W_0046efb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0046efb0(gen_a0, gen_a1); }
-static double W_0046f0e0(unsigned int gen_a0, float gen_a1) { return (double)F_0046f0e0(gen_a0, gen_a1); }
+static double W_0046f0c0(unsigned int gen_a0) { return (double)F_0046f0c0(gen_a0); }
+static double W_0046f440(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0046f440(gen_a0, gen_a1); }
 static double W_0046f660(unsigned int gen_a0) { return (double)F_0046f660(gen_a0); }
 static double W_0046f680(unsigned int gen_a0) { return (double)F_0046f680(gen_a0); }
 static unsigned int W_0046f780(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0046f780(gen_a0, gen_a1); }
@@ -545,11 +558,11 @@ static unsigned int W_004914d0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00491520(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00491520(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_004915f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_004915f0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00491640(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00491640(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
-static double W_004969f0(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_004969f0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_004969f0(float gen_a0) { return (double)F_004969f0(gen_a0); }
 static double W_00496a10(float gen_a0) { return (double)F_00496a10(gen_a0); }
 static double W_00496a30(float gen_a0, float gen_a1) { return (double)F_00496a30(gen_a0, gen_a1); }
 static double W_00496a50(float gen_a0) { return (double)F_00496a50(gen_a0); }
-static double W_00496a70(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_00496a70(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00496a70(float gen_a0) { return (double)F_00496a70(gen_a0); }
 static double W_00496a90(float gen_a0) { return (double)F_00496a90(gen_a0); }
 static double W_00496ab0(float gen_a0, float gen_a1) { return (double)F_00496ab0(gen_a0, gen_a1); }
 static double W_00496ad0(float gen_a0) { return (double)F_00496ad0(gen_a0); }
@@ -561,10 +574,10 @@ static unsigned int W_004970c0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00499d60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00499d60(gen_a0); }
 static unsigned int W_0049a3a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0049a3a0(gen_a0, gen_a1); }
 static unsigned int W_0049a850(void) { return (unsigned int)(unsigned char)F_0049a850(); }
-static double W_0049a9d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_0049a9d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0049aba0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0049aba0(gen_a0, gen_a1); }
 static unsigned int W_0049ac70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0049ac70(gen_a0, gen_a1); }
 static unsigned int W_0049ac90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0049ac90(gen_a0, gen_a1, gen_a2); }
+static double W_0049b4d0(float gen_a0) { return (double)F_0049b4d0(gen_a0); }
 static unsigned int W_0049b5a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0049b5a0(gen_a0); }
 static unsigned int W_0049b6c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0049b6c0(gen_a0); }
 static unsigned int W_0049b8c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0049b8c0(gen_a0); }
@@ -604,15 +617,20 @@ static unsigned int W_0049f0d0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_0049f2a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0049f2a0(gen_a0, gen_a1); }
 static unsigned int W_004a0280(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004a0280(gen_a0, gen_a1); }
 static unsigned int W_004a0660(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004a0660(gen_a0, gen_a1); }
-static double W_004a27e0(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_004a27e0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_004a27d0(float gen_a0) { return (double)F_004a27d0(gen_a0); }
+static double W_004a27e0(float gen_a0) { return (double)F_004a27e0(gen_a0); }
 static double W_004a2800(float gen_a0, float gen_a1) { return (double)F_004a2800(gen_a0, gen_a1); }
 static double W_004a2820(float gen_a0) { return (double)F_004a2820(gen_a0); }
 static double W_004a2840(float gen_a0) { return (double)F_004a2840(gen_a0); }
 static double W_004a2860(float gen_a0, float gen_a1) { return (double)F_004a2860(gen_a0, gen_a1); }
-static double W_004a2880(float gen_a0, float gen_a1) { return (double)F_004a2880(gen_a0, gen_a1); }
-static double W_004a28a0(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_004a28a0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_004a2880(float gen_a0) { return (double)F_004a2880(gen_a0); }
+static double W_004a28a0(float gen_a0) { return (double)F_004a28a0(gen_a0); }
+static double W_004a28f0(float gen_a0) { return (double)F_004a28f0(gen_a0); }
+static double W_004a2910(float gen_a0) { return (double)F_004a2910(gen_a0); }
 static unsigned int W_004a2950(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_004a2950(gen_a0, gen_a1); }
-static double W_004a2be0(float gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_004a2be0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_004a2ba0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_004a2ba0(gen_a0, gen_a1, gen_a2); }
+static double W_004a2cc0(unsigned int gen_a0) { return (double)F_004a2cc0(gen_a0); }
+static double W_004a2d50(unsigned int gen_a0) { return (double)F_004a2d50(gen_a0); }
 static double W_004a3020(float gen_a0) { return (double)F_004a3020(gen_a0); }
 static double W_004a3110(unsigned int gen_a0, float gen_a1) { return (double)F_004a3110(gen_a0, gen_a1); }
 static double W_004a3190(float gen_a0) { return (double)F_004a3190(gen_a0); }
@@ -620,18 +638,15 @@ static double W_004a3270(unsigned int gen_a0, float gen_a1) { return (double)F_0
 static double W_004a3320(float gen_a0) { return (double)F_004a3320(gen_a0); }
 static double W_004a33e0(float gen_a0) { return (double)F_004a33e0(gen_a0); }
 static double W_004a3470(float gen_a0) { return (double)F_004a3470(gen_a0); }
-static double W_004a3500(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_004a3500(gen_a0, gen_a1, gen_a2); }
 static double W_004a37c0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_004a37c0(gen_a0, gen_a1, gen_a2); }
 static double W_004a37f0(float gen_a0, float gen_a1) { return (double)F_004a37f0(gen_a0, gen_a1); }
 static double W_004a3830(float gen_a0) { return (double)F_004a3830(gen_a0); }
 static double W_004a39a0(float gen_a0) { return (double)F_004a39a0(gen_a0); }
 static double W_004a3a50(float gen_a0) { return (double)F_004a3a50(gen_a0); }
-static double W_004a3b00(unsigned int gen_a0, float gen_a1) { return (double)F_004a3b00(gen_a0, gen_a1); }
 static double W_004a3ba0(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_004a3ba0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_004a3c60(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_004a3c60(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_004a3d10(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_004a3d10(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_004a3e90(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004a3e90(gen_a0, gen_a1); }
 static double W_004a3ed0(unsigned int gen_a0) { return (double)F_004a3ed0(gen_a0); }
+static double W_004a3f00(unsigned int gen_a0) { return (double)F_004a3f00(gen_a0); }
 static unsigned int W_004a4b40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004a4b40(gen_a0, gen_a1); }
 static unsigned int W_004a4b60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004a4b60(gen_a0, gen_a1); }
 static unsigned int W_004a4b90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004a4b90(gen_a0, gen_a1); }
@@ -645,10 +660,8 @@ static double W_004a4f30(float gen_a0, float gen_a1, float gen_a2, float gen_a3)
 static double W_004a4fe0(void) { return (double)F_004a4fe0(); }
 static unsigned int W_004a5dd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (unsigned int)(unsigned char)F_004a5dd0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_004a60a0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_004a60a0(gen_a0, gen_a1, gen_a2); }
-static double W_004a7190(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (double)F_004a7190(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_004a9d70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004a9d70(gen_a0); }
 static double W_004aa670(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004aa670(gen_a0, gen_a1); }
-static double W_004aa6f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004aa6f0(gen_a0, gen_a1); }
 static double W_004aa750(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (double)F_004aa750(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_004aa8d0(unsigned int gen_a0, float gen_a1) { return (double)F_004aa8d0(gen_a0, gen_a1); }
 static unsigned int W_004ab2a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004ab2a0(gen_a0, gen_a1); }
@@ -664,7 +677,6 @@ static unsigned int W_004ab970(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_004ab9e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004ab9e0(gen_a0, gen_a1); }
 static unsigned int W_004abab0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004abab0(gen_a0, gen_a1); }
 static unsigned int W_004abb40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_004abb40(gen_a0, gen_a1, gen_a2); }
-static double W_004ac650(float gen_a0, float gen_a1) { return (double)F_004ac650(gen_a0, gen_a1); }
 static unsigned int W_004ac6f0(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_004ac6f0(gen_a0, gen_a1); }
 static unsigned int W_004ac760(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_004ac760(gen_a0, gen_a1); }
 static unsigned int W_004ac7d0(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_004ac7d0(gen_a0, gen_a1); }
@@ -697,6 +709,8 @@ static unsigned int W_004bce60(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_004bcea0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004bcea0(gen_a0, gen_a1); }
 static double W_004bd280(unsigned int gen_a0) { return (double)F_004bd280(gen_a0); }
 static unsigned int W_004bd920(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004bd920(gen_a0, gen_a1); }
+static double W_004bdc30(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004bdc30(gen_a0, gen_a1); }
+static double W_004beab0(unsigned int gen_a0) { return (double)F_004beab0(gen_a0); }
 static double W_004bead0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004bead0(gen_a0, gen_a1); }
 static unsigned int W_004bfc50(void) { return (unsigned int)(unsigned char)F_004bfc50(); }
 static unsigned int W_004bfc60(void) { return (unsigned int)(unsigned char)F_004bfc60(); }
@@ -710,15 +724,16 @@ static unsigned int W_004c0590(unsigned int gen_a0, unsigned int gen_a1) { retur
 static double W_004c06e0(float gen_a0) { return (double)F_004c06e0(gen_a0); }
 static double W_004c0700(float gen_a0) { return (double)F_004c0700(gen_a0); }
 static double W_004c0730(float gen_a0) { return (double)F_004c0730(gen_a0); }
-static double W_004c0790(unsigned int gen_a0, float gen_a1) { return (double)F_004c0790(gen_a0, gen_a1); }
-static double W_004c0c40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_004c0c40(gen_a0, gen_a1, gen_a2); }
 static double W_004c0d30(float gen_a0) { return (double)F_004c0d30(gen_a0); }
 static double W_004c0d50(float gen_a0) { return (double)F_004c0d50(gen_a0); }
-static double W_004c0da0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004c0da0(gen_a0, gen_a1); }
-static double W_004c0e30(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004c0e30(gen_a0, gen_a1); }
+static double W_004c1010(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004c1010(gen_a0, gen_a1); }
+static double W_004c1070(unsigned int gen_a0) { return (double)F_004c1070(gen_a0); }
+static double W_004c10c0(unsigned int gen_a0) { return (double)F_004c10c0(gen_a0); }
+static double W_004c1110(unsigned int gen_a0) { return (double)F_004c1110(gen_a0); }
 static unsigned int W_004c1140(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_004c1140(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_004c15b0(void) { return (double)F_004c15b0(); }
-static double W_004c1e40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_004c1e40(gen_a0, gen_a1, gen_a2); }
+static double W_004c17f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004c17f0(gen_a0, gen_a1); }
+static double W_004c1810(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004c1810(gen_a0, gen_a1); }
 static unsigned int W_004c22f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004c22f0(gen_a0, gen_a1); }
 static unsigned int W_004c2310(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004c2310(gen_a0, gen_a1); }
 static unsigned int W_004c2330(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004c2330(gen_a0, gen_a1); }
@@ -751,7 +766,6 @@ static unsigned int W_004c48b0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_004c48d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004c48d0(gen_a0, gen_a1); }
 static unsigned int W_004c62b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004c62b0(gen_a0, gen_a1); }
 static unsigned int W_004c64f0(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_004c64f0(gen_a0, gen_a1); }
-static double W_004c6c60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, float gen_a4, float gen_a5) { return (double)F_004c6c60(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_004c7d30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004c7d30(gen_a0, gen_a1); }
 static unsigned int W_004c7ef0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004c7ef0(gen_a0, gen_a1); }
 static unsigned int W_004c8540(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004c8540(gen_a0, gen_a1); }
@@ -790,6 +804,8 @@ static unsigned int W_004d2720(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_004d2770(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004d2770(gen_a0); }
 static unsigned int W_004d27c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004d27c0(gen_a0, gen_a1); }
 static unsigned int W_004d3800(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004d3800(gen_a0, gen_a1); }
+static double W_004d3850(unsigned int gen_a0) { return (double)F_004d3850(gen_a0); }
+static double W_004d3870(unsigned int gen_a0) { return (double)F_004d3870(gen_a0); }
 static unsigned int W_004d43c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004d43c0(gen_a0); }
 static unsigned int W_004d48c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004d48c0(gen_a0, gen_a1); }
 static unsigned int W_004d5660(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004d5660(gen_a0); }
@@ -848,6 +864,9 @@ static unsigned int W_004dec40(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_004df430(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004df430(gen_a0, gen_a1); }
 static unsigned int W_004dfd30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004dfd30(gen_a0, gen_a1); }
 static unsigned int W_004e0250(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004e0250(gen_a0); }
+static double W_004e10d0(unsigned int gen_a0) { return (double)F_004e10d0(gen_a0); }
+static double W_004e1220(unsigned int gen_a0) { return (double)F_004e1220(gen_a0); }
+static double W_004e1280(unsigned int gen_a0) { return (double)F_004e1280(gen_a0); }
 static unsigned int W_004e1310(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004e1310(gen_a0, gen_a1); }
 static unsigned int W_004e1540(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004e1540(gen_a0, gen_a1); }
 static unsigned int W_004e16f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004e16f0(gen_a0); }
@@ -869,9 +888,11 @@ static unsigned int W_004e3910(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_004e3930(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004e3930(gen_a0, gen_a1); }
 static unsigned int W_004e3950(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004e3950(gen_a0, gen_a1); }
 static unsigned int W_004e3970(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004e3970(gen_a0, gen_a1); }
+static double W_004e7440(float gen_a0) { return (double)F_004e7440(gen_a0); }
 static double W_004e7750(unsigned int gen_a0) { return (double)F_004e7750(gen_a0); }
 static double W_004e77a0(unsigned int gen_a0) { return (double)F_004e77a0(gen_a0); }
 static double W_004e7840(float gen_a0) { return (double)F_004e7840(gen_a0); }
+static double W_004e7910(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004e7910(gen_a0, gen_a1); }
 static double W_004e79b0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004e79b0(gen_a0, gen_a1); }
 static unsigned int W_004e7b10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004e7b10(gen_a0, gen_a1); }
 static unsigned int W_004e82d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_004e82d0(gen_a0, gen_a1, gen_a2); }
@@ -896,6 +917,10 @@ static unsigned int W_004ed0e0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_004ed0f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004ed0f0(gen_a0, gen_a1); }
 static double W_004ed120(unsigned int gen_a0) { return (double)F_004ed120(gen_a0); }
 static unsigned int W_004ed1a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004ed1a0(gen_a0); }
+static double W_004ed1b0(unsigned int gen_a0) { return (double)F_004ed1b0(gen_a0); }
+static double W_004ed1c0(unsigned int gen_a0) { return (double)F_004ed1c0(gen_a0); }
+static double W_004ed1d0(unsigned int gen_a0) { return (double)F_004ed1d0(gen_a0); }
+static double W_004ed1e0(unsigned int gen_a0) { return (double)F_004ed1e0(gen_a0); }
 static double W_004ed200(unsigned int gen_a0) { return (double)F_004ed200(gen_a0); }
 static unsigned int W_004ed620(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004ed620(gen_a0); }
 static unsigned int W_004ed630(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004ed630(gen_a0); }
@@ -909,9 +934,7 @@ static unsigned int W_004f3a90(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_004f3b20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_004f3b20(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_004f3c70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_004f3c70(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_004f3dd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_004f3dd0(gen_a0, gen_a1, gen_a2); }
-static double W_004f4430(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_004f4430(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_004f4e90(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004f4e90(gen_a0, gen_a1); }
-static double W_004f5010(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_004f5010(gen_a0, gen_a1); }
 static unsigned int W_004f5620(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004f5620(gen_a0, gen_a1); }
 static unsigned int W_004f5780(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004f5780(gen_a0, gen_a1); }
 static unsigned int W_004f57d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004f57d0(gen_a0, gen_a1); }
@@ -919,7 +942,6 @@ static unsigned int W_004f59d0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_004f5b80(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004f5b80(gen_a0); }
 static unsigned int W_004f6190(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004f6190(gen_a0); }
 static unsigned int W_004f62a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_004f62a0(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_004f72b0(unsigned int gen_a0, float gen_a1) { return (double)F_004f72b0(gen_a0, gen_a1); }
 static unsigned int W_004f7c20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_004f7c20(gen_a0); }
 static unsigned int W_004f7c40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004f7c40(gen_a0, gen_a1); }
 static unsigned int W_004f7fe0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_004f7fe0(gen_a0, gen_a1); }
@@ -966,6 +988,7 @@ static unsigned int W_004ffc00(unsigned int gen_a0, float gen_a1, unsigned int g
 static unsigned int W_004ffc50(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_004ffc50(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_004fffa0(void) { return (unsigned int)(unsigned char)F_004fffa0(); }
 static unsigned int W_004ffff0(void) { return (unsigned int)(unsigned char)F_004ffff0(); }
+static double W_00500090(float gen_a0) { return (double)F_00500090(gen_a0); }
 static unsigned int W_00500140(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00500140(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_005001b0(void) { return (unsigned int)(unsigned char)F_005001b0(); }
 static unsigned int W_005001c0(void) { return (unsigned int)(unsigned char)F_005001c0(); }
@@ -986,6 +1009,7 @@ static unsigned int W_00500b10(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00500b60(void) { return (unsigned int)(unsigned char)F_00500b60(); }
 static unsigned int W_00500be0(void) { return (unsigned int)(unsigned char)F_00500be0(); }
 static unsigned int W_00500c30(void) { return (unsigned int)(unsigned char)F_00500c30(); }
+static double W_00500db0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00500db0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00500f40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00500f40(gen_a0, gen_a1); }
 static unsigned int W_00500f70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00500f70(gen_a0); }
 static unsigned int W_005010b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005010b0(gen_a0); }
@@ -1020,8 +1044,6 @@ static unsigned int W_00505750(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00505780(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00505780(gen_a0); }
 static unsigned int W_00505920(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00505920(gen_a0); }
 static double W_00506ef0(unsigned int gen_a0) { return (double)F_00506ef0(gen_a0); }
-static double W_00506fa0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00506fa0(gen_a0, gen_a1); }
-static double W_00507050(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00507050(gen_a0, gen_a1); }
 static unsigned int W_005072a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005072a0(gen_a0, gen_a1); }
 static unsigned int W_00507330(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00507330(gen_a0, gen_a1); }
 static unsigned int W_00507370(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00507370(gen_a0); }
@@ -1136,6 +1158,7 @@ static unsigned int W_0052d910(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_0052d930(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0052d930(gen_a0, gen_a1); }
 static unsigned int W_0052e980(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0052e980(gen_a0, gen_a1); }
 static unsigned int W_0052e9e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0052e9e0(gen_a0, gen_a1); }
+static double W_0052ea50(float gen_a0) { return (double)F_0052ea50(gen_a0); }
 static unsigned int W_0052ed70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0052ed70(gen_a0, gen_a1); }
 static unsigned int W_0052ee60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0052ee60(gen_a0, gen_a1); }
 static unsigned int W_0052ef30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0052ef30(gen_a0); }
@@ -1159,6 +1182,8 @@ static double W_005310b0(float gen_a0) { return (double)F_005310b0(gen_a0); }
 static unsigned int W_00531190(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00531190(gen_a0, gen_a1); }
 static double W_00531220(unsigned int gen_a0) { return (double)F_00531220(gen_a0); }
 static unsigned int W_00531390(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00531390(gen_a0, gen_a1); }
+static double W_00531450(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00531450(gen_a0, gen_a1); }
+static double W_00531470(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00531470(gen_a0, gen_a1); }
 static unsigned int W_00531670(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00531670(gen_a0, gen_a1); }
 static unsigned int W_005316a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005316a0(gen_a0, gen_a1); }
 static unsigned int W_005316c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005316c0(gen_a0, gen_a1, gen_a2); }
@@ -1171,6 +1196,9 @@ static unsigned int W_00531a20(unsigned int gen_a0, unsigned int gen_a1) { retur
 static double W_00531a40(unsigned int gen_a0) { return (double)F_00531a40(gen_a0); }
 static unsigned int W_00531cd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00531cd0(gen_a0, gen_a1); }
 static unsigned int W_00531d30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00531d30(gen_a0, gen_a1); }
+static double W_00531d90(float gen_a0) { return (double)F_00531d90(gen_a0); }
+static double W_00531db0(float gen_a0) { return (double)F_00531db0(gen_a0); }
+static double W_00531dd0(float gen_a0) { return (double)F_00531dd0(gen_a0); }
 static double W_00531de0(float gen_a0) { return (double)F_00531de0(gen_a0); }
 static unsigned int W_005321f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005321f0(gen_a0); }
 static unsigned int W_00532220(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00532220(gen_a0); }
@@ -1232,21 +1260,25 @@ static unsigned int W_00534970(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_005349a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005349a0(gen_a0); }
 static double W_005349f0(float gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_005349f0(gen_a0, gen_a1, gen_a2); }
 static double W_00534ab0(unsigned int gen_a0) { return (double)F_00534ab0(gen_a0); }
-static double W_00535130(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_00535130(gen_a0, gen_a1, gen_a2); }
+static double W_00535100(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00535100(gen_a0, gen_a1); }
 static double W_005353c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005353c0(gen_a0, gen_a1); }
+static double W_00535620(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00535620(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00535860(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00535860(gen_a0, gen_a1, gen_a2); }
 static double W_00535900(unsigned int gen_a0) { return (double)F_00535900(gen_a0); }
+static double W_00535930(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00535930(gen_a0, gen_a1, gen_a2); }
+static double W_00535a70(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00535a70(gen_a0, gen_a1); }
 static unsigned int W_00535aa0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00535aa0(gen_a0); }
 static unsigned int W_00535b00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00535b00(gen_a0); }
 static unsigned int W_00535b40(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00535b40(gen_a0); }
 static double W_00535b90(unsigned int gen_a0) { return (double)F_00535b90(gen_a0); }
+static double W_00535bc0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00535bc0(gen_a0, gen_a1); }
+static double W_00535be0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00535be0(gen_a0, gen_a1); }
+static double W_00535c00(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00535c00(gen_a0, gen_a1); }
 static unsigned int W_00535c20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00535c20(gen_a0, gen_a1); }
 static unsigned int W_00536030(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00536030(gen_a0); }
-static double W_005363b0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005363b0(gen_a0, gen_a1); }
 static unsigned int W_00536630(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00536630(gen_a0, gen_a1); }
 static unsigned int W_00536680(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00536680(gen_a0, gen_a1); }
 static unsigned int W_005366b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005366b0(gen_a0); }
-static double W_00536840(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00536840(gen_a0, gen_a1); }
 static unsigned int W_00537110(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00537110(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005374c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005374c0(gen_a0); }
 static unsigned int W_00537540(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00537540(gen_a0); }
@@ -1278,10 +1310,13 @@ static double W_00539b80(unsigned int gen_a0, float gen_a1) { return (double)F_0
 static double W_00539c40(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00539c40(gen_a0, gen_a1); }
 static double W_00539cc0(unsigned int gen_a0) { return (double)F_00539cc0(gen_a0); }
 static double W_00539d50(unsigned int gen_a0) { return (double)F_00539d50(gen_a0); }
-static double W_00539e30(unsigned int gen_a0, float gen_a1) { return (double)F_00539e30(gen_a0, gen_a1); }
 static double W_00539f60(float gen_a0) { return (double)F_00539f60(gen_a0); }
 static double W_00539f90(float gen_a0) { return (double)F_00539f90(gen_a0); }
 static unsigned int W_00539fe0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00539fe0(gen_a0); }
+static double W_0053a540(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0053a540(gen_a0, gen_a1); }
+static double W_0053a580(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0053a580(gen_a0, gen_a1); }
+static double W_0053a5c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0053a5c0(gen_a0, gen_a1); }
+static double W_0053a600(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0053a600(gen_a0, gen_a1); }
 static unsigned int W_0053a6b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_0053a6b0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_0053a8a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0053a8a0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0053ad80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0053ad80(gen_a0, gen_a1); }
@@ -1299,6 +1334,7 @@ static unsigned int W_0053bff0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_0053c2b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0053c2b0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0053c3f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0053c3f0(gen_a0, gen_a1); }
 static unsigned int W_0053c650(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0053c650(gen_a0, gen_a1, gen_a2); }
+static double W_0053d6f0(unsigned int gen_a0) { return (double)F_0053d6f0(gen_a0); }
 static unsigned int W_0053d930(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0053d930(gen_a0); }
 static unsigned int W_0053e1c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0053e1c0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0053e290(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0053e290(gen_a0, gen_a1); }
@@ -1308,14 +1344,16 @@ static unsigned int W_0053e370(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_0053f3a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0053f3a0(gen_a0, gen_a1); }
 static unsigned int W_005409a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005409a0(gen_a0); }
 static unsigned int W_00540e20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00540e20(gen_a0); }
-static double W_00541110(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00541110(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00541390(unsigned int gen_a0, float gen_a1) { return (double)F_00541390(gen_a0, gen_a1); }
 static unsigned int W_005415e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005415e0(gen_a0); }
 static double W_00541fa0(unsigned int gen_a0) { return (double)F_00541fa0(gen_a0); }
+static double W_00542180(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00542180(gen_a0, gen_a1, gen_a2); }
+static double W_00542230(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00542230(gen_a0, gen_a1, gen_a2); }
+static double W_005422e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_005422e0(gen_a0, gen_a1, gen_a2); }
+static double W_00542320(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00542320(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00542470(void) { return (unsigned int)(unsigned char)F_00542470(); }
 static double W_00542a30(unsigned int gen_a0, float gen_a1) { return (double)F_00542a30(gen_a0, gen_a1); }
 static double W_00542c10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00542c10(gen_a0, gen_a1, gen_a2); }
-static double W_00542cb0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00542cb0(gen_a0, gen_a1); }
 static unsigned int W_00543110(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00543110(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00543460(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00543460(gen_a0); }
 static unsigned int W_00543850(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00543850(gen_a0, gen_a1, gen_a2); }
@@ -1323,20 +1361,15 @@ static unsigned int W_00543da0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_005445a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005445a0(gen_a0, gen_a1); }
 static unsigned int W_005445c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005445c0(gen_a0, gen_a1); }
 static unsigned int W_005446c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005446c0(gen_a0, gen_a1); }
-static double W_00544a60(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00544a60(gen_a0, gen_a1); }
 static unsigned int W_00544d30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00544d30(gen_a0); }
-static double W_005451d0(unsigned int gen_a0) { return (double)F_005451d0(gen_a0); }
-static double W_00545bb0(unsigned int gen_a0) { return (double)F_00545bb0(gen_a0); }
 static unsigned int W_00546350(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00546350(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00546640(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00546640(gen_a0, gen_a1); }
 static unsigned int W_00546bb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00546bb0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00547df0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00547df0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00548040(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00548040(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00548460(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00548460(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00548d30(unsigned int gen_a0) { return (double)F_00548d30(gen_a0); }
 static unsigned int W_00549000(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5, unsigned int gen_a6) { return (unsigned int)(unsigned char)F_00549000(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
 static unsigned int W_00549f60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00549f60(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_0054a210(unsigned int gen_a0) { return (double)F_0054a210(gen_a0); }
 static unsigned int W_0054b980(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054b980(gen_a0, gen_a1); }
 static unsigned int W_0054b990(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054b990(gen_a0, gen_a1); }
 static unsigned int W_0054b9b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054b9b0(gen_a0, gen_a1); }
@@ -1344,6 +1377,8 @@ static unsigned int W_0054b9d0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_0054b9f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054b9f0(gen_a0, gen_a1); }
 static unsigned int W_0054bbe0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054bbe0(gen_a0, gen_a1); }
 static unsigned int W_0054bc30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054bc30(gen_a0, gen_a1); }
+static double W_0054bcf0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0054bcf0(gen_a0, gen_a1); }
+static double W_0054bd00(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0054bd00(gen_a0, gen_a1); }
 static unsigned int W_0054bdd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054bdd0(gen_a0, gen_a1); }
 static unsigned int W_0054bdf0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054bdf0(gen_a0, gen_a1); }
 static unsigned int W_0054bef0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054bef0(gen_a0, gen_a1); }
@@ -1364,8 +1399,12 @@ static unsigned int W_0054c530(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_0054c7a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0054c7a0(gen_a0); }
 static unsigned int W_0054c8a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0054c8a0(gen_a0); }
 static double W_0054c9b0(unsigned int gen_a0) { return (double)F_0054c9b0(gen_a0); }
+static double W_0054cb00(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0054cb00(gen_a0, gen_a1); }
+static double W_0054cb20(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0054cb20(gen_a0, gen_a1); }
 static unsigned int W_0054ccb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054ccb0(gen_a0, gen_a1); }
 static double W_0054cd20(unsigned int gen_a0) { return (double)F_0054cd20(gen_a0); }
+static double W_0054cd50(unsigned int gen_a0) { return (double)F_0054cd50(gen_a0); }
+static double W_0054ce10(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0054ce10(gen_a0, gen_a1); }
 static unsigned int W_0054ce40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0054ce40(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0054ced0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054ced0(gen_a0, gen_a1); }
 static unsigned int W_0054d9b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054d9b0(gen_a0, gen_a1); }
@@ -1385,13 +1424,17 @@ static unsigned int W_0054f430(unsigned int gen_a0, unsigned int gen_a1) { retur
 static double W_0054f460(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_0054f460(gen_a0, gen_a1, gen_a2); }
 static double W_0054f480(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_0054f480(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0054f8b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0054f8b0(gen_a0, gen_a1); }
+static double W_0054fb20(unsigned int gen_a0) { return (double)F_0054fb20(gen_a0); }
 static unsigned int W_0054fb60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0054fb60(gen_a0); }
 static double W_0054fbe0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_0054fbe0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0054fe40(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_0054fe40(gen_a0, gen_a1); }
 static unsigned int W_0054fe60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_0054fe60(gen_a0, gen_a1); }
+static double W_00550100(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00550100(gen_a0, gen_a1); }
+static double W_00550130(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00550130(gen_a0, gen_a1); }
 static double W_005501e0(unsigned int gen_a0) { return (double)F_005501e0(gen_a0); }
 static unsigned int W_005507d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005507d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00550990(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00550990(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
+static double W_00550e10(float gen_a0) { return (double)F_00550e10(gen_a0); }
 static unsigned int W_00550fc0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00550fc0(gen_a0); }
 static unsigned int W_00550ff0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00550ff0(gen_a0); }
 static double W_00551030(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00551030(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -1411,24 +1454,26 @@ static unsigned int W_00553020(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00553640(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, float gen_a6) { return (unsigned int)(unsigned char)F_00553640(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
 static unsigned int W_00553770(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00553770(gen_a0, gen_a1); }
 static unsigned int W_00553ba0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { return (unsigned int)(unsigned char)F_00553ba0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
-static double W_00554700(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00554700(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00555ca0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00555ca0(gen_a0, gen_a1); }
 static unsigned int W_00555d30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00555d30(gen_a0, gen_a1); }
-static double W_00556050(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00556050(gen_a0, gen_a1); }
 static unsigned int W_005565b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005565b0(gen_a0); }
 static unsigned int W_005565e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005565e0(gen_a0); }
+static double W_00556a80(float gen_a0) { return (double)F_00556a80(gen_a0); }
 static double W_00556af0(float gen_a0) { return (double)F_00556af0(gen_a0); }
+static double W_00556b10(float gen_a0) { return (double)F_00556b10(gen_a0); }
 static unsigned int W_005571e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned short)F_005571e0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005575d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005575d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00557710(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00557710(gen_a0, gen_a1); }
-static double W_00557840(unsigned int gen_a0) { return (double)F_00557840(gen_a0); }
 static unsigned int W_00557c70(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned short)F_00557c70(gen_a0, gen_a1); }
+static double W_005580a0(unsigned int gen_a0, float gen_a1) { return (double)F_005580a0(gen_a0, gen_a1); }
 static double W_005580e0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_005580e0(gen_a0, gen_a1, gen_a2); }
 static double W_005581b0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_005581b0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00558440(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00558440(gen_a0); }
 static double W_005584e0(unsigned int gen_a0) { return (double)F_005584e0(gen_a0); }
 static unsigned int W_00558ac0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00558ac0(gen_a0); }
 static unsigned int W_00558ba0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00558ba0(gen_a0); }
+static double W_00558d60(float gen_a0) { return (double)F_00558d60(gen_a0); }
+static double W_00558d80(float gen_a0) { return (double)F_00558d80(gen_a0); }
 static unsigned int W_005590e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005590e0(gen_a0, gen_a1); }
 static unsigned int W_00559110(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00559110(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_005593e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005593e0(gen_a0, gen_a1); }
@@ -1464,6 +1509,7 @@ static unsigned int W_0055a440(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_0055a4e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0055a4e0(gen_a0); }
 static unsigned int W_0055a650(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0055a650(gen_a0); }
 static unsigned int W_0055a670(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0055a670(gen_a0); }
+static double W_0055a6e0(unsigned int gen_a0) { return (double)F_0055a6e0(gen_a0); }
 static double W_0055a750(unsigned int gen_a0) { return (double)F_0055a750(gen_a0); }
 static double W_0055a760(unsigned int gen_a0) { return (double)F_0055a760(gen_a0); }
 static unsigned int W_0055ab50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0055ab50(gen_a0); }
@@ -1471,6 +1517,7 @@ static unsigned int W_0055abd0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_0055ade0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0055ade0(gen_a0); }
 static unsigned int W_0055af50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_0055af50(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_0055b680(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0055b680(gen_a0, gen_a1); }
+static double W_0055ba10(void) { return (double)F_0055ba10(); }
 static unsigned int W_0055c270(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0055c270(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0055c350(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0055c350(gen_a0, gen_a1); }
 static unsigned int W_0055c370(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0055c370(gen_a0, gen_a1); }
@@ -1496,8 +1543,6 @@ static unsigned int W_0055e4c0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_0055e670(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0055e670(gen_a0, gen_a1); }
 static double W_0055e720(unsigned int gen_a0) { return (double)F_0055e720(gen_a0); }
 static double W_0055e870(float gen_a0, float gen_a1, float gen_a2, float gen_a3, float gen_a4, float gen_a5) { return (double)F_0055e870(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
-static double W_0055ea70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_0055ea70(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_0055eaa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_0055eaa0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_0055f370(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0055f370(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0055f960(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0055f960(gen_a0, gen_a1); }
 static unsigned int W_005600e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005600e0(gen_a0, gen_a1); }
@@ -1595,6 +1640,7 @@ static unsigned int W_00573b10(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00573bb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00573bb0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00576160(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00576160(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00576610(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00576610(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00576700(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00576700(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00576af0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00576af0(gen_a0, gen_a1); }
 static unsigned int W_00577b50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00577b50(gen_a0); }
 static unsigned int W_00578cc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00578cc0(gen_a0, gen_a1, gen_a2); }
@@ -1608,8 +1654,8 @@ static unsigned int W_0057c130(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_0057c3c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0057c3c0(gen_a0, gen_a1); }
 static unsigned int W_0057d6e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_0057d6e0(gen_a0, gen_a1); }
 static unsigned int W_0057e4d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0057e4d0(gen_a0, gen_a1); }
+static double W_0057e710(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_0057e710(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_0057e810(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_0057e810(gen_a0, gen_a1); }
-static unsigned int W_0057edb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_0057edb0(gen_a0, gen_a1); }
 static unsigned int W_0057f060(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0057f060(gen_a0, gen_a1); }
 static unsigned int W_0057fa80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0057fa80(gen_a0, gen_a1); }
 static unsigned int W_0057fb90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0057fb90(gen_a0, gen_a1, gen_a2); }
@@ -1715,7 +1761,6 @@ static unsigned int W_005b8200(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_005b8220(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned short)F_005b8220(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005b8240(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_005b8240(gen_a0, gen_a1); }
 static unsigned int W_005b8260(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005b8260(gen_a0, gen_a1); }
-static double W_005b8280(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_005b8280(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_005b8360(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005b8360(gen_a0, gen_a1); }
 static unsigned int W_005b8380(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005b8380(gen_a0, gen_a1); }
 static unsigned int W_005b84e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005b84e0(gen_a0, gen_a1); }
@@ -1774,11 +1819,15 @@ static unsigned int W_005b9b00(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_005b9b20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005b9b20(gen_a0, gen_a1); }
 static unsigned int W_005b9ca0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_005b9ca0(gen_a0, gen_a1); }
 static unsigned int W_005b9cc0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_005b9cc0(gen_a0, gen_a1); }
+static double W_005b9d20(unsigned int gen_a0) { return (double)F_005b9d20(gen_a0); }
 static unsigned int W_005b9d50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005b9d50(gen_a0, gen_a1); }
 static unsigned int W_005b9d60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_005b9d60(gen_a0, gen_a1); }
 static unsigned int W_005b9d90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005b9d90(gen_a0, gen_a1); }
+static double W_005b9de0(unsigned int gen_a0) { return (double)F_005b9de0(gen_a0); }
 static unsigned int W_005b9e60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005b9e60(gen_a0, gen_a1); }
 static unsigned int W_005ba480(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005ba480(gen_a0, gen_a1); }
+static double W_005ba4b0(unsigned int gen_a0) { return (double)F_005ba4b0(gen_a0); }
+static double W_005ba4e0(unsigned int gen_a0) { return (double)F_005ba4e0(gen_a0); }
 static unsigned int W_005ba640(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005ba640(gen_a0, gen_a1); }
 static unsigned int W_005ba970(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005ba970(gen_a0, gen_a1); }
 static double W_005baa90(unsigned int gen_a0, float gen_a1, float gen_a2) { return (double)F_005baa90(gen_a0, gen_a1, gen_a2); }
@@ -1915,11 +1964,14 @@ static unsigned int W_005d4250(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_005d4280(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005d4280(gen_a0, gen_a1); }
 static unsigned int W_005d42b0(void) { return (unsigned int)(unsigned char)F_005d42b0(); }
 static unsigned int W_005d4800(void) { return (unsigned int)(unsigned char)F_005d4800(); }
+static double W_005d4d60(float gen_a0) { return (double)F_005d4d60(gen_a0); }
 static unsigned int W_005d4e10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d4e10(gen_a0); }
 static unsigned int W_005d4e40(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d4e40(gen_a0); }
 static unsigned int W_005d4e70(void) { return (unsigned int)(unsigned char)F_005d4e70(); }
 static unsigned int W_005d5800(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005d5800(gen_a0, gen_a1); }
 static unsigned int W_005d58e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005d58e0(gen_a0, gen_a1); }
+static double W_005d5b50(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005d5b50(gen_a0, gen_a1); }
+static double W_005d5b70(float gen_a0) { return (double)F_005d5b70(gen_a0); }
 static unsigned int W_005d5c10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d5c10(gen_a0); }
 static unsigned int W_005d5db0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d5db0(gen_a0); }
 static unsigned int W_005d5de0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d5de0(gen_a0); }
@@ -1938,23 +1990,20 @@ static unsigned int W_005d69b0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_005d6c60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005d6c60(gen_a0, gen_a1); }
 static unsigned int W_005d6da0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005d6da0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005d6e10(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005d6e10(gen_a0, gen_a1, gen_a2); }
-static unsigned int W_005d6e5b(void) { return (unsigned int)(unsigned char)F_005d6e5b(); }
 static unsigned int W_005d7010(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d7010(gen_a0); }
 static unsigned int W_005d7bd0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d7bd0(gen_a0); }
 static unsigned int W_005d7c20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005d7c20(gen_a0, gen_a1); }
-static double W_005d8730(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005d8730(gen_a0, gen_a1); }
+static double W_005d8600(unsigned int gen_a0) { return (double)F_005d8600(gen_a0); }
 static unsigned int W_005d8750(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005d8750(gen_a0, gen_a1); }
 static unsigned int W_005d8770(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d8770(gen_a0); }
 static unsigned int W_005d8780(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (unsigned int)(unsigned char)F_005d8780(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static unsigned int W_005d8820(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d8820(gen_a0); }
 static unsigned int W_005d8d70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d8d70(gen_a0); }
-static double W_005d8ee0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005d8ee0(gen_a0, gen_a1); }
 static unsigned int W_005d8fa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_005d8fa0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_005d9070(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_005d9070(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_005d9150(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_005d9150(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_005d92a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d92a0(gen_a0); }
 static unsigned int W_005d9330(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d9330(gen_a0); }
-static double W_005d9480(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005d9480(gen_a0, gen_a1); }
 static unsigned int W_005d99c0(void) { return (unsigned int)(unsigned char)F_005d99c0(); }
 static unsigned int W_005d99e0(void) { return (unsigned int)(unsigned char)F_005d99e0(); }
 static unsigned int W_005d9b60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005d9b60(gen_a0); }
@@ -1979,6 +2028,7 @@ static unsigned int W_005ddfa0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_005ddfb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005ddfb0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005de0d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005de0d0(gen_a0); }
 static unsigned int W_005de0e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005de0e0(gen_a0, gen_a1, gen_a2); }
+static double W_005de580(unsigned int gen_a0) { return (double)F_005de580(gen_a0); }
 static unsigned int W_005df210(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005df210(gen_a0, gen_a1); }
 static unsigned int W_005e02a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005e02a0(gen_a0, gen_a1); }
 static unsigned int W_005e0420(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_005e0420(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -2030,13 +2080,18 @@ static unsigned int W_005ed3a0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_005ed3e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005ed3e0(gen_a0, gen_a1); }
 static double W_005ed430(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005ed430(gen_a0, gen_a1); }
 static unsigned int W_005edbf0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_005edbf0(gen_a0, gen_a1); }
-static double W_005ee060(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_005ee060(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005ee0a0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_005ee0a0(gen_a0, gen_a1, gen_a2); }
 static double W_005ee0f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005ee0f0(gen_a0, gen_a1); }
+static double W_005ee280(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005ee280(gen_a0, gen_a1); }
+static double W_005ee2f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005ee2f0(gen_a0, gen_a1); }
+static double W_005ee360(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005ee360(gen_a0, gen_a1); }
 static unsigned int W_005ee6d0(void) { return (unsigned int)(unsigned char)F_005ee6d0(); }
 static unsigned int W_005ee700(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005ee700(gen_a0, gen_a1); }
 static double W_005eec20(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005eec20(gen_a0, gen_a1); }
 static unsigned int W_005eec40(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_005eec40(gen_a0, gen_a1, gen_a2); }
+static double W_005eecb0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005eecb0(gen_a0, gen_a1); }
+static double W_005eecd0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005eecd0(gen_a0, gen_a1); }
+static double W_005eecf0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005eecf0(gen_a0, gen_a1); }
 static unsigned int W_005ef520(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005ef520(gen_a0, gen_a1); }
 static unsigned int W_005ef790(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_005ef790(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_005ef7d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005ef7d0(gen_a0, gen_a1, gen_a2); }
@@ -2072,12 +2127,6 @@ static unsigned int W_005f7b00(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_005f7fc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005f7fc0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005f80b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005f80b0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005f8840(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005f8840(gen_a0, gen_a1); }
-static double W_005f92f0(unsigned int gen_a0) { return (double)F_005f92f0(gen_a0); }
-static double W_005fa4d0(unsigned int gen_a0) { return (double)F_005fa4d0(gen_a0); }
-static double W_005fa740(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005fa740(gen_a0, gen_a1); }
-static double W_005fa820(unsigned int gen_a0) { return (double)F_005fa820(gen_a0); }
-static double W_005fa8b0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005fa8b0(gen_a0, gen_a1); }
-static double W_005fa980(unsigned int gen_a0) { return (double)F_005fa980(gen_a0); }
 static unsigned int W_005faa40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_005faa40(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_005fac50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_005fac50(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_005fb810(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005fb810(gen_a0, gen_a1); }
@@ -2097,7 +2146,6 @@ static unsigned int W_005fddc0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_005fddf0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005fddf0(gen_a0, gen_a1); }
 static unsigned int W_005fe0b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_005fe0b0(gen_a0, gen_a1); }
 static unsigned int W_005fe0d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_005fe0d0(gen_a0, gen_a1); }
-static double W_005fe1c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_005fe1c0(gen_a0, gen_a1); }
 static unsigned int W_005fe4b0(void) { return (unsigned int)(unsigned char)F_005fe4b0(); }
 static unsigned int W_005fe4c0(void) { return (unsigned int)(unsigned char)F_005fe4c0(); }
 static unsigned int W_005fe4d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_005fe4d0(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -2120,6 +2168,10 @@ static unsigned int W_005ffd80(void) { return (unsigned int)(unsigned char)F_005
 static unsigned int W_005ffd90(void) { return (unsigned int)(unsigned char)F_005ffd90(); }
 static unsigned int W_005ffe20(void) { return (unsigned int)(unsigned char)F_005ffe20(); }
 static unsigned int W_005ffe30(void) { return (unsigned int)(unsigned char)F_005ffe30(); }
+static double W_005ffe70(void) { return (double)F_005ffe70(); }
+static double W_005fff20(void) { return (double)F_005fff20(); }
+static double W_005fff50(void) { return (double)F_005fff50(); }
+static double W_005fffa0(void) { return (double)F_005fffa0(); }
 static unsigned int W_005fffd0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005fffd0(gen_a0); }
 static unsigned int W_005fffe0(void) { return (unsigned int)(unsigned char)F_005fffe0(); }
 static unsigned int W_005ffff0(void) { return (unsigned int)(unsigned char)F_005ffff0(); }
@@ -2159,6 +2211,8 @@ static unsigned int W_00602700(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00602720(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00602720(gen_a0, gen_a1); }
 static unsigned int W_006029c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006029c0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00602dd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00602dd0(gen_a0, gen_a1); }
+static double W_006033f0(unsigned int gen_a0) { return (double)F_006033f0(gen_a0); }
+static double W_00603460(unsigned int gen_a0) { return (double)F_00603460(gen_a0); }
 static unsigned int W_00603ac0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00603ac0(gen_a0); }
 static unsigned int W_00603ad0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00603ad0(gen_a0, gen_a1); }
 static unsigned int W_00603b30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00603b30(gen_a0, gen_a1, gen_a2); }
@@ -2177,6 +2231,7 @@ static unsigned int W_00607b80(void) { return (unsigned int)(unsigned char)F_006
 static unsigned int W_00607c30(void) { return (unsigned int)(unsigned char)F_00607c30(); }
 static unsigned int W_00607c70(void) { return (unsigned int)(unsigned char)F_00607c70(); }
 static unsigned int W_00608050(void) { return (unsigned int)(unsigned char)F_00608050(); }
+static double W_00608080(unsigned int gen_a0) { return (double)F_00608080(gen_a0); }
 static unsigned int W_006085c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006085c0(gen_a0); }
 static unsigned int W_006087a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006087a0(gen_a0); }
 static unsigned int W_006087b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006087b0(gen_a0, gen_a1); }
@@ -2223,20 +2278,27 @@ static unsigned int W_00618f80(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00619150(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00619150(gen_a0); }
 static unsigned int W_0061e3a0(void) { return (unsigned int)(unsigned char)F_0061e3a0(); }
 static unsigned int W_0061e550(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0061e550(gen_a0, gen_a1, gen_a2); }
+static double W_0061e7c0(float gen_a0) { return (double)F_0061e7c0(gen_a0); }
+static double W_0061e7e0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_0061e7e0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0061edb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0061edb0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0061ef50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0061ef50(gen_a0, gen_a1, gen_a2); }
-static double W_0061efc0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_0061efc0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0061f350(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0061f350(gen_a0, gen_a1); }
 static unsigned int W_0061f390(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0061f390(gen_a0, gen_a1); }
 static unsigned int W_0061f450(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0061f450(gen_a0, gen_a1); }
 static unsigned int W_0061f4d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0061f4d0(gen_a0, gen_a1); }
 static unsigned int W_0061f990(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0061f990(gen_a0, gen_a1); }
+static double W_0061fe10(unsigned int gen_a0) { return (double)F_0061fe10(gen_a0); }
 static double W_0061fe30(unsigned int gen_a0) { return (double)F_0061fe30(gen_a0); }
 static unsigned int W_00620050(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00620050(gen_a0, gen_a1); }
 static unsigned int W_00620230(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00620230(gen_a0, gen_a1); }
 static double W_00620290(float gen_a0) { return (double)F_00620290(gen_a0); }
 static double W_00620650(float gen_a0) { return (double)F_00620650(gen_a0); }
+static double W_00621100(unsigned int gen_a0) { return (double)F_00621100(gen_a0); }
+static double W_00621130(unsigned int gen_a0) { return (double)F_00621130(gen_a0); }
 static unsigned int W_00621190(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00621190(gen_a0, gen_a1); }
+static double W_00621220(unsigned int gen_a0) { return (double)F_00621220(gen_a0); }
+static double W_00621250(unsigned int gen_a0) { return (double)F_00621250(gen_a0); }
+static double W_006212b0(unsigned int gen_a0) { return (double)F_006212b0(gen_a0); }
 static unsigned int W_006217c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_006217c0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00621830(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_00621830(gen_a0, gen_a1); }
 static unsigned int W_00621900(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00621900(gen_a0, gen_a1, gen_a2); }
@@ -2247,6 +2309,7 @@ static unsigned int W_00622fe0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00623240(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00623240(gen_a0, gen_a1); }
 static unsigned int W_00623270(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00623270(gen_a0, gen_a1); }
 static unsigned int W_00623360(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00623360(gen_a0, gen_a1); }
+static double W_006233b0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_006233b0(gen_a0, gen_a1); }
 static double W_00623400(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00623400(gen_a0, gen_a1); }
 static unsigned int W_00623570(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00623570(gen_a0, gen_a1); }
 static unsigned int W_00623660(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00623660(gen_a0, gen_a1); }
@@ -2285,7 +2348,6 @@ static unsigned int W_0062eeb0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_0062f120(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0062f120(gen_a0); }
 static unsigned int W_0062f350(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0062f350(gen_a0, gen_a1); }
 static unsigned int W_0062fac0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0062fac0(gen_a0); }
-static double W_006302f0(unsigned int gen_a0) { return (double)F_006302f0(gen_a0); }
 static unsigned int W_006314f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006314f0(gen_a0); }
 static unsigned int W_006322a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006322a0(gen_a0); }
 static unsigned int W_00632400(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00632400(gen_a0); }
@@ -2310,8 +2372,6 @@ static unsigned int W_0063ae10(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_0063b730(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0063b730(gen_a0); }
 static unsigned int W_0063bf90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0063bf90(gen_a0); }
 static unsigned int W_0063d040(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0063d040(gen_a0); }
-static double W_0063f750(unsigned int gen_a0) { return (double)F_0063f750(gen_a0); }
-static double W_00640bd0(unsigned int gen_a0) { return (double)F_00640bd0(gen_a0); }
 static unsigned int W_006411c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006411c0(gen_a0); }
 static unsigned int W_00641410(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00641410(gen_a0); }
 static unsigned int W_0064acd0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0064acd0(gen_a0); }
@@ -2326,7 +2386,6 @@ static unsigned int W_00655450(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_006556f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006556f0(gen_a0, gen_a1); }
 static unsigned int W_00657a50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00657a50(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00657f30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00657f30(gen_a0, gen_a1, gen_a2); }
-static double W_00657f80(unsigned int gen_a0) { return (double)F_00657f80(gen_a0); }
 static unsigned int W_00658b10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00658b10(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00658b30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00658b30(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00658df0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00658df0(gen_a0, gen_a1); }
@@ -2341,7 +2400,6 @@ static unsigned int W_0065e230(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_0065e250(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_0065e250(gen_a0, gen_a1); }
 static unsigned int W_0065e270(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_0065e270(gen_a0, gen_a1); }
 static unsigned int W_0065e290(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_0065e290(gen_a0, gen_a1); }
-static double W_0065e730(unsigned int gen_a0, float gen_a1) { return (double)F_0065e730(gen_a0, gen_a1); }
 static unsigned int W_0065f650(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0065f650(gen_a0, gen_a1); }
 static unsigned int W_0065feb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0065feb0(gen_a0, gen_a1); }
 static unsigned int W_00660050(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00660050(gen_a0, gen_a1); }
@@ -2351,6 +2409,7 @@ static unsigned int W_006602f0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00660580(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00660580(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00660720(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00660720(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006615f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006615f0(gen_a0); }
+static double W_00661670(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00661670(gen_a0, gen_a1); }
 static unsigned int W_00661eb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00661eb0(gen_a0, gen_a1); }
 static unsigned int W_00661f20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00661f20(gen_a0, gen_a1); }
 static unsigned int W_00661f30(void) { return (unsigned int)(unsigned char)F_00661f30(); }
@@ -2413,12 +2472,12 @@ static unsigned int W_00666b10(void) { return (unsigned int)(unsigned char)F_006
 static unsigned int W_00666b20(void) { return (unsigned int)(unsigned char)F_00666b20(); }
 static unsigned int W_00666b40(void) { return (unsigned int)(unsigned char)F_00666b40(); }
 static unsigned int W_00666b60(void) { return (unsigned int)(unsigned char)F_00666b60(); }
-static double W_00666e10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00666e10(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00666fd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00666fd0(gen_a0, gen_a1); }
 static unsigned int W_00666fe0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00666fe0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00667000(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00667000(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00667020(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00667020(gen_a0, gen_a1); }
 static unsigned int W_006677b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006677b0(gen_a0); }
+static double W_006681f0(unsigned int gen_a0) { return (double)F_006681f0(gen_a0); }
 static unsigned int W_00668ba0(void) { return (unsigned int)(unsigned char)F_00668ba0(); }
 static unsigned int W_00668d10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00668d10(gen_a0, gen_a1); }
 static unsigned int W_00668d70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00668d70(gen_a0, gen_a1); }
@@ -2452,8 +2511,11 @@ static double W_006752f0(float gen_a0) { return (double)F_006752f0(gen_a0); }
 static unsigned int W_00676280(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned short)F_00676280(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006762a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned short)F_006762a0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006762c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_006762c0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00676920(float gen_a0) { return (double)F_00676920(gen_a0); }
 static unsigned int W_006769a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006769a0(gen_a0, gen_a1); }
 static unsigned int W_006769e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006769e0(gen_a0, gen_a1); }
+static double W_00676c30(float gen_a0, float gen_a1, float gen_a2, float gen_a3, float gen_a4) { return (double)F_00676c30(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_00676cb0(float gen_a0, float gen_a1, float gen_a2, float gen_a3, float gen_a4) { return (double)F_00676cb0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00677290(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00677290(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00677f90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00677f90(gen_a0); }
 static unsigned int W_00678040(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00678040(gen_a0); }
@@ -2486,27 +2548,33 @@ static unsigned int W_0067dee0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_0067e230(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0067e230(gen_a0); }
 static unsigned int W_0067efb0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0067efb0(gen_a0); }
 static unsigned int W_0067f3e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0067f3e0(gen_a0); }
-static unsigned int W_0067fb80(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0067fb80(gen_a0); }
 static unsigned int W_00684040(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00684040(gen_a0); }
 static double W_00687520(unsigned int gen_a0) { return (double)F_00687520(gen_a0); }
 static unsigned int W_00687780(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00687780(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00687ab0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00687ab0(gen_a0); }
 static unsigned int W_00688790(void) { return (unsigned int)(unsigned char)F_00688790(); }
 static unsigned int W_006887f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006887f0(gen_a0, gen_a1); }
+static double W_00688870(float gen_a0) { return (double)F_00688870(gen_a0); }
+static double W_00688890(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00688890(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00688a30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00688a30(gen_a0, gen_a1); }
 static unsigned int W_00688c50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00688c50(gen_a0, gen_a1); }
-static double W_00688f10(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00688f10(gen_a0, gen_a1, gen_a2); }
+static double W_00688d00(unsigned int gen_a0) { return (double)F_00688d00(gen_a0); }
+static double W_00688ef0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00688ef0(gen_a0, gen_a1); }
 static double W_00688f30(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00688f30(gen_a0, gen_a1); }
 static unsigned int W_00689200(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00689200(gen_a0, gen_a1, gen_a2); }
+static double W_00689270(void) { return (double)F_00689270(); }
 static unsigned int W_006892b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006892b0(gen_a0); }
 static unsigned int W_006893e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006893e0(gen_a0, gen_a1); }
 static unsigned int W_00689410(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00689410(gen_a0, gen_a1); }
 static unsigned int W_006894c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006894c0(gen_a0); }
+static double W_00689560(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00689560(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00689950(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00689950(gen_a0); }
 static unsigned int W_006899f0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_006899f0(gen_a0); }
 static unsigned int W_00689ac0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00689ac0(gen_a0); }
 static unsigned int W_00689b70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00689b70(gen_a0, gen_a1); }
+static double W_0068afe0(void) { return (double)F_0068afe0(); }
 static unsigned int W_0068b1a0(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_0068b1a0(gen_a0, gen_a1); }
+static double W_0068b1e0(unsigned int gen_a0) { return (double)F_0068b1e0(gen_a0); }
 static unsigned int W_0068b210(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0068b210(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0068b4a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0068b4a0(gen_a0, gen_a1); }
 static unsigned int W_0068b500(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0068b500(gen_a0, gen_a1); }
@@ -2520,9 +2588,7 @@ static unsigned int W_0068cc20(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_0068cd40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned short)F_0068cd40(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_0068d920(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0068d920(gen_a0, gen_a1); }
 static unsigned int W_0068d9c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0068d9c0(gen_a0, gen_a1); }
-static double W_0068da20(unsigned int gen_a0) { return (double)F_0068da20(gen_a0); }
 static unsigned int W_0068da90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0068da90(gen_a0); }
-static double W_0068dd30(unsigned int gen_a0) { return (double)F_0068dd30(gen_a0); }
 static unsigned int W_0068e000(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0068e000(gen_a0); }
 static unsigned int W_0068e040(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0068e040(gen_a0, gen_a1); }
 static unsigned int W_0068e1e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0068e1e0(gen_a0); }
@@ -2532,6 +2598,7 @@ static unsigned int W_0068ed40(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_0068f300(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0068f300(gen_a0, gen_a1); }
 static unsigned int W_0068f390(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0068f390(gen_a0, gen_a1); }
 static unsigned int W_0068f3e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0068f3e0(gen_a0, gen_a1, gen_a2); }
+static double W_0068f480(unsigned int gen_a0) { return (double)F_0068f480(gen_a0); }
 static unsigned int W_0068f510(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0068f510(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0068f560(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_0068f560(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_0068fad0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0068fad0(gen_a0, gen_a1); }
@@ -2541,7 +2608,6 @@ static double W_006901d0(unsigned int gen_a0, unsigned int gen_a1) { return (dou
 static unsigned int W_00690310(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00690310(gen_a0, gen_a1); }
 static unsigned int W_006904e0(void) { return (unsigned int)(unsigned char)F_006904e0(); }
 static unsigned int W_006906f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006906f0(gen_a0); }
-static double W_00690f90(unsigned int gen_a0) { return (double)F_00690f90(gen_a0); }
 static unsigned int W_00691360(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00691360(gen_a0); }
 static unsigned int W_00691b90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned short)F_00691b90(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00691c50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00691c50(gen_a0); }
@@ -2610,11 +2676,9 @@ static unsigned int W_006a5bf0(unsigned int gen_a0, unsigned int gen_a1, float g
 static unsigned int W_006a62a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006a62a0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006a6400(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006a6400(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006a64c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006a64c0(gen_a0, gen_a1, gen_a2); }
-static double W_006a6e70(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_006a6e70(gen_a0, gen_a1); }
 static unsigned int W_006a7520(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_006a7520(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_006a7b20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006a7b20(gen_a0); }
 static unsigned int W_006a7f50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006a7f50(gen_a0, gen_a1); }
-static double W_006a88c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_006a88c0(gen_a0, gen_a1); }
 static unsigned int W_006a8d00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006a8d00(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006a9540(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006a9540(gen_a0, gen_a1); }
 static unsigned int W_006a9580(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006a9580(gen_a0); }
@@ -2629,14 +2693,17 @@ static unsigned int W_006ae750(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_006ae790(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006ae790(gen_a0); }
 static unsigned int W_006ae8d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006ae8d0(gen_a0, gen_a1); }
 static unsigned int W_006aea80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006aea80(gen_a0, gen_a1); }
+static double W_006aeaf0(unsigned int gen_a0) { return (double)F_006aeaf0(gen_a0); }
 static unsigned int W_006aeda0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006aeda0(gen_a0, gen_a1); }
 static unsigned int W_006aedc0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006aedc0(gen_a0, gen_a1); }
 static unsigned int W_006aeff0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006aeff0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006af160(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006af160(gen_a0, gen_a1, gen_a2); }
+static double W_006af2d0(unsigned int gen_a0) { return (double)F_006af2d0(gen_a0); }
 static unsigned int W_006af5f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006af5f0(gen_a0, gen_a1); }
 static unsigned int W_006af620(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006af620(gen_a0, gen_a1); }
 static unsigned int W_006af950(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_006af950(gen_a0, gen_a1); }
 static unsigned int W_006af990(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_006af990(gen_a0, gen_a1); }
+static double W_006afce0(unsigned int gen_a0) { return (double)F_006afce0(gen_a0); }
 static unsigned int W_006aff20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006aff20(gen_a0, gen_a1); }
 static unsigned int W_006aff40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006aff40(gen_a0, gen_a1); }
 static unsigned int W_006b00f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006b00f0(gen_a0, gen_a1, gen_a2); }
@@ -2659,7 +2726,6 @@ static unsigned int W_006b0fd0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_006b10c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006b10c0(gen_a0, gen_a1); }
 static unsigned int W_006b1340(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_006b1340(gen_a0, gen_a1); }
 static double W_006b1440(unsigned int gen_a0) { return (double)F_006b1440(gen_a0); }
-static double W_006b14a0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_006b14a0(gen_a0, gen_a1); }
 static unsigned int W_006b1600(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_006b1600(gen_a0, gen_a1); }
 static unsigned int W_006b1620(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006b1620(gen_a0, gen_a1); }
 static unsigned int W_006b1700(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_006b1700(gen_a0, gen_a1); }
@@ -2702,6 +2768,8 @@ static unsigned int W_006b86b0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_006b8720(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_006b8720(gen_a0); }
 static unsigned int W_006b8790(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_006b8790(gen_a0); }
 static unsigned int W_006b8950(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006b8950(gen_a0, gen_a1); }
+static double W_006b8bc0(float gen_a0) { return (double)F_006b8bc0(gen_a0); }
+static double W_006b8be0(float gen_a0) { return (double)F_006b8be0(gen_a0); }
 static unsigned int W_006b8c30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_006b8c30(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_006b8e80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006b8e80(gen_a0, gen_a1); }
 static unsigned int W_006b8f80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006b8f80(gen_a0, gen_a1, gen_a2); }
@@ -2815,6 +2883,7 @@ static unsigned int W_006c3a20(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_006c3a70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006c3a70(gen_a0, gen_a1); }
 static unsigned int W_006c40f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006c40f0(gen_a0); }
 static double W_006c41b0(unsigned int gen_a0, float gen_a1) { return (double)F_006c41b0(gen_a0, gen_a1); }
+static double W_006c41f0(unsigned int gen_a0, float gen_a1) { return (double)F_006c41f0(gen_a0, gen_a1); }
 static unsigned int W_006c4220(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_006c4220(gen_a0); }
 static unsigned int W_006c4c70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_006c4c70(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_006c4c80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006c4c80(gen_a0, gen_a1); }
@@ -2823,7 +2892,6 @@ static unsigned int W_006c5010(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_006c5210(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006c5210(gen_a0, gen_a1); }
 static unsigned int W_006c5260(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_006c5260(gen_a0); }
 static unsigned int W_006c5310(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_006c5310(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_006c5980(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_006c5980(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006c7460(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_006c7460(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_006c98b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006c98b0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_006c9900(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006c9900(gen_a0, gen_a1, gen_a2); }
@@ -3001,7 +3069,6 @@ static unsigned int W_006f7160(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_006f7350(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_006f7350(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_006f7db0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006f7db0(gen_a0, gen_a1); }
 static unsigned int W_006f8390(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006f8390(gen_a0, gen_a1); }
-static double W_006f92d0(unsigned int gen_a0) { return (double)F_006f92d0(gen_a0); }
 static unsigned int W_006f9920(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_006f9920(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_006facc0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_006facc0(gen_a0, gen_a1); }
 static unsigned int W_006fad60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_006fad60(gen_a0, gen_a1, gen_a2); }
@@ -3299,7 +3366,10 @@ static unsigned int W_00759110(void) { return (unsigned int)(unsigned char)F_007
 static unsigned int W_00759150(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00759150(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0075a400(void) { return (unsigned int)(unsigned char)F_0075a400(); }
 static unsigned int W_0075a450(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_0075a450(gen_a0, gen_a1, gen_a2); }
+static double W_0075d790(float gen_a0) { return (double)F_0075d790(gen_a0); }
+static double W_0075d7b0(float gen_a0) { return (double)F_0075d7b0(gen_a0); }
 static double W_0075d7d0(float gen_a0) { return (double)F_0075d7d0(gen_a0); }
+static double W_0075d7f0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_0075d7f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_0075d810(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0075d810(gen_a0); }
 static unsigned int W_0075d840(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0075d840(gen_a0, gen_a1); }
 static unsigned int W_0075d930(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0075d930(gen_a0, gen_a1); }
@@ -3839,11 +3909,13 @@ static unsigned int W_007ac770(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_007ac880(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_007ac880(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_007ad100(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007ad100(gen_a0); }
 static unsigned int W_007ad250(unsigned int gen_a0, float gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_007ad250(gen_a0, gen_a1, gen_a2); }
+static double W_007ad2a0(unsigned int gen_a0, float gen_a1, float gen_a2) { return (double)F_007ad2a0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_007ad390(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007ad390(gen_a0); }
 static unsigned int W_007ae1c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_007ae1c0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_007ae220(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_007ae220(gen_a0, gen_a1); }
 static unsigned int W_007ae340(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007ae340(gen_a0); }
 static unsigned int W_007ae520(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007ae520(gen_a0); }
+static double W_007ae5a0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_007ae5a0(gen_a0, gen_a1); }
 static unsigned int W_007ae830(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_007ae830(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_007aea70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007aea70(gen_a0); }
 static unsigned int W_007aed10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007aed10(gen_a0); }
@@ -3999,7 +4071,6 @@ static unsigned int W_007c7f00(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_007c7f10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_007c7f10(gen_a0, gen_a1); }
 static unsigned int W_007c8050(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007c8050(gen_a0); }
 static unsigned int W_007c82a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007c82a0(gen_a0); }
-static double W_007c8330(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_007c8330(gen_a0, gen_a1); }
 static unsigned int W_007c83b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007c83b0(gen_a0); }
 static unsigned int W_007c8910(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_007c8910(gen_a0); }
 static unsigned int W_007c8a90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_007c8a90(gen_a0, gen_a1); }
@@ -4913,6 +4984,7 @@ static unsigned int W_00975cf0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00975d10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00975d10(gen_a0); }
 static unsigned int W_00975d20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00975d20(gen_a0); }
 static unsigned int W_009760b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_009760b0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00976820(float gen_a0) { return (double)F_00976820(gen_a0); }
 static unsigned int W_009768c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_009768c0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_009768f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009768f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00976910(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00976910(gen_a0); }
@@ -4936,15 +5008,30 @@ static double W_009788c0(float gen_a0) { return (double)F_009788c0(gen_a0); }
 static unsigned int W_00978bc0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00978bc0(gen_a0, gen_a1); }
 static double W_00978c20(float gen_a0, float gen_a1) { return (double)F_00978c20(gen_a0, gen_a1); }
 static double W_00979130(float gen_a0) { return (double)F_00979130(gen_a0); }
+static double W_00979ab0(float gen_a0) { return (double)F_00979ab0(gen_a0); }
 static unsigned int W_00979b90(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_00979b90(gen_a0, gen_a1); }
 static double W_00979d60(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00979d60(gen_a0, gen_a1); }
+static double W_00979e30(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00979e30(gen_a0, gen_a1); }
+static double W_00979f10(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00979f10(gen_a0, gen_a1, gen_a2); }
 static double W_00979ff0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00979ff0(gen_a0, gen_a1, gen_a2); }
 static double W_0097a060(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_0097a060(gen_a0, gen_a1, gen_a2); }
+static double W_0097a140(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_0097a140(gen_a0, gen_a1, gen_a2); }
+static double W_0097a150(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_0097a150(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_0097a160(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0097a160(gen_a0, gen_a1); }
+static double W_0097a220(unsigned int gen_a0, float gen_a1) { return (double)F_0097a220(gen_a0, gen_a1); }
+static double W_0097a2f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0097a2f0(gen_a0, gen_a1); }
+static double W_0097a3c0(unsigned int gen_a0, float gen_a1) { return (double)F_0097a3c0(gen_a0, gen_a1); }
+static double W_0097a680(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_0097a680(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_0097bc40(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_0097bc40(gen_a0, gen_a1); }
 static double W_0097c510(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0097c510(gen_a0, gen_a1); }
 static double W_0097c5e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0097c5e0(gen_a0, gen_a1); }
+static double W_0097c6b0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_0097c6b0(gen_a0, gen_a1, gen_a2); }
 static double W_0097c790(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_0097c790(gen_a0, gen_a1, gen_a2); }
 static double W_0097c800(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_0097c800(gen_a0, gen_a1, gen_a2); }
+static double W_0097c850(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_0097c850(gen_a0, gen_a1, gen_a2); }
+static double W_0097c860(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_0097c860(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_0097c870(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0097c870(gen_a0, gen_a1); }
+static double W_0097c880(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_0097c880(gen_a0, gen_a1); }
 static double W_0097eab0(unsigned int gen_a0) { return (double)F_0097eab0(gen_a0); }
 static unsigned int W_0097ec70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_0097ec70(gen_a0); }
 static double W_00980210(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00980210(gen_a0, gen_a1); }
@@ -4976,13 +5063,16 @@ static unsigned int W_00984a30(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00984b50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00984b50(gen_a0); }
 static unsigned int W_00984f40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned short)F_00984f40(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00984fc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00984fc0(gen_a0, gen_a1, gen_a2); }
+static double W_00986c10(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_00986c10(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00987170(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_00987170(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_009871c0(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_009871c0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00987210(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_00987210(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_009890e0(unsigned int gen_a0, float gen_a1) { return (double)F_009890e0(gen_a0, gen_a1); }
+static double W_00989260(unsigned int gen_a0, float gen_a1) { return (double)F_00989260(gen_a0, gen_a1); }
 static unsigned int W_00990300(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00990300(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00990560(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00990560(gen_a0, gen_a1); }
 static unsigned int W_00990c00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00990c00(gen_a0); }
 static unsigned int W_00990d20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00990d20(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
-static double W_00990e90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00990e90(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00990f20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00990f20(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00991170(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (double)F_00991170(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00991d60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00991d60(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00992330(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00992330(gen_a0, gen_a1); }
 static unsigned int W_009923d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009923d0(gen_a0, gen_a1, gen_a2); }
@@ -4990,20 +5080,15 @@ static unsigned int W_00992470(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00993d90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00993d90(gen_a0); }
 static unsigned int W_00994090(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00994090(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00994150(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00994150(gen_a0); }
-static double W_00995170(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (double)F_00995170(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
-static double W_0099abe0(unsigned int gen_a0) { return (double)F_0099abe0(gen_a0); }
+static double W_00999080(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00999080(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_0099eca0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0099eca0(gen_a0, gen_a1); }
 static unsigned int W_0099ee40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_0099ee40(gen_a0, gen_a1); }
-static double W_009a1ec0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (double)F_009a1ec0(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_009a1f80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_009a1f80(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_009a3130(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009a3130(gen_a0, gen_a1, gen_a2); }
-static double W_009a31b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (double)F_009a31b0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_009a49f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009a49f0(gen_a0); }
 static unsigned int W_009a4c10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7) { return (unsigned int)(unsigned char)F_009a4c10(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static unsigned int W_009a4d50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_009a4d50(gen_a0, gen_a1); }
 static unsigned int W_009a4da0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009a4da0(gen_a0, gen_a1); }
 static double W_009a5320(unsigned int gen_a0) { return (double)F_009a5320(gen_a0); }
-static double W_009a5420(unsigned int gen_a0, float gen_a1, float gen_a2) { return (double)F_009a5420(gen_a0, gen_a1, gen_a2); }
 static double W_009a7630(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (double)F_009a7630(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static double W_009a7e90(unsigned int gen_a0) { return (double)F_009a7e90(gen_a0); }
 static double W_009a7f30(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_009a7f30(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -5013,12 +5098,7 @@ static double W_009ab8c0(unsigned int gen_a0) { return (double)F_009ab8c0(gen_a0
 static double W_009ab960(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_009ab960(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_009aba80(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_009aba80(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_009abd00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_009abd00(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
-static double W_009afaa0(unsigned int gen_a0) { return (double)F_009afaa0(gen_a0); }
-static double W_009b3060(unsigned int gen_a0, float gen_a1, float gen_a2) { return (double)F_009b3060(gen_a0, gen_a1, gen_a2); }
-static double W_009b32e0(unsigned int gen_a0) { return (double)F_009b32e0(gen_a0); }
 static double W_009b8500(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_009b8500(gen_a0, gen_a1); }
-static double W_009b9a50(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_009b9a50(gen_a0, gen_a1); }
-static double W_009ba9f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_009ba9f0(gen_a0, gen_a1); }
 static unsigned int W_009bc4f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009bc4f0(gen_a0); }
 static unsigned int W_009bcb30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009bcb30(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_009bcc70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009bcc70(gen_a0, gen_a1, gen_a2); }
@@ -5037,24 +5117,60 @@ static unsigned int W_009c8900(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_009c89c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_009c89c0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_009cb7f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_009cb7f0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_009d10e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_009d10e0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_009d9ee0(unsigned int gen_a0) { return (double)F_009d9ee0(gen_a0); }
+static double W_009d9ef0(unsigned int gen_a0) { return (double)F_009d9ef0(gen_a0); }
 static unsigned int W_009d9f20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009d9f20(gen_a0); }
 static unsigned int W_009d9f30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009d9f30(gen_a0); }
 static unsigned int W_009d9f40(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009d9f40(gen_a0); }
+static double W_009da030(unsigned int gen_a0) { return (double)F_009da030(gen_a0); }
+static double W_009da040(unsigned int gen_a0) { return (double)F_009da040(gen_a0); }
+static double W_009da050(unsigned int gen_a0) { return (double)F_009da050(gen_a0); }
+static double W_009da060(unsigned int gen_a0) { return (double)F_009da060(gen_a0); }
+static double W_009da070(unsigned int gen_a0) { return (double)F_009da070(gen_a0); }
+static double W_009da080(unsigned int gen_a0) { return (double)F_009da080(gen_a0); }
+static double W_009da090(unsigned int gen_a0) { return (double)F_009da090(gen_a0); }
+static double W_009da0a0(unsigned int gen_a0) { return (double)F_009da0a0(gen_a0); }
+static double W_009da0b0(unsigned int gen_a0) { return (double)F_009da0b0(gen_a0); }
+static double W_009da0c0(unsigned int gen_a0) { return (double)F_009da0c0(gen_a0); }
+static double W_009da0d0(unsigned int gen_a0) { return (double)F_009da0d0(gen_a0); }
+static double W_009da0e0(unsigned int gen_a0) { return (double)F_009da0e0(gen_a0); }
+static double W_009da0f0(unsigned int gen_a0) { return (double)F_009da0f0(gen_a0); }
+static double W_009da100(unsigned int gen_a0) { return (double)F_009da100(gen_a0); }
+static double W_009da110(unsigned int gen_a0) { return (double)F_009da110(gen_a0); }
+static double W_009da120(unsigned int gen_a0) { return (double)F_009da120(gen_a0); }
+static double W_009da130(unsigned int gen_a0) { return (double)F_009da130(gen_a0); }
+static double W_009da140(unsigned int gen_a0) { return (double)F_009da140(gen_a0); }
+static double W_009da160(unsigned int gen_a0) { return (double)F_009da160(gen_a0); }
+static double W_009da170(unsigned int gen_a0) { return (double)F_009da170(gen_a0); }
+static double W_009da180(unsigned int gen_a0) { return (double)F_009da180(gen_a0); }
+static double W_009da190(unsigned int gen_a0) { return (double)F_009da190(gen_a0); }
+static double W_009da1f0(unsigned int gen_a0) { return (double)F_009da1f0(gen_a0); }
+static double W_009da200(unsigned int gen_a0) { return (double)F_009da200(gen_a0); }
 static unsigned int W_009da290(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009da290(gen_a0); }
 static unsigned int W_009da2a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009da2a0(gen_a0); }
+static double W_009da450(unsigned int gen_a0) { return (double)F_009da450(gen_a0); }
+static double W_009da460(unsigned int gen_a0) { return (double)F_009da460(gen_a0); }
 static unsigned int W_009da4e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009da4e0(gen_a0); }
 static unsigned int W_009da500(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009da500(gen_a0); }
 static unsigned int W_009da7c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009da7c0(gen_a0); }
+static double W_009da7e0(unsigned int gen_a0) { return (double)F_009da7e0(gen_a0); }
+static double W_009da800(unsigned int gen_a0) { return (double)F_009da800(gen_a0); }
+static double W_009da820(unsigned int gen_a0) { return (double)F_009da820(gen_a0); }
+static double W_009da830(unsigned int gen_a0) { return (double)F_009da830(gen_a0); }
 static unsigned int W_009dac10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009dac10(gen_a0, gen_a1); }
 static unsigned int W_009daca0(void) { return (unsigned int)(unsigned char)F_009daca0(); }
 static unsigned int W_009dacc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009dacc0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_009dacd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009dacd0(gen_a0, gen_a1, gen_a2); }
+static double W_009dad30(float gen_a0, float gen_a1, float gen_a2) { return (double)F_009dad30(gen_a0, gen_a1, gen_a2); }
+static double W_009dad70(unsigned int gen_a0) { return (double)F_009dad70(gen_a0); }
 static unsigned int W_009dbaa0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009dbaa0(gen_a0, gen_a1); }
+static double W_009dbb90(float gen_a0, float gen_a1) { return (double)F_009dbb90(gen_a0, gen_a1); }
 static unsigned int W_009dc6a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009dc6a0(gen_a0, gen_a1); }
 static unsigned int W_009dca30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009dca30(gen_a0, gen_a1); }
 static unsigned int W_009dca50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009dca50(gen_a0, gen_a1); }
 static unsigned int W_009dcc30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009dcc30(gen_a0, gen_a1); }
 static unsigned int W_009dcc50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009dcc50(gen_a0, gen_a1); }
+static double W_009dde80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_009dde80(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_009de480(void) { return (unsigned int)(unsigned char)F_009de480(); }
 static unsigned int W_009de4c0(void) { return (unsigned int)(unsigned char)F_009de4c0(); }
 static unsigned int W_009de4d0(void) { return (unsigned int)(unsigned char)F_009de4d0(); }
@@ -5075,8 +5191,25 @@ static unsigned int W_009de930(void) { return (unsigned int)(unsigned char)F_009
 static unsigned int W_009dee20(void) { return (unsigned int)(unsigned char)F_009dee20(); }
 static unsigned int W_009dee90(void) { return (unsigned int)(unsigned char)F_009dee90(); }
 static unsigned int W_009def20(void) { return (unsigned int)(unsigned char)F_009def20(); }
+static double W_009dfc90(unsigned int gen_a0) { return (double)F_009dfc90(gen_a0); }
+static double W_009dfca0(unsigned int gen_a0) { return (double)F_009dfca0(gen_a0); }
 static unsigned int W_009e0010(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e0010(gen_a0); }
+static double W_009e0030(unsigned int gen_a0) { return (double)F_009e0030(gen_a0); }
+static double W_009e0040(unsigned int gen_a0) { return (double)F_009e0040(gen_a0); }
+static double W_009e0050(unsigned int gen_a0) { return (double)F_009e0050(gen_a0); }
+static double W_009e0060(unsigned int gen_a0) { return (double)F_009e0060(gen_a0); }
+static double W_009e00e0(unsigned int gen_a0) { return (double)F_009e00e0(gen_a0); }
+static double W_009e00f0(unsigned int gen_a0) { return (double)F_009e00f0(gen_a0); }
 static unsigned int W_009e0270(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e0270(gen_a0); }
+static double W_009e0290(unsigned int gen_a0) { return (double)F_009e0290(gen_a0); }
+static double W_009e0340(unsigned int gen_a0) { return (double)F_009e0340(gen_a0); }
+static double W_009e0680(unsigned int gen_a0) { return (double)F_009e0680(gen_a0); }
+static double W_009e0690(unsigned int gen_a0) { return (double)F_009e0690(gen_a0); }
+static double W_009e0a00(unsigned int gen_a0) { return (double)F_009e0a00(gen_a0); }
+static double W_009e0a10(unsigned int gen_a0) { return (double)F_009e0a10(gen_a0); }
+static double W_009e0a20(unsigned int gen_a0) { return (double)F_009e0a20(gen_a0); }
+static double W_009e0a30(unsigned int gen_a0) { return (double)F_009e0a30(gen_a0); }
+static double W_009e0ee0(unsigned int gen_a0) { return (double)F_009e0ee0(gen_a0); }
 static unsigned int W_009e2520(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009e2520(gen_a0, gen_a1); }
 static unsigned int W_009e2550(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009e2550(gen_a0, gen_a1); }
 static unsigned int W_009e2710(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009e2710(gen_a0, gen_a1); }
@@ -5093,15 +5226,21 @@ static unsigned int W_009e31a0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_009e31c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009e31c0(gen_a0, gen_a1); }
 static unsigned int W_009e39e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009e39e0(gen_a0, gen_a1); }
 static double W_009e4340(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_009e4340(gen_a0, gen_a1); }
-static double W_009e4400(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_009e4400(gen_a0, gen_a1); }
 static unsigned int W_009e4600(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e4600(gen_a0); }
 static unsigned int W_009e4610(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e4610(gen_a0); }
 static unsigned int W_009e4620(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e4620(gen_a0); }
 static unsigned int W_009e4c30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e4c30(gen_a0); }
+static double W_009e4d80(unsigned int gen_a0) { return (double)F_009e4d80(gen_a0); }
+static double W_009e4d90(unsigned int gen_a0) { return (double)F_009e4d90(gen_a0); }
+static double W_009e4da0(unsigned int gen_a0) { return (double)F_009e4da0(gen_a0); }
+static double W_009e4db0(unsigned int gen_a0) { return (double)F_009e4db0(gen_a0); }
+static double W_009e4df0(unsigned int gen_a0) { return (double)F_009e4df0(gen_a0); }
 static unsigned int W_009e5300(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e5300(gen_a0); }
 static unsigned int W_009e5310(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e5310(gen_a0); }
 static unsigned int W_009e5320(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e5320(gen_a0); }
 static unsigned int W_009e5330(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009e5330(gen_a0); }
+static double W_009e5340(unsigned int gen_a0) { return (double)F_009e5340(gen_a0); }
+static double W_009e5350(unsigned int gen_a0) { return (double)F_009e5350(gen_a0); }
 static unsigned int W_009e5a30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_009e5a30(gen_a0, gen_a1); }
 static unsigned int W_009e5d50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009e5d50(gen_a0, gen_a1); }
 static unsigned int W_009e5d70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009e5d70(gen_a0, gen_a1); }
@@ -5121,11 +5260,35 @@ static unsigned int W_009e9f70(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_009ea0d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10, unsigned int gen_a11, unsigned int gen_a12, unsigned int gen_a13) { return (unsigned int)(unsigned char)F_009ea0d0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8, gen_a9, gen_a10, gen_a11, gen_a12, gen_a13); }
 static unsigned int W_009eb790(void) { return (unsigned int)(unsigned char)F_009eb790(); }
 static unsigned int W_009eb7d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eb7d0(gen_a0); }
+static double W_009eb7e0(unsigned int gen_a0) { return (double)F_009eb7e0(gen_a0); }
+static double W_009eb7f0(unsigned int gen_a0) { return (double)F_009eb7f0(gen_a0); }
+static double W_009eb800(unsigned int gen_a0) { return (double)F_009eb800(gen_a0); }
+static double W_009eb810(unsigned int gen_a0) { return (double)F_009eb810(gen_a0); }
+static double W_009eb820(unsigned int gen_a0) { return (double)F_009eb820(gen_a0); }
+static double W_009eb830(unsigned int gen_a0) { return (double)F_009eb830(gen_a0); }
+static double W_009eb840(unsigned int gen_a0) { return (double)F_009eb840(gen_a0); }
+static double W_009eb850(unsigned int gen_a0) { return (double)F_009eb850(gen_a0); }
+static double W_009eb860(unsigned int gen_a0) { return (double)F_009eb860(gen_a0); }
+static double W_009eb870(unsigned int gen_a0) { return (double)F_009eb870(gen_a0); }
+static double W_009eb880(unsigned int gen_a0) { return (double)F_009eb880(gen_a0); }
+static double W_009eb890(unsigned int gen_a0) { return (double)F_009eb890(gen_a0); }
+static double W_009eb8a0(unsigned int gen_a0) { return (double)F_009eb8a0(gen_a0); }
+static double W_009eb8b0(unsigned int gen_a0) { return (double)F_009eb8b0(gen_a0); }
+static double W_009eb8c0(unsigned int gen_a0) { return (double)F_009eb8c0(gen_a0); }
+static double W_009eb8d0(unsigned int gen_a0) { return (double)F_009eb8d0(gen_a0); }
+static double W_009eb8e0(unsigned int gen_a0) { return (double)F_009eb8e0(gen_a0); }
+static double W_009eb8f0(unsigned int gen_a0) { return (double)F_009eb8f0(gen_a0); }
+static double W_009eb900(unsigned int gen_a0) { return (double)F_009eb900(gen_a0); }
+static double W_009eb910(unsigned int gen_a0) { return (double)F_009eb910(gen_a0); }
+static double W_009eb920(unsigned int gen_a0) { return (double)F_009eb920(gen_a0); }
+static double W_009eb930(unsigned int gen_a0) { return (double)F_009eb930(gen_a0); }
 static unsigned int W_009eb940(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eb940(gen_a0); }
 static unsigned int W_009eb950(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eb950(gen_a0); }
 static unsigned int W_009eb960(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eb960(gen_a0); }
 static unsigned int W_009eb970(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eb970(gen_a0); }
 static unsigned int W_009eb980(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eb980(gen_a0); }
+static double W_009eb990(unsigned int gen_a0) { return (double)F_009eb990(gen_a0); }
+static double W_009eb9a0(unsigned int gen_a0) { return (double)F_009eb9a0(gen_a0); }
 static unsigned int W_009eba30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eba30(gen_a0); }
 static unsigned int W_009eba40(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eba40(gen_a0); }
 static unsigned int W_009eba50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009eba50(gen_a0); }
@@ -5152,9 +5315,15 @@ static unsigned int W_009eeff0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_009ef000(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef000(gen_a0); }
 static unsigned int W_009ef010(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef010(gen_a0); }
 static unsigned int W_009ef020(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef020(gen_a0); }
+static double W_009ef140(unsigned int gen_a0) { return (double)F_009ef140(gen_a0); }
 static unsigned int W_009ef560(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef560(gen_a0); }
+static double W_009ef750(unsigned int gen_a0) { return (double)F_009ef750(gen_a0); }
+static double W_009ef760(unsigned int gen_a0) { return (double)F_009ef760(gen_a0); }
+static double W_009ef770(unsigned int gen_a0) { return (double)F_009ef770(gen_a0); }
+static double W_009ef780(unsigned int gen_a0) { return (double)F_009ef780(gen_a0); }
 static unsigned int W_009ef790(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef790(gen_a0); }
 static unsigned int W_009ef7a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef7a0(gen_a0); }
+static double W_009ef7c0(unsigned int gen_a0) { return (double)F_009ef7c0(gen_a0); }
 static unsigned int W_009ef7e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef7e0(gen_a0); }
 static unsigned int W_009ef7f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef7f0(gen_a0); }
 static unsigned int W_009ef800(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009ef800(gen_a0); }
@@ -5165,6 +5334,8 @@ static unsigned int W_009efac0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_009efad0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009efad0(gen_a0); }
 static unsigned int W_009efae0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009efae0(gen_a0); }
 static unsigned int W_009efaf0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009efaf0(gen_a0); }
+static double W_009efb00(unsigned int gen_a0) { return (double)F_009efb00(gen_a0); }
+static double W_009efb10(unsigned int gen_a0) { return (double)F_009efb10(gen_a0); }
 static unsigned int W_009efc70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009efc70(gen_a0); }
 static unsigned int W_009efc80(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009efc80(gen_a0); }
 static unsigned int W_009f00b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009f00b0(gen_a0); }
@@ -5172,6 +5343,7 @@ static unsigned int W_009f00c0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_009f0240(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009f0240(gen_a0, gen_a1); }
 static unsigned int W_009f0920(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009f0920(gen_a0, gen_a1); }
 static unsigned int W_009f0a00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009f0a00(gen_a0, gen_a1); }
+static double W_009f0a50(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_009f0a50(gen_a0, gen_a1); }
 static unsigned int W_009f0d70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_009f0d70(gen_a0, gen_a1); }
 static double W_009f13c0(unsigned int gen_a0) { return (double)F_009f13c0(gen_a0); }
 static unsigned int W_009f15b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009f15b0(gen_a0); }
@@ -5190,8 +5362,10 @@ static unsigned int W_009fa4e0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_009fa7f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009fa7f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_009fa910(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009fa910(gen_a0, gen_a1); }
 static unsigned int W_009faaa0(void) { return (unsigned int)(unsigned char)F_009faaa0(); }
+static double W_009fabd0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_009fabd0(gen_a0, gen_a1); }
 static unsigned int W_009fb130(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009fb130(gen_a0, gen_a1); }
 static double W_009fb280(unsigned int gen_a0, float gen_a1) { return (double)F_009fb280(gen_a0, gen_a1); }
+static double W_009fb300(unsigned int gen_a0, float gen_a1) { return (double)F_009fb300(gen_a0, gen_a1); }
 static unsigned int W_009fb790(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009fb790(gen_a0, gen_a1); }
 static unsigned int W_009fbd20(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_009fbd20(gen_a0); }
 static unsigned int W_009fbe40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009fbe40(gen_a0, gen_a1); }
@@ -5200,8 +5374,10 @@ static unsigned int W_009fc450(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_009fc470(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_009fc470(gen_a0); }
 static unsigned int W_009fc750(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009fc750(gen_a0, gen_a1); }
 static unsigned int W_009fcb60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_009fcb60(gen_a0, gen_a1); }
+static double W_009fd290(unsigned int gen_a0) { return (double)F_009fd290(gen_a0); }
 static unsigned int W_009fd2f0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_009fd2f0(gen_a0); }
 static unsigned int W_009fe010(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_009fe010(gen_a0, gen_a1, gen_a2); }
+static double W_00a00c00(float gen_a0) { return (double)F_00a00c00(gen_a0); }
 static unsigned int W_00a00fa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00a00fa0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00a01090(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a01090(gen_a0); }
 static unsigned int W_00a01d80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a01d80(gen_a0, gen_a1); }
@@ -5215,6 +5391,7 @@ static unsigned int W_00a01f80(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00a01fa0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a01fa0(gen_a0, gen_a1); }
 static unsigned int W_00a02270(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a02270(gen_a0); }
 static unsigned int W_00a04e00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a04e00(gen_a0, gen_a1); }
+static double W_00a04e60(float gen_a0) { return (double)F_00a04e60(gen_a0); }
 static unsigned int W_00a04e80(void) { return (unsigned int)(unsigned char)F_00a04e80(); }
 static unsigned int W_00a04ec0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a04ec0(gen_a0, gen_a1); }
 static unsigned int W_00a05ec0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a05ec0(gen_a0, gen_a1); }
@@ -5228,6 +5405,7 @@ static unsigned int W_00a06ab0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static double W_00a08610(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a08610(gen_a0, gen_a1); }
 static double W_00a08680(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a08680(gen_a0, gen_a1); }
 static double W_00a08770(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a08770(gen_a0, gen_a1); }
+static double W_00a08ba0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a08ba0(gen_a0, gen_a1); }
 static unsigned int W_00a08c00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a08c00(gen_a0, gen_a1); }
 static unsigned int W_00a08d70(void) { return (unsigned int)(unsigned char)F_00a08d70(); }
 static unsigned int W_00a0a5e0(void) { return (unsigned int)(unsigned char)F_00a0a5e0(); }
@@ -5241,6 +5419,7 @@ static unsigned int W_00a0bfc0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00a0bff0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00a0bff0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00a0c030(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00a0c030(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00a0c730(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a0c730(gen_a0); }
+static double W_00a0c930(float gen_a0) { return (double)F_00a0c930(gen_a0); }
 static unsigned int W_00a0c9f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00a0c9f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00a13410(void) { return (unsigned int)(unsigned char)F_00a13410(); }
 static unsigned int W_00a139e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a139e0(gen_a0, gen_a1); }
@@ -5268,7 +5447,8 @@ static unsigned int W_00a19bd0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00a1ab70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00a1ab70(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00a1b200(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a1b200(gen_a0, gen_a1); }
 static unsigned int W_00a1b230(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a1b230(gen_a0, gen_a1); }
-static double W_00a1b3d0(unsigned int gen_a0, float gen_a1) { return (double)F_00a1b3d0(gen_a0, gen_a1); }
+static double W_00a1b4c0(float gen_a0) { return (double)F_00a1b4c0(gen_a0); }
+static double W_00a1b4e0(float gen_a0) { return (double)F_00a1b4e0(gen_a0); }
 static unsigned int W_00a1b580(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a1b580(gen_a0); }
 static unsigned int W_00a1b920(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a1b920(gen_a0, gen_a1); }
 static unsigned int W_00a1bba0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00a1bba0(gen_a0, gen_a1); }
@@ -5278,18 +5458,8 @@ static unsigned int W_00a1be10(void) { return (unsigned int)(unsigned char)F_00a
 static unsigned int W_00a1be30(float gen_a0, float gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_00a1be30(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00a1beb0(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (unsigned int)(unsigned char)F_00a1beb0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00a1c690(unsigned int gen_a0, float gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00a1c690(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00a1d470(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a1d470(gen_a0, gen_a1); }
-static double W_00a1d4f0(unsigned int gen_a0, float gen_a1) { return (double)F_00a1d4f0(gen_a0, gen_a1); }
-static double W_00a1d570(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a1d570(gen_a0, gen_a1); }
-static double W_00a1d5f0(unsigned int gen_a0, float gen_a1) { return (double)F_00a1d5f0(gen_a0, gen_a1); }
 static double W_00a1d780(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00a1d780(gen_a0, gen_a1, gen_a2); }
 static double W_00a1d840(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00a1d840(gen_a0, gen_a1, gen_a2); }
-static double W_00a1e160(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a1e160(gen_a0, gen_a1); }
-static double W_00a1e180(unsigned int gen_a0, float gen_a1) { return (double)F_00a1e180(gen_a0, gen_a1); }
-static double W_00a1e1d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a1e1d0(gen_a0, gen_a1); }
-static double W_00a1eab0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a1eab0(gen_a0, gen_a1); }
-static double W_00a1eb70(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a1eb70(gen_a0, gen_a1); }
-static double W_00a1ec20(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00a1ec20(gen_a0, gen_a1); }
 static unsigned int W_00a20020(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a20020(gen_a0, gen_a1); }
 static unsigned int W_00a20090(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a20090(gen_a0); }
 static unsigned int W_00a200d0(float gen_a0) { return (unsigned int)(unsigned char)F_00a200d0(gen_a0); }
@@ -5349,7 +5519,9 @@ static unsigned int W_00a34b70(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00a34c40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a34c40(gen_a0, gen_a1); }
 static unsigned int W_00a34d10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a34d10(gen_a0, gen_a1); }
 static unsigned int W_00a34de0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a34de0(gen_a0, gen_a1); }
+static double W_00a352b0(float gen_a0) { return (double)F_00a352b0(gen_a0); }
 static unsigned int W_00a355b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a355b0(gen_a0); }
+static double W_00a35c90(float gen_a0) { return (double)F_00a35c90(gen_a0); }
 static unsigned int W_00a35cb0(void) { return (unsigned int)(unsigned char)F_00a35cb0(); }
 static unsigned int W_00a35ea0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a35ea0(gen_a0); }
 static unsigned int W_00a35fb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a35fb0(gen_a0, gen_a1); }
@@ -5397,6 +5569,7 @@ static unsigned int W_00a442a0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00a46e50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a46e50(gen_a0); }
 static unsigned int W_00a49ea0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a49ea0(gen_a0, gen_a1); }
 static unsigned int W_00a49ef0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a49ef0(gen_a0, gen_a1); }
+static double W_00a4a720(float gen_a0) { return (double)F_00a4a720(gen_a0); }
 static unsigned int W_00a4a790(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a4a790(gen_a0, gen_a1); }
 static unsigned int W_00a4a870(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a4a870(gen_a0, gen_a1); }
 static unsigned int W_00a4a950(void) { return (unsigned int)(unsigned char)F_00a4a950(); }
@@ -5412,6 +5585,7 @@ static unsigned int W_00a4cda0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00a4d520(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a4d520(gen_a0, gen_a1); }
 static unsigned int W_00a4df50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a4df50(gen_a0, gen_a1); }
 static unsigned int W_00a4dfa0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a4dfa0(gen_a0, gen_a1); }
+static double W_00a4e020(float gen_a0) { return (double)F_00a4e020(gen_a0); }
 static unsigned int W_00a4ffe0(void) { return (unsigned int)(unsigned char)F_00a4ffe0(); }
 static unsigned int W_00a505f0(void) { return (unsigned int)(unsigned char)F_00a505f0(); }
 static unsigned int W_00a50610(void) { return (unsigned int)(unsigned char)F_00a50610(); }
@@ -5438,6 +5612,8 @@ static unsigned int W_00a5c6b0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00a5c6d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a5c6d0(gen_a0, gen_a1); }
 static unsigned int W_00a5c7c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00a5c7c0(gen_a0, gen_a1, gen_a2); }
 static double W_00a5c810(unsigned int gen_a0) { return (double)F_00a5c810(gen_a0); }
+static double W_00a5c840(unsigned int gen_a0) { return (double)F_00a5c840(gen_a0); }
+static double W_00a5c880(unsigned int gen_a0) { return (double)F_00a5c880(gen_a0); }
 static unsigned int W_00a5cc70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a5cc70(gen_a0, gen_a1); }
 static unsigned int W_00a5cc80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a5cc80(gen_a0, gen_a1); }
 static unsigned int W_00a5cc90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a5cc90(gen_a0, gen_a1); }
@@ -5475,6 +5651,7 @@ static unsigned int W_00a5e100(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00a5e800(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a5e800(gen_a0, gen_a1); }
 static unsigned int W_00a5eed0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a5eed0(gen_a0, gen_a1); }
 static unsigned int W_00a5ef80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a5ef80(gen_a0, gen_a1); }
+static double W_00a5f010(float gen_a0) { return (double)F_00a5f010(gen_a0); }
 static unsigned int W_00a5f060(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a5f060(gen_a0); }
 static double W_00a5f1d0(unsigned int gen_a0) { return (double)F_00a5f1d0(gen_a0); }
 static unsigned int W_00a5f230(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a5f230(gen_a0); }
@@ -5504,6 +5681,7 @@ static unsigned int W_00a618e0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00a61980(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00a61980(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00a619f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00a619f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00a62010(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a62010(gen_a0, gen_a1); }
+static double W_00a62040(float gen_a0) { return (double)F_00a62040(gen_a0); }
 static unsigned int W_00a620a0(void) { return (unsigned int)(unsigned char)F_00a620a0(); }
 static unsigned int W_00a62170(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a62170(gen_a0, gen_a1); }
 static unsigned int W_00a62270(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a62270(gen_a0); }
@@ -5522,11 +5700,13 @@ static unsigned int W_00a63b00(void) { return (unsigned int)(unsigned char)F_00a
 static unsigned int W_00a63b50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a63b50(gen_a0); }
 static unsigned int W_00a63b60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a63b60(gen_a0, gen_a1); }
 static unsigned int W_00a63c40(void) { return (unsigned int)(unsigned char)F_00a63c40(); }
+static double W_00a63ee0(float gen_a0) { return (double)F_00a63ee0(gen_a0); }
 static unsigned int W_00a64690(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a64690(gen_a0, gen_a1); }
 static unsigned int W_00a64bd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a64bd0(gen_a0, gen_a1); }
 static unsigned int W_00a64c10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a64c10(gen_a0, gen_a1); }
 static unsigned int W_00a666f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a666f0(gen_a0); }
 static unsigned int W_00a66740(void) { return (unsigned int)(unsigned char)F_00a66740(); }
+static double W_00a66a60(float gen_a0) { return (double)F_00a66a60(gen_a0); }
 static unsigned int W_00a66b60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a66b60(gen_a0, gen_a1); }
 static unsigned int W_00a66bc0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a66bc0(gen_a0, gen_a1); }
 static unsigned int W_00a66e00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a66e00(gen_a0, gen_a1); }
@@ -5669,14 +5849,13 @@ static unsigned int W_00a9ee80(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00a9eeb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9eeb0(gen_a0, gen_a1); }
 static unsigned int W_00a9ef40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9ef40(gen_a0, gen_a1); }
 static unsigned int W_00a9ef70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9ef70(gen_a0, gen_a1); }
+static double W_00a9efd0(float gen_a0) { return (double)F_00a9efd0(gen_a0); }
 static unsigned int W_00a9f2c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9f2c0(gen_a0, gen_a1); }
 static unsigned int W_00a9f2f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9f2f0(gen_a0, gen_a1); }
 static unsigned int W_00a9f390(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a9f390(gen_a0); }
 static unsigned int W_00a9f440(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9f440(gen_a0, gen_a1); }
 static unsigned int W_00a9f620(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a9f620(gen_a0); }
 static double W_00a9f650(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00a9f650(gen_a0, gen_a1, gen_a2); }
-static double W_00a9f6d0(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3, float gen_a4, float gen_a5, unsigned int gen_a6, unsigned int gen_a7, float gen_a8, float gen_a9) { return (double)F_00a9f6d0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8, gen_a9); }
-static double W_00a9f980(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3, float gen_a4, unsigned int gen_a5) { return (double)F_00a9f980(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00a9fa20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9fa20(gen_a0, gen_a1); }
 static unsigned int W_00a9fa30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a9fa30(gen_a0); }
 static unsigned int W_00a9fa40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9fa40(gen_a0, gen_a1); }
@@ -5697,7 +5876,9 @@ static unsigned int W_00a9fe00(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00a9ff10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00a9ff10(gen_a0); }
 static unsigned int W_00a9ffd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00a9ffd0(gen_a0, gen_a1); }
 static unsigned int W_00aa0390(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00aa0390(gen_a0, gen_a1, gen_a2); }
+static double W_00aa03d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00aa03d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00aa0470(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aa0470(gen_a0); }
+static double W_00aa04d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00aa04d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00aa06d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00aa06d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00aa06e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa06e0(gen_a0, gen_a1); }
 static unsigned int W_00aa06f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa06f0(gen_a0, gen_a1); }
@@ -5705,15 +5886,28 @@ static unsigned int W_00aa07c0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00aa07d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa07d0(gen_a0, gen_a1); }
 static double W_00aa07e0(unsigned int gen_a0) { return (double)F_00aa07e0(gen_a0); }
 static unsigned int W_00aa09c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aa09c0(gen_a0); }
+static double W_00aa0df0(void) { return (double)F_00aa0df0(); }
 static unsigned int W_00aa0ed0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00aa0ed0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00aa0f30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa0f30(gen_a0, gen_a1); }
 static unsigned int W_00aa0f40(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aa0f40(gen_a0); }
+static double W_00aa10b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00aa10b0(gen_a0, gen_a1, gen_a2); }
+static double W_00aa10e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00aa10e0(gen_a0, gen_a1, gen_a2); }
+static double W_00aa1110(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00aa1110(gen_a0, gen_a1, gen_a2); }
+static double W_00aa1140(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00aa1140(gen_a0, gen_a1, gen_a2); }
+static double W_00aa1170(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aa1170(gen_a0, gen_a1); }
+static double W_00aa1190(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aa1190(gen_a0, gen_a1); }
+static double W_00aa11b0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aa11b0(gen_a0, gen_a1); }
+static double W_00aa11d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aa11d0(gen_a0, gen_a1); }
+static double W_00aa1210(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aa1210(gen_a0, gen_a1); }
+static double W_00aa1250(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aa1250(gen_a0, gen_a1); }
+static double W_00aa1290(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aa1290(gen_a0, gen_a1); }
 static unsigned int W_00aa12d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa12d0(gen_a0, gen_a1); }
 static unsigned int W_00aa1310(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa1310(gen_a0, gen_a1); }
 static unsigned int W_00aa1320(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa1320(gen_a0, gen_a1); }
 static unsigned int W_00aa1330(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa1330(gen_a0, gen_a1); }
 static unsigned int W_00aa1340(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa1340(gen_a0, gen_a1); }
 static unsigned int W_00aa1350(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aa1350(gen_a0, gen_a1); }
+static double W_00aa13b0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aa13b0(gen_a0, gen_a1); }
 static unsigned int W_00aa14c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00aa14c0(gen_a0, gen_a1); }
 static double W_00aa1660(unsigned int gen_a0) { return (double)F_00aa1660(gen_a0); }
 static double W_00aa1680(unsigned int gen_a0) { return (double)F_00aa1680(gen_a0); }
@@ -5766,14 +5960,17 @@ static unsigned int W_00aad930(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00aad960(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00aad960(gen_a0, gen_a1); }
 static double W_00aadd80(float gen_a0, float gen_a1) { return (double)F_00aadd80(gen_a0, gen_a1); }
 static unsigned int W_00aadda0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aadda0(gen_a0, gen_a1); }
+static double W_00aaddb0(float gen_a0) { return (double)F_00aaddb0(gen_a0); }
+static double W_00aaddd0(float gen_a0) { return (double)F_00aaddd0(gen_a0); }
 static double W_00aae6b0(float gen_a0) { return (double)F_00aae6b0(gen_a0); }
 static double W_00aae710(float gen_a0) { return (double)F_00aae710(gen_a0); }
 static double W_00aae7a0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aae7a0(gen_a0, gen_a1); }
-static double W_00aae8c0(unsigned int gen_a0, float gen_a1) { return (double)F_00aae8c0(gen_a0, gen_a1); }
 static double W_00aae900(unsigned int gen_a0) { return (double)F_00aae900(gen_a0); }
 static double W_00aae920(unsigned int gen_a0) { return (double)F_00aae920(gen_a0); }
 static double W_00aaea30(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aaea30(gen_a0, gen_a1); }
 static double W_00aaea90(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aaea90(gen_a0, gen_a1); }
+static double W_00aaec60(float gen_a0, float gen_a1) { return (double)F_00aaec60(gen_a0, gen_a1); }
+static double W_00aaeca0(float gen_a0, float gen_a1) { return (double)F_00aaeca0(gen_a0, gen_a1); }
 static unsigned int W_00aaedb0(void) { return (unsigned int)(unsigned char)F_00aaedb0(); }
 static unsigned int W_00aaef90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aaef90(gen_a0, gen_a1); }
 static unsigned int W_00aaf380(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aaf380(gen_a0, gen_a1); }
@@ -5795,6 +5992,7 @@ static unsigned int W_00ab1cf0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00ab1d50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ab1d50(gen_a0); }
 static unsigned int W_00ab1db0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ab1db0(gen_a0); }
 static unsigned int W_00ab1e10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ab1e10(gen_a0); }
+static double W_00ab4cf0(unsigned int gen_a0) { return (double)F_00ab4cf0(gen_a0); }
 static unsigned int W_00ab50b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ab50b0(gen_a0); }
 static unsigned int W_00ab5430(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00ab5430(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00ab5fa0(void) { return (unsigned int)(unsigned char)F_00ab5fa0(); }
@@ -5832,6 +6030,8 @@ static unsigned int W_00abfd70(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00abfeb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00abfeb0(gen_a0, gen_a1); }
 static unsigned int W_00abfee0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00abfee0(gen_a0, gen_a1); }
 static unsigned int W_00abff60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00abff60(gen_a0, gen_a1); }
+static double W_00ac1260(float gen_a0) { return (double)F_00ac1260(gen_a0); }
+static double W_00ac1280(float gen_a0) { return (double)F_00ac1280(gen_a0); }
 static double W_00ac1360(unsigned int gen_a0) { return (double)F_00ac1360(gen_a0); }
 static unsigned int W_00ac1510(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ac1510(gen_a0, gen_a1); }
 static unsigned int W_00ac1ae0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ac1ae0(gen_a0, gen_a1); }
@@ -5865,6 +6065,7 @@ static unsigned int W_00ac7930(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00ac7970(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { return (unsigned int)(unsigned char)F_00ac7970(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
 static unsigned int W_00ac83b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { return (unsigned int)(unsigned char)F_00ac83b0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
 static unsigned int W_00ac8af0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00ac8af0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_00ac9eb0(float gen_a0) { return (double)F_00ac9eb0(gen_a0); }
 static unsigned int W_00ac9fa0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ac9fa0(gen_a0); }
 static unsigned int W_00aca130(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aca130(gen_a0); }
 static unsigned int W_00aca170(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aca170(gen_a0); }
@@ -5965,9 +6166,12 @@ static unsigned int W_00ade310(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00ade330(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ade330(gen_a0, gen_a1); }
 static unsigned int W_00ade350(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ade350(gen_a0, gen_a1); }
 static unsigned int W_00ade370(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ade370(gen_a0, gen_a1); }
+static double W_00ae0790(float gen_a0) { return (double)F_00ae0790(gen_a0); }
 static unsigned int W_00ae0910(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae0910(gen_a0, gen_a1); }
 static unsigned int W_00ae0950(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae0950(gen_a0, gen_a1); }
 static unsigned int W_00ae09c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae09c0(gen_a0, gen_a1); }
+static double W_00ae0b20(float gen_a0) { return (double)F_00ae0b20(gen_a0); }
+static double W_00ae0c70(float gen_a0) { return (double)F_00ae0c70(gen_a0); }
 static unsigned int W_00ae0dd0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae0dd0(gen_a0); }
 static unsigned int W_00ae0e90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae0e90(gen_a0); }
 static unsigned int W_00ae0f50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae0f50(gen_a0); }
@@ -6035,6 +6239,12 @@ static unsigned int W_00ae4d40(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00ae4d60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae4d60(gen_a0, gen_a1); }
 static unsigned int W_00ae4d80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae4d80(gen_a0, gen_a1); }
 static unsigned int W_00ae4f30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae4f30(gen_a0, gen_a1); }
+static double W_00ae50b0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ae50b0(gen_a0, gen_a1); }
+static double W_00ae50e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ae50e0(gen_a0, gen_a1); }
+static double W_00ae5110(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ae5110(gen_a0, gen_a1); }
+static double W_00ae5140(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ae5140(gen_a0, gen_a1); }
+static double W_00ae5170(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ae5170(gen_a0, gen_a1); }
+static double W_00ae51a0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ae51a0(gen_a0, gen_a1); }
 static unsigned int W_00ae5310(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae5310(gen_a0, gen_a1); }
 static unsigned int W_00ae5350(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae5350(gen_a0, gen_a1); }
 static unsigned int W_00ae5370(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae5370(gen_a0, gen_a1); }
@@ -6102,6 +6312,7 @@ static unsigned int W_00ae6660(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00ae6680(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae6680(gen_a0); }
 static unsigned int W_00ae66c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae66c0(gen_a0); }
 static unsigned int W_00ae67b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae67b0(gen_a0, gen_a1); }
+static double W_00ae68f0(float gen_a0) { return (double)F_00ae68f0(gen_a0); }
 static unsigned int W_00ae6930(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae6930(gen_a0); }
 static unsigned int W_00ae6960(void) { return (unsigned int)(unsigned char)F_00ae6960(); }
 static unsigned int W_00ae6970(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae6970(gen_a0); }
@@ -6109,6 +6320,7 @@ static unsigned int W_00ae69a0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00ae69b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae69b0(gen_a0); }
 static unsigned int W_00ae6a90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae6a90(gen_a0); }
 static unsigned int W_00ae6e10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae6e10(gen_a0); }
+static double W_00ae6e60(unsigned int gen_a0) { return (double)F_00ae6e60(gen_a0); }
 static unsigned int W_00ae6ef0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae6ef0(gen_a0); }
 static double W_00ae6fc0(unsigned int gen_a0) { return (double)F_00ae6fc0(gen_a0); }
 static unsigned int W_00ae7060(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00ae7060(gen_a0); }
@@ -6124,16 +6336,19 @@ static double W_00ae7490(unsigned int gen_a0) { return (double)F_00ae7490(gen_a0
 static unsigned int W_00ae75d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae75d0(gen_a0); }
 static unsigned int W_00ae76b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae76b0(gen_a0, gen_a1); }
 static unsigned int W_00ae7720(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00ae7720(gen_a0, gen_a1, gen_a2); }
+static double W_00ae7740(float gen_a0, float gen_a1) { return (double)F_00ae7740(gen_a0, gen_a1); }
 static double W_00ae7790(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00ae7790(gen_a0, gen_a1, gen_a2); }
 static double W_00ae77d0(unsigned int gen_a0) { return (double)F_00ae77d0(gen_a0); }
 static unsigned int W_00ae7830(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae7830(gen_a0, gen_a1); }
 static unsigned int W_00ae7a40(float gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_00ae7a40(gen_a0, gen_a1); }
 static unsigned int W_00ae7ad0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae7ad0(gen_a0); }
-static double W_00ae7ba0(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_00ae7ba0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00ae7ba0(float gen_a0) { return (double)F_00ae7ba0(gen_a0); }
 static unsigned int W_00ae7bc0(float gen_a0) { return (unsigned int)(unsigned char)F_00ae7bc0(gen_a0); }
+static double W_00ae7c40(unsigned int gen_a0) { return (double)F_00ae7c40(gen_a0); }
 static unsigned int W_00ae7c60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae7c60(gen_a0, gen_a1); }
 static double W_00ae7ca0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (double)F_00ae7ca0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00ae8170(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00ae8170(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
+static double W_00ae82c0(unsigned int gen_a0, float gen_a1, float gen_a2) { return (double)F_00ae82c0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00ae8330(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae8330(gen_a0, gen_a1); }
 static double W_00ae8430(void) { return (double)F_00ae8430(); }
 static double W_00ae8460(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_00ae8460(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -6169,13 +6384,19 @@ static unsigned int W_00ae8fc0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00ae9020(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae9020(gen_a0); }
 static double W_00ae90c0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00ae90c0(gen_a0, gen_a1, gen_a2); }
 static double W_00ae9490(unsigned int gen_a0) { return (double)F_00ae9490(gen_a0); }
+static double W_00ae94d0(unsigned int gen_a0) { return (double)F_00ae94d0(gen_a0); }
+static double W_00ae94f0(unsigned int gen_a0) { return (double)F_00ae94f0(gen_a0); }
 static double W_00ae9520(unsigned int gen_a0) { return (double)F_00ae9520(gen_a0); }
 static double W_00ae95f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ae95f0(gen_a0, gen_a1); }
 static unsigned int W_00ae9670(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae9670(gen_a0, gen_a1); }
 static unsigned int W_00ae96c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00ae96c0(gen_a0, gen_a1, gen_a2); }
+static double W_00ae97f0(unsigned int gen_a0) { return (double)F_00ae97f0(gen_a0); }
+static double W_00ae9810(unsigned int gen_a0) { return (double)F_00ae9810(gen_a0); }
 static unsigned int W_00ae9860(void) { return (unsigned int)(unsigned char)F_00ae9860(); }
 static unsigned int W_00ae9970(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (unsigned int)(unsigned char)F_00ae9970(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00ae9ae0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00ae9ae0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00ae9bc0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ae9bc0(gen_a0, gen_a1); }
+static double W_00ae9bf0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00ae9bf0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00ae9c70(void) { return (unsigned int)(unsigned char)F_00ae9c70(); }
 static unsigned int W_00ae9ca0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ae9ca0(gen_a0); }
 static unsigned int W_00ae9d10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ae9d10(gen_a0, gen_a1); }
@@ -6184,6 +6405,7 @@ static unsigned int W_00ae9ee0(unsigned int gen_a0, float gen_a1, unsigned int g
 static unsigned int W_00ae9f10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00ae9f10(gen_a0, gen_a1, gen_a2); }
 static double W_00ae9ff0(unsigned int gen_a0) { return (double)F_00ae9ff0(gen_a0); }
 static unsigned int W_00aea290(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00aea290(gen_a0, gen_a1, gen_a2); }
+static double W_00aea410(void) { return (double)F_00aea410(); }
 static double W_00aea430(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aea430(gen_a0, gen_a1); }
 static unsigned int W_00aea4b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aea4b0(gen_a0, gen_a1); }
 static unsigned int W_00aea520(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aea520(gen_a0, gen_a1); }
@@ -6193,8 +6415,9 @@ static unsigned int W_00aead60(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00aeae90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00aeae90(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00aeaed0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00aeaed0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00aeaf60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aeaf60(gen_a0, gen_a1); }
+static double W_00aeb160(unsigned int gen_a0) { return (double)F_00aeb160(gen_a0); }
 static double W_00aeb260(float gen_a0) { return (double)F_00aeb260(gen_a0); }
-static double W_00aeb350(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_00aeb350(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00aeb350(float gen_a0) { return (double)F_00aeb350(gen_a0); }
 static double W_00aeb3a0(float gen_a0) { return (double)F_00aeb3a0(gen_a0); }
 static double W_00aeb3c0(float gen_a0, float gen_a1) { return (double)F_00aeb3c0(gen_a0, gen_a1); }
 static double W_00aeb3f0(unsigned int gen_a0) { return (double)F_00aeb3f0(gen_a0); }
@@ -6207,7 +6430,6 @@ static unsigned int W_00aebfc0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00aec010(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aec010(gen_a0, gen_a1); }
 static unsigned int W_00aec930(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aec930(gen_a0); }
 static unsigned int W_00aecc90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00aecc90(gen_a0, gen_a1, gen_a2); }
-static double W_00aecd10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5, float gen_a6) { return (double)F_00aecd10(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
 static double W_00aed220(float gen_a0) { return (double)F_00aed220(gen_a0); }
 static unsigned int W_00aed270(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00aed270(gen_a0, gen_a1); }
 static double W_00aed420(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (double)F_00aed420(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
@@ -6221,7 +6443,6 @@ static unsigned int W_00aedfc0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00aee0e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aee0e0(gen_a0); }
 static unsigned int W_00aee1c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aee1c0(gen_a0); }
 static unsigned int W_00aee270(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00aee270(gen_a0); }
-static double W_00aee3f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7) { return (double)F_00aee3f0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static double W_00aeece0(unsigned int gen_a0) { return (double)F_00aeece0(gen_a0); }
 static double W_00aeed60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (double)F_00aeed60(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static double W_00aef6e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aef6e0(gen_a0, gen_a1); }
@@ -6230,46 +6451,32 @@ static unsigned int W_00aef9b0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00aefc10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5) { return (unsigned int)(unsigned char)F_00aefc10(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00aefdf0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00aefdf0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00af0130(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00af0130(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00af08a0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_00af08a0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00af0900(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00af0900(gen_a0); }
 static unsigned int W_00af0940(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00af0940(gen_a0); }
 static unsigned int W_00af09b0(float gen_a0, float gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, float gen_a5, unsigned int gen_a6, float gen_a7) { return (unsigned int)(unsigned char)F_00af09b0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static unsigned int W_00af0bb0(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3, float gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10, unsigned int gen_a11, unsigned int gen_a12, unsigned int gen_a13) { return (unsigned int)(unsigned char)F_00af0bb0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8, gen_a9, gen_a10, gen_a11, gen_a12, gen_a13); }
 static double W_00af1c50(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00af1c50(gen_a0, gen_a1, gen_a2); }
-static double W_00af20e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00af20e0(gen_a0, gen_a1, gen_a2); }
-static double W_00af2210(unsigned int gen_a0, float gen_a1) { return (double)F_00af2210(gen_a0, gen_a1); }
 static unsigned int W_00af2660(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00af2660(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00af26b0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, float gen_a7) { return (unsigned int)(unsigned char)F_00af26b0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
-static unsigned int W_00af2a00(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, float gen_a7) { return (unsigned int)(unsigned char)F_00af2a00(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static unsigned int W_00af2e30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00af2e30(gen_a0); }
 static double W_00af2e80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00af2e80(gen_a0, gen_a1, gen_a2); }
-static double W_00af2f50(unsigned int gen_a0) { return (double)F_00af2f50(gen_a0); }
-static double W_00af3110(unsigned int gen_a0) { return (double)F_00af3110(gen_a0); }
 static unsigned int W_00af3450(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00af3450(gen_a0); }
 static unsigned int W_00af34c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00af34c0(gen_a0); }
 static unsigned int W_00af3740(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00af3740(gen_a0); }
 static double W_00af3920(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00af3920(gen_a0, gen_a1, gen_a2); }
-static double W_00af4260(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (double)F_00af4260(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
-static double W_00af43e0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, float gen_a7, unsigned int gen_a8) { return (double)F_00af43e0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static unsigned int W_00af4790(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, float gen_a6) { return (unsigned int)(unsigned char)F_00af4790(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
-static double W_00af49a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { return (double)F_00af49a0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
-static double W_00af52f0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_00af52f0(gen_a0, gen_a1, gen_a2); }
-static double W_00af5e30(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00af5e30(gen_a0, gen_a1); }
-static double W_00af6100(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00af6100(gen_a0, gen_a1); }
 static unsigned int W_00af6450(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, float gen_a4, unsigned int gen_a5, unsigned int gen_a6, float gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10) { return (unsigned int)(unsigned char)F_00af6450(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8, gen_a9, gen_a10); }
-static double W_00af69f0(unsigned int gen_a0) { return (double)F_00af69f0(gen_a0); }
-static double W_00af80b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (double)F_00af80b0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00af8600(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10, unsigned int gen_a11, unsigned int gen_a12, unsigned int gen_a13) { return (unsigned int)(unsigned char)F_00af8600(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8, gen_a9, gen_a10, gen_a11, gen_a12, gen_a13); }
 static unsigned int W_00af9d80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7) { return (unsigned int)(unsigned char)F_00af9d80(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static unsigned int W_00afa520(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00afa520(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00afaa70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00afaa70(gen_a0); }
-static double W_00afc4f0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5, float gen_a6, float gen_a7) { return (double)F_00afc4f0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
-static double W_00afcd60(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5, float gen_a6, float gen_a7) { return (double)F_00afcd60(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static unsigned int W_00afd2a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00afd2a0(gen_a0, gen_a1); }
 static unsigned int W_00afd620(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00afd620(gen_a0); }
-static double W_00afdab0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, unsigned int gen_a3) { return (double)F_00afdab0(gen_a0, gen_a1, gen_a2, gen_a3); }
-static unsigned int W_00afed70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00afed70(gen_a0); }
 static unsigned int W_00afef80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00afef80(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00aff4d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aff4d0(gen_a0, gen_a1); }
+static double W_00aff4f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aff4f0(gen_a0, gen_a1); }
+static double W_00aff520(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00aff520(gen_a0, gen_a1); }
+static double W_00aff540(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00aff540(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00aff620(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00aff620(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b00a60(void) { return (unsigned int)(unsigned char)F_00b00a60(); }
 static unsigned int W_00b00a70(void) { return (unsigned int)(unsigned char)F_00b00a70(); }
@@ -6280,7 +6487,10 @@ static unsigned int W_00b00df0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b00f00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b00f00(gen_a0, gen_a1); }
 static unsigned int W_00b010e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b010e0(gen_a0, gen_a1); }
 static unsigned int W_00b01110(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b01110(gen_a0, gen_a1); }
+static double W_00b02610(float gen_a0) { return (double)F_00b02610(gen_a0); }
 static unsigned int W_00b02630(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00b02630(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
+static double W_00b07020(float gen_a0) { return (double)F_00b07020(gen_a0); }
+static double W_00b07040(float gen_a0) { return (double)F_00b07040(gen_a0); }
 static unsigned int W_00b070e0(void) { return (unsigned int)(unsigned char)F_00b070e0(); }
 static unsigned int W_00b071e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00b071e0(gen_a0, gen_a1); }
 static unsigned int W_00b07380(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b07380(gen_a0, gen_a1); }
@@ -6377,6 +6587,7 @@ static unsigned int W_00b4d000(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00b4d010(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00b4d010(gen_a0, gen_a1); }
 static unsigned int W_00b4d4c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b4d4c0(gen_a0, gen_a1); }
 static unsigned int W_00b4d8d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b4d8d0(gen_a0); }
+static double W_00b4d910(float gen_a0) { return (double)F_00b4d910(gen_a0); }
 static double W_00b4d990(unsigned int gen_a0) { return (double)F_00b4d990(gen_a0); }
 static unsigned int W_00b4da90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b4da90(gen_a0); }
 static unsigned int W_00b4dc00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b4dc00(gen_a0); }
@@ -6418,11 +6629,13 @@ static unsigned int W_00b58100(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b58830(void) { return (unsigned int)(unsigned char)F_00b58830(); }
 static unsigned int W_00b58910(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b58910(gen_a0); }
 static unsigned int W_00b59410(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b59410(gen_a0, gen_a1); }
+static double W_00b59560(float gen_a0) { return (double)F_00b59560(gen_a0); }
 static unsigned int W_00b59620(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b59620(gen_a0, gen_a1); }
 static unsigned int W_00b59a30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b59a30(gen_a0, gen_a1); }
 static unsigned int W_00b59aa0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b59aa0(gen_a0); }
 static unsigned int W_00b5a4a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5a4a0(gen_a0); }
 static unsigned int W_00b5a520(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b5a520(gen_a0, gen_a1); }
+static double W_00b5a530(float gen_a0) { return (double)F_00b5a530(gen_a0); }
 static unsigned int W_00b5a5d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5a5d0(gen_a0); }
 static unsigned int W_00b5a660(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5a660(gen_a0); }
 static unsigned int W_00b5a6a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5a6a0(gen_a0); }
@@ -6444,6 +6657,7 @@ static unsigned int W_00b5b7a0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00b5b810(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b5b810(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b5ba80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b5ba80(gen_a0, gen_a1); }
 static unsigned int W_00b5c2e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b5c2e0(gen_a0, gen_a1); }
+static double W_00b5c5a0(float gen_a0) { return (double)F_00b5c5a0(gen_a0); }
 static unsigned int W_00b5c670(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b5c670(gen_a0, gen_a1); }
 static unsigned int W_00b5c680(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5c680(gen_a0); }
 static unsigned int W_00b5c770(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5c770(gen_a0); }
@@ -6454,6 +6668,10 @@ static unsigned int W_00b5e420(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b5e470(void) { return (unsigned int)(unsigned char)F_00b5e470(); }
 static unsigned int W_00b5e490(void) { return (unsigned int)(unsigned char)F_00b5e490(); }
 static unsigned int W_00b5e4d0(void) { return (unsigned int)(unsigned char)F_00b5e4d0(); }
+static double W_00b5e5a0(unsigned int gen_a0) { return (double)F_00b5e5a0(gen_a0); }
+static double W_00b5e5b0(unsigned int gen_a0) { return (double)F_00b5e5b0(gen_a0); }
+static double W_00b5e5c0(unsigned int gen_a0) { return (double)F_00b5e5c0(gen_a0); }
+static double W_00b5e5d0(unsigned int gen_a0) { return (double)F_00b5e5d0(gen_a0); }
 static unsigned int W_00b5e610(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b5e610(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b5e630(void) { return (unsigned int)(unsigned char)F_00b5e630(); }
 static unsigned int W_00b5e640(void) { return (unsigned int)(unsigned char)F_00b5e640(); }
@@ -6472,6 +6690,7 @@ static unsigned int W_00b5fa60(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00b5fa70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5fa70(gen_a0); }
 static unsigned int W_00b5fb20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b5fb20(gen_a0, gen_a1); }
 static unsigned int W_00b5fb70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b5fb70(gen_a0, gen_a1); }
+static double W_00b5fb80(float gen_a0) { return (double)F_00b5fb80(gen_a0); }
 static unsigned int W_00b5fba0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5fba0(gen_a0); }
 static unsigned int W_00b5fbb0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b5fbb0(gen_a0); }
 static unsigned int W_00b5fc40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b5fc40(gen_a0, gen_a1); }
@@ -6493,6 +6712,7 @@ static unsigned int W_00b616d0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static double W_00b61860(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b61860(gen_a0, gen_a1); }
 static unsigned int W_00b61a50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b61a50(gen_a0, gen_a1); }
 static unsigned int W_00b61b90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b61b90(gen_a0, gen_a1); }
+static double W_00b61bb0(float gen_a0) { return (double)F_00b61bb0(gen_a0); }
 static unsigned int W_00b61c40(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b61c40(gen_a0); }
 static unsigned int W_00b61c90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b61c90(gen_a0, gen_a1); }
 static unsigned int W_00b61d90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b61d90(gen_a0); }
@@ -6502,6 +6722,7 @@ static unsigned int W_00b62e00(void) { return (unsigned int)(unsigned char)F_00b
 static unsigned int W_00b62ea0(void) { return (unsigned int)(unsigned char)F_00b62ea0(); }
 static unsigned int W_00b62eb0(void) { return (unsigned int)(unsigned char)F_00b62eb0(); }
 static unsigned int W_00b62ed0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b62ed0(gen_a0); }
+static double W_00b63000(float gen_a0) { return (double)F_00b63000(gen_a0); }
 static unsigned int W_00b63030(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (unsigned int)(unsigned char)F_00b63030(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static unsigned int W_00b630d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b630d0(gen_a0, gen_a1); }
 static unsigned int W_00b63190(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00b63190(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
@@ -6510,6 +6731,7 @@ static unsigned int W_00b63450(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b63470(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b63470(gen_a0, gen_a1); }
 static unsigned int W_00b63510(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00b63510(gen_a0, gen_a1); }
 static unsigned int W_00b63520(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b63520(gen_a0, gen_a1); }
+static double W_00b63650(float gen_a0) { return (double)F_00b63650(gen_a0); }
 static unsigned int W_00b63680(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b63680(gen_a0); }
 static unsigned int W_00b638a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b638a0(gen_a0, gen_a1); }
 static unsigned int W_00b638f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b638f0(gen_a0, gen_a1); }
@@ -6521,7 +6743,9 @@ static unsigned int W_00b643b0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b64410(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b64410(gen_a0); }
 static unsigned int W_00b64430(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b64430(gen_a0); }
 static double W_00b64b10(unsigned int gen_a0) { return (double)F_00b64b10(gen_a0); }
+static double W_00b64bd0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b64bd0(gen_a0, gen_a1); }
 static double W_00b64bf0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00b64bf0(gen_a0, gen_a1, gen_a2); }
+static double W_00b64d50(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b64d50(gen_a0, gen_a1); }
 static double W_00b64d70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00b64d70(gen_a0, gen_a1, gen_a2); }
 static double W_00b65190(unsigned int gen_a0) { return (double)F_00b65190(gen_a0); }
 static double W_00b652b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00b652b0(gen_a0, gen_a1, gen_a2); }
@@ -6539,7 +6763,10 @@ static double W_00b66720(unsigned int gen_a0, unsigned int gen_a1, unsigned int 
 static double W_00b66780(unsigned int gen_a0) { return (double)F_00b66780(gen_a0); }
 static double W_00b667d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b667d0(gen_a0, gen_a1); }
 static double W_00b66830(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00b66830(gen_a0, gen_a1, gen_a2); }
+static double W_00b676e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b676e0(gen_a0, gen_a1); }
+static double W_00b676f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b676f0(gen_a0, gen_a1); }
 static double W_00b67a70(unsigned int gen_a0) { return (double)F_00b67a70(gen_a0); }
+static double W_00b68360(float gen_a0) { return (double)F_00b68360(gen_a0); }
 static unsigned int W_00b683c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b683c0(gen_a0, gen_a1); }
 static unsigned int W_00b68760(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b68760(gen_a0, gen_a1); }
 static unsigned int W_00b687c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b687c0(gen_a0, gen_a1); }
@@ -6558,12 +6785,14 @@ static unsigned int W_00b699b0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00b69af0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b69af0(gen_a0); }
 static unsigned int W_00b69c20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b69c20(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b69cb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b69cb0(gen_a0, gen_a1); }
+static double W_00b69ea0(float gen_a0) { return (double)F_00b69ea0(gen_a0); }
+static double W_00b69ec0(float gen_a0) { return (double)F_00b69ec0(gen_a0); }
 static unsigned int W_00b69f10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00b69f10(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00b6a2d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b6a2d0(gen_a0, gen_a1, gen_a2); }
 static double W_00b6a440(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, unsigned int gen_a4, float gen_a5) { return (double)F_00b6a440(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
+static double W_00b6ab60(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b6ab60(gen_a0, gen_a1); }
 static unsigned int W_00b6adb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b6adb0(gen_a0, gen_a1); }
 static unsigned int W_00b6af20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b6af20(gen_a0); }
-static double W_00b6b0c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b6b0c0(gen_a0, gen_a1); }
 static double W_00b6b1b0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00b6b1b0(gen_a0, gen_a1, gen_a2); }
 static double W_00b6b1f0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00b6b1f0(gen_a0, gen_a1, gen_a2); }
 static double W_00b6b230(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00b6b230(gen_a0, gen_a1, gen_a2); }
@@ -6581,7 +6810,6 @@ static double W_00b6b820(float gen_a0, unsigned int gen_a1, unsigned int gen_a2,
 static unsigned int W_00b6b9c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b6b9c0(gen_a0, gen_a1, gen_a2); }
 static double W_00b6bb90(unsigned int gen_a0) { return (double)F_00b6bb90(gen_a0); }
 static unsigned int W_00b6bc50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00b6bc50(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00b6be10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00b6be10(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b6bec0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00b6bec0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00b6c300(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, float gen_a4) { return (unsigned int)(unsigned char)F_00b6c300(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static double W_00b6c6b0(void) { return (double)F_00b6c6b0(); }
@@ -6592,11 +6820,12 @@ static double W_00b6c8d0(unsigned int gen_a0) { return (double)F_00b6c8d0(gen_a0
 static unsigned int W_00b6cc00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b6cc00(gen_a0); }
 static double W_00b6cce0(unsigned int gen_a0) { return (double)F_00b6cce0(gen_a0); }
 static double W_00b6cfa0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00b6cfa0(gen_a0, gen_a1, gen_a2); }
+static double W_00b6d3f0(unsigned int gen_a0) { return (double)F_00b6d3f0(gen_a0); }
+static double W_00b6d410(unsigned int gen_a0) { return (double)F_00b6d410(gen_a0); }
 static double W_00b6d440(float gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (double)F_00b6d440(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00b6dc90(unsigned int gen_a0) { return (double)F_00b6dc90(gen_a0); }
 static double W_00b6ddd0(unsigned int gen_a0) { return (double)F_00b6ddd0(gen_a0); }
 static double W_00b6dde0(float gen_a0, float gen_a1) { return (double)F_00b6dde0(gen_a0, gen_a1); }
-static double W_00b6dfb0(unsigned int gen_a0) { return (double)F_00b6dfb0(gen_a0); }
+static double W_00b6e060(void) { return (double)F_00b6e060(); }
 static double W_00b6e080(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00b6e080(gen_a0, gen_a1, gen_a2); }
 static double W_00b6e330(float gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_00b6e330(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00b6e3b0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00b6e3b0(gen_a0, gen_a1, gen_a2); }
@@ -6604,34 +6833,28 @@ static double W_00b6e430(float gen_a0, float gen_a1, float gen_a2) { return (dou
 static double W_00b6e4a0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00b6e4a0(gen_a0, gen_a1, gen_a2); }
 static double W_00b6e9f0(unsigned int gen_a0, float gen_a1, float gen_a2) { return (double)F_00b6e9f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b6ec30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b6ec30(gen_a0); }
-static double W_00b6f710(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4) { return (double)F_00b6f710(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
-static double W_00b6f8d0(unsigned int gen_a0) { return (double)F_00b6f8d0(gen_a0); }
-static double W_00b6fa30(unsigned int gen_a0) { return (double)F_00b6fa30(gen_a0); }
 static unsigned int W_00b6fac0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b6fac0(gen_a0, gen_a1); }
 static double W_00b6fc40(float gen_a0, float gen_a1) { return (double)F_00b6fc40(gen_a0, gen_a1); }
 static double W_00b6fcb0(unsigned int gen_a0, float gen_a1) { return (double)F_00b6fcb0(gen_a0, gen_a1); }
 static double W_00b70bd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00b70bd0(gen_a0, gen_a1, gen_a2); }
-static double W_00b72240(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00b72240(gen_a0, gen_a1, gen_a2); }
-static double W_00b723c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b723c0(gen_a0, gen_a1); }
-static double W_00b725f0(float gen_a0) { return (double)F_00b725f0(gen_a0); }
 static unsigned int W_00b726f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b726f0(gen_a0); }
-static double W_00b72970(unsigned int gen_a0) { return (double)F_00b72970(gen_a0); }
 static unsigned int W_00b73430(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b73430(gen_a0); }
-static double W_00b73500(unsigned int gen_a0) { return (double)F_00b73500(gen_a0); }
 static double W_00b73e70(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b73e70(gen_a0, gen_a1); }
-static double W_00b74020(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, unsigned int gen_a4) { return (double)F_00b74020(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00b745f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b745f0(gen_a0); }
-static double W_00b74f60(unsigned int gen_a0) { return (double)F_00b74f60(gen_a0); }
-static double W_00b75760(unsigned int gen_a0) { return (double)F_00b75760(gen_a0); }
 static unsigned int W_00b75a10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b75a10(gen_a0); }
+static double W_00b75bd0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b75bd0(gen_a0, gen_a1); }
 static double W_00b75c70(unsigned int gen_a0) { return (double)F_00b75c70(gen_a0); }
 static double W_00b75cd0(unsigned int gen_a0) { return (double)F_00b75cd0(gen_a0); }
 static unsigned int W_00b75e80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b75e80(gen_a0, gen_a1); }
+static double W_00b75e90(float gen_a0) { return (double)F_00b75e90(gen_a0); }
+static double W_00b75eb0(float gen_a0) { return (double)F_00b75eb0(gen_a0); }
 static double W_00b75ec0(float gen_a0) { return (double)F_00b75ec0(gen_a0); }
-static double W_00b75f50(unsigned int gen_a0) { return (double)F_00b75f50(gen_a0); }
+static double W_00b76010(float gen_a0) { return (double)F_00b76010(gen_a0); }
+static double W_00b76030(float gen_a0) { return (double)F_00b76030(gen_a0); }
 static unsigned int W_00b760a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b760a0(gen_a0, gen_a1); }
 static double W_00b763f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b763f0(gen_a0, gen_a1); }
 static unsigned int W_00b76410(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b76410(gen_a0); }
+static double W_00b767f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b767f0(gen_a0, gen_a1); }
 static unsigned int W_00b768f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b768f0(gen_a0, gen_a1); }
 static unsigned int W_00b76910(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b76910(gen_a0, gen_a1); }
 static unsigned int W_00b769a0(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_00b769a0(gen_a0, gen_a1); }
@@ -6641,6 +6864,8 @@ static unsigned int W_00b76a60(unsigned int gen_a0, unsigned int gen_a1, float g
 static unsigned int W_00b76ae0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b76ae0(gen_a0); }
 static unsigned int W_00b76c70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00b76c70(gen_a0, gen_a1); }
 static unsigned int W_00b76d60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00b76d60(gen_a0, gen_a1); }
+static double W_00b76db0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b76db0(gen_a0, gen_a1); }
+static double W_00b76dc0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_00b76dc0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b76e60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b76e60(gen_a0, gen_a1); }
 static unsigned int W_00b76ec0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b76ec0(gen_a0, gen_a1, gen_a2); }
 static double W_00b77030(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00b77030(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -6649,9 +6874,9 @@ static unsigned int W_00b779d0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00b77bd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b77bd0(gen_a0, gen_a1); }
 static unsigned int W_00b77d70(unsigned int gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00b77d70(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00b77f50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00b77f50(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00b78000(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b78000(gen_a0, gen_a1); }
 static unsigned int W_00b780b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00b780b0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00b78330(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned short)F_00b78330(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_00b78550(unsigned int gen_a0, float gen_a1) { return (double)F_00b78550(gen_a0, gen_a1); }
 static unsigned int W_00b789a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b789a0(gen_a0, gen_a1); }
 static unsigned int W_00b78a00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b78a00(gen_a0, gen_a1); }
 static unsigned int W_00b78af0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b78af0(gen_a0, gen_a1, gen_a2); }
@@ -6669,7 +6894,9 @@ static unsigned int W_00b797d0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00b79a70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b79a70(gen_a0, gen_a1); }
 static unsigned int W_00b79b20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b79b20(gen_a0, gen_a1); }
 static unsigned int W_00b79b90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b79b90(gen_a0); }
+static double W_00b79d60(float gen_a0) { return (double)F_00b79d60(gen_a0); }
 static unsigned int W_00b7a140(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b7a140(gen_a0, gen_a1); }
+static double W_00b7aa30(float gen_a0) { return (double)F_00b7aa30(gen_a0); }
 static unsigned int W_00b7aaa0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b7aaa0(gen_a0, gen_a1); }
 static unsigned int W_00b7aac0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b7aac0(gen_a0, gen_a1); }
 static double W_00b7aaf0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b7aaf0(gen_a0, gen_a1); }
@@ -6678,6 +6905,7 @@ static unsigned int W_00b7ab30(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00b7abd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00b7abd0(gen_a0, gen_a1); }
 static unsigned int W_00b7bc20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b7bc20(gen_a0); }
 static unsigned int W_00b7bee0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b7bee0(gen_a0, gen_a1); }
+static double W_00b7bf40(float gen_a0) { return (double)F_00b7bf40(gen_a0); }
 static unsigned int W_00b7bf80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b7bf80(gen_a0, gen_a1); }
 static unsigned int W_00b7c0c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b7c0c0(gen_a0); }
 static unsigned int W_00b7c190(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b7c190(gen_a0); }
@@ -6687,6 +6915,7 @@ static unsigned int W_00b7c6c0(void) { return (unsigned int)(unsigned char)F_00b
 static unsigned int W_00b7c6d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b7c6d0(gen_a0); }
 static unsigned int W_00b7c6e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b7c6e0(gen_a0); }
 static unsigned int W_00b7c6f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b7c6f0(gen_a0); }
+static double W_00b7c700(unsigned int gen_a0) { return (double)F_00b7c700(gen_a0); }
 static unsigned int W_00b7c830(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b7c830(gen_a0); }
 static unsigned int W_00b7cae0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00b7cae0(gen_a0, gen_a1); }
 static unsigned int W_00b7cef0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b7cef0(gen_a0, gen_a1); }
@@ -6712,6 +6941,7 @@ static unsigned int W_00b816b0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b818c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00b818c0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00b81f70(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00b81f70(gen_a0); }
 static unsigned int W_00b82120(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b82120(gen_a0, gen_a1); }
+static double W_00b823f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00b823f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b82e60(void) { return (unsigned int)(unsigned char)F_00b82e60(); }
 static unsigned int W_00b82ea0(void) { return (unsigned int)(unsigned char)F_00b82ea0(); }
 static unsigned int W_00b82f10(void) { return (unsigned int)(unsigned char)F_00b82f10(); }
@@ -6729,6 +6959,8 @@ static unsigned int W_00b8a090(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b8a220(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b8a220(gen_a0, gen_a1); }
 static unsigned int W_00b8a240(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b8a240(gen_a0, gen_a1); }
 static unsigned int W_00b8a670(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b8a670(gen_a0); }
+static double W_00b8aa50(float gen_a0) { return (double)F_00b8aa50(gen_a0); }
+static double W_00b8aa70(float gen_a0) { return (double)F_00b8aa70(gen_a0); }
 static unsigned int W_00b8abf0(void) { return (unsigned int)(unsigned char)F_00b8abf0(); }
 static unsigned int W_00b8add0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b8add0(gen_a0, gen_a1); }
 static unsigned int W_00b8ae30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00b8ae30(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
@@ -6786,7 +7018,7 @@ static unsigned int W_00b909e0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b90a90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b90a90(gen_a0, gen_a1); }
 static unsigned int W_00b90b00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b90b00(gen_a0, gen_a1); }
 static unsigned int W_00b915c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b915c0(gen_a0); }
-static unsigned int W_00b918b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00b918b0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static unsigned int W_00b918b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00b918b0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00b92db0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b92db0(gen_a0, gen_a1); }
 static unsigned int W_00b963e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00b963e0(gen_a0); }
 static unsigned int W_00b96450(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b96450(gen_a0, gen_a1); }
@@ -6805,12 +7037,15 @@ static unsigned int W_00b97de0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00b97e90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b97e90(gen_a0, gen_a1); }
 static unsigned int W_00b97f40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b97f40(gen_a0, gen_a1); }
 static unsigned int W_00b986f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b986f0(gen_a0, gen_a1); }
+static double W_00b99360(float gen_a0) { return (double)F_00b99360(gen_a0); }
 static unsigned int W_00b996b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00b996b0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00b99710(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b99710(gen_a0, gen_a1); }
 static double W_00b9ab30(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b9ab30(gen_a0, gen_a1); }
 static double W_00b9c8e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00b9c8e0(gen_a0, gen_a1); }
 static double W_00b9c960(unsigned int gen_a0, unsigned int gen_a1, double gen_a2) { return (double)F_00b9c960(gen_a0, gen_a1, gen_a2); }
+static double W_00b9cdb0(float gen_a0) { return (double)F_00b9cdb0(gen_a0); }
 static unsigned int W_00b9e300(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00b9e300(gen_a0, gen_a1); }
+static double W_00b9f890(float gen_a0) { return (double)F_00b9f890(gen_a0); }
 static unsigned int W_00b9f8e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00b9f8e0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00b9f940(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b9f940(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00b9fb30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00b9fb30(gen_a0, gen_a1, gen_a2); }
@@ -6818,12 +7053,15 @@ static unsigned int W_00ba01b0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00ba05d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ba05d0(gen_a0); }
 static unsigned int W_00ba0750(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ba0750(gen_a0, gen_a1); }
 static unsigned int W_00ba07c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00ba07c0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
+static double W_00ba0c70(float gen_a0) { return (double)F_00ba0c70(gen_a0); }
 static unsigned int W_00ba1090(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ba1090(gen_a0, gen_a1); }
 static unsigned int W_00ba11b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ba11b0(gen_a0); }
 static unsigned int W_00ba1710(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ba1710(gen_a0, gen_a1); }
+static double W_00ba1840(float gen_a0) { return (double)F_00ba1840(gen_a0); }
 static unsigned int W_00ba1940(void) { return (unsigned int)(unsigned char)F_00ba1940(); }
 static unsigned int W_00ba2040(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ba2040(gen_a0, gen_a1); }
 static unsigned int W_00ba2180(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ba2180(gen_a0); }
+static double W_00ba21f0(float gen_a0) { return (double)F_00ba21f0(gen_a0); }
 static unsigned int W_00ba2230(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00ba2230(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00ba2350(void) { return (unsigned int)(unsigned char)F_00ba2350(); }
 static unsigned int W_00ba23c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ba23c0(gen_a0); }
@@ -6838,6 +7076,7 @@ static unsigned int W_00ba3600(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00ba3730(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ba3730(gen_a0, gen_a1); }
 static unsigned int W_00ba3d50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ba3d50(gen_a0, gen_a1); }
 static unsigned int W_00ba3dd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ba3dd0(gen_a0, gen_a1); }
+static double W_00ba5090(float gen_a0) { return (double)F_00ba5090(gen_a0); }
 static unsigned int W_00ba68e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ba68e0(gen_a0, gen_a1); }
 static unsigned int W_00ba7400(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ba7400(gen_a0); }
 static unsigned int W_00baa270(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00baa270(gen_a0, gen_a1); }
@@ -6883,6 +7122,7 @@ static double W_00bba2a0(unsigned int gen_a0) { return (double)F_00bba2a0(gen_a0
 static unsigned int W_00bba6d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bba6d0(gen_a0, gen_a1); }
 static unsigned int W_00bba950(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bba950(gen_a0, gen_a1); }
 static unsigned int W_00bbac40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bbac40(gen_a0, gen_a1); }
+static double W_00bbac60(float gen_a0) { return (double)F_00bbac60(gen_a0); }
 static unsigned int W_00bbad00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bbad00(gen_a0); }
 static unsigned int W_00bbad60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bbad60(gen_a0, gen_a1); }
 static unsigned int W_00bbadb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bbadb0(gen_a0, gen_a1, gen_a2); }
@@ -6894,6 +7134,8 @@ static unsigned int W_00bbb740(void) { return (unsigned int)(unsigned char)F_00b
 static unsigned int W_00bbb810(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, float gen_a4) { return (unsigned int)(unsigned char)F_00bbb810(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00bbb880(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00bbb880(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00bbb8e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, float gen_a4) { return (unsigned int)(unsigned char)F_00bbb8e0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_00bbbd20(float gen_a0, float gen_a1) { return (double)F_00bbbd20(gen_a0, gen_a1); }
+static double W_00bbbd40(float gen_a0, float gen_a1) { return (double)F_00bbbd40(gen_a0, gen_a1); }
 static unsigned int W_00bbbf40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bbbf40(gen_a0, gen_a1); }
 static unsigned int W_00bbbf60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bbbf60(gen_a0, gen_a1); }
 static unsigned int W_00bbbf90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bbbf90(gen_a0, gen_a1); }
@@ -6916,8 +7158,8 @@ static unsigned int W_00bbf600(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00bbf630(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bbf630(gen_a0, gen_a1); }
 static unsigned int W_00bbf660(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bbf660(gen_a0, gen_a1); }
 static unsigned int W_00bc0860(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bc0860(gen_a0, gen_a1, gen_a2); }
-static double W_00bc0b40(unsigned int gen_a0, float gen_a1) { return (double)F_00bc0b40(gen_a0, gen_a1); }
 static double W_00bc0c10(float gen_a0) { return (double)F_00bc0c10(gen_a0); }
+static double W_00bc0c30(float gen_a0) { return (double)F_00bc0c30(gen_a0); }
 static double W_00bc0c60(unsigned int gen_a0, float gen_a1) { return (double)F_00bc0c60(gen_a0, gen_a1); }
 static unsigned int W_00bc0d60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc0d60(gen_a0, gen_a1); }
 static unsigned int W_00bc0d70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bc0d70(gen_a0); }
@@ -6944,6 +7186,7 @@ static unsigned int W_00bc3080(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00bc32d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bc32d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bc38a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bc38a0(gen_a0); }
 static unsigned int W_00bc39a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc39a0(gen_a0, gen_a1); }
+static double W_00bc3b40(float gen_a0) { return (double)F_00bc3b40(gen_a0); }
 static unsigned int W_00bc3b60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bc3b60(gen_a0); }
 static unsigned int W_00bc3b80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc3b80(gen_a0, gen_a1); }
 static unsigned int W_00bc3bd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc3bd0(gen_a0, gen_a1); }
@@ -6963,15 +7206,20 @@ static unsigned int W_00bc4bb0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00bc4ca0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc4ca0(gen_a0, gen_a1); }
 static unsigned int W_00bc5110(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bc5110(gen_a0); }
 static unsigned int W_00bc5290(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bc5290(gen_a0); }
+static double W_00bc5a80(float gen_a0) { return (double)F_00bc5a80(gen_a0); }
+static double W_00bc5e30(float gen_a0) { return (double)F_00bc5e30(gen_a0); }
+static double W_00bc6120(float gen_a0) { return (double)F_00bc6120(gen_a0); }
 static unsigned int W_00bc6220(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bc6220(gen_a0); }
+static double W_00bc6460(float gen_a0) { return (double)F_00bc6460(gen_a0); }
+static double W_00bc6930(float gen_a0) { return (double)F_00bc6930(gen_a0); }
 static unsigned int W_00bc69b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc69b0(gen_a0, gen_a1); }
 static unsigned int W_00bc6a70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bc6a70(gen_a0); }
 static unsigned int W_00bc6c70(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bc6c70(gen_a0, gen_a1, gen_a2); }
-static double W_00bc6f20(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bc6f20(gen_a0, gen_a1); }
 static unsigned int W_00bc7150(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc7150(gen_a0, gen_a1); }
 static unsigned int W_00bc79e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bc79e0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bc8080(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00bc8080(gen_a0, gen_a1); }
 static unsigned int W_00bc80c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc80c0(gen_a0, gen_a1); }
+static double W_00bc80e0(float gen_a0) { return (double)F_00bc80e0(gen_a0); }
 static unsigned int W_00bc8100(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00bc8100(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00bc85c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc85c0(gen_a0, gen_a1); }
 static unsigned int W_00bc8700(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bc8700(gen_a0, gen_a1, gen_a2); }
@@ -6983,6 +7231,7 @@ static unsigned int W_00bc8b70(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00bc9290(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc9290(gen_a0, gen_a1); }
 static unsigned int W_00bc9500(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc9500(gen_a0, gen_a1); }
 static unsigned int W_00bc96c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bc96c0(gen_a0, gen_a1); }
+static double W_00bca2f0(float gen_a0) { return (double)F_00bca2f0(gen_a0); }
 static unsigned int W_00bcacd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00bcacd0(gen_a0, gen_a1); }
 static unsigned int W_00bcaee0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00bcaee0(gen_a0, gen_a1); }
 static unsigned int W_00bcb330(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00bcb330(gen_a0, gen_a1); }
@@ -6995,11 +7244,13 @@ static unsigned int W_00bcc710(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00bcc740(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bcc740(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bcc840(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bcc840(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bcc9f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bcc9f0(gen_a0); }
+static double W_00bccbb0(float gen_a0) { return (double)F_00bccbb0(gen_a0); }
 static unsigned int W_00bccc40(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bccc40(gen_a0); }
 static unsigned int W_00bcd000(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bcd000(gen_a0); }
 static unsigned int W_00bcd430(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bcd430(gen_a0, gen_a1); }
 static unsigned int W_00bcd530(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bcd530(gen_a0, gen_a1); }
 static unsigned int W_00bcd860(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bcd860(gen_a0); }
+static double W_00bcde20(float gen_a0) { return (double)F_00bcde20(gen_a0); }
 static unsigned int W_00bcde40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bcde40(gen_a0, gen_a1); }
 static unsigned int W_00bcde60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bcde60(gen_a0, gen_a1); }
 static unsigned int W_00bcde80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bcde80(gen_a0, gen_a1); }
@@ -7020,6 +7271,7 @@ static unsigned int W_00bcf0f0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00bcf2e0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bcf2e0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bcf340(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bcf340(gen_a0); }
 static unsigned int W_00bcf380(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bcf380(gen_a0, gen_a1); }
+static double W_00bcf470(float gen_a0) { return (double)F_00bcf470(gen_a0); }
 static unsigned int W_00bcf500(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bcf500(gen_a0); }
 static unsigned int W_00bcf9c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bcf9c0(gen_a0); }
 static unsigned int W_00bcf9f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bcf9f0(gen_a0, gen_a1, gen_a2); }
@@ -7040,10 +7292,15 @@ static unsigned int W_00bd0e70(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00bd1060(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd1060(gen_a0); }
 static unsigned int W_00bd1110(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00bd1110(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00bd18a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd18a0(gen_a0, gen_a1); }
+static double W_00bd19e0(unsigned int gen_a0) { return (double)F_00bd19e0(gen_a0); }
+static double W_00bd19f0(unsigned int gen_a0) { return (double)F_00bd19f0(gen_a0); }
+static double W_00bd1a00(unsigned int gen_a0) { return (double)F_00bd1a00(gen_a0); }
 static unsigned int W_00bd1e60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd1e60(gen_a0); }
+static double W_00bd1e80(float gen_a0) { return (double)F_00bd1e80(gen_a0); }
 static unsigned int W_00bd1ea0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd1ea0(gen_a0); }
 static unsigned int W_00bd1fe0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd1fe0(gen_a0); }
 static double W_00bd20e0(unsigned int gen_a0) { return (double)F_00bd20e0(gen_a0); }
+static double W_00bd2140(unsigned int gen_a0) { return (double)F_00bd2140(gen_a0); }
 static double W_00bd2390(unsigned int gen_a0) { return (double)F_00bd2390(gen_a0); }
 static unsigned int W_00bd2480(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd2480(gen_a0); }
 static unsigned int W_00bd24f0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_00bd24f0(gen_a0, gen_a1, gen_a2); }
@@ -7062,48 +7319,70 @@ static unsigned int W_00bd3620(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00bd36b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bd36b0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bd3f20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd3f20(gen_a0); }
 static unsigned int W_00bd41b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd41b0(gen_a0); }
+static double W_00bd42f0(float gen_a0) { return (double)F_00bd42f0(gen_a0); }
 static unsigned int W_00bd43f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd43f0(gen_a0, gen_a1); }
+static double W_00bd4500(float gen_a0) { return (double)F_00bd4500(gen_a0); }
+static double W_00bd4840(float gen_a0) { return (double)F_00bd4840(gen_a0); }
 static unsigned int W_00bd4dc0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd4dc0(gen_a0, gen_a1); }
 static unsigned int W_00bd4e00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00bd4e00(gen_a0, gen_a1); }
 static unsigned int W_00bd4e10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd4e10(gen_a0, gen_a1); }
+static double W_00bd4e30(float gen_a0) { return (double)F_00bd4e30(gen_a0); }
 static unsigned int W_00bd4e70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd4e70(gen_a0, gen_a1); }
+static double W_00bd50e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bd50e0(gen_a0, gen_a1); }
 static unsigned int W_00bd5510(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd5510(gen_a0, gen_a1); }
 static unsigned int W_00bd55c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd55c0(gen_a0, gen_a1); }
 static unsigned int W_00bd55d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd55d0(gen_a0); }
 static unsigned int W_00bd5860(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd5860(gen_a0, gen_a1); }
+static double W_00bd58c0(float gen_a0) { return (double)F_00bd58c0(gen_a0); }
+static double W_00bd5bb0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bd5bb0(gen_a0, gen_a1); }
+static double W_00bd5bd0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bd5bd0(gen_a0, gen_a1); }
+static double W_00bd5bf0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bd5bf0(gen_a0, gen_a1); }
+static double W_00bd5c10(float gen_a0) { return (double)F_00bd5c10(gen_a0); }
 static unsigned int W_00bd60c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd60c0(gen_a0, gen_a1); }
+static double W_00bd6700(float gen_a0) { return (double)F_00bd6700(gen_a0); }
 static unsigned int W_00bd67d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd67d0(gen_a0); }
 static unsigned int W_00bd6970(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd6970(gen_a0); }
 static unsigned int W_00bd6a60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd6a60(gen_a0, gen_a1); }
 static unsigned int W_00bd6ab0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd6ab0(gen_a0, gen_a1); }
+static double W_00bd6e50(float gen_a0) { return (double)F_00bd6e50(gen_a0); }
 static unsigned int W_00bd7010(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd7010(gen_a0, gen_a1); }
-static double W_00bd7110(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bd7110(gen_a0, gen_a1); }
+static double W_00bd7040(float gen_a0) { return (double)F_00bd7040(gen_a0); }
+static double W_00bd71b0(float gen_a0) { return (double)F_00bd71b0(gen_a0); }
 static unsigned int W_00bd7910(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd7910(gen_a0, gen_a1); }
 static unsigned int W_00bd7a20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd7a20(gen_a0, gen_a1); }
+static double W_00bd7a70(float gen_a0) { return (double)F_00bd7a70(gen_a0); }
 static unsigned int W_00bd7c30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd7c30(gen_a0, gen_a1); }
+static double W_00bd7d10(float gen_a0) { return (double)F_00bd7d10(gen_a0); }
 static unsigned int W_00bd8280(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd8280(gen_a0, gen_a1); }
+static double W_00bd8390(float gen_a0) { return (double)F_00bd8390(gen_a0); }
 static unsigned int W_00bd83f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd83f0(gen_a0); }
-static double W_00bd8470(unsigned int gen_a0) { return (double)F_00bd8470(gen_a0); }
-static double W_00bd84d0(unsigned int gen_a0) { return (double)F_00bd84d0(gen_a0); }
-static double W_00bd8540(unsigned int gen_a0) { return (double)F_00bd8540(gen_a0); }
 static unsigned int W_00bd85a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd85a0(gen_a0); }
 static unsigned int W_00bd8600(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd8600(gen_a0, gen_a1); }
-static double W_00bd8620(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00bd8620(gen_a0, gen_a1, gen_a2); }
+static double W_00bd86a0(float gen_a0) { return (double)F_00bd86a0(gen_a0); }
 static unsigned int W_00bd86f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bd86f0(gen_a0); }
 static unsigned int W_00bd87c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd87c0(gen_a0, gen_a1); }
+static double W_00bd8aa0(float gen_a0) { return (double)F_00bd8aa0(gen_a0); }
 static unsigned int W_00bd8f20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd8f20(gen_a0, gen_a1); }
+static double W_00bd95d0(float gen_a0) { return (double)F_00bd95d0(gen_a0); }
 static unsigned int W_00bd9620(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd9620(gen_a0, gen_a1); }
 static unsigned int W_00bd9810(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd9810(gen_a0, gen_a1); }
+static double W_00bd98b0(float gen_a0) { return (double)F_00bd98b0(gen_a0); }
 static unsigned int W_00bd9900(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd9900(gen_a0, gen_a1); }
+static double W_00bd9a30(float gen_a0) { return (double)F_00bd9a30(gen_a0); }
 static unsigned int W_00bd9a90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd9a90(gen_a0, gen_a1); }
+static double W_00bd9c90(float gen_a0) { return (double)F_00bd9c90(gen_a0); }
 static unsigned int W_00bd9ce0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bd9ce0(gen_a0, gen_a1); }
 static unsigned int W_00bd9dd0(void) { return (unsigned int)(unsigned char)F_00bd9dd0(); }
+static double W_00bda060(float gen_a0) { return (double)F_00bda060(gen_a0); }
 static unsigned int W_00bda0b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bda0b0(gen_a0, gen_a1); }
 static unsigned int W_00bda2c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bda2c0(gen_a0, gen_a1); }
 static unsigned int W_00bda3d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bda3d0(gen_a0, gen_a1); }
+static double W_00bda4b0(float gen_a0) { return (double)F_00bda4b0(gen_a0); }
 static unsigned int W_00bda660(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bda660(gen_a0, gen_a1); }
+static double W_00bda860(float gen_a0) { return (double)F_00bda860(gen_a0); }
 static unsigned int W_00bdaa40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdaa40(gen_a0, gen_a1); }
 static unsigned int W_00bdad80(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdad80(gen_a0, gen_a1); }
+static double W_00bdada0(float gen_a0) { return (double)F_00bdada0(gen_a0); }
 static unsigned int W_00bdae60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdae60(gen_a0, gen_a1); }
 static unsigned int W_00bdaf40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdaf40(gen_a0, gen_a1); }
 static unsigned int W_00bdb300(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdb300(gen_a0, gen_a1); }
@@ -7113,18 +7392,32 @@ static unsigned int W_00bdbda0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00bdbf50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdbf50(gen_a0, gen_a1); }
 static unsigned int W_00bdbff0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdbff0(gen_a0, gen_a1); }
 static unsigned int W_00bdc280(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdc280(gen_a0, gen_a1); }
+static double W_00bdc360(float gen_a0) { return (double)F_00bdc360(gen_a0); }
 static unsigned int W_00bdc3b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdc3b0(gen_a0, gen_a1); }
+static double W_00bdc590(float gen_a0) { return (double)F_00bdc590(gen_a0); }
 static unsigned int W_00bdc5f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdc5f0(gen_a0, gen_a1); }
+static double W_00bdc640(float gen_a0) { return (double)F_00bdc640(gen_a0); }
 static unsigned int W_00bdc680(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdc680(gen_a0, gen_a1); }
+static double W_00bdc7a0(float gen_a0) { return (double)F_00bdc7a0(gen_a0); }
 static unsigned int W_00bdc7e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdc7e0(gen_a0, gen_a1); }
 static unsigned int W_00bdc9c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdc9c0(gen_a0, gen_a1); }
+static double W_00bdcad0(float gen_a0) { return (double)F_00bdcad0(gen_a0); }
 static unsigned int W_00bdcc50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdcc50(gen_a0, gen_a1); }
+static double W_00bdd210(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bdd210(gen_a0, gen_a1); }
+static double W_00bdd260(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bdd260(gen_a0, gen_a1); }
+static double W_00bdd280(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bdd280(gen_a0, gen_a1); }
 static unsigned int W_00bdd310(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdd310(gen_a0, gen_a1); }
+static double W_00bdd330(float gen_a0) { return (double)F_00bdd330(gen_a0); }
 static unsigned int W_00bdda30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdda30(gen_a0, gen_a1); }
 static double W_00bddab0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00bddab0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bddb70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bddb70(gen_a0); }
 static unsigned int W_00bddfb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bddfb0(gen_a0, gen_a1); }
+static double W_00bde000(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bde000(gen_a0, gen_a1); }
+static double W_00bde010(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bde010(gen_a0, gen_a1); }
+static double W_00bde020(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bde020(gen_a0, gen_a1); }
+static double W_00bde030(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bde030(gen_a0, gen_a1); }
 static unsigned int W_00bde0e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bde0e0(gen_a0, gen_a1); }
+static double W_00bde6e0(float gen_a0) { return (double)F_00bde6e0(gen_a0); }
 static double W_00bdef30(unsigned int gen_a0) { return (double)F_00bdef30(gen_a0); }
 static double W_00bdf540(unsigned int gen_a0) { return (double)F_00bdf540(gen_a0); }
 static unsigned int W_00bdf5a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bdf5a0(gen_a0); }
@@ -7132,24 +7425,34 @@ static double W_00bdfc60(unsigned int gen_a0, unsigned int gen_a1, unsigned int 
 static unsigned int W_00bdfd90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bdfd90(gen_a0); }
 static unsigned int W_00bdff40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bdff40(gen_a0, gen_a1); }
 static unsigned int W_00bdffa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bdffa0(gen_a0, gen_a1, gen_a2); }
+static double W_00be00a0(float gen_a0) { return (double)F_00be00a0(gen_a0); }
 static unsigned int W_00be0480(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be0480(gen_a0, gen_a1); }
+static double W_00be05d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00be05d0(gen_a0, gen_a1); }
+static double W_00be05f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00be05f0(gen_a0, gen_a1); }
+static double W_00be0660(float gen_a0) { return (double)F_00be0660(gen_a0); }
+static double W_00be0e10(float gen_a0) { return (double)F_00be0e10(gen_a0); }
 static unsigned int W_00be0e30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be0e30(gen_a0); }
 static unsigned int W_00be0ed0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be0ed0(gen_a0); }
 static unsigned int W_00be1660(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be1660(gen_a0, gen_a1); }
 static unsigned int W_00be17b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be17b0(gen_a0, gen_a1); }
+static double W_00be17c0(float gen_a0) { return (double)F_00be17c0(gen_a0); }
 static unsigned int W_00be1820(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be1820(gen_a0); }
 static unsigned int W_00be1ad0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be1ad0(gen_a0); }
 static unsigned int W_00be1f60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be1f60(gen_a0, gen_a1); }
+static double W_00be2170(float gen_a0) { return (double)F_00be2170(gen_a0); }
 static unsigned int W_00be21f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be21f0(gen_a0, gen_a1); }
 static double W_00be2310(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00be2310(gen_a0, gen_a1); }
+static double W_00be2400(float gen_a0) { return (double)F_00be2400(gen_a0); }
 static unsigned int W_00be24c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be24c0(gen_a0, gen_a1); }
 static unsigned int W_00be2600(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be2600(gen_a0); }
 static unsigned int W_00be2650(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be2650(gen_a0); }
 static unsigned int W_00be29b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be29b0(gen_a0); }
+static double W_00be2b40(float gen_a0) { return (double)F_00be2b40(gen_a0); }
 static unsigned int W_00be2b90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be2b90(gen_a0, gen_a1); }
 static unsigned int W_00be2d10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be2d10(gen_a0); }
 static unsigned int W_00be3000(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be3000(gen_a0, gen_a1); }
 static unsigned int W_00be31f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be31f0(gen_a0, gen_a1); }
+static double W_00be32b0(float gen_a0) { return (double)F_00be32b0(gen_a0); }
 static unsigned int W_00be3710(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be3710(gen_a0); }
 static unsigned int W_00be37f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (unsigned int)(unsigned char)F_00be37f0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static unsigned int W_00be3850(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00be3850(gen_a0, gen_a1, gen_a2); }
@@ -7165,25 +7468,28 @@ static double W_00be40b0(unsigned int gen_a0) { return (double)F_00be40b0(gen_a0
 static unsigned int W_00be4560(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be4560(gen_a0, gen_a1); }
 static unsigned int W_00be4730(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be4730(gen_a0, gen_a1); }
 static unsigned int W_00be5060(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be5060(gen_a0); }
+static double W_00be5070(unsigned int gen_a0) { return (double)F_00be5070(gen_a0); }
+static double W_00be50e0(unsigned int gen_a0) { return (double)F_00be50e0(gen_a0); }
 static double W_00be5160(unsigned int gen_a0) { return (double)F_00be5160(gen_a0); }
-static double W_00be51e0(unsigned int gen_a0) { return (double)F_00be51e0(gen_a0); }
 static double W_00be5220(unsigned int gen_a0) { return (double)F_00be5220(gen_a0); }
 static double W_00be5240(unsigned int gen_a0) { return (double)F_00be5240(gen_a0); }
 static unsigned int W_00be54a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be54a0(gen_a0); }
 static double W_00be5520(unsigned int gen_a0) { return (double)F_00be5520(gen_a0); }
 static double W_00be56a0(unsigned int gen_a0) { return (double)F_00be56a0(gen_a0); }
 static double W_00be5c50(unsigned int gen_a0) { return (double)F_00be5c50(gen_a0); }
-static double W_00be5d90(unsigned int gen_a0) { return (double)F_00be5d90(gen_a0); }
 static unsigned int W_00be5e90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be5e90(gen_a0); }
 static unsigned int W_00be5f00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be5f00(gen_a0); }
 static unsigned int W_00be63d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be63d0(gen_a0, gen_a1); }
+static double W_00be6770(float gen_a0) { return (double)F_00be6770(gen_a0); }
 static unsigned int W_00be6820(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be6820(gen_a0, gen_a1); }
 static unsigned int W_00be6980(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be6980(gen_a0, gen_a1); }
 static unsigned int W_00be6d10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be6d10(gen_a0); }
 static unsigned int W_00be6dd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be6dd0(gen_a0, gen_a1); }
 static unsigned int W_00be7190(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be7190(gen_a0, gen_a1); }
+static double W_00be71d0(float gen_a0) { return (double)F_00be71d0(gen_a0); }
 static unsigned int W_00be73c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be73c0(gen_a0, gen_a1); }
 static unsigned int W_00be7940(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be7940(gen_a0); }
+static double W_00be7d20(float gen_a0) { return (double)F_00be7d20(gen_a0); }
 static unsigned int W_00be7d90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00be7d90(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00be7fc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00be7fc0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00be88e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00be88e0(gen_a0); }
@@ -7192,12 +7498,14 @@ static unsigned int W_00be9720(void) { return (unsigned int)(unsigned char)F_00b
 static unsigned int W_00be9730(void) { return (unsigned int)(unsigned char)F_00be9730(); }
 static unsigned int W_00be9880(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be9880(gen_a0, gen_a1); }
 static unsigned int W_00be9a90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00be9a90(gen_a0, gen_a1); }
+static double W_00bea610(float gen_a0) { return (double)F_00bea610(gen_a0); }
 static unsigned int W_00bea660(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bea660(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bea890(void) { return (unsigned int)(unsigned char)F_00bea890(); }
 static unsigned int W_00beaad0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00beaad0(gen_a0); }
 static unsigned int W_00beab30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00beab30(gen_a0); }
 static unsigned int W_00beab70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00beab70(gen_a0); }
 static unsigned int W_00beb3b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00beb3b0(gen_a0, gen_a1); }
+static double W_00beb5e0(float gen_a0) { return (double)F_00beb5e0(gen_a0); }
 static unsigned int W_00beb730(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00beb730(gen_a0); }
 static unsigned int W_00beb9f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00beb9f0(gen_a0); }
 static unsigned int W_00bebab0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bebab0(gen_a0); }
@@ -7214,15 +7522,19 @@ static unsigned int W_00bec320(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00bec460(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bec460(gen_a0, gen_a1); }
 static unsigned int W_00bec5f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bec5f0(gen_a0); }
 static unsigned int W_00bec620(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bec620(gen_a0, gen_a1, gen_a2); }
+static double W_00becbc0(float gen_a0) { return (double)F_00becbc0(gen_a0); }
 static unsigned int W_00becc40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (unsigned int)(unsigned char)F_00becc40(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static unsigned int W_00bece20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (unsigned int)(unsigned char)F_00bece20(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static unsigned int W_00bedea0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bedea0(gen_a0, gen_a1); }
 static unsigned int W_00bedeb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bedeb0(gen_a0, gen_a1); }
 static unsigned int W_00bedee0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bedee0(gen_a0, gen_a1); }
 static unsigned int W_00bee970(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bee970(gen_a0, gen_a1); }
+static double W_00bee990(float gen_a0) { return (double)F_00bee990(gen_a0); }
 static unsigned int W_00beeaa0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00beeaa0(gen_a0, gen_a1); }
 static unsigned int W_00beeb00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00beeb00(gen_a0); }
 static unsigned int W_00beedb0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00beedb0(gen_a0); }
+static double W_00beede0(unsigned int gen_a0) { return (double)F_00beede0(gen_a0); }
+static double W_00beefe0(float gen_a0) { return (double)F_00beefe0(gen_a0); }
 static unsigned int W_00bef7a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bef7a0(gen_a0); }
 static unsigned int W_00bef8a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bef8a0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00befb70(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00befb70(gen_a0); }
@@ -7230,9 +7542,12 @@ static unsigned int W_00befb90(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00befbb0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00befbb0(gen_a0, gen_a1); }
 static unsigned int W_00befbd0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00befbd0(gen_a0, gen_a1); }
 static unsigned int W_00befbe0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00befbe0(gen_a0, gen_a1); }
+static double W_00befcb0(float gen_a0) { return (double)F_00befcb0(gen_a0); }
 static unsigned int W_00befcd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00befcd0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bf0870(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00bf0870(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00bf08e0(float gen_a0) { return (double)F_00bf08e0(gen_a0); }
 static unsigned int W_00bf0a60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bf0a60(gen_a0, gen_a1); }
+static double W_00bf0bc0(float gen_a0) { return (double)F_00bf0bc0(gen_a0); }
 static unsigned int W_00bf0e50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (unsigned int)(unsigned char)F_00bf0e50(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static unsigned int W_00bf1710(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5) { return (unsigned int)(unsigned char)F_00bf1710(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00bf1a60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5) { return (unsigned int)(unsigned char)F_00bf1a60(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
@@ -7255,6 +7570,8 @@ static unsigned int W_00bf7e80(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00bf86b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5, float gen_a6, float gen_a7) { return (unsigned int)(unsigned char)F_00bf86b0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static unsigned int W_00bf9580(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5, float gen_a6) { return (unsigned int)(unsigned char)F_00bf9580(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
 static unsigned int W_00bf95e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, float gen_a8, float gen_a9) { return (unsigned int)(unsigned char)F_00bf95e0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8, gen_a9); }
+static double W_00bf96b0(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00bf96b0(gen_a0, gen_a1, gen_a2); }
+static double W_00bfa010(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00bfa010(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bfb740(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00bfb740(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00bfb7a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00bfb7a0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00bfb890(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bfb890(gen_a0, gen_a1); }
@@ -7262,12 +7579,14 @@ static double W_00bfb9d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int 
 static unsigned int W_00bfbd10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_00bfbd10(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00bff330(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bff330(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bff680(void) { return (unsigned int)(unsigned char)F_00bff680(); }
-static double W_00bffb30(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_00bffb30(gen_a0, gen_a1, gen_a2); }
+static double W_00bff730(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00bff730(gen_a0, gen_a1); }
 static unsigned int W_00bffd10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bffd10(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bffd50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00bffd50(gen_a0, gen_a1, gen_a2); }
+static double W_00bffd90(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00bffd90(gen_a0, gen_a1, gen_a2); }
+static double W_00bfff10(float gen_a0) { return (double)F_00bfff10(gen_a0); }
 static unsigned int W_00c01960(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00c01960(gen_a0, gen_a1, gen_a2); }
-static double W_00c03630(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (double)F_00c03630(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00c07300(void) { return (unsigned int)(unsigned char)F_00c07300(); }
+static double W_00c07460(float gen_a0) { return (double)F_00c07460(gen_a0); }
 static unsigned int W_00c08120(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c08120(gen_a0, gen_a1); }
 static unsigned int W_00c08170(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00c08170(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00c0bdd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00c0bdd0(gen_a0, gen_a1, gen_a2); }
@@ -7293,6 +7612,7 @@ static unsigned int W_00c1eb70(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00c1ebd0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c1ebd0(gen_a0); }
 static unsigned int W_00c1ec30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00c1ec30(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00c1ec60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c1ec60(gen_a0, gen_a1); }
+static double W_00c1ee70(float gen_a0) { return (double)F_00c1ee70(gen_a0); }
 static double W_00c1f460(unsigned int gen_a0) { return (double)F_00c1f460(gen_a0); }
 static double W_00c1f480(unsigned int gen_a0) { return (double)F_00c1f480(gen_a0); }
 static unsigned int W_00c1f4d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c1f4d0(gen_a0); }
@@ -7307,6 +7627,7 @@ static unsigned int W_00c21300(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00c21580(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c21580(gen_a0, gen_a1); }
 static double W_00c21aa0(float gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00c21aa0(gen_a0, gen_a1, gen_a2); }
 static double W_00c21cd0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (double)F_00c21cd0(gen_a0, gen_a1, gen_a2); }
+static double W_00c224e0(float gen_a0) { return (double)F_00c224e0(gen_a0); }
 static unsigned int W_00c225b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c225b0(gen_a0); }
 static unsigned int W_00c22630(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c22630(gen_a0); }
 static unsigned int W_00c226a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c226a0(gen_a0); }
@@ -7315,9 +7636,20 @@ static unsigned int W_00c22780(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00c227f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c227f0(gen_a0); }
 static unsigned int W_00c22850(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00c22850(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00c228b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00c228b0(gen_a0, gen_a1, gen_a2); }
+static double W_00c22aa0(float gen_a0) { return (double)F_00c22aa0(gen_a0); }
+static double W_00c22e70(unsigned int gen_a0) { return (double)F_00c22e70(gen_a0); }
+static double W_00c22e80(unsigned int gen_a0) { return (double)F_00c22e80(gen_a0); }
+static double W_00c22e90(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c22e90(gen_a0, gen_a1); }
+static double W_00c22ea0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c22ea0(gen_a0, gen_a1); }
+static double W_00c22fd0(float gen_a0) { return (double)F_00c22fd0(gen_a0); }
 static unsigned int W_00c23050(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c23050(gen_a0); }
 static unsigned int W_00c23130(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c23130(gen_a0, gen_a1); }
 static unsigned int W_00c23880(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c23880(gen_a0); }
+static double W_00c23960(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c23960(gen_a0, gen_a1); }
+static double W_00c23980(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c23980(gen_a0, gen_a1); }
+static double W_00c239a0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c239a0(gen_a0, gen_a1); }
+static double W_00c239c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c239c0(gen_a0, gen_a1); }
+static double W_00c23a10(float gen_a0) { return (double)F_00c23a10(gen_a0); }
 static unsigned int W_00c23e90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00c23e90(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00c23ff0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c23ff0(gen_a0); }
 static unsigned int W_00c24080(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c24080(gen_a0); }
@@ -7330,6 +7662,7 @@ static double W_00c26130(unsigned int gen_a0, unsigned int gen_a1, unsigned int 
 static unsigned int W_00c26850(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, float gen_a4, float gen_a5, unsigned int gen_a6, unsigned int gen_a7) { return (unsigned int)(unsigned char)F_00c26850(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static unsigned int W_00c26b40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, float gen_a6, unsigned int gen_a7) { return (unsigned int)(unsigned char)F_00c26b40(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
 static unsigned int W_00c28a90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c28a90(gen_a0, gen_a1); }
+static double W_00c28af0(float gen_a0) { return (double)F_00c28af0(gen_a0); }
 static unsigned int W_00c28bc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00c28bc0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00c28c20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c28c20(gen_a0, gen_a1); }
 static unsigned int W_00c28fa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00c28fa0(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -7413,43 +7746,43 @@ static unsigned int W_00c327b0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00c32840(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00c32840(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00c32a30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c32a30(gen_a0, gen_a1); }
 static unsigned int W_00c33150(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00c33150(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00c34690(unsigned int gen_a0) { return (double)F_00c34690(gen_a0); }
 static unsigned int W_00c3be50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00c3be50(gen_a0, gen_a1); }
 static unsigned int W_00c3dea0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned short)F_00c3dea0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00c3df20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00c3df20(gen_a0, gen_a1); }
 static unsigned int W_00c40940(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c40940(gen_a0, gen_a1); }
+static double W_00c40a40(float gen_a0, float gen_a1, float gen_a2) { return (double)F_00c40a40(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00c40b40(float gen_a0) { return (unsigned int)(unsigned char)F_00c40b40(gen_a0); }
-static double W_00c41550(unsigned int gen_a0, float gen_a1) { return (double)F_00c41550(gen_a0, gen_a1); }
+static double W_00c418d0(unsigned int gen_a0) { return (double)F_00c418d0(gen_a0); }
 static unsigned int W_00c44610(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c44610(gen_a0, gen_a1); }
 static unsigned int W_00c460f2(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c460f2(gen_a0, gen_a1); }
-static unsigned int W_00c46149(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c46149(gen_a0, gen_a1); }
 static unsigned int W_00c4617e(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00c4617e(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00c4692b(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c4692b(gen_a0, gen_a1); }
-static unsigned int W_00c4694b(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c4694b(gen_a0, gen_a1); }
 static double W_00c49680(double gen_a0) { return (double)F_00c49680(gen_a0); }
 static double W_00c496d8(unsigned int gen_a0, double gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00c496d8(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00c4abff(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c4abff(gen_a0, gen_a1); }
 static double W_00c4acaa(unsigned int gen_a0) { return (double)F_00c4acaa(gen_a0); }
 static double W_00c4bda0(double gen_a0) { return (double)F_00c4bda0(gen_a0); }
 static double W_00c4bdbd(double gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00c4bdbd(gen_a0, gen_a1, gen_a2); }
-static double W_00c4c8d0(float gen_a0, float gen_a1, float gen_a2, double gen_a3) { return (double)F_00c4c8d0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00c4c8d0(double gen_a0) { return (double)F_00c4c8d0(gen_a0); }
 static double W_00c4c928(unsigned int gen_a0, double gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00c4c928(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00c4c9e0(float gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00c4c9e0(gen_a0, gen_a1, gen_a2); }
+static double W_00c4c9e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c4c9e0(gen_a0, gen_a1); }
 static double W_00c4ca20(double gen_a0) { return (double)F_00c4ca20(gen_a0); }
 static double W_00c4ca78(unsigned int gen_a0, double gen_a1, unsigned int gen_a2) { return (double)F_00c4ca78(gen_a0, gen_a1, gen_a2); }
 static double W_00c4cb50(double gen_a0) { return (double)F_00c4cb50(gen_a0); }
-static double W_00c4cda0(float gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00c4cda0(gen_a0, gen_a1, gen_a2); }
+static double W_00c4cda0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c4cda0(gen_a0, gen_a1); }
 static double W_00c4cde0(double gen_a0) { return (double)F_00c4cde0(gen_a0); }
 static double W_00c4ce38(unsigned int gen_a0, double gen_a1, unsigned int gen_a2) { return (double)F_00c4ce38(gen_a0, gen_a1, gen_a2); }
-static double W_00c4d0e0(float gen_a0, float gen_a1, float gen_a2, double gen_a3) { return (double)F_00c4d0e0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00c4d0e0(double gen_a0) { return (double)F_00c4d0e0(gen_a0); }
 static double W_00c4d138(unsigned int gen_a0, double gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00c4d138(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00c4d1fa(double gen_a0) { return (double)F_00c4d1fa(gen_a0); }
 static double W_00c4d24c(double gen_a0) { return (double)F_00c4d24c(gen_a0); }
 static double W_00c4d2a0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c4d2a0(gen_a0, gen_a1); }
 static double W_00c4d3da(double gen_a0) { return (double)F_00c4d3da(gen_a0); }
 static double W_00c4d3e4(double gen_a0) { return (double)F_00c4d3e4(gen_a0); }
-static double W_00c4d440(float gen_a0, double gen_a1) { return (double)F_00c4d440(gen_a0, gen_a1); }
+static double W_00c4d440(double gen_a0) { return (double)F_00c4d440(gen_a0); }
 static double W_00c4d498(unsigned int gen_a0, double gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00c4d498(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00c4d590(float gen_a0, float gen_a1, float gen_a2, double gen_a3) { return (double)F_00c4d590(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00c4d590(double gen_a0) { return (double)F_00c4d590(gen_a0); }
 static double W_00c4d5e8(unsigned int gen_a0, double gen_a1, unsigned int gen_a2) { return (double)F_00c4d5e8(gen_a0, gen_a1, gen_a2); }
 static double W_00c4ed10(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c4ed10(gen_a0, gen_a1); }
 static double W_00c4f340(double gen_a0) { return (double)F_00c4f340(gen_a0); }
@@ -7512,6 +7845,7 @@ static double W_00c6e2a0(double gen_a0) { return (double)F_00c6e2a0(gen_a0); }
 static double W_00c6e2be(double gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00c6e2be(gen_a0, gen_a1, gen_a2); }
 static double W_00c6eb31(double gen_a0, unsigned int gen_a1) { return (double)F_00c6eb31(gen_a0, gen_a1); }
 static double W_00c6eb77(double gen_a0, unsigned int gen_a1) { return (double)F_00c6eb77(gen_a0, gen_a1); }
+static double W_00c6eba5(double gen_a0, unsigned int gen_a1) { return (double)F_00c6eba5(gen_a0, gen_a1); }
 static double W_00c6ec33(double gen_a0, unsigned int gen_a1) { return (double)F_00c6ec33(gen_a0, gen_a1); }
 static unsigned int W_00c6f018(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00c6f018(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00c6f283(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (double)F_00c6f283(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
@@ -7569,6 +7903,7 @@ static unsigned int W_00c976f0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00c978a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00c978a0(gen_a0, gen_a1); }
 static unsigned int W_00c97c60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00c97c60(gen_a0); }
 static unsigned int W_00c97ee0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00c97ee0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_00c98080(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c98080(gen_a0, gen_a1); }
 static double W_00c98100(unsigned int gen_a0) { return (double)F_00c98100(gen_a0); }
 static unsigned int W_00c994c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00c994c0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00c996f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00c996f0(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -7598,6 +7933,8 @@ static unsigned int W_00ca0980(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00ca0ac0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00ca0ac0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00ca1950(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ca1950(gen_a0, gen_a1); }
 static unsigned int W_00ca1a20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ca1a20(gen_a0, gen_a1); }
+static double W_00ca1a70(float gen_a0, float gen_a1) { return (double)F_00ca1a70(gen_a0, gen_a1); }
+static double W_00ca1aa0(float gen_a0, float gen_a1) { return (double)F_00ca1aa0(gen_a0, gen_a1); }
 static unsigned int W_00ca21d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ca21d0(gen_a0); }
 static unsigned int W_00ca2820(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00ca2820(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00ca2830(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00ca2830(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
@@ -7620,6 +7957,7 @@ static unsigned int W_00ca6ee0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00ca8ac0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (unsigned int)(unsigned char)F_00ca8ac0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static unsigned int W_00ca9260(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, float gen_a4) { return (unsigned int)(unsigned char)F_00ca9260(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00ca9570(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, float gen_a4) { return (unsigned int)(unsigned char)F_00ca9570(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_00caa040(unsigned int gen_a0) { return (double)F_00caa040(gen_a0); }
 static unsigned int W_00caa1d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00caa1d0(gen_a0); }
 static unsigned int W_00cac330(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00cac330(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00cac500(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00cac500(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -7703,6 +8041,7 @@ static unsigned int W_00cb9900(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00cb9a30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cb9a30(gen_a0); }
 static unsigned int W_00cb9a40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cb9a40(gen_a0, gen_a1); }
 static unsigned int W_00cb9ad0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cb9ad0(gen_a0, gen_a1); }
+static double W_00cbae50(unsigned int gen_a0) { return (double)F_00cbae50(gen_a0); }
 static unsigned int W_00cbaf40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cbaf40(gen_a0, gen_a1); }
 static unsigned int W_00cbaf60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cbaf60(gen_a0, gen_a1); }
 static unsigned int W_00cbb1b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cbb1b0(gen_a0); }
@@ -7747,10 +8086,11 @@ static double W_00cbfdc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int 
 static double W_00cbfef0(unsigned int gen_a0) { return (double)F_00cbfef0(gen_a0); }
 static unsigned int W_00cbffe0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cbffe0(gen_a0); }
 static unsigned int W_00cc1160(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cc1160(gen_a0, gen_a1); }
+static double W_00cc11c0(unsigned int gen_a0) { return (double)F_00cc11c0(gen_a0); }
 static unsigned int W_00cc12d0(void) { return (unsigned int)(unsigned char)F_00cc12d0(); }
+static double W_00cc15e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00cc15e0(gen_a0, gen_a1); }
 static unsigned int W_00cc1710(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cc1710(gen_a0); }
 static unsigned int W_00cc25e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cc25e0(gen_a0); }
-static double W_00cc26e0(float gen_a0, unsigned int gen_a1) { return (double)F_00cc26e0(gen_a0, gen_a1); }
 static double W_00cc2740(void) { return (double)F_00cc2740(); }
 static unsigned int W_00cc2aa0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00cc2aa0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00cc2b60(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cc2b60(gen_a0); }
@@ -7797,10 +8137,12 @@ static unsigned int W_00cc9030(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00cc9340(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cc9340(gen_a0); }
 static unsigned int W_00cc9380(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cc9380(gen_a0, gen_a1); }
 static unsigned int W_00cc9390(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cc9390(gen_a0, gen_a1); }
+static double W_00cc93a0(unsigned int gen_a0) { return (double)F_00cc93a0(gen_a0); }
 static unsigned int W_00cca5c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cca5c0(gen_a0, gen_a1); }
 static unsigned int W_00cca610(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cca610(gen_a0, gen_a1); }
 static unsigned int W_00ccb0b0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00ccb0b0(gen_a0); }
 static unsigned int W_00ccb0c0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00ccb0c0(gen_a0); }
+static double W_00ccb0e0(float gen_a0) { return (double)F_00ccb0e0(gen_a0); }
 static unsigned int W_00ccb100(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ccb100(gen_a0); }
 static unsigned int W_00ccb110(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ccb110(gen_a0); }
 static unsigned int W_00ccb120(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00ccb120(gen_a0, gen_a1, gen_a2); }
@@ -7808,17 +8150,13 @@ static unsigned int W_00ccb1d0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00ccb5e0(void) { return (unsigned int)(unsigned char)F_00ccb5e0(); }
 static unsigned int W_00ccbd20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ccbd20(gen_a0); }
 static unsigned int W_00cccbf0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cccbf0(gen_a0); }
+static double W_00cccc90(float gen_a0) { return (double)F_00cccc90(gen_a0); }
 static double W_00ccccc0(float gen_a0) { return (double)F_00ccccc0(gen_a0); }
 static double W_00ccccf0(float gen_a0) { return (double)F_00ccccf0(gen_a0); }
 static double W_00cccd20(float gen_a0) { return (double)F_00cccd20(gen_a0); }
+static double W_00cccd60(float gen_a0) { return (double)F_00cccd60(gen_a0); }
 static double W_00cccde0(unsigned int gen_a0) { return (double)F_00cccde0(gen_a0); }
 static double W_00cccee0(unsigned int gen_a0) { return (double)F_00cccee0(gen_a0); }
-static double W_00ccd220(float gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3, float gen_a4, float gen_a5, float gen_a6) { return (double)F_00ccd220(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
-static double W_00ccd2f0(float gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3, float gen_a4, float gen_a5, float gen_a6) { return (double)F_00ccd2f0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
-static double W_00ccd450(float gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3, float gen_a4, float gen_a5, float gen_a6) { return (double)F_00ccd450(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
-static double W_00ccd490(float gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3, float gen_a4, float gen_a5, float gen_a6) { return (double)F_00ccd490(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
-static double W_00ccda30(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3) { return (double)F_00ccda30(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00ccdbe0(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3, float gen_a4) { return (double)F_00ccdbe0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static double W_00ccdc20(float gen_a0) { return (double)F_00ccdc20(gen_a0); }
 static double W_00ccdc40(float gen_a0) { return (double)F_00ccdc40(gen_a0); }
 static unsigned int W_00ccdd00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ccdd00(gen_a0); }
@@ -7835,6 +8173,7 @@ static unsigned int W_00ccf6b0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00cd0980(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd0980(gen_a0); }
 static unsigned int W_00cd0ae0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd0ae0(gen_a0); }
 static unsigned int W_00cd1140(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd1140(gen_a0); }
+static double W_00cd1150(float gen_a0) { return (double)F_00cd1150(gen_a0); }
 static unsigned int W_00cd13f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd13f0(gen_a0); }
 static unsigned int W_00cd1490(void) { return (unsigned int)(unsigned char)F_00cd1490(); }
 static unsigned int W_00cd1650(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd1650(gen_a0); }
@@ -7847,6 +8186,7 @@ static unsigned int W_00cd20e0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00cd2110(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cd2110(gen_a0, gen_a1); }
 static unsigned int W_00cd2150(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cd2150(gen_a0, gen_a1); }
 static double W_00cd2330(unsigned int gen_a0) { return (double)F_00cd2330(gen_a0); }
+static double W_00cd2830(unsigned int gen_a0) { return (double)F_00cd2830(gen_a0); }
 static double W_00cd2890(unsigned int gen_a0) { return (double)F_00cd2890(gen_a0); }
 static unsigned int W_00cd28b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd28b0(gen_a0); }
 static unsigned int W_00cd28c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd28c0(gen_a0); }
@@ -7880,11 +8220,14 @@ static double W_00cd5c00(unsigned int gen_a0) { return (double)F_00cd5c00(gen_a0
 static unsigned int W_00cd5c10(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd5c10(gen_a0); }
 static unsigned int W_00cd5c50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd5c50(gen_a0); }
 static unsigned int W_00cd5c60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cd5c60(gen_a0, gen_a1); }
+static double W_00cd5c80(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00cd5c80(gen_a0, gen_a1); }
 static unsigned int W_00cd5ca0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd5ca0(gen_a0); }
+static double W_00cd5cb0(unsigned int gen_a0) { return (double)F_00cd5cb0(gen_a0); }
 static unsigned int W_00cd5d00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd5d00(gen_a0); }
 static unsigned int W_00cd5d20(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cd5d20(gen_a0, gen_a1); }
 static unsigned int W_00cd5d70(void) { return (unsigned int)(unsigned char)F_00cd5d70(); }
 static unsigned int W_00cd5e30(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cd5e30(gen_a0, gen_a1); }
+static double W_00cd5ed0(void) { return (double)F_00cd5ed0(); }
 static unsigned int W_00cd5ee0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd5ee0(gen_a0); }
 static unsigned int W_00cd5fc0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cd5fc0(gen_a0, gen_a1); }
 static unsigned int W_00cd5fe0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd5fe0(gen_a0); }
@@ -7893,10 +8236,9 @@ static unsigned int W_00cd65b0(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00cd65d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cd65d0(gen_a0, gen_a1); }
 static double W_00cd68f0(unsigned int gen_a0) { return (double)F_00cd68f0(gen_a0); }
 static double W_00cd69c0(unsigned int gen_a0) { return (double)F_00cd69c0(gen_a0); }
-static double W_00cd6b10(unsigned int gen_a0, float gen_a1) { return (double)F_00cd6b10(gen_a0, gen_a1); }
 static double W_00cd6b30(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00cd6b30(gen_a0, gen_a1); }
 static double W_00cd6c00(unsigned int gen_a0, float gen_a1) { return (double)F_00cd6c00(gen_a0, gen_a1); }
-static double W_00cd6e20(unsigned int gen_a0) { return (double)F_00cd6e20(gen_a0); }
+static double W_00cd6f90(unsigned int gen_a0) { return (double)F_00cd6f90(gen_a0); }
 static double W_00cd74c0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00cd74c0(gen_a0, gen_a1, gen_a2); }
 static double W_00cd76f0(unsigned int gen_a0) { return (double)F_00cd76f0(gen_a0); }
 static unsigned int W_00cd7980(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00cd7980(gen_a0, gen_a1, gen_a2, gen_a3); }
@@ -7909,11 +8251,10 @@ static unsigned int W_00cd7de0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00cd81a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd81a0(gen_a0); }
 static unsigned int W_00cd8220(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cd8220(gen_a0); }
 static double W_00cd83d0(unsigned int gen_a0) { return (double)F_00cd83d0(gen_a0); }
-static double W_00cd8640(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00cd8640(gen_a0, gen_a1, gen_a2); }
 static double W_00cd8c60(unsigned int gen_a0) { return (double)F_00cd8c60(gen_a0); }
 static double W_00cd8d60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00cd8d60(gen_a0, gen_a1, gen_a2); }
 static double W_00cd9050(unsigned int gen_a0, float gen_a1, float gen_a2) { return (double)F_00cd9050(gen_a0, gen_a1, gen_a2); }
-static double W_00cda360(unsigned int gen_a0) { return (double)F_00cda360(gen_a0); }
+static double W_00cda3f0(unsigned int gen_a0) { return (double)F_00cda3f0(gen_a0); }
 static double W_00cda4f0(unsigned int gen_a0) { return (double)F_00cda4f0(gen_a0); }
 static unsigned int W_00cda700(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00cda700(gen_a0, gen_a1, gen_a2); }
 static double W_00cda7b0(unsigned int gen_a0) { return (double)F_00cda7b0(gen_a0); }
@@ -7944,7 +8285,6 @@ static double W_00cdbc50(unsigned int gen_a0) { return (double)F_00cdbc50(gen_a0
 static unsigned int W_00cdbcd0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cdbcd0(gen_a0); }
 static unsigned int W_00cdbd90(unsigned int gen_a0, float gen_a1) { return (unsigned int)(unsigned char)F_00cdbd90(gen_a0, gen_a1); }
 static unsigned int W_00cdbfe0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cdbfe0(gen_a0, gen_a1); }
-static double W_00cdc1e0(unsigned int gen_a0) { return (double)F_00cdc1e0(gen_a0); }
 static unsigned int W_00cdc280(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cdc280(gen_a0); }
 static double W_00cdc390(unsigned int gen_a0) { return (double)F_00cdc390(gen_a0); }
 static double W_00cdc4a0(unsigned int gen_a0) { return (double)F_00cdc4a0(gen_a0); }
@@ -7963,13 +8303,17 @@ static unsigned int W_00cdfc20(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00cdfda0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cdfda0(gen_a0, gen_a1); }
 static unsigned int W_00ce0090(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce0090(gen_a0); }
 static unsigned int W_00ce00f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce00f0(gen_a0); }
+static double W_00ce0110(void) { return (double)F_00ce0110(); }
+static double W_00ce0a00(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ce0a00(gen_a0, gen_a1); }
 static unsigned int W_00ce0d60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00ce0d60(gen_a0, gen_a1); }
 static unsigned int W_00ce10e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ce10e0(gen_a0, gen_a1); }
 static unsigned int W_00ce12a0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce12a0(gen_a0); }
 static unsigned int W_00ce12d0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce12d0(gen_a0); }
 static unsigned int W_00ce1410(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ce1410(gen_a0, gen_a1); }
 static unsigned int W_00ce1570(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce1570(gen_a0); }
+static double W_00ce1650(void) { return (double)F_00ce1650(); }
 static unsigned int W_00ce1900(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce1900(gen_a0); }
+static double W_00ce1bc0(unsigned int gen_a0) { return (double)F_00ce1bc0(gen_a0); }
 static unsigned int W_00ce1dc0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce1dc0(gen_a0); }
 static unsigned int W_00ce1df0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce1df0(gen_a0); }
 static unsigned int W_00ce1e20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce1e20(gen_a0); }
@@ -7981,8 +8325,7 @@ static unsigned int W_00ce3950(unsigned int gen_a0) { return (unsigned int)(unsi
 static double W_00ce61c0(unsigned int gen_a0) { return (double)F_00ce61c0(gen_a0); }
 static unsigned int W_00ce61f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ce61f0(gen_a0, gen_a1); }
 static unsigned int W_00ce76e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce76e0(gen_a0); }
-static double W_00ce7700(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00ce7700(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00ce8930(float gen_a0, float gen_a1) { return (double)F_00ce8930(gen_a0, gen_a1); }
+static double W_00ce8930(float gen_a0) { return (double)F_00ce8930(gen_a0); }
 static double W_00ce8960(float gen_a0) { return (double)F_00ce8960(gen_a0); }
 static double W_00ce9280(float gen_a0) { return (double)F_00ce9280(gen_a0); }
 static unsigned int W_00ce9330(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00ce9330(gen_a0); }
@@ -7996,10 +8339,9 @@ static unsigned int W_00cea9b0(unsigned int gen_a0) { return (unsigned int)(unsi
 static double W_00ceabb0(float gen_a0, unsigned int gen_a1) { return (double)F_00ceabb0(gen_a0, gen_a1); }
 static double W_00ceabd0(float gen_a0) { return (double)F_00ceabd0(gen_a0); }
 static double W_00ceabf0(float gen_a0, unsigned int gen_a1) { return (double)F_00ceabf0(gen_a0, gen_a1); }
-static double W_00ceac10(float gen_a0, float gen_a1) { return (double)F_00ceac10(gen_a0, gen_a1); }
+static double W_00ceac10(float gen_a0) { return (double)F_00ceac10(gen_a0); }
+static double W_00ceae50(float gen_a0) { return (double)F_00ceae50(gen_a0); }
 static double W_00ceae60(unsigned int gen_a0) { return (double)F_00ceae60(gen_a0); }
-static double W_00ceb2e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00ceb2e0(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00ceb430(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00ceb430(gen_a0, gen_a1); }
 static unsigned int W_00cf3600(float gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cf3600(gen_a0, gen_a1); }
 static unsigned int W_00cf3650(float gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00cf3650(gen_a0, gen_a1); }
 static unsigned int W_00cf3838(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00cf3838(gen_a0); }
@@ -8024,9 +8366,6 @@ static unsigned int W_00cf9000(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00cf9010(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00cf9010(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00cf9020(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00cf9020(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00cf9370(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cf9370(gen_a0); }
-static double W_00cf9760(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, float gen_a5, float gen_a6, float gen_a7) { return (double)F_00cf9760(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
-static double W_00cf9870(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, float gen_a5, float gen_a6, float gen_a7) { return (double)F_00cf9870(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7); }
-static double W_00cf99e0(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4) { return (double)F_00cf99e0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00cff020(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cff020(gen_a0); }
 static unsigned int W_00cff040(void) { return (unsigned int)(unsigned char)F_00cff040(); }
 static unsigned int W_00cff090(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00cff090(gen_a0); }
@@ -8066,10 +8405,14 @@ static unsigned int W_00d027d0(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00d02a10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d02a10(gen_a0, gen_a1); }
 static unsigned int W_00d02ad0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d02ad0(gen_a0, gen_a1); }
 static unsigned int W_00d035a0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00d035a0(gen_a0); }
+static double W_00d035d0(unsigned int gen_a0) { return (double)F_00d035d0(gen_a0); }
 static unsigned int W_00d038a0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00d038a0(gen_a0); }
+static double W_00d038e0(float gen_a0) { return (double)F_00d038e0(gen_a0); }
 static unsigned int W_00d039a0(void) { return (unsigned int)(unsigned char)F_00d039a0(); }
 static unsigned int W_00d03b60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d03b60(gen_a0, gen_a1); }
 static unsigned int W_00d03d90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d03d90(gen_a0, gen_a1); }
+static double W_00d04440(unsigned int gen_a0) { return (double)F_00d04440(gen_a0); }
+static double W_00d04460(unsigned int gen_a0) { return (double)F_00d04460(gen_a0); }
 static unsigned int W_00d044d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d044d0(gen_a0, gen_a1); }
 static unsigned int W_00d044f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d044f0(gen_a0, gen_a1); }
 static unsigned int W_00d04500(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d04500(gen_a0); }
@@ -8109,6 +8452,7 @@ static unsigned int W_00d0a060(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00d0a790(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d0a790(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static double W_00d0ab20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00d0ab20(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d0b0a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d0b0a0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
+static double W_00d0bbf0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d0bbf0(gen_a0, gen_a1); }
 static unsigned int W_00d0bed0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d0bed0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d0bf30(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00d0bf30(gen_a0); }
 static unsigned int W_00d0c290(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00d0c290(gen_a0, gen_a1); }
@@ -8133,7 +8477,6 @@ static unsigned int W_00d0fda0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00d0ff90(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d0ff90(gen_a0); }
 static double W_00d10980(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00d10980(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d10c60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d10c60(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
-static double W_00d10cd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00d10cd0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00d10ef0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d10ef0(gen_a0, gen_a1); }
 static unsigned int W_00d11310(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d11310(gen_a0, gen_a1); }
 static unsigned int W_00d114d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d114d0(gen_a0, gen_a1); }
@@ -8143,14 +8486,12 @@ static unsigned int W_00d12920(unsigned int gen_a0, unsigned int gen_a1) { retur
 static double W_00d12f80(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00d12f80(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d13140(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d13140(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00d13190(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d13190(gen_a0, gen_a1, gen_a2); }
-static double W_00d13510(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00d13510(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00d13720(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d13720(gen_a0, gen_a1); }
 static unsigned int W_00d13a90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d13a90(gen_a0, gen_a1); }
 static unsigned int W_00d13c00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d13c00(gen_a0, gen_a1); }
 static unsigned int W_00d14030(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d14030(gen_a0, gen_a1); }
 static unsigned int W_00d14140(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d14140(gen_a0); }
 static unsigned int W_00d14f10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d14f10(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
-static double W_00d14f60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00d14f60(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00d15100(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d15100(gen_a0, gen_a1); }
 static unsigned int W_00d159e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d159e0(gen_a0, gen_a1); }
 static unsigned int W_00d15b90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d15b90(gen_a0, gen_a1); }
@@ -8159,7 +8500,6 @@ static double W_00d16880(unsigned int gen_a0, unsigned int gen_a1, unsigned int 
 static unsigned int W_00d169c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d169c0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d16e60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d16e60(gen_a0, gen_a1); }
 static unsigned int W_00d17630(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d17630(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
-static double W_00d17680(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00d17680(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00d178e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d178e0(gen_a0, gen_a1); }
 static unsigned int W_00d17c00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d17c00(gen_a0, gen_a1); }
 static unsigned int W_00d17dc0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d17dc0(gen_a0, gen_a1); }
@@ -8171,7 +8511,6 @@ static unsigned int W_00d19380(unsigned int gen_a0, unsigned int gen_a1) { retur
 static double W_00d196d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00d196d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d19710(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d19710(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00d19730(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d19730(gen_a0, gen_a1, gen_a2); }
-static double W_00d19960(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_00d19960(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00d19ae0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d19ae0(gen_a0, gen_a1); }
 static unsigned int W_00d19db0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d19db0(gen_a0, gen_a1); }
 static unsigned int W_00d19e50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d19e50(gen_a0, gen_a1); }
@@ -8185,6 +8524,8 @@ static unsigned int W_00d1ab90(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00d1ac10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d1ac10(gen_a0, gen_a1); }
 static unsigned int W_00d1ad50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d1ad50(gen_a0, gen_a1); }
 static unsigned int W_00d1ae50(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d1ae50(gen_a0); }
+static double W_00d1b650(float gen_a0) { return (double)F_00d1b650(gen_a0); }
+static double W_00d1b670(float gen_a0) { return (double)F_00d1b670(gen_a0); }
 static unsigned int W_00d1b7e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d1b7e0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d1b7f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d1b7f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d1b800(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d1b800(gen_a0, gen_a1, gen_a2); }
@@ -8194,16 +8535,12 @@ static unsigned int W_00d1b880(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00d1b8b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d1b8b0(gen_a0, gen_a1); }
 static unsigned int W_00d1b8f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d1b8f0(gen_a0, gen_a1); }
 static unsigned int W_00d1b950(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d1b950(gen_a0, gen_a1); }
-static double W_00d1ba90(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d1ba90(gen_a0, gen_a1); }
 static unsigned int W_00d1bd00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d1bd00(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d1bd30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00d1bd30(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00d1c390(unsigned int gen_a0, float gen_a1) { return (double)F_00d1c390(gen_a0, gen_a1); }
 static double W_00d1c3d0(unsigned int gen_a0, float gen_a1) { return (double)F_00d1c3d0(gen_a0, gen_a1); }
 static double W_00d1c400(unsigned int gen_a0, float gen_a1) { return (double)F_00d1c400(gen_a0, gen_a1); }
 static double W_00d1c440(unsigned int gen_a0, float gen_a1) { return (double)F_00d1c440(gen_a0, gen_a1); }
-static double W_00d1c470(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00d1c470(gen_a0, gen_a1, gen_a2); }
-static double W_00d1c520(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (double)F_00d1c520(gen_a0, gen_a1, gen_a2, gen_a3); }
-static double W_00d1c830(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, float gen_a4, unsigned int gen_a5) { return (double)F_00d1c830(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_00d1cca0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { return (unsigned int)(unsigned char)F_00d1cca0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
 static unsigned int W_00d1d3e0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d1d3e0(gen_a0, gen_a1); }
 static unsigned int W_00d1d440(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d1d440(gen_a0, gen_a1, gen_a2); }
@@ -8236,6 +8573,7 @@ static double W_00d21630(unsigned int gen_a0) { return (double)F_00d21630(gen_a0
 static double W_00d21650(unsigned int gen_a0) { return (double)F_00d21650(gen_a0); }
 static unsigned int W_00d21710(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d21710(gen_a0); }
 static unsigned int W_00d21720(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d21720(gen_a0, gen_a1, gen_a2); }
+static double W_00d21730(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (double)F_00d21730(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00d21740(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d21740(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00d217a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d217a0(gen_a0, gen_a1); }
 static unsigned int W_00d21830(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d21830(gen_a0); }
@@ -8309,6 +8647,7 @@ static unsigned int W_00d2c710(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00d2c730(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d2c730(gen_a0, gen_a1); }
 static unsigned int W_00d2c750(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d2c750(gen_a0, gen_a1); }
 static unsigned int W_00d2c770(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d2c770(gen_a0, gen_a1); }
+static double W_00d2c7c0(unsigned int gen_a0) { return (double)F_00d2c7c0(gen_a0); }
 static unsigned int W_00d2c7d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d2c7d0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d2c7f0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d2c7f0(gen_a0, gen_a1); }
 static unsigned int W_00d2c800(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d2c800(gen_a0, gen_a1); }
@@ -8336,6 +8675,7 @@ static unsigned int W_00d39ab0(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00d41b10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d41b10(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00d41e20(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_00d41e20(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d43c90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned short)F_00d43c90(gen_a0, gen_a1, gen_a2); }
+static double W_00d461d0(unsigned int gen_a0) { return (double)F_00d461d0(gen_a0); }
 static unsigned int W_00d46490(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d46490(gen_a0, gen_a1); }
 static unsigned int W_00d464a0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d464a0(gen_a0, gen_a1); }
 static double W_00d470c0(unsigned int gen_a0) { return (double)F_00d470c0(gen_a0); }
@@ -8345,19 +8685,28 @@ static unsigned int W_00d65130(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00d68c30(void) { return (unsigned int)(unsigned char)F_00d68c30(); }
 static unsigned int W_00d6bc60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00d6bc60(gen_a0, gen_a1); }
 static unsigned int W_00d6c970(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d6c970(gen_a0); }
+static double W_00d6c9a0(unsigned int gen_a0) { return (double)F_00d6c9a0(gen_a0); }
 static unsigned int W_00d6ca80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00d6ca80(gen_a0, gen_a1, gen_a2); }
 static double W_00d6cbd0(unsigned int gen_a0) { return (double)F_00d6cbd0(gen_a0); }
 static double W_00d6cc30(unsigned int gen_a0) { return (double)F_00d6cc30(gen_a0); }
 static unsigned int W_00d6eb30(void) { return (unsigned int)(unsigned char)F_00d6eb30(); }
 static unsigned int W_00d73590(void) { return (unsigned int)(unsigned char)F_00d73590(); }
 static unsigned int W_00d745b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d745b0(gen_a0, gen_a1); }
-static unsigned int W_00d745f0(float gen_a0, float gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_00d745f0(gen_a0, gen_a1, gen_a2); }
-static unsigned int W_00d74620(float gen_a0, float gen_a1, float gen_a2) { return (unsigned int)(unsigned short)F_00d74620(gen_a0, gen_a1, gen_a2); }
+static unsigned int W_00d745f0(float gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00d745f0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static unsigned int W_00d74620(float gen_a0, float gen_a1, float gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned short)F_00d74620(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_00d74850(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00d74850(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00d76290(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d76290(gen_a0, gen_a1); }
 static unsigned int W_00d762b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d762b0(gen_a0, gen_a1); }
 static unsigned int W_00d76d00(float gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00d76d00(gen_a0, gen_a1); }
 static unsigned int W_00d76e00(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d76e00(gen_a0); }
+static double W_00d7c4a0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c4a0(gen_a0, gen_a1); }
+static double W_00d7c4d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c4d0(gen_a0, gen_a1); }
+static double W_00d7c500(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c500(gen_a0, gen_a1); }
+static double W_00d7c530(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c530(gen_a0, gen_a1); }
+static double W_00d7c560(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c560(gen_a0, gen_a1); }
+static double W_00d7c590(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c590(gen_a0, gen_a1); }
+static double W_00d7c5c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c5c0(gen_a0, gen_a1); }
+static double W_00d7c5f0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c5f0(gen_a0, gen_a1); }
 static double W_00d7c7b0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7c7b0(gen_a0, gen_a1); }
 static unsigned int W_00d7c930(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d7c930(gen_a0, gen_a1); }
 static unsigned int W_00d7cf90(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00d7cf90(gen_a0, gen_a1); }
@@ -8365,6 +8714,9 @@ static double W_00d7cff0(unsigned int gen_a0, unsigned int gen_a1) { return (dou
 static double W_00d7d0e0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7d0e0(gen_a0, gen_a1); }
 static double W_00d7d1d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00d7d1d0(gen_a0, gen_a1, gen_a2); }
 static double W_00d7d240(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d7d240(gen_a0, gen_a1); }
+static double W_00d7eb60(unsigned int gen_a0) { return (double)F_00d7eb60(gen_a0); }
+static double W_00d7ec00(unsigned int gen_a0) { return (double)F_00d7ec00(gen_a0); }
+static double W_00d7faf0(unsigned int gen_a0) { return (double)F_00d7faf0(gen_a0); }
 static double W_00d7fbe0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { return (double)F_00d7fbe0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d809a0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_00d809a0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00d82b80(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00d82b80(gen_a0); }
@@ -8391,9 +8743,7 @@ static double W_00d8c560(unsigned int gen_a0, unsigned int gen_a1) { return (dou
 static double W_00d8c590(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d8c590(gen_a0, gen_a1); }
 static double W_00d8c5c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d8c5c0(gen_a0, gen_a1); }
 static double W_00d8c6d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, float gen_a7, float gen_a8) { return (double)F_00d8c6d0(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
-static double W_00d8c950(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, float gen_a10, float gen_a11, unsigned int gen_a12) { return (double)F_00d8c950(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8, gen_a9, gen_a10, gen_a11, gen_a12); }
 static double W_00d8cc60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, float gen_a4, unsigned int gen_a5, unsigned int gen_a6) { return (double)F_00d8cc60(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6); }
-static double W_00d8f370(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (double)F_00d8f370(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
 static double W_00d8ff60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00d8ff60(gen_a0, gen_a1, gen_a2); }
 static double W_00d90090(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d90090(gen_a0, gen_a1); }
 static double W_00d903c0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00d903c0(gen_a0, gen_a1); }
@@ -8442,6 +8792,7 @@ static unsigned int W_00db8290(unsigned int gen_a0) { return (unsigned int)(unsi
 static unsigned int W_00db8570(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { return (unsigned int)(unsigned char)F_00db8570(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4); }
 static unsigned int W_00db8e70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00db8e70(gen_a0, gen_a1); }
 static unsigned int W_00db9380(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00db9380(gen_a0, gen_a1); }
+static double W_00dba7b0(unsigned int gen_a0) { return (double)F_00dba7b0(gen_a0); }
 static unsigned int W_00dbd220(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00dbd220(gen_a0, gen_a1); }
 static unsigned int W_00dbf7c0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00dbf7c0(gen_a0); }
 static unsigned int W_00dc0c40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00dc0c40(gen_a0, gen_a1); }
@@ -8487,12 +8838,17 @@ static unsigned int W_00e05660(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_00e05c70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned short)F_00e05c70(gen_a0, gen_a1); }
 static unsigned int W_00e05fc0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00e05fc0(gen_a0); }
 static unsigned int W_00e09200(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00e09200(gen_a0); }
+static double W_00e09240(unsigned int gen_a0) { return (double)F_00e09240(gen_a0); }
 static double W_00e093a0(unsigned int gen_a0) { return (double)F_00e093a0(gen_a0); }
 static unsigned int W_00e09cf0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00e09cf0(gen_a0); }
 static unsigned int W_00e09d20(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00e09d20(gen_a0); }
 static unsigned int W_00e0fec0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00e0fec0(gen_a0, gen_a1); }
+static double W_00e106d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00e106d0(gen_a0, gen_a1); }
+static double W_00e143d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00e143d0(gen_a0, gen_a1); }
+static double W_00e167d0(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00e167d0(gen_a0, gen_a1); }
 static unsigned int W_00e1b2b0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00e1b2b0(gen_a0); }
 static unsigned int W_00e1b2c0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00e1b2c0(gen_a0, gen_a1); }
+static double W_00e1de10(unsigned int gen_a0) { return (double)F_00e1de10(gen_a0); }
 static unsigned int W_00e23f00(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00e23f00(gen_a0, gen_a1); }
 static unsigned int W_00e24260(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00e24260(gen_a0, gen_a1); }
 static unsigned int W_00e243e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00e243e0(gen_a0); }
@@ -8935,6 +9291,7 @@ static unsigned int W_00ea9940(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_00ea9a90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00ea9a90(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00ea9c10(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00ea9c10(gen_a0, gen_a1); }
 static unsigned int W_00eaa2c0(void) { return (unsigned int)(unsigned char)F_00eaa2c0(); }
+static double W_00eaa390(unsigned int gen_a0) { return (double)F_00eaa390(gen_a0); }
 static unsigned int W_00eaa3d0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00eaa3d0(gen_a0, gen_a1); }
 static unsigned int W_00eaa3e0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00eaa3e0(gen_a0); }
 static unsigned int W_00eaa4c0(unsigned int gen_a0) { return (unsigned int)(unsigned short)F_00eaa4c0(gen_a0); }
@@ -10028,20 +10385,21 @@ static unsigned int W_01055c20(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_01055c30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_01055c30(gen_a0); }
 static unsigned int W_01055d50(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_01055d50(gen_a0, gen_a1); }
 static unsigned int W_01055d70(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_01055d70(gen_a0, gen_a1); }
-static double W_01056180(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3) { return (double)F_01056180(gen_a0, gen_a1, gen_a2, gen_a3); }
+static unsigned int W_01056180(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3) { return (unsigned int)(unsigned char)F_01056180(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_01056260(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_01056260(gen_a0, gen_a1); }
 static unsigned int W_010563b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_010563b0(gen_a0, gen_a1); }
-static double W_01056430(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, float gen_a4, unsigned int gen_a5) { return (double)F_01056430(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
-static double W_01056540(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (double)F_01056540(gen_a0, gen_a1, gen_a2, gen_a3); }
+static unsigned int W_01056430(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, float gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_01056430(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
+static unsigned int W_01056540(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { return (unsigned int)(unsigned char)F_01056540(gen_a0, gen_a1, gen_a2, gen_a3); }
+static double W_010568e0(float gen_a0) { return (double)F_010568e0(gen_a0); }
 static unsigned int W_01056960(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_01056960(gen_a0); }
-static double W_01056c50(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (double)F_01056c50(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
+static unsigned int W_01056c50(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (unsigned int)(unsigned char)F_01056c50(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
 static unsigned int W_01056cc0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_01056cc0(gen_a0); }
 static unsigned int W_01056d30(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_01056d30(gen_a0); }
 static unsigned int W_010570f0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_010570f0(gen_a0); }
 static double W_010572c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_010572c0(gen_a0, gen_a1, gen_a2); }
 static double W_01057440(unsigned int gen_a0) { return (double)F_01057440(gen_a0); }
 static unsigned int W_01057480(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_01057480(gen_a0, gen_a1); }
-static double W_01057600(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_01057600(gen_a0, gen_a1, gen_a2); }
+static unsigned int W_01057600(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_01057600(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_010577b0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { return (unsigned int)(unsigned char)F_010577b0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_010591f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_010591f0(gen_a0, gen_a1, gen_a2); }
 static double W_01059960(unsigned int gen_a0) { return (double)F_01059960(gen_a0); }
@@ -10658,11 +11016,11 @@ const GEN_JUMP g_genJumps[] = {
   {0x410ac0u, (void *)W_00410ac0},
   {0x410ad0u, (void *)F_00410ad0},
   {0x410ae0u, (void *)F_00410ae0},
-  {0x410af0u, (void *)F_00410af0},
+  {0x410af0u, (void *)W_00410af0},
   {0x410b10u, (void *)F_00410b10},
   {0x410b90u, (void *)F_00410b90},
-  {0x410be0u, (void *)F_00410be0},
-  {0x410c00u, (void *)F_00410c00},
+  {0x410be0u, (void *)W_00410be0},
+  {0x410c00u, (void *)W_00410c00},
   {0x410c90u, (void *)F_00410c90},
   {0x410cd0u, (void *)F_00410cd0},
   {0x410e20u, (void *)F_00410e20},
@@ -10693,8 +11051,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x411a80u, (void *)F_00411a80},
   {0x411a90u, (void *)F_00411a90},
   {0x411aa0u, (void *)F_00411aa0},
-  {0x411af0u, (void *)F_00411af0},
-  {0x411b10u, (void *)F_00411b10},
+  {0x411af0u, (void *)W_00411af0},
+  {0x411b10u, (void *)W_00411b10},
   {0x411b30u, (void *)W_00411b30},
   {0x411b40u, (void *)W_00411b40},
   {0x411b70u, (void *)W_00411b70},
@@ -10704,8 +11062,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x411bb0u, (void *)W_00411bb0},
   {0x411bc0u, (void *)F_00411bc0},
   {0x411bd0u, (void *)W_00411bd0},
-  {0x411c10u, (void *)F_00411c10},
-  {0x411c40u, (void *)F_00411c40},
+  {0x411c10u, (void *)W_00411c10},
+  {0x411c40u, (void *)W_00411c40},
   {0x411c70u, (void *)F_00411c70},
   {0x411ca0u, (void *)F_00411ca0},
   {0x411cd0u, (void *)W_00411cd0},
@@ -10715,8 +11073,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x411f80u, (void *)F_00411f80},
   {0x411fd0u, (void *)F_00411fd0},
   {0x412050u, (void *)F_00412050},
-  {0x412100u, (void *)F_00412100},
-  {0x412130u, (void *)F_00412130},
+  {0x412100u, (void *)W_00412100},
+  {0x412130u, (void *)W_00412130},
   {0x412160u, (void *)F_00412160},
   {0x412190u, (void *)W_00412190},
   {0x412320u, (void *)W_00412320},
@@ -10807,7 +11165,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x414460u, (void *)F_00414460},
   {0x414490u, (void *)F_00414490},
   {0x4144c0u, (void *)F_004144c0},
-  {0x4144e0u, (void *)F_004144e0},
+  {0x4144e0u, (void *)W_004144e0},
   {0x414500u, (void *)F_00414500},
   {0x414550u, (void *)F_00414550},
   {0x414620u, (void *)F_00414620},
@@ -11081,7 +11439,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4245a0u, (void *)W_004245a0},
   {0x4245b0u, (void *)F_004245b0},
   {0x4245f0u, (void *)F_004245f0},
-  {0x424620u, (void *)F_00424620},
+  {0x424620u, (void *)W_00424620},
   {0x424640u, (void *)F_00424640},
   {0x4246b0u, (void *)F_004246b0},
   {0x4246e0u, (void *)F_004246e0},
@@ -11108,7 +11466,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x424c60u, (void *)F_00424c60},
   {0x424cd0u, (void *)F_00424cd0},
   {0x424ce0u, (void *)F_00424ce0},
-  {0x424d41u, (void *)F_00424d41},
   {0x424df0u, (void *)F_00424df0},
   {0x424ec0u, (void *)F_00424ec0},
   {0x424ee0u, (void *)W_00424ee0},
@@ -11127,7 +11484,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x425a90u, (void *)F_00425a90},
   {0x425ad0u, (void *)F_00425ad0},
   {0x425af0u, (void *)F_00425af0},
-  {0x425b00u, (void *)W_00425b00},
+  {0x425b00u, (void *)F_00425b00},
   {0x425b10u, (void *)F_00425b10},
   {0x425b20u, (void *)F_00425b20},
   {0x425b40u, (void *)F_00425b40},
@@ -11147,7 +11504,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4274d0u, (void *)F_004274d0},
   {0x4274f0u, (void *)F_004274f0},
   {0x427510u, (void *)F_00427510},
-  {0x427560u, (void *)F_00427560},
+  {0x427560u, (void *)W_00427560},
   {0x4275b0u, (void *)F_004275b0},
   {0x4275e0u, (void *)W_004275e0},
   {0x427640u, (void *)F_00427640},
@@ -11491,7 +11848,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x431250u, (void *)F_00431250},
   {0x4313e0u, (void *)F_004313e0},
   {0x431410u, (void *)F_00431410},
-  {0x431470u, (void *)F_00431470},
+  {0x431470u, (void *)W_00431470},
   {0x431490u, (void *)F_00431490},
   {0x431570u, (void *)W_00431570},
   {0x4315c0u, (void *)F_004315c0},
@@ -12700,8 +13057,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x46f040u, (void *)F_0046f040},
   {0x46f070u, (void *)F_0046f070},
   {0x46f090u, (void *)F_0046f090},
-  {0x46f0c0u, (void *)F_0046f0c0},
-  {0x46f0e0u, (void *)W_0046f0e0},
+  {0x46f0c0u, (void *)W_0046f0c0},
+  {0x46f0e0u, (void *)F_0046f0e0},
   {0x46f180u, (void *)F_0046f180},
   {0x46f190u, (void *)F_0046f190},
   {0x46f1a0u, (void *)F_0046f1a0},
@@ -12712,7 +13069,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x46f310u, (void *)F_0046f310},
   {0x46f330u, (void *)F_0046f330},
   {0x46f390u, (void *)F_0046f390},
-  {0x46f440u, (void *)F_0046f440},
+  {0x46f440u, (void *)W_0046f440},
   {0x46f480u, (void *)F_0046f480},
   {0x46f4a0u, (void *)F_0046f4a0},
   {0x46f500u, (void *)F_0046f500},
@@ -13123,7 +13480,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x474710u, (void *)F_00474710},
   {0x474730u, (void *)F_00474730},
   {0x474750u, (void *)F_00474750},
-  {0x474753u, (void *)F_00474753},
   {0x474770u, (void *)F_00474770},
   {0x474780u, (void *)F_00474780},
   {0x4747b0u, (void *)F_004747b0},
@@ -14608,7 +14964,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x49a930u, (void *)F_0049a930},
   {0x49a960u, (void *)F_0049a960},
   {0x49a9a0u, (void *)F_0049a9a0},
-  {0x49a9d0u, (void *)W_0049a9d0},
+  {0x49a9d0u, (void *)F_0049a9d0},
   {0x49ab50u, (void *)F_0049ab50},
   {0x49ab90u, (void *)F_0049ab90},
   {0x49aba0u, (void *)W_0049aba0},
@@ -14648,7 +15004,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x49b400u, (void *)F_0049b400},
   {0x49b450u, (void *)F_0049b450},
   {0x49b4a0u, (void *)F_0049b4a0},
-  {0x49b4d0u, (void *)F_0049b4d0},
+  {0x49b4d0u, (void *)W_0049b4d0},
   {0x49b4f0u, (void *)F_0049b4f0},
   {0x49b5a0u, (void *)W_0049b5a0},
   {0x49b5b0u, (void *)F_0049b5b0},
@@ -14969,7 +15325,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4a2670u, (void *)F_004a2670},
   {0x4a26d0u, (void *)F_004a26d0},
   {0x4a2730u, (void *)F_004a2730},
-  {0x4a27d0u, (void *)F_004a27d0},
+  {0x4a27d0u, (void *)W_004a27d0},
   {0x4a27e0u, (void *)W_004a27e0},
   {0x4a2800u, (void *)W_004a2800},
   {0x4a2820u, (void *)W_004a2820},
@@ -14977,21 +15333,21 @@ const GEN_JUMP g_genJumps[] = {
   {0x4a2860u, (void *)W_004a2860},
   {0x4a2880u, (void *)W_004a2880},
   {0x4a28a0u, (void *)W_004a28a0},
-  {0x4a28f0u, (void *)F_004a28f0},
-  {0x4a2910u, (void *)F_004a2910},
+  {0x4a28f0u, (void *)W_004a28f0},
+  {0x4a2910u, (void *)W_004a2910},
   {0x4a2950u, (void *)W_004a2950},
   {0x4a2a00u, (void *)F_004a2a00},
   {0x4a2b10u, (void *)F_004a2b10},
   {0x4a2b30u, (void *)F_004a2b30},
   {0x4a2b50u, (void *)F_004a2b50},
-  {0x4a2ba0u, (void *)F_004a2ba0},
-  {0x4a2be0u, (void *)W_004a2be0},
+  {0x4a2ba0u, (void *)W_004a2ba0},
+  {0x4a2be0u, (void *)F_004a2be0},
   {0x4a2c60u, (void *)F_004a2c60},
-  {0x4a2cc0u, (void *)F_004a2cc0},
+  {0x4a2cc0u, (void *)W_004a2cc0},
   {0x4a2ce0u, (void *)F_004a2ce0},
   {0x4a2d00u, (void *)F_004a2d00},
   {0x4a2d20u, (void *)F_004a2d20},
-  {0x4a2d50u, (void *)F_004a2d50},
+  {0x4a2d50u, (void *)W_004a2d50},
   {0x4a2e70u, (void *)F_004a2e70},
   {0x4a2ea0u, (void *)F_004a2ea0},
   {0x4a2ed0u, (void *)F_004a2ed0},
@@ -15007,22 +15363,22 @@ const GEN_JUMP g_genJumps[] = {
   {0x4a3320u, (void *)W_004a3320},
   {0x4a33e0u, (void *)W_004a33e0},
   {0x4a3470u, (void *)W_004a3470},
-  {0x4a3500u, (void *)W_004a3500},
+  {0x4a3500u, (void *)F_004a3500},
   {0x4a35f0u, (void *)F_004a35f0},
   {0x4a37c0u, (void *)W_004a37c0},
   {0x4a37f0u, (void *)W_004a37f0},
   {0x4a3830u, (void *)W_004a3830},
   {0x4a39a0u, (void *)W_004a39a0},
   {0x4a3a50u, (void *)W_004a3a50},
-  {0x4a3b00u, (void *)W_004a3b00},
+  {0x4a3b00u, (void *)F_004a3b00},
   {0x4a3b40u, (void *)F_004a3b40},
   {0x4a3ba0u, (void *)W_004a3ba0},
   {0x4a3c60u, (void *)W_004a3c60},
-  {0x4a3d10u, (void *)W_004a3d10},
+  {0x4a3d10u, (void *)F_004a3d10},
   {0x4a3e60u, (void *)F_004a3e60},
-  {0x4a3e90u, (void *)W_004a3e90},
+  {0x4a3e90u, (void *)F_004a3e90},
   {0x4a3ed0u, (void *)W_004a3ed0},
-  {0x4a3f00u, (void *)F_004a3f00},
+  {0x4a3f00u, (void *)W_004a3f00},
   {0x4a3f40u, (void *)F_004a3f40},
   {0x4a4010u, (void *)F_004a4010},
   {0x4a40e0u, (void *)F_004a40e0},
@@ -15073,7 +15429,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4a6e40u, (void *)F_004a6e40},
   {0x4a6fe0u, (void *)F_004a6fe0},
   {0x4a7160u, (void *)F_004a7160},
-  {0x4a7190u, (void *)W_004a7190},
+  {0x4a7190u, (void *)F_004a7190},
   {0x4a7260u, (void *)F_004a7260},
   {0x4a7350u, (void *)F_004a7350},
   {0x4a7510u, (void *)F_004a7510},
@@ -15102,7 +15458,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4aa490u, (void *)F_004aa490},
   {0x4aa540u, (void *)F_004aa540},
   {0x4aa670u, (void *)W_004aa670},
-  {0x4aa6f0u, (void *)W_004aa6f0},
+  {0x4aa6f0u, (void *)F_004aa6f0},
   {0x4aa750u, (void *)W_004aa750},
   {0x4aa7d0u, (void *)F_004aa7d0},
   {0x4aa7e0u, (void *)F_004aa7e0},
@@ -15138,7 +15494,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4ac500u, (void *)F_004ac500},
   {0x4ac550u, (void *)F_004ac550},
   {0x4ac5a0u, (void *)F_004ac5a0},
-  {0x4ac650u, (void *)W_004ac650},
+  {0x4ac650u, (void *)F_004ac650},
   {0x4ac6f0u, (void *)W_004ac6f0},
   {0x4ac760u, (void *)W_004ac760},
   {0x4ac7d0u, (void *)W_004ac7d0},
@@ -15302,7 +15658,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4bdba0u, (void *)F_004bdba0},
   {0x4bdbd0u, (void *)F_004bdbd0},
   {0x4bdc00u, (void *)F_004bdc00},
-  {0x4bdc30u, (void *)F_004bdc30},
+  {0x4bdc30u, (void *)W_004bdc30},
   {0x4bdc60u, (void *)F_004bdc60},
   {0x4bdd00u, (void *)F_004bdd00},
   {0x4bdd70u, (void *)F_004bdd70},
@@ -15327,7 +15683,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4be890u, (void *)F_004be890},
   {0x4be9a0u, (void *)F_004be9a0},
   {0x4bea00u, (void *)F_004bea00},
-  {0x4beab0u, (void *)F_004beab0},
+  {0x4beab0u, (void *)W_004beab0},
   {0x4bead0u, (void *)W_004bead0},
   {0x4beb60u, (void *)F_004beb60},
   {0x4bebc0u, (void *)F_004bebc0},
@@ -15436,24 +15792,24 @@ const GEN_JUMP g_genJumps[] = {
   {0x4c06e0u, (void *)W_004c06e0},
   {0x4c0700u, (void *)W_004c0700},
   {0x4c0730u, (void *)W_004c0730},
-  {0x4c0790u, (void *)W_004c0790},
+  {0x4c0790u, (void *)F_004c0790},
   {0x4c0880u, (void *)F_004c0880},
   {0x4c0bf0u, (void *)F_004c0bf0},
   {0x4c0c10u, (void *)F_004c0c10},
-  {0x4c0c40u, (void *)W_004c0c40},
+  {0x4c0c40u, (void *)F_004c0c40},
   {0x4c0d30u, (void *)W_004c0d30},
   {0x4c0d50u, (void *)W_004c0d50},
-  {0x4c0da0u, (void *)W_004c0da0},
-  {0x4c0e30u, (void *)W_004c0e30},
+  {0x4c0da0u, (void *)F_004c0da0},
+  {0x4c0e30u, (void *)F_004c0e30},
   {0x4c0ed0u, (void *)F_004c0ed0},
   {0x4c0ee0u, (void *)F_004c0ee0},
   {0x4c0f20u, (void *)F_004c0f20},
   {0x4c0fb0u, (void *)F_004c0fb0},
-  {0x4c1010u, (void *)F_004c1010},
+  {0x4c1010u, (void *)W_004c1010},
   {0x4c1050u, (void *)F_004c1050},
-  {0x4c1070u, (void *)F_004c1070},
-  {0x4c10c0u, (void *)F_004c10c0},
-  {0x4c1110u, (void *)F_004c1110},
+  {0x4c1070u, (void *)W_004c1070},
+  {0x4c10c0u, (void *)W_004c10c0},
+  {0x4c1110u, (void *)W_004c1110},
   {0x4c1140u, (void *)W_004c1140},
   {0x4c1170u, (void *)F_004c1170},
   {0x4c1190u, (void *)F_004c1190},
@@ -15465,8 +15821,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x4c1700u, (void *)F_004c1700},
   {0x4c17b0u, (void *)F_004c17b0},
   {0x4c17d0u, (void *)F_004c17d0},
-  {0x4c17f0u, (void *)F_004c17f0},
-  {0x4c1810u, (void *)F_004c1810},
+  {0x4c17f0u, (void *)W_004c17f0},
+  {0x4c1810u, (void *)W_004c1810},
   {0x4c1830u, (void *)F_004c1830},
   {0x4c1870u, (void *)F_004c1870},
   {0x4c18a0u, (void *)F_004c18a0},
@@ -15484,7 +15840,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4c1d60u, (void *)F_004c1d60},
   {0x4c1d90u, (void *)F_004c1d90},
   {0x4c1dc0u, (void *)F_004c1dc0},
-  {0x4c1e40u, (void *)W_004c1e40},
+  {0x4c1e40u, (void *)F_004c1e40},
   {0x4c1f20u, (void *)F_004c1f20},
   {0x4c1f50u, (void *)F_004c1f50},
   {0x4c1f80u, (void *)F_004c1f80},
@@ -15644,7 +16000,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4c6a20u, (void *)F_004c6a20},
   {0x4c6ae0u, (void *)F_004c6ae0},
   {0x4c6ba0u, (void *)F_004c6ba0},
-  {0x4c6c60u, (void *)W_004c6c60},
+  {0x4c6c60u, (void *)F_004c6c60},
   {0x4c6d30u, (void *)F_004c6d30},
   {0x4c6e30u, (void *)F_004c6e30},
   {0x4c6f20u, (void *)F_004c6f20},
@@ -15943,8 +16299,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x4d3790u, (void *)F_004d3790},
   {0x4d37c0u, (void *)F_004d37c0},
   {0x4d3800u, (void *)W_004d3800},
-  {0x4d3850u, (void *)F_004d3850},
-  {0x4d3870u, (void *)F_004d3870},
+  {0x4d3850u, (void *)W_004d3850},
+  {0x4d3870u, (void *)W_004d3870},
   {0x4d3890u, (void *)F_004d3890},
   {0x4d38b0u, (void *)F_004d38b0},
   {0x4d39a0u, (void *)F_004d39a0},
@@ -16314,12 +16670,12 @@ const GEN_JUMP g_genJumps[] = {
   {0x4e1020u, (void *)F_004e1020},
   {0x4e1060u, (void *)F_004e1060},
   {0x4e1080u, (void *)F_004e1080},
-  {0x4e10d0u, (void *)F_004e10d0},
+  {0x4e10d0u, (void *)W_004e10d0},
   {0x4e1160u, (void *)F_004e1160},
   {0x4e1180u, (void *)F_004e1180},
   {0x4e1200u, (void *)F_004e1200},
-  {0x4e1220u, (void *)F_004e1220},
-  {0x4e1280u, (void *)F_004e1280},
+  {0x4e1220u, (void *)W_004e1220},
+  {0x4e1280u, (void *)W_004e1280},
   {0x4e12b0u, (void *)F_004e12b0},
   {0x4e12e0u, (void *)F_004e12e0},
   {0x4e1310u, (void *)W_004e1310},
@@ -16569,7 +16925,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x4e4900u, (void *)F_004e4900},
   {0x4e4920u, (void *)F_004e4920},
   {0x4e4940u, (void *)F_004e4940},
-  {0x4e4946u, (void *)F_004e4946},
   {0x4e4990u, (void *)F_004e4990},
   {0x4e49d0u, (void *)F_004e49d0},
   {0x4e49f0u, (void *)F_004e49f0},
@@ -16601,7 +16956,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x4e5840u, (void *)F_004e5840},
   {0x4e5900u, (void *)F_004e5900},
   {0x4e5920u, (void *)F_004e5920},
-  {0x4e5953u, (void *)F_004e5953},
   {0x4e5970u, (void *)F_004e5970},
   {0x4e59c0u, (void *)F_004e59c0},
   {0x4e5a40u, (void *)F_004e5a40},
@@ -16676,7 +17030,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4e71d0u, (void *)F_004e71d0},
   {0x4e72f0u, (void *)F_004e72f0},
   {0x4e7380u, (void *)F_004e7380},
-  {0x4e7440u, (void *)F_004e7440},
+  {0x4e7440u, (void *)W_004e7440},
   {0x4e7570u, (void *)F_004e7570},
   {0x4e75e0u, (void *)F_004e75e0},
   {0x4e7600u, (void *)F_004e7600},
@@ -16693,7 +17047,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4e7820u, (void *)F_004e7820},
   {0x4e7840u, (void *)W_004e7840},
   {0x4e78b0u, (void *)F_004e78b0},
-  {0x4e7910u, (void *)F_004e7910},
+  {0x4e7910u, (void *)W_004e7910},
   {0x4e7920u, (void *)F_004e7920},
   {0x4e79b0u, (void *)W_004e79b0},
   {0x4e79c0u, (void *)F_004e79c0},
@@ -16851,10 +17205,10 @@ const GEN_JUMP g_genJumps[] = {
   {0x4ed120u, (void *)W_004ed120},
   {0x4ed150u, (void *)F_004ed150},
   {0x4ed1a0u, (void *)W_004ed1a0},
-  {0x4ed1b0u, (void *)F_004ed1b0},
-  {0x4ed1c0u, (void *)F_004ed1c0},
-  {0x4ed1d0u, (void *)F_004ed1d0},
-  {0x4ed1e0u, (void *)F_004ed1e0},
+  {0x4ed1b0u, (void *)W_004ed1b0},
+  {0x4ed1c0u, (void *)W_004ed1c0},
+  {0x4ed1d0u, (void *)W_004ed1d0},
+  {0x4ed1e0u, (void *)W_004ed1e0},
   {0x4ed1f0u, (void *)F_004ed1f0},
   {0x4ed200u, (void *)W_004ed200},
   {0x4ed230u, (void *)F_004ed230},
@@ -17026,13 +17380,13 @@ const GEN_JUMP g_genJumps[] = {
   {0x4f4130u, (void *)F_004f4130},
   {0x4f41e0u, (void *)F_004f41e0},
   {0x4f4290u, (void *)F_004f4290},
-  {0x4f4430u, (void *)W_004f4430},
+  {0x4f4430u, (void *)F_004f4430},
   {0x4f45d0u, (void *)F_004f45d0},
   {0x4f4970u, (void *)F_004f4970},
   {0x4f4990u, (void *)F_004f4990},
   {0x4f4d40u, (void *)F_004f4d40},
   {0x4f4e90u, (void *)W_004f4e90},
-  {0x4f5010u, (void *)W_004f5010},
+  {0x4f5010u, (void *)F_004f5010},
   {0x4f5180u, (void *)F_004f5180},
   {0x4f51d0u, (void *)F_004f51d0},
   {0x4f5280u, (void *)F_004f5280},
@@ -17090,7 +17444,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x4f7160u, (void *)F_004f7160},
   {0x4f7210u, (void *)F_004f7210},
   {0x4f7280u, (void *)F_004f7280},
-  {0x4f72b0u, (void *)W_004f72b0},
+  {0x4f72b0u, (void *)F_004f72b0},
   {0x4f7340u, (void *)F_004f7340},
   {0x4f7370u, (void *)F_004f7370},
   {0x4f73c0u, (void *)F_004f73c0},
@@ -17379,7 +17733,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x500000u, (void *)F_00500000},
   {0x50005fu, (void *)F_0050005f},
   {0x500080u, (void *)F_00500080},
-  {0x500090u, (void *)F_00500090},
+  {0x500090u, (void *)W_00500090},
   {0x5000c0u, (void *)F_005000c0},
   {0x500140u, (void *)W_00500140},
   {0x5001b0u, (void *)W_005001b0},
@@ -17500,7 +17854,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x500d80u, (void *)F_00500d80},
   {0x500d90u, (void *)F_00500d90},
   {0x500da0u, (void *)F_00500da0},
-  {0x500db0u, (void *)F_00500db0},
+  {0x500db0u, (void *)W_00500db0},
   {0x500dd0u, (void *)F_00500dd0},
   {0x500de0u, (void *)F_00500de0},
   {0x500e00u, (void *)F_00500e00},
@@ -17655,7 +18009,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x504d60u, (void *)W_00504d60},
   {0x504e70u, (void *)W_00504e70},
   {0x504f40u, (void *)F_00504f40},
-  {0x504f54u, (void *)F_00504f54},
   {0x504ff0u, (void *)F_00504ff0},
   {0x5051f0u, (void *)F_005051f0},
   {0x5052d0u, (void *)F_005052d0},
@@ -17681,8 +18034,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x506ef0u, (void *)W_00506ef0},
   {0x506f30u, (void *)F_00506f30},
   {0x506f60u, (void *)F_00506f60},
-  {0x506fa0u, (void *)W_00506fa0},
-  {0x507050u, (void *)W_00507050},
+  {0x506fa0u, (void *)F_00506fa0},
+  {0x507050u, (void *)F_00507050},
   {0x507190u, (void *)F_00507190},
   {0x5071e0u, (void *)F_005071e0},
   {0x507260u, (void *)F_00507260},
@@ -19390,7 +19743,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x52e9a0u, (void *)F_0052e9a0},
   {0x52e9c0u, (void *)F_0052e9c0},
   {0x52e9e0u, (void *)W_0052e9e0},
-  {0x52ea50u, (void *)F_0052ea50},
+  {0x52ea50u, (void *)W_0052ea50},
   {0x52eac0u, (void *)F_0052eac0},
   {0x52eaf0u, (void *)F_0052eaf0},
   {0x52eb00u, (void *)F_0052eb00},
@@ -19550,8 +19903,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x5313c0u, (void *)F_005313c0},
   {0x5313f0u, (void *)F_005313f0},
   {0x531430u, (void *)F_00531430},
-  {0x531450u, (void *)F_00531450},
-  {0x531470u, (void *)F_00531470},
+  {0x531450u, (void *)W_00531450},
+  {0x531470u, (void *)W_00531470},
   {0x531490u, (void *)F_00531490},
   {0x5314b0u, (void *)F_005314b0},
   {0x5314f0u, (void *)F_005314f0},
@@ -19601,9 +19954,9 @@ const GEN_JUMP g_genJumps[] = {
   {0x531ce0u, (void *)F_00531ce0},
   {0x531d30u, (void *)W_00531d30},
   {0x531d40u, (void *)F_00531d40},
-  {0x531d90u, (void *)F_00531d90},
-  {0x531db0u, (void *)F_00531db0},
-  {0x531dd0u, (void *)F_00531dd0},
+  {0x531d90u, (void *)W_00531d90},
+  {0x531db0u, (void *)W_00531db0},
+  {0x531dd0u, (void *)W_00531dd0},
   {0x531de0u, (void *)W_00531de0},
   {0x531e00u, (void *)F_00531e00},
   {0x531e20u, (void *)F_00531e20},
@@ -19768,8 +20121,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x5350a0u, (void *)F_005350a0},
   {0x5350c0u, (void *)F_005350c0},
   {0x5350e0u, (void *)F_005350e0},
-  {0x535100u, (void *)F_00535100},
-  {0x535130u, (void *)W_00535130},
+  {0x535100u, (void *)W_00535100},
+  {0x535130u, (void *)F_00535130},
   {0x535160u, (void *)F_00535160},
   {0x535190u, (void *)F_00535190},
   {0x5351c0u, (void *)F_005351c0},
@@ -19777,27 +20130,25 @@ const GEN_JUMP g_genJumps[] = {
   {0x5353f0u, (void *)F_005353f0},
   {0x535420u, (void *)F_00535420},
   {0x535480u, (void *)F_00535480},
-  {0x535542u, (void *)F_00535542},
-  {0x535620u, (void *)F_00535620},
+  {0x535620u, (void *)W_00535620},
   {0x535690u, (void *)F_00535690},
   {0x535740u, (void *)F_00535740},
   {0x535860u, (void *)W_00535860},
   {0x535900u, (void *)W_00535900},
-  {0x535930u, (void *)F_00535930},
+  {0x535930u, (void *)W_00535930},
   {0x535950u, (void *)F_00535950},
-  {0x535953u, (void *)F_00535953},
   {0x535970u, (void *)F_00535970},
   {0x535990u, (void *)F_00535990},
   {0x5359e0u, (void *)F_005359e0},
-  {0x535a70u, (void *)F_00535a70},
+  {0x535a70u, (void *)W_00535a70},
   {0x535aa0u, (void *)W_00535aa0},
   {0x535ae0u, (void *)F_00535ae0},
   {0x535b00u, (void *)W_00535b00},
   {0x535b40u, (void *)W_00535b40},
   {0x535b90u, (void *)W_00535b90},
-  {0x535bc0u, (void *)F_00535bc0},
-  {0x535be0u, (void *)F_00535be0},
-  {0x535c00u, (void *)F_00535c00},
+  {0x535bc0u, (void *)W_00535bc0},
+  {0x535be0u, (void *)W_00535be0},
+  {0x535c00u, (void *)W_00535c00},
   {0x535c20u, (void *)W_00535c20},
   {0x535c40u, (void *)F_00535c40},
   {0x535cb0u, (void *)F_00535cb0},
@@ -19812,7 +20163,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x536030u, (void *)W_00536030},
   {0x536130u, (void *)F_00536130},
   {0x536380u, (void *)F_00536380},
-  {0x5363b0u, (void *)W_005363b0},
+  {0x5363b0u, (void *)F_005363b0},
   {0x5363e0u, (void *)F_005363e0},
   {0x536440u, (void *)F_00536440},
   {0x5364b0u, (void *)F_005364b0},
@@ -19823,7 +20174,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x536680u, (void *)W_00536680},
   {0x5366b0u, (void *)W_005366b0},
   {0x5366f0u, (void *)F_005366f0},
-  {0x536840u, (void *)W_00536840},
+  {0x536840u, (void *)F_00536840},
   {0x5368d0u, (void *)F_005368d0},
   {0x5369a0u, (void *)F_005369a0},
   {0x5369e0u, (void *)F_005369e0},
@@ -19913,7 +20264,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x539c40u, (void *)W_00539c40},
   {0x539cc0u, (void *)W_00539cc0},
   {0x539d50u, (void *)W_00539d50},
-  {0x539e30u, (void *)W_00539e30},
+  {0x539e30u, (void *)F_00539e30},
   {0x539ed0u, (void *)F_00539ed0},
   {0x539f30u, (void *)F_00539f30},
   {0x539f60u, (void *)W_00539f60},
@@ -19925,10 +20276,10 @@ const GEN_JUMP g_genJumps[] = {
   {0x53a330u, (void *)F_0053a330},
   {0x53a4e0u, (void *)F_0053a4e0},
   {0x53a520u, (void *)F_0053a520},
-  {0x53a540u, (void *)F_0053a540},
-  {0x53a580u, (void *)F_0053a580},
-  {0x53a5c0u, (void *)F_0053a5c0},
-  {0x53a600u, (void *)F_0053a600},
+  {0x53a540u, (void *)W_0053a540},
+  {0x53a580u, (void *)W_0053a580},
+  {0x53a5c0u, (void *)W_0053a5c0},
+  {0x53a600u, (void *)W_0053a600},
   {0x53a640u, (void *)F_0053a640},
   {0x53a6b0u, (void *)W_0053a6b0},
   {0x53a8a0u, (void *)W_0053a8a0},
@@ -19981,7 +20332,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x53d330u, (void *)F_0053d330},
   {0x53d400u, (void *)F_0053d400},
   {0x53d610u, (void *)F_0053d610},
-  {0x53d6f0u, (void *)F_0053d6f0},
+  {0x53d6f0u, (void *)W_0053d6f0},
   {0x53d760u, (void *)F_0053d760},
   {0x53d7d0u, (void *)F_0053d7d0},
   {0x53d810u, (void *)F_0053d810},
@@ -20035,7 +20386,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x540a50u, (void *)F_00540a50},
   {0x540b30u, (void *)F_00540b30},
   {0x540e20u, (void *)W_00540e20},
-  {0x541110u, (void *)W_00541110},
+  {0x541110u, (void *)F_00541110},
   {0x541240u, (void *)F_00541240},
   {0x541390u, (void *)W_00541390},
   {0x541570u, (void *)F_00541570},
@@ -20052,10 +20403,10 @@ const GEN_JUMP g_genJumps[] = {
   {0x541fa0u, (void *)W_00541fa0},
   {0x542100u, (void *)F_00542100},
   {0x542140u, (void *)F_00542140},
-  {0x542180u, (void *)F_00542180},
-  {0x542230u, (void *)F_00542230},
-  {0x5422e0u, (void *)F_005422e0},
-  {0x542320u, (void *)F_00542320},
+  {0x542180u, (void *)W_00542180},
+  {0x542230u, (void *)W_00542230},
+  {0x5422e0u, (void *)W_005422e0},
+  {0x542320u, (void *)W_00542320},
   {0x542360u, (void *)F_00542360},
   {0x542400u, (void *)F_00542400},
   {0x542470u, (void *)W_00542470},
@@ -20067,7 +20418,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x542a30u, (void *)W_00542a30},
   {0x542aa0u, (void *)F_00542aa0},
   {0x542c10u, (void *)W_00542c10},
-  {0x542cb0u, (void *)W_00542cb0},
+  {0x542cb0u, (void *)F_00542cb0},
   {0x542f00u, (void *)F_00542f00},
   {0x542f70u, (void *)F_00542f70},
   {0x542ff0u, (void *)F_00542ff0},
@@ -20090,15 +20441,14 @@ const GEN_JUMP g_genJumps[] = {
   {0x5446c0u, (void *)W_005446c0},
   {0x544750u, (void *)F_00544750},
   {0x544770u, (void *)F_00544770},
-  {0x544a60u, (void *)W_00544a60},
+  {0x544a60u, (void *)F_00544a60},
   {0x544b80u, (void *)F_00544b80},
   {0x544d30u, (void *)W_00544d30},
   {0x544e30u, (void *)F_00544e30},
-  {0x544e43u, (void *)F_00544e43},
   {0x544e90u, (void *)F_00544e90},
-  {0x5451d0u, (void *)W_005451d0},
+  {0x5451d0u, (void *)F_005451d0},
   {0x5452f0u, (void *)F_005452f0},
-  {0x545bb0u, (void *)W_00545bb0},
+  {0x545bb0u, (void *)F_00545bb0},
   {0x546350u, (void *)W_00546350},
   {0x546640u, (void *)W_00546640},
   {0x5466e0u, (void *)F_005466e0},
@@ -20133,7 +20483,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5488d0u, (void *)F_005488d0},
   {0x548990u, (void *)F_00548990},
   {0x548c30u, (void *)F_00548c30},
-  {0x548d30u, (void *)W_00548d30},
+  {0x548d30u, (void *)F_00548d30},
   {0x548e90u, (void *)F_00548e90},
   {0x548f30u, (void *)F_00548f30},
   {0x548ff0u, (void *)F_00548ff0},
@@ -20154,7 +20504,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x549f40u, (void *)F_00549f40},
   {0x549f60u, (void *)W_00549f60},
   {0x549fb0u, (void *)F_00549fb0},
-  {0x54a210u, (void *)W_0054a210},
+  {0x54a210u, (void *)F_0054a210},
   {0x54a540u, (void *)F_0054a540},
   {0x54a780u, (void *)F_0054a780},
   {0x54a7f0u, (void *)F_0054a7f0},
@@ -20190,8 +20540,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x54bc30u, (void *)W_0054bc30},
   {0x54bc40u, (void *)F_0054bc40},
   {0x54bca0u, (void *)F_0054bca0},
-  {0x54bcf0u, (void *)F_0054bcf0},
-  {0x54bd00u, (void *)F_0054bd00},
+  {0x54bcf0u, (void *)W_0054bcf0},
+  {0x54bd00u, (void *)W_0054bd00},
   {0x54bd20u, (void *)F_0054bd20},
   {0x54bd70u, (void *)F_0054bd70},
   {0x54bd90u, (void *)F_0054bd90},
@@ -20257,15 +20607,15 @@ const GEN_JUMP g_genJumps[] = {
   {0x54ca40u, (void *)F_0054ca40},
   {0x54ca60u, (void *)F_0054ca60},
   {0x54ca80u, (void *)F_0054ca80},
-  {0x54cb00u, (void *)F_0054cb00},
-  {0x54cb20u, (void *)F_0054cb20},
+  {0x54cb00u, (void *)W_0054cb00},
+  {0x54cb20u, (void *)W_0054cb20},
   {0x54cc90u, (void *)F_0054cc90},
   {0x54ccb0u, (void *)W_0054ccb0},
   {0x54cd20u, (void *)W_0054cd20},
-  {0x54cd50u, (void *)F_0054cd50},
+  {0x54cd50u, (void *)W_0054cd50},
   {0x54cd80u, (void *)F_0054cd80},
   {0x54cdb0u, (void *)F_0054cdb0},
-  {0x54ce10u, (void *)F_0054ce10},
+  {0x54ce10u, (void *)W_0054ce10},
   {0x54ce40u, (void *)W_0054ce40},
   {0x54cec0u, (void *)F_0054cec0},
   {0x54ced0u, (void *)W_0054ced0},
@@ -20409,7 +20759,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x54fab0u, (void *)F_0054fab0},
   {0x54fac0u, (void *)F_0054fac0},
   {0x54fae0u, (void *)F_0054fae0},
-  {0x54fb20u, (void *)F_0054fb20},
+  {0x54fb20u, (void *)W_0054fb20},
   {0x54fb60u, (void *)W_0054fb60},
   {0x54fbe0u, (void *)W_0054fbe0},
   {0x54fc90u, (void *)F_0054fc90},
@@ -20429,8 +20779,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x54ffc0u, (void *)F_0054ffc0},
   {0x54fff0u, (void *)F_0054fff0},
   {0x550080u, (void *)F_00550080},
-  {0x550100u, (void *)F_00550100},
-  {0x550130u, (void *)F_00550130},
+  {0x550100u, (void *)W_00550100},
+  {0x550130u, (void *)W_00550130},
   {0x550160u, (void *)F_00550160},
   {0x550180u, (void *)F_00550180},
   {0x5501b0u, (void *)F_005501b0},
@@ -20466,7 +20816,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x550d40u, (void *)F_00550d40},
   {0x550d70u, (void *)F_00550d70},
   {0x550d80u, (void *)F_00550d80},
-  {0x550e10u, (void *)F_00550e10},
+  {0x550e10u, (void *)W_00550e10},
   {0x550e50u, (void *)F_00550e50},
   {0x550e90u, (void *)F_00550e90},
   {0x550f20u, (void *)F_00550f20},
@@ -20559,7 +20909,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x554610u, (void *)F_00554610},
   {0x554640u, (void *)F_00554640},
   {0x5546d0u, (void *)F_005546d0},
-  {0x554700u, (void *)W_00554700},
+  {0x554700u, (void *)F_00554700},
   {0x5558b0u, (void *)F_005558b0},
   {0x555960u, (void *)F_00555960},
   {0x5559e0u, (void *)F_005559e0},
@@ -20596,7 +20946,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x555f60u, (void *)F_00555f60},
   {0x555f80u, (void *)F_00555f80},
   {0x555fe0u, (void *)F_00555fe0},
-  {0x556050u, (void *)W_00556050},
+  {0x556050u, (void *)F_00556050},
   {0x5560f0u, (void *)F_005560f0},
   {0x556120u, (void *)F_00556120},
   {0x556150u, (void *)F_00556150},
@@ -20626,11 +20976,11 @@ const GEN_JUMP g_genJumps[] = {
   {0x5569f0u, (void *)F_005569f0},
   {0x556a40u, (void *)F_00556a40},
   {0x556a50u, (void *)F_00556a50},
-  {0x556a80u, (void *)F_00556a80},
+  {0x556a80u, (void *)W_00556a80},
   {0x556a90u, (void *)F_00556a90},
   {0x556ac0u, (void *)F_00556ac0},
   {0x556af0u, (void *)W_00556af0},
-  {0x556b10u, (void *)F_00556b10},
+  {0x556b10u, (void *)W_00556b10},
   {0x556b20u, (void *)F_00556b20},
   {0x556b80u, (void *)F_00556b80},
   {0x556bc0u, (void *)F_00556bc0},
@@ -20669,7 +21019,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x557740u, (void *)F_00557740},
   {0x557790u, (void *)F_00557790},
   {0x5577f0u, (void *)F_005577f0},
-  {0x557840u, (void *)W_00557840},
+  {0x557840u, (void *)F_00557840},
   {0x557890u, (void *)F_00557890},
   {0x5578b0u, (void *)F_005578b0},
   {0x557970u, (void *)F_00557970},
@@ -20685,7 +21035,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x557f00u, (void *)F_00557f00},
   {0x557f70u, (void *)F_00557f70},
   {0x558000u, (void *)F_00558000},
-  {0x5580a0u, (void *)F_005580a0},
+  {0x5580a0u, (void *)W_005580a0},
   {0x5580c0u, (void *)F_005580c0},
   {0x5580e0u, (void *)W_005580e0},
   {0x5581b0u, (void *)W_005581b0},
@@ -20726,8 +21076,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x558c00u, (void *)F_00558c00},
   {0x558c30u, (void *)F_00558c30},
   {0x558cd0u, (void *)F_00558cd0},
-  {0x558d60u, (void *)F_00558d60},
-  {0x558d80u, (void *)F_00558d80},
+  {0x558d60u, (void *)W_00558d60},
+  {0x558d80u, (void *)W_00558d80},
   {0x558dc0u, (void *)F_00558dc0},
   {0x558e10u, (void *)F_00558e10},
   {0x558e30u, (void *)F_00558e30},
@@ -20857,7 +21207,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x55a670u, (void *)W_0055a670},
   {0x55a690u, (void *)F_0055a690},
   {0x55a6b0u, (void *)F_0055a6b0},
-  {0x55a6e0u, (void *)F_0055a6e0},
+  {0x55a6e0u, (void *)W_0055a6e0},
   {0x55a710u, (void *)F_0055a710},
   {0x55a730u, (void *)F_0055a730},
   {0x55a750u, (void *)W_0055a750},
@@ -20921,7 +21271,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x55b9c0u, (void *)F_0055b9c0},
   {0x55b9e0u, (void *)F_0055b9e0},
   {0x55ba00u, (void *)F_0055ba00},
-  {0x55ba10u, (void *)F_0055ba10},
+  {0x55ba10u, (void *)W_0055ba10},
   {0x55ba20u, (void *)F_0055ba20},
   {0x55ba60u, (void *)F_0055ba60},
   {0x55ba90u, (void *)F_0055ba90},
@@ -21042,8 +21392,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x55e7b0u, (void *)F_0055e7b0},
   {0x55e830u, (void *)F_0055e830},
   {0x55e870u, (void *)W_0055e870},
-  {0x55ea70u, (void *)W_0055ea70},
-  {0x55eaa0u, (void *)W_0055eaa0},
+  {0x55ea70u, (void *)F_0055ea70},
+  {0x55eaa0u, (void *)F_0055eaa0},
   {0x55eaf0u, (void *)F_0055eaf0},
   {0x55eb50u, (void *)F_0055eb50},
   {0x55ec50u, (void *)F_0055ec50},
@@ -21676,7 +22026,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x576570u, (void *)F_00576570},
   {0x5765b0u, (void *)F_005765b0},
   {0x576610u, (void *)W_00576610},
-  {0x576700u, (void *)F_00576700},
+  {0x576700u, (void *)W_00576700},
   {0x5767f0u, (void *)F_005767f0},
   {0x576840u, (void *)F_00576840},
   {0x576890u, (void *)F_00576890},
@@ -21797,7 +22147,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x57e530u, (void *)F_0057e530},
   {0x57e5a0u, (void *)F_0057e5a0},
   {0x57e680u, (void *)F_0057e680},
-  {0x57e710u, (void *)F_0057e710},
+  {0x57e710u, (void *)W_0057e710},
   {0x57e800u, (void *)F_0057e800},
   {0x57e810u, (void *)W_0057e810},
   {0x57e820u, (void *)F_0057e820},
@@ -21814,7 +22164,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x57eb30u, (void *)F_0057eb30},
   {0x57ed00u, (void *)F_0057ed00},
   {0x57ed60u, (void *)F_0057ed60},
-  {0x57edb0u, (void *)W_0057edb0},
+  {0x57edb0u, (void *)F_0057edb0},
   {0x57ee00u, (void *)F_0057ee00},
   {0x57ee60u, (void *)F_0057ee60},
   {0x57ee80u, (void *)F_0057ee80},
@@ -22704,7 +23054,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5b8250u, (void *)F_005b8250},
   {0x5b8260u, (void *)W_005b8260},
   {0x5b8270u, (void *)F_005b8270},
-  {0x5b8280u, (void *)W_005b8280},
+  {0x5b8280u, (void *)F_005b8280},
   {0x5b8320u, (void *)F_005b8320},
   {0x5b8360u, (void *)W_005b8360},
   {0x5b8380u, (void *)W_005b8380},
@@ -22831,11 +23181,11 @@ const GEN_JUMP g_genJumps[] = {
   {0x5b9c80u, (void *)F_005b9c80},
   {0x5b9ca0u, (void *)W_005b9ca0},
   {0x5b9cc0u, (void *)W_005b9cc0},
-  {0x5b9d20u, (void *)F_005b9d20},
+  {0x5b9d20u, (void *)W_005b9d20},
   {0x5b9d50u, (void *)W_005b9d50},
   {0x5b9d60u, (void *)W_005b9d60},
   {0x5b9d90u, (void *)W_005b9d90},
-  {0x5b9de0u, (void *)F_005b9de0},
+  {0x5b9de0u, (void *)W_005b9de0},
   {0x5b9e10u, (void *)F_005b9e10},
   {0x5b9e60u, (void *)W_005b9e60},
   {0x5b9f40u, (void *)F_005b9f40},
@@ -22868,8 +23218,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x5ba3d0u, (void *)F_005ba3d0},
   {0x5ba480u, (void *)W_005ba480},
   {0x5ba490u, (void *)F_005ba490},
-  {0x5ba4b0u, (void *)F_005ba4b0},
-  {0x5ba4e0u, (void *)F_005ba4e0},
+  {0x5ba4b0u, (void *)W_005ba4b0},
+  {0x5ba4e0u, (void *)W_005ba4e0},
   {0x5ba530u, (void *)F_005ba530},
   {0x5ba540u, (void *)F_005ba540},
   {0x5ba570u, (void *)F_005ba570},
@@ -24510,7 +24860,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5d4bc0u, (void *)F_005d4bc0},
   {0x5d4cc0u, (void *)F_005d4cc0},
   {0x5d4cf0u, (void *)F_005d4cf0},
-  {0x5d4d60u, (void *)F_005d4d60},
+  {0x5d4d60u, (void *)W_005d4d60},
   {0x5d4d80u, (void *)F_005d4d80},
   {0x5d4dc0u, (void *)F_005d4dc0},
   {0x5d4de0u, (void *)F_005d4de0},
@@ -24542,8 +24892,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x5d5a90u, (void *)F_005d5a90},
   {0x5d5ab0u, (void *)F_005d5ab0},
   {0x5d5b00u, (void *)F_005d5b00},
-  {0x5d5b50u, (void *)F_005d5b50},
-  {0x5d5b70u, (void *)F_005d5b70},
+  {0x5d5b50u, (void *)W_005d5b50},
+  {0x5d5b70u, (void *)W_005d5b70},
   {0x5d5b90u, (void *)F_005d5b90},
   {0x5d5c10u, (void *)W_005d5c10},
   {0x5d5c20u, (void *)F_005d5c20},
@@ -24567,7 +24917,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x5d60f0u, (void *)F_005d60f0},
   {0x5d6120u, (void *)F_005d6120},
   {0x5d6150u, (void *)F_005d6150},
-  {0x5d615bu, (void *)F_005d615b},
   {0x5d6160u, (void *)F_005d6160},
   {0x5d6170u, (void *)F_005d6170},
   {0x5d6180u, (void *)F_005d6180},
@@ -24626,7 +24975,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x5d6d10u, (void *)F_005d6d10},
   {0x5d6da0u, (void *)W_005d6da0},
   {0x5d6e10u, (void *)W_005d6e10},
-  {0x5d6e5bu, (void *)W_005d6e5b},
   {0x5d6e90u, (void *)F_005d6e90},
   {0x5d6f10u, (void *)F_005d6f10},
   {0x5d6f30u, (void *)F_005d6f30},
@@ -24731,7 +25079,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5d8590u, (void *)F_005d8590},
   {0x5d85c0u, (void *)F_005d85c0},
   {0x5d85f0u, (void *)F_005d85f0},
-  {0x5d8600u, (void *)F_005d8600},
+  {0x5d8600u, (void *)W_005d8600},
   {0x5d8610u, (void *)F_005d8610},
   {0x5d8650u, (void *)F_005d8650},
   {0x5d8680u, (void *)F_005d8680},
@@ -24741,7 +25089,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5d8700u, (void *)F_005d8700},
   {0x5d8710u, (void *)F_005d8710},
   {0x5d8720u, (void *)F_005d8720},
-  {0x5d8730u, (void *)W_005d8730},
+  {0x5d8730u, (void *)F_005d8730},
   {0x5d8750u, (void *)W_005d8750},
   {0x5d8770u, (void *)W_005d8770},
   {0x5d8780u, (void *)W_005d8780},
@@ -24765,7 +25113,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5d8e00u, (void *)F_005d8e00},
   {0x5d8e30u, (void *)F_005d8e30},
   {0x5d8e70u, (void *)F_005d8e70},
-  {0x5d8ee0u, (void *)W_005d8ee0},
+  {0x5d8ee0u, (void *)F_005d8ee0},
   {0x5d8fa0u, (void *)W_005d8fa0},
   {0x5d9070u, (void *)W_005d9070},
   {0x5d90f0u, (void *)F_005d90f0},
@@ -24776,7 +25124,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5d9330u, (void *)W_005d9330},
   {0x5d9380u, (void *)F_005d9380},
   {0x5d93f0u, (void *)F_005d93f0},
-  {0x5d9480u, (void *)W_005d9480},
+  {0x5d9480u, (void *)F_005d9480},
   {0x5d9500u, (void *)F_005d9500},
   {0x5d9550u, (void *)F_005d9550},
   {0x5d9890u, (void *)F_005d9890},
@@ -24922,7 +25270,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5de2e0u, (void *)F_005de2e0},
   {0x5de400u, (void *)F_005de400},
   {0x5de540u, (void *)F_005de540},
-  {0x5de580u, (void *)F_005de580},
+  {0x5de580u, (void *)W_005de580},
   {0x5de5b0u, (void *)F_005de5b0},
   {0x5de740u, (void *)F_005de740},
   {0x5de7b0u, (void *)F_005de7b0},
@@ -25220,15 +25568,15 @@ const GEN_JUMP g_genJumps[] = {
   {0x5edfe0u, (void *)F_005edfe0},
   {0x5edff0u, (void *)F_005edff0},
   {0x5ee020u, (void *)F_005ee020},
-  {0x5ee060u, (void *)W_005ee060},
+  {0x5ee060u, (void *)F_005ee060},
   {0x5ee0a0u, (void *)W_005ee0a0},
   {0x5ee0f0u, (void *)W_005ee0f0},
   {0x5ee160u, (void *)F_005ee160},
   {0x5ee1d0u, (void *)F_005ee1d0},
   {0x5ee240u, (void *)F_005ee240},
-  {0x5ee280u, (void *)F_005ee280},
-  {0x5ee2f0u, (void *)F_005ee2f0},
-  {0x5ee360u, (void *)F_005ee360},
+  {0x5ee280u, (void *)W_005ee280},
+  {0x5ee2f0u, (void *)W_005ee2f0},
+  {0x5ee360u, (void *)W_005ee360},
   {0x5ee3d0u, (void *)F_005ee3d0},
   {0x5ee510u, (void *)F_005ee510},
   {0x5ee5c0u, (void *)F_005ee5c0},
@@ -25243,9 +25591,9 @@ const GEN_JUMP g_genJumps[] = {
   {0x5eebe0u, (void *)F_005eebe0},
   {0x5eec20u, (void *)W_005eec20},
   {0x5eec40u, (void *)W_005eec40},
-  {0x5eecb0u, (void *)F_005eecb0},
-  {0x5eecd0u, (void *)F_005eecd0},
-  {0x5eecf0u, (void *)F_005eecf0},
+  {0x5eecb0u, (void *)W_005eecb0},
+  {0x5eecd0u, (void *)W_005eecd0},
+  {0x5eecf0u, (void *)W_005eecf0},
   {0x5eed10u, (void *)F_005eed10},
   {0x5eede0u, (void *)F_005eede0},
   {0x5eee70u, (void *)F_005eee70},
@@ -25462,7 +25810,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5f8ca0u, (void *)F_005f8ca0},
   {0x5f8de0u, (void *)F_005f8de0},
   {0x5f9280u, (void *)F_005f9280},
-  {0x5f92f0u, (void *)W_005f92f0},
+  {0x5f92f0u, (void *)F_005f92f0},
   {0x5f9390u, (void *)F_005f9390},
   {0x5f9420u, (void *)F_005f9420},
   {0x5f9530u, (void *)F_005f9530},
@@ -25486,14 +25834,14 @@ const GEN_JUMP g_genJumps[] = {
   {0x5f9fc0u, (void *)F_005f9fc0},
   {0x5fa2a0u, (void *)F_005fa2a0},
   {0x5fa490u, (void *)F_005fa490},
-  {0x5fa4d0u, (void *)W_005fa4d0},
+  {0x5fa4d0u, (void *)F_005fa4d0},
   {0x5fa4f0u, (void *)F_005fa4f0},
   {0x5fa680u, (void *)F_005fa680},
-  {0x5fa740u, (void *)W_005fa740},
-  {0x5fa820u, (void *)W_005fa820},
-  {0x5fa8b0u, (void *)W_005fa8b0},
+  {0x5fa740u, (void *)F_005fa740},
+  {0x5fa820u, (void *)F_005fa820},
+  {0x5fa8b0u, (void *)F_005fa8b0},
   {0x5fa910u, (void *)F_005fa910},
-  {0x5fa980u, (void *)W_005fa980},
+  {0x5fa980u, (void *)F_005fa980},
   {0x5fa9f0u, (void *)F_005fa9f0},
   {0x5faa40u, (void *)W_005faa40},
   {0x5fac50u, (void *)W_005fac50},
@@ -25580,7 +25928,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5fe170u, (void *)F_005fe170},
   {0x5fe1a0u, (void *)F_005fe1a0},
   {0x5fe1b0u, (void *)F_005fe1b0},
-  {0x5fe1c0u, (void *)W_005fe1c0},
+  {0x5fe1c0u, (void *)F_005fe1c0},
   {0x5fe260u, (void *)F_005fe260},
   {0x5fe280u, (void *)F_005fe280},
   {0x5fe2b0u, (void *)F_005fe2b0},
@@ -25681,19 +26029,19 @@ const GEN_JUMP g_genJumps[] = {
   {0x5ffe40u, (void *)F_005ffe40},
   {0x5ffe50u, (void *)F_005ffe50},
   {0x5ffe60u, (void *)F_005ffe60},
-  {0x5ffe70u, (void *)F_005ffe70},
+  {0x5ffe70u, (void *)W_005ffe70},
   {0x5ffe80u, (void *)F_005ffe80},
   {0x5ffeb0u, (void *)F_005ffeb0},
   {0x5ffed0u, (void *)F_005ffed0},
   {0x5fff00u, (void *)F_005fff00},
   {0x5fff10u, (void *)F_005fff10},
-  {0x5fff20u, (void *)F_005fff20},
+  {0x5fff20u, (void *)W_005fff20},
   {0x5fff30u, (void *)F_005fff30},
   {0x5fff40u, (void *)F_005fff40},
-  {0x5fff50u, (void *)F_005fff50},
+  {0x5fff50u, (void *)W_005fff50},
   {0x5fff60u, (void *)F_005fff60},
   {0x5fff70u, (void *)F_005fff70},
-  {0x5fffa0u, (void *)F_005fffa0},
+  {0x5fffa0u, (void *)W_005fffa0},
   {0x5fffb0u, (void *)F_005fffb0},
   {0x5fffc0u, (void *)F_005fffc0},
   {0x5fffd0u, (void *)W_005fffd0},
@@ -26006,9 +26354,9 @@ const GEN_JUMP g_genJumps[] = {
   {0x603320u, (void *)F_00603320},
   {0x603360u, (void *)F_00603360},
   {0x6033b0u, (void *)F_006033b0},
-  {0x6033f0u, (void *)F_006033f0},
+  {0x6033f0u, (void *)W_006033f0},
   {0x603420u, (void *)F_00603420},
-  {0x603460u, (void *)F_00603460},
+  {0x603460u, (void *)W_00603460},
   {0x603490u, (void *)F_00603490},
   {0x6034d0u, (void *)F_006034d0},
   {0x603570u, (void *)F_00603570},
@@ -26399,7 +26747,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x608050u, (void *)W_00608050},
   {0x608060u, (void *)F_00608060},
   {0x608070u, (void *)F_00608070},
-  {0x608080u, (void *)F_00608080},
+  {0x608080u, (void *)W_00608080},
   {0x6080b0u, (void *)F_006080b0},
   {0x608110u, (void *)F_00608110},
   {0x608270u, (void *)F_00608270},
@@ -27452,8 +27800,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x61e710u, (void *)F_0061e710},
   {0x61e730u, (void *)F_0061e730},
   {0x61e750u, (void *)F_0061e750},
-  {0x61e7c0u, (void *)F_0061e7c0},
-  {0x61e7e0u, (void *)F_0061e7e0},
+  {0x61e7c0u, (void *)W_0061e7c0},
+  {0x61e7e0u, (void *)W_0061e7e0},
   {0x61e800u, (void *)F_0061e800},
   {0x61e820u, (void *)F_0061e820},
   {0x61e840u, (void *)F_0061e840},
@@ -27474,7 +27822,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x61ef70u, (void *)F_0061ef70},
   {0x61ef80u, (void *)F_0061ef80},
   {0x61efa0u, (void *)F_0061efa0},
-  {0x61efc0u, (void *)W_0061efc0},
+  {0x61efc0u, (void *)F_0061efc0},
   {0x61efe0u, (void *)F_0061efe0},
   {0x61f000u, (void *)F_0061f000},
   {0x61f020u, (void *)F_0061f020},
@@ -27518,7 +27866,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x61fdb0u, (void *)F_0061fdb0},
   {0x61fdc0u, (void *)F_0061fdc0},
   {0x61fde0u, (void *)F_0061fde0},
-  {0x61fe10u, (void *)F_0061fe10},
+  {0x61fe10u, (void *)W_0061fe10},
   {0x61fe30u, (void *)W_0061fe30},
   {0x61fe90u, (void *)F_0061fe90},
   {0x62002eu, (void *)F_0062002e},
@@ -27553,18 +27901,18 @@ const GEN_JUMP g_genJumps[] = {
   {0x621030u, (void *)F_00621030},
   {0x621070u, (void *)F_00621070},
   {0x6210a0u, (void *)F_006210a0},
-  {0x621100u, (void *)F_00621100},
-  {0x621130u, (void *)F_00621130},
+  {0x621100u, (void *)W_00621100},
+  {0x621130u, (void *)W_00621130},
   {0x621190u, (void *)W_00621190},
   {0x6211a0u, (void *)F_006211a0},
   {0x6211e0u, (void *)F_006211e0},
   {0x6211f0u, (void *)F_006211f0},
   {0x621200u, (void *)F_00621200},
-  {0x621220u, (void *)F_00621220},
-  {0x621250u, (void *)F_00621250},
+  {0x621220u, (void *)W_00621220},
+  {0x621250u, (void *)W_00621250},
   {0x621270u, (void *)F_00621270},
   {0x621290u, (void *)F_00621290},
-  {0x6212b0u, (void *)F_006212b0},
+  {0x6212b0u, (void *)W_006212b0},
   {0x6212d0u, (void *)F_006212d0},
   {0x621320u, (void *)F_00621320},
   {0x621470u, (void *)F_00621470},
@@ -27625,7 +27973,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x623320u, (void *)F_00623320},
   {0x623360u, (void *)W_00623360},
   {0x6233a0u, (void *)F_006233a0},
-  {0x6233b0u, (void *)F_006233b0},
+  {0x6233b0u, (void *)W_006233b0},
   {0x6233d0u, (void *)F_006233d0},
   {0x623400u, (void *)W_00623400},
   {0x623440u, (void *)F_00623440},
@@ -27699,7 +28047,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x625d30u, (void *)W_00625d30},
   {0x625e20u, (void *)F_00625e20},
   {0x626610u, (void *)F_00626610},
-  {0x626f6au, (void *)F_00626f6a},
   {0x626fe0u, (void *)F_00626fe0},
   {0x6270a0u, (void *)F_006270a0},
   {0x627170u, (void *)F_00627170},
@@ -27791,7 +28138,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x62f120u, (void *)W_0062f120},
   {0x62f350u, (void *)W_0062f350},
   {0x62fac0u, (void *)W_0062fac0},
-  {0x6302f0u, (void *)W_006302f0},
+  {0x6302f0u, (void *)F_006302f0},
   {0x6314f0u, (void *)W_006314f0},
   {0x6322a0u, (void *)W_006322a0},
   {0x632400u, (void *)W_00632400},
@@ -27823,9 +28170,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x635e30u, (void *)W_00635e30},
   {0x636270u, (void *)F_00636270},
   {0x636370u, (void *)F_00636370},
-  {0x636573u, (void *)F_00636573},
   {0x636870u, (void *)F_00636870},
-  {0x63704eu, (void *)F_0063704e},
   {0x6371c0u, (void *)F_006371c0},
   {0x6374d0u, (void *)F_006374d0},
   {0x6379a0u, (void *)F_006379a0},
@@ -27897,11 +28242,11 @@ const GEN_JUMP g_genJumps[] = {
   {0x63df50u, (void *)F_0063df50},
   {0x63e690u, (void *)F_0063e690},
   {0x63ecd0u, (void *)F_0063ecd0},
-  {0x63f750u, (void *)W_0063f750},
+  {0x63f750u, (void *)F_0063f750},
   {0x6405d0u, (void *)F_006405d0},
   {0x6406f0u, (void *)F_006406f0},
   {0x6407c0u, (void *)F_006407c0},
-  {0x640bd0u, (void *)W_00640bd0},
+  {0x640bd0u, (void *)F_00640bd0},
   {0x6411c0u, (void *)W_006411c0},
   {0x6413a0u, (void *)F_006413a0},
   {0x641410u, (void *)W_00641410},
@@ -27995,7 +28340,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x655e50u, (void *)F_00655e50},
   {0x655ef0u, (void *)F_00655ef0},
   {0x656380u, (void *)F_00656380},
-  {0x65645fu, (void *)F_0065645f},
   {0x6564b0u, (void *)F_006564b0},
   {0x656940u, (void *)F_00656940},
   {0x656bf0u, (void *)F_00656bf0},
@@ -28013,7 +28357,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x657e90u, (void *)F_00657e90},
   {0x657ed0u, (void *)F_00657ed0},
   {0x657f30u, (void *)W_00657f30},
-  {0x657f80u, (void *)W_00657f80},
+  {0x657f80u, (void *)F_00657f80},
   {0x658340u, (void *)F_00658340},
   {0x6583e0u, (void *)F_006583e0},
   {0x658490u, (void *)F_00658490},
@@ -28078,7 +28422,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x65e5c0u, (void *)F_0065e5c0},
   {0x65e690u, (void *)F_0065e690},
   {0x65e6c0u, (void *)F_0065e6c0},
-  {0x65e730u, (void *)W_0065e730},
+  {0x65e730u, (void *)F_0065e730},
   {0x65e850u, (void *)F_0065e850},
   {0x65e880u, (void *)F_0065e880},
   {0x65e8b0u, (void *)F_0065e8b0},
@@ -28192,7 +28536,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6614e0u, (void *)F_006614e0},
   {0x661550u, (void *)F_00661550},
   {0x6615f0u, (void *)W_006615f0},
-  {0x661670u, (void *)F_00661670},
+  {0x661670u, (void *)W_00661670},
   {0x661690u, (void *)F_00661690},
   {0x6616b0u, (void *)F_006616b0},
   {0x661700u, (void *)F_00661700},
@@ -28499,14 +28843,12 @@ const GEN_JUMP g_genJumps[] = {
   {0x6664c0u, (void *)F_006664c0},
   {0x666500u, (void *)F_00666500},
   {0x666550u, (void *)F_00666550},
-  {0x666572u, (void *)F_00666572},
   {0x666590u, (void *)F_00666590},
   {0x6665c0u, (void *)F_006665c0},
   {0x666600u, (void *)F_00666600},
   {0x666630u, (void *)F_00666630},
   {0x666640u, (void *)W_00666640},
   {0x666660u, (void *)W_00666660},
-  {0x66666fu, (void *)F_0066666f},
   {0x666680u, (void *)W_00666680},
   {0x6666a0u, (void *)W_006666a0},
   {0x6666c0u, (void *)F_006666c0},
@@ -28557,7 +28899,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x666ca0u, (void *)F_00666ca0},
   {0x666cd0u, (void *)F_00666cd0},
   {0x666d70u, (void *)F_00666d70},
-  {0x666e10u, (void *)W_00666e10},
+  {0x666e10u, (void *)F_00666e10},
   {0x666fd0u, (void *)W_00666fd0},
   {0x666fe0u, (void *)W_00666fe0},
   {0x667000u, (void *)W_00667000},
@@ -28633,7 +28975,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x668150u, (void *)F_00668150},
   {0x668180u, (void *)F_00668180},
   {0x6681b0u, (void *)F_006681b0},
-  {0x6681f0u, (void *)F_006681f0},
+  {0x6681f0u, (void *)W_006681f0},
   {0x668230u, (void *)F_00668230},
   {0x668280u, (void *)F_00668280},
   {0x6682b0u, (void *)F_006682b0},
@@ -29195,14 +29537,14 @@ const GEN_JUMP g_genJumps[] = {
   {0x6767d0u, (void *)F_006767d0},
   {0x676850u, (void *)F_00676850},
   {0x676880u, (void *)F_00676880},
-  {0x676920u, (void *)F_00676920},
+  {0x676920u, (void *)W_00676920},
   {0x6769a0u, (void *)W_006769a0},
   {0x6769e0u, (void *)W_006769e0},
   {0x676a20u, (void *)F_00676a20},
   {0x676bd0u, (void *)F_00676bd0},
   {0x676c00u, (void *)F_00676c00},
-  {0x676c30u, (void *)F_00676c30},
-  {0x676cb0u, (void *)F_00676cb0},
+  {0x676c30u, (void *)W_00676c30},
+  {0x676cb0u, (void *)W_00676cb0},
   {0x676e60u, (void *)F_00676e60},
   {0x676f60u, (void *)F_00676f60},
   {0x677010u, (void *)F_00677010},
@@ -29213,7 +29555,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x677320u, (void *)F_00677320},
   {0x677380u, (void *)F_00677380},
   {0x6773f0u, (void *)F_006773f0},
-  {0x677541u, (void *)F_00677541},
   {0x677550u, (void *)F_00677550},
   {0x677570u, (void *)F_00677570},
   {0x677590u, (void *)F_00677590},
@@ -29316,7 +29657,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x67efb0u, (void *)W_0067efb0},
   {0x67f1c0u, (void *)F_0067f1c0},
   {0x67f3e0u, (void *)W_0067f3e0},
-  {0x67fb80u, (void *)W_0067fb80},
+  {0x67fb80u, (void *)F_0067fb80},
   {0x682f10u, (void *)F_00682f10},
   {0x6835d0u, (void *)F_006835d0},
   {0x684040u, (void *)W_00684040},
@@ -29396,8 +29737,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x6887f0u, (void *)W_006887f0},
   {0x688800u, (void *)F_00688800},
   {0x688810u, (void *)F_00688810},
-  {0x688870u, (void *)F_00688870},
-  {0x688890u, (void *)F_00688890},
+  {0x688870u, (void *)W_00688870},
+  {0x688890u, (void *)W_00688890},
   {0x688910u, (void *)F_00688910},
   {0x688990u, (void *)F_00688990},
   {0x6889d0u, (void *)F_006889d0},
@@ -29415,7 +29756,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x688ca0u, (void *)F_00688ca0},
   {0x688cd0u, (void *)F_00688cd0},
   {0x688ce0u, (void *)F_00688ce0},
-  {0x688d00u, (void *)F_00688d00},
+  {0x688d00u, (void *)W_00688d00},
   {0x688d10u, (void *)F_00688d10},
   {0x688d20u, (void *)F_00688d20},
   {0x688d30u, (void *)F_00688d30},
@@ -29427,8 +29768,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x688e90u, (void *)F_00688e90},
   {0x688eb0u, (void *)F_00688eb0},
   {0x688ed0u, (void *)F_00688ed0},
-  {0x688ef0u, (void *)F_00688ef0},
-  {0x688f10u, (void *)W_00688f10},
+  {0x688ef0u, (void *)W_00688ef0},
+  {0x688f10u, (void *)F_00688f10},
   {0x688f30u, (void *)W_00688f30},
   {0x688f50u, (void *)F_00688f50},
   {0x688fa0u, (void *)F_00688fa0},
@@ -29444,7 +29785,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x689200u, (void *)W_00689200},
   {0x689210u, (void *)F_00689210},
   {0x689220u, (void *)F_00689220},
-  {0x689270u, (void *)F_00689270},
+  {0x689270u, (void *)W_00689270},
   {0x689280u, (void *)F_00689280},
   {0x6892b0u, (void *)W_006892b0},
   {0x6892f0u, (void *)F_006892f0},
@@ -29467,7 +29808,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x689510u, (void *)F_00689510},
   {0x689520u, (void *)F_00689520},
   {0x689530u, (void *)F_00689530},
-  {0x689560u, (void *)F_00689560},
+  {0x689560u, (void *)W_00689560},
   {0x689570u, (void *)F_00689570},
   {0x6895d0u, (void *)F_006895d0},
   {0x689610u, (void *)F_00689610},
@@ -29538,7 +29879,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x68af50u, (void *)F_0068af50},
   {0x68af90u, (void *)F_0068af90},
   {0x68afb0u, (void *)F_0068afb0},
-  {0x68afe0u, (void *)F_0068afe0},
+  {0x68afe0u, (void *)W_0068afe0},
   {0x68aff0u, (void *)F_0068aff0},
   {0x68b010u, (void *)F_0068b010},
   {0x68b020u, (void *)F_0068b020},
@@ -29548,7 +29889,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x68b080u, (void *)F_0068b080},
   {0x68b090u, (void *)F_0068b090},
   {0x68b1a0u, (void *)W_0068b1a0},
-  {0x68b1e0u, (void *)F_0068b1e0},
+  {0x68b1e0u, (void *)W_0068b1e0},
   {0x68b210u, (void *)W_0068b210},
   {0x68b380u, (void *)F_0068b380},
   {0x68b390u, (void *)F_0068b390},
@@ -29636,7 +29977,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x68d9c0u, (void *)W_0068d9c0},
   {0x68d9e0u, (void *)F_0068d9e0},
   {0x68da00u, (void *)F_0068da00},
-  {0x68da20u, (void *)W_0068da20},
+  {0x68da20u, (void *)F_0068da20},
   {0x68da60u, (void *)F_0068da60},
   {0x68da90u, (void *)W_0068da90},
   {0x68db00u, (void *)F_0068db00},
@@ -29644,7 +29985,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x68db80u, (void *)F_0068db80},
   {0x68dc00u, (void *)F_0068dc00},
   {0x68dc50u, (void *)F_0068dc50},
-  {0x68dd30u, (void *)W_0068dd30},
+  {0x68dd30u, (void *)F_0068dd30},
   {0x68e000u, (void *)W_0068e000},
   {0x68e040u, (void *)W_0068e040},
   {0x68e090u, (void *)F_0068e090},
@@ -29688,7 +30029,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x68f390u, (void *)W_0068f390},
   {0x68f3e0u, (void *)W_0068f3e0},
   {0x68f430u, (void *)F_0068f430},
-  {0x68f480u, (void *)F_0068f480},
+  {0x68f480u, (void *)W_0068f480},
   {0x68f4a0u, (void *)F_0068f4a0},
   {0x68f510u, (void *)W_0068f510},
   {0x68f560u, (void *)W_0068f560},
@@ -29732,7 +30073,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x690710u, (void *)F_00690710},
   {0x690d40u, (void *)F_00690d40},
   {0x690e20u, (void *)F_00690e20},
-  {0x690f90u, (void *)W_00690f90},
+  {0x690f90u, (void *)F_00690f90},
   {0x691130u, (void *)F_00691130},
   {0x691170u, (void *)F_00691170},
   {0x6911a0u, (void *)F_006911a0},
@@ -30012,7 +30353,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6a69d0u, (void *)F_006a69d0},
   {0x6a6af0u, (void *)F_006a6af0},
   {0x6a6c00u, (void *)F_006a6c00},
-  {0x6a6e70u, (void *)W_006a6e70},
+  {0x6a6e70u, (void *)F_006a6e70},
   {0x6a7140u, (void *)F_006a7140},
   {0x6a7260u, (void *)F_006a7260},
   {0x6a72a0u, (void *)F_006a72a0},
@@ -30038,7 +30379,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6a86f0u, (void *)F_006a86f0},
   {0x6a8790u, (void *)F_006a8790},
   {0x6a8830u, (void *)F_006a8830},
-  {0x6a88c0u, (void *)W_006a88c0},
+  {0x6a88c0u, (void *)F_006a88c0},
   {0x6a88d0u, (void *)F_006a88d0},
   {0x6a8900u, (void *)F_006a8900},
   {0x6a8960u, (void *)F_006a8960},
@@ -30114,7 +30455,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6aea30u, (void *)F_006aea30},
   {0x6aea50u, (void *)F_006aea50},
   {0x6aea80u, (void *)W_006aea80},
-  {0x6aeaf0u, (void *)F_006aeaf0},
+  {0x6aeaf0u, (void *)W_006aeaf0},
   {0x6aeb20u, (void *)F_006aeb20},
   {0x6aeb80u, (void *)F_006aeb80},
   {0x6aebb0u, (void *)F_006aebb0},
@@ -30133,7 +30474,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6af260u, (void *)F_006af260},
   {0x6af280u, (void *)F_006af280},
   {0x6af2b0u, (void *)F_006af2b0},
-  {0x6af2d0u, (void *)F_006af2d0},
+  {0x6af2d0u, (void *)W_006af2d0},
   {0x6af2f0u, (void *)F_006af2f0},
   {0x6af310u, (void *)F_006af310},
   {0x6af340u, (void *)F_006af340},
@@ -30178,7 +30519,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6afc20u, (void *)F_006afc20},
   {0x6afc30u, (void *)F_006afc30},
   {0x6afc80u, (void *)F_006afc80},
-  {0x6afce0u, (void *)F_006afce0},
+  {0x6afce0u, (void *)W_006afce0},
   {0x6afd20u, (void *)F_006afd20},
   {0x6afd30u, (void *)F_006afd30},
   {0x6afd90u, (void *)F_006afd90},
@@ -30300,7 +30641,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6b1390u, (void *)F_006b1390},
   {0x6b13d0u, (void *)F_006b13d0},
   {0x6b1440u, (void *)W_006b1440},
-  {0x6b14a0u, (void *)W_006b14a0},
+  {0x6b14a0u, (void *)F_006b14a0},
   {0x6b1500u, (void *)F_006b1500},
   {0x6b1530u, (void *)F_006b1530},
   {0x6b1540u, (void *)F_006b1540},
@@ -30765,8 +31106,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x6b89d0u, (void *)F_006b89d0},
   {0x6b8b20u, (void *)F_006b8b20},
   {0x6b8b50u, (void *)F_006b8b50},
-  {0x6b8bc0u, (void *)F_006b8bc0},
-  {0x6b8be0u, (void *)F_006b8be0},
+  {0x6b8bc0u, (void *)W_006b8bc0},
+  {0x6b8be0u, (void *)W_006b8be0},
   {0x6b8c00u, (void *)F_006b8c00},
   {0x6b8c30u, (void *)W_006b8c30},
   {0x6b8cd0u, (void *)F_006b8cd0},
@@ -31336,7 +31677,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6c40f0u, (void *)W_006c40f0},
   {0x6c4140u, (void *)F_006c4140},
   {0x6c41b0u, (void *)W_006c41b0},
-  {0x6c41f0u, (void *)F_006c41f0},
+  {0x6c41f0u, (void *)W_006c41f0},
   {0x6c4220u, (void *)W_006c4220},
   {0x6c4250u, (void *)F_006c4250},
   {0x6c4270u, (void *)F_006c4270},
@@ -31386,7 +31727,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6c5860u, (void *)F_006c5860},
   {0x6c5900u, (void *)F_006c5900},
   {0x6c5940u, (void *)F_006c5940},
-  {0x6c5980u, (void *)W_006c5980},
+  {0x6c5980u, (void *)F_006c5980},
   {0x6c5ae0u, (void *)F_006c5ae0},
   {0x6c5b30u, (void *)F_006c5b30},
   {0x6c5b80u, (void *)F_006c5b80},
@@ -31398,7 +31739,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x6c5fb0u, (void *)F_006c5fb0},
   {0x6c5ff0u, (void *)F_006c5ff0},
   {0x6c6040u, (void *)F_006c6040},
-  {0x6c616cu, (void *)F_006c616c},
   {0x6c62c0u, (void *)F_006c62c0},
   {0x6c6380u, (void *)F_006c6380},
   {0x6c64b0u, (void *)F_006c64b0},
@@ -31414,19 +31754,16 @@ const GEN_JUMP g_genJumps[] = {
   {0x6c6820u, (void *)F_006c6820},
   {0x6c6880u, (void *)F_006c6880},
   {0x6c68e0u, (void *)F_006c68e0},
-  {0x6c6947u, (void *)F_006c6947},
   {0x6c6960u, (void *)F_006c6960},
   {0x6c6a20u, (void *)F_006c6a20},
   {0x6c6b70u, (void *)F_006c6b70},
   {0x6c6bc0u, (void *)F_006c6bc0},
   {0x6c6c60u, (void *)F_006c6c60},
-  {0x6c6c61u, (void *)F_006c6c61},
   {0x6c6d00u, (void *)F_006c6d00},
   {0x6c6d80u, (void *)F_006c6d80},
   {0x6c6e00u, (void *)F_006c6e00},
   {0x6c6e80u, (void *)F_006c6e80},
   {0x6c6f00u, (void *)F_006c6f00},
-  {0x6c6f63u, (void *)F_006c6f63},
   {0x6c6f80u, (void *)F_006c6f80},
   {0x6c7010u, (void *)F_006c7010},
   {0x6c7080u, (void *)F_006c7080},
@@ -31436,7 +31773,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x6c72e0u, (void *)F_006c72e0},
   {0x6c7380u, (void *)F_006c7380},
   {0x6c73e0u, (void *)F_006c73e0},
-  {0x6c7442u, (void *)F_006c7442},
   {0x6c7460u, (void *)W_006c7460},
   {0x6c74f0u, (void *)F_006c74f0},
   {0x6c754au, (void *)F_006c754a},
@@ -31834,8 +32170,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x6d7400u, (void *)F_006d7400},
   {0x6d7440u, (void *)W_006d7440},
   {0x6d7550u, (void *)F_006d7550},
-  {0x6d7553u, (void *)F_006d7553},
-  {0x6d756eu, (void *)F_006d756e},
   {0x6d75f0u, (void *)F_006d75f0},
   {0x6d7620u, (void *)F_006d7620},
   {0x6d7810u, (void *)F_006d7810},
@@ -32204,7 +32538,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x6e7480u, (void *)F_006e7480},
   {0x6e754au, (void *)F_006e754a},
   {0x6e7550u, (void *)F_006e7550},
-  {0x6e7553u, (void *)F_006e7553},
   {0x6e7567u, (void *)F_006e7567},
   {0x6e7620u, (void *)F_006e7620},
   {0x6e7670u, (void *)F_006e7670},
@@ -32213,7 +32546,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x6e7764u, (void *)F_006e7764},
   {0x6e77b0u, (void *)F_006e77b0},
   {0x6e7850u, (void *)F_006e7850},
-  {0x6e795fu, (void *)F_006e795f},
   {0x6e7ad0u, (void *)F_006e7ad0},
   {0x6e8010u, (void *)F_006e8010},
   {0x6e80c0u, (void *)F_006e80c0},
@@ -32512,7 +32844,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x6f8e70u, (void *)F_006f8e70},
   {0x6f8f10u, (void *)F_006f8f10},
   {0x6f92a0u, (void *)F_006f92a0},
-  {0x6f92d0u, (void *)W_006f92d0},
+  {0x6f92d0u, (void *)F_006f92d0},
   {0x6f95e0u, (void *)F_006f95e0},
   {0x6f9890u, (void *)F_006f9890},
   {0x6f98c0u, (void *)F_006f98c0},
@@ -32758,7 +33090,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x705560u, (void *)F_00705560},
   {0x705d80u, (void *)F_00705d80},
   {0x705e20u, (void *)F_00705e20},
-  {0x706553u, (void *)F_00706553},
   {0x706560u, (void *)F_00706560},
   {0x7067b0u, (void *)F_007067b0},
   {0x706970u, (void *)F_00706970},
@@ -32769,7 +33100,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x707450u, (void *)F_00707450},
   {0x707610u, (void *)F_00707610},
   {0x707760u, (void *)F_00707760},
-  {0x707845u, (void *)F_00707845},
   {0x707940u, (void *)F_00707940},
   {0x708e00u, (void *)F_00708e00},
   {0x708fe0u, (void *)W_00708fe0},
@@ -32862,7 +33192,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x715890u, (void *)F_00715890},
   {0x715b90u, (void *)F_00715b90},
   {0x716020u, (void *)W_00716020},
-  {0x716166u, (void *)F_00716166},
   {0x716450u, (void *)F_00716450},
   {0x716830u, (void *)F_00716830},
   {0x716af0u, (void *)F_00716af0},
@@ -33728,7 +34057,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x7268e0u, (void *)F_007268e0},
   {0x726940u, (void *)F_00726940},
   {0x726960u, (void *)F_00726960},
-  {0x726972u, (void *)F_00726972},
   {0x7269b0u, (void *)F_007269b0},
   {0x7269d0u, (void *)F_007269d0},
   {0x726a10u, (void *)F_00726a10},
@@ -33760,7 +34088,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x726fd0u, (void *)F_00726fd0},
   {0x726ff0u, (void *)F_00726ff0},
   {0x727020u, (void *)F_00727020},
-  {0x727041u, (void *)F_00727041},
   {0x727050u, (void *)F_00727050},
   {0x727080u, (void *)F_00727080},
   {0x7270a0u, (void *)F_007270a0},
@@ -34855,12 +35182,9 @@ const GEN_JUMP g_genJumps[] = {
   {0x7361b0u, (void *)W_007361b0},
   {0x736260u, (void *)W_00736260},
   {0x736310u, (void *)W_00736310},
-  {0x736363u, (void *)F_00736363},
   {0x7363c0u, (void *)W_007363c0},
   {0x736470u, (void *)W_00736470},
   {0x736520u, (void *)W_00736520},
-  {0x736572u, (void *)F_00736572},
-  {0x736579u, (void *)F_00736579},
   {0x7365d0u, (void *)W_007365d0},
   {0x736680u, (void *)F_00736680},
   {0x7366d0u, (void *)F_007366d0},
@@ -34869,7 +35193,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x7367c0u, (void *)F_007367c0},
   {0x736810u, (void *)F_00736810},
   {0x736860u, (void *)F_00736860},
-  {0x736863u, (void *)F_00736863},
   {0x7368b0u, (void *)F_007368b0},
   {0x736900u, (void *)F_00736900},
   {0x736950u, (void *)F_00736950},
@@ -34889,7 +35212,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x736e80u, (void *)F_00736e80},
   {0x736ee0u, (void *)F_00736ee0},
   {0x736f40u, (void *)F_00736f40},
-  {0x736f63u, (void *)F_00736f63},
   {0x736fa0u, (void *)F_00736fa0},
   {0x737000u, (void *)F_00737000},
   {0x737060u, (void *)F_00737060},
@@ -35736,7 +36058,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x746800u, (void *)F_00746800},
   {0x746830u, (void *)F_00746830},
   {0x746850u, (void *)F_00746850},
-  {0x746863u, (void *)F_00746863},
   {0x746870u, (void *)F_00746870},
   {0x746890u, (void *)F_00746890},
   {0x7468b0u, (void *)F_007468b0},
@@ -35753,7 +36074,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x746d00u, (void *)F_00746d00},
   {0x746d20u, (void *)F_00746d20},
   {0x746e00u, (void *)F_00746e00},
-  {0x746e69u, (void *)F_00746e69},
   {0x746ee0u, (void *)F_00746ee0},
   {0x747000u, (void *)F_00747000},
   {0x7470e0u, (void *)F_007470e0},
@@ -35762,7 +36082,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x747230u, (void *)F_00747230},
   {0x747250u, (void *)F_00747250},
   {0x747270u, (void *)F_00747270},
-  {0x74733cu, (void *)F_0074733c},
   {0x747350u, (void *)F_00747350},
   {0x747580u, (void *)F_00747580},
   {0x7477b0u, (void *)F_007477b0},
@@ -36639,10 +36958,10 @@ const GEN_JUMP g_genJumps[] = {
   {0x75d720u, (void *)F_0075d720},
   {0x75d740u, (void *)F_0075d740},
   {0x75d750u, (void *)F_0075d750},
-  {0x75d790u, (void *)F_0075d790},
-  {0x75d7b0u, (void *)F_0075d7b0},
+  {0x75d790u, (void *)W_0075d790},
+  {0x75d7b0u, (void *)W_0075d7b0},
   {0x75d7d0u, (void *)W_0075d7d0},
-  {0x75d7f0u, (void *)F_0075d7f0},
+  {0x75d7f0u, (void *)W_0075d7f0},
   {0x75d810u, (void *)W_0075d810},
   {0x75d830u, (void *)F_0075d830},
   {0x75d840u, (void *)W_0075d840},
@@ -36837,9 +37156,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x766960u, (void *)F_00766960},
   {0x7669a0u, (void *)F_007669a0},
   {0x766bc0u, (void *)F_00766bc0},
-  {0x766c67u, (void *)F_00766c67},
   {0x766f40u, (void *)F_00766f40},
-  {0x766f66u, (void *)F_00766f66},
   {0x7673b0u, (void *)F_007673b0},
   {0x7675e0u, (void *)F_007675e0},
   {0x7676d0u, (void *)W_007676d0},
@@ -37266,8 +37583,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x776f00u, (void *)F_00776f00},
   {0x776f30u, (void *)F_00776f30},
   {0x776f60u, (void *)F_00776f60},
-  {0x776f62u, (void *)F_00776f62},
-  {0x776f70u, (void *)F_00776f70},
   {0x776fa0u, (void *)F_00776fa0},
   {0x7776f0u, (void *)F_007776f0},
   {0x777710u, (void *)F_00777710},
@@ -39168,7 +39483,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x7ad230u, (void *)F_007ad230},
   {0x7ad250u, (void *)W_007ad250},
   {0x7ad280u, (void *)F_007ad280},
-  {0x7ad2a0u, (void *)F_007ad2a0},
+  {0x7ad2a0u, (void *)W_007ad2a0},
   {0x7ad300u, (void *)F_007ad300},
   {0x7ad330u, (void *)F_007ad330},
   {0x7ad350u, (void *)F_007ad350},
@@ -39204,7 +39519,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x7ae3c0u, (void *)F_007ae3c0},
   {0x7ae520u, (void *)W_007ae520},
   {0x7ae540u, (void *)F_007ae540},
-  {0x7ae5a0u, (void *)F_007ae5a0},
+  {0x7ae5a0u, (void *)W_007ae5a0},
   {0x7ae610u, (void *)F_007ae610},
   {0x7ae680u, (void *)F_007ae680},
   {0x7ae6c0u, (void *)F_007ae6c0},
@@ -40015,7 +40330,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x7c8260u, (void *)F_007c8260},
   {0x7c82a0u, (void *)W_007c82a0},
   {0x7c82f0u, (void *)F_007c82f0},
-  {0x7c8330u, (void *)W_007c8330},
+  {0x7c8330u, (void *)F_007c8330},
   {0x7c83b0u, (void *)W_007c83b0},
   {0x7c83d0u, (void *)F_007c83d0},
   {0x7c8420u, (void *)F_007c8420},
@@ -41143,7 +41458,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x807b40u, (void *)F_00807b40},
   {0x807eb0u, (void *)F_00807eb0},
   {0x808060u, (void *)F_00808060},
-  {0x8080e3u, (void *)F_008080e3},
   {0x808170u, (void *)W_00808170},
   {0x808200u, (void *)W_00808200},
   {0x8082f0u, (void *)F_008082f0},
@@ -49197,7 +49511,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9767c0u, (void *)F_009767c0},
   {0x9767e0u, (void *)F_009767e0},
   {0x9767f0u, (void *)F_009767f0},
-  {0x976820u, (void *)F_00976820},
+  {0x976820u, (void *)W_00976820},
   {0x976840u, (void *)F_00976840},
   {0x976880u, (void *)F_00976880},
   {0x976890u, (void *)F_00976890},
@@ -49341,7 +49655,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9799a0u, (void *)F_009799a0},
   {0x9799c0u, (void *)F_009799c0},
   {0x9799e0u, (void *)F_009799e0},
-  {0x979ab0u, (void *)F_00979ab0},
+  {0x979ab0u, (void *)W_00979ab0},
   {0x979ad0u, (void *)F_00979ad0},
   {0x979b10u, (void *)F_00979b10},
   {0x979b40u, (void *)F_00979b40},
@@ -49351,19 +49665,19 @@ const GEN_JUMP g_genJumps[] = {
   {0x979cd0u, (void *)F_00979cd0},
   {0x979d00u, (void *)F_00979d00},
   {0x979d60u, (void *)W_00979d60},
-  {0x979e30u, (void *)F_00979e30},
-  {0x979f10u, (void *)F_00979f10},
+  {0x979e30u, (void *)W_00979e30},
+  {0x979f10u, (void *)W_00979f10},
   {0x979ff0u, (void *)W_00979ff0},
   {0x97a060u, (void *)W_0097a060},
   {0x97a0b0u, (void *)F_0097a0b0},
-  {0x97a140u, (void *)F_0097a140},
-  {0x97a150u, (void *)F_0097a150},
-  {0x97a160u, (void *)F_0097a160},
+  {0x97a140u, (void *)W_0097a140},
+  {0x97a150u, (void *)W_0097a150},
+  {0x97a160u, (void *)W_0097a160},
   {0x97a170u, (void *)F_0097a170},
-  {0x97a220u, (void *)F_0097a220},
-  {0x97a2f0u, (void *)F_0097a2f0},
+  {0x97a220u, (void *)W_0097a220},
+  {0x97a2f0u, (void *)W_0097a2f0},
   {0x97a310u, (void *)F_0097a310},
-  {0x97a3c0u, (void *)F_0097a3c0},
+  {0x97a3c0u, (void *)W_0097a3c0},
   {0x97a490u, (void *)F_0097a490},
   {0x97a4d0u, (void *)F_0097a4d0},
   {0x97a500u, (void *)F_0097a500},
@@ -49371,7 +49685,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x97a610u, (void *)F_0097a610},
   {0x97a620u, (void *)F_0097a620},
   {0x97a650u, (void *)F_0097a650},
-  {0x97a680u, (void *)F_0097a680},
+  {0x97a680u, (void *)W_0097a680},
   {0x97a6f0u, (void *)F_0097a6f0},
   {0x97a700u, (void *)F_0097a700},
   {0x97a750u, (void *)F_0097a750},
@@ -49461,13 +49775,13 @@ const GEN_JUMP g_genJumps[] = {
   {0x97c4b0u, (void *)F_0097c4b0},
   {0x97c510u, (void *)W_0097c510},
   {0x97c5e0u, (void *)W_0097c5e0},
-  {0x97c6b0u, (void *)F_0097c6b0},
+  {0x97c6b0u, (void *)W_0097c6b0},
   {0x97c790u, (void *)W_0097c790},
   {0x97c800u, (void *)W_0097c800},
-  {0x97c850u, (void *)F_0097c850},
-  {0x97c860u, (void *)F_0097c860},
-  {0x97c870u, (void *)F_0097c870},
-  {0x97c880u, (void *)F_0097c880},
+  {0x97c850u, (void *)W_0097c850},
+  {0x97c860u, (void *)W_0097c860},
+  {0x97c870u, (void *)W_0097c870},
+  {0x97c880u, (void *)W_0097c880},
   {0x97c8a0u, (void *)F_0097c8a0},
   {0x97c930u, (void *)F_0097c930},
   {0x97c9a0u, (void *)F_0097c9a0},
@@ -49833,15 +50147,15 @@ const GEN_JUMP g_genJumps[] = {
   {0x986a30u, (void *)F_00986a30},
   {0x986ad0u, (void *)F_00986ad0},
   {0x986bc0u, (void *)F_00986bc0},
-  {0x986c10u, (void *)F_00986c10},
+  {0x986c10u, (void *)W_00986c10},
   {0x986dc0u, (void *)F_00986dc0},
   {0x986e50u, (void *)F_00986e50},
   {0x986e90u, (void *)F_00986e90},
   {0x986f10u, (void *)F_00986f10},
   {0x987100u, (void *)F_00987100},
-  {0x987170u, (void *)F_00987170},
-  {0x9871c0u, (void *)F_009871c0},
-  {0x987210u, (void *)F_00987210},
+  {0x987170u, (void *)W_00987170},
+  {0x9871c0u, (void *)W_009871c0},
+  {0x987210u, (void *)W_00987210},
   {0x987260u, (void *)F_00987260},
   {0x987300u, (void *)F_00987300},
   {0x987390u, (void *)F_00987390},
@@ -49888,9 +50202,9 @@ const GEN_JUMP g_genJumps[] = {
   {0x988d70u, (void *)F_00988d70},
   {0x988fa0u, (void *)F_00988fa0},
   {0x989020u, (void *)F_00989020},
-  {0x9890e0u, (void *)F_009890e0},
+  {0x9890e0u, (void *)W_009890e0},
   {0x9891b0u, (void *)F_009891b0},
-  {0x989260u, (void *)F_00989260},
+  {0x989260u, (void *)W_00989260},
   {0x989330u, (void *)F_00989330},
   {0x989370u, (void *)F_00989370},
   {0x989540u, (void *)F_00989540},
@@ -50034,13 +50348,13 @@ const GEN_JUMP g_genJumps[] = {
   {0x990c50u, (void *)F_00990c50},
   {0x990ca0u, (void *)F_00990ca0},
   {0x990d20u, (void *)W_00990d20},
-  {0x990e90u, (void *)W_00990e90},
-  {0x990f20u, (void *)W_00990f20},
+  {0x990e90u, (void *)F_00990e90},
+  {0x990f20u, (void *)F_00990f20},
   {0x990fc0u, (void *)F_00990fc0},
   {0x991110u, (void *)F_00991110},
   {0x991120u, (void *)F_00991120},
   {0x991150u, (void *)F_00991150},
-  {0x991170u, (void *)W_00991170},
+  {0x991170u, (void *)F_00991170},
   {0x9911d0u, (void *)F_009911d0},
   {0x991200u, (void *)F_00991200},
   {0x991400u, (void *)F_00991400},
@@ -50088,7 +50402,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x994de0u, (void *)F_00994de0},
   {0x994ed0u, (void *)F_00994ed0},
   {0x994f60u, (void *)F_00994f60},
-  {0x995170u, (void *)W_00995170},
+  {0x995170u, (void *)F_00995170},
   {0x9953b0u, (void *)F_009953b0},
   {0x995470u, (void *)F_00995470},
   {0x9954f0u, (void *)F_009954f0},
@@ -50137,7 +50451,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x998bf0u, (void *)F_00998bf0},
   {0x998d80u, (void *)F_00998d80},
   {0x998ee0u, (void *)F_00998ee0},
-  {0x999080u, (void *)F_00999080},
+  {0x999080u, (void *)W_00999080},
   {0x999190u, (void *)F_00999190},
   {0x999390u, (void *)F_00999390},
   {0x999450u, (void *)F_00999450},
@@ -50149,7 +50463,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x99a640u, (void *)F_0099a640},
   {0x99aa20u, (void *)F_0099aa20},
   {0x99ab10u, (void *)F_0099ab10},
-  {0x99abe0u, (void *)W_0099abe0},
+  {0x99abe0u, (void *)F_0099abe0},
   {0x99acb0u, (void *)F_0099acb0},
   {0x99b040u, (void *)F_0099b040},
   {0x99b0c0u, (void *)F_0099b0c0},
@@ -50184,8 +50498,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9a0a20u, (void *)F_009a0a20},
   {0x9a1680u, (void *)F_009a1680},
   {0x9a19a0u, (void *)F_009a19a0},
-  {0x9a1ec0u, (void *)W_009a1ec0},
-  {0x9a1f80u, (void *)W_009a1f80},
+  {0x9a1ec0u, (void *)F_009a1ec0},
+  {0x9a1f80u, (void *)F_009a1f80},
   {0x9a2040u, (void *)F_009a2040},
   {0x9a2060u, (void *)F_009a2060},
   {0x9a2150u, (void *)F_009a2150},
@@ -50201,7 +50515,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9a2b10u, (void *)F_009a2b10},
   {0x9a2bc0u, (void *)F_009a2bc0},
   {0x9a3130u, (void *)W_009a3130},
-  {0x9a31b0u, (void *)W_009a31b0},
+  {0x9a31b0u, (void *)F_009a31b0},
   {0x9a36c0u, (void *)F_009a36c0},
   {0x9a3a70u, (void *)F_009a3a70},
   {0x9a46a0u, (void *)F_009a46a0},
@@ -50230,7 +50544,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9a51f0u, (void *)F_009a51f0},
   {0x9a52c0u, (void *)F_009a52c0},
   {0x9a5320u, (void *)W_009a5320},
-  {0x9a5420u, (void *)W_009a5420},
+  {0x9a5420u, (void *)F_009a5420},
   {0x9a5550u, (void *)F_009a5550},
   {0x9a55d0u, (void *)F_009a55d0},
   {0x9a5640u, (void *)F_009a5640},
@@ -50298,7 +50612,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9af890u, (void *)F_009af890},
   {0x9af950u, (void *)F_009af950},
   {0x9af9e0u, (void *)F_009af9e0},
-  {0x9afaa0u, (void *)W_009afaa0},
+  {0x9afaa0u, (void *)F_009afaa0},
   {0x9afc30u, (void *)F_009afc30},
   {0x9b00d0u, (void *)F_009b00d0},
   {0x9b0fa0u, (void *)F_009b0fa0},
@@ -50318,8 +50632,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9b2b20u, (void *)F_009b2b20},
   {0x9b2c20u, (void *)F_009b2c20},
   {0x9b3040u, (void *)F_009b3040},
-  {0x9b3060u, (void *)W_009b3060},
-  {0x9b32e0u, (void *)W_009b32e0},
+  {0x9b3060u, (void *)F_009b3060},
+  {0x9b32e0u, (void *)F_009b32e0},
   {0x9b3300u, (void *)F_009b3300},
   {0x9b3430u, (void *)F_009b3430},
   {0x9b34b0u, (void *)F_009b34b0},
@@ -50338,8 +50652,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9b68b0u, (void *)F_009b68b0},
   {0x9b7fc0u, (void *)F_009b7fc0},
   {0x9b8500u, (void *)W_009b8500},
-  {0x9b9a50u, (void *)W_009b9a50},
-  {0x9ba9f0u, (void *)W_009ba9f0},
+  {0x9b9a50u, (void *)F_009b9a50},
+  {0x9ba9f0u, (void *)F_009ba9f0},
   {0x9bbe80u, (void *)F_009bbe80},
   {0x9bbeb0u, (void *)F_009bbeb0},
   {0x9bbef0u, (void *)F_009bbef0},
@@ -50465,7 +50779,6 @@ const GEN_JUMP g_genJumps[] = {
   {0x9c7bd0u, (void *)F_009c7bd0},
   {0x9c7cc0u, (void *)F_009c7cc0},
   {0x9c7fd0u, (void *)F_009c7fd0},
-  {0x9c80e2u, (void *)F_009c80e2},
   {0x9c83c0u, (void *)F_009c83c0},
   {0x9c8430u, (void *)F_009c8430},
   {0x9c84a0u, (void *)F_009c84a0},
@@ -50620,8 +50933,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9d9e10u, (void *)F_009d9e10},
   {0x9d9e60u, (void *)F_009d9e60},
   {0x9d9ed0u, (void *)F_009d9ed0},
-  {0x9d9ee0u, (void *)F_009d9ee0},
-  {0x9d9ef0u, (void *)F_009d9ef0},
+  {0x9d9ee0u, (void *)W_009d9ee0},
+  {0x9d9ef0u, (void *)W_009d9ef0},
   {0x9d9f10u, (void *)F_009d9f10},
   {0x9d9f20u, (void *)W_009d9f20},
   {0x9d9f30u, (void *)W_009d9f30},
@@ -50639,36 +50952,36 @@ const GEN_JUMP g_genJumps[] = {
   {0x9da000u, (void *)F_009da000},
   {0x9da010u, (void *)F_009da010},
   {0x9da020u, (void *)F_009da020},
-  {0x9da030u, (void *)F_009da030},
-  {0x9da040u, (void *)F_009da040},
-  {0x9da050u, (void *)F_009da050},
-  {0x9da060u, (void *)F_009da060},
-  {0x9da070u, (void *)F_009da070},
-  {0x9da080u, (void *)F_009da080},
-  {0x9da090u, (void *)F_009da090},
-  {0x9da0a0u, (void *)F_009da0a0},
-  {0x9da0b0u, (void *)F_009da0b0},
-  {0x9da0c0u, (void *)F_009da0c0},
-  {0x9da0d0u, (void *)F_009da0d0},
-  {0x9da0e0u, (void *)F_009da0e0},
-  {0x9da0f0u, (void *)F_009da0f0},
-  {0x9da100u, (void *)F_009da100},
-  {0x9da110u, (void *)F_009da110},
-  {0x9da120u, (void *)F_009da120},
-  {0x9da130u, (void *)F_009da130},
-  {0x9da140u, (void *)F_009da140},
+  {0x9da030u, (void *)W_009da030},
+  {0x9da040u, (void *)W_009da040},
+  {0x9da050u, (void *)W_009da050},
+  {0x9da060u, (void *)W_009da060},
+  {0x9da070u, (void *)W_009da070},
+  {0x9da080u, (void *)W_009da080},
+  {0x9da090u, (void *)W_009da090},
+  {0x9da0a0u, (void *)W_009da0a0},
+  {0x9da0b0u, (void *)W_009da0b0},
+  {0x9da0c0u, (void *)W_009da0c0},
+  {0x9da0d0u, (void *)W_009da0d0},
+  {0x9da0e0u, (void *)W_009da0e0},
+  {0x9da0f0u, (void *)W_009da0f0},
+  {0x9da100u, (void *)W_009da100},
+  {0x9da110u, (void *)W_009da110},
+  {0x9da120u, (void *)W_009da120},
+  {0x9da130u, (void *)W_009da130},
+  {0x9da140u, (void *)W_009da140},
   {0x9da150u, (void *)F_009da150},
-  {0x9da160u, (void *)F_009da160},
-  {0x9da170u, (void *)F_009da170},
-  {0x9da180u, (void *)F_009da180},
-  {0x9da190u, (void *)F_009da190},
+  {0x9da160u, (void *)W_009da160},
+  {0x9da170u, (void *)W_009da170},
+  {0x9da180u, (void *)W_009da180},
+  {0x9da190u, (void *)W_009da190},
   {0x9da1a0u, (void *)F_009da1a0},
   {0x9da1b0u, (void *)F_009da1b0},
   {0x9da1c0u, (void *)F_009da1c0},
   {0x9da1d0u, (void *)F_009da1d0},
   {0x9da1e0u, (void *)F_009da1e0},
-  {0x9da1f0u, (void *)F_009da1f0},
-  {0x9da200u, (void *)F_009da200},
+  {0x9da1f0u, (void *)W_009da1f0},
+  {0x9da200u, (void *)W_009da200},
   {0x9da210u, (void *)F_009da210},
   {0x9da220u, (void *)F_009da220},
   {0x9da230u, (void *)F_009da230},
@@ -50700,8 +51013,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9da3f0u, (void *)F_009da3f0},
   {0x9da410u, (void *)F_009da410},
   {0x9da420u, (void *)F_009da420},
-  {0x9da450u, (void *)F_009da450},
-  {0x9da460u, (void *)F_009da460},
+  {0x9da450u, (void *)W_009da450},
+  {0x9da460u, (void *)W_009da460},
   {0x9da470u, (void *)F_009da470},
   {0x9da480u, (void *)F_009da480},
   {0x9da490u, (void *)F_009da490},
@@ -50755,12 +51068,12 @@ const GEN_JUMP g_genJumps[] = {
   {0x9da7b0u, (void *)F_009da7b0},
   {0x9da7c0u, (void *)W_009da7c0},
   {0x9da7d0u, (void *)F_009da7d0},
-  {0x9da7e0u, (void *)F_009da7e0},
+  {0x9da7e0u, (void *)W_009da7e0},
   {0x9da7f0u, (void *)F_009da7f0},
-  {0x9da800u, (void *)F_009da800},
+  {0x9da800u, (void *)W_009da800},
   {0x9da810u, (void *)F_009da810},
-  {0x9da820u, (void *)F_009da820},
-  {0x9da830u, (void *)F_009da830},
+  {0x9da820u, (void *)W_009da820},
+  {0x9da830u, (void *)W_009da830},
   {0x9da840u, (void *)F_009da840},
   {0x9da8e0u, (void *)F_009da8e0},
   {0x9da8f0u, (void *)F_009da8f0},
@@ -50796,9 +51109,9 @@ const GEN_JUMP g_genJumps[] = {
   {0x9dace0u, (void *)F_009dace0},
   {0x9dacf0u, (void *)F_009dacf0},
   {0x9dad00u, (void *)F_009dad00},
-  {0x9dad30u, (void *)F_009dad30},
+  {0x9dad30u, (void *)W_009dad30},
   {0x9dad50u, (void *)F_009dad50},
-  {0x9dad70u, (void *)F_009dad70},
+  {0x9dad70u, (void *)W_009dad70},
   {0x9dadc0u, (void *)F_009dadc0},
   {0x9dae00u, (void *)F_009dae00},
   {0x9dae30u, (void *)F_009dae30},
@@ -50850,7 +51163,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9dba70u, (void *)F_009dba70},
   {0x9dbaa0u, (void *)W_009dbaa0},
   {0x9dbb30u, (void *)F_009dbb30},
-  {0x9dbb90u, (void *)F_009dbb90},
+  {0x9dbb90u, (void *)W_009dbb90},
   {0x9dbbd0u, (void *)F_009dbbd0},
   {0x9dbcd0u, (void *)F_009dbcd0},
   {0x9dbcf0u, (void *)F_009dbcf0},
@@ -51000,7 +51313,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9ddde0u, (void *)F_009ddde0},
   {0x9dde40u, (void *)F_009dde40},
   {0x9dde60u, (void *)F_009dde60},
-  {0x9dde80u, (void *)F_009dde80},
+  {0x9dde80u, (void *)W_009dde80},
   {0x9ddeb0u, (void *)F_009ddeb0},
   {0x9ddec0u, (void *)F_009ddec0},
   {0x9dded0u, (void *)F_009dded0},
@@ -51157,8 +51470,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9dfc60u, (void *)F_009dfc60},
   {0x9dfc70u, (void *)F_009dfc70},
   {0x9dfc80u, (void *)F_009dfc80},
-  {0x9dfc90u, (void *)F_009dfc90},
-  {0x9dfca0u, (void *)F_009dfca0},
+  {0x9dfc90u, (void *)W_009dfc90},
+  {0x9dfca0u, (void *)W_009dfca0},
   {0x9dfcb0u, (void *)F_009dfcb0},
   {0x9dfcc0u, (void *)F_009dfcc0},
   {0x9dfcd0u, (void *)F_009dfcd0},
@@ -51213,14 +51526,14 @@ const GEN_JUMP g_genJumps[] = {
   {0x9e0000u, (void *)F_009e0000},
   {0x9e0010u, (void *)W_009e0010},
   {0x9e0020u, (void *)F_009e0020},
-  {0x9e0030u, (void *)F_009e0030},
-  {0x9e0040u, (void *)F_009e0040},
-  {0x9e0050u, (void *)F_009e0050},
-  {0x9e0060u, (void *)F_009e0060},
+  {0x9e0030u, (void *)W_009e0030},
+  {0x9e0040u, (void *)W_009e0040},
+  {0x9e0050u, (void *)W_009e0050},
+  {0x9e0060u, (void *)W_009e0060},
   {0x9e0070u, (void *)F_009e0070},
   {0x9e0090u, (void *)F_009e0090},
-  {0x9e00e0u, (void *)F_009e00e0},
-  {0x9e00f0u, (void *)F_009e00f0},
+  {0x9e00e0u, (void *)W_009e00e0},
+  {0x9e00f0u, (void *)W_009e00f0},
   {0x9e0100u, (void *)F_009e0100},
   {0x9e0130u, (void *)F_009e0130},
   {0x9e01b0u, (void *)F_009e01b0},
@@ -51231,12 +51544,12 @@ const GEN_JUMP g_genJumps[] = {
   {0x9e0240u, (void *)F_009e0240},
   {0x9e0270u, (void *)W_009e0270},
   {0x9e0280u, (void *)F_009e0280},
-  {0x9e0290u, (void *)F_009e0290},
+  {0x9e0290u, (void *)W_009e0290},
   {0x9e02a0u, (void *)F_009e02a0},
   {0x9e02d0u, (void *)F_009e02d0},
   {0x9e02e0u, (void *)F_009e02e0},
   {0x9e0310u, (void *)F_009e0310},
-  {0x9e0340u, (void *)F_009e0340},
+  {0x9e0340u, (void *)W_009e0340},
   {0x9e0350u, (void *)F_009e0350},
   {0x9e0380u, (void *)F_009e0380},
   {0x9e03b0u, (void *)F_009e03b0},
@@ -51254,8 +51567,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9e0650u, (void *)F_009e0650},
   {0x9e0660u, (void *)F_009e0660},
   {0x9e0670u, (void *)F_009e0670},
-  {0x9e0680u, (void *)F_009e0680},
-  {0x9e0690u, (void *)F_009e0690},
+  {0x9e0680u, (void *)W_009e0680},
+  {0x9e0690u, (void *)W_009e0690},
   {0x9e06a0u, (void *)F_009e06a0},
   {0x9e06b0u, (void *)F_009e06b0},
   {0x9e06c0u, (void *)F_009e06c0},
@@ -51310,10 +51623,10 @@ const GEN_JUMP g_genJumps[] = {
   {0x9e09d0u, (void *)F_009e09d0},
   {0x9e09e0u, (void *)F_009e09e0},
   {0x9e09f0u, (void *)F_009e09f0},
-  {0x9e0a00u, (void *)F_009e0a00},
-  {0x9e0a10u, (void *)F_009e0a10},
-  {0x9e0a20u, (void *)F_009e0a20},
-  {0x9e0a30u, (void *)F_009e0a30},
+  {0x9e0a00u, (void *)W_009e0a00},
+  {0x9e0a10u, (void *)W_009e0a10},
+  {0x9e0a20u, (void *)W_009e0a20},
+  {0x9e0a30u, (void *)W_009e0a30},
   {0x9e0a40u, (void *)F_009e0a40},
   {0x9e0a50u, (void *)F_009e0a50},
   {0x9e0a60u, (void *)F_009e0a60},
@@ -51378,7 +51691,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9e0eb0u, (void *)F_009e0eb0},
   {0x9e0ec0u, (void *)F_009e0ec0},
   {0x9e0ed0u, (void *)F_009e0ed0},
-  {0x9e0ee0u, (void *)F_009e0ee0},
+  {0x9e0ee0u, (void *)W_009e0ee0},
   {0x9e0ef0u, (void *)F_009e0ef0},
   {0x9e0f00u, (void *)F_009e0f00},
   {0x9e0f10u, (void *)F_009e0f10},
@@ -51617,7 +51930,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9e41c0u, (void *)F_009e41c0},
   {0x9e4280u, (void *)F_009e4280},
   {0x9e4340u, (void *)W_009e4340},
-  {0x9e4400u, (void *)W_009e4400},
+  {0x9e4400u, (void *)F_009e4400},
   {0x9e4500u, (void *)F_009e4500},
   {0x9e45a0u, (void *)F_009e45a0},
   {0x9e45f0u, (void *)F_009e45f0},
@@ -51709,14 +52022,14 @@ const GEN_JUMP g_genJumps[] = {
   {0x9e4d50u, (void *)F_009e4d50},
   {0x9e4d60u, (void *)F_009e4d60},
   {0x9e4d70u, (void *)F_009e4d70},
-  {0x9e4d80u, (void *)F_009e4d80},
-  {0x9e4d90u, (void *)F_009e4d90},
-  {0x9e4da0u, (void *)F_009e4da0},
-  {0x9e4db0u, (void *)F_009e4db0},
+  {0x9e4d80u, (void *)W_009e4d80},
+  {0x9e4d90u, (void *)W_009e4d90},
+  {0x9e4da0u, (void *)W_009e4da0},
+  {0x9e4db0u, (void *)W_009e4db0},
   {0x9e4dc0u, (void *)F_009e4dc0},
   {0x9e4dd0u, (void *)F_009e4dd0},
   {0x9e4de0u, (void *)F_009e4de0},
-  {0x9e4df0u, (void *)F_009e4df0},
+  {0x9e4df0u, (void *)W_009e4df0},
   {0x9e4e00u, (void *)F_009e4e00},
   {0x9e4e10u, (void *)F_009e4e10},
   {0x9e4e20u, (void *)F_009e4e20},
@@ -51785,8 +52098,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9e5310u, (void *)W_009e5310},
   {0x9e5320u, (void *)W_009e5320},
   {0x9e5330u, (void *)W_009e5330},
-  {0x9e5340u, (void *)F_009e5340},
-  {0x9e5350u, (void *)F_009e5350},
+  {0x9e5340u, (void *)W_009e5340},
+  {0x9e5350u, (void *)W_009e5350},
   {0x9e5360u, (void *)F_009e5360},
   {0x9e5370u, (void *)F_009e5370},
   {0x9e53d0u, (void *)F_009e53d0},
@@ -52080,35 +52393,35 @@ const GEN_JUMP g_genJumps[] = {
   {0x9eb7b0u, (void *)F_009eb7b0},
   {0x9eb7c0u, (void *)F_009eb7c0},
   {0x9eb7d0u, (void *)W_009eb7d0},
-  {0x9eb7e0u, (void *)F_009eb7e0},
-  {0x9eb7f0u, (void *)F_009eb7f0},
-  {0x9eb800u, (void *)F_009eb800},
-  {0x9eb810u, (void *)F_009eb810},
-  {0x9eb820u, (void *)F_009eb820},
-  {0x9eb830u, (void *)F_009eb830},
-  {0x9eb840u, (void *)F_009eb840},
-  {0x9eb850u, (void *)F_009eb850},
-  {0x9eb860u, (void *)F_009eb860},
-  {0x9eb870u, (void *)F_009eb870},
-  {0x9eb880u, (void *)F_009eb880},
-  {0x9eb890u, (void *)F_009eb890},
-  {0x9eb8a0u, (void *)F_009eb8a0},
-  {0x9eb8b0u, (void *)F_009eb8b0},
-  {0x9eb8c0u, (void *)F_009eb8c0},
-  {0x9eb8d0u, (void *)F_009eb8d0},
-  {0x9eb8e0u, (void *)F_009eb8e0},
-  {0x9eb8f0u, (void *)F_009eb8f0},
-  {0x9eb900u, (void *)F_009eb900},
-  {0x9eb910u, (void *)F_009eb910},
-  {0x9eb920u, (void *)F_009eb920},
-  {0x9eb930u, (void *)F_009eb930},
+  {0x9eb7e0u, (void *)W_009eb7e0},
+  {0x9eb7f0u, (void *)W_009eb7f0},
+  {0x9eb800u, (void *)W_009eb800},
+  {0x9eb810u, (void *)W_009eb810},
+  {0x9eb820u, (void *)W_009eb820},
+  {0x9eb830u, (void *)W_009eb830},
+  {0x9eb840u, (void *)W_009eb840},
+  {0x9eb850u, (void *)W_009eb850},
+  {0x9eb860u, (void *)W_009eb860},
+  {0x9eb870u, (void *)W_009eb870},
+  {0x9eb880u, (void *)W_009eb880},
+  {0x9eb890u, (void *)W_009eb890},
+  {0x9eb8a0u, (void *)W_009eb8a0},
+  {0x9eb8b0u, (void *)W_009eb8b0},
+  {0x9eb8c0u, (void *)W_009eb8c0},
+  {0x9eb8d0u, (void *)W_009eb8d0},
+  {0x9eb8e0u, (void *)W_009eb8e0},
+  {0x9eb8f0u, (void *)W_009eb8f0},
+  {0x9eb900u, (void *)W_009eb900},
+  {0x9eb910u, (void *)W_009eb910},
+  {0x9eb920u, (void *)W_009eb920},
+  {0x9eb930u, (void *)W_009eb930},
   {0x9eb940u, (void *)W_009eb940},
   {0x9eb950u, (void *)W_009eb950},
   {0x9eb960u, (void *)W_009eb960},
   {0x9eb970u, (void *)W_009eb970},
   {0x9eb980u, (void *)W_009eb980},
-  {0x9eb990u, (void *)F_009eb990},
-  {0x9eb9a0u, (void *)F_009eb9a0},
+  {0x9eb990u, (void *)W_009eb990},
+  {0x9eb9a0u, (void *)W_009eb9a0},
   {0x9eb9b0u, (void *)F_009eb9b0},
   {0x9eb9c0u, (void *)F_009eb9c0},
   {0x9eb9d0u, (void *)F_009eb9d0},
@@ -52327,7 +52640,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9ef110u, (void *)F_009ef110},
   {0x9ef120u, (void *)F_009ef120},
   {0x9ef130u, (void *)F_009ef130},
-  {0x9ef140u, (void *)F_009ef140},
+  {0x9ef140u, (void *)W_009ef140},
   {0x9ef150u, (void *)F_009ef150},
   {0x9ef160u, (void *)F_009ef160},
   {0x9ef170u, (void *)F_009ef170},
@@ -52400,14 +52713,14 @@ const GEN_JUMP g_genJumps[] = {
   {0x9ef720u, (void *)F_009ef720},
   {0x9ef730u, (void *)F_009ef730},
   {0x9ef740u, (void *)F_009ef740},
-  {0x9ef750u, (void *)F_009ef750},
-  {0x9ef760u, (void *)F_009ef760},
-  {0x9ef770u, (void *)F_009ef770},
-  {0x9ef780u, (void *)F_009ef780},
+  {0x9ef750u, (void *)W_009ef750},
+  {0x9ef760u, (void *)W_009ef760},
+  {0x9ef770u, (void *)W_009ef770},
+  {0x9ef780u, (void *)W_009ef780},
   {0x9ef790u, (void *)W_009ef790},
   {0x9ef7a0u, (void *)W_009ef7a0},
   {0x9ef7b0u, (void *)F_009ef7b0},
-  {0x9ef7c0u, (void *)F_009ef7c0},
+  {0x9ef7c0u, (void *)W_009ef7c0},
   {0x9ef7d0u, (void *)F_009ef7d0},
   {0x9ef7e0u, (void *)W_009ef7e0},
   {0x9ef7f0u, (void *)W_009ef7f0},
@@ -52458,8 +52771,8 @@ const GEN_JUMP g_genJumps[] = {
   {0x9efad0u, (void *)W_009efad0},
   {0x9efae0u, (void *)W_009efae0},
   {0x9efaf0u, (void *)W_009efaf0},
-  {0x9efb00u, (void *)F_009efb00},
-  {0x9efb10u, (void *)F_009efb10},
+  {0x9efb00u, (void *)W_009efb00},
+  {0x9efb10u, (void *)W_009efb10},
   {0x9efb20u, (void *)F_009efb20},
   {0x9efb50u, (void *)F_009efb50},
   {0x9efb80u, (void *)F_009efb80},
@@ -52532,7 +52845,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9f0980u, (void *)F_009f0980},
   {0x9f09e0u, (void *)F_009f09e0},
   {0x9f0a00u, (void *)W_009f0a00},
-  {0x9f0a50u, (void *)F_009f0a50},
+  {0x9f0a50u, (void *)W_009f0a50},
   {0x9f0a70u, (void *)F_009f0a70},
   {0x9f0a90u, (void *)F_009f0a90},
   {0x9f0ab0u, (void *)F_009f0ab0},
@@ -52739,7 +53052,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9faae0u, (void *)F_009faae0},
   {0x9fab10u, (void *)F_009fab10},
   {0x9fab40u, (void *)F_009fab40},
-  {0x9fabd0u, (void *)F_009fabd0},
+  {0x9fabd0u, (void *)W_009fabd0},
   {0x9fac00u, (void *)F_009fac00},
   {0x9fad70u, (void *)F_009fad70},
   {0x9fae70u, (void *)F_009fae70},
@@ -52759,7 +53072,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9fb210u, (void *)F_009fb210},
   {0x9fb240u, (void *)F_009fb240},
   {0x9fb280u, (void *)W_009fb280},
-  {0x9fb300u, (void *)F_009fb300},
+  {0x9fb300u, (void *)W_009fb300},
   {0x9fb370u, (void *)F_009fb370},
   {0x9fb3a0u, (void *)F_009fb3a0},
   {0x9fb3e0u, (void *)F_009fb3e0},
@@ -52877,7 +53190,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x9fd1f0u, (void *)F_009fd1f0},
   {0x9fd210u, (void *)F_009fd210},
   {0x9fd240u, (void *)F_009fd240},
-  {0x9fd290u, (void *)F_009fd290},
+  {0x9fd290u, (void *)W_009fd290},
   {0x9fd2f0u, (void *)W_009fd2f0},
   {0x9fd340u, (void *)F_009fd340},
   {0x9fd3f0u, (void *)F_009fd3f0},
@@ -53026,7 +53339,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa00990u, (void *)F_00a00990},
   {0xa00ae0u, (void *)F_00a00ae0},
   {0xa00b90u, (void *)F_00a00b90},
-  {0xa00c00u, (void *)F_00a00c00},
+  {0xa00c00u, (void *)W_00a00c00},
   {0xa00c20u, (void *)F_00a00c20},
   {0xa00c60u, (void *)F_00a00c60},
   {0xa00c80u, (void *)F_00a00c80},
@@ -53209,7 +53522,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa04de0u, (void *)F_00a04de0},
   {0xa04e00u, (void *)W_00a04e00},
   {0xa04e40u, (void *)F_00a04e40},
-  {0xa04e60u, (void *)F_00a04e60},
+  {0xa04e60u, (void *)W_00a04e60},
   {0xa04e80u, (void *)W_00a04e80},
   {0xa04ea0u, (void *)F_00a04ea0},
   {0xa04ec0u, (void *)W_00a04ec0},
@@ -53353,7 +53666,6 @@ const GEN_JUMP g_genJumps[] = {
   {0xa08070u, (void *)F_00a08070},
   {0xa08090u, (void *)F_00a08090},
   {0xa081d0u, (void *)F_00a081d0},
-  {0xa081eeu, (void *)F_00a081ee},
   {0xa082c0u, (void *)F_00a082c0},
   {0xa08300u, (void *)F_00a08300},
   {0xa08340u, (void *)F_00a08340},
@@ -53368,7 +53680,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa087e0u, (void *)F_00a087e0},
   {0xa08960u, (void *)F_00a08960},
   {0xa089c0u, (void *)F_00a089c0},
-  {0xa08ba0u, (void *)F_00a08ba0},
+  {0xa08ba0u, (void *)W_00a08ba0},
   {0xa08bd0u, (void *)F_00a08bd0},
   {0xa08bf0u, (void *)F_00a08bf0},
   {0xa08c00u, (void *)W_00a08c00},
@@ -53553,7 +53865,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa0c8a0u, (void *)F_00a0c8a0},
   {0xa0c8c0u, (void *)F_00a0c8c0},
   {0xa0c8e0u, (void *)F_00a0c8e0},
-  {0xa0c930u, (void *)F_00a0c930},
+  {0xa0c930u, (void *)W_00a0c930},
   {0xa0c950u, (void *)F_00a0c950},
   {0xa0c970u, (void *)F_00a0c970},
   {0xa0c9f0u, (void *)W_00a0c9f0},
@@ -53951,12 +54263,12 @@ const GEN_JUMP g_genJumps[] = {
   {0xa1b2e0u, (void *)F_00a1b2e0},
   {0xa1b390u, (void *)F_00a1b390},
   {0xa1b3b0u, (void *)F_00a1b3b0},
-  {0xa1b3d0u, (void *)W_00a1b3d0},
+  {0xa1b3d0u, (void *)F_00a1b3d0},
   {0xa1b450u, (void *)F_00a1b450},
   {0xa1b470u, (void *)F_00a1b470},
   {0xa1b490u, (void *)F_00a1b490},
-  {0xa1b4c0u, (void *)F_00a1b4c0},
-  {0xa1b4e0u, (void *)F_00a1b4e0},
+  {0xa1b4c0u, (void *)W_00a1b4c0},
+  {0xa1b4e0u, (void *)W_00a1b4e0},
   {0xa1b530u, (void *)F_00a1b530},
   {0xa1b550u, (void *)F_00a1b550},
   {0xa1b570u, (void *)F_00a1b570},
@@ -54001,10 +54313,10 @@ const GEN_JUMP g_genJumps[] = {
   {0xa1d100u, (void *)F_00a1d100},
   {0xa1d250u, (void *)F_00a1d250},
   {0xa1d3a0u, (void *)F_00a1d3a0},
-  {0xa1d470u, (void *)W_00a1d470},
-  {0xa1d4f0u, (void *)W_00a1d4f0},
-  {0xa1d570u, (void *)W_00a1d570},
-  {0xa1d5f0u, (void *)W_00a1d5f0},
+  {0xa1d470u, (void *)F_00a1d470},
+  {0xa1d4f0u, (void *)F_00a1d4f0},
+  {0xa1d570u, (void *)F_00a1d570},
+  {0xa1d5f0u, (void *)F_00a1d5f0},
   {0xa1d660u, (void *)F_00a1d660},
   {0xa1d780u, (void *)W_00a1d780},
   {0xa1d840u, (void *)W_00a1d840},
@@ -54017,9 +54329,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xa1e0b0u, (void *)F_00a1e0b0},
   {0xa1e0d0u, (void *)F_00a1e0d0},
   {0xa1e0f0u, (void *)F_00a1e0f0},
-  {0xa1e160u, (void *)W_00a1e160},
-  {0xa1e180u, (void *)W_00a1e180},
-  {0xa1e1d0u, (void *)W_00a1e1d0},
+  {0xa1e160u, (void *)F_00a1e160},
+  {0xa1e180u, (void *)F_00a1e180},
+  {0xa1e1d0u, (void *)F_00a1e1d0},
   {0xa1e1f0u, (void *)F_00a1e1f0},
   {0xa1e2e0u, (void *)F_00a1e2e0},
   {0xa1e380u, (void *)F_00a1e380},
@@ -54030,9 +54342,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xa1e5f0u, (void *)F_00a1e5f0},
   {0xa1e7d0u, (void *)F_00a1e7d0},
   {0xa1ea10u, (void *)F_00a1ea10},
-  {0xa1eab0u, (void *)W_00a1eab0},
-  {0xa1eb70u, (void *)W_00a1eb70},
-  {0xa1ec20u, (void *)W_00a1ec20},
+  {0xa1eab0u, (void *)F_00a1eab0},
+  {0xa1eb70u, (void *)F_00a1eb70},
+  {0xa1ec20u, (void *)F_00a1ec20},
   {0xa1ec40u, (void *)F_00a1ec40},
   {0xa1f090u, (void *)F_00a1f090},
   {0xa1f1d0u, (void *)F_00a1f1d0},
@@ -54769,7 +55081,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa35000u, (void *)F_00a35000},
   {0xa35200u, (void *)F_00a35200},
   {0xa35220u, (void *)F_00a35220},
-  {0xa352b0u, (void *)F_00a352b0},
+  {0xa352b0u, (void *)W_00a352b0},
   {0xa352d0u, (void *)F_00a352d0},
   {0xa35320u, (void *)F_00a35320},
   {0xa35330u, (void *)F_00a35330},
@@ -54792,7 +55104,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa357a0u, (void *)F_00a357a0},
   {0xa35a90u, (void *)F_00a35a90},
   {0xa35bb0u, (void *)F_00a35bb0},
-  {0xa35c90u, (void *)F_00a35c90},
+  {0xa35c90u, (void *)W_00a35c90},
   {0xa35cb0u, (void *)W_00a35cb0},
   {0xa35d00u, (void *)F_00a35d00},
   {0xa35e40u, (void *)F_00a35e40},
@@ -55097,7 +55409,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa4a1d0u, (void *)F_00a4a1d0},
   {0xa4a200u, (void *)F_00a4a200},
   {0xa4a5a0u, (void *)F_00a4a5a0},
-  {0xa4a720u, (void *)F_00a4a720},
+  {0xa4a720u, (void *)W_00a4a720},
   {0xa4a760u, (void *)F_00a4a760},
   {0xa4a790u, (void *)W_00a4a790},
   {0xa4a810u, (void *)F_00a4a810},
@@ -55207,7 +55519,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa4df70u, (void *)F_00a4df70},
   {0xa4df80u, (void *)F_00a4df80},
   {0xa4dfa0u, (void *)W_00a4dfa0},
-  {0xa4e020u, (void *)F_00a4e020},
+  {0xa4e020u, (void *)W_00a4e020},
   {0xa4e040u, (void *)F_00a4e040},
   {0xa4e070u, (void *)F_00a4e070},
   {0xa4e0a0u, (void *)F_00a4e0a0},
@@ -55429,8 +55741,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xa5c7e0u, (void *)F_00a5c7e0},
   {0xa5c7f0u, (void *)F_00a5c7f0},
   {0xa5c810u, (void *)W_00a5c810},
-  {0xa5c840u, (void *)F_00a5c840},
-  {0xa5c880u, (void *)F_00a5c880},
+  {0xa5c840u, (void *)W_00a5c840},
+  {0xa5c880u, (void *)W_00a5c880},
   {0xa5c8c0u, (void *)F_00a5c8c0},
   {0xa5c8e0u, (void *)F_00a5c8e0},
   {0xa5c8f0u, (void *)F_00a5c8f0},
@@ -55632,7 +55944,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa5ef80u, (void *)W_00a5ef80},
   {0xa5efe0u, (void *)F_00a5efe0},
   {0xa5f000u, (void *)F_00a5f000},
-  {0xa5f010u, (void *)F_00a5f010},
+  {0xa5f010u, (void *)W_00a5f010},
   {0xa5f030u, (void *)F_00a5f030},
   {0xa5f060u, (void *)W_00a5f060},
   {0xa5f080u, (void *)F_00a5f080},
@@ -55735,7 +56047,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa61fd0u, (void *)F_00a61fd0},
   {0xa62010u, (void *)W_00a62010},
   {0xa62020u, (void *)F_00a62020},
-  {0xa62040u, (void *)F_00a62040},
+  {0xa62040u, (void *)W_00a62040},
   {0xa620a0u, (void *)W_00a620a0},
   {0xa620f0u, (void *)F_00a620f0},
   {0xa62170u, (void *)W_00a62170},
@@ -55802,7 +56114,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa63e20u, (void *)F_00a63e20},
   {0xa63e70u, (void *)F_00a63e70},
   {0xa63ea0u, (void *)F_00a63ea0},
-  {0xa63ee0u, (void *)F_00a63ee0},
+  {0xa63ee0u, (void *)W_00a63ee0},
   {0xa63f00u, (void *)F_00a63f00},
   {0xa63f80u, (void *)F_00a63f80},
   {0xa64000u, (void *)F_00a64000},
@@ -55891,7 +56203,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa669a0u, (void *)F_00a669a0},
   {0xa669b0u, (void *)F_00a669b0},
   {0xa66a00u, (void *)F_00a66a00},
-  {0xa66a60u, (void *)F_00a66a60},
+  {0xa66a60u, (void *)W_00a66a60},
   {0xa66b10u, (void *)F_00a66b10},
   {0xa66b50u, (void *)F_00a66b50},
   {0xa66b60u, (void *)W_00a66b60},
@@ -57620,7 +57932,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xa9ef40u, (void *)W_00a9ef40},
   {0xa9ef70u, (void *)W_00a9ef70},
   {0xa9ef80u, (void *)F_00a9ef80},
-  {0xa9efd0u, (void *)F_00a9efd0},
+  {0xa9efd0u, (void *)W_00a9efd0},
   {0xa9eff0u, (void *)F_00a9eff0},
   {0xa9f010u, (void *)F_00a9f010},
   {0xa9f040u, (void *)F_00a9f040},
@@ -57642,13 +57954,13 @@ const GEN_JUMP g_genJumps[] = {
   {0xa9f640u, (void *)F_00a9f640},
   {0xa9f650u, (void *)W_00a9f650},
   {0xa9f670u, (void *)F_00a9f670},
-  {0xa9f6d0u, (void *)W_00a9f6d0},
+  {0xa9f6d0u, (void *)F_00a9f6d0},
   {0xa9f750u, (void *)F_00a9f750},
   {0xa9f7c0u, (void *)F_00a9f7c0},
   {0xa9f850u, (void *)F_00a9f850},
   {0xa9f870u, (void *)F_00a9f870},
   {0xa9f960u, (void *)F_00a9f960},
-  {0xa9f980u, (void *)W_00a9f980},
+  {0xa9f980u, (void *)F_00a9f980},
   {0xa9f9e0u, (void *)F_00a9f9e0},
   {0xa9fa00u, (void *)F_00a9fa00},
   {0xa9fa20u, (void *)W_00a9fa20},
@@ -57701,10 +58013,10 @@ const GEN_JUMP g_genJumps[] = {
   {0xaa0310u, (void *)F_00aa0310},
   {0xaa0350u, (void *)F_00aa0350},
   {0xaa0390u, (void *)W_00aa0390},
-  {0xaa03d0u, (void *)F_00aa03d0},
+  {0xaa03d0u, (void *)W_00aa03d0},
   {0xaa0420u, (void *)F_00aa0420},
   {0xaa0470u, (void *)W_00aa0470},
-  {0xaa04d0u, (void *)F_00aa04d0},
+  {0xaa04d0u, (void *)W_00aa04d0},
   {0xaa0520u, (void *)F_00aa0520},
   {0xaa0560u, (void *)F_00aa0560},
   {0xaa0570u, (void *)F_00aa0570},
@@ -57735,7 +58047,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xaa0c40u, (void *)F_00aa0c40},
   {0xaa0ca0u, (void *)F_00aa0ca0},
   {0xaa0cc0u, (void *)F_00aa0cc0},
-  {0xaa0df0u, (void *)F_00aa0df0},
+  {0xaa0df0u, (void *)W_00aa0df0},
   {0xaa0e00u, (void *)F_00aa0e00},
   {0xaa0e30u, (void *)F_00aa0e30},
   {0xaa0e80u, (void *)F_00aa0e80},
@@ -57758,17 +58070,17 @@ const GEN_JUMP g_genJumps[] = {
   {0xaa1020u, (void *)F_00aa1020},
   {0xaa1050u, (void *)F_00aa1050},
   {0xaa1080u, (void *)F_00aa1080},
-  {0xaa10b0u, (void *)F_00aa10b0},
-  {0xaa10e0u, (void *)F_00aa10e0},
-  {0xaa1110u, (void *)F_00aa1110},
-  {0xaa1140u, (void *)F_00aa1140},
-  {0xaa1170u, (void *)F_00aa1170},
-  {0xaa1190u, (void *)F_00aa1190},
-  {0xaa11b0u, (void *)F_00aa11b0},
-  {0xaa11d0u, (void *)F_00aa11d0},
-  {0xaa1210u, (void *)F_00aa1210},
-  {0xaa1250u, (void *)F_00aa1250},
-  {0xaa1290u, (void *)F_00aa1290},
+  {0xaa10b0u, (void *)W_00aa10b0},
+  {0xaa10e0u, (void *)W_00aa10e0},
+  {0xaa1110u, (void *)W_00aa1110},
+  {0xaa1140u, (void *)W_00aa1140},
+  {0xaa1170u, (void *)W_00aa1170},
+  {0xaa1190u, (void *)W_00aa1190},
+  {0xaa11b0u, (void *)W_00aa11b0},
+  {0xaa11d0u, (void *)W_00aa11d0},
+  {0xaa1210u, (void *)W_00aa1210},
+  {0xaa1250u, (void *)W_00aa1250},
+  {0xaa1290u, (void *)W_00aa1290},
   {0xaa12d0u, (void *)W_00aa12d0},
   {0xaa1310u, (void *)W_00aa1310},
   {0xaa1320u, (void *)W_00aa1320},
@@ -57777,7 +58089,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xaa1350u, (void *)W_00aa1350},
   {0xaa1360u, (void *)F_00aa1360},
   {0xaa1380u, (void *)F_00aa1380},
-  {0xaa13b0u, (void *)F_00aa13b0},
+  {0xaa13b0u, (void *)W_00aa13b0},
   {0xaa13d0u, (void *)F_00aa13d0},
   {0xaa13f0u, (void *)F_00aa13f0},
   {0xaa1400u, (void *)F_00aa1400},
@@ -58002,8 +58314,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xaadd50u, (void *)F_00aadd50},
   {0xaadd80u, (void *)W_00aadd80},
   {0xaadda0u, (void *)W_00aadda0},
-  {0xaaddb0u, (void *)F_00aaddb0},
-  {0xaaddd0u, (void *)F_00aaddd0},
+  {0xaaddb0u, (void *)W_00aaddb0},
+  {0xaaddd0u, (void *)W_00aaddd0},
   {0xaadde0u, (void *)F_00aadde0},
   {0xaade30u, (void *)F_00aade30},
   {0xaade40u, (void *)F_00aade40},
@@ -58020,7 +58332,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xaae6b0u, (void *)W_00aae6b0},
   {0xaae710u, (void *)W_00aae710},
   {0xaae7a0u, (void *)W_00aae7a0},
-  {0xaae8c0u, (void *)W_00aae8c0},
+  {0xaae8c0u, (void *)F_00aae8c0},
   {0xaae900u, (void *)W_00aae900},
   {0xaae920u, (void *)W_00aae920},
   {0xaaea30u, (void *)W_00aaea30},
@@ -58028,8 +58340,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xaaeac0u, (void *)F_00aaeac0},
   {0xaaeb00u, (void *)F_00aaeb00},
   {0xaaeb70u, (void *)F_00aaeb70},
-  {0xaaec60u, (void *)F_00aaec60},
-  {0xaaeca0u, (void *)F_00aaeca0},
+  {0xaaec60u, (void *)W_00aaec60},
+  {0xaaeca0u, (void *)W_00aaeca0},
   {0xaaece0u, (void *)F_00aaece0},
   {0xaaed80u, (void *)F_00aaed80},
   {0xaaedb0u, (void *)W_00aaedb0},
@@ -58353,7 +58665,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xab4be0u, (void *)F_00ab4be0},
   {0xab4c40u, (void *)F_00ab4c40},
   {0xab4c70u, (void *)F_00ab4c70},
-  {0xab4cf0u, (void *)F_00ab4cf0},
+  {0xab4cf0u, (void *)W_00ab4cf0},
   {0xab4dc0u, (void *)F_00ab4dc0},
   {0xab4e30u, (void *)F_00ab4e30},
   {0xab4e70u, (void *)F_00ab4e70},
@@ -58883,8 +59195,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xac11f0u, (void *)F_00ac11f0},
   {0xac1210u, (void *)F_00ac1210},
   {0xac1240u, (void *)F_00ac1240},
-  {0xac1260u, (void *)F_00ac1260},
-  {0xac1280u, (void *)F_00ac1280},
+  {0xac1260u, (void *)W_00ac1260},
+  {0xac1280u, (void *)W_00ac1280},
   {0xac12a0u, (void *)F_00ac12a0},
   {0xac1360u, (void *)W_00ac1360},
   {0xac1400u, (void *)F_00ac1400},
@@ -58998,7 +59310,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xac9dd0u, (void *)F_00ac9dd0},
   {0xac9e00u, (void *)F_00ac9e00},
   {0xac9e50u, (void *)F_00ac9e50},
-  {0xac9eb0u, (void *)F_00ac9eb0},
+  {0xac9eb0u, (void *)W_00ac9eb0},
   {0xac9ed0u, (void *)F_00ac9ed0},
   {0xac9f20u, (void *)F_00ac9f20},
   {0xac9f90u, (void *)F_00ac9f90},
@@ -59924,7 +60236,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xae0650u, (void *)F_00ae0650},
   {0xae06e0u, (void *)F_00ae06e0},
   {0xae0750u, (void *)F_00ae0750},
-  {0xae0790u, (void *)F_00ae0790},
+  {0xae0790u, (void *)W_00ae0790},
   {0xae07b0u, (void *)F_00ae07b0},
   {0xae0800u, (void *)F_00ae0800},
   {0xae0810u, (void *)F_00ae0810},
@@ -59936,11 +60248,11 @@ const GEN_JUMP g_genJumps[] = {
   {0xae09c0u, (void *)W_00ae09c0},
   {0xae09f0u, (void *)F_00ae09f0},
   {0xae0a30u, (void *)F_00ae0a30},
-  {0xae0b20u, (void *)F_00ae0b20},
+  {0xae0b20u, (void *)W_00ae0b20},
   {0xae0b60u, (void *)F_00ae0b60},
   {0xae0b90u, (void *)F_00ae0b90},
   {0xae0c30u, (void *)F_00ae0c30},
-  {0xae0c70u, (void *)F_00ae0c70},
+  {0xae0c70u, (void *)W_00ae0c70},
   {0xae0c90u, (void *)F_00ae0c90},
   {0xae0cc0u, (void *)F_00ae0cc0},
   {0xae0cd0u, (void *)F_00ae0cd0},
@@ -60171,17 +60483,17 @@ const GEN_JUMP g_genJumps[] = {
   {0xae4fd0u, (void *)F_00ae4fd0},
   {0xae5000u, (void *)F_00ae5000},
   {0xae5020u, (void *)F_00ae5020},
-  {0xae50b0u, (void *)F_00ae50b0},
+  {0xae50b0u, (void *)W_00ae50b0},
   {0xae50c0u, (void *)F_00ae50c0},
-  {0xae50e0u, (void *)F_00ae50e0},
+  {0xae50e0u, (void *)W_00ae50e0},
   {0xae50f0u, (void *)F_00ae50f0},
-  {0xae5110u, (void *)F_00ae5110},
+  {0xae5110u, (void *)W_00ae5110},
   {0xae5120u, (void *)F_00ae5120},
-  {0xae5140u, (void *)F_00ae5140},
+  {0xae5140u, (void *)W_00ae5140},
   {0xae5150u, (void *)F_00ae5150},
-  {0xae5170u, (void *)F_00ae5170},
+  {0xae5170u, (void *)W_00ae5170},
   {0xae5180u, (void *)F_00ae5180},
-  {0xae51a0u, (void *)F_00ae51a0},
+  {0xae51a0u, (void *)W_00ae51a0},
   {0xae51b0u, (void *)F_00ae51b0},
   {0xae5200u, (void *)F_00ae5200},
   {0xae5260u, (void *)F_00ae5260},
@@ -60308,7 +60620,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xae6850u, (void *)F_00ae6850},
   {0xae6880u, (void *)F_00ae6880},
   {0xae68c0u, (void *)F_00ae68c0},
-  {0xae68f0u, (void *)F_00ae68f0},
+  {0xae68f0u, (void *)W_00ae68f0},
   {0xae6910u, (void *)F_00ae6910},
   {0xae6930u, (void *)W_00ae6930},
   {0xae6960u, (void *)W_00ae6960},
@@ -60320,7 +60632,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xae6a90u, (void *)W_00ae6a90},
   {0xae6ab0u, (void *)F_00ae6ab0},
   {0xae6e10u, (void *)W_00ae6e10},
-  {0xae6e60u, (void *)F_00ae6e60},
+  {0xae6e60u, (void *)W_00ae6e60},
   {0xae6e80u, (void *)F_00ae6e80},
   {0xae6ef0u, (void *)W_00ae6ef0},
   {0xae6fc0u, (void *)W_00ae6fc0},
@@ -60347,7 +60659,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xae75d0u, (void *)W_00ae75d0},
   {0xae76b0u, (void *)W_00ae76b0},
   {0xae7720u, (void *)W_00ae7720},
-  {0xae7740u, (void *)F_00ae7740},
+  {0xae7740u, (void *)W_00ae7740},
   {0xae7790u, (void *)W_00ae7790},
   {0xae77d0u, (void *)W_00ae77d0},
   {0xae7830u, (void *)W_00ae7830},
@@ -60359,11 +60671,11 @@ const GEN_JUMP g_genJumps[] = {
   {0xae7ba0u, (void *)W_00ae7ba0},
   {0xae7bc0u, (void *)W_00ae7bc0},
   {0xae7c10u, (void *)F_00ae7c10},
-  {0xae7c40u, (void *)F_00ae7c40},
+  {0xae7c40u, (void *)W_00ae7c40},
   {0xae7c60u, (void *)W_00ae7c60},
   {0xae7ca0u, (void *)W_00ae7ca0},
   {0xae8170u, (void *)W_00ae8170},
-  {0xae82c0u, (void *)F_00ae82c0},
+  {0xae82c0u, (void *)W_00ae82c0},
   {0xae8330u, (void *)W_00ae8330},
   {0xae8400u, (void *)F_00ae8400},
   {0xae8430u, (void *)W_00ae8430},
@@ -60409,22 +60721,22 @@ const GEN_JUMP g_genJumps[] = {
   {0xae9300u, (void *)F_00ae9300},
   {0xae9430u, (void *)F_00ae9430},
   {0xae9490u, (void *)W_00ae9490},
-  {0xae94d0u, (void *)F_00ae94d0},
-  {0xae94f0u, (void *)F_00ae94f0},
+  {0xae94d0u, (void *)W_00ae94d0},
+  {0xae94f0u, (void *)W_00ae94f0},
   {0xae9520u, (void *)W_00ae9520},
   {0xae95a0u, (void *)F_00ae95a0},
   {0xae95c0u, (void *)F_00ae95c0},
   {0xae95f0u, (void *)W_00ae95f0},
   {0xae9670u, (void *)W_00ae9670},
   {0xae96c0u, (void *)W_00ae96c0},
-  {0xae97f0u, (void *)F_00ae97f0},
-  {0xae9810u, (void *)F_00ae9810},
+  {0xae97f0u, (void *)W_00ae97f0},
+  {0xae9810u, (void *)W_00ae9810},
   {0xae9840u, (void *)F_00ae9840},
   {0xae9860u, (void *)W_00ae9860},
   {0xae9970u, (void *)W_00ae9970},
   {0xae9ae0u, (void *)W_00ae9ae0},
-  {0xae9bc0u, (void *)F_00ae9bc0},
-  {0xae9bf0u, (void *)F_00ae9bf0},
+  {0xae9bc0u, (void *)W_00ae9bc0},
+  {0xae9bf0u, (void *)W_00ae9bf0},
   {0xae9c70u, (void *)W_00ae9c70},
   {0xae9ca0u, (void *)W_00ae9ca0},
   {0xae9d10u, (void *)W_00ae9d10},
@@ -60437,7 +60749,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xae9ff0u, (void *)W_00ae9ff0},
   {0xaea070u, (void *)F_00aea070},
   {0xaea290u, (void *)W_00aea290},
-  {0xaea410u, (void *)F_00aea410},
+  {0xaea410u, (void *)W_00aea410},
   {0xaea430u, (void *)W_00aea430},
   {0xaea4b0u, (void *)W_00aea4b0},
   {0xaea520u, (void *)W_00aea520},
@@ -60464,7 +60776,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xaeafa0u, (void *)F_00aeafa0},
   {0xaeb090u, (void *)F_00aeb090},
   {0xaeb110u, (void *)F_00aeb110},
-  {0xaeb160u, (void *)F_00aeb160},
+  {0xaeb160u, (void *)W_00aeb160},
   {0xaeb1c0u, (void *)F_00aeb1c0},
   {0xaeb260u, (void *)W_00aeb260},
   {0xaeb350u, (void *)W_00aeb350},
@@ -60492,7 +60804,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xaec990u, (void *)F_00aec990},
   {0xaec9f0u, (void *)F_00aec9f0},
   {0xaecc90u, (void *)W_00aecc90},
-  {0xaecd10u, (void *)W_00aecd10},
+  {0xaecd10u, (void *)F_00aecd10},
   {0xaecec0u, (void *)F_00aecec0},
   {0xaed0a0u, (void *)F_00aed0a0},
   {0xaed120u, (void *)F_00aed120},
@@ -60516,7 +60828,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xaee270u, (void *)W_00aee270},
   {0xaee2a0u, (void *)F_00aee2a0},
   {0xaee340u, (void *)F_00aee340},
-  {0xaee3f0u, (void *)W_00aee3f0},
+  {0xaee3f0u, (void *)F_00aee3f0},
   {0xaee570u, (void *)F_00aee570},
   {0xaee6d0u, (void *)F_00aee6d0},
   {0xaee900u, (void *)F_00aee900},
@@ -60536,7 +60848,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xaf04a0u, (void *)F_00af04a0},
   {0xaf0530u, (void *)F_00af0530},
   {0xaf0770u, (void *)F_00af0770},
-  {0xaf08a0u, (void *)W_00af08a0},
+  {0xaf08a0u, (void *)F_00af08a0},
   {0xaf0900u, (void *)W_00af0900},
   {0xaf0940u, (void *)W_00af0940},
   {0xaf09b0u, (void *)W_00af09b0},
@@ -60547,21 +60859,21 @@ const GEN_JUMP g_genJumps[] = {
   {0xaf2010u, (void *)F_00af2010},
   {0xaf2090u, (void *)F_00af2090},
   {0xaf20c0u, (void *)F_00af20c0},
-  {0xaf20e0u, (void *)W_00af20e0},
+  {0xaf20e0u, (void *)F_00af20e0},
   {0xaf2190u, (void *)F_00af2190},
-  {0xaf2210u, (void *)W_00af2210},
+  {0xaf2210u, (void *)F_00af2210},
   {0xaf2460u, (void *)F_00af2460},
   {0xaf2610u, (void *)F_00af2610},
   {0xaf2660u, (void *)W_00af2660},
   {0xaf26b0u, (void *)W_00af26b0},
-  {0xaf2a00u, (void *)W_00af2a00},
+  {0xaf2a00u, (void *)F_00af2a00},
   {0xaf2ad0u, (void *)F_00af2ad0},
   {0xaf2b40u, (void *)F_00af2b40},
   {0xaf2bf0u, (void *)F_00af2bf0},
   {0xaf2e30u, (void *)W_00af2e30},
   {0xaf2e80u, (void *)W_00af2e80},
-  {0xaf2f50u, (void *)W_00af2f50},
-  {0xaf3110u, (void *)W_00af3110},
+  {0xaf2f50u, (void *)F_00af2f50},
+  {0xaf3110u, (void *)F_00af3110},
   {0xaf3450u, (void *)W_00af3450},
   {0xaf34c0u, (void *)W_00af34c0},
   {0xaf3740u, (void *)W_00af3740},
@@ -60570,14 +60882,14 @@ const GEN_JUMP g_genJumps[] = {
   {0xaf39f0u, (void *)F_00af39f0},
   {0xaf3c30u, (void *)F_00af3c30},
   {0xaf3cc0u, (void *)F_00af3cc0},
-  {0xaf4260u, (void *)W_00af4260},
-  {0xaf43e0u, (void *)W_00af43e0},
+  {0xaf4260u, (void *)F_00af4260},
+  {0xaf43e0u, (void *)F_00af43e0},
   {0xaf46b0u, (void *)F_00af46b0},
   {0xaf4710u, (void *)F_00af4710},
   {0xaf4790u, (void *)W_00af4790},
-  {0xaf49a0u, (void *)W_00af49a0},
+  {0xaf49a0u, (void *)F_00af49a0},
   {0xaf4fe0u, (void *)F_00af4fe0},
-  {0xaf52f0u, (void *)W_00af52f0},
+  {0xaf52f0u, (void *)F_00af52f0},
   {0xaf5360u, (void *)F_00af5360},
   {0xaf55f0u, (void *)F_00af55f0},
   {0xaf5870u, (void *)F_00af5870},
@@ -60587,17 +60899,17 @@ const GEN_JUMP g_genJumps[] = {
   {0xaf5d10u, (void *)F_00af5d10},
   {0xaf5d40u, (void *)F_00af5d40},
   {0xaf5d70u, (void *)F_00af5d70},
-  {0xaf5e30u, (void *)W_00af5e30},
-  {0xaf6100u, (void *)W_00af6100},
+  {0xaf5e30u, (void *)F_00af5e30},
+  {0xaf6100u, (void *)F_00af6100},
   {0xaf6310u, (void *)F_00af6310},
   {0xaf6450u, (void *)W_00af6450},
   {0xaf6670u, (void *)F_00af6670},
   {0xaf67f0u, (void *)F_00af67f0},
-  {0xaf69f0u, (void *)W_00af69f0},
+  {0xaf69f0u, (void *)F_00af69f0},
   {0xaf6a20u, (void *)F_00af6a20},
   {0xaf6ad0u, (void *)F_00af6ad0},
   {0xaf6bb0u, (void *)F_00af6bb0},
-  {0xaf80b0u, (void *)W_00af80b0},
+  {0xaf80b0u, (void *)F_00af80b0},
   {0xaf8190u, (void *)F_00af8190},
   {0xaf8600u, (void *)W_00af8600},
   {0xaf8d90u, (void *)F_00af8d90},
@@ -60631,11 +60943,11 @@ const GEN_JUMP g_genJumps[] = {
   {0xafbcd0u, (void *)F_00afbcd0},
   {0xafbe90u, (void *)F_00afbe90},
   {0xafc050u, (void *)F_00afc050},
-  {0xafc4f0u, (void *)W_00afc4f0},
+  {0xafc4f0u, (void *)F_00afc4f0},
   {0xafc8a0u, (void *)F_00afc8a0},
   {0xafca20u, (void *)F_00afca20},
   {0xafcc90u, (void *)F_00afcc90},
-  {0xafcd60u, (void *)W_00afcd60},
+  {0xafcd60u, (void *)F_00afcd60},
   {0xafcdc0u, (void *)F_00afcdc0},
   {0xafce30u, (void *)F_00afce30},
   {0xafcf00u, (void *)F_00afcf00},
@@ -60648,7 +60960,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xafd7d0u, (void *)F_00afd7d0},
   {0xafd950u, (void *)F_00afd950},
   {0xafd9f0u, (void *)F_00afd9f0},
-  {0xafdab0u, (void *)W_00afdab0},
+  {0xafdab0u, (void *)F_00afdab0},
   {0xafdcb0u, (void *)F_00afdcb0},
   {0xafdce0u, (void *)F_00afdce0},
   {0xafdd10u, (void *)F_00afdd10},
@@ -60669,7 +60981,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xafebb0u, (void *)F_00afebb0},
   {0xafec70u, (void *)F_00afec70},
   {0xafed60u, (void *)F_00afed60},
-  {0xafed70u, (void *)W_00afed70},
+  {0xafed70u, (void *)F_00afed70},
   {0xafede0u, (void *)F_00afede0},
   {0xafee10u, (void *)F_00afee10},
   {0xafee60u, (void *)F_00afee60},
@@ -60686,10 +60998,10 @@ const GEN_JUMP g_genJumps[] = {
   {0xaff250u, (void *)F_00aff250},
   {0xaff450u, (void *)F_00aff450},
   {0xaff480u, (void *)F_00aff480},
-  {0xaff4d0u, (void *)F_00aff4d0},
-  {0xaff4f0u, (void *)F_00aff4f0},
-  {0xaff520u, (void *)F_00aff520},
-  {0xaff540u, (void *)F_00aff540},
+  {0xaff4d0u, (void *)W_00aff4d0},
+  {0xaff4f0u, (void *)W_00aff4f0},
+  {0xaff520u, (void *)W_00aff520},
+  {0xaff540u, (void *)W_00aff540},
   {0xaff5d0u, (void *)F_00aff5d0},
   {0xaff5f0u, (void *)F_00aff5f0},
   {0xaff620u, (void *)W_00aff620},
@@ -60851,7 +61163,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb02520u, (void *)F_00b02520},
   {0xb02590u, (void *)F_00b02590},
   {0xb025e0u, (void *)F_00b025e0},
-  {0xb02610u, (void *)F_00b02610},
+  {0xb02610u, (void *)W_00b02610},
   {0xb02630u, (void *)W_00b02630},
   {0xb02710u, (void *)F_00b02710},
   {0xb02800u, (void *)F_00b02800},
@@ -60915,8 +61227,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xb05d70u, (void *)F_00b05d70},
   {0xb06f80u, (void *)F_00b06f80},
   {0xb06fc0u, (void *)F_00b06fc0},
-  {0xb07020u, (void *)F_00b07020},
-  {0xb07040u, (void *)F_00b07040},
+  {0xb07020u, (void *)W_00b07020},
+  {0xb07040u, (void *)W_00b07040},
   {0xb07060u, (void *)F_00b07060},
   {0xb07080u, (void *)F_00b07080},
   {0xb070a0u, (void *)F_00b070a0},
@@ -62308,7 +62620,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb4d860u, (void *)F_00b4d860},
   {0xb4d8d0u, (void *)W_00b4d8d0},
   {0xb4d900u, (void *)F_00b4d900},
-  {0xb4d910u, (void *)F_00b4d910},
+  {0xb4d910u, (void *)W_00b4d910},
   {0xb4d920u, (void *)F_00b4d920},
   {0xb4d990u, (void *)W_00b4d990},
   {0xb4da20u, (void *)F_00b4da20},
@@ -62801,7 +63113,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb593c0u, (void *)F_00b593c0},
   {0xb593f0u, (void *)F_00b593f0},
   {0xb59410u, (void *)W_00b59410},
-  {0xb59560u, (void *)F_00b59560},
+  {0xb59560u, (void *)W_00b59560},
   {0xb595a0u, (void *)F_00b595a0},
   {0xb595f0u, (void *)F_00b595f0},
   {0xb59610u, (void *)F_00b59610},
@@ -62844,7 +63156,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb5a4a0u, (void *)W_00b5a4a0},
   {0xb5a4e0u, (void *)F_00b5a4e0},
   {0xb5a520u, (void *)W_00b5a520},
-  {0xb5a530u, (void *)F_00b5a530},
+  {0xb5a530u, (void *)W_00b5a530},
   {0xb5a550u, (void *)F_00b5a550},
   {0xb5a5a0u, (void *)F_00b5a5a0},
   {0xb5a5d0u, (void *)W_00b5a5d0},
@@ -62945,7 +63257,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb5c540u, (void *)F_00b5c540},
   {0xb5c560u, (void *)F_00b5c560},
   {0xb5c570u, (void *)F_00b5c570},
-  {0xb5c5a0u, (void *)F_00b5c5a0},
+  {0xb5c5a0u, (void *)W_00b5c5a0},
   {0xb5c5c0u, (void *)F_00b5c5c0},
   {0xb5c5f0u, (void *)F_00b5c5f0},
   {0xb5c650u, (void *)F_00b5c650},
@@ -63002,10 +63314,10 @@ const GEN_JUMP g_genJumps[] = {
   {0xb5e570u, (void *)F_00b5e570},
   {0xb5e580u, (void *)F_00b5e580},
   {0xb5e590u, (void *)F_00b5e590},
-  {0xb5e5a0u, (void *)F_00b5e5a0},
-  {0xb5e5b0u, (void *)F_00b5e5b0},
-  {0xb5e5c0u, (void *)F_00b5e5c0},
-  {0xb5e5d0u, (void *)F_00b5e5d0},
+  {0xb5e5a0u, (void *)W_00b5e5a0},
+  {0xb5e5b0u, (void *)W_00b5e5b0},
+  {0xb5e5c0u, (void *)W_00b5e5c0},
+  {0xb5e5d0u, (void *)W_00b5e5d0},
   {0xb5e5f0u, (void *)F_00b5e5f0},
   {0xb5e600u, (void *)F_00b5e600},
   {0xb5e610u, (void *)W_00b5e610},
@@ -63101,7 +63413,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb5fac0u, (void *)F_00b5fac0},
   {0xb5fb20u, (void *)W_00b5fb20},
   {0xb5fb70u, (void *)W_00b5fb70},
-  {0xb5fb80u, (void *)F_00b5fb80},
+  {0xb5fb80u, (void *)W_00b5fb80},
   {0xb5fba0u, (void *)W_00b5fba0},
   {0xb5fbb0u, (void *)W_00b5fbb0},
   {0xb5fbf0u, (void *)F_00b5fbf0},
@@ -63179,7 +63491,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb61b50u, (void *)F_00b61b50},
   {0xb61b90u, (void *)W_00b61b90},
   {0xb61ba0u, (void *)F_00b61ba0},
-  {0xb61bb0u, (void *)F_00b61bb0},
+  {0xb61bb0u, (void *)W_00b61bb0},
   {0xb61bd0u, (void *)F_00b61bd0},
   {0xb61c10u, (void *)F_00b61c10},
   {0xb61c40u, (void *)W_00b61c40},
@@ -63233,7 +63545,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb62ef0u, (void *)F_00b62ef0},
   {0xb62f00u, (void *)F_00b62f00},
   {0xb62f40u, (void *)F_00b62f40},
-  {0xb63000u, (void *)F_00b63000},
+  {0xb63000u, (void *)W_00b63000},
   {0xb63020u, (void *)F_00b63020},
   {0xb63030u, (void *)W_00b63030},
   {0xb630d0u, (void *)W_00b630d0},
@@ -63269,7 +63581,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb635e0u, (void *)F_00b635e0},
   {0xb635f0u, (void *)F_00b635f0},
   {0xb63640u, (void *)F_00b63640},
-  {0xb63650u, (void *)F_00b63650},
+  {0xb63650u, (void *)W_00b63650},
   {0xb63670u, (void *)F_00b63670},
   {0xb63680u, (void *)W_00b63680},
   {0xb636a0u, (void *)F_00b636a0},
@@ -63322,9 +63634,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xb64a00u, (void *)F_00b64a00},
   {0xb64a60u, (void *)F_00b64a60},
   {0xb64b10u, (void *)W_00b64b10},
-  {0xb64bd0u, (void *)F_00b64bd0},
+  {0xb64bd0u, (void *)W_00b64bd0},
   {0xb64bf0u, (void *)W_00b64bf0},
-  {0xb64d50u, (void *)F_00b64d50},
+  {0xb64d50u, (void *)W_00b64d50},
   {0xb64d70u, (void *)W_00b64d70},
   {0xb64d80u, (void *)F_00b64d80},
   {0xb64dd0u, (void *)F_00b64dd0},
@@ -63376,8 +63688,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xb675a0u, (void *)F_00b675a0},
   {0xb675d0u, (void *)F_00b675d0},
   {0xb67660u, (void *)F_00b67660},
-  {0xb676e0u, (void *)F_00b676e0},
-  {0xb676f0u, (void *)F_00b676f0},
+  {0xb676e0u, (void *)W_00b676e0},
+  {0xb676f0u, (void *)W_00b676f0},
   {0xb67710u, (void *)F_00b67710},
   {0xb67720u, (void *)F_00b67720},
   {0xb67730u, (void *)F_00b67730},
@@ -63410,7 +63722,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb68270u, (void *)F_00b68270},
   {0xb68310u, (void *)F_00b68310},
   {0xb68340u, (void *)F_00b68340},
-  {0xb68360u, (void *)F_00b68360},
+  {0xb68360u, (void *)W_00b68360},
   {0xb68380u, (void *)F_00b68380},
   {0xb683c0u, (void *)W_00b683c0},
   {0xb68400u, (void *)F_00b68400},
@@ -63477,8 +63789,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xb69e10u, (void *)F_00b69e10},
   {0xb69e80u, (void *)F_00b69e80},
   {0xb69e90u, (void *)F_00b69e90},
-  {0xb69ea0u, (void *)F_00b69ea0},
-  {0xb69ec0u, (void *)F_00b69ec0},
+  {0xb69ea0u, (void *)W_00b69ea0},
+  {0xb69ec0u, (void *)W_00b69ec0},
   {0xb69ee0u, (void *)F_00b69ee0},
   {0xb69f10u, (void *)W_00b69f10},
   {0xb6a060u, (void *)F_00b6a060},
@@ -63493,7 +63805,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb6aa40u, (void *)F_00b6aa40},
   {0xb6aa60u, (void *)F_00b6aa60},
   {0xb6ab10u, (void *)F_00b6ab10},
-  {0xb6ab60u, (void *)F_00b6ab60},
+  {0xb6ab60u, (void *)W_00b6ab60},
   {0xb6ab80u, (void *)F_00b6ab80},
   {0xb6ad90u, (void *)F_00b6ad90},
   {0xb6adb0u, (void *)W_00b6adb0},
@@ -63506,7 +63818,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb6af20u, (void *)W_00b6af20},
   {0xb6afa0u, (void *)F_00b6afa0},
   {0xb6b010u, (void *)F_00b6b010},
-  {0xb6b0c0u, (void *)W_00b6b0c0},
+  {0xb6b0c0u, (void *)F_00b6b0c0},
   {0xb6b1b0u, (void *)W_00b6b1b0},
   {0xb6b1f0u, (void *)W_00b6b1f0},
   {0xb6b230u, (void *)W_00b6b230},
@@ -63537,7 +63849,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb6bb90u, (void *)W_00b6bb90},
   {0xb6bc50u, (void *)W_00b6bc50},
   {0xb6bc70u, (void *)F_00b6bc70},
-  {0xb6be10u, (void *)W_00b6be10},
+  {0xb6be10u, (void *)F_00b6be10},
   {0xb6bec0u, (void *)W_00b6bec0},
   {0xb6bf70u, (void *)F_00b6bf70},
   {0xb6c300u, (void *)W_00b6c300},
@@ -63568,20 +63880,20 @@ const GEN_JUMP g_genJumps[] = {
   {0xb6d120u, (void *)F_00b6d120},
   {0xb6d140u, (void *)F_00b6d140},
   {0xb6d1a0u, (void *)F_00b6d1a0},
-  {0xb6d3f0u, (void *)F_00b6d3f0},
-  {0xb6d410u, (void *)F_00b6d410},
+  {0xb6d3f0u, (void *)W_00b6d3f0},
+  {0xb6d410u, (void *)W_00b6d410},
   {0xb6d440u, (void *)W_00b6d440},
   {0xb6d580u, (void *)F_00b6d580},
   {0xb6d5b0u, (void *)F_00b6d5b0},
   {0xb6d5e0u, (void *)F_00b6d5e0},
   {0xb6d620u, (void *)F_00b6d620},
   {0xb6d8d0u, (void *)F_00b6d8d0},
-  {0xb6dc90u, (void *)W_00b6dc90},
+  {0xb6dc90u, (void *)F_00b6dc90},
   {0xb6ddd0u, (void *)W_00b6ddd0},
   {0xb6dde0u, (void *)W_00b6dde0},
   {0xb6de70u, (void *)F_00b6de70},
-  {0xb6dfb0u, (void *)W_00b6dfb0},
-  {0xb6e060u, (void *)F_00b6e060},
+  {0xb6dfb0u, (void *)F_00b6dfb0},
+  {0xb6e060u, (void *)W_00b6e060},
   {0xb6e080u, (void *)W_00b6e080},
   {0xb6e1f0u, (void *)F_00b6e1f0},
   {0xb6e330u, (void *)W_00b6e330},
@@ -63595,9 +63907,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xb6eda0u, (void *)F_00b6eda0},
   {0xb6f180u, (void *)F_00b6f180},
   {0xb6f4c0u, (void *)F_00b6f4c0},
-  {0xb6f710u, (void *)W_00b6f710},
-  {0xb6f8d0u, (void *)W_00b6f8d0},
-  {0xb6fa30u, (void *)W_00b6fa30},
+  {0xb6f710u, (void *)F_00b6f710},
+  {0xb6f8d0u, (void *)F_00b6f8d0},
+  {0xb6fa30u, (void *)F_00b6fa30},
   {0xb6fac0u, (void *)W_00b6fac0},
   {0xb6fc40u, (void *)W_00b6fc40},
   {0xb6fcb0u, (void *)W_00b6fcb0},
@@ -63635,25 +63947,25 @@ const GEN_JUMP g_genJumps[] = {
   {0xb72030u, (void *)F_00b72030},
   {0xb720d0u, (void *)F_00b720d0},
   {0xb72120u, (void *)F_00b72120},
-  {0xb72240u, (void *)W_00b72240},
-  {0xb723c0u, (void *)W_00b723c0},
+  {0xb72240u, (void *)F_00b72240},
+  {0xb723c0u, (void *)F_00b723c0},
   {0xb724f0u, (void *)F_00b724f0},
-  {0xb725f0u, (void *)W_00b725f0},
+  {0xb725f0u, (void *)F_00b725f0},
   {0xb726f0u, (void *)W_00b726f0},
   {0xb72890u, (void *)F_00b72890},
   {0xb72900u, (void *)F_00b72900},
-  {0xb72970u, (void *)W_00b72970},
+  {0xb72970u, (void *)F_00b72970},
   {0xb72b50u, (void *)F_00b72b50},
   {0xb72ca0u, (void *)F_00b72ca0},
   {0xb732f0u, (void *)F_00b732f0},
   {0xb73430u, (void *)W_00b73430},
-  {0xb73500u, (void *)W_00b73500},
+  {0xb73500u, (void *)F_00b73500},
   {0xb73600u, (void *)F_00b73600},
   {0xb73870u, (void *)F_00b73870},
   {0xb73bc0u, (void *)F_00b73bc0},
   {0xb73e70u, (void *)W_00b73e70},
   {0xb73ef0u, (void *)F_00b73ef0},
-  {0xb74020u, (void *)W_00b74020},
+  {0xb74020u, (void *)F_00b74020},
   {0xb74110u, (void *)F_00b74110},
   {0xb742e0u, (void *)F_00b742e0},
   {0xb744d0u, (void *)F_00b744d0},
@@ -63668,10 +63980,10 @@ const GEN_JUMP g_genJumps[] = {
   {0xb74c10u, (void *)F_00b74c10},
   {0xb74cb0u, (void *)F_00b74cb0},
   {0xb74cd0u, (void *)F_00b74cd0},
-  {0xb74f60u, (void *)W_00b74f60},
+  {0xb74f60u, (void *)F_00b74f60},
   {0xb75200u, (void *)F_00b75200},
   {0xb75490u, (void *)F_00b75490},
-  {0xb75760u, (void *)W_00b75760},
+  {0xb75760u, (void *)F_00b75760},
   {0xb75790u, (void *)F_00b75790},
   {0xb75950u, (void *)F_00b75950},
   {0xb75980u, (void *)F_00b75980},
@@ -63687,7 +63999,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb75ba0u, (void *)F_00b75ba0},
   {0xb75bb0u, (void *)F_00b75bb0},
   {0xb75bc0u, (void *)F_00b75bc0},
-  {0xb75bd0u, (void *)F_00b75bd0},
+  {0xb75bd0u, (void *)W_00b75bd0},
   {0xb75bf0u, (void *)F_00b75bf0},
   {0xb75c40u, (void *)F_00b75c40},
   {0xb75c70u, (void *)W_00b75c70},
@@ -63700,12 +64012,12 @@ const GEN_JUMP g_genJumps[] = {
   {0xb75e40u, (void *)F_00b75e40},
   {0xb75e60u, (void *)F_00b75e60},
   {0xb75e80u, (void *)W_00b75e80},
-  {0xb75e90u, (void *)F_00b75e90},
-  {0xb75eb0u, (void *)F_00b75eb0},
+  {0xb75e90u, (void *)W_00b75e90},
+  {0xb75eb0u, (void *)W_00b75eb0},
   {0xb75ec0u, (void *)W_00b75ec0},
-  {0xb75f50u, (void *)W_00b75f50},
-  {0xb76010u, (void *)F_00b76010},
-  {0xb76030u, (void *)F_00b76030},
+  {0xb75f50u, (void *)F_00b75f50},
+  {0xb76010u, (void *)W_00b76010},
+  {0xb76030u, (void *)W_00b76030},
   {0xb76050u, (void *)F_00b76050},
   {0xb76070u, (void *)F_00b76070},
   {0xb76080u, (void *)F_00b76080},
@@ -63729,7 +64041,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb76650u, (void *)F_00b76650},
   {0xb767a0u, (void *)F_00b767a0},
   {0xb767d0u, (void *)F_00b767d0},
-  {0xb767f0u, (void *)F_00b767f0},
+  {0xb767f0u, (void *)W_00b767f0},
   {0xb76850u, (void *)F_00b76850},
   {0xb768a0u, (void *)F_00b768a0},
   {0xb768f0u, (void *)W_00b768f0},
@@ -63748,8 +64060,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xb76d80u, (void *)F_00b76d80},
   {0xb76d90u, (void *)F_00b76d90},
   {0xb76da0u, (void *)F_00b76da0},
-  {0xb76db0u, (void *)F_00b76db0},
-  {0xb76dc0u, (void *)F_00b76dc0},
+  {0xb76db0u, (void *)W_00b76db0},
+  {0xb76dc0u, (void *)W_00b76dc0},
   {0xb76de0u, (void *)F_00b76de0},
   {0xb76e00u, (void *)F_00b76e00},
   {0xb76e20u, (void *)F_00b76e20},
@@ -63771,7 +64083,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb77d70u, (void *)W_00b77d70},
   {0xb77f50u, (void *)W_00b77f50},
   {0xb77f90u, (void *)F_00b77f90},
-  {0xb78000u, (void *)W_00b78000},
+  {0xb78000u, (void *)F_00b78000},
   {0xb780b0u, (void *)W_00b780b0},
   {0xb78180u, (void *)F_00b78180},
   {0xb782a0u, (void *)F_00b782a0},
@@ -63780,7 +64092,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb78390u, (void *)F_00b78390},
   {0xb78440u, (void *)F_00b78440},
   {0xb784f0u, (void *)F_00b784f0},
-  {0xb78550u, (void *)F_00b78550},
+  {0xb78550u, (void *)W_00b78550},
   {0xb785a0u, (void *)F_00b785a0},
   {0xb78700u, (void *)F_00b78700},
   {0xb789a0u, (void *)W_00b789a0},
@@ -63804,7 +64116,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb79c40u, (void *)F_00b79c40},
   {0xb79c70u, (void *)F_00b79c70},
   {0xb79ca0u, (void *)F_00b79ca0},
-  {0xb79d60u, (void *)F_00b79d60},
+  {0xb79d60u, (void *)W_00b79d60},
   {0xb79d80u, (void *)F_00b79d80},
   {0xb79ee0u, (void *)F_00b79ee0},
   {0xb79f30u, (void *)F_00b79f30},
@@ -63826,7 +64138,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb7a5b0u, (void *)F_00b7a5b0},
   {0xb7a9e0u, (void *)F_00b7a9e0},
   {0xb7aa00u, (void *)F_00b7aa00},
-  {0xb7aa30u, (void *)F_00b7aa30},
+  {0xb7aa30u, (void *)W_00b7aa30},
   {0xb7aa60u, (void *)F_00b7aa60},
   {0xb7aaa0u, (void *)W_00b7aaa0},
   {0xb7aac0u, (void *)W_00b7aac0},
@@ -63862,7 +64174,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb7bce0u, (void *)F_00b7bce0},
   {0xb7bee0u, (void *)W_00b7bee0},
   {0xb7bf10u, (void *)F_00b7bf10},
-  {0xb7bf40u, (void *)F_00b7bf40},
+  {0xb7bf40u, (void *)W_00b7bf40},
   {0xb7bf80u, (void *)W_00b7bf80},
   {0xb7bfb0u, (void *)F_00b7bfb0},
   {0xb7c040u, (void *)F_00b7c040},
@@ -63886,7 +64198,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb7c6d0u, (void *)W_00b7c6d0},
   {0xb7c6e0u, (void *)W_00b7c6e0},
   {0xb7c6f0u, (void *)W_00b7c6f0},
-  {0xb7c700u, (void *)F_00b7c700},
+  {0xb7c700u, (void *)W_00b7c700},
   {0xb7c710u, (void *)F_00b7c710},
   {0xb7c740u, (void *)F_00b7c740},
   {0xb7c780u, (void *)F_00b7c780},
@@ -64120,7 +64432,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb82330u, (void *)F_00b82330},
   {0xb82360u, (void *)F_00b82360},
   {0xb82390u, (void *)F_00b82390},
-  {0xb823f0u, (void *)F_00b823f0},
+  {0xb823f0u, (void *)W_00b823f0},
   {0xb82420u, (void *)F_00b82420},
   {0xb82430u, (void *)F_00b82430},
   {0xb824b0u, (void *)F_00b824b0},
@@ -64387,8 +64699,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xb8a9f0u, (void *)F_00b8a9f0},
   {0xb8aa00u, (void *)F_00b8aa00},
   {0xb8aa10u, (void *)F_00b8aa10},
-  {0xb8aa50u, (void *)F_00b8aa50},
-  {0xb8aa70u, (void *)F_00b8aa70},
+  {0xb8aa50u, (void *)W_00b8aa50},
+  {0xb8aa70u, (void *)W_00b8aa70},
   {0xb8aab0u, (void *)F_00b8aab0},
   {0xb8ab00u, (void *)F_00b8ab00},
   {0xb8ab10u, (void *)F_00b8ab10},
@@ -64961,7 +65273,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb992b0u, (void *)F_00b992b0},
   {0xb992c0u, (void *)F_00b992c0},
   {0xb99330u, (void *)F_00b99330},
-  {0xb99360u, (void *)F_00b99360},
+  {0xb99360u, (void *)W_00b99360},
   {0xb99380u, (void *)F_00b99380},
   {0xb993e0u, (void *)F_00b993e0},
   {0xb99420u, (void *)F_00b99420},
@@ -65124,7 +65436,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb9cb70u, (void *)F_00b9cb70},
   {0xb9ccc0u, (void *)F_00b9ccc0},
   {0xb9cd70u, (void *)F_00b9cd70},
-  {0xb9cdb0u, (void *)F_00b9cdb0},
+  {0xb9cdb0u, (void *)W_00b9cdb0},
   {0xb9cdd0u, (void *)F_00b9cdd0},
   {0xb9cde0u, (void *)F_00b9cde0},
   {0xb9cdf0u, (void *)F_00b9cdf0},
@@ -65197,7 +65509,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb9f740u, (void *)F_00b9f740},
   {0xb9f7d0u, (void *)F_00b9f7d0},
   {0xb9f810u, (void *)F_00b9f810},
-  {0xb9f890u, (void *)F_00b9f890},
+  {0xb9f890u, (void *)W_00b9f890},
   {0xb9f8b0u, (void *)F_00b9f8b0},
   {0xb9f8e0u, (void *)W_00b9f8e0},
   {0xb9f940u, (void *)W_00b9f940},
@@ -65227,7 +65539,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xba0b90u, (void *)F_00ba0b90},
   {0xba0be0u, (void *)F_00ba0be0},
   {0xba0c10u, (void *)F_00ba0c10},
-  {0xba0c70u, (void *)F_00ba0c70},
+  {0xba0c70u, (void *)W_00ba0c70},
   {0xba0c90u, (void *)F_00ba0c90},
   {0xba0ce0u, (void *)F_00ba0ce0},
   {0xba0d20u, (void *)F_00ba0d20},
@@ -65258,7 +65570,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xba17a0u, (void *)F_00ba17a0},
   {0xba17d0u, (void *)F_00ba17d0},
   {0xba1820u, (void *)F_00ba1820},
-  {0xba1840u, (void *)F_00ba1840},
+  {0xba1840u, (void *)W_00ba1840},
   {0xba1860u, (void *)F_00ba1860},
   {0xba1910u, (void *)F_00ba1910},
   {0xba1930u, (void *)F_00ba1930},
@@ -65284,7 +65596,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xba2140u, (void *)F_00ba2140},
   {0xba2180u, (void *)W_00ba2180},
   {0xba21c0u, (void *)F_00ba21c0},
-  {0xba21f0u, (void *)F_00ba21f0},
+  {0xba21f0u, (void *)W_00ba21f0},
   {0xba2230u, (void *)W_00ba2230},
   {0xba2350u, (void *)W_00ba2350},
   {0xba23c0u, (void *)W_00ba23c0},
@@ -65399,7 +65711,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xba4f50u, (void *)F_00ba4f50},
   {0xba4fb0u, (void *)F_00ba4fb0},
   {0xba5030u, (void *)F_00ba5030},
-  {0xba5090u, (void *)F_00ba5090},
+  {0xba5090u, (void *)W_00ba5090},
   {0xba50b0u, (void *)F_00ba50b0},
   {0xba5190u, (void *)F_00ba5190},
   {0xba51c0u, (void *)F_00ba51c0},
@@ -66273,7 +66585,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbbabf0u, (void *)F_00bbabf0},
   {0xbbac00u, (void *)F_00bbac00},
   {0xbbac40u, (void *)W_00bbac40},
-  {0xbbac60u, (void *)F_00bbac60},
+  {0xbbac60u, (void *)W_00bbac60},
   {0xbbac80u, (void *)F_00bbac80},
   {0xbbaca0u, (void *)F_00bbaca0},
   {0xbbacc0u, (void *)F_00bbacc0},
@@ -66338,8 +66650,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xbbbce0u, (void *)F_00bbbce0},
   {0xbbbd00u, (void *)F_00bbbd00},
   {0xbbbd10u, (void *)F_00bbbd10},
-  {0xbbbd20u, (void *)F_00bbbd20},
-  {0xbbbd40u, (void *)F_00bbbd40},
+  {0xbbbd20u, (void *)W_00bbbd20},
+  {0xbbbd40u, (void *)W_00bbbd40},
   {0xbbbde0u, (void *)F_00bbbde0},
   {0xbbbe00u, (void *)F_00bbbe00},
   {0xbbbe30u, (void *)F_00bbbe30},
@@ -66508,9 +66820,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xbc0aa0u, (void *)F_00bc0aa0},
   {0xbc0ae0u, (void *)F_00bc0ae0},
   {0xbc0af0u, (void *)F_00bc0af0},
-  {0xbc0b40u, (void *)W_00bc0b40},
+  {0xbc0b40u, (void *)F_00bc0b40},
   {0xbc0c10u, (void *)W_00bc0c10},
-  {0xbc0c30u, (void *)F_00bc0c30},
+  {0xbc0c30u, (void *)W_00bc0c30},
   {0xbc0c60u, (void *)W_00bc0c60},
   {0xbc0d20u, (void *)F_00bc0d20},
   {0xbc0d30u, (void *)F_00bc0d30},
@@ -66627,7 +66939,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbc3a60u, (void *)F_00bc3a60},
   {0xbc3ab0u, (void *)F_00bc3ab0},
   {0xbc3b20u, (void *)F_00bc3b20},
-  {0xbc3b40u, (void *)F_00bc3b40},
+  {0xbc3b40u, (void *)W_00bc3b40},
   {0xbc3b60u, (void *)W_00bc3b60},
   {0xbc3b80u, (void *)W_00bc3b80},
   {0xbc3ba0u, (void *)F_00bc3ba0},
@@ -66716,7 +67028,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbc59e0u, (void *)F_00bc59e0},
   {0xbc5a10u, (void *)F_00bc5a10},
   {0xbc5a30u, (void *)F_00bc5a30},
-  {0xbc5a80u, (void *)F_00bc5a80},
+  {0xbc5a80u, (void *)W_00bc5a80},
   {0xbc5aa0u, (void *)F_00bc5aa0},
   {0xbc5b00u, (void *)F_00bc5b00},
   {0xbc5b60u, (void *)F_00bc5b60},
@@ -66725,11 +67037,11 @@ const GEN_JUMP g_genJumps[] = {
   {0xbc5c20u, (void *)F_00bc5c20},
   {0xbc5d20u, (void *)F_00bc5d20},
   {0xbc5df0u, (void *)F_00bc5df0},
-  {0xbc5e30u, (void *)F_00bc5e30},
+  {0xbc5e30u, (void *)W_00bc5e30},
   {0xbc5e50u, (void *)F_00bc5e50},
   {0xbc5eb0u, (void *)F_00bc5eb0},
   {0xbc5fc0u, (void *)F_00bc5fc0},
-  {0xbc6120u, (void *)F_00bc6120},
+  {0xbc6120u, (void *)W_00bc6120},
   {0xbc6140u, (void *)F_00bc6140},
   {0xbc6190u, (void *)F_00bc6190},
   {0xbc61b0u, (void *)F_00bc61b0},
@@ -66737,7 +67049,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbc6220u, (void *)W_00bc6220},
   {0xbc6400u, (void *)F_00bc6400},
   {0xbc6430u, (void *)F_00bc6430},
-  {0xbc6460u, (void *)F_00bc6460},
+  {0xbc6460u, (void *)W_00bc6460},
   {0xbc6480u, (void *)F_00bc6480},
   {0xbc64b0u, (void *)F_00bc64b0},
   {0xbc6530u, (void *)F_00bc6530},
@@ -66745,7 +67057,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbc65a0u, (void *)F_00bc65a0},
   {0xbc6600u, (void *)F_00bc6600},
   {0xbc68e0u, (void *)F_00bc68e0},
-  {0xbc6930u, (void *)F_00bc6930},
+  {0xbc6930u, (void *)W_00bc6930},
   {0xbc6950u, (void *)F_00bc6950},
   {0xbc6970u, (void *)F_00bc6970},
   {0xbc69b0u, (void *)W_00bc69b0},
@@ -66763,7 +67075,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbc6da0u, (void *)F_00bc6da0},
   {0xbc6dd0u, (void *)F_00bc6dd0},
   {0xbc6e90u, (void *)F_00bc6e90},
-  {0xbc6f20u, (void *)W_00bc6f20},
+  {0xbc6f20u, (void *)F_00bc6f20},
   {0xbc7150u, (void *)W_00bc7150},
   {0xbc72e0u, (void *)F_00bc72e0},
   {0xbc7440u, (void *)F_00bc7440},
@@ -66781,7 +67093,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbc8080u, (void *)W_00bc8080},
   {0xbc80a0u, (void *)F_00bc80a0},
   {0xbc80c0u, (void *)W_00bc80c0},
-  {0xbc80e0u, (void *)F_00bc80e0},
+  {0xbc80e0u, (void *)W_00bc80e0},
   {0xbc8100u, (void *)W_00bc8100},
   {0xbc8120u, (void *)F_00bc8120},
   {0xbc8130u, (void *)F_00bc8130},
@@ -66898,7 +67210,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbca180u, (void *)F_00bca180},
   {0xbca2a0u, (void *)F_00bca2a0},
   {0xbca2e0u, (void *)F_00bca2e0},
-  {0xbca2f0u, (void *)F_00bca2f0},
+  {0xbca2f0u, (void *)W_00bca2f0},
   {0xbca310u, (void *)F_00bca310},
   {0xbca340u, (void *)F_00bca340},
   {0xbca390u, (void *)F_00bca390},
@@ -66972,7 +67284,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbccaa0u, (void *)F_00bccaa0},
   {0xbccac0u, (void *)F_00bccac0},
   {0xbccb70u, (void *)F_00bccb70},
-  {0xbccbb0u, (void *)F_00bccbb0},
+  {0xbccbb0u, (void *)W_00bccbb0},
   {0xbccbd0u, (void *)F_00bccbd0},
   {0xbccbf0u, (void *)F_00bccbf0},
   {0xbccc00u, (void *)F_00bccc00},
@@ -67024,7 +67336,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbcdde0u, (void *)F_00bcdde0},
   {0xbcddf0u, (void *)F_00bcddf0},
   {0xbcde10u, (void *)F_00bcde10},
-  {0xbcde20u, (void *)F_00bcde20},
+  {0xbcde20u, (void *)W_00bcde20},
   {0xbcde40u, (void *)W_00bcde40},
   {0xbcde60u, (void *)W_00bcde60},
   {0xbcde80u, (void *)W_00bcde80},
@@ -67068,7 +67380,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbcf380u, (void *)W_00bcf380},
   {0xbcf3c0u, (void *)F_00bcf3c0},
   {0xbcf400u, (void *)F_00bcf400},
-  {0xbcf470u, (void *)F_00bcf470},
+  {0xbcf470u, (void *)W_00bcf470},
   {0xbcf490u, (void *)F_00bcf490},
   {0xbcf500u, (void *)W_00bcf500},
   {0xbcf520u, (void *)F_00bcf520},
@@ -67151,9 +67463,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd19a0u, (void *)F_00bd19a0},
   {0xbd19b0u, (void *)F_00bd19b0},
   {0xbd19d0u, (void *)F_00bd19d0},
-  {0xbd19e0u, (void *)F_00bd19e0},
-  {0xbd19f0u, (void *)F_00bd19f0},
-  {0xbd1a00u, (void *)F_00bd1a00},
+  {0xbd19e0u, (void *)W_00bd19e0},
+  {0xbd19f0u, (void *)W_00bd19f0},
+  {0xbd1a00u, (void *)W_00bd1a00},
   {0xbd1a10u, (void *)F_00bd1a10},
   {0xbd1a90u, (void *)F_00bd1a90},
   {0xbd1ab0u, (void *)F_00bd1ab0},
@@ -67165,7 +67477,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd1d40u, (void *)F_00bd1d40},
   {0xbd1de0u, (void *)F_00bd1de0},
   {0xbd1e60u, (void *)W_00bd1e60},
-  {0xbd1e80u, (void *)F_00bd1e80},
+  {0xbd1e80u, (void *)W_00bd1e80},
   {0xbd1ea0u, (void *)W_00bd1ea0},
   {0xbd1ec0u, (void *)F_00bd1ec0},
   {0xbd1ed0u, (void *)F_00bd1ed0},
@@ -67174,7 +67486,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd1fe0u, (void *)W_00bd1fe0},
   {0xbd20e0u, (void *)W_00bd20e0},
   {0xbd2130u, (void *)F_00bd2130},
-  {0xbd2140u, (void *)F_00bd2140},
+  {0xbd2140u, (void *)W_00bd2140},
   {0xbd2190u, (void *)F_00bd2190},
   {0xbd21a0u, (void *)F_00bd21a0},
   {0xbd2200u, (void *)F_00bd2200},
@@ -67234,21 +67546,21 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd4150u, (void *)F_00bd4150},
   {0xbd41b0u, (void *)W_00bd41b0},
   {0xbd4280u, (void *)F_00bd4280},
-  {0xbd42f0u, (void *)F_00bd42f0},
+  {0xbd42f0u, (void *)W_00bd42f0},
   {0xbd4310u, (void *)F_00bd4310},
   {0xbd43e0u, (void *)F_00bd43e0},
   {0xbd43f0u, (void *)W_00bd43f0},
   {0xbd4410u, (void *)F_00bd4410},
   {0xbd44a0u, (void *)F_00bd44a0},
   {0xbd44d0u, (void *)F_00bd44d0},
-  {0xbd4500u, (void *)F_00bd4500},
+  {0xbd4500u, (void *)W_00bd4500},
   {0xbd4530u, (void *)F_00bd4530},
   {0xbd4590u, (void *)F_00bd4590},
   {0xbd4610u, (void *)F_00bd4610},
   {0xbd4640u, (void *)F_00bd4640},
   {0xbd4660u, (void *)F_00bd4660},
   {0xbd4690u, (void *)F_00bd4690},
-  {0xbd4840u, (void *)F_00bd4840},
+  {0xbd4840u, (void *)W_00bd4840},
   {0xbd4860u, (void *)F_00bd4860},
   {0xbd4890u, (void *)F_00bd4890},
   {0xbd48c0u, (void *)F_00bd48c0},
@@ -67257,7 +67569,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd4dc0u, (void *)W_00bd4dc0},
   {0xbd4e00u, (void *)W_00bd4e00},
   {0xbd4e10u, (void *)W_00bd4e10},
-  {0xbd4e30u, (void *)F_00bd4e30},
+  {0xbd4e30u, (void *)W_00bd4e30},
   {0xbd4e50u, (void *)F_00bd4e50},
   {0xbd4e60u, (void *)F_00bd4e60},
   {0xbd4e70u, (void *)W_00bd4e70},
@@ -67266,7 +67578,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd4f80u, (void *)F_00bd4f80},
   {0xbd4fc0u, (void *)F_00bd4fc0},
   {0xbd5090u, (void *)F_00bd5090},
-  {0xbd50e0u, (void *)F_00bd50e0},
+  {0xbd50e0u, (void *)W_00bd50e0},
   {0xbd5160u, (void *)F_00bd5160},
   {0xbd5400u, (void *)F_00bd5400},
   {0xbd5450u, (void *)F_00bd5450},
@@ -67285,13 +67597,13 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd57a0u, (void *)F_00bd57a0},
   {0xbd5800u, (void *)F_00bd5800},
   {0xbd5860u, (void *)W_00bd5860},
-  {0xbd58c0u, (void *)F_00bd58c0},
+  {0xbd58c0u, (void *)W_00bd58c0},
   {0xbd58e0u, (void *)F_00bd58e0},
   {0xbd5900u, (void *)F_00bd5900},
-  {0xbd5bb0u, (void *)F_00bd5bb0},
-  {0xbd5bd0u, (void *)F_00bd5bd0},
-  {0xbd5bf0u, (void *)F_00bd5bf0},
-  {0xbd5c10u, (void *)F_00bd5c10},
+  {0xbd5bb0u, (void *)W_00bd5bb0},
+  {0xbd5bd0u, (void *)W_00bd5bd0},
+  {0xbd5bf0u, (void *)W_00bd5bf0},
+  {0xbd5c10u, (void *)W_00bd5c10},
   {0xbd5c30u, (void *)F_00bd5c30},
   {0xbd5db0u, (void *)F_00bd5db0},
   {0xbd5e00u, (void *)F_00bd5e00},
@@ -67304,7 +67616,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd6250u, (void *)F_00bd6250},
   {0xbd6270u, (void *)F_00bd6270},
   {0xbd6290u, (void *)F_00bd6290},
-  {0xbd6700u, (void *)F_00bd6700},
+  {0xbd6700u, (void *)W_00bd6700},
   {0xbd6720u, (void *)F_00bd6720},
   {0xbd6760u, (void *)F_00bd6760},
   {0xbd6770u, (void *)F_00bd6770},
@@ -67320,18 +67632,18 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd6bc0u, (void *)F_00bd6bc0},
   {0xbd6c20u, (void *)F_00bd6c20},
   {0xbd6de0u, (void *)F_00bd6de0},
-  {0xbd6e50u, (void *)F_00bd6e50},
+  {0xbd6e50u, (void *)W_00bd6e50},
   {0xbd6e70u, (void *)F_00bd6e70},
   {0xbd6e80u, (void *)F_00bd6e80},
   {0xbd7000u, (void *)F_00bd7000},
   {0xbd7010u, (void *)W_00bd7010},
   {0xbd7020u, (void *)F_00bd7020},
-  {0xbd7040u, (void *)F_00bd7040},
+  {0xbd7040u, (void *)W_00bd7040},
   {0xbd7060u, (void *)F_00bd7060},
   {0xbd70d0u, (void *)F_00bd70d0},
   {0xbd70f0u, (void *)F_00bd70f0},
-  {0xbd7110u, (void *)W_00bd7110},
-  {0xbd71b0u, (void *)F_00bd71b0},
+  {0xbd7110u, (void *)F_00bd7110},
+  {0xbd71b0u, (void *)W_00bd71b0},
   {0xbd71f0u, (void *)F_00bd71f0},
   {0xbd7260u, (void *)F_00bd7260},
   {0xbd76e0u, (void *)F_00bd76e0},
@@ -67346,7 +67658,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd79c0u, (void *)F_00bd79c0},
   {0xbd79d0u, (void *)F_00bd79d0},
   {0xbd7a20u, (void *)W_00bd7a20},
-  {0xbd7a70u, (void *)F_00bd7a70},
+  {0xbd7a70u, (void *)W_00bd7a70},
   {0xbd7a90u, (void *)F_00bd7a90},
   {0xbd7ad0u, (void *)F_00bd7ad0},
   {0xbd7b30u, (void *)F_00bd7b30},
@@ -67357,7 +67669,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd7c30u, (void *)W_00bd7c30},
   {0xbd7c70u, (void *)F_00bd7c70},
   {0xbd7cd0u, (void *)F_00bd7cd0},
-  {0xbd7d10u, (void *)F_00bd7d10},
+  {0xbd7d10u, (void *)W_00bd7d10},
   {0xbd7d30u, (void *)F_00bd7d30},
   {0xbd7d60u, (void *)F_00bd7d60},
   {0xbd7e20u, (void *)F_00bd7e20},
@@ -67368,20 +67680,20 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd8280u, (void *)W_00bd8280},
   {0xbd82a0u, (void *)F_00bd82a0},
   {0xbd8360u, (void *)F_00bd8360},
-  {0xbd8390u, (void *)F_00bd8390},
+  {0xbd8390u, (void *)W_00bd8390},
   {0xbd83b0u, (void *)F_00bd83b0},
   {0xbd83f0u, (void *)W_00bd83f0},
   {0xbd8410u, (void *)F_00bd8410},
-  {0xbd8470u, (void *)W_00bd8470},
-  {0xbd84d0u, (void *)W_00bd84d0},
-  {0xbd8540u, (void *)W_00bd8540},
+  {0xbd8470u, (void *)F_00bd8470},
+  {0xbd84d0u, (void *)F_00bd84d0},
+  {0xbd8540u, (void *)F_00bd8540},
   {0xbd85a0u, (void *)W_00bd85a0},
   {0xbd85c0u, (void *)F_00bd85c0},
   {0xbd85d0u, (void *)F_00bd85d0},
   {0xbd8600u, (void *)W_00bd8600},
-  {0xbd8620u, (void *)W_00bd8620},
+  {0xbd8620u, (void *)F_00bd8620},
   {0xbd8670u, (void *)F_00bd8670},
-  {0xbd86a0u, (void *)F_00bd86a0},
+  {0xbd86a0u, (void *)W_00bd86a0},
   {0xbd86c0u, (void *)F_00bd86c0},
   {0xbd86f0u, (void *)W_00bd86f0},
   {0xbd8700u, (void *)F_00bd8700},
@@ -67391,7 +67703,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd87c0u, (void *)W_00bd87c0},
   {0xbd87e0u, (void *)F_00bd87e0},
   {0xbd8a60u, (void *)F_00bd8a60},
-  {0xbd8aa0u, (void *)F_00bd8aa0},
+  {0xbd8aa0u, (void *)W_00bd8aa0},
   {0xbd8ac0u, (void *)F_00bd8ac0},
   {0xbd8af0u, (void *)F_00bd8af0},
   {0xbd8b10u, (void *)F_00bd8b10},
@@ -67409,7 +67721,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd9210u, (void *)F_00bd9210},
   {0xbd9370u, (void *)F_00bd9370},
   {0xbd95a0u, (void *)F_00bd95a0},
-  {0xbd95d0u, (void *)F_00bd95d0},
+  {0xbd95d0u, (void *)W_00bd95d0},
   {0xbd95f0u, (void *)F_00bd95f0},
   {0xbd9620u, (void *)W_00bd9620},
   {0xbd9650u, (void *)F_00bd9650},
@@ -67420,13 +67732,13 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd97b0u, (void *)F_00bd97b0},
   {0xbd9810u, (void *)W_00bd9810},
   {0xbd9880u, (void *)F_00bd9880},
-  {0xbd98b0u, (void *)F_00bd98b0},
+  {0xbd98b0u, (void *)W_00bd98b0},
   {0xbd98d0u, (void *)F_00bd98d0},
   {0xbd9900u, (void *)W_00bd9900},
   {0xbd9910u, (void *)F_00bd9910},
   {0xbd9970u, (void *)F_00bd9970},
   {0xbd99f0u, (void *)F_00bd99f0},
-  {0xbd9a30u, (void *)F_00bd9a30},
+  {0xbd9a30u, (void *)W_00bd9a30},
   {0xbd9a50u, (void *)F_00bd9a50},
   {0xbd9a80u, (void *)F_00bd9a80},
   {0xbd9a90u, (void *)W_00bd9a90},
@@ -67439,7 +67751,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd9b90u, (void *)F_00bd9b90},
   {0xbd9ba0u, (void *)F_00bd9ba0},
   {0xbd9c50u, (void *)F_00bd9c50},
-  {0xbd9c90u, (void *)F_00bd9c90},
+  {0xbd9c90u, (void *)W_00bd9c90},
   {0xbd9cb0u, (void *)F_00bd9cb0},
   {0xbd9ce0u, (void *)W_00bd9ce0},
   {0xbd9cf0u, (void *)F_00bd9cf0},
@@ -67447,7 +67759,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbd9e40u, (void *)F_00bd9e40},
   {0xbd9f80u, (void *)F_00bd9f80},
   {0xbda030u, (void *)F_00bda030},
-  {0xbda060u, (void *)F_00bda060},
+  {0xbda060u, (void *)W_00bda060},
   {0xbda080u, (void *)F_00bda080},
   {0xbda0b0u, (void *)W_00bda0b0},
   {0xbda0c0u, (void *)F_00bda0c0},
@@ -67460,7 +67772,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbda350u, (void *)F_00bda350},
   {0xbda3d0u, (void *)W_00bda3d0},
   {0xbda480u, (void *)F_00bda480},
-  {0xbda4b0u, (void *)F_00bda4b0},
+  {0xbda4b0u, (void *)W_00bda4b0},
   {0xbda4d0u, (void *)F_00bda4d0},
   {0xbda4f0u, (void *)F_00bda4f0},
   {0xbda540u, (void *)F_00bda540},
@@ -67470,7 +67782,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbda660u, (void *)W_00bda660},
   {0xbda690u, (void *)F_00bda690},
   {0xbda830u, (void *)F_00bda830},
-  {0xbda860u, (void *)F_00bda860},
+  {0xbda860u, (void *)W_00bda860},
   {0xbda880u, (void *)F_00bda880},
   {0xbda8a0u, (void *)F_00bda8a0},
   {0xbda8f0u, (void *)F_00bda8f0},
@@ -67481,7 +67793,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbdaa70u, (void *)F_00bdaa70},
   {0xbdad50u, (void *)F_00bdad50},
   {0xbdad80u, (void *)W_00bdad80},
-  {0xbdada0u, (void *)F_00bdada0},
+  {0xbdada0u, (void *)W_00bdada0},
   {0xbdadc0u, (void *)F_00bdadc0},
   {0xbdadf0u, (void *)F_00bdadf0},
   {0xbdae20u, (void *)F_00bdae20},
@@ -67547,25 +67859,25 @@ const GEN_JUMP g_genJumps[] = {
   {0xbdc280u, (void *)W_00bdc280},
   {0xbdc290u, (void *)F_00bdc290},
   {0xbdc320u, (void *)F_00bdc320},
-  {0xbdc360u, (void *)F_00bdc360},
+  {0xbdc360u, (void *)W_00bdc360},
   {0xbdc380u, (void *)F_00bdc380},
   {0xbdc3a0u, (void *)F_00bdc3a0},
   {0xbdc3b0u, (void *)W_00bdc3b0},
   {0xbdc3c0u, (void *)F_00bdc3c0},
   {0xbdc560u, (void *)F_00bdc560},
-  {0xbdc590u, (void *)F_00bdc590},
+  {0xbdc590u, (void *)W_00bdc590},
   {0xbdc5b0u, (void *)F_00bdc5b0},
   {0xbdc5e0u, (void *)F_00bdc5e0},
   {0xbdc5f0u, (void *)W_00bdc5f0},
   {0xbdc610u, (void *)F_00bdc610},
-  {0xbdc640u, (void *)F_00bdc640},
+  {0xbdc640u, (void *)W_00bdc640},
   {0xbdc660u, (void *)F_00bdc660},
   {0xbdc680u, (void *)W_00bdc680},
   {0xbdc690u, (void *)F_00bdc690},
   {0xbdc730u, (void *)F_00bdc730},
   {0xbdc740u, (void *)F_00bdc740},
   {0xbdc770u, (void *)F_00bdc770},
-  {0xbdc7a0u, (void *)F_00bdc7a0},
+  {0xbdc7a0u, (void *)W_00bdc7a0},
   {0xbdc7c0u, (void *)F_00bdc7c0},
   {0xbdc7e0u, (void *)W_00bdc7e0},
   {0xbdc7f0u, (void *)F_00bdc7f0},
@@ -67578,7 +67890,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbdc9b0u, (void *)F_00bdc9b0},
   {0xbdc9c0u, (void *)W_00bdc9c0},
   {0xbdcaa0u, (void *)F_00bdcaa0},
-  {0xbdcad0u, (void *)F_00bdcad0},
+  {0xbdcad0u, (void *)W_00bdcad0},
   {0xbdcaf0u, (void *)F_00bdcaf0},
   {0xbdcb00u, (void *)F_00bdcb00},
   {0xbdcc00u, (void *)F_00bdcc00},
@@ -67587,15 +67899,15 @@ const GEN_JUMP g_genJumps[] = {
   {0xbdcd90u, (void *)F_00bdcd90},
   {0xbdd090u, (void *)F_00bdd090},
   {0xbdd0f0u, (void *)F_00bdd0f0},
-  {0xbdd210u, (void *)F_00bdd210},
+  {0xbdd210u, (void *)W_00bdd210},
   {0xbdd220u, (void *)F_00bdd220},
-  {0xbdd260u, (void *)F_00bdd260},
-  {0xbdd280u, (void *)F_00bdd280},
+  {0xbdd260u, (void *)W_00bdd260},
+  {0xbdd280u, (void *)W_00bdd280},
   {0xbdd2b0u, (void *)F_00bdd2b0},
   {0xbdd2e0u, (void *)F_00bdd2e0},
   {0xbdd300u, (void *)F_00bdd300},
   {0xbdd310u, (void *)W_00bdd310},
-  {0xbdd330u, (void *)F_00bdd330},
+  {0xbdd330u, (void *)W_00bdd330},
   {0xbdd350u, (void *)F_00bdd350},
   {0xbdd390u, (void *)F_00bdd390},
   {0xbdd440u, (void *)F_00bdd440},
@@ -67614,10 +67926,10 @@ const GEN_JUMP g_genJumps[] = {
   {0xbddd70u, (void *)F_00bddd70},
   {0xbddfb0u, (void *)W_00bddfb0},
   {0xbddfe0u, (void *)F_00bddfe0},
-  {0xbde000u, (void *)F_00bde000},
-  {0xbde010u, (void *)F_00bde010},
-  {0xbde020u, (void *)F_00bde020},
-  {0xbde030u, (void *)F_00bde030},
+  {0xbde000u, (void *)W_00bde000},
+  {0xbde010u, (void *)W_00bde010},
+  {0xbde020u, (void *)W_00bde020},
+  {0xbde030u, (void *)W_00bde030},
   {0xbde040u, (void *)F_00bde040},
   {0xbde070u, (void *)F_00bde070},
   {0xbde0c0u, (void *)F_00bde0c0},
@@ -67628,7 +67940,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbde3b0u, (void *)F_00bde3b0},
   {0xbde550u, (void *)F_00bde550},
   {0xbde680u, (void *)F_00bde680},
-  {0xbde6e0u, (void *)F_00bde6e0},
+  {0xbde6e0u, (void *)W_00bde6e0},
   {0xbde700u, (void *)F_00bde700},
   {0xbde730u, (void *)F_00bde730},
   {0xbde740u, (void *)F_00bde740},
@@ -67667,7 +67979,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbdffb0u, (void *)F_00bdffb0},
   {0xbdffc0u, (void *)F_00bdffc0},
   {0xbe0050u, (void *)F_00be0050},
-  {0xbe00a0u, (void *)F_00be00a0},
+  {0xbe00a0u, (void *)W_00be00a0},
   {0xbe00c0u, (void *)F_00be00c0},
   {0xbe0120u, (void *)F_00be0120},
   {0xbe0180u, (void *)F_00be0180},
@@ -67677,10 +67989,10 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe0390u, (void *)F_00be0390},
   {0xbe0480u, (void *)W_00be0480},
   {0xbe0550u, (void *)F_00be0550},
-  {0xbe05d0u, (void *)F_00be05d0},
-  {0xbe05f0u, (void *)F_00be05f0},
+  {0xbe05d0u, (void *)W_00be05d0},
+  {0xbe05f0u, (void *)W_00be05f0},
   {0xbe0620u, (void *)F_00be0620},
-  {0xbe0660u, (void *)F_00be0660},
+  {0xbe0660u, (void *)W_00be0660},
   {0xbe0680u, (void *)F_00be0680},
   {0xbe06a0u, (void *)F_00be06a0},
   {0xbe06c0u, (void *)F_00be06c0},
@@ -67690,7 +68002,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe0da0u, (void *)F_00be0da0},
   {0xbe0dc0u, (void *)F_00be0dc0},
   {0xbe0de0u, (void *)F_00be0de0},
-  {0xbe0e10u, (void *)F_00be0e10},
+  {0xbe0e10u, (void *)W_00be0e10},
   {0xbe0e30u, (void *)W_00be0e30},
   {0xbe0e70u, (void *)F_00be0e70},
   {0xbe0ed0u, (void *)W_00be0ed0},
@@ -67705,7 +68017,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe1680u, (void *)F_00be1680},
   {0xbe1760u, (void *)F_00be1760},
   {0xbe17b0u, (void *)W_00be17b0},
-  {0xbe17c0u, (void *)F_00be17c0},
+  {0xbe17c0u, (void *)W_00be17c0},
   {0xbe17e0u, (void *)F_00be17e0},
   {0xbe1820u, (void *)W_00be1820},
   {0xbe1860u, (void *)F_00be1860},
@@ -67719,7 +68031,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe2030u, (void *)F_00be2030},
   {0xbe2070u, (void *)F_00be2070},
   {0xbe2120u, (void *)F_00be2120},
-  {0xbe2170u, (void *)F_00be2170},
+  {0xbe2170u, (void *)W_00be2170},
   {0xbe2190u, (void *)F_00be2190},
   {0xbe21b0u, (void *)F_00be21b0},
   {0xbe21c0u, (void *)F_00be21c0},
@@ -67729,7 +68041,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe22e0u, (void *)F_00be22e0},
   {0xbe2310u, (void *)W_00be2310},
   {0xbe2390u, (void *)F_00be2390},
-  {0xbe2400u, (void *)F_00be2400},
+  {0xbe2400u, (void *)W_00be2400},
   {0xbe2420u, (void *)F_00be2420},
   {0xbe2440u, (void *)F_00be2440},
   {0xbe24a0u, (void *)F_00be24a0},
@@ -67749,7 +68061,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe2a90u, (void *)F_00be2a90},
   {0xbe2ac0u, (void *)F_00be2ac0},
   {0xbe2af0u, (void *)F_00be2af0},
-  {0xbe2b40u, (void *)F_00be2b40},
+  {0xbe2b40u, (void *)W_00be2b40},
   {0xbe2b70u, (void *)F_00be2b70},
   {0xbe2b90u, (void *)W_00be2b90},
   {0xbe2be0u, (void *)F_00be2be0},
@@ -67761,7 +68073,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe31c0u, (void *)F_00be31c0},
   {0xbe31f0u, (void *)W_00be31f0},
   {0xbe3200u, (void *)F_00be3200},
-  {0xbe32b0u, (void *)F_00be32b0},
+  {0xbe32b0u, (void *)W_00be32b0},
   {0xbe32d0u, (void *)F_00be32d0},
   {0xbe3330u, (void *)F_00be3330},
   {0xbe3380u, (void *)F_00be3380},
@@ -67806,12 +68118,12 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe4fe0u, (void *)F_00be4fe0},
   {0xbe4ff0u, (void *)F_00be4ff0},
   {0xbe5060u, (void *)W_00be5060},
-  {0xbe5070u, (void *)F_00be5070},
-  {0xbe50e0u, (void *)F_00be50e0},
+  {0xbe5070u, (void *)W_00be5070},
+  {0xbe50e0u, (void *)W_00be50e0},
   {0xbe5160u, (void *)W_00be5160},
   {0xbe5180u, (void *)F_00be5180},
   {0xbe5190u, (void *)F_00be5190},
-  {0xbe51e0u, (void *)W_00be51e0},
+  {0xbe51e0u, (void *)F_00be51e0},
   {0xbe5220u, (void *)W_00be5220},
   {0xbe5240u, (void *)W_00be5240},
   {0xbe52e0u, (void *)F_00be52e0},
@@ -67836,7 +68148,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe5af0u, (void *)F_00be5af0},
   {0xbe5b30u, (void *)F_00be5b30},
   {0xbe5c50u, (void *)W_00be5c50},
-  {0xbe5d90u, (void *)W_00be5d90},
+  {0xbe5d90u, (void *)F_00be5d90},
   {0xbe5e90u, (void *)W_00be5e90},
   {0xbe5f00u, (void *)W_00be5f00},
   {0xbe5fa0u, (void *)F_00be5fa0},
@@ -67847,7 +68159,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe6510u, (void *)F_00be6510},
   {0xbe6580u, (void *)F_00be6580},
   {0xbe6700u, (void *)F_00be6700},
-  {0xbe6770u, (void *)F_00be6770},
+  {0xbe6770u, (void *)W_00be6770},
   {0xbe6790u, (void *)F_00be6790},
   {0xbe67c0u, (void *)F_00be67c0},
   {0xbe6820u, (void *)W_00be6820},
@@ -67868,7 +68180,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe7130u, (void *)F_00be7130},
   {0xbe7190u, (void *)W_00be7190},
   {0xbe71c0u, (void *)F_00be71c0},
-  {0xbe71d0u, (void *)F_00be71d0},
+  {0xbe71d0u, (void *)W_00be71d0},
   {0xbe71f0u, (void *)F_00be71f0},
   {0xbe7230u, (void *)F_00be7230},
   {0xbe7240u, (void *)F_00be7240},
@@ -67884,7 +68196,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbe7ab0u, (void *)F_00be7ab0},
   {0xbe7b40u, (void *)F_00be7b40},
   {0xbe7cf0u, (void *)F_00be7cf0},
-  {0xbe7d20u, (void *)F_00be7d20},
+  {0xbe7d20u, (void *)W_00be7d20},
   {0xbe7d40u, (void *)F_00be7d40},
   {0xbe7d50u, (void *)F_00be7d50},
   {0xbe7d90u, (void *)W_00be7d90},
@@ -67964,7 +68276,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbea5a0u, (void *)F_00bea5a0},
   {0xbea5d0u, (void *)F_00bea5d0},
   {0xbea5f0u, (void *)F_00bea5f0},
-  {0xbea610u, (void *)F_00bea610},
+  {0xbea610u, (void *)W_00bea610},
   {0xbea630u, (void *)F_00bea630},
   {0xbea660u, (void *)W_00bea660},
   {0xbea760u, (void *)F_00bea760},
@@ -68009,7 +68321,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbeb450u, (void *)F_00beb450},
   {0xbeb480u, (void *)F_00beb480},
   {0xbeb560u, (void *)F_00beb560},
-  {0xbeb5e0u, (void *)F_00beb5e0},
+  {0xbeb5e0u, (void *)W_00beb5e0},
   {0xbeb600u, (void *)F_00beb600},
   {0xbeb610u, (void *)F_00beb610},
   {0xbeb650u, (void *)F_00beb650},
@@ -68065,7 +68377,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbecb60u, (void *)F_00becb60},
   {0xbecb70u, (void *)F_00becb70},
   {0xbecb80u, (void *)F_00becb80},
-  {0xbecbc0u, (void *)F_00becbc0},
+  {0xbecbc0u, (void *)W_00becbc0},
   {0xbecbe0u, (void *)F_00becbe0},
   {0xbecc40u, (void *)W_00becc40},
   {0xbecc60u, (void *)F_00becc60},
@@ -68161,7 +68473,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbee900u, (void *)F_00bee900},
   {0xbee910u, (void *)F_00bee910},
   {0xbee970u, (void *)W_00bee970},
-  {0xbee990u, (void *)F_00bee990},
+  {0xbee990u, (void *)W_00bee990},
   {0xbee9b0u, (void *)F_00bee9b0},
   {0xbeea10u, (void *)F_00beea10},
   {0xbeea60u, (void *)F_00beea60},
@@ -68176,7 +68488,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbeeda0u, (void *)F_00beeda0},
   {0xbeedb0u, (void *)W_00beedb0},
   {0xbeedc0u, (void *)F_00beedc0},
-  {0xbeede0u, (void *)F_00beede0},
+  {0xbeede0u, (void *)W_00beede0},
   {0xbeedf0u, (void *)F_00beedf0},
   {0xbeee50u, (void *)F_00beee50},
   {0xbeee80u, (void *)F_00beee80},
@@ -68188,7 +68500,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbeef60u, (void *)F_00beef60},
   {0xbeef70u, (void *)F_00beef70},
   {0xbeef80u, (void *)F_00beef80},
-  {0xbeefe0u, (void *)F_00beefe0},
+  {0xbeefe0u, (void *)W_00beefe0},
   {0xbef000u, (void *)F_00bef000},
   {0xbef070u, (void *)F_00bef070},
   {0xbef0a0u, (void *)F_00bef0a0},
@@ -68221,7 +68533,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbefbd0u, (void *)W_00befbd0},
   {0xbefbe0u, (void *)W_00befbe0},
   {0xbefc00u, (void *)F_00befc00},
-  {0xbefcb0u, (void *)F_00befcb0},
+  {0xbefcb0u, (void *)W_00befcb0},
   {0xbefcd0u, (void *)W_00befcd0},
   {0xbefd60u, (void *)F_00befd60},
   {0xbefda0u, (void *)F_00befda0},
@@ -68229,7 +68541,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbf0290u, (void *)F_00bf0290},
   {0xbf04f0u, (void *)F_00bf04f0},
   {0xbf0870u, (void *)W_00bf0870},
-  {0xbf08e0u, (void *)F_00bf08e0},
+  {0xbf08e0u, (void *)W_00bf08e0},
   {0xbf0900u, (void *)F_00bf0900},
   {0xbf0920u, (void *)F_00bf0920},
   {0xbf0960u, (void *)F_00bf0960},
@@ -68240,7 +68552,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbf0ae0u, (void *)F_00bf0ae0},
   {0xbf0b70u, (void *)F_00bf0b70},
   {0xbf0ba0u, (void *)F_00bf0ba0},
-  {0xbf0bc0u, (void *)F_00bf0bc0},
+  {0xbf0bc0u, (void *)W_00bf0bc0},
   {0xbf0be0u, (void *)F_00bf0be0},
   {0xbf0c30u, (void *)F_00bf0c30},
   {0xbf0c60u, (void *)F_00bf0c60},
@@ -68314,11 +68626,11 @@ const GEN_JUMP g_genJumps[] = {
   {0xbf95e0u, (void *)W_00bf95e0},
   {0xbf9650u, (void *)F_00bf9650},
   {0xbf9680u, (void *)F_00bf9680},
-  {0xbf96b0u, (void *)F_00bf96b0},
+  {0xbf96b0u, (void *)W_00bf96b0},
   {0xbf96f0u, (void *)F_00bf96f0},
   {0xbf97a0u, (void *)F_00bf97a0},
   {0xbf9850u, (void *)F_00bf9850},
-  {0xbfa010u, (void *)F_00bfa010},
+  {0xbfa010u, (void *)W_00bfa010},
   {0xbfa090u, (void *)F_00bfa090},
   {0xbfa370u, (void *)F_00bfa370},
   {0xbfa530u, (void *)F_00bfa530},
@@ -68334,7 +68646,6 @@ const GEN_JUMP g_genJumps[] = {
   {0xbfb9d0u, (void *)W_00bfb9d0},
   {0xbfbba0u, (void *)F_00bfbba0},
   {0xbfbbe0u, (void *)F_00bfbbe0},
-  {0xbfbbefu, (void *)F_00bfbbef},
   {0xbfbc40u, (void *)F_00bfbc40},
   {0xbfbcd0u, (void *)F_00bfbcd0},
   {0xbfbd10u, (void *)W_00bfbd10},
@@ -68363,19 +68674,19 @@ const GEN_JUMP g_genJumps[] = {
   {0xbff680u, (void *)W_00bff680},
   {0xbff6a0u, (void *)F_00bff6a0},
   {0xbff700u, (void *)F_00bff700},
-  {0xbff730u, (void *)F_00bff730},
+  {0xbff730u, (void *)W_00bff730},
   {0xbff760u, (void *)F_00bff760},
   {0xbff930u, (void *)F_00bff930},
   {0xbff950u, (void *)F_00bff950},
-  {0xbffb30u, (void *)W_00bffb30},
+  {0xbffb30u, (void *)F_00bffb30},
   {0xbffd10u, (void *)W_00bffd10},
   {0xbffd50u, (void *)W_00bffd50},
-  {0xbffd90u, (void *)F_00bffd90},
+  {0xbffd90u, (void *)W_00bffd90},
   {0xbffe20u, (void *)F_00bffe20},
   {0xbffe60u, (void *)F_00bffe60},
   {0xbffeb0u, (void *)F_00bffeb0},
   {0xbffee0u, (void *)F_00bffee0},
-  {0xbfff10u, (void *)F_00bfff10},
+  {0xbfff10u, (void *)W_00bfff10},
   {0xbfff70u, (void *)F_00bfff70},
   {0xbfffa0u, (void *)F_00bfffa0},
   {0xbfffe0u, (void *)F_00bfffe0},
@@ -68466,7 +68777,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc032f0u, (void *)F_00c032f0},
   {0xc03370u, (void *)F_00c03370},
   {0xc03460u, (void *)F_00c03460},
-  {0xc03630u, (void *)W_00c03630},
+  {0xc03630u, (void *)F_00c03630},
   {0xc03850u, (void *)F_00c03850},
   {0xc04a40u, (void *)F_00c04a40},
   {0xc04a80u, (void *)F_00c04a80},
@@ -68528,7 +68839,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc07300u, (void *)W_00c07300},
   {0xc07310u, (void *)F_00c07310},
   {0xc073f0u, (void *)F_00c073f0},
-  {0xc07460u, (void *)F_00c07460},
+  {0xc07460u, (void *)W_00c07460},
   {0xc07480u, (void *)F_00c07480},
   {0xc07490u, (void *)F_00c07490},
   {0xc07620u, (void *)F_00c07620},
@@ -69245,7 +69556,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc1ed60u, (void *)F_00c1ed60},
   {0xc1ed80u, (void *)F_00c1ed80},
   {0xc1ee60u, (void *)F_00c1ee60},
-  {0xc1ee70u, (void *)F_00c1ee70},
+  {0xc1ee70u, (void *)W_00c1ee70},
   {0xc1ee90u, (void *)F_00c1ee90},
   {0xc1eeb0u, (void *)F_00c1eeb0},
   {0xc1f1f0u, (void *)F_00c1f1f0},
@@ -69359,7 +69670,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc222f0u, (void *)F_00c222f0},
   {0xc22310u, (void *)F_00c22310},
   {0xc22330u, (void *)F_00c22330},
-  {0xc224e0u, (void *)F_00c224e0},
+  {0xc224e0u, (void *)W_00c224e0},
   {0xc22510u, (void *)F_00c22510},
   {0xc22530u, (void *)F_00c22530},
   {0xc22560u, (void *)F_00c22560},
@@ -69377,21 +69688,21 @@ const GEN_JUMP g_genJumps[] = {
   {0xc229e0u, (void *)F_00c229e0},
   {0xc22a10u, (void *)F_00c22a10},
   {0xc22a40u, (void *)F_00c22a40},
-  {0xc22aa0u, (void *)F_00c22aa0},
+  {0xc22aa0u, (void *)W_00c22aa0},
   {0xc22ac0u, (void *)F_00c22ac0},
   {0xc22de0u, (void *)F_00c22de0},
   {0xc22e00u, (void *)F_00c22e00},
   {0xc22e60u, (void *)F_00c22e60},
-  {0xc22e70u, (void *)F_00c22e70},
-  {0xc22e80u, (void *)F_00c22e80},
-  {0xc22e90u, (void *)F_00c22e90},
-  {0xc22ea0u, (void *)F_00c22ea0},
+  {0xc22e70u, (void *)W_00c22e70},
+  {0xc22e80u, (void *)W_00c22e80},
+  {0xc22e90u, (void *)W_00c22e90},
+  {0xc22ea0u, (void *)W_00c22ea0},
   {0xc22eb0u, (void *)F_00c22eb0},
   {0xc22ed0u, (void *)F_00c22ed0},
   {0xc22f10u, (void *)F_00c22f10},
   {0xc22f50u, (void *)F_00c22f50},
   {0xc22f90u, (void *)F_00c22f90},
-  {0xc22fd0u, (void *)F_00c22fd0},
+  {0xc22fd0u, (void *)W_00c22fd0},
   {0xc22ff0u, (void *)F_00c22ff0},
   {0xc23050u, (void *)W_00c23050},
   {0xc23070u, (void *)F_00c23070},
@@ -69406,12 +69717,12 @@ const GEN_JUMP g_genJumps[] = {
   {0xc23840u, (void *)F_00c23840},
   {0xc23880u, (void *)W_00c23880},
   {0xc238f0u, (void *)F_00c238f0},
-  {0xc23960u, (void *)F_00c23960},
-  {0xc23980u, (void *)F_00c23980},
-  {0xc239a0u, (void *)F_00c239a0},
-  {0xc239c0u, (void *)F_00c239c0},
+  {0xc23960u, (void *)W_00c23960},
+  {0xc23980u, (void *)W_00c23980},
+  {0xc239a0u, (void *)W_00c239a0},
+  {0xc239c0u, (void *)W_00c239c0},
   {0xc239e0u, (void *)F_00c239e0},
-  {0xc23a10u, (void *)F_00c23a10},
+  {0xc23a10u, (void *)W_00c23a10},
   {0xc23a40u, (void *)F_00c23a40},
   {0xc23a90u, (void *)F_00c23a90},
   {0xc23b80u, (void *)F_00c23b80},
@@ -69524,7 +69835,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc28a70u, (void *)F_00c28a70},
   {0xc28a90u, (void *)W_00c28a90},
   {0xc28ac0u, (void *)F_00c28ac0},
-  {0xc28af0u, (void *)F_00c28af0},
+  {0xc28af0u, (void *)W_00c28af0},
   {0xc28b10u, (void *)F_00c28b10},
   {0xc28b70u, (void *)F_00c28b70},
   {0xc28bb0u, (void *)F_00c28bb0},
@@ -69988,7 +70299,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc34600u, (void *)F_00c34600},
   {0xc34620u, (void *)F_00c34620},
   {0xc34640u, (void *)F_00c34640},
-  {0xc34690u, (void *)F_00c34690},
+  {0xc34690u, (void *)W_00c34690},
   {0xc346e0u, (void *)F_00c346e0},
   {0xc34800u, (void *)F_00c34800},
   {0xc34820u, (void *)F_00c34820},
@@ -70153,7 +70464,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc409f0u, (void *)F_00c409f0},
   {0xc40a00u, (void *)F_00c40a00},
   {0xc40a20u, (void *)F_00c40a20},
-  {0xc40a40u, (void *)F_00c40a40},
+  {0xc40a40u, (void *)W_00c40a40},
   {0xc40a60u, (void *)F_00c40a60},
   {0xc40a80u, (void *)F_00c40a80},
   {0xc40b20u, (void *)F_00c40b20},
@@ -70191,14 +70502,14 @@ const GEN_JUMP g_genJumps[] = {
   {0xc41230u, (void *)F_00c41230},
   {0xc412c0u, (void *)F_00c412c0},
   {0xc413e0u, (void *)F_00c413e0},
-  {0xc41550u, (void *)W_00c41550},
+  {0xc41550u, (void *)F_00c41550},
   {0xc415a0u, (void *)F_00c415a0},
   {0xc415e0u, (void *)F_00c415e0},
   {0xc41650u, (void *)F_00c41650},
   {0xc417b0u, (void *)F_00c417b0},
   {0xc417d0u, (void *)F_00c417d0},
   {0xc418a0u, (void *)F_00c418a0},
-  {0xc418d0u, (void *)F_00c418d0},
+  {0xc418d0u, (void *)W_00c418d0},
   {0xc41a30u, (void *)F_00c41a30},
   {0xc41a70u, (void *)F_00c41a70},
   {0xc41a80u, (void *)F_00c41a80},
@@ -70444,7 +70755,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc460f2u, (void *)W_00c460f2},
   {0xc46103u, (void *)F_00c46103},
   {0xc4612cu, (void *)F_00c4612c},
-  {0xc46149u, (void *)W_00c46149},
+  {0xc46149u, (void *)F_00c46149},
   {0xc4616au, (void *)F_00c4616a},
   {0xc4617eu, (void *)W_00c4617e},
   {0xc4619fu, (void *)F_00c4619f},
@@ -70494,7 +70805,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc468ecu, (void *)F_00c468ec},
   {0xc4690du, (void *)F_00c4690d},
   {0xc4692bu, (void *)W_00c4692b},
-  {0xc4694bu, (void *)W_00c4694b},
+  {0xc4694bu, (void *)F_00c4694b},
   {0xc4696cu, (void *)F_00c4696c},
   {0xc46990u, (void *)F_00c46990},
   {0xc469a4u, (void *)F_00c469a4},
@@ -71473,7 +71784,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc6eb31u, (void *)W_00c6eb31},
   {0xc6eb5eu, (void *)F_00c6eb5e},
   {0xc6eb77u, (void *)W_00c6eb77},
-  {0xc6eba5u, (void *)F_00c6eba5},
+  {0xc6eba5u, (void *)W_00c6eba5},
   {0xc6ebcdu, (void *)F_00c6ebcd},
   {0xc6ec33u, (void *)W_00c6ec33},
   {0xc6ecf6u, (void *)F_00c6ecf6},
@@ -72708,7 +73019,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc97fa0u, (void *)F_00c97fa0},
   {0xc98020u, (void *)F_00c98020},
   {0xc98050u, (void *)F_00c98050},
-  {0xc98080u, (void *)F_00c98080},
+  {0xc98080u, (void *)W_00c98080},
   {0xc98090u, (void *)F_00c98090},
   {0xc98100u, (void *)W_00c98100},
   {0xc98130u, (void *)F_00c98130},
@@ -72824,8 +73135,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xca1a00u, (void *)F_00ca1a00},
   {0xca1a10u, (void *)F_00ca1a10},
   {0xca1a20u, (void *)W_00ca1a20},
-  {0xca1a70u, (void *)F_00ca1a70},
-  {0xca1aa0u, (void *)F_00ca1aa0},
+  {0xca1a70u, (void *)W_00ca1a70},
+  {0xca1aa0u, (void *)W_00ca1aa0},
   {0xca1ad0u, (void *)F_00ca1ad0},
   {0xca1b60u, (void *)F_00ca1b60},
   {0xca1c30u, (void *)F_00ca1c30},
@@ -72945,7 +73256,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xca9fc0u, (void *)F_00ca9fc0},
   {0xca9fd0u, (void *)F_00ca9fd0},
   {0xcaa000u, (void *)F_00caa000},
-  {0xcaa040u, (void *)F_00caa040},
+  {0xcaa040u, (void *)W_00caa040},
   {0xcaa090u, (void *)F_00caa090},
   {0xcaa100u, (void *)F_00caa100},
   {0xcaa1d0u, (void *)W_00caa1d0},
@@ -73523,7 +73834,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcbac50u, (void *)F_00cbac50},
   {0xcbace0u, (void *)F_00cbace0},
   {0xcbad10u, (void *)F_00cbad10},
-  {0xcbae50u, (void *)F_00cbae50},
+  {0xcbae50u, (void *)W_00cbae50},
   {0xcbaea0u, (void *)F_00cbaea0},
   {0xcbaed0u, (void *)F_00cbaed0},
   {0xcbaef0u, (void *)F_00cbaef0},
@@ -73769,7 +74080,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcc1130u, (void *)F_00cc1130},
   {0xcc1160u, (void *)W_00cc1160},
   {0xcc1190u, (void *)F_00cc1190},
-  {0xcc11c0u, (void *)F_00cc11c0},
+  {0xcc11c0u, (void *)W_00cc11c0},
   {0xcc12a0u, (void *)F_00cc12a0},
   {0xcc12b0u, (void *)F_00cc12b0},
   {0xcc12d0u, (void *)W_00cc12d0},
@@ -73785,7 +74096,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcc14e0u, (void *)F_00cc14e0},
   {0xcc1510u, (void *)F_00cc1510},
   {0xcc1560u, (void *)F_00cc1560},
-  {0xcc15e0u, (void *)F_00cc15e0},
+  {0xcc15e0u, (void *)W_00cc15e0},
   {0xcc15f0u, (void *)F_00cc15f0},
   {0xcc1640u, (void *)F_00cc1640},
   {0xcc16b0u, (void *)F_00cc16b0},
@@ -73830,7 +74141,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcc2570u, (void *)F_00cc2570},
   {0xcc25e0u, (void *)W_00cc25e0},
   {0xcc2690u, (void *)F_00cc2690},
-  {0xcc26e0u, (void *)W_00cc26e0},
+  {0xcc26e0u, (void *)F_00cc26e0},
   {0xcc2740u, (void *)W_00cc2740},
   {0xcc2750u, (void *)F_00cc2750},
   {0xcc2760u, (void *)F_00cc2760},
@@ -74036,7 +74347,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcc9360u, (void *)F_00cc9360},
   {0xcc9380u, (void *)W_00cc9380},
   {0xcc9390u, (void *)W_00cc9390},
-  {0xcc93a0u, (void *)F_00cc93a0},
+  {0xcc93a0u, (void *)W_00cc93a0},
   {0xcc93f0u, (void *)F_00cc93f0},
   {0xcc9410u, (void *)F_00cc9410},
   {0xcc9420u, (void *)F_00cc9420},
@@ -74074,7 +74385,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xccb0b0u, (void *)W_00ccb0b0},
   {0xccb0c0u, (void *)W_00ccb0c0},
   {0xccb0d0u, (void *)F_00ccb0d0},
-  {0xccb0e0u, (void *)F_00ccb0e0},
+  {0xccb0e0u, (void *)W_00ccb0e0},
   {0xccb0f0u, (void *)F_00ccb0f0},
   {0xccb100u, (void *)W_00ccb100},
   {0xccb110u, (void *)W_00ccb110},
@@ -74175,11 +74486,11 @@ const GEN_JUMP g_genJumps[] = {
   {0xcccc30u, (void *)F_00cccc30},
   {0xcccc70u, (void *)F_00cccc70},
   {0xcccc80u, (void *)F_00cccc80},
-  {0xcccc90u, (void *)F_00cccc90},
+  {0xcccc90u, (void *)W_00cccc90},
   {0xccccc0u, (void *)W_00ccccc0},
   {0xccccf0u, (void *)W_00ccccf0},
   {0xcccd20u, (void *)W_00cccd20},
-  {0xcccd60u, (void *)F_00cccd60},
+  {0xcccd60u, (void *)W_00cccd60},
   {0xcccd90u, (void *)F_00cccd90},
   {0xcccde0u, (void *)W_00cccde0},
   {0xcccee0u, (void *)W_00cccee0},
@@ -74193,8 +74504,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xccd100u, (void *)F_00ccd100},
   {0xccd150u, (void *)F_00ccd150},
   {0xccd190u, (void *)F_00ccd190},
-  {0xccd220u, (void *)W_00ccd220},
-  {0xccd2f0u, (void *)W_00ccd2f0},
+  {0xccd220u, (void *)F_00ccd220},
+  {0xccd2f0u, (void *)F_00ccd2f0},
   {0xccd3b0u, (void *)F_00ccd3b0},
   {0xccd3e0u, (void *)F_00ccd3e0},
   {0xccd400u, (void *)F_00ccd400},
@@ -74202,9 +74513,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xccd420u, (void *)F_00ccd420},
   {0xccd430u, (void *)F_00ccd430},
   {0xccd440u, (void *)F_00ccd440},
-  {0xccd450u, (void *)W_00ccd450},
+  {0xccd450u, (void *)F_00ccd450},
   {0xccd480u, (void *)F_00ccd480},
-  {0xccd490u, (void *)W_00ccd490},
+  {0xccd490u, (void *)F_00ccd490},
   {0xccd4c0u, (void *)F_00ccd4c0},
   {0xccd4d0u, (void *)F_00ccd4d0},
   {0xccd620u, (void *)F_00ccd620},
@@ -74212,12 +74523,12 @@ const GEN_JUMP g_genJumps[] = {
   {0xccd7a0u, (void *)F_00ccd7a0},
   {0xccd890u, (void *)F_00ccd890},
   {0xccd960u, (void *)F_00ccd960},
-  {0xccda30u, (void *)W_00ccda30},
+  {0xccda30u, (void *)F_00ccda30},
   {0xccdb20u, (void *)F_00ccdb20},
   {0xccdb50u, (void *)F_00ccdb50},
   {0xccdb80u, (void *)F_00ccdb80},
   {0xccdbb0u, (void *)F_00ccdbb0},
-  {0xccdbe0u, (void *)W_00ccdbe0},
+  {0xccdbe0u, (void *)F_00ccdbe0},
   {0xccdc20u, (void *)W_00ccdc20},
   {0xccdc40u, (void *)W_00ccdc40},
   {0xccdc90u, (void *)F_00ccdc90},
@@ -74325,7 +74636,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcd1060u, (void *)F_00cd1060},
   {0xcd1100u, (void *)F_00cd1100},
   {0xcd1140u, (void *)W_00cd1140},
-  {0xcd1150u, (void *)F_00cd1150},
+  {0xcd1150u, (void *)W_00cd1150},
   {0xcd1160u, (void *)F_00cd1160},
   {0xcd11e0u, (void *)F_00cd11e0},
   {0xcd1210u, (void *)F_00cd1210},
@@ -74405,7 +74716,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcd26c0u, (void *)F_00cd26c0},
   {0xcd2770u, (void *)F_00cd2770},
   {0xcd27d0u, (void *)F_00cd27d0},
-  {0xcd2830u, (void *)F_00cd2830},
+  {0xcd2830u, (void *)W_00cd2830},
   {0xcd2890u, (void *)W_00cd2890},
   {0xcd28b0u, (void *)W_00cd28b0},
   {0xcd28c0u, (void *)W_00cd28c0},
@@ -74479,9 +74790,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xcd5c40u, (void *)F_00cd5c40},
   {0xcd5c50u, (void *)W_00cd5c50},
   {0xcd5c60u, (void *)W_00cd5c60},
-  {0xcd5c80u, (void *)F_00cd5c80},
+  {0xcd5c80u, (void *)W_00cd5c80},
   {0xcd5ca0u, (void *)W_00cd5ca0},
-  {0xcd5cb0u, (void *)F_00cd5cb0},
+  {0xcd5cb0u, (void *)W_00cd5cb0},
   {0xcd5cc0u, (void *)F_00cd5cc0},
   {0xcd5cd0u, (void *)F_00cd5cd0},
   {0xcd5ce0u, (void *)F_00cd5ce0},
@@ -74505,7 +74816,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcd5e50u, (void *)F_00cd5e50},
   {0xcd5e90u, (void *)F_00cd5e90},
   {0xcd5ea0u, (void *)F_00cd5ea0},
-  {0xcd5ed0u, (void *)F_00cd5ed0},
+  {0xcd5ed0u, (void *)W_00cd5ed0},
   {0xcd5ee0u, (void *)W_00cd5ee0},
   {0xcd5ef0u, (void *)F_00cd5ef0},
   {0xcd5f10u, (void *)F_00cd5f10},
@@ -74548,17 +74859,17 @@ const GEN_JUMP g_genJumps[] = {
   {0xcd6960u, (void *)F_00cd6960},
   {0xcd69c0u, (void *)W_00cd69c0},
   {0xcd6af0u, (void *)F_00cd6af0},
-  {0xcd6b10u, (void *)W_00cd6b10},
+  {0xcd6b10u, (void *)F_00cd6b10},
   {0xcd6b30u, (void *)W_00cd6b30},
   {0xcd6c00u, (void *)W_00cd6c00},
   {0xcd6e00u, (void *)F_00cd6e00},
-  {0xcd6e20u, (void *)W_00cd6e20},
+  {0xcd6e20u, (void *)F_00cd6e20},
   {0xcd6e40u, (void *)F_00cd6e40},
   {0xcd6e60u, (void *)F_00cd6e60},
   {0xcd6e90u, (void *)F_00cd6e90},
   {0xcd6ee0u, (void *)F_00cd6ee0},
   {0xcd6f10u, (void *)F_00cd6f10},
-  {0xcd6f90u, (void *)F_00cd6f90},
+  {0xcd6f90u, (void *)W_00cd6f90},
   {0xcd6fd0u, (void *)F_00cd6fd0},
   {0xcd70b0u, (void *)F_00cd70b0},
   {0xcd7180u, (void *)F_00cd7180},
@@ -74593,7 +74904,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcd8550u, (void *)F_00cd8550},
   {0xcd85d0u, (void *)F_00cd85d0},
   {0xcd8630u, (void *)F_00cd8630},
-  {0xcd8640u, (void *)W_00cd8640},
+  {0xcd8640u, (void *)F_00cd8640},
   {0xcd87f0u, (void *)F_00cd87f0},
   {0xcd8980u, (void *)F_00cd8980},
   {0xcd8a30u, (void *)F_00cd8a30},
@@ -74612,9 +74923,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xcda2d0u, (void *)F_00cda2d0},
   {0xcda2e0u, (void *)F_00cda2e0},
   {0xcda310u, (void *)F_00cda310},
-  {0xcda360u, (void *)W_00cda360},
+  {0xcda360u, (void *)F_00cda360},
   {0xcda3e0u, (void *)F_00cda3e0},
-  {0xcda3f0u, (void *)F_00cda3f0},
+  {0xcda3f0u, (void *)W_00cda3f0},
   {0xcda400u, (void *)F_00cda400},
   {0xcda4b0u, (void *)F_00cda4b0},
   {0xcda4f0u, (void *)W_00cda4f0},
@@ -74661,7 +74972,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcdbcd0u, (void *)W_00cdbcd0},
   {0xcdbd90u, (void *)W_00cdbd90},
   {0xcdbfe0u, (void *)W_00cdbfe0},
-  {0xcdc1e0u, (void *)W_00cdc1e0},
+  {0xcdc1e0u, (void *)F_00cdc1e0},
   {0xcdc280u, (void *)W_00cdc280},
   {0xcdc390u, (void *)W_00cdc390},
   {0xcdc4a0u, (void *)W_00cdc4a0},
@@ -74795,7 +75106,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xce00e0u, (void *)F_00ce00e0},
   {0xce00f0u, (void *)W_00ce00f0},
   {0xce0100u, (void *)F_00ce0100},
-  {0xce0110u, (void *)F_00ce0110},
+  {0xce0110u, (void *)W_00ce0110},
   {0xce0120u, (void *)F_00ce0120},
   {0xce0130u, (void *)F_00ce0130},
   {0xce0140u, (void *)F_00ce0140},
@@ -74820,7 +75131,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xce0910u, (void *)F_00ce0910},
   {0xce0940u, (void *)F_00ce0940},
   {0xce09c0u, (void *)F_00ce09c0},
-  {0xce0a00u, (void *)F_00ce0a00},
+  {0xce0a00u, (void *)W_00ce0a00},
   {0xce0b10u, (void *)F_00ce0b10},
   {0xce0b20u, (void *)F_00ce0b20},
   {0xce0bd0u, (void *)F_00ce0bd0},
@@ -74877,7 +75188,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xce15f0u, (void *)F_00ce15f0},
   {0xce1600u, (void *)F_00ce1600},
   {0xce1620u, (void *)F_00ce1620},
-  {0xce1650u, (void *)F_00ce1650},
+  {0xce1650u, (void *)W_00ce1650},
   {0xce1660u, (void *)F_00ce1660},
   {0xce1680u, (void *)F_00ce1680},
   {0xce16a0u, (void *)F_00ce16a0},
@@ -74897,7 +75208,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xce1b20u, (void *)F_00ce1b20},
   {0xce1b30u, (void *)F_00ce1b30},
   {0xce1ba0u, (void *)F_00ce1ba0},
-  {0xce1bc0u, (void *)F_00ce1bc0},
+  {0xce1bc0u, (void *)W_00ce1bc0},
   {0xce1bf0u, (void *)F_00ce1bf0},
   {0xce1c00u, (void *)F_00ce1c00},
   {0xce1c20u, (void *)F_00ce1c20},
@@ -75070,7 +75381,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xce76c0u, (void *)F_00ce76c0},
   {0xce76d0u, (void *)F_00ce76d0},
   {0xce76e0u, (void *)W_00ce76e0},
-  {0xce7700u, (void *)W_00ce7700},
+  {0xce7700u, (void *)F_00ce7700},
   {0xce77e0u, (void *)F_00ce77e0},
   {0xce7900u, (void *)F_00ce7900},
   {0xce7940u, (void *)F_00ce7940},
@@ -75160,15 +75471,15 @@ const GEN_JUMP g_genJumps[] = {
   {0xceac10u, (void *)W_00ceac10},
   {0xceac70u, (void *)F_00ceac70},
   {0xceadd0u, (void *)F_00ceadd0},
-  {0xceae50u, (void *)F_00ceae50},
+  {0xceae50u, (void *)W_00ceae50},
   {0xceae60u, (void *)W_00ceae60},
   {0xceaed0u, (void *)F_00ceaed0},
   {0xceaf00u, (void *)F_00ceaf00},
   {0xceaf30u, (void *)F_00ceaf30},
   {0xceb070u, (void *)F_00ceb070},
   {0xceb260u, (void *)F_00ceb260},
-  {0xceb2e0u, (void *)W_00ceb2e0},
-  {0xceb430u, (void *)W_00ceb430},
+  {0xceb2e0u, (void *)F_00ceb2e0},
+  {0xceb430u, (void *)F_00ceb430},
   {0xceb4d0u, (void *)F_00ceb4d0},
   {0xceb540u, (void *)F_00ceb540},
   {0xceb570u, (void *)F_00ceb570},
@@ -75395,11 +75706,11 @@ const GEN_JUMP g_genJumps[] = {
   {0xcf96c0u, (void *)F_00cf96c0},
   {0xcf9730u, (void *)F_00cf9730},
   {0xcf9750u, (void *)F_00cf9750},
-  {0xcf9760u, (void *)W_00cf9760},
+  {0xcf9760u, (void *)F_00cf9760},
   {0xcf9770u, (void *)F_00cf9770},
   {0xcf97b0u, (void *)F_00cf97b0},
   {0xcf9800u, (void *)F_00cf9800},
-  {0xcf9870u, (void *)W_00cf9870},
+  {0xcf9870u, (void *)F_00cf9870},
   {0xcf9880u, (void *)F_00cf9880},
   {0xcf98a0u, (void *)F_00cf98a0},
   {0xcf98b0u, (void *)F_00cf98b0},
@@ -75407,7 +75718,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xcf9940u, (void *)F_00cf9940},
   {0xcf99b0u, (void *)F_00cf99b0},
   {0xcf99d0u, (void *)F_00cf99d0},
-  {0xcf99e0u, (void *)W_00cf99e0},
+  {0xcf99e0u, (void *)F_00cf99e0},
   {0xcf99f0u, (void *)F_00cf99f0},
   {0xcf9a30u, (void *)F_00cf9a30},
   {0xcf9a80u, (void *)F_00cf9a80},
@@ -75615,7 +75926,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd034e0u, (void *)F_00d034e0},
   {0xd035a0u, (void *)W_00d035a0},
   {0xd035c0u, (void *)F_00d035c0},
-  {0xd035d0u, (void *)F_00d035d0},
+  {0xd035d0u, (void *)W_00d035d0},
   {0xd035f0u, (void *)F_00d035f0},
   {0xd03630u, (void *)F_00d03630},
   {0xd03650u, (void *)F_00d03650},
@@ -75628,7 +75939,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd03830u, (void *)F_00d03830},
   {0xd038a0u, (void *)W_00d038a0},
   {0xd038c0u, (void *)F_00d038c0},
-  {0xd038e0u, (void *)F_00d038e0},
+  {0xd038e0u, (void *)W_00d038e0},
   {0xd03900u, (void *)F_00d03900},
   {0xd03920u, (void *)F_00d03920},
   {0xd03930u, (void *)F_00d03930},
@@ -75681,9 +75992,9 @@ const GEN_JUMP g_genJumps[] = {
   {0xd04410u, (void *)F_00d04410},
   {0xd04420u, (void *)F_00d04420},
   {0xd04430u, (void *)F_00d04430},
-  {0xd04440u, (void *)F_00d04440},
+  {0xd04440u, (void *)W_00d04440},
   {0xd04450u, (void *)F_00d04450},
-  {0xd04460u, (void *)F_00d04460},
+  {0xd04460u, (void *)W_00d04460},
   {0xd04470u, (void *)F_00d04470},
   {0xd04480u, (void *)F_00d04480},
   {0xd044a0u, (void *)F_00d044a0},
@@ -75851,7 +76162,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd0b540u, (void *)F_00d0b540},
   {0xd0b9e0u, (void *)F_00d0b9e0},
   {0xd0bb10u, (void *)F_00d0bb10},
-  {0xd0bbf0u, (void *)F_00d0bbf0},
+  {0xd0bbf0u, (void *)W_00d0bbf0},
   {0xd0bdf0u, (void *)F_00d0bdf0},
   {0xd0beb0u, (void *)F_00d0beb0},
   {0xd0bec0u, (void *)F_00d0bec0},
@@ -75931,7 +76242,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd10c20u, (void *)F_00d10c20},
   {0xd10c60u, (void *)W_00d10c60},
   {0xd10ca0u, (void *)F_00d10ca0},
-  {0xd10cd0u, (void *)W_00d10cd0},
+  {0xd10cd0u, (void *)F_00d10cd0},
   {0xd10e70u, (void *)F_00d10e70},
   {0xd10ef0u, (void *)W_00d10ef0},
   {0xd10f20u, (void *)F_00d10f20},
@@ -75958,7 +76269,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd13140u, (void *)W_00d13140},
   {0xd13170u, (void *)F_00d13170},
   {0xd13190u, (void *)W_00d13190},
-  {0xd13510u, (void *)W_00d13510},
+  {0xd13510u, (void *)F_00d13510},
   {0xd136a0u, (void *)F_00d136a0},
   {0xd13720u, (void *)W_00d13720},
   {0xd13750u, (void *)F_00d13750},
@@ -75983,7 +76294,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd14ed0u, (void *)F_00d14ed0},
   {0xd14f10u, (void *)W_00d14f10},
   {0xd14f40u, (void *)F_00d14f40},
-  {0xd14f60u, (void *)W_00d14f60},
+  {0xd14f60u, (void *)F_00d14f60},
   {0xd15080u, (void *)F_00d15080},
   {0xd15100u, (void *)W_00d15100},
   {0xd15130u, (void *)F_00d15130},
@@ -76013,7 +76324,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd175f0u, (void *)F_00d175f0},
   {0xd17630u, (void *)W_00d17630},
   {0xd17660u, (void *)F_00d17660},
-  {0xd17680u, (void *)W_00d17680},
+  {0xd17680u, (void *)F_00d17680},
   {0xd17860u, (void *)F_00d17860},
   {0xd178e0u, (void *)W_00d178e0},
   {0xd17910u, (void *)F_00d17910},
@@ -76040,7 +76351,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd19710u, (void *)W_00d19710},
   {0xd19720u, (void *)F_00d19720},
   {0xd19730u, (void *)W_00d19730},
-  {0xd19960u, (void *)W_00d19960},
+  {0xd19960u, (void *)F_00d19960},
   {0xd19a70u, (void *)F_00d19a70},
   {0xd19ae0u, (void *)W_00d19ae0},
   {0xd19b10u, (void *)F_00d19b10},
@@ -76078,8 +76389,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xd1b580u, (void *)F_00d1b580},
   {0xd1b600u, (void *)F_00d1b600},
   {0xd1b630u, (void *)F_00d1b630},
-  {0xd1b650u, (void *)F_00d1b650},
-  {0xd1b670u, (void *)F_00d1b670},
+  {0xd1b650u, (void *)W_00d1b650},
+  {0xd1b670u, (void *)W_00d1b670},
   {0xd1b7a0u, (void *)F_00d1b7a0},
   {0xd1b7b0u, (void *)F_00d1b7b0},
   {0xd1b7c0u, (void *)F_00d1b7c0},
@@ -76098,7 +76409,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd1b980u, (void *)F_00d1b980},
   {0xd1b9f0u, (void *)F_00d1b9f0},
   {0xd1ba20u, (void *)F_00d1ba20},
-  {0xd1ba90u, (void *)W_00d1ba90},
+  {0xd1ba90u, (void *)F_00d1ba90},
   {0xd1bb20u, (void *)F_00d1bb20},
   {0xd1bba0u, (void *)F_00d1bba0},
   {0xd1bc10u, (void *)F_00d1bc10},
@@ -76118,11 +76429,11 @@ const GEN_JUMP g_genJumps[] = {
   {0xd1c3d0u, (void *)W_00d1c3d0},
   {0xd1c400u, (void *)W_00d1c400},
   {0xd1c440u, (void *)W_00d1c440},
-  {0xd1c470u, (void *)W_00d1c470},
+  {0xd1c470u, (void *)F_00d1c470},
   {0xd1c4e0u, (void *)F_00d1c4e0},
   {0xd1c500u, (void *)F_00d1c500},
-  {0xd1c520u, (void *)W_00d1c520},
-  {0xd1c830u, (void *)W_00d1c830},
+  {0xd1c520u, (void *)F_00d1c520},
+  {0xd1c830u, (void *)F_00d1c830},
   {0xd1cca0u, (void *)W_00d1cca0},
   {0xd1cdf0u, (void *)F_00d1cdf0},
   {0xd1ce10u, (void *)F_00d1ce10},
@@ -76237,7 +76548,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd216c0u, (void *)F_00d216c0},
   {0xd21710u, (void *)W_00d21710},
   {0xd21720u, (void *)W_00d21720},
-  {0xd21730u, (void *)F_00d21730},
+  {0xd21730u, (void *)W_00d21730},
   {0xd21740u, (void *)W_00d21740},
   {0xd21750u, (void *)F_00d21750},
   {0xd217a0u, (void *)W_00d217a0},
@@ -76429,7 +76740,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd2c790u, (void *)F_00d2c790},
   {0xd2c7a0u, (void *)F_00d2c7a0},
   {0xd2c7b0u, (void *)F_00d2c7b0},
-  {0xd2c7c0u, (void *)F_00d2c7c0},
+  {0xd2c7c0u, (void *)W_00d2c7c0},
   {0xd2c7d0u, (void *)W_00d2c7d0},
   {0xd2c7e0u, (void *)F_00d2c7e0},
   {0xd2c7f0u, (void *)W_00d2c7f0},
@@ -77224,7 +77535,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd45bb0u, (void *)F_00d45bb0},
   {0xd45bd0u, (void *)F_00d45bd0},
   {0xd461b0u, (void *)F_00d461b0},
-  {0xd461d0u, (void *)F_00d461d0},
+  {0xd461d0u, (void *)W_00d461d0},
   {0xd461f0u, (void *)F_00d461f0},
   {0xd46220u, (void *)F_00d46220},
   {0xd46250u, (void *)F_00d46250},
@@ -77503,7 +77814,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd6c930u, (void *)F_00d6c930},
   {0xd6c970u, (void *)W_00d6c970},
   {0xd6c980u, (void *)F_00d6c980},
-  {0xd6c9a0u, (void *)F_00d6c9a0},
+  {0xd6c9a0u, (void *)W_00d6c9a0},
   {0xd6c9c0u, (void *)F_00d6c9c0},
   {0xd6c9e0u, (void *)F_00d6c9e0},
   {0xd6ca00u, (void *)F_00d6ca00},
@@ -77857,14 +78168,14 @@ const GEN_JUMP g_genJumps[] = {
   {0xd7c440u, (void *)F_00d7c440},
   {0xd7c460u, (void *)F_00d7c460},
   {0xd7c480u, (void *)F_00d7c480},
-  {0xd7c4a0u, (void *)F_00d7c4a0},
-  {0xd7c4d0u, (void *)F_00d7c4d0},
-  {0xd7c500u, (void *)F_00d7c500},
-  {0xd7c530u, (void *)F_00d7c530},
-  {0xd7c560u, (void *)F_00d7c560},
-  {0xd7c590u, (void *)F_00d7c590},
-  {0xd7c5c0u, (void *)F_00d7c5c0},
-  {0xd7c5f0u, (void *)F_00d7c5f0},
+  {0xd7c4a0u, (void *)W_00d7c4a0},
+  {0xd7c4d0u, (void *)W_00d7c4d0},
+  {0xd7c500u, (void *)W_00d7c500},
+  {0xd7c530u, (void *)W_00d7c530},
+  {0xd7c560u, (void *)W_00d7c560},
+  {0xd7c590u, (void *)W_00d7c590},
+  {0xd7c5c0u, (void *)W_00d7c5c0},
+  {0xd7c5f0u, (void *)W_00d7c5f0},
   {0xd7c620u, (void *)F_00d7c620},
   {0xd7c690u, (void *)F_00d7c690},
   {0xd7c7b0u, (void *)W_00d7c7b0},
@@ -77947,8 +78258,8 @@ const GEN_JUMP g_genJumps[] = {
   {0xd7ea00u, (void *)F_00d7ea00},
   {0xd7ea30u, (void *)F_00d7ea30},
   {0xd7eae0u, (void *)F_00d7eae0},
-  {0xd7eb60u, (void *)F_00d7eb60},
-  {0xd7ec00u, (void *)F_00d7ec00},
+  {0xd7eb60u, (void *)W_00d7eb60},
+  {0xd7ec00u, (void *)W_00d7ec00},
   {0xd7eca0u, (void *)F_00d7eca0},
   {0xd7ed80u, (void *)F_00d7ed80},
   {0xd7edc0u, (void *)F_00d7edc0},
@@ -77973,7 +78284,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd7fa40u, (void *)F_00d7fa40},
   {0xd7fa80u, (void *)F_00d7fa80},
   {0xd7fab0u, (void *)F_00d7fab0},
-  {0xd7faf0u, (void *)F_00d7faf0},
+  {0xd7faf0u, (void *)W_00d7faf0},
   {0xd7fbe0u, (void *)W_00d7fbe0},
   {0xd7fe70u, (void *)F_00d7fe70},
   {0xd80920u, (void *)F_00d80920},
@@ -78205,7 +78516,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd8c630u, (void *)F_00d8c630},
   {0xd8c670u, (void *)F_00d8c670},
   {0xd8c6d0u, (void *)W_00d8c6d0},
-  {0xd8c950u, (void *)W_00d8c950},
+  {0xd8c950u, (void *)F_00d8c950},
   {0xd8ca30u, (void *)F_00d8ca30},
   {0xd8cae0u, (void *)F_00d8cae0},
   {0xd8cb90u, (void *)F_00d8cb90},
@@ -78219,7 +78530,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xd8ea90u, (void *)F_00d8ea90},
   {0xd8eb90u, (void *)F_00d8eb90},
   {0xd8ecf0u, (void *)F_00d8ecf0},
-  {0xd8f370u, (void *)W_00d8f370},
+  {0xd8f370u, (void *)F_00d8f370},
   {0xd8f810u, (void *)F_00d8f810},
   {0xd8f8f0u, (void *)F_00d8f8f0},
   {0xd8fa10u, (void *)F_00d8fa10},
@@ -79980,7 +80291,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xdba730u, (void *)F_00dba730},
   {0xdba770u, (void *)F_00dba770},
   {0xdba790u, (void *)F_00dba790},
-  {0xdba7b0u, (void *)F_00dba7b0},
+  {0xdba7b0u, (void *)W_00dba7b0},
   {0xdba7d0u, (void *)F_00dba7d0},
   {0xdba7f0u, (void *)F_00dba7f0},
   {0xdba810u, (void *)F_00dba810},
@@ -83192,7 +83503,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xe09120u, (void *)F_00e09120},
   {0xe09200u, (void *)W_00e09200},
   {0xe09220u, (void *)F_00e09220},
-  {0xe09240u, (void *)F_00e09240},
+  {0xe09240u, (void *)W_00e09240},
   {0xe09260u, (void *)F_00e09260},
   {0xe09280u, (void *)F_00e09280},
   {0xe092a0u, (void *)F_00e092a0},
@@ -83459,7 +83770,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xe105f0u, (void *)F_00e105f0},
   {0xe10660u, (void *)F_00e10660},
   {0xe106a0u, (void *)F_00e106a0},
-  {0xe106d0u, (void *)F_00e106d0},
+  {0xe106d0u, (void *)W_00e106d0},
   {0xe106e0u, (void *)F_00e106e0},
   {0xe10700u, (void *)F_00e10700},
   {0xe10710u, (void *)F_00e10710},
@@ -83687,7 +83998,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xe142f0u, (void *)F_00e142f0},
   {0xe14340u, (void *)F_00e14340},
   {0xe14390u, (void *)F_00e14390},
-  {0xe143d0u, (void *)F_00e143d0},
+  {0xe143d0u, (void *)W_00e143d0},
   {0xe143e0u, (void *)F_00e143e0},
   {0xe14400u, (void *)F_00e14400},
   {0xe14430u, (void *)F_00e14430},
@@ -83808,7 +84119,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xe16710u, (void *)F_00e16710},
   {0xe16760u, (void *)F_00e16760},
   {0xe16790u, (void *)F_00e16790},
-  {0xe167d0u, (void *)F_00e167d0},
+  {0xe167d0u, (void *)W_00e167d0},
   {0xe16800u, (void *)F_00e16800},
   {0xe168b0u, (void *)F_00e168b0},
   {0xe16950u, (void *)F_00e16950},
@@ -84135,7 +84446,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xe1dd60u, (void *)F_00e1dd60},
   {0xe1dda0u, (void *)F_00e1dda0},
   {0xe1ddd0u, (void *)F_00e1ddd0},
-  {0xe1de10u, (void *)F_00e1de10},
+  {0xe1de10u, (void *)W_00e1de10},
   {0xe1de20u, (void *)F_00e1de20},
   {0xe1de80u, (void *)F_00e1de80},
   {0xe1ded0u, (void *)F_00e1ded0},
@@ -88745,7 +89056,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xeaa310u, (void *)F_00eaa310},
   {0xeaa330u, (void *)F_00eaa330},
   {0xeaa370u, (void *)F_00eaa370},
-  {0xeaa390u, (void *)F_00eaa390},
+  {0xeaa390u, (void *)W_00eaa390},
   {0xeaa3d0u, (void *)W_00eaa3d0},
   {0xeaa3e0u, (void *)W_00eaa3e0},
   {0xeaa400u, (void *)F_00eaa400},
@@ -92893,7 +93204,6 @@ const GEN_JUMP g_genJumps[] = {
   {0xffff20u, (void *)F_00ffff20},
   {0xffff90u, (void *)F_00ffff90},
   {0xffffa0u, (void *)F_00ffffa0},
-  {0x1000000u, (void *)F_01000000},
   {0x1000020u, (void *)F_01000020},
   {0x1000100u, (void *)W_01000100},
   {0x10002d0u, (void *)W_010002d0},
@@ -94934,7 +95244,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x1056840u, (void *)F_01056840},
   {0x10568a0u, (void *)F_010568a0},
   {0x10568b0u, (void *)F_010568b0},
-  {0x10568e0u, (void *)F_010568e0},
+  {0x10568e0u, (void *)W_010568e0},
   {0x1056940u, (void *)F_01056940},
   {0x1056960u, (void *)W_01056960},
   {0x10569e0u, (void *)F_010569e0},
@@ -97719,7 +98029,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xb51cb0u, (void *)F_00501e90},
   {0xb51da0u, (void *)F_00501e90},
   {0xb59e30u, (void *)W_00b59aa0},
-  {0xb70db0u, (void *)W_00b6dfb0},
+  {0xb70db0u, (void *)F_00b6dfb0},
   {0xb7a9b0u, (void *)F_00b7a5b0},
   {0xb8c2f0u, (void *)F_006bccd0},
   {0xb90010u, (void *)F_00b8ff20},
@@ -97758,7 +98068,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x1054480u, (void *)F_00cc77e0},
   {0x1054ef0u, (void *)W_00cc2740},
 };
-const unsigned int g_genJumpCount = 87702;
+const unsigned int g_genJumpCount = 87654;
 /* each C++ frame handler thunk (`mov eax, FuncInfo; jmp __CxxFrameHandler3`), its FuncInfo; 0-ended */
 const unsigned int g_genEhFuncInfo[] = {
   0x106fc20u, 0x12f5cbcu,
