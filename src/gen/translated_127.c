@@ -7809,10 +7809,7 @@ byte F_00b13fd0(unsigned int gen_a0)
   int iVar4;
   
   puVar1 = (uint *)((int)this + 0x3860);
-  LOCK();
-  uVar2 = *puVar1;
-  *puVar1 = *puVar1 + 1;
-  UNLOCK();
+  uVar2 = _InterlockedExchangeAdd((volatile long *)(puVar1), (long)(1));
   if (uVar2 < *(uint *)((int)this + 0x385c)) {
     iVar4 = *(int *)((int)this + 0x3858) + uVar2 * 0x14;
   }
@@ -7825,10 +7822,7 @@ byte F_00b13fd0(unsigned int gen_a0)
     return 0;
   }
   puVar1 = (uint *)((int)this + 0x38c8);
-  LOCK();
-  uVar2 = *puVar1;
-  *puVar1 = *puVar1 + 1;
-  UNLOCK();
+  uVar2 = _InterlockedExchangeAdd((volatile long *)(puVar1), (long)(1));
   if (*(uint *)((int)this + 0x38c4) <= uVar2) {
     *(undefined4 *)(iVar3 + 0x1c4) = 0;
     return 0;

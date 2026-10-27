@@ -12011,16 +12011,10 @@ uint F_008cc3c0(unsigned int gen_a0)
   piVar6 = *(int * PTR32 *)((int)this + 0x184);
   if (piVar6 != (int *)0x0) {
     piVar6 = piVar6 + 0x22;
-    LOCK();
-    iVar10 = *piVar6;
-    *piVar6 = *piVar6;
-    UNLOCK();
+    iVar10 = _InterlockedCompareExchange((volatile long *)(piVar6), 0, 0);
     if (iVar10 == 2) {
       piVar6 = ((int *)GEN_TOP((*(int *)((int)this + 0x184) + 0x8c)));
-      LOCK();
-      iVar10 = *piVar6;
-      *piVar6 = *piVar6;
-      UNLOCK();
+      iVar10 = _InterlockedCompareExchange((volatile long *)(piVar6), 0, 0);
       if (iVar10 < 8) {
         piVar6 = (int *)((int)this + 0x194);
         F_00968460(piVar6);
@@ -12097,16 +12091,10 @@ uint F_008cc540(unsigned int gen_a0)
   piVar3 = *(int * PTR32 *)((int)this + 0x188);
   if (piVar3 != (int *)0x0) {
     piVar3 = piVar3 + 0x22;
-    LOCK();
-    iVar5 = *piVar3;
-    *piVar3 = *piVar3;
-    UNLOCK();
+    iVar5 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
     if (iVar5 == 2) {
       piVar3 = ((int *)GEN_TOP((*(int *)((int)this + 0x188) + 0x8c)));
-      LOCK();
-      iVar5 = *piVar3;
-      *piVar3 = *piVar3;
-      UNLOCK();
+      iVar5 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
       if (iVar5 < 8) {
         piVar3 = (int *)((int)this + 0x408);
         F_00968650(piVar3);
@@ -21292,16 +21280,10 @@ byte F_008d8330(unsigned int gen_a0)
   bVar7 = 0;
   if (*(int *)((int)this + 0x184) != 0) {
     piVar4 = ((int *)GEN_TOP((*(int *)((int)this + 0x184) + 0x88)));
-    LOCK();
-    iVar8 = *piVar4;
-    *piVar4 = *piVar4;
-    UNLOCK();
+    iVar8 = _InterlockedCompareExchange((volatile long *)(piVar4), 0, 0);
     if (iVar8 == 2) {
       piVar4 = ((int *)GEN_TOP((*(int *)((int)this + 0x184) + 0x8c)));
-      LOCK();
-      iVar8 = *piVar4;
-      *piVar4 = *piVar4;
-      UNLOCK();
+      iVar8 = _InterlockedCompareExchange((volatile long *)(piVar4), 0, 0);
       if (7 < iVar8) {
         F_00c47745(uVar3 ^ (uint)(uint)(gen_frame + 0x11c));
         return 0;
@@ -21476,16 +21458,10 @@ uint F_008d8670(unsigned int gen_a0)
   piVar3 = *(int * PTR32 *)((int)this + 0x18c);
   if (piVar3 != (int *)0x0) {
     piVar3 = piVar3 + 0x22;
-    LOCK();
-    iVar1 = *piVar3;
-    *piVar3 = *piVar3;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
     if (iVar1 == 2) {
       piVar3 = ((int *)GEN_TOP((*(int *)((int)this + 0x18c) + 0x8c)));
-      LOCK();
-      iVar1 = *piVar3;
-      *piVar3 = *piVar3;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
       if (iVar1 < 8) {
         piVar3 = (int *)((int)this + 0x1b8);
         F_00969a30(piVar3,&(*(uint *)(gen_frame + 0x4)),*(undefined4 *)((int)this + 0x1b8),

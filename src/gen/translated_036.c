@@ -4872,10 +4872,7 @@ byte F_005d9330(unsigned int gen_a0)
   if (uVar2 != 0) {
     do {
       piVar4 = ((int *)GEN_TOP((*((int *)GEN_TOP((*(int *)((int)this + 0xdc) + uVar3 * 4))) + 0x88)));
-      LOCK();
-      iVar1 = *piVar4;
-      *piVar4 = *piVar4;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar4), 0, 0);
       if (iVar1 != 2) {
         return 0;
       }

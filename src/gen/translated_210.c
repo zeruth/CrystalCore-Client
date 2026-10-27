@@ -8693,10 +8693,7 @@ uint F_01052b80(unsigned int gen_a0)
           (*((void * PTR32 *)GEN_TOP((uintptr_t)(gen_teb32() + 0x0)))) = (*(undefined * PTR32 *)(gen_frame + 0x4c));
           return 1;
         }
-        LOCK();
-        iVar7 = REFG(undefined4, 0x15e3fa4);
-        REFG(undefined4, 0x15e3fa4) = 1;
-        UNLOCK();
+        iVar7 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x15e3fa4)), (long)(1));
         if (iVar7 != 0) {
           (*((void * PTR32 *)GEN_TOP((uintptr_t)(gen_teb32() + 0x0)))) = (*(undefined * PTR32 *)(gen_frame + 0x4c));
           return 1;
@@ -8743,10 +8740,7 @@ uint F_01052b80(unsigned int gen_a0)
     (*((void * PTR32 *)GEN_TOP((uintptr_t)(gen_teb32() + 0x0)))) = (*(undefined * PTR32 *)(gen_frame + 0x4c));
     return 0;
   }
-  LOCK();
-  iVar13 = REFG(undefined4, 0x15e3fa4);
-  REFG(undefined4, 0x15e3fa4) = 1;
-  UNLOCK();
+  iVar13 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x15e3fa4)), (long)(1));
   if (iVar13 != 0) {
     (*((void * PTR32 *)GEN_TOP((uintptr_t)(gen_teb32() + 0x0)))) = (*(undefined * PTR32 *)(gen_frame + 0x4c));
     return 1;
@@ -8789,10 +8783,7 @@ uint F_01052b80(unsigned int gen_a0)
     (&REFG(undefined4, 0x15e3fa4))[(int)(iVar13 * 2)] = (*(undefined4 *)((char *)((byte *)(gen_frame + 0x1c)) + 4));
   }
 LAB_01052ea6: ;
-  LOCK();
-  uVar3 = REFG(undefined4, 0x15e3fa4);
-  REFG(undefined4, 0x15e3fa4) = 0;
-  UNLOCK();
+  uVar3 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x15e3fa4)), (long)(0));
   (*((void * PTR32 *)GEN_TOP((uintptr_t)(gen_teb32() + 0x0)))) = (*(undefined * PTR32 *)(gen_frame + 0x4c));
   return 1;
   while (iVar13 = iVar13 + -1, -1 < iVar13) {
@@ -8896,10 +8887,7 @@ LAB_01052d98: ;
     *(undefined4 *)(puVar12 + -0xc) = 0x1052e13;
     p_Var5 = F_00c5b750(*(GEN_LPANY *)(puVar12 + -8),*(DWORD_PTR *)(puVar12 + -4));
     if (p_Var5 != (GEN_LPANY)0x0) {
-      LOCK();
-      iVar7 = REFG(undefined4, 0x15e3fa4);
-      REFG(undefined4, 0x15e3fa4) = 1;
-      UNLOCK();
+      iVar7 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x15e3fa4)), (long)(1));
       if (iVar7 == 0) {
         iVar7 = REFG(int, 0x15e3fa0);
         if (0 < REFG(int, 0x15e3fa0)) {
@@ -8938,10 +8926,7 @@ LAB_01052d98: ;
         else {
           (&REFG(undefined4, 0x15e3fa4))[(int)(iVar7 * 2)] = *(undefined4 *)(in_ebp + -0x3c);
         }
-        LOCK();
-        uVar10 = REFG(undefined4, 0x15e3fa4);
-        REFG(undefined4, 0x15e3fa4) = 0;
-        UNLOCK();
+        uVar10 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x15e3fa4)), (long)(0));
       }
       goto LAB_01052eaf;
     }

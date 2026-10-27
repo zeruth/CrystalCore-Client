@@ -4889,10 +4889,7 @@ byte F_00530220(unsigned int gen_a0)
   int * piVar2;
   
   piVar2 = ((int *)GEN_TOP((*(int *)(in_ecx + 0x10) + 0x88)));
-  LOCK();
-  iVar1 = *piVar2;
-  *piVar2 = *piVar2;
-  UNLOCK();
+  iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
   return iVar1 == 2;
 }
 
@@ -4987,10 +4984,7 @@ uint F_00530330(unsigned int gen_a0)
   
   if (*(int *)(in_ecx + 0x10) != 0) {
     piVar2 = ((int *)GEN_TOP((*(int *)(in_ecx + 0x10) + 0x8c)));
-    LOCK();
-    iVar1 = *piVar2;
-    *piVar2 = *piVar2;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
     if (iVar1 < 8) {
       return 0;
     }

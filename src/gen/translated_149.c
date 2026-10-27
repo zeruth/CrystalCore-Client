@@ -513,22 +513,14 @@ byte F_00c32840(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   undefined2 uStack_1a;
   
   if (*(char *)((int)this + 0x18) != '\0') {
-    LOCK();
-    iVar6 = *(int *)((int)this + 0x14);
-    if (iVar6 == 0) {
-      *(int *)((int)this + 0x14) = 1;
-      iVar6 = 0;
-    }
-    UNLOCK();
+    iVar6 = _InterlockedCompareExchange((volatile long *)(((int *)((int)this + 0x14))), (long)(1), (long)(0));
     if (iVar6 != 0) {
       return 0;
     }
   }
   if (*(int *)((int)this + 0x10) != 0) {
     if (*(char *)((int)this + 0x18) != '\0') {
-      LOCK();
-      *(undefined4 *)((int)this + 0x14) = 0;
-      UNLOCK();
+      _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x14))), (long)(0));
     }
     return 0;
   }
@@ -576,16 +568,12 @@ byte F_00c32840(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
       *(int *)((int)this + 0xc) = *(int *)((int)this + 0xc) + 1;
     }
     if (*(char *)((int)this + 0x18) != '\0') {
-      LOCK();
-      *(undefined4 *)((int)this + 0x14) = 0;
-      UNLOCK();
+      _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x14))), (long)(0));
     }
     return 1;
   }
   if (*(char *)((int)this + 0x18) != '\0') {
-    LOCK();
-    *(undefined4 *)((int)this + 0x14) = 0;
-    UNLOCK();
+    _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x14))), (long)(0));
   }
   return 0;
 }

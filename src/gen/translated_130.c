@@ -5180,10 +5180,7 @@ uint F_00b51ff0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   uVar3 = param_2;
   if (param_2 == 1) {
     pAVar1 = this + 0x88;
-    LOCK();
-    iVar2 = *(int *)pAVar1;
-    *(int *)pAVar1 = *(int *)pAVar1;
-    UNLOCK();
+    iVar2 = _InterlockedCompareExchange((volatile long *)(((int *)pAVar1)), 0, 0);
     if (iVar2 != 3) {
       iVar2 = *(int *)(this + 0xa0);
       uVar3 = ((code *)*(gen_code32 *)(*(int *)this + 0x5c))(this);
@@ -5308,10 +5305,7 @@ uint F_00b521c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   
   if (param_2 == 1) {
     pBVar1 = this + 0x88;
-    LOCK();
-    iVar2 = *(int *)pBVar1;
-    *(int *)pBVar1 = *(int *)pBVar1;
-    UNLOCK();
+    iVar2 = _InterlockedCompareExchange((volatile long *)(((int *)pBVar1)), 0, 0);
     if (iVar2 != 3) {
       uVar3 = ((code *)*(gen_code32 *)(*(int *)this + 0x5c))(this);
       F_00bcc710(this + 0xa0,uVar3);

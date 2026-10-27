@@ -317,10 +317,7 @@ uint F_00577990(unsigned int gen_a0)
   }
   *(undefined4 *)((int)this + 8) = 0x10;
   puVar1 = (uint *)((int)this + 0xc);
-  LOCK();
-  uVar4 = *puVar1;
-  *puVar1 = *puVar1 + 1;
-  UNLOCK();
+  uVar4 = _InterlockedExchangeAdd((volatile long *)(puVar1), (long)(1));
   if (*(uint *)((int)this + 8) <= uVar4) {
     return 0xfffffffb;
   }
@@ -12649,15 +12646,10 @@ uint F_00585950(unsigned int gen_a0, unsigned int gen_a1)
   else {
     piVar1 = (int *)(REFG(int, 0x1370b90) + 0xc0);
     (*(int * PTR32 *)(gen_frame + 0x18)) = piVar1;
-    LOCK();
-    iVar4 = *piVar1;
-    *piVar1 = *piVar1 + 0x8000;
-    UNLOCK();
+    iVar4 = _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(0x8000));
     (*(int *)(gen_frame + 0x14)) = iVar4;
     if (*(uint *)(iVar3 + 0xb8) < (uint)(*(int *)(iVar3 + 0xc4) * 3 + *piVar1)) {
-      LOCK();
-      *piVar1 = *piVar1 + -0x8000;
-      UNLOCK();
+      _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(-0x8000));
       goto LAB_00585c93;
     }
     puVar9 = ((undefined4 *)GEN_TOP((*(int *)(iVar3 + 0xbc) + iVar4)));
@@ -12915,9 +12907,7 @@ LAB_005860e0: ;
               }
               goto LAB_005860e0;
             }
-            LOCK();
-            *puVar17 = *puVar17 + iVar2 * -0x4000;
-            UNLOCK();
+            _InterlockedExchangeAdd((volatile long *)(puVar17), (long)(iVar2 * -0x4000));
             fVar12 = 0.0;
           }
         }
@@ -13572,17 +13562,11 @@ joined_r0x00586fd1: ;
     iVar3 = piVar4[2];
     if ((*(int *)(iVar3 + 8) != 0) && (*(int *)(iVar3 + 0x10) == 1)) {
       piVar5 = ((int *)GEN_TOP((*(int *)(iVar3 + 8) + 0x88)));
-      LOCK();
-      iVar1 = *piVar5;
-      *piVar5 = *piVar5;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar5), 0, 0);
       if (iVar1 == 2) {
         *(undefined4 *)(iVar3 + 0x10) = 2;
         piVar5 = ((int *)GEN_TOP((*(int *)(iVar3 + 8) + 0x8c)));
-        LOCK();
-        iVar1 = *piVar5;
-        *piVar5 = *piVar5;
-        UNLOCK();
+        iVar1 = _InterlockedCompareExchange((volatile long *)(piVar5), 0, 0);
         if (7 < iVar1) {
           if (piVar4[2] != 0) {
             F_00406ad0(piVar4[2]);
@@ -13804,10 +13788,7 @@ LAB_0058742a: ;
     iVar4 = *(int *)(iVar3 + 8);
     if (iVar4 == param_1) {
       piVar5 = (int *)(iVar4 + 0x94);
-      LOCK();
-      iVar4 = *piVar5;
-      *piVar5 = *piVar5;
-      UNLOCK();
+      iVar4 = _InterlockedCompareExchange((volatile long *)(piVar5), 0, 0);
       if (iVar4 < 2) {
         if (piVar2 != *(int * PTR32 *)this) {
           *(int *)piVar2[1] = *piVar2;

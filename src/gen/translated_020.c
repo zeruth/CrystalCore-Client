@@ -3382,10 +3382,7 @@ uint F_0051b710(unsigned int gen_a0, unsigned int gen_a1)
   
   if (param_1 == 1) {
     piVar2 = (int *)((int)this + 0x88);
-    LOCK();
-    iVar1 = *piVar2;
-    *piVar2 = *piVar2;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
     if (iVar1 != 3) {
       return 1;
     }
@@ -3401,10 +3398,7 @@ uint F_0051b740(unsigned int gen_a0, unsigned int gen_a1)
   uint param_2 = (uint)gen_a1;
   uint uVar1;
   
-  LOCK();
-  uVar1 = *(uint *)(in_ecx + 0x88);
-  *(uint *)(in_ecx + 0x88) = param_2;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(((uint *)(in_ecx + 0x88))), (long)(param_2));
   return uVar1;
 }
 
@@ -3416,10 +3410,7 @@ uint F_0051b760(unsigned int gen_a0, unsigned int gen_a1)
   uint param_1 = (uint)gen_a1;
   uint uVar1;
   
-  LOCK();
-  uVar1 = *(uint *)((int)this + 0x90);
-  *(uint *)((int)this + 0x90) = param_1;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(((uint *)((int)this + 0x90))), (long)(param_1));
   *(undefined4 *)((int)this + 0x34) = 0xffffffec;
   return uVar1;
 }

@@ -6737,16 +6737,10 @@ uint F_00bee0f0(unsigned int gen_a0)
   piVar2 = *(int * PTR32 *)(this + 0x84);
   if (piVar2 != (int *)0x0) {
     piVar2 = piVar2 + 0x22;
-    LOCK();
-    iVar1 = *piVar2;
-    *piVar2 = *piVar2;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
     if (iVar1 == 2) {
       piVar2 = ((int *)GEN_TOP((*(int *)(this + 0x84) + 0x8c)));
-      LOCK();
-      iVar1 = *piVar2;
-      *piVar2 = *piVar2;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
       if (iVar1 < 8) {
         uVar3 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x84) + 0x5c))))(*(int * PTR32 *)(this + 0x84));
         this_00 = (undefined *)F_00406b90(0x14,0,0);

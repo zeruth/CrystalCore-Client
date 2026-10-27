@@ -2580,18 +2580,12 @@ byte F_005e0e90(unsigned int gen_a0)
         return 0;
       }
       piVar2 = ((int *)GEN_TOP((*(int *)((int)this + 0x3c) + 0x88)));
-      LOCK();
-      iVar1 = *piVar2;
-      *piVar2 = *piVar2;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
       if (iVar1 != 2) {
         return 0;
       }
       piVar2 = ((int *)GEN_TOP((*(int *)((int)this + 0x3c) + 0x8c)));
-      LOCK();
-      iVar1 = *piVar2;
-      *piVar2 = *piVar2;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
       if (7 < iVar1) {
         return 0;
       }
@@ -2743,10 +2737,7 @@ uint F_005e1070(unsigned int gen_a0, unsigned int gen_a1)
   if (((bVar2 & 0x10) != 0) && (*(int *)((int)this + 0xc) == param_1)) {
     *(byte *)((int)this + 100) = bVar2 & 0xef;
     piVar4 = (int *)(param_1 + 0x8c);
-    LOCK();
-    iVar1 = *piVar4;
-    *piVar4 = *piVar4;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar4), 0, 0);
     if (7 < iVar1) {
       uVar3 = F_005e1000((undefined *)((int)this + -0x30));
       return uVar3;
@@ -3062,10 +3053,7 @@ byte F_005e1640(void)
     bVar2 = F_00550ff0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25e0));
     if (bVar2 == 0) {
       piVar3 = (int *)(REFG(int, 0x1375aec) + 0xc6c);
-      LOCK();
-      iVar1 = *piVar3;
-      *piVar3 = *piVar3;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
       return iVar1 == 0;
     }
   }
@@ -7731,10 +7719,7 @@ byte F_005e9e00(unsigned int gen_a0)
     }
     if (*(int *)(puVar4[3] + 8) == 0x6d646c) {
       piVar7 = (int *)(puVar4[3] + 0x88);
-      LOCK();
-      iVar1 = *piVar7;
-      *piVar7 = *piVar7;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar7), 0, 0);
       if (iVar1 != 2) {
         return 0;
       }
@@ -7843,10 +7828,7 @@ byte F_005e9f00(unsigned int gen_a0)
       return 1;
     }
     piVar7 = (int *)(puVar4[3] + 0x88);
-    LOCK();
-    iVar1 = *piVar7;
-    *piVar7 = *piVar7;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar7), 0, 0);
     if (iVar1 != 2) break;
     if (*(char *)((int)puVar4 + 0x15) == '\0') {
       puVar5 = (undefined4 *)puVar4[2];
@@ -8254,10 +8236,7 @@ unsigned int F_005ea8d0(unsigned int gen_a0)
     do {
       iVar5 = *(int *)piVar9[4];
       piVar1 = (int *)(iVar5 + 0x88);
-      LOCK();
-      iVar2 = *piVar1;
-      *piVar1 = *piVar1;
-      UNLOCK();
+      iVar2 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
       if (iVar2 == 2) {
         puVar8 = (undefined4 *)(iVar5 + 0x8c);
         LOCK();
@@ -10327,20 +10306,14 @@ byte F_005ec8a0(unsigned int gen_a0)
   
   if (*(int *)((int)this + 0x1ac) != 0) {
     piVar8 = ((int *)GEN_TOP((*(int *)((int)this + 0x1ac) + 0x88)));
-    LOCK();
-    iVar1 = *piVar8;
-    *piVar8 = *piVar8;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar8), 0, 0);
     if (iVar1 != 2) {
       return 0;
     }
   }
   if (*(int *)((int)this + 0x1b0) != 0) {
     piVar8 = ((int *)GEN_TOP((*(int *)((int)this + 0x1b0) + 0x88)));
-    LOCK();
-    iVar1 = *piVar8;
-    *piVar8 = *piVar8;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar8), 0, 0);
     if (iVar1 != 2) {
       return 0;
     }
@@ -14556,16 +14529,10 @@ double F_005f0650(unsigned int gen_a0)
       iVar5 = *piVar4;
       (*(int * PTR32 *)(gen_frame + 0x90)) = piVar4;
       piVar3 = (int *)(iVar5 + 0x88);
-      LOCK();
-      iVar1 = *piVar3;
-      *piVar3 = *piVar3;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
       if (iVar1 == 2) {
         piVar3 = (int *)(iVar5 + 0x8c);
-        LOCK();
-        iVar1 = *piVar3;
-        *piVar3 = *piVar3;
-        UNLOCK();
+        iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
         if (iVar1 < 8) {
           dVar10 = F_004c3df0(((undefined1 *)(gen_frame + 0xc)));
           in_ST0 = (float10)dVar10;

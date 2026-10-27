@@ -8018,23 +8018,14 @@ uint F_00a4b910(unsigned int gen_a0, unsigned int gen_a1)
     uVar6 = param_1 + 0xf & 0xfffffff0;
     do {
       puVar1 = (uint *)((int)this + 8);
-      LOCK();
-      uVar2 = *puVar1;
-      *puVar1 = *puVar1;
-      UNLOCK();
+      uVar2 = _InterlockedCompareExchange((volatile long *)(puVar1), 0, 0);
       uVar5 = uVar2 + uVar6;
       param_1 = uVar2;
       if (*(uint *)((int)this + 0x10) <= uVar5) {
         param_1 = 0;
         uVar5 = uVar6;
       }
-      LOCK();
-      uVar3 = *puVar1;
-      if (uVar2 == uVar3) {
-        *puVar1 = uVar5;
-        uVar3 = uVar2;
-      }
-      UNLOCK();
+      uVar3 = _InterlockedCompareExchange((volatile long *)(puVar1), (long)(uVar5), (long)(uVar2));
     } while (uVar3 != uVar2);
     return *(int *)((int)this + 4) + param_1;
   }
@@ -8042,31 +8033,19 @@ uint F_00a4b910(unsigned int gen_a0, unsigned int gen_a1)
   do {
     do {
       puVar1 = (uint *)((int)this + 0xc);
-      LOCK();
-      uVar5 = *puVar1;
-      *puVar1 = *puVar1;
-      UNLOCK();
+      uVar5 = _InterlockedCompareExchange((volatile long *)(puVar1), 0, 0);
       if (uVar5 < uVar6) {
         return 0;
       }
       puVar1 = (uint *)((int)this + 8);
-      LOCK();
-      uVar5 = *puVar1;
-      *puVar1 = *puVar1;
-      UNLOCK();
+      uVar5 = _InterlockedCompareExchange((volatile long *)(puVar1), 0, 0);
       uVar2 = uVar5 + uVar6;
       local_8 = uVar5;
       if (*(uint *)((int)this + 0x10) <= uVar5 + uVar6) {
         local_8 = 0;
         uVar2 = uVar6;
       }
-      LOCK();
-      uVar3 = *puVar1;
-      if (uVar5 == uVar3) {
-        *puVar1 = uVar2;
-        uVar3 = uVar5;
-      }
-      UNLOCK();
+      uVar3 = _InterlockedCompareExchange((volatile long *)(puVar1), (long)(uVar2), (long)(uVar5));
     } while (uVar3 != uVar5);
     LOCK();
     *(int *)((int)this + 0xc) = *(int *)((int)this + 0xc) - uVar6;
@@ -8089,10 +8068,7 @@ uint F_00a4b9d0(unsigned int gen_a0, unsigned int gen_a1)
   uVar1 = param_2;
   if ((param_2 != 0) && (*(int *)(in_ecx + 0x14) == 0)) {
     puVar2 = (uint *)(in_ecx + 0xc);
-    LOCK();
-    uVar1 = *puVar2;
-    *puVar2 = *puVar2 + *(int *)(param_2 - 0x10);
-    UNLOCK();
+    uVar1 = _InterlockedExchangeAdd((volatile long *)(puVar2), (long)(*(int *)(param_2 - 0x10)));
   }
   return uVar1;
 }
@@ -8107,12 +8083,8 @@ uint F_00a4b9f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   undefined4 param_3 = (undefined4)gen_a3;
   *(undefined4 *)((int)this + 4) = param_1;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10e5288));
-  LOCK();
-  *(undefined4 *)((int)this + 8) = 0;
-  UNLOCK();
-  LOCK();
-  *(undefined4 *)((int)this + 0xc) = param_2;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 8))), (long)(0));
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0xc))), (long)(param_2));
   *(undefined4 *)((int)this + 0x10) = param_2;
   *(undefined4 *)((int)this + 0x14) = param_3;
   return (uint)this;
@@ -8524,10 +8496,7 @@ uint F_00a4c1e0(unsigned int gen_a0, unsigned int gen_a1)
   int param_1 = (int)gen_a1;
   int iVar1;
   
-  LOCK();
-  iVar1 = *(int *)this;
-  *(int *)this = *(int *)this + param_1;
-  UNLOCK();
+  iVar1 = _InterlockedExchangeAdd((volatile long *)(((int *)this)), (long)(param_1));
   return iVar1 + param_1;
 }
 

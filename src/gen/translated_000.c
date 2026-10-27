@@ -3696,10 +3696,7 @@ uint F_00405140(unsigned int gen_a0)
   local_8 = 0;
   if (this[0xbd] == (undefined1)0x0) {
     do {
-      LOCK();
-      iVar1 = *(int *)(this + 0xd8);
-      *(int *)(this + 0xd8) = 1;
-      UNLOCK();
+      iVar1 = _InterlockedExchange((volatile long *)(((int *)(this + 0xd8))), (long)(1));
     } while (iVar1 != 0);
   }
   else {
@@ -3729,9 +3726,7 @@ uint F_00405140(unsigned int gen_a0)
     gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)(this + 0xc0));
     return local_8;
   }
-  LOCK();
-  *(undefined4 *)(this + 0xd8) = 0;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)(this + 0xd8))), (long)(0));
   return local_8;
 }
 
@@ -4154,9 +4149,7 @@ uint F_00405790(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   *(undefined1 *)((int)this + 0xbe) = (undefined1)param_6;
   *(undefined1 *)((int)this + 0xbf) = (undefined1)param_7;
   gen_imp_InitializeCriticalSection((LPCRITICAL_SECTION)((int)this + 0xc0));
-  LOCK();
-  *(undefined4 *)((int)this + 0xd8) = 0;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0xd8))), (long)(0));
   *(undefined4 *)((int)this + 0x14) = param_3;
   *(undefined4 *)((int)this + 0x18) = param_4;
   *(uint *)((int)this + 8) = param_2;
@@ -4198,10 +4191,7 @@ uint F_00405840(unsigned int gen_a0, unsigned int gen_a1)
   
   if (this[0xbd] == (undefined1)0x0) {
     do {
-      LOCK();
-      iVar1 = *(int *)(this + 0xd8);
-      *(int *)(this + 0xd8) = 1;
-      UNLOCK();
+      iVar1 = _InterlockedExchange((volatile long *)(((int *)(this + 0xd8))), (long)(1));
     } while (iVar1 != 0);
   }
   else {
@@ -4214,10 +4204,7 @@ uint F_00405840(unsigned int gen_a0, unsigned int gen_a1)
     gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)(this + 0xc0));
     return extraout_EAX;
   }
-  LOCK();
-  uVar2 = *(uint *)(this + 0xd8);
-  *(uint *)(this + 0xd8) = 0;
-  UNLOCK();
+  uVar2 = _InterlockedExchange((volatile long *)(((uint *)(this + 0xd8))), (long)(0));
   return uVar2;
 }
 
@@ -4522,10 +4509,7 @@ uint F_00405e30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   local_8 = 0;
   if (this[0xbd] == (undefined1)0x0) {
     do {
-      LOCK();
-      iVar1 = *(int *)(this + 0xd8);
-      *(int *)(this + 0xd8) = 1;
-      UNLOCK();
+      iVar1 = _InterlockedExchange((volatile long *)(((int *)(this + 0xd8))), (long)(1));
     } while (iVar1 != 0);
   }
   else {
@@ -4560,9 +4544,7 @@ LAB_00405f05: ;
     } while (local_8 == 0);
   }
   if (this[0xbd] == (undefined1)0x0) {
-    LOCK();
-    *(undefined4 *)(this + 0xd8) = 0;
-    UNLOCK();
+    _InterlockedExchange((volatile long *)(((undefined4 *)(this + 0xd8))), (long)(0));
     return local_8;
   }
   gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)(this + 0xc0));
@@ -6223,10 +6205,7 @@ unsigned int F_00407740(unsigned int gen_a0)
     return 0;
   }
   do {
-    LOCK();
-    iVar1 = *(int *)(this + 0xd8);
-    *(int *)(this + 0xd8) = 1;
-    UNLOCK();
+    iVar1 = _InterlockedExchange((volatile long *)(((int *)(this + 0xd8))), (long)(1));
   } while (iVar1 != 0);
   return 0;
 }
@@ -6243,10 +6222,7 @@ uint F_00407770(unsigned int gen_a0)
     gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)(this + 0xc0));
     return extraout_EAX;
   }
-  LOCK();
-  uVar1 = *(uint *)(this + 0xd8);
-  *(uint *)(this + 0xd8) = 0;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(((uint *)(this + 0xd8))), (long)(0));
   return uVar1;
 }
 

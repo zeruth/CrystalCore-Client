@@ -5857,16 +5857,10 @@ uint F_009f3260(unsigned int gen_a0)
       piVar2 = (int *)puVar3[1];
       for (piVar4 = (int *)*puVar3; piVar4 != piVar2; piVar4 = piVar4 + 1) {
         piVar5 = (int *)(*piVar4 + 0x88);
-        LOCK();
-        iVar1 = *piVar5;
-        *piVar5 = *piVar5;
-        UNLOCK();
+        iVar1 = _InterlockedCompareExchange((volatile long *)(piVar5), 0, 0);
         if (iVar1 == 2) {
           piVar5 = (int *)(*piVar4 + 0x8c);
-          LOCK();
-          iVar1 = *piVar5;
-          *piVar5 = *piVar5;
-          UNLOCK();
+          iVar1 = _InterlockedCompareExchange((volatile long *)(piVar5), 0, 0);
           if (iVar1 < 8) {
             local_8 = local_8 + 1;
           }

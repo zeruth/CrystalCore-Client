@@ -6084,10 +6084,7 @@ uint F_00757f10(unsigned int gen_a0, unsigned int gen_a1)
   F_00757ea0(((undefined *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0xc))),&(*(int *)(gen_frame + 0x8)),&(*(int * PTR32 *)&gen_args[1]));
   piVar2 = (*(int * PTR32 *)&gen_args[1]);
   piVar1 = (*(int * PTR32 *)&gen_args[1]) + 0x23;
-  LOCK();
-  iVar5 = *piVar1;
-  *piVar1 = *piVar1;
-  UNLOCK();
+  iVar5 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
   if (iVar5 < 8) {
     iVar5 = (*(int * PTR32 *)&gen_args[1])[7];
     uVar6 = 1;
@@ -6213,10 +6210,7 @@ uint F_00758120(unsigned int gen_a0, unsigned int gen_a1)
   F_00757ea0(((undefined *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0xc))),&(*(int *)(gen_frame + 0x8)),&(*(int * PTR32 *)&gen_args[1]));
   piVar2 = (*(int * PTR32 *)&gen_args[1]);
   piVar1 = (*(int * PTR32 *)&gen_args[1]) + 0x23;
-  LOCK();
-  iVar5 = *piVar1;
-  *piVar1 = *piVar1;
-  UNLOCK();
+  iVar5 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
   if (iVar5 < 8) {
     iVar5 = (*(int * PTR32 *)&gen_args[1])[7];
     uVar6 = 1;

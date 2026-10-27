@@ -1865,10 +1865,7 @@ byte F_005f3030(unsigned int gen_a0)
   iVar5 = 0;
   if (*(int *)((int)this + 0x1ac) != 0) {
     piVar3 = ((int *)GEN_TOP((*(int *)((int)this + 0x1ac) + 0x8c)));
-    LOCK();
-    iVar1 = *piVar3;
-    *piVar3 = *piVar3;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
     if (7 < iVar1) {
       if (*(int *)((int)this + 0x1ac) != 0) {
         F_0050c620(*(int *)((int)this + 0x1ac),0,0);
@@ -1911,10 +1908,7 @@ byte F_005f30f0(unsigned int gen_a0)
   
   if (*(int *)((int)this + 0x1b0) != 0) {
     piVar7 = ((int *)GEN_TOP((*(int *)((int)this + 0x1b0) + 0x8c)));
-    LOCK();
-    iVar1 = *piVar7;
-    *piVar7 = *piVar7;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar7), 0, 0);
     if (7 < iVar1) {
       if (*(int *)((int)this + 0x1b0) != 0) {
         F_0050c620(*(int *)((int)this + 0x1b0),0,0);
@@ -10276,10 +10270,7 @@ uint F_005fc950(unsigned int gen_a0, unsigned int gen_a1)
   uVar3 = *(uint *)((int)this + 0x78) & 0xffffff0f;
   if ((char)uVar3 == '\x01') {
     piVar2 = (int *)(param_1 + 0x8c);
-    LOCK();
-    iVar1 = *piVar2;
-    *piVar2 = *piVar2;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
     if (7 < iVar1) {
       *(uint *)((int)this + 0x78) = *(uint *)((int)this + 0x78) & 0xfffffff3 | 3;
       return (uint)piVar2;
@@ -10713,10 +10704,7 @@ unsigned int F_005fcf20(unsigned int gen_a0, unsigned int gen_a1)
     bVar6 = F_005ecb30((int)param_1 + 300);
     if (bVar6 != 0) {
       piVar11 = (int *)(REFG(int, 0x1375aec) + 0xc70);
-      LOCK();
-      iVar4 = *piVar11;
-      *piVar11 = *piVar11;
-      UNLOCK();
+      iVar4 = _InterlockedCompareExchange((volatile long *)(piVar11), 0, 0);
       if (iVar4 == 0) {
         *(undefined4 *)((int)param_1 + 0x2c) = 4;
       }
@@ -10959,10 +10947,7 @@ byte F_005fd5d0(unsigned int gen_a0, unsigned int gen_a1)
   switch((unsigned int)(uintptr_t)(*(undefined4 *)((int)this + 0x10))) {
   case 1: ;
     piVar3 = ((int *)GEN_TOP((*(int *)((int)this + 0xd8) + 0x88)));
-    LOCK();
-    iVar1 = *piVar3;
-    *piVar3 = *piVar3;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
     if (iVar1 != 2) {
       return 1;
     }
@@ -11003,10 +10988,7 @@ byte F_005fd5d0(unsigned int gen_a0, unsigned int gen_a1)
     bVar2 = F_005ec8a0(this);
     if ((bVar2 != 0) && (bVar2 = F_005d92a0(this), bVar2 != 0)) {
       piVar3 = (int *)(REFG(int, 0x1375aec) + 0xc70);
-      LOCK();
-      iVar1 = *piVar3;
-      *piVar3 = *piVar3;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
       if (iVar1 == 0) {
         F_005f4930(this);
         goto switchD_005fd5e6_caseD_6;
@@ -11018,10 +11000,7 @@ byte F_005fd5d0(unsigned int gen_a0, unsigned int gen_a1)
 switchD_005fd5e6_caseD_6: ;
     if ((*(char *)((int)this + 0x52) != '\0') && (bVar2 = F_00550ff0(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25e0)), bVar2 == 0)) {
       piVar3 = (int *)(REFG(int, 0x1375aec) + 0xc70);
-      LOCK();
-      iVar1 = *piVar3;
-      *piVar3 = *piVar3;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
       if (iVar1 == 0) {
         F_005f2810(this);
         *(undefined1 *)(REFG(int, 0x1371280) + 0x4f) = 1;

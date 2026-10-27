@@ -550,10 +550,7 @@ uint F_005bfd40(unsigned int gen_a0, unsigned int gen_a1)
   int iVar2;
   
   piVar1 = (int *)((int)this + 0x29c);
-  LOCK();
-  iVar2 = *piVar1;
-  *piVar1 = *piVar1 + param_1;
-  UNLOCK();
+  iVar2 = _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(param_1));
   if (*(uint *)((int)this + 0x284) <
       (uint)(*(int *)((int)this + 0x298) + *(int *)((int)this + 0x29c))) {
     return 0;
@@ -621,14 +618,9 @@ uint F_005bfe10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   }
   iVar4 = *(int *)((int)this + 0x10);
   piVar1 = (int *)(iVar4 + 0x298);
-  LOCK();
-  iVar3 = *piVar1;
-  *piVar1 = *piVar1 + 0x800;
-  UNLOCK();
+  iVar3 = _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(0x800));
   if (*(uint *)(iVar4 + 0x284) < (uint)(*(int *)(iVar4 + 0x29c) * 3 + *piVar1)) {
-    LOCK();
-    *piVar1 = *piVar1 + -0x800;
-    UNLOCK();
+    _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(-0x800));
     return 0;
   }
   puVar5 = ((undefined4 *)GEN_TOP((*(int *)(iVar4 + 0x290) + iVar3)));
@@ -659,10 +651,7 @@ uint F_005bfeb0(unsigned int gen_a0, unsigned int gen_a1)
   if (*piVar1 == 0) {
     iVar4 = *(int *)((int)this + 0x10);
     puVar2 = (uint *)(iVar4 + 0x29c);
-    LOCK();
-    uVar3 = *puVar2;
-    *puVar2 = *puVar2 + 0x400;
-    UNLOCK();
+    uVar3 = _InterlockedExchangeAdd((volatile long *)(puVar2), (long)(0x400));
     if (*(uint *)(iVar4 + 0x284) < *puVar2 * 3 + *(int *)(iVar4 + 0x298)) {
       LOCK();
       uVar3 = *puVar2;
@@ -5051,14 +5040,9 @@ uint F_005c4220(unsigned int gen_a0, unsigned int gen_a1)
   iVar4 = *((int *)GEN_TOP(((int)this + (int)(&REFG(undefined * PTR32, 0x10a0c2c))[(int)(param_1)] * 0x10 + 0x24c)));
   iVar2 = (int)(&REFG(undefined * PTR32, 0x10a0c2c))[(int)(param_1)] * 0x10;
   puVar1 = (uint *)((int)this + iVar2 + 600);
-  LOCK();
-  uVar3 = *puVar1;
-  *puVar1 = *puVar1 + iVar4 * 0x4000;
-  UNLOCK();
+  uVar3 = _InterlockedExchangeAdd((volatile long *)(puVar1), (long)(iVar4 * 0x4000));
   if (*(uint *)((int)this + iVar2 + 0x254) < *puVar1) {
-    LOCK();
-    *puVar1 = *puVar1 + iVar4 * -0x4000;
-    UNLOCK();
+    _InterlockedExchangeAdd((volatile long *)(puVar1), (long)(iVar4 * -0x4000));
     return 0;
   }
   return *(int *)((int)this + 0x294) + *(int *)((int)this + iVar2 + 0x250) + uVar3;

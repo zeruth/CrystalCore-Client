@@ -1418,9 +1418,7 @@ uint F_004d9410(unsigned int gen_a0, unsigned int gen_a1)
   
   uVar2 = param_1 + 0xfU >> 4;
   piVar1 = ((int *)GEN_TOP((REFG(int, 0x1370b90) + 0xd8 + (*(uint *)((int)this + 8) & 0xf) * 4)));
-  LOCK();
-  *piVar1 = *piVar1 + (uVar2 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0));
-  UNLOCK();
+  _InterlockedExchangeAdd((volatile long *)(piVar1), (long)((uVar2 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0))));
   uVar2 = uVar2 << 4;
   *(uint *)((int)this + 8) = *(uint *)((int)this + 8) & 0xf | uVar2;
   return uVar2;
@@ -1437,10 +1435,7 @@ uint F_004d9460(unsigned int gen_a0)
   
   if (*(int *)((int)this + REFG(int, 0x1375a38) * 4 + 0x20) != 0) {
     piVar3 = (int *)((int)this + 0x2c);
-    LOCK();
-    iVar2 = *piVar3;
-    *piVar3 = *piVar3 + -1;
-    UNLOCK();
+    iVar2 = _InterlockedExchangeAdd((volatile long *)(piVar3), (long)(-1));
     if (iVar2 == 1) {
       piVar3 = *(int * PTR32 *)((int)this + REFG(int, 0x1375a38) * 4 + 0x20);
       ((code *)*(gen_code32 *)(*piVar3 + 0x30))(piVar3);
@@ -1511,9 +1506,7 @@ byte F_004d9500(unsigned int gen_a0)
       *(undefined4 *)((int)this + 0x28) = *puVar1;
       uVar3 = *(int *)((int)this + 0x18) + 0xfU >> 4;
       piVar2 = ((int *)GEN_TOP((REFG(int, 0x1370b90) + 0xd8 + (*(uint *)((int)this + 8) & 0xf) * 4)));
-      LOCK();
-      *piVar2 = *piVar2 + (uVar3 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0));
-      UNLOCK();
+      _InterlockedExchangeAdd((volatile long *)(piVar2), (long)((uVar3 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0))));
       uVar3 = uVar3 << 4 | *(uint *)((int)this + 8) & 0xf;
     }
     else {
@@ -1531,9 +1524,7 @@ byte F_004d9500(unsigned int gen_a0)
       } while (uVar3 < 3);
       uVar3 = *(int *)((int)this + 0x18) * 3 + 0xfU >> 4;
       piVar2 = ((int *)GEN_TOP((REFG(int, 0x1370b90) + 0xd8 + (*(uint *)((int)this + 8) & 0xf) * 4)));
-      LOCK();
-      *piVar2 = *piVar2 + (uVar3 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0));
-      UNLOCK();
+      _InterlockedExchangeAdd((volatile long *)(piVar2), (long)((uVar3 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0))));
       uVar3 = uVar3 << 4 | *(uint *)((int)this + 8) & 0xf;
     }
     *(uint *)((int)this + 8) = uVar3;
@@ -1585,10 +1576,7 @@ uint F_004d9690(unsigned int gen_a0)
   
   if (*(int *)((int)this + REFG(int, 0x1375a38) * 4 + 0x24) != 0) {
     piVar3 = (int *)((int)this + 0x30);
-    LOCK();
-    iVar2 = *piVar3;
-    *piVar3 = *piVar3 + -1;
-    UNLOCK();
+    iVar2 = _InterlockedExchangeAdd((volatile long *)(piVar3), (long)(-1));
     if (iVar2 == 1) {
       piVar3 = *(int * PTR32 *)((int)this + REFG(int, 0x1375a38) * 4 + 0x24);
       ((code *)*(gen_code32 *)(*piVar3 + 0x30))(piVar3);
@@ -1688,9 +1676,7 @@ byte F_004d9730(unsigned int gen_a0)
   }
   uVar3 = iVar5 + 0xfU >> 4;
   piVar2 = ((int *)GEN_TOP((REFG(int, 0x1370b90) + 0xd8 + (*(uint *)((int)this + 8) & 0xf) * 4)));
-  LOCK();
-  *piVar2 = *piVar2 + (uVar3 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0));
-  UNLOCK();
+  _InterlockedExchangeAdd((volatile long *)(piVar2), (long)((uVar3 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0))));
   *(uint *)((int)this + 8) = *(uint *)((int)this + 8) & 0xf | uVar3 << 4;
   *(undefined4 *)((int)this + 0x30) = 0;
   *(undefined4 *)((int)this + 0x34) = 0xffffffff;
@@ -2387,9 +2373,7 @@ byte F_004da150(unsigned int gen_a0)
     }
     uVar11 = (*(int *)(gen_frame + 0x20)) + 0xfU >> 4;
     piVar1 = ((int *)GEN_TOP((REFG(int, 0x1370b90) + 0xd8 + (*(uint *)((int)this + 8) & 0xf) * 4)));
-    LOCK();
-    *piVar1 = *piVar1 + (uVar11 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0));
-    UNLOCK();
+    _InterlockedExchangeAdd((volatile long *)(piVar1), (long)((uVar11 * 0x10 - (*(uint *)((int)this + 8) & 0xfffffff0))));
     *(uint *)((int)this + 8) = uVar11 << 4 | *(uint *)((int)this + 8) & 0xf;
     return 1;
   }
@@ -2756,10 +2740,7 @@ uint F_004da960(unsigned int gen_a0, unsigned int gen_a1)
     return 0;
   }
   piVar1 = (int *)(REFG(int, 0x1370b90) + 0xc4);
-  LOCK();
-  iVar7 = *piVar1;
-  *piVar1 = *piVar1 + uVar4 * 0x8000;
-  UNLOCK();
+  iVar7 = _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(uVar4 * 0x8000));
   if (*(uint *)(iVar6 + 0xb8) < (uint)(*(int *)(iVar6 + 0xc0) + *(int *)(iVar6 + 0xc4))) {
     iVar6 = 0;
   }
@@ -6572,10 +6553,7 @@ LAB_004decde: ;
       iVar2 = *(int *)((int)this + 0x22c);
       if (*(int *)(iVar2 + 0x20 + REFG(int, 0x1375a38) * 4) != 0) {
         piVar9 = (int *)(iVar2 + 0x2c);
-        LOCK();
-        iVar1 = *piVar9;
-        *piVar9 = *piVar9 + -1;
-        UNLOCK();
+        iVar1 = _InterlockedExchangeAdd((volatile long *)(piVar9), (long)(-1));
         if (iVar1 == 1) {
           piVar9 = *(int * PTR32 *)(iVar2 + 0x20 + REFG(int, 0x1375a38) * 4);
           ((code *)*(gen_code32 *)(*piVar9 + 0x30))(piVar9);
@@ -7569,10 +7547,7 @@ byte F_004dfd30(unsigned int gen_a0, unsigned int gen_a1)
     *(uint * PTR32 *)((int)this + 4) = puVar7;
     if (puVar7 != (uint *)0x0) {
       puVar7 = (uint *)((int)this + 0x28);
-      LOCK();
-      uVar6 = *puVar7;
-      *puVar7 = *puVar7 + 1;
-      UNLOCK();
+      uVar6 = _InterlockedExchangeAdd((volatile long *)(puVar7), (long)(1));
       if (uVar6 < *(uint *)((int)this + 0x24)) {
         *((uint *)GEN_TOP((*(int *)((int)GEN_TLS_ARRAY + REFG(int, 0x15d6870) * 4) + 0x1a8))) =
              uVar6 * 0x5b0 + *(int *)((int)this + 4);
@@ -8899,10 +8874,7 @@ uint F_004e1740(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   uint uVar2;
   
   puVar1 = (uint *)((int)this + param_1 * 4 + 0xd8);
-  LOCK();
-  uVar2 = *puVar1;
-  *puVar1 = *puVar1 + param_2;
-  UNLOCK();
+  uVar2 = _InterlockedExchangeAdd((volatile long *)(puVar1), (long)(param_2));
   return uVar2;
 }
 
@@ -8916,10 +8888,7 @@ uint F_004e1760(unsigned int gen_a0, unsigned int gen_a1)
   int iVar2;
   
   piVar1 = (int *)((int)this + 0xc4);
-  LOCK();
-  iVar2 = *piVar1;
-  *piVar1 = *piVar1 + param_1;
-  UNLOCK();
+  iVar2 = _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(param_1));
   if (*(uint *)((int)this + 0xb8) < (uint)(*(int *)((int)this + 0xc0) + *(int *)((int)this + 0xc4)))
   {
     return 0;

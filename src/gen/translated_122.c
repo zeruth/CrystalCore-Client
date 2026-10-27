@@ -942,9 +942,7 @@ uint F_00accac0(unsigned int gen_a0)
 {
   GEN_ENTER(0xaccac0u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
-  LOCK();
-  REFG(undefined4, 0x14bee60) = 0;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x14bee60)), (long)(0));
   *(undefined4 *)&REFG(undefined1, 0x14bee00) = 0;
   *(undefined4 *)&REFG(undefined, 0x14bee04) = 0;
   *(undefined4 *)&REFG(undefined, 0x14bee08) = 0;
@@ -1101,10 +1099,7 @@ unsigned int F_00acccc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
   else {
     REFG(int, 0x14bee10) = 0;
   }
-  LOCK();
-  uVar1 = REFG(undefined4, 0x14bee60);
-  REFG(undefined4, 0x14bee60) = 0;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x14bee60)), (long)(0));
   return 0;
 }
 
@@ -1114,10 +1109,7 @@ uint F_00accd00(void)
   GEN_ENTER(0xaccd00u, 0u, 0u, 0u, 0u);
   uint uVar1;
   
-  LOCK();
-  uVar1 = REFG(undefined4, 0x14bee60);
-  REFG(undefined4, 0x14bee60) = 0;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x14bee60)), (long)(0));
   return uVar1;
 }
 
@@ -1814,10 +1806,7 @@ uint F_00acd8e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   (*(undefined4 *)(gen_frame + 0xc)) = 0;
   (*(gen_code32 *)(gen_frame + 0x3c)) = ((code *)REFP(0xacccc0));
   F_004fc510(REFG(void * PTR32, 0x1375ae8),&(*(undefined4 *)(gen_frame + 0x8)));
-  LOCK();
-  uVar1 = REFG(undefined4, 0x14bee60);
-  REFG(undefined4, 0x14bee60) = 1;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x14bee60)), (long)(1));
   F_00c47745((*(uint *)(gen_frame + 0x248)) ^ (uint)(uint)(gen_frame + 0x24c));
   return uVar1;
 }
@@ -2435,10 +2424,7 @@ uint F_00ace360(void)
     (*(gen_code32 *)(gen_frame + 0x10)) = ((code *)REFP(0xacd4b0));
     uVar2 = F_004fc7b0(REFG(void * PTR32, 0x1375ae8),&(*(undefined4 *)(gen_frame + 0x224)),&(*(gen_code32 *)(gen_frame + 0xc)),5);
   }
-  LOCK();
-  uVar1 = REFG(undefined4, 0x14bee60);
-  REFG(undefined4, 0x14bee60) = 1;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x14bee60)), (long)(1));
   F_00c47745((*(uint *)(gen_frame + 0x4b8)) ^ (uint)(uint)(gen_frame + 0x4bc));
   return uVar2;
 }
@@ -2477,10 +2463,7 @@ uint F_00ace4a0(void)
     (*(gen_code32 *)(gen_frame + 0x10)) = ((code *)REFP(0xacd6a0));
     uVar2 = F_004fc7b0(REFG(void * PTR32, 0x1375ae8),&(*(undefined4 *)(gen_frame + 0x224)),&(*(gen_code32 *)(gen_frame + 0xc)),5);
   }
-  LOCK();
-  uVar1 = REFG(undefined4, 0x14bee60);
-  REFG(undefined4, 0x14bee60) = 1;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x14bee60)), (long)(1));
   F_00c47745((*(uint *)(gen_frame + 0x4b8)) ^ (uint)(uint)(gen_frame + 0x4bc));
   return uVar2;
 }

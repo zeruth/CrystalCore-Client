@@ -17,16 +17,10 @@ unsigned int F_005a8130(unsigned int gen_a0)
   if ((*(byte *)((int)this + 0x5c) & 1) != 0) {
     if ((*(int *)((int)this + 0x20) == 1) && (*(int *)((int)this + 0x1c) != 0)) {
       piVar4 = ((int *)GEN_TOP((*(int *)((int)this + 0x1c) + 0x88)));
-      LOCK();
-      iVar1 = *piVar4;
-      *piVar4 = *piVar4;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar4), 0, 0);
       if (iVar1 == 2) {
         piVar4 = ((int *)GEN_TOP((*(int *)((int)this + 0x1c) + 0x8c)));
-        LOCK();
-        iVar1 = *piVar4;
-        *piVar4 = *piVar4;
-        UNLOCK();
+        iVar1 = _InterlockedCompareExchange((volatile long *)(piVar4), 0, 0);
         if (7 < iVar1) {
           *(undefined4 *)((int)this + 0x20) = 4;
           return 0;

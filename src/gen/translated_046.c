@@ -1688,14 +1688,9 @@ uint F_00667cd0(unsigned int gen_a0, unsigned int gen_a1)
   }
   if (*(int *)((int)this + 0x24) == 0) {
     piVar1 = (int *)(REFG(int, 0x1370b90) + 0xc0);
-    LOCK();
-    iVar2 = *piVar1;
-    *piVar1 = *piVar1 + 0x8000;
-    UNLOCK();
+    iVar2 = _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(0x8000));
     if (*(uint *)(iVar3 + 0xb8) < (uint)(*(int *)(iVar3 + 0xc4) * 3 + *piVar1)) {
-      LOCK();
-      *piVar1 = *piVar1 + -0x8000;
-      UNLOCK();
+      _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(-0x8000));
       return 0;
     }
     uVar4 = *(int *)(iVar3 + 0xbc) + iVar2;

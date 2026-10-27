@@ -1880,10 +1880,7 @@ uint F_0058f6c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   F_005873b0(*(undefined * PTR32 *)(REFG(int, 0x1379860) + 0xc),uVar2);
   if (*(int *)((int)this + 8) != 0) {
     piVar4 = ((int *)GEN_TOP((*(int *)((int)this + 8) + 0x8c)));
-    LOCK();
-    iVar1 = *piVar4;
-    *piVar4 = *piVar4;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar4), 0, 0);
     if (iVar1 < 8) {
       return 0;
     }
@@ -1914,10 +1911,7 @@ uint F_0058f730(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   F_005873b0(*(undefined * PTR32 *)(REFG(int, 0x1379860) + 0xc),uVar2);
   if (*(int *)((int)this + 8) != 0) {
     piVar4 = ((int *)GEN_TOP((*(int *)((int)this + 8) + 0x8c)));
-    LOCK();
-    iVar1 = *piVar4;
-    *piVar4 = *piVar4;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar4), 0, 0);
     if (iVar1 < 8) {
       return 0;
     }
@@ -1950,10 +1944,7 @@ uint F_0058f7a0(unsigned int gen_a0, unsigned int gen_a1)
     *(uint *)((int)this + 8) = uVar2;
     if (uVar2 != 0) {
       piVar3 = (int *)(uVar2 + 0x8c);
-      LOCK();
-      iVar1 = *piVar3;
-      *piVar3 = *piVar3;
-      UNLOCK();
+      iVar1 = _InterlockedCompareExchange((volatile long *)(piVar3), 0, 0);
       if (iVar1 < 8) {
         return 0;
       }
@@ -6969,10 +6960,7 @@ LAB_00595294: ;
             return CONCAT31(extraout_var,bVar3);
           }
           piVar5 = piVar5 + 0x23;
-          LOCK();
-          iVar1 = *piVar5;
-          *piVar5 = *piVar5;
-          UNLOCK();
+          iVar1 = _InterlockedCompareExchange((volatile long *)(piVar5), 0, 0);
           if (iVar1 < 8) {
             if (pvVar6 == (undefined *)0x0) {
               pvVar6 = *(undefined * PTR32 *)((int)this + 0x1e0);
@@ -20453,10 +20441,7 @@ LAB_005a4ec6: ;
       }
       else {
         piVar1 = (int *)(iVar5 + 0x88);
-        LOCK();
-        iVar2 = *piVar1;
-        *piVar1 = *piVar1;
-        UNLOCK();
+        iVar2 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
         if (iVar2 == 2) {
           LOCK();
           *(undefined4 *)(iVar5 + 0x8c) = *(undefined4 *)(iVar5 + 0x8c);

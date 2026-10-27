@@ -11247,10 +11247,7 @@ uint F_00ba7490(unsigned int gen_a0)
   
   if (*(int *)((int)this + 0xc) != 0) {
     puVar3 = ((uint *)GEN_TOP((*(int *)((int)this + 0xc) + 0x98)));
-    LOCK();
-    uVar2 = *puVar3;
-    *puVar3 = *puVar3;
-    UNLOCK();
+    uVar2 = _InterlockedCompareExchange((volatile long *)(puVar3), 0, 0);
     return uVar2;
   }
   piVar1 = *(int * PTR32 *)((int)this + 0x14);

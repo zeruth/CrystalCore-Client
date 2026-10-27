@@ -8899,19 +8899,13 @@ uint F_004ec810(unsigned int gen_a0, unsigned int gen_a1)
     piVar5 = (int *)puVar7[-3];
     if ((piVar5 != (int *)0x0) && ((*puVar7 <= uVar3 && (uVar3 < *puVar7 + 0x20000)))) {
       piVar1 = piVar5 + 0x23;
-      LOCK();
-      iVar9 = *piVar1;
-      *piVar1 = *piVar1;
-      UNLOCK();
+      iVar9 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
       if (iVar9 != 7) {
 LAB_004ec969: ;
         return uVar4 - local_14;
       }
       piVar1 = piVar5 + 0x22;
-      LOCK();
-      iVar9 = *piVar1;
-      *piVar1 = *piVar1;
-      UNLOCK();
+      iVar9 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
       if (iVar9 == 3) goto LAB_004ec969;
       iVar9 = uVar3 - *puVar7;
       uVar8 = local_14 + uVar3;

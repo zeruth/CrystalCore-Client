@@ -8836,9 +8836,7 @@ uint F_00990ad0(unsigned int gen_a0)
   uVar2 = F_00513dc0(uVar2,puVar3,uVar4,uVar5);
   uVar2 = *(uint *)(uVar2 + 0xa0);
   piVar1 = (int *)(uVar2 + 4);
-  LOCK();
-  *piVar1 = *piVar1 + 1;
-  UNLOCK();
+  _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(1));
   F_0042c880(((undefined1 *)(gen_frame + 0x34)));
   F_00c47745((*(uint *)(gen_frame + 0x88)) ^ (uint)(uint)(gen_frame + 0x8c));
   return uVar2;
@@ -8852,12 +8850,8 @@ uint F_00990b80(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   undefined4 param_1 = (undefined4)gen_a1;
   undefined4 param_2 = (undefined4)gen_a2;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x10dee60));
-  LOCK();
-  *(undefined4 *)((int)this + 4) = 0;
-  UNLOCK();
-  LOCK();
-  *(undefined4 *)((int)this + 8) = 0;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 4))), (long)(0));
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 8))), (long)(0));
   F_0042cbc0((undefined *)((int)this + 0xc),param_1);
   *(undefined4 *)((int)this + 0x60) = 0;
   *(undefined4 *)((int)this + 100) = param_2;
@@ -8873,15 +8867,10 @@ uint F_00990bc0(unsigned int gen_a0)
   int * piVar2;
   
   if (*(int *)((int)this + 0x60) != 0) {
-    LOCK();
-    *(undefined4 *)((int)this + 8) = 1;
-    UNLOCK();
+    _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 8))), (long)(1));
   }
   piVar2 = (int *)((int)this + 8);
-  LOCK();
-  iVar1 = *piVar2;
-  *piVar2 = *piVar2;
-  UNLOCK();
+  iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
   return (uint)(iVar1 == 1);
 }
 
@@ -8896,10 +8885,7 @@ byte F_00990c00(unsigned int gen_a0)
   iVar1 = *((int *)GEN_TOP((*(int *)(in_ecx + 0x40) + 100)));
   if (iVar1 != 0) {
     piVar2 = (int *)(iVar1 + 0x8c);
-    LOCK();
-    iVar1 = *piVar2;
-    *piVar2 = *piVar2;
-    UNLOCK();
+    iVar1 = _InterlockedCompareExchange((volatile long *)(piVar2), 0, 0);
     return 7 < iVar1;
   }
   return 0;

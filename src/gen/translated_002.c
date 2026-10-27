@@ -4912,10 +4912,7 @@ byte F_00424ee0(unsigned int gen_a0, unsigned int gen_a1)
     piVar1 = (int *)((int)this + 0x1274);
     iVar5 = (int)this + 0xc20;
     iVar6 = (int)this + 0xc4c;
-    LOCK();
-    iVar2 = *piVar1;
-    *piVar1 = *piVar1;
-    UNLOCK();
+    iVar2 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
     (*(undefined4 *)(gen_frame + 0x0)) = CONCAT31(GEN_PIECE(&(*(undefined4 *)(gen_frame + 0x0)), 1, 3),(bool)REFG(char, 0x13712b0) == (iVar2 != 0));
     uVar8 = *(undefined4 *)((int)this + 0x2694);
     uVar7 = *(undefined4 *)((int)this + 0x2690);
@@ -4928,10 +4925,7 @@ byte F_00424ee0(unsigned int gen_a0, unsigned int gen_a1)
       uVar9 = (*(undefined4 *)(gen_frame + 0x0));
     }
     F_0046d850(*(undefined * PTR32 *)((int)this + 0x25e8),uVar4,iVar5,iVar6,uVar7,uVar8,uVar9);
-    LOCK();
-    iVar5 = *piVar1;
-    *piVar1 = *piVar1;
-    UNLOCK();
+    iVar5 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
     REFG(char, 0x13712b0) = iVar5 != 0;
     uVar4 = (uint)(byte)REFG(char, 0x13712b0);
   }
@@ -5436,10 +5430,7 @@ byte F_004256e0(unsigned int gen_a0)
     return 0;
   }
   piVar1 = (int *)((int)this + 0x1274);
-  LOCK();
-  iVar2 = *piVar1;
-  *piVar1 = *piVar1;
-  UNLOCK();
+  iVar2 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
   if ((iVar2 != 0) &&
      (uVar4 = F_00414500(*(undefined4 *)((int)this + 0x10),0x17), *(int *)(uVar4 + 0x14) == 1)) {
     F_004cee60(0x32);
@@ -5463,9 +5454,7 @@ uint F_00425940(unsigned int gen_a0, unsigned int gen_a1)
   if (piVar1 != (int *)0x0) {
     ((code *)*(gen_code32 *)(*piVar1 + 0x78))(piVar1,param_1);
   }
-  LOCK();
-  *(uint *)((int)this + 0x1274) = param_1 & 0xff;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((uint *)((int)this + 0x1274))), (long)(param_1 & 0xff));
   uVar2 = 0;
   if (REFG(int, 0x1488338) != 0) {
     uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488338) + 4) + 0x18))))
@@ -6645,9 +6634,7 @@ uint F_00426fc0(unsigned int gen_a0, unsigned int gen_a1)
   *(undefined4 *)((int)this + 0x1268) = uVar1;
   *(undefined4 *)((int)this + 0x126c) = 0;
   *(undefined4 *)((int)this + 0x1270) = 0;
-  LOCK();
-  *(undefined4 *)((int)this + 0x1274) = 0;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x1274))), (long)(0));
   *(undefined4 *)((int)this + 0x1278) = 0;
   *(undefined4 *)((int)this + 0x127c) = 0;
   *(undefined4 *)((int)this + 0x1280) = 0;
@@ -7482,9 +7469,7 @@ uint F_00428650(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0x428650u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
-  LOCK();
-  *(undefined4 *)this = param_1;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)this)), (long)(param_1));
   return (uint)this;
 }
 

@@ -4281,10 +4281,7 @@ uint F_00b8a750(unsigned int gen_a0, float gen_a1)
   (*(int * PTR32 *)(gen_frame + 0x28)) = piVar1;
   if (REFG(char, 0x14c58b8) == '\x01') {
     piVar1 = (int *)(REFG(int, 0x137104c) + 0x1274);
-    LOCK();
-    iVar3 = *piVar1;
-    *piVar1 = *piVar1;
-    UNLOCK();
+    iVar3 = _InterlockedCompareExchange((volatile long *)(piVar1), 0, 0);
     if (iVar3 == 0) {
       if (REFG(char, 0x14c58b9) != '\0') {
         (*(tagPOINT *)(gen_frame + 0xc)).x = REFG(int, 0x14c58bc);

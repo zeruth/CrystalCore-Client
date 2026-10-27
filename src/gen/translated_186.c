@@ -3691,9 +3691,7 @@ uint F_00e349c0(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0xe349c0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
-  LOCK();
-  *(undefined4 *)this = param_1;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)this)), (long)(param_1));
   return (uint)this;
 }
 
@@ -3816,9 +3814,7 @@ uint F_00e34af0(unsigned int gen_a0, unsigned int gen_a1)
   F_00c48350(*(undefined * PTR32 *)((int)this + 0x28),0,param_1);
   *(undefined4 *)((int)this + 0x30) = 0;
   *(undefined4 *)((int)this + 0x34) = 0;
-  LOCK();
-  *(undefined4 *)((int)this + 0x48) = 0;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x48))), (long)(0));
   *(undefined4 *)((int)this + 4) = 0;
   *(undefined4 *)((int)this + 0x40) = 0;
   *(undefined4 *)((int)this + 0x44) = 0x2d;
@@ -7465,9 +7461,7 @@ uint F_00e38350(unsigned int gen_a0, unsigned int gen_a1)
   F_00c48350(*(undefined * PTR32 *)((int)this + 0x28),0,param_1);
   *(undefined4 *)((int)this + 0x30) = 0;
   *(undefined4 *)((int)this + 0x34) = 0;
-  LOCK();
-  *(undefined4 *)((int)this + 0x48) = 0;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x48))), (long)(0));
   *(undefined4 *)((int)this + 4) = 0;
   *(undefined4 *)((int)this + 0x40) = 0;
   *(undefined4 *)((int)this + 0x44) = 0x2d;
@@ -7538,10 +7532,7 @@ uint F_00e38490(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   undefined4 param_3 = (undefined4)gen_a2;
   uint uVar1;
   
-  LOCK();
-  uVar1 = *(uint *)(param_2 + 0x48);
-  *(uint *)(param_2 + 0x48) = 1;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(((uint *)(param_2 + 0x48))), (long)(1));
   return uVar1;
 }
 

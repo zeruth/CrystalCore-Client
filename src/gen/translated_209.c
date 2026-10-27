@@ -2388,9 +2388,7 @@ uint F_01045d80(unsigned int gen_a0, unsigned int gen_a1)
   F_00c48350(*(undefined * PTR32 *)((int)this + 0x28),0,param_1);
   *(undefined4 *)((int)this + 0x30) = 0;
   *(undefined4 *)((int)this + 0x34) = 0;
-  LOCK();
-  *(undefined4 *)((int)this + 0x48) = 0;
-  UNLOCK();
+  _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x48))), (long)(0));
   *(undefined4 *)((int)this + 4) = 0;
   *(undefined4 *)((int)this + 0x40) = 0;
   *(undefined4 *)((int)this + 0x44) = 0x2d;
@@ -2472,10 +2470,7 @@ uint F_01045ed0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   undefined4 param_3 = (undefined4)gen_a2;
   uint uVar1;
   
-  LOCK();
-  uVar1 = *(uint *)(param_2 + 0x48);
-  *(uint *)(param_2 + 0x48) = 1;
-  UNLOCK();
+  uVar1 = _InterlockedExchange((volatile long *)(((uint *)(param_2 + 0x48))), (long)(1));
   return uVar1;
 }
 
@@ -6081,22 +6076,14 @@ byte F_01049530(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   undefined2 uStack_1a;
   
   if (*(char *)((int)this + 0x18) != '\0') {
-    LOCK();
-    iVar6 = *(int *)((int)this + 0x14);
-    if (iVar6 == 0) {
-      *(int *)((int)this + 0x14) = 1;
-      iVar6 = 0;
-    }
-    UNLOCK();
+    iVar6 = _InterlockedCompareExchange((volatile long *)(((int *)((int)this + 0x14))), (long)(1), (long)(0));
     if (iVar6 != 0) {
       return 0;
     }
   }
   if (*(int *)((int)this + 0x10) != 0) {
     if (*(char *)((int)this + 0x18) != '\0') {
-      LOCK();
-      *(undefined4 *)((int)this + 0x14) = 0;
-      UNLOCK();
+      _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x14))), (long)(0));
     }
     return 0;
   }
@@ -6144,16 +6131,12 @@ byte F_01049530(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
       *(int *)((int)this + 0xc) = *(int *)((int)this + 0xc) + 1;
     }
     if (*(char *)((int)this + 0x18) != '\0') {
-      LOCK();
-      *(undefined4 *)((int)this + 0x14) = 0;
-      UNLOCK();
+      _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x14))), (long)(0));
     }
     return 1;
   }
   if (*(char *)((int)this + 0x18) != '\0') {
-    LOCK();
-    *(undefined4 *)((int)this + 0x14) = 0;
-    UNLOCK();
+    _InterlockedExchange((volatile long *)(((undefined4 *)((int)this + 0x14))), (long)(0));
   }
   return 0;
 }
