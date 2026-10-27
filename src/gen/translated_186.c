@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Application::Network::LobbyClient::LobbyRequestCallback::vf5 */
+unsigned int F_00e3c110(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe3c110u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
 /* ref: Application::Network::LobbyClient::LobbyRequestCallback::vf6 */
 unsigned int F_00e3c120(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -7838,19 +7847,6 @@ uint F_00e439d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 uint F_00e439f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
   GEN_ENTER(0xe439f0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
-  if (param_2 != (undefined4 *)0x0) {
-    *param_2 = *param_3;
-  }
-  return (uint)param_2;
-}
-
-/* ref: FUN_00e43a10 */
-uint F_00e43a10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe43a10u, gen_a0, gen_a1, gen_a2, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
   undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;

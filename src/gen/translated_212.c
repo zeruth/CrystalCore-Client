@@ -1,5 +1,34 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_0106a4c0 */
+uint F_0106a4c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x106a4c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  undefined1 uVar1;
+  
+  if (param_2 < 4) {
+    return 0;
+  }
+  uVar1 = *param_1;
+  *param_1 = param_1[3];
+  param_1[3] = uVar1;
+  uVar1 = param_1[1];
+  param_1[1] = param_1[2];
+  param_1[2] = uVar1;
+  if (param_2 < 8) {
+    return 4;
+  }
+  uVar1 = param_1[4];
+  param_1[4] = param_1[7];
+  param_1[7] = uVar1;
+  uVar1 = param_1[5];
+  param_1[5] = param_1[6];
+  param_1[6] = uVar1;
+  return 9;
+}
+
 /* ref: FUN_0106a520 */
 uint F_0106a520(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -7140,24 +7169,5 @@ uint F_01071d20(void)
   
   uVar1 = F_00c47de6(((code *)REFP(0x107c310)));
   return uVar1;
-}
-
-/* ref: FUN_01071d30 */
-unsigned int F_01071d30(void)
-{
-  GEN_ENTER(0x1071d30u, 0u, 0u, 0u, 0u);
-  undefined4 * puVar1;
-  int iVar2;
-  
-  puVar1 = &REFG(undefined4, 0x148a470);
-  iVar2 = 0xf;
-  do {
-    *puVar1 = 0;
-    puVar1[1] = 0;
-    puVar1[2] = 0xffffffff;
-    puVar1 = puVar1 + 4;
-    iVar2 = iVar2 + -1;
-  } while (-1 < iVar2);
-  return 0;
 }
 

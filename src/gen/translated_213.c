@@ -1,5 +1,24 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_01071d30 */
+unsigned int F_01071d30(void)
+{
+  GEN_ENTER(0x1071d30u, 0u, 0u, 0u, 0u);
+  undefined4 * puVar1;
+  int iVar2;
+  
+  puVar1 = &REFG(undefined4, 0x148a470);
+  iVar2 = 0xf;
+  do {
+    *puVar1 = 0;
+    puVar1[1] = 0;
+    puVar1[2] = 0xffffffff;
+    puVar1 = puVar1 + 4;
+    iVar2 = iVar2 + -1;
+  } while (-1 < iVar2);
+  return 0;
+}
+
 /* ref: FUN_01071d60 */
 uint F_01071d60(void)
 {
@@ -3822,16 +3841,6 @@ uint F_01075800(void)
   uint uVar1;
   
   uVar1 = F_00c47de6(((code *)REFP(0x107cc50)));
-  return uVar1;
-}
-
-/* ref: FUN_01075810 */
-uint F_01075810(void)
-{
-  GEN_ENTER(0x1075810u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107cc60)));
   return uVar1;
 }
 

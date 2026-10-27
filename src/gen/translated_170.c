@@ -1,5 +1,28 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00d9e890 */
+unsigned int F_00d9e890(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xd9e890u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  int param_2 = (int)gen_a2;
+  undefined1 * puVar1;
+  int iVar2;
+  
+  *(int *)((int)this + 4) = *(int *)((int)this + 4) - param_2;
+  iVar2 = *(int *)((int)this + 4) - param_1;
+  puVar1 = (undefined1 *)(*(int *)this + param_1);
+  if (0 < iVar2) {
+    do {
+      *puVar1 = puVar1[param_2];
+      puVar1 = puVar1 + 1;
+      iVar2 = iVar2 + -1;
+    } while (iVar2 != 0);
+  }
+  return 0;
+}
+
 /* ref: FUN_00d9e8d0 */
 uint F_00d9e8d0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -8433,42 +8456,5 @@ uint F_00da77b0(unsigned int gen_a0, unsigned int gen_a1)
   *(undefined4 *)(in_ecx + 0x28) = uVar2;
   *(undefined4 *)(in_ecx + 0x2c) = uVar3;
   return (uint)param_2;
-}
-
-/* ref: FUN_00da7b30 */
-unsigned int F_00da7b30(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xda7b30u, gen_a0, gen_a1, 0u, 0u);
-  float * in_ecx = (float *)(uintptr_t)gen_a0;
-  double * param_2 = (double *)(uintptr_t)gen_a1;
-  float fVar1;
-  float fVar2;
-  double dVar3;
-  
-  fVar1 = *in_ecx;
-  param_2[4] = (double)in_ecx[4];
-  param_2[5] = (double)in_ecx[5];
-  param_2[6] = (double)in_ecx[6];
-  param_2[8] = (double)in_ecx[8];
-  param_2[9] = (double)in_ecx[9];
-  fVar2 = in_ecx[10];
-  *param_2 = (double)fVar1;
-  fVar1 = in_ecx[1];
-  param_2[10] = (double)fVar2;
-  fVar2 = in_ecx[0xc];
-  param_2[1] = (double)fVar1;
-  fVar1 = in_ecx[2];
-  param_2[0xc] = (double)fVar2;
-  fVar2 = in_ecx[0xd];
-  param_2[2] = (double)fVar1;
-  param_2[0xd] = (double)fVar2;
-  fVar1 = in_ecx[0xe];
-  param_2[3] = 0.0;
-  param_2[7] = 0.0;
-  param_2[0xb] = 0.0;
-  dVar3 = REFG(double, 0x1088130);
-  param_2[0xe] = (double)fVar1;
-  param_2[0xf] = dVar3;
-  return 0;
 }
 

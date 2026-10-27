@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaRetainer::vf1 */
+uint F_00e86150(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe86150u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 4;
+}
+
 /* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaRetainer::vf2 */
 uint F_00e86160(unsigned int gen_a0)
 {
@@ -4710,13 +4718,5 @@ uint F_00e8a730(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
   uVar1 = F_00e833a0(param_1,uVar1);
   return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemCrystal::vf1 */
-uint F_00e8a750(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe8a750u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
 }
 

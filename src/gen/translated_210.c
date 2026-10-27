@@ -1,5 +1,57 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_010577b0 */
+byte F_010577b0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
+{
+  GEN_ENTER(0x10577b0u, gen_a0, gen_a1, gen_trace_f(gen_a2), 0u);
+  float * in_ecx = (float *)(uintptr_t)gen_a0;
+  float * param_2 = (float *)(uintptr_t)gen_a1;
+  float param_3 = (float)gen_a2;
+  undefined1 auVar1 [16];
+  undefined1 auVar2 [16];
+  undefined4 in_EAX = 0;
+  undefined4 uVar3;
+  int iVar4;
+  float fVar5;
+  float fVar6;
+  float fVar7;
+  float fVar8;
+  float fVar9;
+  float fVar10;
+  
+  (*(undefined4 *)((char *)&auVar2 + 4)) = -(uint)(ABS(in_ecx[5] - param_2[5]) < param_3);
+  (*(undefined4 *)((char *)&auVar2 + 0)) = -(uint)(ABS(in_ecx[4] - param_2[4]) < param_3);
+  (*(undefined4 *)((char *)&auVar2 + 8)) = -(uint)(ABS(in_ecx[6] - param_2[6]) < param_3);
+  (*(undefined4 *)((char *)&auVar2 + 12)) = -(uint)(ABS(in_ecx[7] - param_2[7]) < param_3);
+  uVar3 = gen_movmskps(&(auVar2));
+  if (((byte)uVar3 & 7) != 7) {
+    return 0;
+  }
+  fVar7 = *in_ecx * *param_2;
+  fVar8 = in_ecx[1] * param_2[1];
+  fVar9 = in_ecx[2] * param_2[2];
+  fVar10 = in_ecx[3] * param_2[3];
+  fVar5 = fVar9 + fVar7;
+  fVar6 = fVar10 + fVar8;
+  fVar7 = fVar7 + fVar9;
+  fVar8 = fVar8 + fVar10;
+  (*(undefined4 *)((char *)&auVar1 + 4)) = -(uint)(ABS(in_ecx[1] -
+                             gen_bits2f((uint)gen_fl2bits(fVar5 + fVar6) & *(uint *)&REFG(undefined, 0x1134c84) ^
+                                        (uint)gen_fl2bits(param_2[1]))) < param_3);
+  (*(undefined4 *)((char *)&auVar1 + 0)) = -(uint)(ABS(*in_ecx - gen_bits2f((uint)gen_fl2bits(fVar6 + fVar5) &
+                                                  *(uint *)&REFG(undefined, 0x1134c80) ^
+                                                  (uint)gen_fl2bits(*param_2))) < param_3);
+  (*(undefined4 *)((char *)&auVar1 + 8)) = -(uint)(ABS(in_ecx[2] -
+                             gen_bits2f((uint)gen_fl2bits(fVar8 + fVar7) & *(uint *)&REFG(undefined, 0x1134c88) ^
+                                        (uint)gen_fl2bits(param_2[2]))) < param_3);
+  (*(undefined4 *)((char *)&auVar1 + 12)) =
+       -(uint)(ABS(in_ecx[3] -
+                   gen_bits2f((uint)gen_fl2bits(fVar7 + fVar8) & *(uint *)&REFG(undefined, 0x1134c8c) ^
+                              (uint)gen_fl2bits(param_2[3]))) < param_3);
+  iVar4 = gen_movmskps(&(auVar1));
+  return iVar4 == 0xf;
+}
+
 /* ref: FUN_01057830 */
 unsigned int F_01057830(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -6409,17 +6461,6 @@ unsigned int F_0105da20(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
 unsigned int F_0105da30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
   GEN_ENTER(0x105da30u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  return 0;
-}
-
-/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf167 */
-unsigned int F_0105da40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x105da40u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   undefined4 param_2 = (undefined4)gen_a2;

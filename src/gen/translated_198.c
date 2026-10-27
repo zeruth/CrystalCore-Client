@@ -1,5 +1,23 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00ec7e70 */
+uint F_00ec7e70(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xec7e70u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  int param_2 = (int)gen_a1;
+  if (param_1 != (undefined4 *)0x0) {
+    *param_1 = (*(undefined * PTR32 (*)[1])REFP(0x1159908));
+    param_1[1] = *(undefined4 *)(param_2 + 4);
+    param_1[2] = *(undefined4 *)(param_2 + 8);
+    param_1[3] = *(undefined4 *)(param_2 + 0xc);
+    param_1[4] = *(undefined4 *)(param_2 + 0x10);
+    param_1[4] = *(undefined4 *)(param_2 + 0x10);
+    param_1[4] = *(undefined4 *)(param_2 + 0x10);
+  }
+  return (uint)param_1;
+}
+
 /* ref: FUN_00ec7eb0 */
 uint F_00ec7eb0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -12053,30 +12071,5 @@ uint F_00ed6230(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int param_1 = (int)gen_a1;
   return *(uint *)(&REFG(undefined, 0x12a906c) + param_1 * 4);
-}
-
-/* ref: Application::Network::WorkDefinitions::ThinkState_TypeInfo::vf14 */
-uint F_00ed6250(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xed6250u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  
-  if (*(int *)(&REFG(undefined, 0x12a90a0) + param_1 * 4) != 0x12) {
-    if (*(int *)(&REFG(undefined, 0x12a90a0) + param_1 * 4) == 0x14) {
-      uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(&REFG(undefined, 0x1369594) + param_1 * 4) + 0x2c))))
-                        (*(int * PTR32 *)(&REFG(undefined, 0x1369594) + param_1 * 4));
-      return uVar2 + 4;
-    }
-    return *(int *)(&REFG(undefined, 0x12a906c) + param_1 * 4) + 4;
-  }
-  piVar1 = *(int * PTR32 *)(&REFG(undefined, 0x1369594) + param_1 * 4);
-  if (piVar1 != (int *)0x0) {
-    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0x2c))(piVar1);
-    return uVar2 * *(int *)(&REFG(undefined, 0x12a9038) + param_1 * 4) + 7;
-  }
-  return *(int *)(&REFG(undefined, 0x12a906c) + param_1 * 4) * *(int *)(&REFG(undefined, 0x12a9038) + param_1 * 4) + 7;
 }
 

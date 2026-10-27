@@ -1,5 +1,67 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Application::Network::WorkDefinitions::CharaRemake::vf5 */
+uint F_00e75a30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe75a30u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  undefined1 CVar1;
+  int * piVar2;
+  int * piVar3;
+  uint uVar4;
+  uint uVar5;
+  undefined3 uVar7;
+  undefined * pCVar6;
+  int iVar8;
+  
+  piVar2 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*param_1 + 4))(param_1)));
+  piVar3 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*(int *)this + 4))(this)));
+  uVar4 = ((code *)*(gen_code32 *)(*piVar2 + 4))(piVar2);
+  uVar5 = ((code *)*(gen_code32 *)(*piVar3 + 4))(piVar3);
+  if ((short)uVar4 == (short)uVar5) {
+    uVar5 = param_2;
+    uVar7 = (undefined3)(param_2 >> 8);
+    switch((unsigned int)(uintptr_t)(param_2)) {
+    case 0: ;
+      pCVar6 = this + 4;
+      iVar8 = 0x1a;
+      do {
+        *pCVar6 = pCVar6[(int)param_1 - (int)this];
+        pCVar6 = pCVar6 + 1;
+        iVar8 = iVar8 + -1;
+      } while (iVar8 != 0);
+      return (uint)pCVar6;
+    case 1: ;
+      CVar1 = *(undefined *)((int)param_1 + 0x1e);
+      this[0x1e] = CVar1;
+      return CONCAT31(uVar7,CVar1);
+    case 2: ;
+      this[0x1f] = *(undefined *)((int)param_1 + 0x1f);
+      return uVar5;
+    case 3: ;
+      this[0x20] = *(undefined *)(param_1 + 8);
+      return uVar5;
+    case 4: ;
+      CVar1 = *(undefined *)((int)param_1 + 0x21);
+      this[0x21] = CVar1;
+      return CONCAT31(uVar7,CVar1);
+    case 5: ;
+      this[0x22] = *(undefined *)((int)param_1 + 0x22);
+      return uVar5;
+    case 6: ;
+      *(int *)(this + 0x24) = param_1[9];
+      return uVar5;
+    case 7: ;
+      uVar5 = param_1[10];
+      *(uint *)(this + 0x28) = uVar5;
+      *(int *)(this + 0x2c) = param_1[0xb];
+    }
+  }
+  return uVar5;
+}
+
 /* ref: Application::Network::WorkDefinitions::CharaRemake::vf8 */
 byte F_00e75b30(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -13089,13 +13151,5 @@ uint F_00e86130(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   uVar1 = ((code *)*(gen_code32 *)(*param_2 + 4))(param_2);
   uVar1 = F_00e833a0(param_1,uVar1);
   return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaRetainer::vf1 */
-uint F_00e86150(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe86150u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
 }
 

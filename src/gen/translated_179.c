@@ -1,5 +1,22 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: hkDataArrayNative::vf6 */
+uint F_00df7370(unsigned int gen_a0)
+{
+  GEN_ENTER(0xdf7370u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  uint uVar2;
+  
+  if (*(int *)(this + 0x24) != 0) {
+    iVar1 = **(int * PTR32 *)(this + 0xc);
+    uVar2 = F_00d92610(*(int *)(this + 0x24));
+    uVar2 = ((code *)*(gen_code32 *)(iVar1 + 0x24))(*(undefined4 *)(this + 0xc),uVar2);
+    return uVar2;
+  }
+  return 0;
+}
+
 /* ref: hkDataArrayNative::vf8 */
 uint F_00df73a0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9554,19 +9571,5 @@ uint F_00e01210(unsigned int gen_a0)
   pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
   uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 4))))(*(int * PTR32 *)((int)pvVar1 + 0x2c),param_1);
   return uVar2;
-}
-
-/* ref: FUN_00e01230 */
-unsigned int F_00e01230(unsigned int gen_a0)
-{
-  GEN_ENTER(0xe01230u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  LPVOID pvVar1;
-  
-  if (param_1 != 0) {
-    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))(*(int * PTR32 *)((int)pvVar1 + 0x2c),param_1,0xc);
-  }
-  return 0;
 }
 

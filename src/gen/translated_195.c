@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00eae300 */
+uint F_00eae300(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xeae300u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  int param_2 = (int)gen_a2;
+  undefined4 * puVar1;
+  undefined * pvVar2;
+  
+  *(int *)((int)this + 8) = param_1;
+  if (param_2 == 0) {
+    pvVar2 = F_00c51787(param_1 * 0x30);
+    *(undefined * PTR32 *)this = pvVar2;
+    *(uint *)((int)this + 4) = (int)pvVar2 + 0xfU & 0xfffffff0;
+  }
+  else {
+    *(undefined4 *)this = 0;
+    *(int *)((int)this + 4) = param_2;
+  }
+  *(int *)((int)this + 0xc) = *(int *)((int)this + 4);
+  *((undefined4 *)GEN_TOP((*(int *)((int)this + 4) + 4))) = 0;
+  *((undefined4 *)GEN_TOP((*(int *)((int)this + 0xc) + 8))) = *(undefined4 *)((int)this + 8);
+  puVar1 = *(undefined4 * PTR32 *)((int)this + 0xc);
+  *(undefined4 *)((int)this + 0x10) = 0;
+  *puVar1 = this;
+  *(undefined4 *)((int)this + 0x18) = 0;
+  *(undefined4 *)((int)this + 0x14) = 0;
+  return (uint)puVar1;
+}
+
 /* ref: FUN_00eae370 */
 uint F_00eae370(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -9525,53 +9556,5 @@ unsigned int F_00eb65d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
   *pcVar2 = (uVar3 != 0x1000) * '\x02' + 'e';
   pcVar2[1] = '\0';
   return 0;
-}
-
-/* ref: FUN_00eb6650 */
-uint F_00eb6650(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xeb6650u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined1 * param_2 = (undefined1 *)(uintptr_t)gen_a1;
-  char * param_3 = (char *)(uintptr_t)gen_a2;
-  uint param_4 = (uint)gen_a3;
-  undefined1 * puVar1;
-  char * pcVar2;
-  byte * pbVar3;
-  
-  puVar1 = param_2;
-  *param_2 = 0x25;
-  pcVar2 = param_2 + 1;
-  if ((param_4 & 0x20) != 0) {
-    *pcVar2 = '+';
-    pcVar2 = param_2 + 2;
-  }
-  if ((param_4 & 8) != 0) {
-    *pcVar2 = '#';
-    pcVar2 = pcVar2 + 1;
-  }
-  if (*param_3 == 'L') {
-    pcVar2[0] = 'I';
-    pcVar2[1] = '6';
-    pcVar2[2] = '4';
-    pbVar3 = (byte *)(pcVar2 + 3);
-  }
-  else {
-    *pcVar2 = *param_3;
-    pbVar3 = (byte *)(pcVar2 + 1);
-  }
-  if ((param_4 & 0xe00) == 0x400) {
-    *pbVar3 = 0x6f;
-    pbVar3[1] = 0;
-    return (uint)puVar1;
-  }
-  if ((param_4 & 0xe00) != 0x800) {
-    *pbVar3 = param_3[1];
-    pbVar3[1] = 0;
-    return (uint)puVar1;
-  }
-  *pbVar3 = ~((char)param_4 * '\b') & 0x20U | 0x58;
-  pbVar3[1] = 0;
-  return (uint)puVar1;
 }
 

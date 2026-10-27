@@ -1,8 +1,8 @@
 {
- "translated": 86437,
- "stubbed": 991,
+ "translated": 86438,
+ "stubbed": 990,
  "reasons": {
-  "a register the decompiler lost": 860,
+  "a register the decompiler lost": 859,
   "local of type unkbyte10": 19,
   "a name C cannot take": 15,
   "demoted": 12,
@@ -921,7 +921,6 @@
   "00d8cae0": "a register the decompiler lost (extraout_ST1)",
   "00d8f370": "a register the decompiler lost (in_ST0)",
   "00d8fa10": "a register the decompiler lost (in_ecx)",
-  "00d929e0": "a register the decompiler lost (extraout_ECX_00)",
   "00d99360": "undeclared name ZEXT812",
   "00da2230": "an SSE lane in a bit mask",
   "00dad7f0": "a register the decompiler lost (extraout_ECX)",

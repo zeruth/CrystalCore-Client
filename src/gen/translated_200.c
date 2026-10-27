@@ -1,5 +1,25 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Application::Network::WorkDefinitions::QuestWork_TypeInfo::vf4 */
+uint F_00ef8410(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xef8410u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint uVar1;
+  uint uVar2;
+  
+  uVar2 = 0;
+  do {
+    uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this,uVar2);
+    if (uVar1 == param_1) {
+      return uVar2;
+    }
+    uVar2 = uVar2 + 1;
+  } while ((int)uVar2 < 4);
+  return 0xffffffff;
+}
+
 /* ref: FUN_00ef8450 */
 uint F_00ef8450(unsigned int gen_a0)
 {
@@ -31498,14 +31518,5 @@ uint F_00f32ab0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int param_1 = (int)gen_a1;
   return *(uint *)(&REFG(undefined, 0x12abc68) + param_1 * 4);
-}
-
-/* ref: Application::Network::WorkDefinitions::NormalItem_TypeInfo::vf8 */
-uint F_00f32ad0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xf32ad0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return *(uint *)(&REFG(undefined, 0x12abcb8) + param_1 * 4);
 }
 

@@ -1,5 +1,19 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00e01230 */
+unsigned int F_00e01230(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe01230u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  LPVOID pvVar1;
+  
+  if (param_1 != 0) {
+    pvVar1 = gen_imp_TlsGetValue(REFG(undefined4, 0x15d9a88));
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)pvVar1 + 0x2c) + 8))))(*(int * PTR32 *)((int)pvVar1 + 0x2c),param_1,0xc);
+  }
+  return 0;
+}
+
 /* ref: FUN_00e01280 */
 uint F_00e01280(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -11951,30 +11965,6 @@ unsigned int F_00e0d440(unsigned int gen_a0)
     }
   }
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x114c990));
-  return 0;
-}
-
-/* ref: FUN_00e0d480 */
-unsigned int F_00e0d480(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe0d480u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  int * piVar1;
-  undefined4 * puVar2;
-  
-  if (param_1 != 0) {
-    *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + 1;
-  }
-  puVar2 = *(undefined4 * PTR32 *)((int)this + 0x10);
-  if (puVar2 != (undefined4 *)0x0) {
-    piVar1 = puVar2 + 2;
-    *piVar1 = *piVar1 + -1;
-    if (*piVar1 == 0) {
-      ((code *)*(gen_code32 *)*puVar2)(puVar2,1);
-    }
-  }
-  *(int *)((int)this + 0x10) = param_1;
   return 0;
 }
 

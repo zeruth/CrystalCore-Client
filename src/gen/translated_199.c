@@ -1,5 +1,30 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Application::Network::WorkDefinitions::ThinkState_TypeInfo::vf14 */
+uint F_00ed6250(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xed6250u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  
+  if (*(int *)(&REFG(undefined, 0x12a90a0) + param_1 * 4) != 0x12) {
+    if (*(int *)(&REFG(undefined, 0x12a90a0) + param_1 * 4) == 0x14) {
+      uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(&REFG(undefined, 0x1369594) + param_1 * 4) + 0x2c))))
+                        (*(int * PTR32 *)(&REFG(undefined, 0x1369594) + param_1 * 4));
+      return uVar2 + 4;
+    }
+    return *(int *)(&REFG(undefined, 0x12a906c) + param_1 * 4) + 4;
+  }
+  piVar1 = *(int * PTR32 *)(&REFG(undefined, 0x1369594) + param_1 * 4);
+  if (piVar1 != (int *)0x0) {
+    uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0x2c))(piVar1);
+    return uVar2 * *(int *)(&REFG(undefined, 0x12a9038) + param_1 * 4) + 7;
+  }
+  return *(int *)(&REFG(undefined, 0x12a906c) + param_1 * 4) * *(int *)(&REFG(undefined, 0x12a9038) + param_1 * 4) + 7;
+}
+
 /* ref: Application::Network::WorkDefinitions::ThinkState_TypeInfo::vf13 */
 uint F_00ed62d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -21994,25 +22019,5 @@ uint F_00ef83f0(unsigned int gen_a0)
   GEN_ENTER(0xef83f0u, gen_a0, 0u, 0u, 0u);
   int param_1 = (int)gen_a0;
   return *(uint *)(&REFG(undefined, 0x12aa064) + param_1 * 4);
-}
-
-/* ref: Application::Network::WorkDefinitions::QuestWork_TypeInfo::vf4 */
-uint F_00ef8410(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xef8410u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint uVar1;
-  uint uVar2;
-  
-  uVar2 = 0;
-  do {
-    uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0xc))(this,uVar2);
-    if (uVar1 == param_1) {
-      return uVar2;
-    }
-    uVar2 = uVar2 + 1;
-  } while ((int)uVar2 < 4);
-  return 0xffffffff;
 }
 

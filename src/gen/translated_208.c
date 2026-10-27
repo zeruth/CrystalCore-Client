@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_01044e30 */
+uint F_01044e30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x1044e30u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  F_010447d0(this);
+  return (uint)this;
+}
+
 /* ref: FUN_01044e50 */
 byte F_01044e50(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9132,20 +9141,5 @@ unsigned int F_0104d110(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   return 0;
-}
-
-/* ref: FUN_0104d120 */
-uint F_0104d120(unsigned int gen_a0)
-{
-  GEN_ENTER(0x104d120u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this =
-       (*(undefined * PTR32 (*)[3])REFP(0x12b1f84));
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 8) + 8))))
-                    (*(int * PTR32 *)((int)this + 8),*(undefined4 *)((int)this + 0x24));
-  F_01050c80(this);
-  return uVar1;
 }
 

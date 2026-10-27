@@ -1,5 +1,53 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00eb6650 */
+uint F_00eb6650(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xeb6650u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined1 * param_2 = (undefined1 *)(uintptr_t)gen_a1;
+  char * param_3 = (char *)(uintptr_t)gen_a2;
+  uint param_4 = (uint)gen_a3;
+  undefined1 * puVar1;
+  char * pcVar2;
+  byte * pbVar3;
+  
+  puVar1 = param_2;
+  *param_2 = 0x25;
+  pcVar2 = param_2 + 1;
+  if ((param_4 & 0x20) != 0) {
+    *pcVar2 = '+';
+    pcVar2 = param_2 + 2;
+  }
+  if ((param_4 & 8) != 0) {
+    *pcVar2 = '#';
+    pcVar2 = pcVar2 + 1;
+  }
+  if (*param_3 == 'L') {
+    pcVar2[0] = 'I';
+    pcVar2[1] = '6';
+    pcVar2[2] = '4';
+    pbVar3 = (byte *)(pcVar2 + 3);
+  }
+  else {
+    *pcVar2 = *param_3;
+    pbVar3 = (byte *)(pcVar2 + 1);
+  }
+  if ((param_4 & 0xe00) == 0x400) {
+    *pbVar3 = 0x6f;
+    pbVar3[1] = 0;
+    return (uint)puVar1;
+  }
+  if ((param_4 & 0xe00) != 0x800) {
+    *pbVar3 = param_3[1];
+    pbVar3[1] = 0;
+    return (uint)puVar1;
+  }
+  *pbVar3 = ~((char)param_4 * '\b') & 0x20U | 0x58;
+  pbVar3[1] = 0;
+  return (uint)puVar1;
+}
+
 /* ref: FUN_00eb6720 */
 uint F_00eb6720(unsigned int gen_a0)
 {
@@ -6269,33 +6317,5 @@ uint F_00ebb450(unsigned int gen_a0)
        (*(undefined * PTR32 (*)[7])REFP(0x115d3d4));
   F_00eb5500(this);
   return (uint)this;
-}
-
-/* ref: FUN_00ebb470 */
-uint F_00ebb470(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xebb470u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  undefined * pvVar2;
-  
-  uVar1 = F_00eb5620(*(undefined * PTR32 *)((int)this + 0xa90),param_1,param_2);
-  pvVar2 = *(undefined * PTR32 *)((int)this + 0xa94);
-  while( true ) {
-    if (uVar1 != 0) {
-      return uVar1;
-    }
-    if (pvVar2 == (undefined *)0x0) break;
-    uVar1 = F_00eb5620(pvVar2,param_1,param_2);
-    pvVar2 = *(undefined * PTR32 *)((int)pvVar2 + 0x18);
-  }
-  pvVar2 = (undefined *)F_00eb5580(this,param_1);
-  if (pvVar2 == (undefined *)0x0) {
-    return 0;
-  }
-  uVar1 = F_00eb5620(pvVar2,param_1,param_2);
-  return uVar1;
 }
 
