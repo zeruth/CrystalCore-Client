@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00563900 */
+byte F_00563900(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x563900u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  if ((*(char *)(in_ecx + 0x80) == '\x7f') && ((param_2 == 0xf || (param_2 == 0x10)))) {
+    return 1;
+  }
+  return 0;
+}
+
 /* ref: FUN_00563940 */
 unsigned int F_00563940(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -3211,7 +3223,6 @@ uint F_005672b0(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0x5672b0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
-  uint extraout_ECX = 0;
   
   *(undefined4 *)this = param_1;
   *(undefined4 *)((int)this + 0x20) = 0;
@@ -3238,7 +3249,7 @@ uint F_005672b0(unsigned int gen_a0, unsigned int gen_a1)
   *(undefined1 *)((int)this + 0xc6d) = 1;
   *(undefined2 *)((int)this + 0xc6f) = 0;
   F_00558dc0(this);
-  return extraout_ECX;
+  return ((uint)(uint)(this));
 }
 
 /* ref: FUN_00567340 */
@@ -16759,40 +16770,5 @@ uint F_00577400(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   }
   uVar1 = F_00570b20(*(undefined * PTR32 *)((int)this + 0x13c),this,param_1,param_2);
   return uVar1;
-}
-
-/* ref: Component::GUI2::AtkFontAnalyzerRenderer::vf5 */
-uint F_00577430(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x577430u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  uint uVar1;
-  uint uVar2;
-  float10 fVar3;
-  
-  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
-  uVar1 = *(uint *)(this + 0xbc);
-  uVar2 = *(uint *)(this + 0xb4);
-  (*(undefined * PTR32 *)(gen_frame + 0x8)) = (undefined *)0x0;
-  F_0056fd70(this,param_1,(uint)&(*(undefined * PTR32 *)(gen_frame + 0x8)),(uint)(uVar1 < uVar2));
-  if (*(int *)(this + 0x18) == 1) {
-    fVar3 = (float10)*(float *)(this + 0x280) + (float10)((float)gen_bits2f((unsigned int)(uintptr_t)((*(undefined * PTR32 *)(gen_frame + 0x8)))));
-  }
-  else {
-    fVar3 = (float10)*(float *)(this + 0x24) + (float10)*(float *)(this + 0x280);
-  }
-  *(float *)(this + 0x280) = (float)fVar3;
-  if (*(uint *)(this + 0xb4) <= *(uint *)(this + 0xbc)) {
-    *(int *)(this + 0xa4) = *(int *)(this + 0xa4) + 1;
-    *(int *)(this + 0xac) = *(int *)(this + 0xac) + 1;
-    if ((*(uint *)(this + 0x50) >> 0x14 & 1) != 0) {
-      *(int *)(this + 0xb0) = *(int *)(this + 0xb0) + 1;
-    }
-  }
-  uVar2 = *(uint *)(this + 0xbc) + 1;
-  *(uint *)(this + 0xbc) = uVar2;
-  return uVar2;
 }
 

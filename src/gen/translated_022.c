@@ -1,5 +1,16 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00523ff0 */
+uint F_00523ff0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x523ff0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  *in_ecx = param_2;
+  return (uint)in_ecx;
+}
+
 /* ref: FUN_00524000 */
 uint F_00524000(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -8418,27 +8429,5 @@ uint F_0052b8f0(void)
 {
   GEN_ENTER(0x52b8f0u, 0u, 0u, 0u, 0u);
   return 0xa0;
-}
-
-/* ref: Client::System::Resource::Handle::UldResourceHandle::vf0 */
-uint F_0052b900(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x52b900u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  
-  piVar1 = *(int * PTR32 *)(this + 0x98);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[44])REFP(0x109990c));
-  if (piVar1 != (int *)0x0) {
-    piVar1 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1)));
-    ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)(this + 0x98));
-    *(undefined4 *)(this + 0x98) = 0;
-  }
-  F_00508230(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
 }
 

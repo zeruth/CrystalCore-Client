@@ -1,5 +1,107 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_009ed960 */
+uint F_009ed960(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9ed960u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  uint uVar1;
+  uint uVar2;
+  
+  uVar1 = *(int *)((int)this + 4) - *(int *)((int)(uintptr_t)this) >> 2;
+  if (-param_1 - 1U < uVar1) {
+                    
+    F_00c4579a("vector<T> too long");
+  }
+  uVar1 = uVar1 + param_1;
+  uVar2 = *(int *)((int)this + 8) - *(int *)((int)(uintptr_t)this) >> 2;
+  if (uVar2 < uVar1) {
+    if (-(uVar2 >> 1) - 1 < uVar2) {
+      uVar2 = 0;
+      if (uVar1 != 0) {
+        uVar2 = uVar1;
+      }
+      uVar1 = F_009ec970(this,uVar2);
+      return uVar1;
+    }
+    uVar2 = uVar2 + (uVar2 >> 1);
+    if (uVar2 < uVar1) {
+      uVar2 = uVar1;
+    }
+    uVar1 = F_009ec970(this,uVar2);
+  }
+  return uVar1;
+}
+
+/* ref: FUN_009ed9d0 */
+uint F_009ed9d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9ed9d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  uint uVar1;
+  uint uVar2;
+  
+  uVar2 = (*(int *)((int)this + 4) - *(int *)this) / 0xa4;
+  if (-param_1 - 1U < uVar2) {
+                    
+    F_00c4579a("vector<T> too long");
+  }
+  uVar2 = uVar2 + param_1;
+  uVar1 = (*(int *)((int)this + 8) - *(int *)this) / 0xa4;
+  if (uVar1 < uVar2) {
+    if (-(uVar1 >> 1) - 1 < uVar1) {
+      uVar1 = 0;
+      if (uVar2 != 0) {
+        uVar1 = uVar2;
+      }
+      uVar2 = F_009eca20(this,uVar1);
+      return uVar2;
+    }
+    uVar1 = uVar1 + (uVar1 >> 1);
+    if (uVar1 < uVar2) {
+      uVar1 = uVar2;
+    }
+    uVar1 = F_009eca20(this,uVar1);
+  }
+  return uVar1;
+}
+
+/* ref: FUN_009eda60 */
+uint F_009eda60(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9eda60u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  uint uVar1;
+  uint uVar2;
+  
+  uVar2 = (*(int *)((int)this + 4) - *(int *)this) / 0x2a;
+  if (-param_1 - 1U < uVar2) {
+                    
+    F_00c4579a("vector<T> too long");
+  }
+  uVar2 = uVar2 + param_1;
+  uVar1 = (*(int *)((int)this + 8) - *(int *)this) / 0x2a;
+  if (uVar1 < uVar2) {
+    if (-(uVar1 >> 1) - 1 < uVar1) {
+      uVar1 = 0;
+      if (uVar2 != 0) {
+        uVar1 = uVar2;
+      }
+      uVar2 = F_009ecaf0(this,uVar1);
+      return uVar2;
+    }
+    uVar1 = uVar1 + (uVar1 >> 1);
+    if (uVar1 < uVar2) {
+      uVar1 = uVar2;
+    }
+    uVar1 = F_009ecaf0(this,uVar1);
+  }
+  return uVar1;
+}
+
 /* ref: FUN_009edaf0 */
 uint F_009edaf0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -7503,54 +7605,6 @@ uint F_009f6650(unsigned int gen_a0, float gen_a1)
   (*(float *)(gen_frame + 0x14)) = param_2;
   uVar1 = F_009fe250(((undefined1 *)(gen_frame + 0xc)),**(undefined4 * PTR32 *)(param_1 + 0x14),*(undefined4 * PTR32 *)(param_1 + 0x14),
                        ((code *)REFP(0x9fbcc0)),0,param_2,(*(undefined4 *)(gen_frame + 0x18)));
-  return uVar1;
-}
-
-/* ref: FUN_009f66a0 */
-uint F_009f66a0(unsigned int gen_a0, float gen_a1)
-{
-  GEN_ENTER(0x9f66a0u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
-  int param_1 = (int)gen_a0;
-  float param_2 = (float)gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0x20];
-  uint uVar1;
-  
-  (*(float *)(gen_frame + 0x14)) = param_2;
-  uVar1 = F_009fe250(((undefined1 *)(gen_frame + 0xc)),**(undefined4 * PTR32 *)(param_1 + 0x14),*(undefined4 * PTR32 *)(param_1 + 0x14),
-                       ((code *)REFP(0x9fbcf0)),0,param_2,(*(undefined4 *)(gen_frame + 0x18)));
-  return uVar1;
-}
-
-/* ref: FUN_009f66f0 */
-uint F_009f66f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9f66f0u, gen_a0, gen_a1, 0u, 0u);
-  unsigned int gen_args[2];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  uint uVar1;
-  
-  F_009fdca0(((undefined *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x10))),&(*(undefined4 *)(gen_frame + 0x4)),&(*(int * PTR32 *)&gen_args[1]));
-  uVar1 = F_009ff380(((undefined *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x10))),&(*(undefined4 *)(gen_frame + 0x8)),(*(undefined4 *)(gen_frame + 0x4)),(*(undefined4 *)(gen_frame + 0x8)));
-  if ((*(int * PTR32 *)&gen_args[1]) != (int *)0x0) {
-    uVar1 = ((code *)*((gen_code32 *)GEN_TOP((*(*(int * PTR32 *)&gen_args[1]) + 0xc))))((*(int * PTR32 *)&gen_args[1]));
-  }
-  return uVar1;
-}
-
-/* ref: FUN_009f6740 */
-uint F_009f6740(unsigned int gen_a0, float gen_a1)
-{
-  GEN_ENTER(0x9f6740u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
-  int param_1 = (int)gen_a0;
-  float param_2 = (float)gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0x20];
-  uint uVar1;
-  
-  (*(float *)(gen_frame + 0x14)) = param_2;
-  uVar1 = F_009fe250(((undefined1 *)(gen_frame + 0xc)),**(undefined4 * PTR32 *)(param_1 + 0x14),*(undefined4 * PTR32 *)(param_1 + 0x14),
-                       ((code *)REFP(0x9fbc80)),0,param_2,(*(undefined4 *)(gen_frame + 0x18)));
   return uVar1;
 }
 

@@ -1,5 +1,41 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_006baad0 */
+uint F_006baad0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6baad0u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x160))))
+                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110),param_1);
+  return uVar1;
+}
+
+/* ref: FUN_006baaf0 */
+uint F_006baaf0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6baaf0u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x164))))
+                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110),param_1);
+  return uVar1;
+}
+
+/* ref: FUN_006bab10 */
+uint F_006bab10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6bab10u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x168))))
+                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110),param_1);
+  return uVar1;
+}
+
 /* ref: FUN_006bab30 */
 uint F_006bab30(unsigned int gen_a0)
 {
@@ -8804,40 +8840,5 @@ uint F_006c39b0(unsigned int gen_a0, unsigned int gen_a1)
   }
   uVar3 = F_00463610(0,iVar2,2);
   return uVar3;
-}
-
-/* ref: FUN_006c39f0 */
-uint F_006c39f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6c39f0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  if ((byte)param_2 < 8) {
-    return *(uint *)(in_ecx + 0x380 + (uint)(byte)param_2 * 0x30);
-  }
-  return 0;
-}
-
-/* ref: FUN_006c3a20 */
-byte F_006c3a20(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6c3a20u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(uint *)(in_ecx + 0x38) = *(uint *)(in_ecx + 0x38) | 4;
-  *(byte *)(in_ecx + 0x500) = (byte)param_2;
-  return (byte)param_2;
-}
-
-/* ref: FUN_006c3a40 */
-uint F_006c3a40(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6c3a40u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00463610(0,*(undefined4 *)((int)this + param_1 * 0x30 + 0x37c),7);
-  return uVar1;
 }
 

@@ -1,5 +1,30 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Apricot::Engine::Data::Runtime::Binder::vf6 */
+uint F_009d9f60(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9d9f60u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return (int)*(char *)(in_ecx + 0x1c);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Binder::vf7 */
+uint F_009d9f70(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9d9f70u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  return *(uint *)(in_ecx + 4 + param_2 * 4);
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Binder::vf8 */
+uint F_009d9f80(unsigned int gen_a0)
+{
+  GEN_ENTER(0x9d9f80u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x20);
+}
+
 /* ref: Apricot::Engine::Data::Runtime::Binder::vf9 */
 uint F_009d9f90(unsigned int gen_a0)
 {
@@ -4439,51 +4464,5 @@ uint F_009de060(unsigned int gen_a0, unsigned int gen_a1)
     *param_1 = *param_2;
   }
   return (uint)param_1;
-}
-
-/* ref: FUN_009de0a0 */
-uint F_009de0a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9de0a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  if (param_1 != (undefined4 *)0x0) {
-    *param_1 = *param_2;
-  }
-  return (uint)param_1;
-}
-
-/* ref: FUN_009de0c0 */
-unsigned int F_009de0c0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9de0c0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  int iVar1;
-  undefined4 * puVar2;
-  undefined4 * puVar3;
-  
-  if (param_1 != (undefined4 *)0x0) {
-    puVar2 = param_2;
-    puVar3 = param_1;
-    for (iVar1 = 0x29; iVar1 != 0; iVar1 = iVar1 + -1) {
-      *puVar3 = *puVar2;
-      puVar2 = puVar2 + 1;
-      puVar3 = puVar3 + 1;
-    }
-  }
-  return 0;
-}
-
-/* ref: FUN_009de0e0 */
-unsigned int F_009de0e0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9de0e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  if (param_1 != (undefined *)0x0) {
-    F_009daf30(param_1,param_2);
-  }
-  return 0;
 }
 

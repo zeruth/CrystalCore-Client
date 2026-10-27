@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00483690 */
+unsigned int F_00483690(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x483690u, gen_a0, gen_a1, gen_a2, 0u);
+  int param_1 = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
+  undefined4 * puVar1;
+  
+  if (param_1 != param_2) {
+    puVar1 = param_3;
+    do {
+      if (puVar1 != (undefined4 *)0x0) {
+        *puVar1 = *((undefined4 *)GEN_TOP(((param_1 - (int)param_3) + (int)puVar1)));
+      }
+      puVar1 = puVar1 + 1;
+    } while ((param_1 - (int)param_3) + (int)puVar1 != param_2);
+  }
+  return 0;
+}
+
 /* ref: FUN_004836c0 */
 unsigned int F_004836c0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -13430,31 +13451,5 @@ uint F_00493790(unsigned int gen_a0, unsigned int gen_a1)
   
   uVar1 = F_00493af0((undefined *)((int)this + -0x1b0),param_1);
   return uVar1;
-}
-
-/* ref: Client::UI::Misc::RaptureTextModule::vf11 */
-uint F_004937a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4937a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined1 gen_out[0x4];
-  uint uVar1;
-  uint uVar2;
-  int * piVar3;
-  undefined * this_00;
-  undefined4 uVar4;
-  
-  uVar1 = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_out + 0x0);
-  if (*(int *)(this + 600) == 0) {
-    uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x34) + 8))))(*(int * PTR32 *)(this + 0x34),"Addon");
-    *(uint *)(this + 600) = uVar2;
-  }
-  piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 600) + 0x24))))(*(int * PTR32 *)(this + 600),param_1)));
-  uVar4 = 0;
-  this_00 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar3 + 8))(piVar3)));
-  uVar2 = F_00cb0950(this_00,uVar4);
-  F_00c47745(uVar1 ^ (uint)(uint)(gen_out + 0x0));
-  return uVar2;
 }
 

@@ -1,5 +1,70 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::UI2::AddonCursor::vf6 */
+unsigned int F_00785bc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x785bc0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  F_005b0610(this,1,1,0);
+  uVar1 = F_0055dcb0();
+  F_005a9ff0((undefined *)(uVar1 + 0x20c));
+  return 0;
+}
+
+/* ref: Client::UI2::AddonCursor::vf2 */
+unsigned int F_00785bf0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
+{
+  GEN_ENTER(0x785bf0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 param_4 = (undefined4)gen_a4;
+  return 0;
+}
+
+/* ref: Client::UI2::AddonCursor::vf28 */
+byte F_00785c00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x785c00u, gen_a0, gen_a1, gen_a2, 0u);
+  unsigned int gen_args[3];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  gen_args[2] = gen_a2;
+  undefined * this_00;
+  short * psVar1;
+  short * psVar2;
+  uint uVar3;
+  
+  if (*((int *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x1b0))) != 0) {
+    uVar3 = F_0055a2d0(*((int *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x1b0))));
+    if ((char)uVar3 != '\0') {
+      uVar3 = F_0055dcb0();
+      if (*(char *)(uVar3 + 0x218) != '\0') {
+        *(*(short * PTR32 *)&gen_args[1]) = *((short *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x1b8)));
+        *(*(short * PTR32 *)&gen_args[2]) = *((short *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x1ba)));
+        return 1;
+      }
+      uVar3 = F_0055dcb0();
+      psVar2 = (*(short * PTR32 *)&gen_args[2]);
+      psVar1 = (*(short * PTR32 *)&gen_args[1]);
+      this_00 = *((undefined * PTR32 *)GEN_TOP((*(int *)(uVar3 + 0x14) + 0xec)));
+      if (this_00 != (undefined *)0x0) {
+        F_00559fb0(this_00,(*(short * PTR32 *)&gen_args[1]),(*(short * PTR32 *)&gen_args[2]));
+        F_0055a000(this_00,&(*(short * PTR32 *)&gen_args[2]),&(*(short * PTR32 *)&gen_args[1]));
+        *psVar1 = *psVar1 + ((ushort)(*(short * PTR32 *)&gen_args[2]) >> 1);
+        *psVar2 = *psVar2 + ((ushort)(*(short * PTR32 *)&gen_args[1]) >> 1);
+        return 1;
+      }
+    }
+  }
+  return 0;
+}
+
 /* ref: FUN_00785cc0 */
 uint F_00785cc0(unsigned int gen_a0)
 {
@@ -9625,38 +9690,5 @@ unsigned int F_007905e0(unsigned int gen_a0)
     } while (iVar1 < *(int *)((int)this + 0x3b8));
   }
   return 0;
-}
-
-/* ref: Client::UI2::AddonActionBarHorizontal::vf41 */
-byte F_007906b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7906b0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  byte bVar1;
-  
-  bVar1 = F_00572e60(this,"ActionBarHorizontal",0,6);
-  return bVar1;
-}
-
-/* ref: Client::UI2::AddonActionBarVertical::vf41 */
-byte F_007906d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7906d0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  byte bVar1;
-  
-  bVar1 = F_00572e60(this,"ActionBarVertical",0,6);
-  return bVar1;
-}
-
-/* ref: Client::UI2::AddonActionCross::vf41 */
-byte F_007906e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7906e0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  byte bVar1;
-  
-  bVar1 = F_00572e60(this,"ActionCross",0,6);
-  return bVar1;
 }
 

@@ -1,5 +1,37 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00722820 */
+uint F_00722820(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x722820u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 0x14,800);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_00722870 */
+uint F_00722870(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x722870u, gen_a0, gen_a1, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_004296a0(param_1 * 0x30,param_2,800);
+  return uVar1;
+}
+
+/* ref: FUN_007228c0 */
+uint F_007228c0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7228c0u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 0x30;
+}
+
 /* ref: FUN_007228d0 */
 uint F_007228d0(unsigned int gen_a0)
 {
@@ -4640,35 +4672,5 @@ unsigned int F_00726b40(unsigned int gen_a0)
     *(int *)this = iVar2;
   }
   return 0;
-}
-
-/* ref: FUN_00726ba0 */
-uint F_00726ba0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x726ba0u, gen_a0, gen_a1, 0u, 0u);
-  int * in_ecx = (int *)(uintptr_t)gen_a0;
-  int param_2 = (int)gen_a1;
-  *in_ecx = *in_ecx + param_2 * 0x10;
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_00726bd0 */
-uint F_00726bd0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x726bd0u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 0x24;
-}
-
-/* ref: FUN_00726be0 */
-uint F_00726be0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x726be0u, gen_a0, gen_a1, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_004296a0(param_1 * 0x28,param_2,800);
-  return uVar1;
 }
 

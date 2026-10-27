@@ -1,5 +1,18 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::System::Resource::Handle::ResidentPapTableResourceHandleFactory::vf0 */
+uint F_0051d040(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x51d040u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10993b0));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: Client::System::Resource::Handle::ElementIdResourceHandleFactory::vf2 */
 uint F_0051d090(void)
 {
@@ -8001,16 +8014,5 @@ uint F_00523fd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   *param_1 = *(undefined4 *)this;
   F_0051c350(this);
   return (uint)param_1;
-}
-
-/* ref: FUN_00523ff0 */
-uint F_00523ff0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x523ff0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  *in_ecx = param_2;
-  return (uint)in_ecx;
 }
 

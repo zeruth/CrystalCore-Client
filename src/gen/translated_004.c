@@ -1,5 +1,64 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::UI::Info::InfoProxyCommonlist::vf2 */
+uint F_00435d20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x435d20u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  uint uVar3;
+  int iVar4;
+  int iVar5;
+  uint uVar6;
+  undefined4 * puVar7;
+  undefined4 * puVar8;
+  
+  piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x1c))))(*(int * PTR32 *)(this + 4))));
+  uVar2 = ((code *)*(gen_code32 *)(*piVar1 + 0x24))(piVar1,(uint)(byte)this[0x10]);
+  piVar1 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 4) + 0x1c))))(*(int * PTR32 *)(this + 4))));
+  uVar3 = ((code *)*(gen_code32 *)(*piVar1 + 0x28))(piVar1,(uint)(byte)this[0x11]);
+  if ((uVar2 != 0) && (uVar3 != 0)) {
+    uVar6 = 0;
+    if (*(int *)(this + 8) != 0) {
+      piVar1 = *(int * PTR32 *)(this + 0x18);
+LAB_00435d90: ;
+      if ((*piVar1 != *param_1) || (piVar1[1] != param_1[1])) goto LAB_00435d9f;
+      uVar6 = uVar6 + 1;
+      if (uVar6 < *(uint *)(this + 8)) {
+        iVar4 = uVar6 * 0x48;
+        do {
+          puVar7 = ((undefined4 *)GEN_TOP((*(int *)(this + 0x18) + iVar4)));
+          puVar8 = ((undefined4 *)GEN_TOP((*(int *)(this + 0x18) + iVar4))) + -0x12;
+          for (iVar5 = 0x12; iVar5 != 0; iVar5 = iVar5 + -1) {
+            *puVar8 = *puVar7;
+            puVar7 = puVar7 + 1;
+            puVar8 = puVar8 + 1;
+          }
+          ((code *)*(gen_code32 *)(*(int *)this + 0x20))(this,uVar2,uVar3,uVar6 - 1,uVar6);
+          iVar4 = iVar4 + 0x48;
+          uVar6 = uVar6 + 1;
+        } while (uVar6 < *(uint *)(this + 8));
+      }
+      *(int *)(this + 8) = *(int *)(this + 8) + -1;
+    }
+LAB_00435dff: ;
+    uVar3 = *(uint *)(this + 8);
+    if (*((uint *)GEN_TOP((*(int *)(uVar2 + 0x20) + (uint)*(ushort *)(this + 0x14) * 4))) != uVar3) {
+      *((uint *)GEN_TOP((*(int *)(uVar2 + 0x20) + (uint)*(ushort *)(this + 0x14) * 4))) = uVar3;
+      *(undefined1 *)(uVar2 + 0x1d) = 1;
+    }
+  }
+  return uVar3;
+LAB_00435d9f: ;
+  uVar6 = uVar6 + 1;
+  piVar1 = piVar1 + 0x12;
+  if (*(uint *)(this + 8) <= uVar6) goto LAB_00435dff;
+  goto LAB_00435d90;
+}
+
 /* ref: Client::UI::Info::InfoProxyCommonlist::vf12 */
 uint F_00435e30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -11544,34 +11603,6 @@ byte F_004418f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
         F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
         return 1;
       }
-    }
-  }
-  F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-  return 0;
-}
-
-/* ref: FUN_004419c0 */
-byte F_004419c0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4419c0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0xc40];
-  byte bVar1;
-  undefined * this;
-  
-  (*(uint *)(gen_frame + 0xc2c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc30);
-  this = (undefined *)F_00424810(REFG(undefined4, 0x137104c));
-  if (this != (undefined *)0x0) {
-    (*(undefined4 *)(gen_frame + 0x20)) = param_1;
-    (*(undefined4 *)(gen_frame + 0x8)) = 0x11a;
-    (*(undefined4 *)(gen_frame + 0xc)) = 0x20;
-    (*(undefined4 *)(gen_frame + 0x24)) = param_2;
-    (*(undefined4 *)(gen_frame + 0x28)) = 0;
-    bVar1 = F_00974da0(this,&(*(undefined4 *)(gen_frame + 0x8)),0,0);
-    if (bVar1 != 0) {
-      F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));
-      return 1;
     }
   }
   F_00c47745((*(uint *)(gen_frame + 0xc2c)) ^ (uint)(uint)(gen_frame + 0xc30));

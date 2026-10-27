@@ -1,5 +1,108 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00bcf3c0 */
+uint F_00bcf3c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbcf3c0u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((param_2 & 0xff) << 6 ^ *(uint *)(in_ecx + 0xe0)) & 0x40;
+  *(uint *)(in_ecx + 0xe0) = *(uint *)(in_ecx + 0xe0) ^ uVar1;
+  return uVar1;
+}
+
+/* ref: FUN_00bcf400 */
+uint F_00bcf400(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbcf400u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  *(uint *)(in_ecx + 0x104) = param_2;
+  return param_2;
+}
+
+/* ref: FUN_00bcf470 */
+float10 F_00bcf470(float gen_a0)
+{
+  GEN_ENTER(0xbcf470u, gen_trace_f(gen_a0), 0u, 0u, 0u);
+  float param_1 = (float)gen_a0;
+  return (float10)((float)GEN_TOF((((float10)param_1 * (float10)*(double *)&REFG(undefined, 0x1080228)) /
+                         (float10)*(double *)&REFG(undefined, 0x1080220))));
+}
+
+/* ref: Client::System::Scheduler::Base::SchedulerTimeline::vf6 */
+uint F_00bcf490(unsigned int gen_a0)
+{
+  GEN_ENTER(0xbcf490u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * pSVar1;
+  uint uVar2;
+  ulonglong uVar3;
+  
+  F_00bc2160((undefined *)this);
+  if (*(int *)(this + 0xcc) != 0) {
+    F_00b5c650(*(int *)(this + 0xcc));
+    *(undefined4 *)(this + 0xcc) = 0;
+  }
+  pSVar1 = *(undefined * PTR32 *)(this + 0xd4);
+  if ((pSVar1 != (undefined *)0x0) && (pSVar1 != this + 0xa0)) {
+    F_00406b30(pSVar1);
+    *(undefined4 *)(this + 0xd4) = 0;
+  }
+  uVar2 = 0;
+  if (*(int *)(this + 0x1cc) != 0) {
+    uVar3 = F_00406b30(*(int *)(this + 0x1cc));
+    uVar2 = (uint)uVar3;
+    *(undefined4 *)(this + 0x1cc) = 0;
+  }
+  return uVar2;
+}
+
+/* ref: FUN_00bcf500 */
+byte F_00bcf500(unsigned int gen_a0)
+{
+  GEN_ENTER(0xbcf500u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (((*(int *)(in_ecx + 0x24) != 6) && (*(char *)(in_ecx + 0xf0) == '\0')) &&
+     (*(char *)(in_ecx + 0xf1) == '\0')) {
+    return 0;
+  }
+  return 1;
+}
+
+/* ref: Client::System::Scheduler::Base::SchedulerTimeline::vf10 */
+unsigned int F_00bcf520(void)
+{
+  GEN_ENTER(0xbcf520u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: Client::System::Scheduler::Base::SchedulerTimeline::vf11 */
+unsigned int F_00bcf530(void)
+{
+  GEN_ENTER(0xbcf530u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: Client::System::Scheduler::Base::SchedulerTimeline::vf12 */
+unsigned int F_00bcf540(unsigned int gen_a0)
+{
+  GEN_ENTER(0xbcf540u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (*(char *)(in_ecx + 0xd) == '\0') {
+    return 0;
+  }
+  if (*(char *)(in_ecx + 0x30) != '\0') {
+    return 0;
+  }
+  if (*(char *)(in_ecx + 0x80) != '\0') {
+    return 0;
+  }
+  return 0;
+}
+
 /* ref: Client::System::Scheduler::Base::SchedulerTimeline::vf13 */
 uint F_00bcf5b0(unsigned int gen_a0)
 {
@@ -11350,215 +11453,5 @@ byte F_00bda660(unsigned int gen_a0, unsigned int gen_a1)
     F_004adca0((undefined *)(REFG(int, 0x1371290) + 0x25c),0x10,0,0x80);
   }
   return 1;
-}
-
-/* ref: Client::System::Scheduler::Clip::VignettingClip::vf29 */
-uint F_00bda690(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbda690u, gen_a0, gen_a1, 0u, 0u);
-  unsigned int gen_args[2];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  float fVar1;
-  float fVar2;
-  float fVar3;
-  float fVar4;
-  float fVar5;
-  float fVar6;
-  float * pfVar7;
-  uint uVar8;
-  float * pfVar9;
-  
-  uVar8 = (*(uint *)&gen_args[1]);
-  pfVar7 = REFG(float * PTR32, 0x1371290);
-  pfVar9 = *(float * PTR32 *)((*(int *)&gen_args[0]) + 0x24);
-  if (pfVar9[4] != 2.8026e-45) {
-    fVar1 = *(float *)((*(uint *)&gen_args[1]) + 0x30);
-    (*(float *)(gen_frame + 0x8)) = REFG(float, 0x1087f04);
-    (*(float *)(gen_frame + 0x4)) = 0.0;
-    (*(uint *)&gen_args[1]) = (uint)gen_fl2bits(fVar1);
-    pfVar9 = (float *)&(*(uint *)&gen_args[1]);
-    if (!(fVar1 < REFG(float, 0x1087f04))) {
-      pfVar9 = &(*(float *)(gen_frame + 0x8));
-    }
-    if (!(0.0 < *pfVar9)) {
-      pfVar9 = &(*(float *)(gen_frame + 0x4));
-    }
-    fVar1 = *pfVar9;
-    fVar2 = *(float *)(uVar8 + 0x34);
-    (*(float *)(gen_frame + 0x4)) = REFG(float, 0x1087f04);
-    (*(float *)(gen_frame + 0x8)) = 0.0;
-    (*(uint *)&gen_args[1]) = (uint)gen_fl2bits(fVar2);
-    pfVar9 = (float *)&(*(uint *)&gen_args[1]);
-    if (!(fVar2 < REFG(float, 0x1087f04))) {
-      pfVar9 = &(*(float *)(gen_frame + 0x4));
-    }
-    if (!(0.0 < *pfVar9)) {
-      pfVar9 = &(*(float *)(gen_frame + 0x8));
-    }
-    fVar2 = *pfVar9;
-    fVar3 = *(float *)(uVar8 + 0x38);
-    (*(float *)(gen_frame + 0x4)) = REFG(float, 0x1094880);
-    (*(float *)(gen_frame + 0x8)) = 0.0;
-    (*(uint *)&gen_args[1]) = (uint)gen_fl2bits(fVar3);
-    pfVar9 = (float *)&(*(uint *)&gen_args[1]);
-    if (!(fVar3 < REFG(float, 0x1094880))) {
-      pfVar9 = &(*(float *)(gen_frame + 0x4));
-    }
-    if (!(0.0 < *pfVar9)) {
-      pfVar9 = &(*(float *)(gen_frame + 0x8));
-    }
-    fVar3 = *pfVar9;
-    fVar4 = *(float *)(uVar8 + 0x3c);
-    (*(float *)(gen_frame + 0x4)) = REFG(float, 0x1087f04);
-    (*(float *)(gen_frame + 0x8)) = 0.0;
-    (*(uint *)&gen_args[1]) = (uint)gen_fl2bits(fVar4);
-    pfVar9 = (float *)&(*(uint *)&gen_args[1]);
-    if (!(fVar4 < REFG(float, 0x1087f04))) {
-      pfVar9 = &(*(float *)(gen_frame + 0x4));
-    }
-    if (!(0.0 < *pfVar9)) {
-      pfVar9 = &(*(float *)(gen_frame + 0x8));
-    }
-    fVar4 = *pfVar9;
-    fVar5 = *(float *)(uVar8 + 0x40);
-    (*(float *)(gen_frame + 0x8)) = 0.0;
-    (*(uint *)&gen_args[1]) = (uint)gen_fl2bits(fVar5);
-    pfVar9 = (float *)&(*(uint *)&gen_args[1]);
-    if (!(fVar5 < REFG(float, 0x1087f04))) {
-      pfVar9 = &(*(float *)(gen_frame + 0x4));
-    }
-    if (!(0.0 < *pfVar9)) {
-      pfVar9 = &(*(float *)(gen_frame + 0x8));
-    }
-    fVar5 = *pfVar9;
-    fVar6 = *(float *)(uVar8 + 0x44);
-    (*(float *)(gen_frame + 0x8)) = 0.0;
-    (*(uint *)&gen_args[1]) = (uint)gen_fl2bits(fVar6);
-    pfVar9 = (float *)&(*(uint *)&gen_args[1]);
-    if (!(fVar6 < REFG(float, 0x1087f04))) {
-      pfVar9 = &(*(float *)(gen_frame + 0x4));
-    }
-    if (!(0.0 < *pfVar9)) {
-      pfVar9 = &(*(float *)(gen_frame + 0x8));
-    }
-    fVar6 = *pfVar9;
-    pfVar9 = REFG(float * PTR32, 0x1371290);
-    if ((*((char *)GEN_TOP((REFG(float * PTR32, 0x1371290) + 0xc6))) == -0x80) &&
-       (pfVar9 = REFG(float * PTR32, 0x1371290) + 0xbc, pfVar9 != (float *)0x0)) {
-      REFG(float * PTR32, 0x1371290)[0xbf] = fVar4;
-      pfVar7[0xc0] = fVar5;
-      *pfVar9 = fVar1;
-      pfVar7[0xbd] = fVar2;
-      pfVar7[0xbe] = fVar3;
-      pfVar7[0xc1] = fVar6;
-    }
-  }
-  return (uint)pfVar9;
-}
-
-/* ref: Client::System::Scheduler::Clip::VignettingClip::vf0 */
-uint F_00bda830(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbda830u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  F_00bd2e60(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_00bda860 */
-float10 F_00bda860(float gen_a0)
-{
-  GEN_ENTER(0xbda860u, gen_trace_f(gen_a0), 0u, 0u, 0u);
-  float param_1 = (float)gen_a0;
-  return (float10)((float)GEN_TOF((((float10)param_1 * (float10)*(double *)&REFG(undefined, 0x1080228)) /
-                         (float10)*(double *)&REFG(undefined, 0x1080220))));
-}
-
-/* ref: FUN_00bda880 */
-uint F_00bda880(unsigned int gen_a0)
-{
-  GEN_ENTER(0xbda880u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  F_00bd2d80(this);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[70])REFP(0x1109b64));
-  return (uint)this;
-}
-
-/* ref: Client::System::Scheduler::Clip::ColorFilterClip::vf30 */
-unsigned int F_00bda8a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xbda8a0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  return 0;
-}
-
-/* ref: FUN_00bda8f0 */
-unsigned int F_00bda8f0(float gen_a0, float gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4, float gen_a5, float gen_a6, float gen_a7, float gen_a8)
-{
-  GEN_ENTER(0xbda8f0u, gen_trace_f(gen_a0), gen_trace_f(gen_a1), gen_trace_f(gen_a2), gen_trace_f(gen_a3));
-  float param_1 = (float)gen_a0;
-  float param_2 = (float)gen_a1;
-  float param_3 = (float)gen_a2;
-  float param_4 = (float)gen_a3;
-  undefined4 * param_5 = (undefined4 *)(uintptr_t)gen_a4;
-  float param_6 = (float)gen_a5;
-  float param_7 = (float)gen_a6;
-  float param_8 = (float)gen_a7;
-  float param_9 = (float)gen_a8;
-  undefined4 uVar1;
-  int iVar2;
-  
-  iVar2 = REFG(int, 0x1371290);
-  if ((*(char *)(REFG(int, 0x1371290) + 0x317) == -0x80) &&
-     ((float *)(REFG(int, 0x1371290) + 0x2c4) != (float *)0x0)) {
-    *(float *)(REFG(int, 0x1371290) + 0x2c4) = param_1;
-    *(float *)(iVar2 + 0x2c8) = param_2;
-    *(float *)(iVar2 + 0x2cc) = param_3;
-    *(float *)(iVar2 + 0x2d0) = param_4;
-    *(undefined4 *)(iVar2 + 0x2d4) = *param_5;
-    *(undefined4 *)(iVar2 + 0x2d8) = param_5[1];
-    uVar1 = param_5[2];
-    *(float *)(iVar2 + 0x2e0) = param_6;
-    *(float *)(iVar2 + 0x2e4) = param_7;
-    *(float *)(iVar2 + 0x2e8) = param_8;
-    *(undefined4 *)(iVar2 + 0x2dc) = uVar1;
-    *(float *)(iVar2 + 0x2ec) = param_9;
-  }
-  return 0;
-}
-
-/* ref: FUN_00bda970 */
-uint F_00bda970(unsigned int gen_a0)
-{
-  GEN_ENTER(0xbda970u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  int iVar1;
-  uint uVar2;
-  
-  iVar1 = REFG(int, 0x1371290);
-  uVar2 = F_004adca0((undefined *)(REFG(int, 0x1371290) + 0x25c),0xf,param_1,0x80);
-  if (((*(char *)(iVar1 + 0x317) == -0x80) && (iVar1 = iVar1 + 0x2c4, iVar1 != 0)) &&
-     ((char)param_1 != '\0')) {
-    F_004a63e0(iVar1);
-  }
-  return uVar2;
-}
-
-/* ref: Client::System::Scheduler::Clip::ColorFilterClip::vf25 */
-uint F_00bda9c0(void)
-{
-  GEN_ENTER(0xbda9c0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_004adca0((undefined *)(REFG(int, 0x1371290) + 0x25c),0xf,0,0x80);
-  return uVar1;
 }
 

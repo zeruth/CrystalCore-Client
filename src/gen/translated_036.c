@@ -1,5 +1,31 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_005d47c0 */
+uint F_005d47c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5d47c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint in_EAX = 0;
+  
+  if (*(char *)((int)this + 0x80) != '\0') {
+    in_EAX = F_005aa300(this,1,param_1,9);
+  }
+  return in_EAX;
+}
+
+/* ref: Component::GUI2::AtkUnitBase::vf5 */
+uint F_005d47e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5d47e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_005a89b0(this,param_1,1);
+  return uVar1;
+}
+
 /* ref: Component::GUI2::AtkStage::vf1 */
 byte F_005d4800(void)
 {
@@ -8908,37 +8934,6 @@ uint F_005dda50(unsigned int gen_a0)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   F_005dd660(this);
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[70])REFP(0x10a4134));
-  return (uint)this;
-}
-
-/* ref: Client::LayoutEngine::Layer::AetheryteLayoutInstance::vf4 */
-uint F_005dda70(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5dda70u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0x40];
-  uint uVar1;
-  
-  F_00a1e7d0(((undefined1 *)(gen_frame + 0x0)),param_1 + 0xc);
-  ((code *)*(gen_code32 *)(*(int *)this + 0x100))(this,((undefined1 *)(gen_frame + 0x0)));
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0x5c))(this);
-  if (uVar1 != 0) {
-    F_00a1fa60(this + 0x10,uVar1,param_1);
-  }
-  uVar1 = *(uint *)(param_1 + 0x30);
-  *(uint *)(this + 0x30) = uVar1;
-  *(undefined4 *)(this + 0x34) = *(undefined4 *)(param_1 + 0x34);
-  return uVar1;
-}
-
-/* ref: FUN_005ddaf0 */
-uint F_005ddaf0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x5ddaf0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  F_005dd660(this);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[70])REFP(0x10a4254));
   return (uint)this;
 }
 

@@ -1,5 +1,33 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_0072b6e0 */
+uint F_0072b6e0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x72b6e0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_0072b6f0 */
+uint F_0072b6f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x72b6f0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a2;
+  *(undefined4 *)this = *param_1;
+  *(undefined4 *)((int)this + 4) = *param_2;
+  return (uint)this;
+}
+
+/* ref: FUN_0072b710 */
+uint F_0072b710(unsigned int gen_a0)
+{
+  GEN_ENTER(0x72b710u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
 /* ref: FUN_0072b720 */
 uint F_0072b720(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -5336,40 +5364,5 @@ byte F_00730ab0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int * param_1 = (int *)(uintptr_t)gen_a1;
   return *(int *)this != *param_1;
-}
-
-/* ref: FUN_00730ad0 */
-byte F_00730ad0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x730ad0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  return *(int *)this != *param_1;
-}
-
-/* ref: CallbackSheetWaiter_VEventFramework_Event_Game_Client_Game::vf0 */
-uint F_00730b20(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x730b20u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  F_00cb4870(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: CallbackSheetWaiter_VEventHandler_Event_Game_Client_Game::vf0 */
-uint F_00730b50(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x730b50u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  F_00cb4870(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
 }
 

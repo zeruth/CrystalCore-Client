@@ -1,5 +1,22 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_0055ad50 */
+uint F_0055ad50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x55ad50u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint in_EAX = 0;
+  
+  if (this != (undefined *)0x0) {
+    in_EAX = (uint)(ushort)param_1;
+    *(uint *)((int)this + 0x104) = in_EAX;
+    *(uint *)((int)this + 0x108) = (uint)(ushort)param_2;
+  }
+  return in_EAX;
+}
+
 /* ref: FUN_0055ad70 */
 unsigned int F_0055ad70(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -8919,17 +8936,5 @@ byte F_005638e0(unsigned int gen_a0, unsigned int gen_a1)
     bVar1 = 0;
   }
   return bVar1;
-}
-
-/* ref: FUN_00563900 */
-byte F_00563900(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x563900u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  if ((*(char *)(in_ecx + 0x80) == '\x7f') && ((param_2 == 0xf || (param_2 == 0x10)))) {
-    return 1;
-  }
-  return 0;
 }
 

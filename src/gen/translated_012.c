@@ -1,5 +1,20 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_004a03d0 */
+unsigned int F_004a03d0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x4a03d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  gen_imp_WaitForSingleObject(*(HANDLE *)((int)this + 8),0xffffffff);
+  *(undefined4 *)this = param_1;
+  LOCK();
+  *(undefined4 *)((int)this + 4) = param_1;
+  UNLOCK();
+  gen_imp_ResetEvent(*(HANDLE *)((int)this + 8));
+  return 0;
+}
+
 /* ref: Client::System::Framework::JobListTaskPtrArray::vf1 */
 uint F_004a0400(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -20593,24 +20608,6 @@ uint F_004bd460(unsigned int gen_a0, unsigned int gen_a1)
     param_1[1] = *(float *)(param_2 + 4);
   }
   if ((float10)*(float *)(param_2 + 8) < (float10)param_1[2]) {
-    param_1[2] = *(float *)(param_2 + 8);
-  }
-  return (uint)param_1;
-}
-
-/* ref: FUN_004bd4c0 */
-uint F_004bd4c0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4bd4c0u, gen_a0, gen_a1, 0u, 0u);
-  float * param_1 = (float *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  if ((float10)*param_1 < (float10)*(float *)param_2) {
-    *param_1 = *(float *)param_2;
-  }
-  if ((float10)param_1[1] < (float10)*(float *)(param_2 + 4)) {
-    param_1[1] = *(float *)(param_2 + 4);
-  }
-  if ((float10)param_1[2] < (float10)*(float *)(param_2 + 8)) {
     param_1[2] = *(float *)(param_2 + 8);
   }
   return (uint)param_1;

@@ -1,5 +1,28 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::Sound::SoundData::vf16 */
+unsigned int F_004ed8d0(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3)
+{
+  GEN_ENTER(0x4ed8d0u, gen_a0, gen_trace_f(gen_a1), gen_trace_f(gen_a2), gen_trace_f(gen_a3));
+  int param_1 = (int)gen_a0;
+  float param_2 = (float)gen_a1;
+  float param_3 = (float)gen_a2;
+  float param_4 = (float)gen_a3;
+  __declspec(align(16)) undefined1 gen_frame[0x20];
+  
+  (*(uint *)(gen_frame + 0x18)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x1c);
+  (*(float *)(gen_frame + 0x8)) = param_2;
+  (*(float *)(gen_frame + 0xc)) = param_3;
+  (*(float *)(gen_frame + 0x10)) = param_4;
+  (*(undefined4 *)(gen_frame + 0x14)) = (undefined4)gen_fl2bits((float)(REFG(float, 0x1097250)));
+  if (*(int *)(param_1 + 100) == 0) {
+    F_00cbc630((undefined *)(param_1 + 0x20),0);
+    F_00cbc4e0((undefined *)(param_1 + 0x20),&(*(float *)(gen_frame + 0x8)));
+  }
+  F_00c47745((*(uint *)(gen_frame + 0x18)) ^ (uint)(uint)(gen_frame + 0x1c));
+  return 0;
+}
+
 /* ref: Client::Sound::SoundData::vf17 */
 unsigned int F_004ed940(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3)
 {
@@ -14154,15 +14177,5 @@ uint F_004fe480(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   *(uint *)((int)this + 0x10) = param_1;
   *(undefined4 *)((int)this + 0x14) = param_2;
   return param_1;
-}
-
-/* ref: FUN_004fe4b0 */
-uint F_004fe4b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4fe4b0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0x2c) = param_2;
-  return param_2;
 }
 

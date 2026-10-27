@@ -1,5 +1,16 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00506f30 */
+uint F_00506f30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x506f30u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  if ((*(int *)(param_1 + 0xc0) - (int)*(int * PTR32 *)(param_1 + 0xbc) & 0xfffffffcU) != 0) {
+    return **(int * PTR32 *)(param_1 + 0xbc) + 0x68;
+  }
+  return 0x68;
+}
+
 /* ref: FUN_00506f60 */
 uint F_00506f60(unsigned int gen_a0)
 {
@@ -15925,13 +15936,5 @@ uint F_00518950(unsigned int gen_a0, unsigned int gen_a1)
   
   uVar1 = F_00429760(param_1,param_2 * 0x24,0x12e);
   return (uint)uVar1;
-}
-
-/* ref: FUN_00518980 */
-uint F_00518980(unsigned int gen_a0)
-{
-  GEN_ENTER(0x518980u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 0x10;
 }
 

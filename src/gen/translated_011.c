@@ -1,5 +1,31 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::UI::Misc::RaptureTextModule::vf11 */
+uint F_004937a0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x4937a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined1 gen_out[0x4];
+  uint uVar1;
+  uint uVar2;
+  int * piVar3;
+  undefined * this_00;
+  undefined4 uVar4;
+  
+  uVar1 = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_out + 0x0);
+  if (*(int *)(this + 600) == 0) {
+    uVar2 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x34) + 8))))(*(int * PTR32 *)(this + 0x34),"Addon");
+    *(uint *)(this + 600) = uVar2;
+  }
+  piVar3 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 600) + 0x24))))(*(int * PTR32 *)(this + 600),param_1)));
+  uVar4 = 0;
+  this_00 = ((undefined *)GEN_TOP(((code *)*(gen_code32 *)(*piVar3 + 8))(piVar3)));
+  uVar2 = F_00cb0950(this_00,uVar4);
+  F_00c47745(uVar1 ^ (uint)(uint)(gen_out + 0x0));
+  return uVar2;
+}
+
 /* ref: FUN_00493810 */
 uint F_00493810(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -11778,21 +11804,6 @@ unsigned int F_004a03a0(unsigned int gen_a0)
   gen_imp_WaitForSingleObject(*(HANDLE *)((int)this + 8),0xffffffff);
   LOCK();
   *(undefined4 *)((int)this + 4) = *(undefined4 *)this;
-  UNLOCK();
-  gen_imp_ResetEvent(*(HANDLE *)((int)this + 8));
-  return 0;
-}
-
-/* ref: FUN_004a03d0 */
-unsigned int F_004a03d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4a03d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  gen_imp_WaitForSingleObject(*(HANDLE *)((int)this + 8),0xffffffff);
-  *(undefined4 *)this = param_1;
-  LOCK();
-  *(undefined4 *)((int)this + 4) = param_1;
   UNLOCK();
   gen_imp_ResetEvent(*(HANDLE *)((int)this + 8));
   return 0;

@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Component::GUI2::AtkComponentButton::vf18 */
+uint F_005cd150(unsigned int gen_a0)
+{
+  GEN_ENTER(0x5cd150u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x10c);
+}
+
+/* ref: Component::GUI2::AtkComponentButton::vf19 */
+byte F_005cd160(unsigned int gen_a0)
+{
+  GEN_ENTER(0x5cd160u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 0x84);
+}
+
 /* ref: Component::GUI2::AtkComponentButton::vf20 */
 byte F_005cd170(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -8677,31 +8693,5 @@ uint F_005d4780(unsigned int gen_a0, unsigned int gen_a1)
     F_00406ad0(this);
   }
   return (uint)this;
-}
-
-/* ref: FUN_005d47c0 */
-uint F_005d47c0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5d47c0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint in_EAX = 0;
-  
-  if (*(char *)((int)this + 0x80) != '\0') {
-    in_EAX = F_005aa300(this,1,param_1,9);
-  }
-  return in_EAX;
-}
-
-/* ref: Component::GUI2::AtkUnitBase::vf5 */
-uint F_005d47e0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5d47e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_005a89b0(this,param_1,1);
-  return uVar1;
 }
 

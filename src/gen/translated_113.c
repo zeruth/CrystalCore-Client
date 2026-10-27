@@ -1,5 +1,56 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00a5c900 */
+uint F_00a5c900(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xa5c900u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined1 * param_2 = (undefined1 *)(uintptr_t)gen_a2;
+  *(undefined1 *)(param_1 + 8 + (int)this) = *param_2;
+  return param_1;
+}
+
+/* ref: FUN_00a5c920 */
+uint F_00a5c920(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xa5c920u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined2 * param_1 = (undefined2 *)(uintptr_t)gen_a1;
+  *(undefined2 *)((int)this + 4) = *param_1;
+  return (uint)param_1;
+}
+
+/* ref: FUN_00a5c940 */
+uint F_00a5c940(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xa5c940u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a1;
+  *(undefined1 *)((int)this + 6) = *param_1;
+  return (uint)param_1;
+}
+
+/* ref: FUN_00a5c950 */
+uint F_00a5c950(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xa5c950u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined2 * param_1 = (undefined2 *)(uintptr_t)gen_a1;
+  *(undefined2 *)((int)this + 8) = *param_1;
+  return (uint)param_1;
+}
+
+/* ref: FUN_00a5c970 */
+uint F_00a5c970(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xa5c970u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined2 * param_1 = (undefined2 *)(uintptr_t)gen_a1;
+  *(undefined2 *)((int)this + 10) = *param_1;
+  return (uint)param_1;
+}
+
 /* ref: FUN_00a5c990 */
 uint F_00a5c990(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -8333,67 +8384,6 @@ byte F_00a64c10(unsigned int gen_a0, unsigned int gen_a1)
     *(int *)((int)this + 0x3f4) = iVar1 + 1;
     return 1;
   }
-  return 0;
-}
-
-/* ref: FUN_00a64c40 */
-uint F_00a64c40(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xa64c40u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0x3b04) = param_2;
-  return param_2;
-}
-
-/* ref: SplineController2D_MMM_MoveControl_Control_Game_Client::vf0 */
-uint F_00a64c80(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xa64c80u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this =
-       (*(undefined * PTR32 (*)[1])REFP(0x10e6db4));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: SplineController2D_MVSplineVector2_MoveControl_Control_Game_Client::vf0 */
-uint F_00a64cb0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xa64cb0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this =
-       (*(undefined * PTR32 (*)[1])REFP(0x10e6dbc));
-  *(undefined * PTR32 * PTR32 *)((int)this + 0xa4) = (*(undefined * PTR32 (*)[1])REFP(0x109c95c));
-  *(undefined * PTR32 * PTR32 *)((int)this + 0x98) = (*(undefined * PTR32 (*)[1])REFP(0x109c95c));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_00a64d20 */
-uint F_00a64d20(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xa64d20u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  int param_2 = (int)gen_a1;
-  ulonglong uVar1;
-  
-  uVar1 = F_00429760(param_1,param_2 * 0x28,400);
-  return (uint)uVar1;
-}
-
-/* ref: Client::Graphics::Vfx::VfxDataListenner::vf1 */
-unsigned int F_00a64da0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xa64da0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
   return 0;
 }
 

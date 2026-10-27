@@ -1,5 +1,23 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_005c4db0 */
+byte F_005c4db0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5c4db0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  return *(int *)this != *param_1;
+}
+
+/* ref: FUN_005c4dd0 */
+byte F_005c4dd0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5c4dd0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  return *(int *)this != *param_1;
+}
+
 /* ref: FUN_005c4df0 */
 uint F_005c4df0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9356,21 +9374,5 @@ uint F_005cd120(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   uVar1 = *(uint *)(this + 0x70);
   bVar2 = F_00570d10(uVar1,param_1,param_2,0);
   return -(uint)(bVar2 != 0) & uVar1;
-}
-
-/* ref: Component::GUI2::AtkComponentButton::vf18 */
-uint F_005cd150(unsigned int gen_a0)
-{
-  GEN_ENTER(0x5cd150u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 0x10c);
-}
-
-/* ref: Component::GUI2::AtkComponentButton::vf19 */
-byte F_005cd160(unsigned int gen_a0)
-{
-  GEN_ENTER(0x5cd160u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(byte *)(in_ecx + 0x84);
 }
 

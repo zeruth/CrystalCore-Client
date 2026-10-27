@@ -1,5 +1,74 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_006aec30 */
+unsigned int F_006aec30(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6aec30u, gen_a0, gen_a1, 0u, 0u);
+  float * in_ecx = (float *)(uintptr_t)gen_a0;
+  float * param_2 = (float *)(uintptr_t)gen_a1;
+  float fVar1;
+  float fVar2;
+  float10 fVar3;
+  float10 fVar4;
+  float10 fVar5;
+  
+  fVar3 = (float10)REFG(double, 0x1088108);
+  fVar4 = (float10)((float)GEN_TOF(((float10)(float)((float10)*in_ecx + (float10)in_ecx[4]) * fVar3)));
+  fVar5 = (float10)((float)GEN_TOF(((float10)(float)((float10)in_ecx[5] + (float10)in_ecx[1]) * fVar3)));
+  fVar1 = param_2[1];
+  fVar3 = (float10)((float)GEN_TOF((fVar3 * (float10)(float)((float10)in_ecx[2] + (float10)in_ecx[6]))));
+  fVar2 = param_2[2];
+  *in_ecx = (float)(fVar4 - (float10)*param_2);
+  in_ecx[1] = (float)(fVar5 - (float10)fVar1);
+  in_ecx[2] = (float)(fVar3 - (float10)fVar2);
+  fVar1 = param_2[1];
+  fVar2 = param_2[2];
+  in_ecx[4] = (float)((float10)*param_2 + fVar4);
+  in_ecx[5] = (float)(fVar5 + (float10)fVar1);
+  in_ecx[6] = (float)(fVar3 + (float10)fVar2);
+  return 0;
+}
+
+/* ref: FUN_006aecf0 */
+uint F_006aecf0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6aecf0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float * param_1 = (float *)(uintptr_t)gen_a1;
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float10 fVar4;
+  float10 fVar5;
+  float10 fVar6;
+  
+  fVar4 = (float10)REFG(double, 0x1088108);
+  fVar1 = ((float)GEN_TOF(((float10)(float)((float10)param_1[4] - (float10)*param_1) * fVar4)));
+  fVar2 = ((float)GEN_TOF(((float10)(float)((float10)param_1[5] - (float10)param_1[1]) * fVar4)));
+  fVar3 = ((float)GEN_TOF((fVar4 * (float10)(float)((float10)param_1[6] - (float10)param_1[2]))));
+  fVar4 = (float10)fVar1;
+  fVar5 = (float10)fVar2;
+  fVar6 = (float10)fVar3;
+  *(float *)((int)this + 0xc) =
+       ((float)GEN_TOF(SQRT((float10)((float)GEN_TOF((fVar6 * fVar6 + (fVar5 * fVar5 + fVar4 * fVar4)))))));
+  *(float *)this = (float)((float10)*param_1 + (float10)fVar1);
+  *(float *)((int)this + 4) = (float)((float10)param_1[1] + (float10)fVar2);
+  *(float *)((int)this + 8) = (float)((float10)param_1[2] + (float10)fVar3);
+  return (uint)this;
+}
+
+/* ref: FUN_006aeda0 */
+byte F_006aeda0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6aeda0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  byte bVar1;
+  
+  bVar1 = F_006aea80(this,param_1);
+  return bVar1 == 0;
+}
+
 /* ref: FUN_006aedc0 */
 byte F_006aedc0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -5444,38 +5513,5 @@ uint F_006b3f40(void)
 {
   GEN_ENTER(0x6b3f40u, 0u, 0u, 0u, 0u);
   return 2;
-}
-
-/* ref: Client::Graphics::Scene::BGObject::vf0 */
-uint F_006b3f50(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6b3f50u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[6])REFP(0x10b2ae0));
-  if ((param_1 & 1) != 0) {
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 0x14) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 0x14),this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::Graphics::Scene::Light::vf2 */
-uint F_006b3f90(void)
-{
-  GEN_ENTER(0x6b3f90u, 0u, 0u, 0u, 0u);
-  return 5;
-}
-
-/* ref: Client::Graphics::Scene::Light::vf0 */
-uint F_006b3fa0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6b3fa0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[6])REFP(0x10b2ae0));
-  if ((param_1 & 1) != 0) {
-    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 0x14) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 0x14),this);
-  }
-  return (uint)this;
 }
 

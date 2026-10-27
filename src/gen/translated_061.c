@@ -1,5 +1,40 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00730ad0 */
+byte F_00730ad0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x730ad0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  return *(int *)this != *param_1;
+}
+
+/* ref: CallbackSheetWaiter_VEventFramework_Event_Game_Client_Game::vf0 */
+uint F_00730b20(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x730b20u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  F_00cb4870(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: CallbackSheetWaiter_VEventHandler_Event_Game_Client_Game::vf0 */
+uint F_00730b50(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x730b50u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  F_00cb4870(this);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: CallbackSheetWaiter_VArrayEventHandler_Event_Game_Client_Game::vf0 */
 uint F_00730b80(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -7513,51 +7548,5 @@ uint F_00738070(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
     param_2[2] = param_3[2];
   }
   return (uint)param_2;
-}
-
-/* ref: std::_Cons_val<std__allocator<std___Container_proxy>,std___Container_proxy,std___Container_proxy>_00738090 */
-unsigned int F_00738090(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x738090u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
-  undefined * param_2 = (undefined *)(uintptr_t)gen_a1;
-  undefined * param_3 = (undefined *)(uintptr_t)gen_a2;
-  if (param_2 != (undefined *)0x0) {
-    *(undefined4 *)param_2 = *(undefined4 *)param_3;
-    *(undefined4 *)(param_2 + 4) = *(undefined4 *)(param_3 + 4);
-  }
-  return 0;
-}
-
-/* ref: std::_Cons_val<std__allocator<std___Container_proxy>,std___Container_proxy,std___Container_proxy>_007380b0 */
-unsigned int F_007380b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x7380b0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
-  undefined * param_2 = (undefined *)(uintptr_t)gen_a1;
-  undefined * param_3 = (undefined *)(uintptr_t)gen_a2;
-  if (param_2 != (undefined *)0x0) {
-    *(undefined4 *)param_2 = *(undefined4 *)param_3;
-    *(undefined4 *)(param_2 + 4) = *(undefined4 *)(param_3 + 4);
-  }
-  return 0;
-}
-
-/* ref: FUN_007380d0 */
-unsigned int F_007380d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x7380d0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined2 * param_2 = (undefined2 *)(uintptr_t)gen_a1;
-  undefined2 * param_3 = (undefined2 *)(uintptr_t)gen_a2;
-  if (param_2 != (undefined2 *)0x0) {
-    *param_2 = *param_3;
-    F_0042cbc0(param_2 + 2,param_3 + 2);
-    F_0042cbc0(param_2 + 0x2c,param_3 + 0x2c);
-    param_2[0x56] = param_3[0x56];
-    *(undefined4 *)(param_2 + 0x58) = *(undefined4 *)(param_3 + 0x58);
-    *(undefined4 *)(param_2 + 0x5a) = *(undefined4 *)(param_3 + 0x5a);
-  }
-  return 0;
 }
 

@@ -7546,6 +7546,7 @@ static double W_00befcb0(float gen_a0) { return (double)F_00befcb0(gen_a0); }
 static unsigned int W_00befcd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_00befcd0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_00bf0870(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_00bf0870(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00bf08e0(float gen_a0) { return (double)F_00bf08e0(gen_a0); }
+static unsigned int W_00bf0960(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_00bf0960(gen_a0); }
 static unsigned int W_00bf0a60(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_00bf0a60(gen_a0, gen_a1); }
 static double W_00bf0bc0(float gen_a0) { return (double)F_00bf0bc0(gen_a0); }
 static unsigned int W_00bf0e50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { return (unsigned int)(unsigned char)F_00bf0e50(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5, gen_a6, gen_a7, gen_a8); }
@@ -68544,7 +68545,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xbf08e0u, (void *)W_00bf08e0},
   {0xbf0900u, (void *)F_00bf0900},
   {0xbf0920u, (void *)F_00bf0920},
-  {0xbf0960u, (void *)F_00bf0960},
+  {0xbf0960u, (void *)W_00bf0960},
   {0xbf0980u, (void *)F_00bf0980},
   {0xbf09c0u, (void *)F_00bf09c0},
   {0xbf0a20u, (void *)F_00bf0a20},

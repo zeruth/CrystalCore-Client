@@ -1,5 +1,29 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_0091fb10 */
+uint F_0091fb10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x91fb10u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_0091fb20 */
+uint F_0091fb20(unsigned int gen_a0)
+{
+  GEN_ENTER(0x91fb20u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_0091fb30 */
+uint F_0091fb30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x91fb30u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
 /* ref: FUN_0091fb40 */
 uint F_0091fb40(unsigned int gen_a0)
 {
@@ -6633,62 +6657,6 @@ uint F_00925450(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0x925450u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10cf704));
-  F_00590600(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::UI2::AddonConfigCharacterChatLog::vf0 */
-uint F_00925480(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x925480u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int iVar1;
-  undefined * this_00;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10cf804));
-  this_00 = this + 0x594;
-  iVar1 = 8;
-  do {
-    this_00 = this_00 + -0x54;
-    F_0042c880(this_00);
-    iVar1 = iVar1 + -1;
-  } while (-1 < iVar1);
-  *(undefined * PTR32 * PTR32 *)(this + 0x194) = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10cf704));
-  F_00590600(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::UI2::AddonConfigCharacterChatLog::CChatLog::vf0 */
-uint F_009254f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9254f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::UI2::AddonConfigCharacterHotBar::vf0 */
-uint F_00925520(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x925520u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)(this + 0x294) = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
-  *(undefined * PTR32 * PTR32 *)(this + 0x1fc) = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
-  *(undefined * PTR32 * PTR32 *)(this + 0x19c) = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10cf704));
   F_00590600(this);
   if ((param_1 & 1) != 0) {

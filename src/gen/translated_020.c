@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00518980 */
+uint F_00518980(unsigned int gen_a0)
+{
+  GEN_ENTER(0x518980u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 0x10;
+}
+
 /* ref: FUN_00518990 */
 uint F_00518990(unsigned int gen_a0)
 {
@@ -4800,18 +4808,5 @@ uint F_0051d030(void)
 {
   GEN_ENTER(0x51d030u, 0u, 0u, 0u, 0u);
   return 200;
-}
-
-/* ref: Client::System::Resource::Handle::ResidentPapTableResourceHandleFactory::vf0 */
-uint F_0051d040(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x51d040u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10993b0));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
 }
 

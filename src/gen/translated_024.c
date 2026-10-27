@@ -1,5 +1,20 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00533490 */
+uint F_00533490(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x533490u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  *(undefined4 *)((int)this + 4) = param_1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x109ca48));
+  *(undefined4 *)((int)this + 8) = param_2;
+  *(undefined1 *)((int)this + 0xc) = (undefined1)param_3;
+  return (uint)this;
+}
+
 /* ref: Client::Game::Control::TargetSystem::OrFilter::vf1 */
 uint F_005334c0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -13705,17 +13720,5 @@ LAB_00543f32: ;
 LAB_00543f45: ;
   F_00c47745((*(uint *)(gen_frame + 0x13c)) ^ (uint)(uint)(gen_frame + 0x140));
   return 0;
-}
-
-/* ref: FUN_005445a0 */
-byte F_005445a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5445a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  byte bVar1;
-  
-  bVar1 = F_00543da0(param_1,param_2,1,1);
-  return bVar1;
 }
 

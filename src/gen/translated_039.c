@@ -1,5 +1,23 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::LayoutEngine::Layer::PathLayoutInstance::vf23 */
+uint F_00600010(void)
+{
+  GEN_ENTER(0x600010u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: Client::LayoutEngine::Layer::PathLayoutInstance::vf25 */
+unsigned int F_00600020(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x600020u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return 0;
+}
+
 /* ref: Client::LayoutEngine::Layer::PathLayoutInstance::vf63 */
 uint F_00600030(unsigned int gen_a0)
 {
@@ -5432,22 +5450,6 @@ uint F_006050d0(unsigned int gen_a0)
 uint F_006050e0(unsigned int gen_a0)
 {
   GEN_ENTER(0x6050e0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_006050f0 */
-uint F_006050f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6050f0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00605100 */
-uint F_00605100(unsigned int gen_a0)
-{
-  GEN_ENTER(0x605100u, gen_a0, 0u, 0u, 0u);
   uint param_1 = (uint)gen_a0;
   return param_1;
 }

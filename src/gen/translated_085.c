@@ -1,5 +1,43 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_009089e0 */
+uint F_009089e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x9089e0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  *(undefined4 *)this = param_1;
+  *(undefined4 *)((int)this + 4) = param_2;
+  *(undefined4 *)((int)this + 8) = 0;
+  *(undefined4 *)((int)this + 0xc) = 0;
+  return (uint)this;
+}
+
+/* ref: FUN_00908a00 */
+uint F_00908a00(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x908a00u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  *(undefined4 *)this = param_1;
+  *(undefined4 *)((int)this + 4) = 0;
+  *(undefined4 *)((int)this + 8) = param_2;
+  *(undefined4 *)((int)this + 0xc) = 0;
+  return (uint)this;
+}
+
+/* ref: FUN_00908a60 */
+uint F_00908a60(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x908a60u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  *(uint *)(in_ecx + 0x94) = param_2;
+  return param_2;
+}
+
 /* ref: FUN_00908a70 */
 byte F_00908a70(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -5776,29 +5814,5 @@ uint F_0090f670(unsigned int gen_a0, unsigned int gen_a1)
   uint param_2 = (uint)gen_a1;
   *(uint *)(in_ecx + 400) = param_2;
   return param_2;
-}
-
-/* ref: FUN_0090f690 */
-unsigned int F_0090f690(unsigned int gen_a0)
-{
-  GEN_ENTER(0x90f690u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  return 0;
-}
-
-/* ref: FUN_0090f6a0 */
-unsigned int F_0090f6a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x90f6a0u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  return 0;
-}
-
-/* ref: FUN_0090f6b0 */
-unsigned int F_0090f6b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x90f6b0u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  return 0;
 }
 

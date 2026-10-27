@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_006050f0 */
+uint F_006050f0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6050f0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00605100 */
+uint F_00605100(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605100u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
 /* ref: FUN_00605110 */
 uint F_00605110(unsigned int gen_a0)
 {
@@ -4929,34 +4945,6 @@ uint F_00608ff0(void)
 uint F_00609000(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0x609000u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 * puVar1;
-  
-  puVar1 = *(undefined4 * PTR32 *)(this + 0x60);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[69])REFP(0x10a3844));
-  if (puVar1 != (undefined4 *)0x0) {
-    ((code *)*(gen_code32 *)*puVar1)(puVar1,1);
-    *(undefined4 *)(this + 0x60) = 0;
-  }
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[68])REFP(0x10a2a84));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::LayoutEngine::Layer::ServerPathLayoutInstance::vf6 */
-uint F_00609040(void)
-{
-  GEN_ENTER(0x609040u, 0u, 0u, 0u, 0u);
-  return 0x70;
-}
-
-/* ref: Client::LayoutEngine::Layer::ServerPathLayoutInstance::vf0 */
-uint F_00609050(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x609050u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   undefined4 * puVar1;

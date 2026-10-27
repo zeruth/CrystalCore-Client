@@ -1,5 +1,38 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::Graphics::Scene::BGObject::vf0 */
+uint F_006b3f50(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6b3f50u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[6])REFP(0x10b2ae0));
+  if ((param_1 & 1) != 0) {
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 0x14) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 0x14),this);
+  }
+  return (uint)this;
+}
+
+/* ref: Client::Graphics::Scene::Light::vf2 */
+uint F_006b3f90(void)
+{
+  GEN_ENTER(0x6b3f90u, 0u, 0u, 0u, 0u);
+  return 5;
+}
+
+/* ref: Client::Graphics::Scene::Light::vf0 */
+uint F_006b3fa0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6b3fa0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[6])REFP(0x10b2ae0));
+  if ((param_1 & 1) != 0) {
+    ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 0x14) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 0x14),this);
+  }
+  return (uint)this;
+}
+
 /* ref: Client::Graphics::Scene::EnvLocation::vf2 */
 uint F_006b3fd0(void)
 {
@@ -7735,42 +7768,6 @@ uint F_006baab0(unsigned int gen_a0)
   uint uVar1;
   
   uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x15c))))
-                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110),param_1);
-  return uVar1;
-}
-
-/* ref: FUN_006baad0 */
-uint F_006baad0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6baad0u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint uVar1;
-  
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x160))))
-                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110),param_1);
-  return uVar1;
-}
-
-/* ref: FUN_006baaf0 */
-uint F_006baaf0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6baaf0u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint uVar1;
-  
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x164))))
-                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110),param_1);
-  return uVar1;
-}
-
-/* ref: FUN_006bab10 */
-uint F_006bab10(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6bab10u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint uVar1;
-  
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x168))))
                     (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110),param_1);
   return uVar1;
 }

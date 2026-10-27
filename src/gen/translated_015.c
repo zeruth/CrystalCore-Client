@@ -1,5 +1,34 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_004d7550 */
+uint F_004d7550(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3)
+{
+  GEN_ENTER(0x4d7550u, gen_a0, gen_a1, gen_trace_f(gen_a2), gen_trace_f(gen_a3));
+  int param_1 = (int)gen_a0;
+  int * param_2 = (int *)(uintptr_t)gen_a1;
+  float param_3 = (float)gen_a2;
+  float param_4 = (float)gen_a3;
+  __declspec(align(16)) undefined1 gen_frame[0x20];
+  int iVar1;
+  int iVar2;
+  int * piVar3;
+  uint uVar4;
+  
+  (*(uint *)(gen_frame + 0x18)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x1c);
+  iVar1 = param_2[2];
+  iVar2 = *param_2;
+  (*(int *)(gen_frame + 0x4)) = param_2[1];
+  (*(int *)(gen_frame + 0xc)) = param_2[3] - param_2[1];
+  piVar3 = *(int * PTR32 *)(param_1 + 0x1c);
+  (*(float *)(gen_frame + 0x10)) = param_3;
+  (*(int *)(gen_frame + 0x0)) = iVar2;
+  (*(int *)(gen_frame + 0x8)) = iVar1 - iVar2;
+  (*(float *)(gen_frame + 0x14)) = param_4;
+  uVar4 = ((code *)*(gen_code32 *)(*piVar3 + 0xbc))(piVar3,&(*(int *)(gen_frame + 0x0)));
+  F_00c47745((*(uint *)(gen_frame + 0x18)) ^ (uint)(uint)(gen_frame + 0x1c));
+  return uVar4;
+}
+
 /* ref: FUN_004d75c0 */
 uint F_004d75c0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -10818,17 +10847,5 @@ uint F_004e3060(unsigned int gen_a0)
   
   uVar1 = ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 8))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8),param_1,0x10);
   return uVar1;
-}
-
-/* ref: FUN_004e30a0 */
-uint F_004e30a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4e30a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  if (param_1 < (uint)(*(int *)((int)this + 0x10) - *(int *)((int)this + 0xc) >> 2)) {
-    return *((uint *)GEN_TOP((*(int *)((int)this + 0xc) + param_1 * 4)));
-  }
-  return 0;
 }
 
