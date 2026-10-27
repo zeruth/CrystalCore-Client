@@ -1,6 +1,7 @@
 """portrun.py [secs]: run the port the way shadow.ps1 runs the reference, its argv[0] the reference's
 path (CRYSTALCORE_REF, the shadow copy) so the C runtime parses the same command line, in the
-environment shadow.ps1 set (inherited untouched). A window capture every 10 s into
+environment shadow.ps1 set (inherited untouched). CC_PORT_EXE runs another build of the port
+(cmake-build-release/bin/CrystalCore.exe, CLion's) in place of rhipper.json's. A window capture every 10 s into
 build/pipeline/port-NN.png (tools/winshot.ps1); the run's log in build/pipeline/run.log."""
 import json, os, subprocess, sys, time
 from pathlib import Path
@@ -15,7 +16,8 @@ args = [x.replace("54994", lobby) if lobby else x for x in cfg["run"]["args"]]
 cmdline = " ".join([f'"{ref}"'] + [f'"{x}"' if " " in x else x for x in args])
 OUT.mkdir(parents=True, exist_ok=True)
 log = open(OUT / "run.log", "w", encoding="utf-8", errors="replace")
-p = subprocess.Popen(cmdline, executable=str(ROOT / cfg["run"]["exe"]), cwd=ROOT / cfg["run"]["cwd"],
+exe = os.environ.get("CC_PORT_EXE") or str(ROOT / cfg["run"]["exe"])    # another build of the port (CLion's)
+p = subprocess.Popen(cmdline, executable=exe, cwd=ROOT / cfg["run"]["cwd"],
                      stdout=log, stderr=subprocess.STDOUT, stdin=subprocess.DEVNULL)
 t0, k = time.time(), 0
 while time.time() - t0 < secs and p.poll() is None:
