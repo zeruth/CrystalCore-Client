@@ -1,365 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0107b5c0 */
-uint F_0107b5c0(void)
-{
-  GEN_ENTER(0x107b5c0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d660)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b5d0 */
-uint F_0107b5d0(void)
-{
-  GEN_ENTER(0x107b5d0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d670)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b5e0 */
-uint F_0107b5e0(void)
-{
-  GEN_ENTER(0x107b5e0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d680)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b5f0 */
-uint F_0107b5f0(void)
-{
-  GEN_ENTER(0x107b5f0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d690)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b600 */
-uint F_0107b600(void)
-{
-  GEN_ENTER(0x107b600u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6a0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b610 */
-uint F_0107b610(void)
-{
-  GEN_ENTER(0x107b610u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6b0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b620 */
-uint F_0107b620(void)
-{
-  GEN_ENTER(0x107b620u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6c0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b630 */
-uint F_0107b630(void)
-{
-  GEN_ENTER(0x107b630u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6d0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b640 */
-uint F_0107b640(void)
-{
-  GEN_ENTER(0x107b640u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6e0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b650 */
-uint F_0107b650(void)
-{
-  GEN_ENTER(0x107b650u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6f0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b660 */
-uint F_0107b660(void)
-{
-  GEN_ENTER(0x107b660u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d700)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b670 */
-uint F_0107b670(void)
-{
-  GEN_ENTER(0x107b670u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d710)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b680 */
-uint F_0107b680(void)
-{
-  GEN_ENTER(0x107b680u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d720)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b690 */
-uint F_0107b690(void)
-{
-  GEN_ENTER(0x107b690u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d730)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6a0 */
-uint F_0107b6a0(void)
-{
-  GEN_ENTER(0x107b6a0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d740)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6b0 */
-uint F_0107b6b0(void)
-{
-  GEN_ENTER(0x107b6b0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d750)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6c0 */
-uint F_0107b6c0(void)
-{
-  GEN_ENTER(0x107b6c0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d760)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6d0 */
-uint F_0107b6d0(void)
-{
-  GEN_ENTER(0x107b6d0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d770)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6e0 */
-uint F_0107b6e0(void)
-{
-  GEN_ENTER(0x107b6e0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d780)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6f0 */
-uint F_0107b6f0(void)
-{
-  GEN_ENTER(0x107b6f0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d790)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b700 */
-uint F_0107b700(void)
-{
-  GEN_ENTER(0x107b700u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7a0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b710 */
-uint F_0107b710(void)
-{
-  GEN_ENTER(0x107b710u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7b0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b720 */
-uint F_0107b720(void)
-{
-  GEN_ENTER(0x107b720u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7c0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b730 */
-uint F_0107b730(void)
-{
-  GEN_ENTER(0x107b730u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7d0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b740 */
-uint F_0107b740(void)
-{
-  GEN_ENTER(0x107b740u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7e0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b750 */
-uint F_0107b750(void)
-{
-  GEN_ENTER(0x107b750u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7f0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b760 */
-uint F_0107b760(void)
-{
-  GEN_ENTER(0x107b760u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d800)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b770 */
-uint F_0107b770(void)
-{
-  GEN_ENTER(0x107b770u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d810)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b780 */
-uint F_0107b780(void)
-{
-  GEN_ENTER(0x107b780u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d820)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b790 */
-uint F_0107b790(void)
-{
-  GEN_ENTER(0x107b790u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d830)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7a0 */
-uint F_0107b7a0(void)
-{
-  GEN_ENTER(0x107b7a0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d840)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7b0 */
-uint F_0107b7b0(void)
-{
-  GEN_ENTER(0x107b7b0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d850)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7c0 */
-uint F_0107b7c0(void)
-{
-  GEN_ENTER(0x107b7c0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d860)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7d0 */
-uint F_0107b7d0(void)
-{
-  GEN_ENTER(0x107b7d0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d870)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7e0 */
-uint F_0107b7e0(void)
-{
-  GEN_ENTER(0x107b7e0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d880)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7f0 */
-uint F_0107b7f0(void)
-{
-  GEN_ENTER(0x107b7f0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d890)));
-  return uVar1;
-}
-
 /* ref: FUN_0107b800 */
 uint F_0107b800(void)
 {
@@ -3986,6 +3626,330 @@ unsigned int F_0107d700(void)
 {
   GEN_ENTER(0x107d700u, 0u, 0u, 0u, 0u);
   REFG(undefined * PTR32, 0x136aef4) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d710 */
+unsigned int F_0107d710(void)
+{
+  GEN_ENTER(0x107d710u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b480) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d720 */
+unsigned int F_0107d720(void)
+{
+  GEN_ENTER(0x107d720u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b484) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d730 */
+unsigned int F_0107d730(void)
+{
+  GEN_ENTER(0x107d730u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b488) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d740 */
+unsigned int F_0107d740(void)
+{
+  GEN_ENTER(0x107d740u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b48c) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d750 */
+unsigned int F_0107d750(void)
+{
+  GEN_ENTER(0x107d750u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b490) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d760 */
+unsigned int F_0107d760(void)
+{
+  GEN_ENTER(0x107d760u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b850) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d770 */
+unsigned int F_0107d770(void)
+{
+  GEN_ENTER(0x107d770u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b854) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d780 */
+unsigned int F_0107d780(void)
+{
+  GEN_ENTER(0x107d780u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b858) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d790 */
+unsigned int F_0107d790(void)
+{
+  GEN_ENTER(0x107d790u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b85c) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d7a0 */
+unsigned int F_0107d7a0(void)
+{
+  GEN_ENTER(0x107d7a0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b860) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d7b0 */
+unsigned int F_0107d7b0(void)
+{
+  GEN_ENTER(0x107d7b0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b864) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d7c0 */
+unsigned int F_0107d7c0(void)
+{
+  GEN_ENTER(0x107d7c0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136b868) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d7d0 */
+unsigned int F_0107d7d0(void)
+{
+  GEN_ENTER(0x107d7d0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136bda8) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d7e0 */
+unsigned int F_0107d7e0(void)
+{
+  GEN_ENTER(0x107d7e0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136bdac) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d7f0 */
+unsigned int F_0107d7f0(void)
+{
+  GEN_ENTER(0x107d7f0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136bdb0) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d800 */
+unsigned int F_0107d800(void)
+{
+  GEN_ENTER(0x107d800u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136bdb4) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d810 */
+unsigned int F_0107d810(void)
+{
+  GEN_ENTER(0x107d810u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136bdb8) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d820 */
+unsigned int F_0107d820(void)
+{
+  GEN_ENTER(0x107d820u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136bdbc) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d830 */
+unsigned int F_0107d830(void)
+{
+  GEN_ENTER(0x107d830u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136bdc0) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d840 */
+unsigned int F_0107d840(void)
+{
+  GEN_ENTER(0x107d840u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c22c) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d850 */
+unsigned int F_0107d850(void)
+{
+  GEN_ENTER(0x107d850u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c230) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d860 */
+unsigned int F_0107d860(void)
+{
+  GEN_ENTER(0x107d860u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c234) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d870 */
+unsigned int F_0107d870(void)
+{
+  GEN_ENTER(0x107d870u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c238) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d880 */
+unsigned int F_0107d880(void)
+{
+  GEN_ENTER(0x107d880u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c52c) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d890 */
+unsigned int F_0107d890(void)
+{
+  GEN_ENTER(0x107d890u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c530) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d8a0 */
+unsigned int F_0107d8a0(void)
+{
+  GEN_ENTER(0x107d8a0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c534) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d8b0 */
+unsigned int F_0107d8b0(void)
+{
+  GEN_ENTER(0x107d8b0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c538) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d8c0 */
+unsigned int F_0107d8c0(void)
+{
+  GEN_ENTER(0x107d8c0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c53c) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d8d0 */
+unsigned int F_0107d8d0(void)
+{
+  GEN_ENTER(0x107d8d0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c540) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d8e0 */
+unsigned int F_0107d8e0(void)
+{
+  GEN_ENTER(0x107d8e0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c544) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d8f0 */
+unsigned int F_0107d8f0(void)
+{
+  GEN_ENTER(0x107d8f0u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c548) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d900 */
+unsigned int F_0107d900(void)
+{
+  GEN_ENTER(0x107d900u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c54c) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d910 */
+unsigned int F_0107d910(void)
+{
+  GEN_ENTER(0x107d910u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c550) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d920 */
+unsigned int F_0107d920(void)
+{
+  GEN_ENTER(0x107d920u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c554) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d930 */
+unsigned int F_0107d930(void)
+{
+  GEN_ENTER(0x107d930u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c558) =
+       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
+  return 0;
+}
+
+/* ref: FUN_0107d940 */
+unsigned int F_0107d940(void)
+{
+  GEN_ENTER(0x107d940u, 0u, 0u, 0u, 0u);
+  REFG(undefined * PTR32, 0x136c55c) =
        ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
   return 0;
 }

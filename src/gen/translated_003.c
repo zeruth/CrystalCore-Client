@@ -1,14 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0042a7e0 */
-uint F_0042a7e0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x42a7e0u, gen_a0, gen_a1, 0u, 0u);
-  int * in_ecx = (int *)(uintptr_t)gen_a0;
-  int param_2 = (int)gen_a1;
-  return *in_ecx + param_2;
-}
-
 /* ref: FUN_0042a7f0 */
 uint F_0042a7f0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -11697,6 +11688,61 @@ LAB_00435fd0: ;
         pbVar6 = param_1;
         pbVar8 = pbVar7;
       } while (uVar4 < *(uint *)((int)this + 8));
+    }
+  }
+  return 0;
+}
+
+/* ref: FUN_00436010 */
+uint F_00436010(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x436010u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  byte * param_1 = (byte *)(uintptr_t)gen_a1;
+  byte bVar1;
+  int * piVar2;
+  uint uVar3;
+  int iVar4;
+  byte * pbVar5;
+  byte * pbVar6;
+  byte * pbVar7;
+  bool bVar8;
+  
+  piVar2 = ((int *)GEN_TOP(((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 4) + 0x1c))))(*(int * PTR32 *)((int)this + 4))));
+  uVar3 = ((code *)*(gen_code32 *)(*piVar2 + 0x28))(piVar2,(uint)*(byte *)((int)this + 0x11));
+  if (uVar3 != 0) {
+    uVar3 = 0;
+    if (*(uint *)((int)this + 8) != 0) {
+      pbVar6 = ((byte *)GEN_TOP((*(int *)((int)this + 0x18) + 0x1c)));
+      pbVar5 = param_1;
+      pbVar7 = pbVar6;
+LAB_00436050: ;
+      do {
+        bVar1 = *pbVar6;
+        bVar8 = bVar1 < *pbVar5;
+        if (bVar1 == *pbVar5) {
+          if (bVar1 != 0) {
+            bVar1 = pbVar6[1];
+            bVar8 = bVar1 < pbVar5[1];
+            if (bVar1 != pbVar5[1]) goto LAB_00436070;
+            pbVar6 = pbVar6 + 2;
+            pbVar5 = pbVar5 + 2;
+            if (bVar1 != 0) goto LAB_00436050;
+          }
+          iVar4 = 0;
+        }
+        else {
+LAB_00436070: ;
+          iVar4 = (1 - (uint)bVar8) - (uint)(bVar8 != 0);
+        }
+        if (iVar4 == 0) {
+          return *(int *)((int)this + 0x18) + uVar3 * 0x48;
+        }
+        uVar3 = uVar3 + 1;
+        pbVar6 = pbVar7 + 0x48;
+        pbVar5 = param_1;
+        pbVar7 = pbVar6;
+      } while (uVar3 < *(uint *)((int)this + 8));
     }
   }
   return 0;

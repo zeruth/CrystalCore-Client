@@ -8,10 +8,11 @@ uint F_00415190(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) {
 byte F_00422230(void) { GEN_ENTER(0x422230u, 0u, 0u, 0u, 0u); GenUnimplemented(0x422230); return 0; }
 byte F_00422240(void) { GEN_ENTER(0x422240u, 0u, 0u, 0u, 0u); GenUnimplemented(0x422240); return 0; }
 byte F_004225c0(void) { GEN_ENTER(0x4225c0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4225c0); return 0; }
-uint F_00424d41(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, double gen_a3, unsigned int gen_a4) { GEN_ENTER(0x424d41u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x424d41); return 0; }
+unsigned int F_00424d41(void) { GEN_ENTER(0x424d41u, 0u, 0u, 0u, 0u); GenUnimplemented(0x424d41); return 0; }
 uint F_004632c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x4632c0u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x4632c0); return 0; }
 uint F_00464400(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x464400u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x464400); return 0; }
 byte F_0046d690(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x46d690u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x46d690); return 0; }
+ulonglong F_00474753(void) { GEN_ENTER(0x474753u, 0u, 0u, 0u, 0u); GenUnimplemented(0x474753); return 0; }
 byte F_00474ea0(void) { GEN_ENTER(0x474ea0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x474ea0); return 0; }
 byte F_00474ef0(void) { GEN_ENTER(0x474ef0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x474ef0); return 0; }
 byte F_00474f00(void) { GEN_ENTER(0x474f00u, 0u, 0u, 0u, 0u); GenUnimplemented(0x474f00); return 0; }
@@ -47,7 +48,6 @@ uint F_0048b290(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) {
 uint F_0048b500(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x48b500u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x48b500); return 0; }
 uint F_0048b7a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x48b7a0u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x48b7a0); return 0; }
 uint F_0048c090(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x48c090u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x48c090); return 0; }
-uint F_00490050(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { GEN_ENTER(0x490050u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x490050); return 0; }
 uint F_00495810(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x495810u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x495810); return 0; }
 uint F_00496050(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x496050u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x496050); return 0; }
 uint F_00496320(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x496320u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x496320); return 0; }
@@ -82,12 +82,14 @@ float10 F_004c6c60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2
 byte F_004cc100(void) { GEN_ENTER(0x4cc100u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4cc100); return 0; }
 byte F_004cc120(void) { GEN_ENTER(0x4cc120u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4cc120); return 0; }
 byte F_004cc130(void) { GEN_ENTER(0x4cc130u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4cc130); return 0; }
-byte F_004d0050(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x4d0050u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x4d0050); return 0; }
 byte F_004e1df0(void) { GEN_ENTER(0x4e1df0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4e1df0); return 0; }
 byte F_004e1e00(void) { GEN_ENTER(0x4e1e00u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4e1e00); return 0; }
 byte F_004e1e20(void) { GEN_ENTER(0x4e1e20u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4e1e20); return 0; }
 byte F_004e1e30(void) { GEN_ENTER(0x4e1e30u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4e1e30); return 0; }
+unsigned int F_004e4946(void) { GEN_ENTER(0x4e4946u, 0u, 0u, 0u, 0u); GenUnimplemented(0x4e4946); return 0; }
+unsigned int F_004e5953(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x4e5953u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x4e5953); return 0; }
 uint F_004ec5b0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x4ec5b0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x4ec5b0); return 0; }
+int F_00504f54(void) { GEN_ENTER(0x504f54u, 0u, 0u, 0u, 0u); GenUnimplemented(0x504f54); return 0; }
 float F_00506fa0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x506fa0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x506fa0); return 0.0; }
 byte F_0051aa30(void) { GEN_ENTER(0x51aa30u, 0u, 0u, 0u, 0u); GenUnimplemented(0x51aa30); return 0; }
 byte F_0051aa40(void) { GEN_ENTER(0x51aa40u, 0u, 0u, 0u, 0u); GenUnimplemented(0x51aa40); return 0; }
@@ -103,7 +105,8 @@ uint F_00533aa0(unsigned int gen_a0) { GEN_ENTER(0x533aa0u, gen_a0, 0u, 0u, 0u);
 uint F_00533bd0(unsigned int gen_a0) { GEN_ENTER(0x533bd0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x533bd0); return 0; }
 uint F_00533c90(unsigned int gen_a0) { GEN_ENTER(0x533c90u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x533c90); return 0; }
 float10 F_00535130(unsigned int gen_a0, unsigned int gen_a1, float gen_a2) { GEN_ENTER(0x535130u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x535130); return 0.0; }
-uint F_00535542(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, float gen_a4, unsigned int gen_a5) { GEN_ENTER(0x535542u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x535542); return 0; }
+unsigned int F_00535542(void) { GEN_ENTER(0x535542u, 0u, 0u, 0u, 0u); GenUnimplemented(0x535542); return 0; }
+int F_00535953(void) { GEN_ENTER(0x535953u, 0u, 0u, 0u, 0u); GenUnimplemented(0x535953); return 0; }
 float F_005363b0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x5363b0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x5363b0); return 0.0; }
 uint F_00536f30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x536f30u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x536f30); return 0; }
 float10 F_00539e30(unsigned int gen_a0, float gen_a1) { GEN_ENTER(0x539e30u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x539e30); return 0.0; }
@@ -117,7 +120,7 @@ float10 F_00541110(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2
 float F_00542c10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x542c10u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x542c10); return 0.0; }
 float F_00542cb0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x542cb0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x542cb0); return 0.0; }
 float F_00544a60(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x544a60u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x544a60); return 0.0; }
-unsigned int F_00544e43(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { GEN_ENTER(0x544e43u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x544e43); return 0; }
+unsigned int F_00544e43(unsigned int gen_a0) { GEN_ENTER(0x544e43u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x544e43); return 0; }
 float F_00545bb0(unsigned int gen_a0) { GEN_ENTER(0x545bb0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x545bb0); return 0.0; }
 byte F_00546350(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x546350u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x546350); return 0; }
 uint F_005476b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x5476b0u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x5476b0); return 0; }
@@ -163,6 +166,7 @@ byte F_005bee40(void) { GEN_ENTER(0x5bee40u, 0u, 0u, 0u, 0u); GenUnimplemented(0
 byte F_005bef90(void) { GEN_ENTER(0x5bef90u, 0u, 0u, 0u, 0u); GenUnimplemented(0x5bef90); return 0; }
 byte F_005bf2d0(void) { GEN_ENTER(0x5bf2d0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x5bf2d0); return 0; }
 byte F_005bf2e0(void) { GEN_ENTER(0x5bf2e0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x5bf2e0); return 0; }
+undefined1 F_005d6e5b(void) { GEN_ENTER(0x5d6e5bu, 0u, 0u, 0u, 0u); GenUnimplemented(0x5d6e5b); return 0; }
 float F_005d8ee0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x5d8ee0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x5d8ee0); return 0.0; }
 uint F_005e5e60(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x5e5e60u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x5e5e60); return 0; }
 float10 F_005ea960(unsigned int gen_a0, float gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x5ea960u, gen_a0, 0u, gen_a2, gen_a3); GenUnimplemented(0x5ea960); return 0.0; }
@@ -186,18 +190,14 @@ byte F_00606370(void) { GEN_ENTER(0x606370u, 0u, 0u, 0u, 0u); GenUnimplemented(0
 float10 F_0060a0b0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2, float gen_a3, float gen_a4) { GEN_ENTER(0x60a0b0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x60a0b0); return 0.0; }
 float10 F_0061efc0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { GEN_ENTER(0x61efc0u, gen_a0, 0u, gen_a2, 0u); GenUnimplemented(0x61efc0); return 0.0; }
 uint F_00625bc0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x625bc0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x625bc0); return 0; }
-byte F_0063002e(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x63002eu, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x63002e); return 0; }
-byte F_00630061(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x630061u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x630061); return 0; }
+unsigned int F_00626f6a(void) { GEN_ENTER(0x626f6au, 0u, 0u, 0u, 0u); GenUnimplemented(0x626f6a); return 0; }
 float F_006302f0(unsigned int gen_a0) { GEN_ENTER(0x6302f0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6302f0); return 0.0; }
 byte F_00635040(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { GEN_ENTER(0x635040u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x635040); return 0; }
-unsigned int F_00636573(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3, unsigned int gen_a4) { GEN_ENTER(0x636573u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x636573); return 0; }
+unsigned int F_00636573(void) { GEN_ENTER(0x636573u, 0u, 0u, 0u, 0u); GenUnimplemented(0x636573); return 0; }
+unsigned int F_0063704e(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x63704eu, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x63704e); return 0; }
 float F_0063f750(unsigned int gen_a0) { GEN_ENTER(0x63f750u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x63f750); return 0.0; }
-float10 F_0064006e(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, double gen_a4, ...) { GEN_ENTER(0x64006eu, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x64006e); return 0.0; }
 float F_00640bd0(unsigned int gen_a0) { GEN_ENTER(0x640bd0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x640bd0); return 0.0; }
-unsigned int F_00650044(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { GEN_ENTER(0x650044u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x650044); return 0; }
-unsigned int F_00650046(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { GEN_ENTER(0x650046u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x650046); return 0; }
-unsigned int F_00650057(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8) { GEN_ENTER(0x650057u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x650057); return 0; }
-unsigned int F_0065645f(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { GEN_ENTER(0x65645fu, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x65645f); return 0; }
+unsigned int F_0065645f(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x65645fu, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x65645f); return 0; }
 float F_00657f80(unsigned int gen_a0) { GEN_ENTER(0x657f80u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x657f80); return 0.0; }
 byte F_006656a0(void) { GEN_ENTER(0x6656a0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x6656a0); return 0; }
 byte F_006656c0(void) { GEN_ENTER(0x6656c0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x6656c0); return 0; }
@@ -212,8 +212,6 @@ unsigned int F_0067002f(unsigned int gen_a0, unsigned int gen_a1, unsigned int g
 uint F_00679b80(unsigned int gen_a0, float gen_a1) { GEN_ENTER(0x679b80u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x679b80); return 0; }
 uint F_006846f0(unsigned int gen_a0) { GEN_ENTER(0x6846f0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6846f0); return 0; }
 float10 F_00688f10(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { GEN_ENTER(0x688f10u, gen_a0, 0u, gen_a2, 0u); GenUnimplemented(0x688f10); return 0.0; }
-uint F_00690070(void) { GEN_ENTER(0x690070u, 0u, 0u, 0u, 0u); GenUnimplemented(0x690070); return 0; }
-uint F_00690077(void) { GEN_ENTER(0x690077u, 0u, 0u, 0u, 0u); GenUnimplemented(0x690077); return 0; }
 uint F_00693180(unsigned int gen_a0, float gen_a1) { GEN_ENTER(0x693180u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x693180); return 0; }
 uint F_00696610(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3) { GEN_ENTER(0x696610u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x696610); return 0; }
 uint F_006a1430(unsigned int gen_a0) { GEN_ENTER(0x6a1430u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6a1430); return 0; }
@@ -227,27 +225,25 @@ byte F_006b0710(void) { GEN_ENTER(0x6b0710u, 0u, 0u, 0u, 0u); GenUnimplemented(0
 float F_006b14a0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6b14a0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6b14a0); return 0.0; }
 unsigned int F_006b656e(unsigned int gen_a0) { GEN_ENTER(0x6b656eu, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6b656e); return 0; }
 float F_006c5980(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x6c5980u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x6c5980); return 0.0; }
-uint F_006c6c61(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6c6c61u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6c6c61); return 0; }
-uint F_006c7442(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x6c7442u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x6c7442); return 0; }
+unsigned int F_006c616c(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6c616cu, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6c616c); return 0; }
+undefined4 F_006c6f63(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x6c6f63u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x6c6f63); return 0; }
+undefined4 F_006c7442(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6c7442u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6c7442); return 0; }
 unsigned int F_006c74f0(void) { GEN_ENTER(0x6c74f0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x6c74f0); return 0; }
 unsigned int F_006c754a(void) { GEN_ENTER(0x6c754au, 0u, 0u, 0u, 0u); GenUnimplemented(0x6c754a); return 0; }
-uint F_006d7550(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6d7550u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6d7550); return 0; }
-uint F_006d7553(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x6d7553u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x6d7553); return 0; }
-uint F_006d756e(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { GEN_ENTER(0x6d756eu, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x6d756e); return 0; }
+unsigned int F_006d7553(unsigned int gen_a0) { GEN_ENTER(0x6d7553u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6d7553); return 0; }
+unsigned int F_006d756e(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6d756eu, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6d756e); return 0; }
 uint F_006e3540(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { GEN_ENTER(0x6e3540u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x6e3540); return 0; }
 unsigned int F_006e5d90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x6e5d90u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x6e5d90); return 0; }
-unsigned int F_006e7550(unsigned int gen_a0) { GEN_ENTER(0x6e7550u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6e7550); return 0; }
+unsigned int F_006e7550(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6e7550u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6e7550); return 0; }
 unsigned int F_006e7553(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6e7553u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6e7553); return 0; }
 unsigned int F_006e7764(unsigned int gen_a0) { GEN_ENTER(0x6e7764u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6e7764); return 0; }
-uint F_006e795f(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x6e795fu, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x6e795f); return 0; }
-uint F_006f0063(unsigned int gen_a0) { GEN_ENTER(0x6f0063u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6f0063); return 0; }
-uint F_006f0069(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6f0069u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6f0069); return 0; }
+uint F_006e795f(void) { GEN_ENTER(0x6e795fu, 0u, 0u, 0u, 0u); GenUnimplemented(0x6e795f); return 0; }
 float F_006f92d0(unsigned int gen_a0) { GEN_ENTER(0x6f92d0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x6f92d0); return 0.0; }
 uint F_006ff850(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6ff850u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6ff850); return 0; }
 uint F_006ff8a0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6ff8a0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6ff8a0); return 0; }
 uint F_006ff8f0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x6ff8f0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x6ff8f0); return 0; }
-uint F_00700050(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x700050u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x700050); return 0; }
-uint F_00707845(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x707845u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x707845); return 0; }
+unsigned int F_00707845(void) { GEN_ENTER(0x707845u, 0u, 0u, 0u, 0u); GenUnimplemented(0x707845); return 0; }
+undefined4 F_00716166(void) { GEN_ENTER(0x716166u, 0u, 0u, 0u, 0u); GenUnimplemented(0x716166); return 0; }
 byte F_0072af90(void) { GEN_ENTER(0x72af90u, 0u, 0u, 0u, 0u); GenUnimplemented(0x72af90); return 0; }
 byte F_0072afb0(void) { GEN_ENTER(0x72afb0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x72afb0); return 0; }
 byte F_0072afc0(void) { GEN_ENTER(0x72afc0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x72afc0); return 0; }
@@ -280,25 +276,20 @@ byte F_0072db10(void) { GEN_ENTER(0x72db10u, 0u, 0u, 0u, 0u); GenUnimplemented(0
 unsigned int F_00730068(void) { GEN_ENTER(0x730068u, 0u, 0u, 0u, 0u); GenUnimplemented(0x730068); return 0; }
 unsigned int F_00730069(unsigned int gen_a0) { GEN_ENTER(0x730069u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x730069); return 0; }
 unsigned int F_0073006d(unsigned int gen_a0) { GEN_ENTER(0x73006du, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x73006d); return 0; }
-byte F_00736363(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x736363u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x736363); return 0; }
-byte F_00736572(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x736572u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x736572); return 0; }
-byte F_00736579(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x736579u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x736579); return 0; }
-uint F_00736860(void) { GEN_ENTER(0x736860u, 0u, 0u, 0u, 0u); GenUnimplemented(0x736860); return 0; }
-uint F_00736f63(unsigned int gen_a0) { GEN_ENTER(0x736f63u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x736f63); return 0; }
-uint F_0074006e(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x74006eu, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x74006e); return 0; }
-uint F_00740073(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9) { GEN_ENTER(0x740073u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x740073); return 0; }
+undefined4 F_00736363(void) { GEN_ENTER(0x736363u, 0u, 0u, 0u, 0u); GenUnimplemented(0x736363); return 0; }
+undefined4 F_00736572(void) { GEN_ENTER(0x736572u, 0u, 0u, 0u, 0u); GenUnimplemented(0x736572); return 0; }
+undefined4 F_00736579(unsigned int gen_a0) { GEN_ENTER(0x736579u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x736579); return 0; }
+undefined4 F_00736863(void) { GEN_ENTER(0x736863u, 0u, 0u, 0u, 0u); GenUnimplemented(0x736863); return 0; }
+undefined4 F_00736f63(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x736f63u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x736f63); return 0; }
 unsigned int F_00746863(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x746863u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x746863); return 0; }
-uint F_00746e69(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x746e69u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x746e69); return 0; }
-uint F_00750050(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x750050u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x750050); return 0; }
-uint F_00750053(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x750053u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x750053); return 0; }
+unsigned int F_00746e69(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x746e69u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x746e69); return 0; }
 byte F_00753440(void) { GEN_ENTER(0x753440u, 0u, 0u, 0u, 0u); GenUnimplemented(0x753440); return 0; }
 byte F_00753d30(void) { GEN_ENTER(0x753d30u, 0u, 0u, 0u, 0u); GenUnimplemented(0x753d30); return 0; }
-uint F_00766c67(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x766c67u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x766c67); return 0; }
-uint F_00766f66(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x766f66u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x766f66); return 0; }
+unsigned int F_00766c67(void) { GEN_ENTER(0x766c67u, 0u, 0u, 0u, 0u); GenUnimplemented(0x766c67); return 0; }
+unsigned int F_00766f66(void) { GEN_ENTER(0x766f66u, 0u, 0u, 0u, 0u); GenUnimplemented(0x766f66); return 0; }
 uint F_0076e390(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x76e390u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x76e390); return 0; }
 uint F_00770580(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x770580u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x770580); return 0; }
-unsigned int F_00776f60(void) { GEN_ENTER(0x776f60u, 0u, 0u, 0u, 0u); GenUnimplemented(0x776f60); return 0; }
-uint F_00780040(void) { GEN_ENTER(0x780040u, 0u, 0u, 0u, 0u); GenUnimplemented(0x780040); return 0; }
+unsigned int F_00776f70(unsigned int gen_a0) { GEN_ENTER(0x776f70u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x776f70); return 0; }
 double F_0079aaf0(unsigned int gen_a0) { GEN_ENTER(0x79aaf0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x79aaf0); return 0.0; }
 unsigned int F_0079dbe0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x79dbe0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x79dbe0); return 0; }
 ushort F_007a8e40(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x7a8e40u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x7a8e40); return 0; }
@@ -309,6 +300,7 @@ uint F_007d3710(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
 unsigned int F_007dd9b0(unsigned int gen_a0) { GEN_ENTER(0x7dd9b0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x7dd9b0); return 0; }
 uint F_007e89c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x7e89c0u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x7e89c0); return 0; }
 uint F_007f7d10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0x7f7d10u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0x7f7d10); return 0; }
+unsigned int F_008080e3(void) { GEN_ENTER(0x8080e3u, 0u, 0u, 0u, 0u); GenUnimplemented(0x8080e3); return 0; }
 uint F_00823e00(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x823e00u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x823e00); return 0; }
 uint F_008267b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { GEN_ENTER(0x8267b0u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x8267b0); return 0; }
 uint F_0084d020(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x84d020u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x84d020); return 0; }
@@ -438,6 +430,7 @@ float F_009ba9f0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x9ba9f0u
 uint F_009be170(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5, float gen_a6) { GEN_ENTER(0x9be170u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x9be170); return 0; }
 uint F_009be310(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5, float gen_a6) { GEN_ENTER(0x9be310u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x9be310); return 0; }
 uint F_009be460(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, float gen_a6, float gen_a7) { GEN_ENTER(0x9be460u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x9be460); return 0; }
+unsigned int F_009c80e2(void) { GEN_ENTER(0x9c80e2u, 0u, 0u, 0u, 0u); GenUnimplemented(0x9c80e2); return 0; }
 byte F_009c86c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4) { GEN_ENTER(0x9c86c0u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x9c86c0); return 0; }
 byte F_009c87f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { GEN_ENTER(0x9c87f0u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0x9c87f0); return 0; }
 uint F_009c9850(unsigned int gen_a0) { GEN_ENTER(0x9c9850u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0x9c9850); return 0; }
@@ -481,6 +474,7 @@ uint F_009fee70(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x9fee70u,
 unsigned int F_009ff590(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x9ff590u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x9ff590); return 0; }
 byte F_00a06a40(void) { GEN_ENTER(0xa06a40u, 0u, 0u, 0u, 0u); GenUnimplemented(0xa06a40); return 0; }
 byte F_00a06a50(void) { GEN_ENTER(0xa06a50u, 0u, 0u, 0u, 0u); GenUnimplemented(0xa06a50); return 0; }
+unsigned int F_00a081ee(void) { GEN_ENTER(0xa081eeu, 0u, 0u, 0u, 0u); GenUnimplemented(0xa081ee); return 0; }
 byte F_00a08d70(void) { GEN_ENTER(0xa08d70u, 0u, 0u, 0u, 0u); GenUnimplemented(0xa08d70); return 0; }
 byte F_00a0a5e0(void) { GEN_ENTER(0xa0a5e0u, 0u, 0u, 0u, 0u); GenUnimplemented(0xa0a5e0); return 0; }
 uint F_00a0d2f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0xa0d2f0u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0xa0d2f0); return 0; }
@@ -652,6 +646,7 @@ unsigned int F_00bf0980() { GEN_ENTER(0xbf0980u, 0u, 0u, 0u, 0u); GenUnimplement
 uint F_00bf09c0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0xbf09c0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0xbf09c0); return 0; }
 byte F_00bf0a60(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0xbf0a60u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0xbf0a60); return 0; }
 float10 F_00bfb9d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3, float gen_a4) { GEN_ENTER(0xbfb9d0u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0xbfb9d0); return 0.0; }
+unsigned int F_00bfbbef(unsigned int gen_a0) { GEN_ENTER(0xbfbbefu, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xbfbbef); return 0; }
 byte F_00bfbd10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5) { GEN_ENTER(0xbfbd10u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0xbfbd10); return 0; }
 unsigned int F_00bfdb00(unsigned int gen_a0) { GEN_ENTER(0xbfdb00u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xbfdb00); return 0; }
 uint F_00bfedc0(unsigned int gen_a0) { GEN_ENTER(0xbfedc0u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xbfedc0); return 0; }
@@ -701,7 +696,7 @@ uint F_00c5a7e4(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
 unsigned int F_00c5aaa6(unsigned int gen_a0) { GEN_ENTER(0xc5aaa6u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xc5aaa6); return 0; }
 uint F_00c5b860(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0xc5b860u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0xc5b860); return 0; }
 unsigned int F_00c5b8a5(unsigned int gen_a0) { GEN_ENTER(0xc5b8a5u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xc5b8a5); return 0; }
-unsigned int F_00c5e9e1(unsigned int gen_a0) { GEN_ENTER(0xc5e9e1u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xc5e9e1); return 0; }
+float10 F_00c5e9e1(unsigned int gen_a0) { GEN_ENTER(0xc5e9e1u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xc5e9e1); return 0.0; }
 float10 F_00c5eb1e(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0xc5eb1eu, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0xc5eb1e); return 0.0; }
 unsigned int F_00c5ec37(unsigned int gen_a0, double gen_a1, unsigned int gen_a2) { GEN_ENTER(0xc5ec37u, gen_a0, 0u, gen_a2, 0u); GenUnimplemented(0xc5ec37); return 0; }
 unsigned int F_00c5ed0d(double gen_a0) { GEN_ENTER(0xc5ed0du, 0u, 0u, 0u, 0u); GenUnimplemented(0xc5ed0d); return 0; }
@@ -729,7 +724,6 @@ unsigned int F_00c6fab5(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x
 float10 F_00c6fdf0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0xc6fdf0u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0xc6fdf0); return 0.0; }
 float10 F_00c6fe09(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0xc6fe09u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0xc6fe09); return 0.0; }
 float10 F_00c6fe42(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0xc6fe42u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0xc6fe42); return 0.0; }
-float10 F_00c6fe91(double gen_a0) { GEN_ENTER(0xc6fe91u, 0u, 0u, 0u, 0u); GenUnimplemented(0xc6fe91); return 0.0; }
 float10 F_00c6fe98(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0xc6fe98u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0xc6fe98); return 0.0; }
 float10 F_00c6fec9(unsigned int gen_a0) { GEN_ENTER(0xc6fec9u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xc6fec9); return 0.0; }
 float10 F_00c6fedb(unsigned int gen_a0) { GEN_ENTER(0xc6fedbu, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xc6fedb); return 0.0; }
@@ -784,7 +778,6 @@ uint F_00cc6700(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) {
 uint F_00cc7f20(unsigned int gen_a0) { GEN_ENTER(0xcc7f20u, gen_a0, 0u, 0u, 0u); GenUnimplemented(0xcc7f20); return 0; }
 uint F_00cc7fd0(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0xcc7fd0u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0xcc7fd0); return 0; }
 uint F_00cc8040(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0xcc8040u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0xcc8040); return 0; }
-float10 F_00cccccc(double gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0xccccccu, 0u, gen_a1, gen_a2, 0u); GenUnimplemented(0xcccccc); return 0.0; }
 uint F_00cd2250(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { GEN_ENTER(0xcd2250u, gen_a0, 0u, gen_a2, 0u); GenUnimplemented(0xcd2250); return 0; }
 uint F_00cd24c0(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { GEN_ENTER(0xcd24c0u, gen_a0, 0u, gen_a2, 0u); GenUnimplemented(0xcd24c0); return 0; }
 uint F_00cd2590(unsigned int gen_a0, float gen_a1, unsigned int gen_a2) { GEN_ENTER(0xcd2590u, gen_a0, 0u, gen_a2, 0u); GenUnimplemented(0xcd2590); return 0; }
@@ -926,7 +919,7 @@ uint F_00ec2e60(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0xec2e60u,
 uint F_00ecb080(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { GEN_ENTER(0xecb080u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0xecb080); return 0; }
 uint F_00ecd440(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6) { GEN_ENTER(0xecd440u, gen_a0, gen_a1, gen_a2, gen_a3); GenUnimplemented(0xecd440); return 0; }
 byte F_00fba0d0(void) { GEN_ENTER(0xfba0d0u, 0u, 0u, 0u, 0u); GenUnimplemented(0xfba0d0); return 0; }
-byte F_00ff8cc6(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { GEN_ENTER(0xff8cc6u, gen_a0, gen_a1, gen_a2, 0u); GenUnimplemented(0xff8cc6); return 0; }
+unsigned int F_01000000(unsigned int gen_a0, unsigned int gen_a1) { GEN_ENTER(0x1000000u, gen_a0, gen_a1, 0u, 0u); GenUnimplemented(0x1000000); return 0; }
 unsigned int F_010508a0() { GEN_ENTER(0x10508a0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x10508a0); return 0; }
 unsigned int F_010508f0() { GEN_ENTER(0x10508f0u, 0u, 0u, 0u, 0u); GenUnimplemented(0x10508f0); return 0; }
 float F_010524c9(float gen_a0) { GEN_ENTER(0x10524c9u, 0u, 0u, 0u, 0u); GenUnimplemented(0x10524c9); return 0.0; }
