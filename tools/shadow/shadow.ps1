@@ -18,6 +18,11 @@
 param([Parameter(Mandatory)][ValidateSet("ref", "port")][string]$Which, [int]$Secs = 60, [int]$Max = 30000000,
       [string]$From = "")
 $root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
+# (one run at a time: a second shadow reference started beside a running one met the game's own
+# single-instance check, and both recordings were spoiled, 2026-10-27)
+if (Get-Process ffxiv_shadow, CrystalCore -ErrorAction SilentlyContinue) {
+    throw "a shadow run (ffxiv_shadow or CrystalCore) is still running: stop it first"
+}
 # Both runs start from the same saved state: the game's My Games folder put back from a pinned
 # copy before each, build\shadow-mygames (local: the player's own settings, not committed), made
 # from the folder as it is on the first run. Each run rewrites FFXIV.cfg, and a reference trace
