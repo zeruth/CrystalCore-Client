@@ -8,8 +8,8 @@
     shadow.ps1 port [-Secs N]           [-From 0xADDR]   the port, CRYSTALCORE_REF the same copy
 
     Both runs: the lobby on 127.0.0.1:$CC_LOBBY_PORT (default 54999, off the server's 54994), the
-    same variables set here and nothing else changed (the C runtime walks the environment, and one
-    variable more parted the runs), the reference's argv[0] its shadow copy's path. The shadow copy
+    game's saved settings put back from build\shadow-mygames, the environment cut to a fixed set (the C runtime
+    walks it, and one variable more parted the runs), the reference's argv[0] its shadow copy's path. The shadow copy
     is a byte-identical ffxiv.exe under another name, so a kill of every ffxiv.exe leaves it be.
     -From starts both traces at that function's first call (a known-good point to compare from).
     Traces: build\shadow-ref<tag>.bin and build\shadow-port<tag>.bin; compare them with Rhipper's
@@ -18,6 +18,33 @@
 param([Parameter(Mandatory)][ValidateSet("ref", "port")][string]$Which, [int]$Secs = 60, [int]$Max = 30000000,
       [string]$From = "")
 $root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
+# Both runs start from the same saved state: the game's My Games folder put back from a pinned
+# copy before each, build\shadow-mygames (local: the player's own settings, not committed), made
+# from the folder as it is on the first run. Each run rewrites FFXIV.cfg, and a reference trace
+# recorded a day before compared with a port run on today's settings parted on the config dump's
+# values (a gamepad setting 573 against 1), 2026-10-27. Record the reference again after re-pinning.
+$docs = [Environment]::GetFolderPath("MyDocuments")
+$saved = Join-Path $docs "My Games\FINAL FANTASY XIV - A Realm Reborn"
+$pinned = Join-Path $root "build\shadow-mygames"
+New-Item -ItemType Directory -Force $saved | Out-Null
+if (-not (Test-Path $pinned)) {
+    New-Item -ItemType Directory -Force $pinned | Out-Null
+    Get-ChildItem $saved -Exclude screenshots | Copy-Item -Destination $pinned -Recurse -Force
+}
+Get-ChildItem $pinned | Copy-Item -Destination $saved -Recurse -Force
+# And the same environment: only these variables, PATH fixed, whatever shell launched it. The C
+# runtime copies every variable (the traces' calloc/strcpy_s sizes), and the session's own (an
+# editor's, a tool's) differed from one day's run to the next.
+$keep = "SystemRoot", "SystemDrive", "windir", "ComSpec", "PATHEXT", "TEMP", "TMP", "USERPROFILE", "USERNAME",
+        "USERDOMAIN", "COMPUTERNAME", "HOMEDRIVE", "HOMEPATH", "APPDATA", "LOCALAPPDATA", "ProgramData",
+        "ProgramFiles", "ProgramFiles(x86)", "ProgramW6432", "CommonProgramFiles", "CommonProgramFiles(x86)",
+        "CommonProgramW6432", "ALLUSERSPROFILE", "PUBLIC", "OS", "NUMBER_OF_PROCESSORS", "PROCESSOR_ARCHITECTURE",
+        "PROCESSOR_IDENTIFIER", "PROCESSOR_LEVEL", "PROCESSOR_REVISION", "CC_LOBBY_PORT"
+$py = Split-Path -Parent (Get-Command python).Source
+foreach ($v in Get-ChildItem env:) {
+    if ($keep -notcontains $v.Name) { [Environment]::SetEnvironmentVariable($v.Name, $null) }
+}
+$env:PATH = "$py;$py\Scripts;$env:SystemRoot\system32;$env:SystemRoot;$env:SystemRoot\System32\Wbem"
 $b = Join-Path $root "build"
 $cfg = Get-Content (Join-Path $root "rhipper.json") -Raw | ConvertFrom-Json
 $rh = $cfg.rhipper
