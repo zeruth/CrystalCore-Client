@@ -4406,7 +4406,7 @@ static unsigned int W_008a6b10(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_008a7150(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008a7150(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_008a79e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008a79e0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_008a7db0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008a7db0(gen_a0, gen_a1, gen_a2); }
-static unsigned int W_008a93b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_008a93b0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static unsigned int W_008a93b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008a93b0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_008aa620(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_008aa620(gen_a0, gen_a1); }
 static unsigned int W_008ac1b0(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_008ac1b0(gen_a0, gen_a1); }
 static unsigned int W_008ac290(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_008ac290(gen_a0, gen_a1); }
@@ -4425,7 +4425,7 @@ static unsigned int W_008b3d00(unsigned int gen_a0, unsigned int gen_a1, unsigne
 static unsigned int W_008b3e40(unsigned int gen_a0, unsigned int gen_a1) { return (unsigned int)(unsigned char)F_008b3e40(gen_a0, gen_a1); }
 static unsigned int W_008b4120(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008b4120(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_008b47a0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008b47a0(gen_a0, gen_a1, gen_a2); }
-static unsigned int W_008b54f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_008b54f0(gen_a0, gen_a1, gen_a2, gen_a3); }
+static unsigned int W_008b54f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008b54f0(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_008b5590(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (unsigned int)(unsigned char)F_008b5590(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_008b5720(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008b5720(gen_a0, gen_a1, gen_a2); }
 static unsigned int W_008b87d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (unsigned int)(unsigned char)F_008b87d0(gen_a0, gen_a1, gen_a2); }

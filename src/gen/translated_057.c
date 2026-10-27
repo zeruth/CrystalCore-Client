@@ -1,5 +1,50 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf91 */
+uint F_0071ec30(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x71ec30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf92 */
+uint F_0071ec40(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x71ec40u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf52 */
+uint F_0071ec50(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x71ec50u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf104 */
+uint F_0071ec60(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x71ec60u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
+/* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf105 */
+uint F_0071ec70(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x71ec70u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return 0;
+}
+
 /* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf115 */
 uint F_0071ec80(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -4995,49 +5040,5 @@ uint F_00724270(unsigned int gen_a0)
   GEN_ENTER(0x724270u, gen_a0, 0u, 0u, 0u);
   int param_1 = (int)gen_a0;
   return param_1 + 0x21;
-}
-
-/* ref: FUN_00724280 */
-uint F_00724280(unsigned int gen_a0)
-{
-  GEN_ENTER(0x724280u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00724290 */
-uint F_00724290(unsigned int gen_a0)
-{
-  GEN_ENTER(0x724290u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 4;
-}
-
-/* ref: FUN_007242a0 */
-uint F_007242a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7242a0u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 8;
-}
-
-/* ref: FUN_007242b0 */
-uint F_007242b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7242b0u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  return param_1 + 0x10;
-}
-
-/* ref: FUN_007242e0 */
-uint F_007242e0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x7242e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  int param_2 = (int)gen_a1;
-  ulonglong uVar1;
-  
-  uVar1 = F_00429760(param_1,param_2 * 0x28,0x322);
-  return (uint)uVar1;
 }
 

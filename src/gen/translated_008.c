@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00475da0 */
+uint F_00475da0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x475da0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
 /* ref: FUN_00475db0 */
 uint F_00475db0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -6764,24 +6772,5 @@ unsigned int F_0047cd30(unsigned int gen_a0, unsigned int gen_a1)
     *(undefined4 *)((int)param_1 + 0x54) = *(undefined4 *)(param_2 + 0x54);
   }
   return 0;
-}
-
-/* ref: FUN_0047cd60 */
-uint F_0047cd60(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x47cd60u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined * this_00;
-  
-  this_00 = (undefined *)F_00406b90(0x58,0,0);
-  if (this_00 != (undefined *)0x0) {
-    F_0042cbc0(this_00,param_1);
-    *(undefined4 *)((int)this_00 + 0x54) = 1;
-    *(undefined * PTR32 *)this = this_00;
-    return (uint)this;
-  }
-  *(undefined4 *)this = 0;
-  return (uint)this;
 }
 

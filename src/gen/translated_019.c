@@ -1,5 +1,24 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00508f30 */
+uint F_00508f30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x508f30u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * piVar1;
+  uint uVar2;
+  
+  piVar1 = *(int * PTR32 *)((int)this + 0x98);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[44])REFP(0x109990c));
+  if (piVar1 != (int *)0x0) {
+    piVar1 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1)));
+    ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)((int)this + 0x98));
+    *(undefined4 *)((int)this + 0x98) = 0;
+  }
+  uVar2 = F_00508230(this);
+  return uVar2;
+}
+
 /* ref: FUN_00508f70 */
 uint F_00508f70(unsigned int gen_a0)
 {
@@ -14445,17 +14464,5 @@ uint F_00519430(unsigned int gen_a0)
     piVar4 = piVar3;
   }
   return (uint)piVar4;
-}
-
-/* ref: FUN_00519470 */
-uint F_00519470(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x519470u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  int param_2 = (int)gen_a1;
-  ulonglong uVar1;
-  
-  uVar1 = F_00429760(param_1,param_2 * 0x18,0x12e);
-  return (uint)uVar1;
 }
 

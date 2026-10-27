@@ -1,5 +1,16 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_004be750 */
+uint F_004be750(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4be750u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  *(float *)this = ((float)GEN_TOF(SQRT((float10)*(float *)this)));
+  *(float *)((int)this + 4) = ((float)GEN_TOF(SQRT((float10)*(float *)((int)this + 4))));
+  *(float *)((int)this + 8) = ((float)GEN_TOF(SQRT((float10)*(float *)((int)this + 8))));
+  return (uint)this;
+}
+
 /* ref: FUN_004be7c0 */
 unsigned int F_004be7c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3)
 {
@@ -11057,32 +11068,5 @@ LAB_004ca63c: ;
   *in_esi = *in_esi + uVar2;
   in_esi[2] = in_esi[2] + uVar2;
   return uVar2;
-}
-
-/* ref: FUN_004ca660 */
-uint F_004ca660(unsigned int gen_a0)
-{
-  GEN_ENTER(0x4ca660u, gen_a0, 0u, 0u, 0u);
-  int in_esi = (int)gen_a0;
-  ushort uVar1;
-  int iVar2;
-  
-  *(int *)(in_esi + 0x3c) = *(int *)(in_esi + 0x2c) * 2;
-  *((undefined2 *)GEN_TOP((*(int *)(in_esi + 0x44) + -2 + *(int *)(in_esi + 0x4c) * 2))) = 0;
-  F_00c48350(*(undefined * PTR32 *)(in_esi + 0x44),0,*(int *)(in_esi + 0x4c) * 2 - 2);
-  iVar2 = *(int *)(in_esi + 0x84) * 0xc;
-  *(uint *)(in_esi + 0x80) = (uint)*(ushort *)(&REFG(undefined, 0x109493a) + *(int *)(in_esi + 0x84) * 0xc);
-  *(uint *)(in_esi + 0x8c) = (uint)*(ushort *)(&REFG(undefined, 0x1094938) + iVar2);
-  *(uint *)(in_esi + 0x90) = (uint)*(ushort *)(&REFG(undefined, 0x109493c) + iVar2);
-  uVar1 = *(ushort *)(&REFG(undefined, 0x109493e) + iVar2);
-  *(undefined4 *)(in_esi + 0x6c) = 0;
-  *(undefined4 *)(in_esi + 0x5c) = 0;
-  *(undefined4 *)(in_esi + 0x74) = 0;
-  *(undefined4 *)(in_esi + 0x68) = 0;
-  *(undefined4 *)(in_esi + 0x48) = 0;
-  *(uint *)(in_esi + 0x7c) = (uint)uVar1;
-  *(undefined4 *)(in_esi + 0x78) = 2;
-  *(undefined4 *)(in_esi + 0x60) = 2;
-  return 2;
 }
 

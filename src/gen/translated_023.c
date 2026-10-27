@@ -1,5 +1,19 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_0052d880 */
+uint F_0052d880(unsigned int gen_a0)
+{
+  GEN_ENTER(0x52d880u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  ulonglong uVar1;
+  
+  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
+  F_0052c950(this,&(*(undefined * PTR32 *)(gen_frame + 0x8)),**(undefined4 * PTR32 *)((int)this + 4),*(undefined4 * PTR32 *)((int)this + 4));
+  uVar1 = F_00429760(*(undefined4 *)((int)this + 4),0x30,0xd4);
+  return (uint)uVar1;
+}
+
 /* ref: Client::System::Resource::Handle::ModelResourceHandle::vf42 */
 unsigned int F_0052d8c0(void)
 {
@@ -7313,16 +7327,5 @@ byte F_00534600(unsigned int gen_a0)
     return 1;
   }
   return 0;
-}
-
-/* ref: FUN_00534620 */
-byte F_00534620(unsigned int gen_a0)
-{
-  GEN_ENTER(0x534620u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  if (((param_1 < 0xb) || (0xc < param_1)) && ((param_1 < 0xd || (0xe < param_1)))) {
-    return 0;
-  }
-  return 1;
 }
 

@@ -1,5 +1,31 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00483c10 */
+uint F_00483c10(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x483c10u, gen_a0, gen_a1, gen_a2, 0u);
+  int param_1 = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  undefined * param_3 = (undefined *)(uintptr_t)gen_a2;
+  int iVar1;
+  undefined * this;
+  
+  iVar1 = param_1;
+  this = param_3;
+  if (param_1 == param_2) {
+    return (uint)param_3;
+  }
+  do {
+    if (this != (undefined *)0x0) {
+      F_0042cbc0(this,iVar1);
+      *(undefined4 *)((int)this + 0x54) = *(undefined4 *)(iVar1 + 0x54);
+    }
+    iVar1 = iVar1 + 0x58;
+    this = (undefined *)((int)this + 0x58);
+  } while (iVar1 != param_2);
+  return (uint)this;
+}
+
 /* ref: FUN_00483c50 */
 uint F_00483c50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
 {
@@ -11084,22 +11110,6 @@ uint F_00494260(unsigned int gen_a0, unsigned int gen_a1)
   int param_2 = (int)gen_a1;
   ulonglong uVar1;
   
-  F_00492c50((undefined *)(param_2 + 4));
-  uVar1 = F_00429760(*(undefined4 *)(param_2 + 4),8,0x2c4);
-  *(undefined4 *)(param_2 + 4) = 0;
-  return (uint)uVar1;
-}
-
-/* ref: FUN_00494290 */
-uint F_00494290(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x494290u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  int param_2 = (int)gen_a1;
-  ulonglong uVar1;
-  
-  F_0042c880((undefined *)(param_2 + 0x70));
-  F_0042c880((undefined *)(param_2 + 0x1c));
   F_00492c50((undefined *)(param_2 + 4));
   uVar1 = F_00429760(*(undefined4 *)(param_2 + 4),8,0x2c4);
   *(undefined4 *)(param_2 + 4) = 0;

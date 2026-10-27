@@ -1,5 +1,358 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_01075820 */
+uint F_01075820(void)
+{
+  GEN_ENTER(0x1075820u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  REFG(undefined4, 0x15d9a88) = gen_imp_TlsAlloc();
+  uVar1 = F_00c47de6(((code *)REFP(0x107cc70)));
+  return uVar1;
+}
+
+/* ref: FUN_01075840 */
+uint F_01075840(void)
+{
+  GEN_ENTER(0x1075840u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  REFG(undefined4, 0x15d9a8c) = gen_imp_TlsAlloc();
+  uVar1 = F_00c47de6(((code *)REFP(0x107cc80)));
+  return uVar1;
+}
+
+/* ref: FUN_01075860 */
+unsigned int F_01075860(void)
+{
+  GEN_ENTER(0x1075860u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9a90),"hkLocalFrame",&REFG(undefined, 0x15da420),8,0,0,0,0,0,0,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075890 */
+unsigned int F_01075890(void)
+{
+  GEN_ENTER(0x1075890u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9ac0),"hkLocalFrameGroup",&REFG(undefined, 0x15da420),0xc,0,0,0,0,&REFG(undefined * PTR32, 0x1139170),1,0,0,0
+               ,0);
+  return 0;
+}
+
+/* ref: FUN_010758c0 */
+uint F_010758c0(void)
+{
+  GEN_ENTER(0x10758c0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00d99e30();
+  *(char * PTR32 *)&REFG(undefined, 0x15d9af0) = "hkLocalFrameGroup";
+  *(char * PTR32 *)&REFG(undefined, 0x15d9af4) = "!hkLocalFrameGroup";
+  *(gen_code32 *)&REFG(undefined, 0x15d9af8) = ((code *)REFP(0xd99e00));
+  *(gen_code32 *)&REFG(undefined, 0x15d9afc) = ((code *)REFP(0xd99e20));
+  *(uint *)&REFG(undefined, 0x15d9b00) = uVar1;
+  *(undefined4 *)&REFG(undefined, 0x15d9b04) = 0xc;
+  return uVar1;
+}
+
+/* ref: FUN_01075900 */
+unsigned int F_01075900(void)
+{
+  GEN_ENTER(0x1075900u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9b08),"hkSimpleLocalFrame",&REFG(undefined, 0x15d9a90),0x70,0,0,0,0,
+               &REFG(undefined * PTR32, 0x1139188),5,0,0,0,1);
+  return 0;
+}
+
+/* ref: FUN_01075930 */
+uint F_01075930(void)
+{
+  GEN_ENTER(0x1075930u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00d99eb0();
+  *(char * PTR32 *)&REFG(undefined, 0x15d9b38) = "hkSimpleLocalFrame";
+  *(char * PTR32 *)&REFG(undefined, 0x15d9b3c) = "!hkSimpleLocalFrame";
+  *(gen_code32 *)&REFG(undefined, 0x15d9b40) = ((code *)REFP(0xd99e90));
+  *(gen_code32 *)&REFG(undefined, 0x15d9b44) = ((code *)REFP(0xd99e80));
+  *(uint *)&REFG(undefined, 0x15d9b48) = uVar1;
+  *(undefined4 *)&REFG(undefined, 0x15d9b4c) = 0x70;
+  return uVar1;
+}
+
+/* ref: FUN_01075970 */
+unsigned int F_01075970(void)
+{
+  GEN_ENTER(0x1075970u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9b50),"hkMonitorStreamStringMapStringMap",0,0x10,0,0,0,0,&REFG(undefined * PTR32, 0x11393c8),2,
+               0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_010759a0 */
+unsigned int F_010759a0(void)
+{
+  GEN_ENTER(0x10759a0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9b80),"hkMonitorStreamStringMap",0,0xc,0,0,0,0,&REFG(undefined * PTR32, 0x11393f8),1,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_010759d0 */
+uint F_010759d0(void)
+{
+  GEN_ENTER(0x10759d0u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x13518d8) = REFG(undefined * PTR32, 0x1351820);
+  return (uint)REFG(undefined * PTR32, 0x1351820);
+}
+
+/* ref: FUN_010759e0 */
+unsigned int F_010759e0(void)
+{
+  GEN_ENTER(0x10759e0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9bb0),"hkMonitorStreamFrameInfo",0,0x24,0,0,
+               &REFG(undefined * PTR32, 0x1139428),1,&REFG(undefined * PTR32, 0x1351888),9,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075a10 */
+uint F_01075a10(void)
+{
+  GEN_ENTER(0x1075a10u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1351980) = REFG(undefined * PTR32, 0x1351e34);
+  return (uint)REFG(undefined * PTR32, 0x1351e34);
+}
+
+/* ref: FUN_01075a20 */
+unsigned int F_01075a20(void)
+{
+  GEN_ENTER(0x1075a20u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9be0),"hkMonitorStreamColorTableColorPair",0,8,0,0,0,0,
+               &REFG(undefined * PTR32, 0x1351960),2,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075a50 */
+unsigned int F_01075a50(void)
+{
+  GEN_ENTER(0x1075a50u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9c10),"hkMonitorStreamColorTable",&REFG(undefined, 0x15da420),0x18,0,0,0,0,
+               &REFG(undefined * PTR32, 0x113943c),2,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075a80 */
+uint F_01075a80(void)
+{
+  GEN_ENTER(0x1075a80u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00d9a360();
+  *(char * PTR32 *)&REFG(undefined, 0x15d9c40) = "hkMonitorStreamColorTable";
+  *(char * PTR32 *)&REFG(undefined, 0x15d9c44) = "!hkMonitorStreamColorTable";
+  *(gen_code32 *)&REFG(undefined, 0x15d9c48) = ((code *)REFP(0xd9a340));
+  *(gen_code32 *)&REFG(undefined, 0x15d9c4c) = ((code *)REFP(0xd9a2c0));
+  *(uint *)&REFG(undefined, 0x15d9c50) = uVar1;
+  *(undefined4 *)&REFG(undefined, 0x15d9c54) = 0x18;
+  return uVar1;
+}
+
+/* ref: FUN_01075ac0 */
+unsigned int F_01075ac0(void)
+{
+  GEN_ENTER(0x1075ac0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9c58),"hkRangeRealAttribute",0,0x10,0,0,0,0,&REFG(undefined * PTR32, 0x1139778),4,0,0,0,0)
+  ;
+  return 0;
+}
+
+/* ref: FUN_01075af0 */
+unsigned int F_01075af0(void)
+{
+  GEN_ENTER(0x1075af0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9c88),"hkRangeInt32Attribute",0,0x10,0,0,0,0,&REFG(undefined * PTR32, 0x11397d8),4,0,0,0,0
+              );
+  return 0;
+}
+
+/* ref: FUN_01075b20 */
+uint F_01075b20(void)
+{
+  GEN_ENTER(0x1075b20u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1351b10) = REFG(undefined * PTR32, 0x13519b8);
+  return (uint)REFG(undefined * PTR32, 0x13519b8);
+}
+
+/* ref: FUN_01075b30 */
+unsigned int F_01075b30(void)
+{
+  GEN_ENTER(0x1075b30u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9cb8),"hkUiAttribute",0,0x14,0,0,&REFG(undefined * PTR32, 0x1139850),1,
+               &REFG(undefined * PTR32, 0x1351af0),8,0,0,0,2);
+  return 0;
+}
+
+/* ref: FUN_01075b60 */
+uint F_01075b60(void)
+{
+  GEN_ENTER(0x1075b60u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1351be8) = REFG(undefined * PTR32, 0x13519bc);
+  return (uint)REFG(undefined * PTR32, 0x13519bc);
+}
+
+/* ref: FUN_01075b70 */
+unsigned int F_01075b70(void)
+{
+  GEN_ENTER(0x1075b70u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9ce8),"hkGizmoAttribute",0,0xc,0,0,&REFG(undefined * PTR32, 0x1139884),1,
+               &REFG(undefined * PTR32, 0x1351bb0),3,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075ba0 */
+uint F_01075ba0(void)
+{
+  GEN_ENTER(0x1075ba0u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1351c00) = REFG(undefined * PTR32, 0x13519c0);
+  return (uint)REFG(undefined * PTR32, 0x13519c0);
+}
+
+/* ref: FUN_01075bb0 */
+unsigned int F_01075bb0(void)
+{
+  GEN_ENTER(0x1075bb0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9d18),"hkModelerNodeTypeAttribute",0,1,0,0,&REFG(undefined * PTR32, 0x11398a8),1,
+               &REFG(undefined * PTR32, 0x1351bf8),1,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075be0 */
+uint F_01075be0(void)
+{
+  GEN_ENTER(0x1075be0u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1351c18) = REFG(undefined * PTR32, 0x13519c4);
+  return (uint)REFG(undefined * PTR32, 0x13519c4);
+}
+
+/* ref: FUN_01075bf0 */
+unsigned int F_01075bf0(void)
+{
+  GEN_ENTER(0x1075bf0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9d48),"hkLinkAttribute",0,1,0,0,&REFG(undefined * PTR32, 0x11398e4),1,&REFG(undefined * PTR32, 0x1351c10),1,0,0,0
+               ,0);
+  return 0;
+}
+
+/* ref: FUN_01075c20 */
+uint F_01075c20(void)
+{
+  GEN_ENTER(0x1075c20u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1351c30) = REFG(undefined * PTR32, 0x13519c8);
+  return (uint)REFG(undefined * PTR32, 0x13519c8);
+}
+
+/* ref: FUN_01075c30 */
+unsigned int F_01075c30(void)
+{
+  GEN_ENTER(0x1075c30u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9d78),"hkSemanticsAttribute",0,1,0,0,&REFG(undefined * PTR32, 0x1139928),1,
+               &REFG(undefined * PTR32, 0x1351c28),1,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075c60 */
+unsigned int F_01075c60(void)
+{
+  GEN_ENTER(0x1075c60u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9da8),"hkDescriptionAttribute",0,4,0,0,0,0,&REFG(undefined * PTR32, 0x113993c),1,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075c90 */
+uint F_01075c90(void)
+{
+  GEN_ENTER(0x1075c90u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x1351c48) = REFG(undefined * PTR32, 0x13519cc);
+  return (uint)REFG(undefined * PTR32, 0x13519cc);
+}
+
+/* ref: FUN_01075ca0 */
+unsigned int F_01075ca0(void)
+{
+  GEN_ENTER(0x1075ca0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9dd8),"hkArrayTypeAttribute",0,1,0,0,&REFG(undefined * PTR32, 0x113996c),1,
+               &REFG(undefined * PTR32, 0x1351c40),1,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075cd0 */
+unsigned int F_01075cd0(void)
+{
+  GEN_ENTER(0x1075cd0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9e08),"hkDataObjectTypeAttribute",0,4,0,0,0,0,&REFG(undefined * PTR32, 0x1139980),1,0,0,
+               0,0);
+  return 0;
+}
+
+/* ref: FUN_01075d00 */
+unsigned int F_01075d00(void)
+{
+  GEN_ENTER(0x1075d00u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9e38),"hkDocumentationAttribute",0,4,0,0,0,0,&REFG(undefined * PTR32, 0x1139998),1
+               ,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075d30 */
+unsigned int F_01075d30(void)
+{
+  GEN_ENTER(0x1075d30u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9e68),"hkPostFinishAttribute",0,4,0,0,0,0,&REFG(undefined * PTR32, 0x11399b0),
+               1,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075d60 */
+unsigned int F_01075d60(void)
+{
+  GEN_ENTER(0x1075d60u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9e98),"hkTraceStreamTitle",0,0x20,0,0,0,0,&REFG(undefined * PTR32, 0x1139c40),1,0,0,1,0);
+  return 0;
+}
+
+/* ref: FUN_01075d90 */
+unsigned int F_01075d90(void)
+{
+  GEN_ENTER(0x1075d90u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9ec8),"hkSweptTransform",0,0x50,0,0,0,0,&REFG(undefined * PTR32, 0x1139cd0),5,0,0,0
+               ,0);
+  return 0;
+}
+
+/* ref: FUN_01075dc0 */
+unsigned int F_01075dc0(void)
+{
+  GEN_ENTER(0x1075dc0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9ef8),"hkSphere",0,0x10,0,0,0,0,&REFG(undefined * PTR32, 0x1139d70),1,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075df0 */
+unsigned int F_01075df0(void)
+{
+  GEN_ENTER(0x1075df0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9f28),"hkSetUint32",&REFG(undefined, 0x15d9f58),0x10,0,0,0,0,0,0,0,0,0,0);
+  return 0;
+}
+
+/* ref: FUN_01075e20 */
+unsigned int F_01075e20(void)
+{
+  GEN_ENTER(0x1075e20u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9f58),"hkSetunsignedinthkContainerHeapAllocatorhkMapOperationsunsignedint",0,
+               0x10,0,0,0,0,&REFG(undefined * PTR32, 0x1139db4),2,0,0,0,0);
+  return 0;
+}
+
 /* ref: FUN_01075e50 */
 unsigned int F_01075e50(void)
 {
@@ -4397,386 +4750,6 @@ uint F_0107b5c0(void)
   uint uVar1;
   
   uVar1 = F_00c47de6(((code *)REFP(0x107d660)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b5d0 */
-uint F_0107b5d0(void)
-{
-  GEN_ENTER(0x107b5d0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d670)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b5e0 */
-uint F_0107b5e0(void)
-{
-  GEN_ENTER(0x107b5e0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d680)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b5f0 */
-uint F_0107b5f0(void)
-{
-  GEN_ENTER(0x107b5f0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d690)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b600 */
-uint F_0107b600(void)
-{
-  GEN_ENTER(0x107b600u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6a0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b610 */
-uint F_0107b610(void)
-{
-  GEN_ENTER(0x107b610u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6b0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b620 */
-uint F_0107b620(void)
-{
-  GEN_ENTER(0x107b620u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6c0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b630 */
-uint F_0107b630(void)
-{
-  GEN_ENTER(0x107b630u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6d0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b640 */
-uint F_0107b640(void)
-{
-  GEN_ENTER(0x107b640u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6e0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b650 */
-uint F_0107b650(void)
-{
-  GEN_ENTER(0x107b650u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6f0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b660 */
-uint F_0107b660(void)
-{
-  GEN_ENTER(0x107b660u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d700)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b670 */
-uint F_0107b670(void)
-{
-  GEN_ENTER(0x107b670u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d710)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b680 */
-uint F_0107b680(void)
-{
-  GEN_ENTER(0x107b680u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d720)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b690 */
-uint F_0107b690(void)
-{
-  GEN_ENTER(0x107b690u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d730)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6a0 */
-uint F_0107b6a0(void)
-{
-  GEN_ENTER(0x107b6a0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d740)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6b0 */
-uint F_0107b6b0(void)
-{
-  GEN_ENTER(0x107b6b0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d750)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6c0 */
-uint F_0107b6c0(void)
-{
-  GEN_ENTER(0x107b6c0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d760)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6d0 */
-uint F_0107b6d0(void)
-{
-  GEN_ENTER(0x107b6d0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d770)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6e0 */
-uint F_0107b6e0(void)
-{
-  GEN_ENTER(0x107b6e0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d780)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b6f0 */
-uint F_0107b6f0(void)
-{
-  GEN_ENTER(0x107b6f0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d790)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b700 */
-uint F_0107b700(void)
-{
-  GEN_ENTER(0x107b700u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7a0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b710 */
-uint F_0107b710(void)
-{
-  GEN_ENTER(0x107b710u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7b0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b720 */
-uint F_0107b720(void)
-{
-  GEN_ENTER(0x107b720u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7c0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b730 */
-uint F_0107b730(void)
-{
-  GEN_ENTER(0x107b730u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7d0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b740 */
-uint F_0107b740(void)
-{
-  GEN_ENTER(0x107b740u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7e0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b750 */
-uint F_0107b750(void)
-{
-  GEN_ENTER(0x107b750u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d7f0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b760 */
-uint F_0107b760(void)
-{
-  GEN_ENTER(0x107b760u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d800)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b770 */
-uint F_0107b770(void)
-{
-  GEN_ENTER(0x107b770u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d810)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b780 */
-uint F_0107b780(void)
-{
-  GEN_ENTER(0x107b780u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d820)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b790 */
-uint F_0107b790(void)
-{
-  GEN_ENTER(0x107b790u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d830)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7a0 */
-uint F_0107b7a0(void)
-{
-  GEN_ENTER(0x107b7a0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d840)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7b0 */
-uint F_0107b7b0(void)
-{
-  GEN_ENTER(0x107b7b0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d850)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7c0 */
-uint F_0107b7c0(void)
-{
-  GEN_ENTER(0x107b7c0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d860)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7d0 */
-uint F_0107b7d0(void)
-{
-  GEN_ENTER(0x107b7d0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d870)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7e0 */
-uint F_0107b7e0(void)
-{
-  GEN_ENTER(0x107b7e0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d880)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b7f0 */
-uint F_0107b7f0(void)
-{
-  GEN_ENTER(0x107b7f0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d890)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b800 */
-uint F_0107b800(void)
-{
-  GEN_ENTER(0x107b800u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d8a0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b810 */
-uint F_0107b810(void)
-{
-  GEN_ENTER(0x107b810u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d8b0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b820 */
-uint F_0107b820(void)
-{
-  GEN_ENTER(0x107b820u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d8c0)));
   return uVar1;
 }
 

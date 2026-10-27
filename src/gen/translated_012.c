@@ -1,5 +1,48 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_004a11e0 */
+uint F_004a11e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6)
+{
+  GEN_ENTER(0x4a11e0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  undefined4 param_4 = (undefined4)gen_a3;
+  undefined4 param_5 = (undefined4)gen_a4;
+  undefined4 * param_6 = (undefined4 *)(uintptr_t)gen_a5;
+  undefined4 param_7 = (undefined4)gen_a6;
+  __declspec(align(16)) undefined1 gen_frame[0x60];
+  undefined4 uVar1;
+  int iVar2;
+  
+  do {
+    LOCK();
+    iVar2 = REFG(int, 0x13728c0);
+    REFG(int, 0x13728c0) = 1;
+    UNLOCK();
+  } while (iVar2 != 0);
+  iVar2 = REFG(undefined4, 0x13728b8) * 0x58;
+  uVar1 = *param_6;
+  *(undefined4 *)(&REFG(undefined, 0x13728f0) + iVar2) = param_1;
+  *(undefined4 *)(&REFG(undefined, 0x13728f4) + iVar2) = param_2;
+  *(undefined4 *)(&REFG(undefined, 0x13728f8) + iVar2) = param_3;
+  *(undefined4 *)(&REFG(undefined, 0x13728fc) + iVar2) = param_4;
+  *(undefined4 *)(&REFG(undefined, 0x1372900) + iVar2) = 0;
+  *(undefined4 *)(&REFG(undefined, 0x1372904) + iVar2) = 0;
+  *(undefined4 *)(&REFG(undefined, 0x1372908) + iVar2) = 0;
+  *(undefined4 *)(&REFG(undefined, 0x137290c) + iVar2) = 0;
+  *(undefined4 *)(&REFG(undefined, 0x1372910) + iVar2) = uVar1;
+  (&REFG(undefined, 0x137291c))[(int)(iVar2)] = 0;
+  *(undefined4 *)(&REFG(undefined, 0x1372914) + iVar2) = (*(undefined4 *)((char *)((byte *)(gen_frame + 0x4)) + 76));
+  *(undefined4 *)(&REFG(undefined, 0x1372918) + iVar2) = param_5;
+  REFG(undefined4, 0x13728b8) = REFG(undefined4, 0x13728b8) + 1 & 0x7f;
+  *(byte * PTR32 *)&REFG(undefined, 0x13728a8) = ((byte *)(gen_frame + 0x4));
+  LOCK();
+  REFG(int, 0x13728c0) = 0;
+  UNLOCK();
+  return (uint)((byte *)(gen_frame + 0x4));
+}
+
 /* ref: FUN_004a1280 */
 unsigned int F_004a1280(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -16958,16 +17001,5 @@ uint F_004be6b0(unsigned int gen_a0, float gen_a1, float gen_a2, float gen_a3, f
   in_ecx[2] = param_4;
   in_ecx[3] = param_5;
   return (uint)in_ecx;
-}
-
-/* ref: FUN_004be750 */
-uint F_004be750(unsigned int gen_a0)
-{
-  GEN_ENTER(0x4be750u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  *(float *)this = ((float)GEN_TOF(SQRT((float10)*(float *)this)));
-  *(float *)((int)this + 4) = ((float)GEN_TOF(SQRT((float10)*(float *)((int)this + 4))));
-  *(float *)((int)this + 8) = ((float)GEN_TOF(SQRT((float10)*(float *)((int)this + 8))));
-  return (uint)this;
 }
 

@@ -1,5 +1,49 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00724280 */
+uint F_00724280(unsigned int gen_a0)
+{
+  GEN_ENTER(0x724280u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00724290 */
+uint F_00724290(unsigned int gen_a0)
+{
+  GEN_ENTER(0x724290u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 4;
+}
+
+/* ref: FUN_007242a0 */
+uint F_007242a0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7242a0u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 8;
+}
+
+/* ref: FUN_007242b0 */
+uint F_007242b0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7242b0u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 0x10;
+}
+
+/* ref: FUN_007242e0 */
+uint F_007242e0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x7242e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 0x28,0x322);
+  return (uint)uVar1;
+}
+
 /* ref: FUN_00724350 */
 uint F_00724350(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -4760,46 +4804,6 @@ uint F_00727fb0(unsigned int gen_a0)
 uint F_00727fc0(unsigned int gen_a0)
 {
   GEN_ENTER(0x727fc0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00727fe0 */
-uint F_00727fe0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x727fe0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00728020 */
-uint F_00728020(unsigned int gen_a0)
-{
-  GEN_ENTER(0x728020u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00728030 */
-uint F_00728030(unsigned int gen_a0)
-{
-  GEN_ENTER(0x728030u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00728050 */
-uint F_00728050(unsigned int gen_a0)
-{
-  GEN_ENTER(0x728050u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00728060 */
-uint F_00728060(unsigned int gen_a0)
-{
-  GEN_ENTER(0x728060u, gen_a0, 0u, 0u, 0u);
   uint param_1 = (uint)gen_a0;
   return param_1;
 }

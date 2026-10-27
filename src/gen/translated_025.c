@@ -1,5 +1,25 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_0054b980 */
+byte F_0054b980(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x54b980u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  *(byte *)(in_ecx + 0x38) = (byte)param_2;
+  return (byte)param_2;
+}
+
+/* ref: FUN_0054b990 */
+byte F_0054b990(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x54b990u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  *(byte *)(in_ecx + 0x39) = (byte)param_2;
+  return (byte)param_2;
+}
+
 /* ref: FUN_0054b9b0 */
 byte F_0054b9b0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -7658,33 +7678,6 @@ unsigned int F_00555b10(unsigned int gen_a0)
     *(int *)((int)this + 0x2001c) = iVar1;
   }
   *(undefined4 *)((int)this + 0x20018) = 0;
-  return 0;
-}
-
-/* ref: FUN_00555b60 */
-uint F_00555b60(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x555b60u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  return 0;
-}
-
-/* ref: FUN_00555b80 */
-unsigned int F_00555b80(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x555b80u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  *(undefined4 *)((int)this + 0x20044) = *param_1;
-  *(undefined4 *)((int)this + 0x20048) = param_1[1];
-  *(undefined4 *)((int)this + 0x2004c) = param_1[2];
-  if (*(char *)((int)this + 0x18) != '\0') {
-    F_00b1af80(*(undefined * PTR32 *)((int)this + 0x20));
-  }
-  F_00555b10((undefined *)((int)this + 0x24));
   return 0;
 }
 

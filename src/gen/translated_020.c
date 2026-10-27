@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
+/* ref: FUN_00519470 */
+uint F_00519470(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x519470u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 0x18,0x12e);
+  return (uint)uVar1;
+}
+
 /* ref: FUN_005194b0 */
 uint F_005194b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -4731,16 +4743,6 @@ uint F_0051dcf0(unsigned int gen_a0, unsigned int gen_a1)
   int in_ecx = (int)gen_a0;
   undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
   *param_2 = *(undefined4 *)(in_ecx + 4);
-  return (uint)param_2;
-}
-
-/* ref: FUN_0051dd50 */
-uint F_0051dd50(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x51dd50u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  *param_2 = *in_ecx;
   return (uint)param_2;
 }
 
