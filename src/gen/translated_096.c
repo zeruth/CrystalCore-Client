@@ -1,74 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_0096d7a0 */
-uint F_0096d7a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x96d7a0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  int iVar2;
-  undefined * this_00;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[67])REFP(0x10d8884));
-  F_0095c7e0((undefined *)((int)this + 0x5e0));
-  F_00429760(*(undefined4 *)((int)this + 0x5e0),0x6c,400);
-  iVar2 = 9;
-  this_00 = (undefined *)((int)this + 0x5e4);
-  do {
-    this_00 = (undefined *)((int)this_00 + -0x70);
-    F_0058d4b0(this_00);
-    iVar2 = iVar2 + -1;
-  } while (-1 < iVar2);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[67])REFP(0x10c3f6c));
-  uVar1 = F_00590600(this);
-  return uVar1;
-}
-
-/* ref: Client::UI2::AddonScreenText::vf0 */
-uint F_0096d800(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x96d800u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  F_0096d7a0(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_0096d830 */
-uint F_0096d830(unsigned int gen_a0)
-{
-  GEN_ENTER(0x96d830u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[67])REFP(0x10d8994));
-  F_0095c830((undefined *)((int)this + 400));
-  F_00429760(*(undefined4 *)((int)this + 400),100,400);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[67])REFP(0x10c3f6c));
-  uVar1 = F_00590600(this);
-  return uVar1;
-}
-
-/* ref: Client::UI2::AddonWideText::vf0 */
-uint F_0096d870(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x96d870u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[67])REFP(0x10d8994));
-  F_0095c830(this + 400);
-  F_00429760(*(undefined4 *)(this + 400),100,400);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[67])REFP(0x10c3f6c));
-  F_00590600(this);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
 /* ref: FUN_0096d8d0 */
 uint F_0096d8d0(unsigned int gen_a0)
 {
@@ -10145,6 +10076,58 @@ uint F_00977ca0(unsigned int gen_a0, unsigned int gen_a1)
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x10dd528));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Data::Interface::ILaserParticle::vf0 */
+uint F_00977ce0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x977ce0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[3])REFP(0x10dd534));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Data::Interface::IPolyLineParticle::vf0 */
+uint F_00977d20(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x977d20u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[25])REFP(0x10dd544));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Data::Interface::IModelParticle::vf0 */
+uint F_00977d60(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x977d60u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[14])REFP(0x10dd5ac));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Data::Interface::ILightModelParticle::vf0 */
+uint F_00977da0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x977da0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x10dd5e8));
   if ((param_1 & 1) != 0) {
     F_00406ad0(this);
   }

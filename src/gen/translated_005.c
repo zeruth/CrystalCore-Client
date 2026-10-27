@@ -6096,7 +6096,7 @@ uint F_004493c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, u
   byte bVar4;
   ulonglong uVar5;
   
-  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0x44))();
+  uVar1 = ((code *)*(gen_code32 *)(*(int *)this + 0x44))(this);
   this_00 = *(undefined * PTR32 *)(uVar1 + 0x28);
   if (this_00 == (undefined *)0x0) {
     *(undefined1 *)(param_1 + 1) = 0;

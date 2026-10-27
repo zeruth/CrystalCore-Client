@@ -88,7 +88,7 @@ unsigned int gen_imp_DecodePointer();   /* the runtime's */
 gen_real_fn gen_real_DefSubclassProc;
 unsigned int gen_imp_DefSubclassProc(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DefSubclassProc(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_DefWindowProcA;
-unsigned int gen_imp_DefWindowProcA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_DefWindowProcA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_DefWindowProcA();   /* the runtime's */
 gen_real_fn gen_real_DeleteCriticalSection;
 unsigned int gen_imp_DeleteCriticalSection();   /* the runtime's */
 gen_real_fn gen_real_DeleteDC;
@@ -779,7 +779,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e118u, "KERNEL32.dll", "DebugActiveProcess", (void *)gen_imp_DebugActiveProcess, &gen_real_DebugActiveProcess},
   {0x107e360u, "KERNEL32.dll", "DecodePointer", (void *)gen_imp_DecodePointer, 0},
   {0x107e01cu, "COMCTL32.dll", "DefSubclassProc", (void *)gen_imp_DefSubclassProc, &gen_real_DefSubclassProc},
-  {0x107e484u, "USER32.dll", "DefWindowProcA", (void *)gen_imp_DefWindowProcA, &gen_real_DefWindowProcA},
+  {0x107e484u, "USER32.dll", "DefWindowProcA", (void *)gen_imp_DefWindowProcA, 0},
   {0x107e258u, "KERNEL32.dll", "DeleteCriticalSection", (void *)gen_imp_DeleteCriticalSection, 0},
   {0x107e058u, "GDI32.dll", "DeleteDC", (void *)gen_imp_DeleteDC, &gen_real_DeleteDC},
   {0x107e1ccu, "KERNEL32.dll", "DeleteFileA", (void *)gen_imp_DeleteFileA, &gen_real_DeleteFileA},

@@ -1,236 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_007ba1d0 */
-uint F_007ba1d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x7ba1d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  int iVar1;
-  uint uVar2;
-  undefined4 uVar3;
-  
-  if ((*(byte *)(param_1 + 0xa48) & 0xf) == 0) {
-    iVar1 = 0;
-  }
-  else {
-    iVar1 = *(int *)(param_1 + 0xa4c);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x29c) != (undefined *)0x0) {
-    F_0059dde0(*(undefined * PTR32 *)((int)this + 0x29c),(uint)(iVar1 != 0));
-  }
-  if ((*(byte *)(param_1 + 0xa50) & 0xf) == 0) {
-    uVar2 = 0;
-  }
-  else {
-    uVar2 = *(uint *)(param_1 + 0xa54);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x2a0) != (undefined *)0x0) {
-    uVar2 = F_0059dde0(*(undefined * PTR32 *)((int)this + 0x2a0),(uint)(uVar2 != 0));
-  }
-  if ((*(byte *)(param_1 + 0xa58) & 0xf) == 0) {
-    uVar3 = 0;
-  }
-  else {
-    uVar3 = *(undefined4 *)(param_1 + 0xa5c);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x250) != (undefined *)0x0) {
-    uVar2 = F_0059dbe0(*(undefined * PTR32 *)((int)this + 0x250),uVar3,1);
-  }
-  return uVar2;
-}
-
-/* ref: FUN_007ba260 */
-uint F_007ba260(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x7ba260u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  int * piVar1;
-  int iVar2;
-  uint uVar3;
-  int iVar4;
-  undefined4 uVar5;
-  
-  iVar2 = param_1;
-  uVar3 = F_0055dcb0();
-  iVar4 = 0;
-  if (*(int *)((int)this + 0x2f0) != 0) {
-    if ((*(byte *)(param_1 + 0x9a0) & 0xf) == 0) {
-      param_1 = 0;
-    }
-    else {
-      param_1 = *(int *)(param_1 + 0x9a4);
-    }
-    if ((*(byte *)(iVar2 + 0xa50) & 0xf) != 0) {
-      iVar4 = *(int *)(iVar2 + 0xa54);
-    }
-    if ((param_1 == 0) || (iVar4 < 0)) {
-      uVar3 = F_0043bd30(*(undefined * PTR32 *)(uVar3 + 0x30),0x1016);
-      F_0058e4c0(*(undefined * PTR32 *)((int)this + 0x2f0),uVar3);
-      ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x2f0) + 0x28))))(*(int * PTR32 *)((int)this + 0x2f0),0);
-      if (*(int *)((int)this + 0x1a8) != 0) {
-        ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x1a8) + 0x28))))(*(int * PTR32 *)((int)this + 0x1a8),0);
-      }
-    }
-    else {
-      ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x2f0) + 0x28))))(*(int * PTR32 *)((int)this + 0x2f0),1);
-      if (*(int *)((int)this + 0x1a8) != 0) {
-        ((code *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 0x1a8) + 0x28))))(*(int * PTR32 *)((int)this + 0x1a8),1);
-      }
-      F_007b9a50(this,0x10,iVar2,0x135,param_1);
-      F_0059caa0(*(undefined * PTR32 *)((int)this + 0x2f0),iVar4);
-      piVar1 = *((int * PTR32 *)GEN_TOP((*(int *)((int)this + 0x2f0) + 0x88)));
-      ((code *)*(gen_code32 *)(*piVar1 + 0x70))(piVar1);
-      F_00581b80(*((undefined * PTR32 *)GEN_TOP((*(int *)((int)this + 0x2f0) + 0x88))));
-    }
-  }
-  if (((*(byte *)(iVar2 + 0xa70) & 0xf) != 0) && (*(int *)(iVar2 + 0xa74) != 0)) {
-    F_0055a300(*(undefined * PTR32 *)((int)this + 0x1bc),1);
-  }
-  if ((*(byte *)(iVar2 + 0xa48) & 0xf) == 0) {
-    iVar4 = 0;
-  }
-  else {
-    iVar4 = *(int *)(iVar2 + 0xa4c);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x2a4) != (undefined *)0x0) {
-    F_0059dde0(*(undefined * PTR32 *)((int)this + 0x2a4),(uint)(iVar4 != 0));
-  }
-  if ((*(byte *)(iVar2 + 0xa58) & 0xf) == 0) {
-    iVar4 = 0;
-  }
-  else {
-    iVar4 = *(int *)(iVar2 + 0xa5c);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x2a8) != (undefined *)0x0) {
-    F_0059dde0(*(undefined * PTR32 *)((int)this + 0x2a8),(uint)(iVar4 != 0));
-  }
-  if ((*(byte *)(iVar2 + 0xa60) & 0xf) == 0) {
-    iVar4 = 0;
-  }
-  else {
-    iVar4 = *(int *)(iVar2 + 0xa64);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x2ac) != (undefined *)0x0) {
-    F_0059dde0(*(undefined * PTR32 *)((int)this + 0x2ac),(uint)(iVar4 != 0));
-  }
-  if ((*(byte *)(iVar2 + 0xa68) & 0xf) == 0) {
-    uVar3 = 0;
-  }
-  else {
-    uVar3 = *(uint *)(iVar2 + 0xa6c);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x2f4) != (undefined *)0x0) {
-    uVar3 = F_0059caa0(*(undefined * PTR32 *)((int)this + 0x2f4),uVar3);
-  }
-  if ((*(byte *)(iVar2 + 0xa78) & 0xf) == 0) {
-    uVar5 = 0;
-  }
-  else {
-    uVar5 = *(undefined4 *)(iVar2 + 0xa7c);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x254) != (undefined *)0x0) {
-    uVar3 = F_0059dbe0(*(undefined * PTR32 *)((int)this + 0x254),uVar5,1);
-  }
-  return uVar3;
-}
-
-/* ref: FUN_007ba450 */
-uint F_007ba450(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x7ba450u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  int * piVar1;
-  undefined4 uVar2;
-  uint uVar3;
-  
-  if ((*(byte *)(param_1 + 0xa48) & 0xf) == 0) {
-    uVar2 = 0;
-  }
-  else {
-    uVar2 = *(undefined4 *)(param_1 + 0xa4c);
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x2f8) != (undefined *)0x0) {
-    F_0059caa0(*(undefined * PTR32 *)((int)this + 0x2f8),uVar2);
-  }
-  if ((*(byte *)(param_1 + 0xa50) & 0xf) == 0) {
-    uVar3 = 0;
-  }
-  else {
-    uVar3 = *(uint *)(param_1 + 0xa54);
-  }
-  piVar1 = *(int * PTR32 *)((int)this + uVar3 * 4 + 0x228);
-  if (piVar1 != (int *)0x0) {
-    uVar3 = F_00561390();
-    uVar3 = ((code *)*(gen_code32 *)(*piVar1 + 0x60))(piVar1,uVar3 + 0xc0);
-  }
-  return uVar3;
-}
-
-/* ref: FUN_007ba4c0 */
-byte F_007ba4c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7ba4c0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  uint uVar2;
-  uint uVar3;
-  
-  if (*(int *)((int)this + 0x198) == 2) {
-    piVar1 = *(int * PTR32 *)((int)this + 0x298);
-    uVar2 = F_0055dcb0();
-    uVar2 = F_0055b9e0(uVar2);
-    uVar3 = ((code *)*(gen_code32 *)(*piVar1 + 0x3c))(piVar1);
-    if (uVar2 == uVar3) {
-      return 1;
-    }
-  }
-  return 0;
-}
-
-/* ref: FUN_007ba500 */
-byte F_007ba500(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7ba500u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  uint uVar2;
-  int * piVar3;
-  
-  if (*(int *)((int)this + 0x198) == 0) {
-    piVar3 = *(int * PTR32 *)((int)this + 0x2b0);
-  }
-  else {
-    if (*(int *)((int)this + 0x198) != 2) {
-      return 0;
-    }
-    piVar3 = *(int * PTR32 *)((int)this + 0x280);
-  }
-  uVar1 = F_0055dcb0();
-  uVar1 = F_0055b9e0(uVar1);
-  uVar2 = ((code *)*(gen_code32 *)(*piVar3 + 0x3c))(piVar3);
-  if (uVar1 != uVar2) {
-    return 0;
-  }
-  return 1;
-}
-
-/* ref: FUN_007ba550 */
-uint F_007ba550(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7ba550u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * puVar1;
-  
-  puVar1 = ((undefined4 *)GEN_TOP(((int)this + *(int *)((int)this + 0x198) * 4 + 0x3ec)));
-  if (*((int *)GEN_TOP(((int)this + *(int *)((int)this + 0x198) * 4 + 0x3ec))) != 0) {
-    puVar1 = (undefined4 *)F_00574c80(*puVar1,0,1,1);
-  }
-  return (uint)puVar1;
-}
-
 /* ref: FUN_007ba580 */
 uint F_007ba580(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -12460,6 +12229,87 @@ byte F_007c7050(unsigned int gen_a0)
   byte bVar1;
   
   bVar1 = F_00572e60(this,"CharaMake_Feature_Option4",0,6);
+  return bVar1;
+}
+
+/* ref: Client::UI2::AddonCharaMakeFeatureRadioButton4::vf62 */
+uint F_007c7060(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7c7060u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *((uint *)GEN_TOP((in_ecx + 400 + *(int *)(in_ecx + 0x184) * 4)));
+}
+
+/* ref: FUN_007c7070 */
+uint F_007c7070(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7c7070u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  F_005903f0(this);
+  *(undefined4 *)((int)this + 0x180) = 0;
+  *(undefined4 *)((int)this + 0x184) = 0;
+  *(undefined1 *)((int)this + 0x188) = 0;
+  *(undefined4 *)((int)this + 0x18c) = 0;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[63])REFP(0x10d2d94));
+  *(byte *)((int)this + 0xfa) = *(byte *)((int)this + 0xfa) | 0x40;
+  *(byte *)((int)this + 0xfb) = *(byte *)((int)this + 0xfb) | 0x40;
+  *(undefined4 *)((int)this + 400) = 0;
+  *(undefined4 *)((int)this + 0x194) = 0;
+  *(undefined4 *)((int)this + 0x198) = 0;
+  *(undefined4 *)((int)this + 0x19c) = 0;
+  *(undefined4 *)((int)this + 0x1a0) = 0;
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonCharaMakeFeatureRadioButton5::vf41 */
+byte F_007c70d0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7c70d0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  byte bVar1;
+  
+  bVar1 = F_00572e60(this,"CharaMake_Feature_Option5",0,6);
+  return bVar1;
+}
+
+/* ref: Client::UI2::AddonCharaMakeFeatureRadioButton5::vf62 */
+uint F_007c70e0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7c70e0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *((uint *)GEN_TOP((in_ecx + 400 + *(int *)(in_ecx + 0x184) * 4)));
+}
+
+/* ref: FUN_007c70f0 */
+uint F_007c70f0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7c70f0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  F_005903f0(this);
+  *(undefined4 *)((int)this + 0x180) = 0;
+  *(undefined4 *)((int)this + 0x184) = 0;
+  *(undefined1 *)((int)this + 0x188) = 0;
+  *(undefined4 *)((int)this + 0x18c) = 0;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[63])REFP(0x10d2e94));
+  *(byte *)((int)this + 0xfa) = *(byte *)((int)this + 0xfa) | 0x40;
+  *(byte *)((int)this + 0xfb) = *(byte *)((int)this + 0xfb) | 0x40;
+  *(undefined4 *)((int)this + 400) = 0;
+  *(undefined4 *)((int)this + 0x194) = 0;
+  *(undefined4 *)((int)this + 0x198) = 0;
+  *(undefined4 *)((int)this + 0x19c) = 0;
+  *(undefined4 *)((int)this + 0x1a0) = 0;
+  *(undefined4 *)((int)this + 0x1a4) = 0;
+  return (uint)this;
+}
+
+/* ref: Client::UI2::AddonCharaMakeFeatureRadioButton6::vf41 */
+byte F_007c7150(unsigned int gen_a0)
+{
+  GEN_ENTER(0x7c7150u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  byte bVar1;
+  
+  bVar1 = F_00572e60(this,"CharaMake_Feature_Option6",0,6);
   return bVar1;
 }
 

@@ -1878,7 +1878,7 @@ byte F_00437920(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   if (param_1 == (byte *)0x0) {
     return 0;
   }
-  uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 0x18))();
+  uVar2 = ((code *)*(gen_code32 *)(*(int *)this + 0x18))(this);
   if (uVar2 != 0) {
     local_8 = 0;
     do {

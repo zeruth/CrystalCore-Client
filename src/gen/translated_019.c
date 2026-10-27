@@ -1,81 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554)
-/* ref: FUN_00509170 */
-uint F_00509170(unsigned int gen_a0)
-{
-  GEN_ENTER(0x509170u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  uint uVar2;
-  
-  piVar1 = *(int * PTR32 *)((int)this + 0x98);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[44])REFP(0x109990c));
-  if (piVar1 != (int *)0x0) {
-    piVar1 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1)));
-    ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)((int)this + 0x98));
-    *(undefined4 *)((int)this + 0x98) = 0;
-  }
-  uVar2 = F_00508230(this);
-  return uVar2;
-}
-
-/* ref: FUN_005091b0 */
-uint F_005091b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x5091b0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  uint uVar2;
-  
-  piVar1 = *(int * PTR32 *)((int)this + 0x98);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[44])REFP(0x109990c));
-  if (piVar1 != (int *)0x0) {
-    piVar1 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1)));
-    ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)((int)this + 0x98));
-    *(undefined4 *)((int)this + 0x98) = 0;
-  }
-  uVar2 = F_00508230(this);
-  return uVar2;
-}
-
-/* ref: FUN_005091f0 */
-uint F_005091f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x5091f0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  uint uVar2;
-  
-  piVar1 = *(int * PTR32 *)((int)this + 0x98);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[44])REFP(0x109990c));
-  if (piVar1 != (int *)0x0) {
-    piVar1 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1)));
-    ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)((int)this + 0x98));
-    *(undefined4 *)((int)this + 0x98) = 0;
-  }
-  uVar2 = F_00508230(this);
-  return uVar2;
-}
-
-/* ref: FUN_00509230 */
-uint F_00509230(unsigned int gen_a0)
-{
-  GEN_ENTER(0x509230u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  uint uVar2;
-  
-  piVar1 = *(int * PTR32 *)((int)this + 0x98);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[44])REFP(0x109990c));
-  if (piVar1 != (int *)0x0) {
-    piVar1 = ((int *)GEN_TOP(((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1)));
-    ((code *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1,*(undefined4 *)((int)this + 0x98));
-    *(undefined4 *)((int)this + 0x98) = 0;
-  }
-  uVar2 = F_00508230(this);
-  return uVar2;
-}
-
 /* ref: FUN_00509270 */
 uint F_00509270(unsigned int gen_a0)
 {
@@ -14468,5 +14392,48 @@ uint F_00519650(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
   undefined4 param_3 = (undefined4)gen_a2;
   *in_ecx = param_2;
   return (uint)in_ecx;
+}
+
+/* ref: FUN_00519660 */
+uint F_00519660(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x519660u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  *in_ecx = param_2;
+  return (uint)in_ecx;
+}
+
+/* ref: FUN_00519680 */
+uint F_00519680(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x519680u, gen_a0, gen_a1, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_004296a0(param_1 * 8,param_2,0x12e);
+  return uVar1;
+}
+
+/* ref: FUN_005196b0 */
+uint F_005196b0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5196b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 8,0x12e);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_005196e0 */
+uint F_005196e0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x5196e0u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 0x2c;
 }
 
