@@ -1,9 +1,9 @@
 {
- "translated": 86989,
- "stubbed": 348,
+ "translated": 86988,
+ "stubbed": 349,
  "reasons": {
   "a register the decompiler lost": 282,
-  "demoted": 12,
+  "demoted": 13,
   "an SSE lane in a bit mask": 7,
   "member access through a type C does not have": 4,
   "local of type unkbyte10": 4,
@@ -197,6 +197,7 @@
   "00b42260": "a register the decompiler lost (extraout_ECX)",
   "00b760f0": "a register the decompiler lost (extraout_ST0)",
   "00b761b0": "a register the decompiler lost (extraout_ST0)",
+  "00b76850": "demoted: C2059: syntax error: 'return' | return (uint)(gen_fl2bits((float)(((float10)GEN_TOD(gen_bits2f(param_3))) + (float10)REFG(double, 0x1094800))));",
   "00bc4740": "a register the decompiler lost (extraout_ST0)",
   "00bd26e0": "a register the decompiler lost (extraout_ECX)",
   "00bd27a0": "a register the decompiler lost (extraout_ST0)",
