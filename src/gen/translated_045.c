@@ -1,97 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_0065f270 */
-GEN_FRAME unsigned int GEN_THISCALL F_0065f270(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1, float gen_a2, float gen_a3)
-{
-  GEN_ENTER(0x65f270u, gen_a0, gen_trace_f(gen_a1), gen_trace_f(gen_a2), gen_trace_f(gen_a3));
-  float * in_ecx = (float *)(uintptr_t)gen_a0;
-  float param_2 = (float)gen_a1;
-  float param_3 = (float)gen_a2;
-  float param_4 = (float)gen_a3;
-  float10 fVar1;
-  float10 fVar2;
-  float10 fVar3;
-  float10 fVar4;
-  
-  fVar1 = (float10)in_ecx[3];
-  fVar2 = (float10)param_2;
-  *in_ecx = (float)((float10)*in_ecx + fVar2 * fVar1);
-  fVar3 = (float10)param_3;
-  in_ecx[1] = (float)((float10)in_ecx[1] + fVar3 * fVar1);
-  fVar4 = (float10)param_4;
-  in_ecx[2] = (float)((float10)in_ecx[2] + fVar4 * fVar1);
-  fVar1 = (float10)in_ecx[7];
-  in_ecx[4] = (float)(fVar1 * fVar2 + (float10)in_ecx[4]);
-  in_ecx[5] = (float)(fVar1 * fVar3 + (float10)in_ecx[5]);
-  in_ecx[6] = (float)(fVar1 * fVar4 + (float10)in_ecx[6]);
-  fVar1 = (float10)in_ecx[0xb];
-  in_ecx[8] = (float)(fVar1 * fVar2 + (float10)in_ecx[8]);
-  in_ecx[9] = (float)(fVar1 * fVar3 + (float10)in_ecx[9]);
-  in_ecx[10] = (float)(fVar1 * fVar4 + (float10)in_ecx[10]);
-  fVar1 = (float10)in_ecx[0xf];
-  in_ecx[0xc] = (float)((float10)in_ecx[0xc] + fVar1 * fVar2);
-  in_ecx[0xd] = (float)(fVar3 * fVar1 + (float10)in_ecx[0xd]);
-  in_ecx[0xe] = (float)(fVar1 * fVar4 + (float10)in_ecx[0xe]);
-  return 0;
-}
-
-/* ref: FUN_0065f330 */
-GEN_FRAME unsigned int GEN_THISCALL F_0065f330(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x65f330u, gen_a0, gen_a1, 0u, 0u);
-  float * in_ecx = (float *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  float10 fVar1;
-  
-  fVar1 = (float10)in_ecx[3];
-  *in_ecx = (float)(fVar1 * (float10)*(float *)param_2 + (float10)*in_ecx);
-  in_ecx[1] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 4) + (float10)in_ecx[1])));
-  in_ecx[2] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 8) + (float10)in_ecx[2])));
-  fVar1 = (float10)in_ecx[7];
-  in_ecx[4] = (float)(fVar1 * (float10)*(float *)param_2 + (float10)in_ecx[4]);
-  in_ecx[5] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 4) + (float10)in_ecx[5])));
-  in_ecx[6] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 8) + (float10)in_ecx[6])));
-  fVar1 = (float10)in_ecx[0xb];
-  in_ecx[8] = (float)(fVar1 * (float10)*(float *)param_2 + (float10)in_ecx[8]);
-  in_ecx[9] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 4) + (float10)in_ecx[9])));
-  in_ecx[10] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 8) + (float10)in_ecx[10])));
-  fVar1 = (float10)in_ecx[0xf];
-  in_ecx[0xc] = (float)(fVar1 * (float10)*(float *)param_2 + (float10)in_ecx[0xc]);
-  in_ecx[0xd] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 4) + (float10)in_ecx[0xd])));
-  in_ecx[0xe] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 8) + (float10)in_ecx[0xe])));
-  return 0;
-}
-
-/* ref: FUN_0065f3e0 */
-GEN_FRAME uint GEN_THISCALL F_0065f3e0(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1, float gen_a2, float gen_a3)
-{
-  GEN_ENTER(0x65f3e0u, gen_a0, gen_trace_f(gen_a1), gen_trace_f(gen_a2), gen_trace_f(gen_a3));
-  float * in_ecx = (float *)(uintptr_t)gen_a0;
-  float param_2 = (float)gen_a1;
-  float param_3 = (float)gen_a2;
-  float param_4 = (float)gen_a3;
-  float10 fVar1;
-  float10 fVar2;
-  float10 fVar3;
-  
-  fVar1 = (float10)param_2;
-  *in_ecx = (float)(fVar1 * (float10)*in_ecx);
-  fVar2 = (float10)param_3;
-  in_ecx[1] = (float)(fVar2 * (float10)in_ecx[1]);
-  fVar3 = (float10)param_4;
-  in_ecx[2] = (float)(fVar3 * (float10)in_ecx[2]);
-  in_ecx[4] = (float)(fVar1 * (float10)in_ecx[4]);
-  in_ecx[5] = (float)((float10)in_ecx[5] * fVar2);
-  in_ecx[6] = (float)(fVar3 * (float10)in_ecx[6]);
-  in_ecx[8] = (float)((float10)in_ecx[8] * fVar1);
-  in_ecx[9] = (float)(fVar2 * (float10)in_ecx[9]);
-  in_ecx[10] = (float)((float10)in_ecx[10] * fVar3);
-  in_ecx[0xc] = (float)((float10)in_ecx[0xc] * fVar1);
-  in_ecx[0xd] = (float)(fVar2 * (float10)in_ecx[0xd]);
-  in_ecx[0xe] = (float)(fVar3 * (float10)in_ecx[0xe]);
-  return (uint)in_ecx;
-}
-
 /* ref: FUN_0065f460 */
 GEN_FRAME unsigned int GEN_THISCALL F_0065f460(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -6281,6 +6189,42 @@ GEN_FRAME uint GEN_STDCALL F_00666480(unsigned int gen_a0, unsigned int gen_a1)
   ulonglong uVar1;
   
   uVar1 = F_00429760(param_1,param_2 * 4,0xd3);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_006664c0 */
+GEN_FRAME uint GEN_STDCALL F_006664c0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6664c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 0x14,0xd3);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_00666500 */
+GEN_FRAME uint GEN_STDCALL F_00666500(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x666500u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 8,0xd3);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_00666550 */
+GEN_FRAME uint GEN_STDCALL F_00666550(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x666550u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 0x1c,0xd2);
   return (uint)uVar1;
 }
 

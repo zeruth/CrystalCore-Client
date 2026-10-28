@@ -1,107 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_005d45c0 */
-GEN_FRAME uint GEN_THISCALL F_005d45c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5d45c0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  int iVar1;
-  undefined4 * this_00;
-  uint uVar2;
-  int iVar3;
-  undefined4 * puVar4;
-  undefined4 * puVar5;
-  
-  if ((param_1 & 2) != 0) {
-    iVar1 = *(int *)((int)this - 4);
-    iVar3 = iVar1 - 1;
-    (*(int * PTR32 *)(gen_frame + 0x8)) = (int *)((int)this - 4);
-    if (-1 < iVar3) {
-      puVar4 = (undefined4 *)((int)this + iVar1 * 8 + 4);
-      do {
-        puVar5 = puVar4 - 2;
-        if (((uint)puVar4[-3] >> 5 & 1) != 0) {
-          this_00 = (undefined4 *)*puVar5;
-          if (this_00 != (undefined4 *)0x0) {
-            uVar2 = puVar4[-3] & 0xf;
-            if (uVar2 == 9) {
-              F_00488040(this_00 GEN_EDX_FWD,((undefined1 *)(gen_frame + 0x4)),*this_00,this_00[1]);
-              F_00488dc0(this_00 GEN_EDX_ARG);
-              F_00406ad0(this_00);
-            }
-            else if ((uVar2 == 6) || (uVar2 == 7)) {
-              F_00406ad0(this_00);
-              *puVar5 = 0;
-            }
-          }
-          *puVar5 = 0;
-        }
-        iVar3 = iVar3 - 1;
-        puVar4[-3] = 0;
-        puVar4 = puVar5;
-      } while (-1 < iVar3);
-    }
-    if ((param_1 & 1) != 0) {
-      F_00406b30((*(int * PTR32 *)(gen_frame + 0x8)));
-    }
-    return (uint)(*(int * PTR32 *)(gen_frame + 0x8));
-  }
-  if ((*(uint *)((int)(uintptr_t)this) >> 5 & 1) != 0) {
-    F_005a0260(this GEN_EDX_ARG);
-  }
-  *(undefined4 *)this = 0;
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Component::GUI2::AtkComponentTextInput::vf0 */
-GEN_FRAME uint GEN_THISCALL F_005d46c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5d46c0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  F_005a3b50(this GEN_EDX_FWD);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_005d46f0 */
-GEN_FRAME uint GEN_THISCALL F_005d46f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x5d46f0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  uint uVar1;
-  undefined * this_00;
-  undefined4 * this_01;
-  undefined4 uVar2;
-  
-  uVar2 = 0;
-  uVar1 = F_00404270();
-  this_00 = (undefined *)F_00406bd0(0x184,0,uVar1,uVar2);
-  if (this_00 == (undefined *)0x0) {
-    return 0;
-  }
-  this_01 = (undefined4 *)F_00786090(this_00 GEN_EDX_ARG);
-  if (this_01 != (undefined4 *)0x0) {
-    F_005a8d00(this_01 GEN_EDX_ARG,param_2,param_3);
-    uVar1 = F_0057fac0(this GEN_EDX_ARG,this_01,param_1);
-    if (uVar1 == 0) {
-      ((GEN_TCODE *)*(gen_code32 *)*this_01)(this_01 GEN_EDX_ARG,1);
-      return 0;
-    }
-  }
-  return (uint)this_01;
-}
-
 /* ref: FUN_005d4760 */
 GEN_FRAME unsigned int GEN_STDCALL F_005d4760(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -8942,5 +8840,88 @@ GEN_FRAME uint GEN_THISCALL F_005dd850(unsigned int gen_a0 GEN_EDX_PARAM)
     }
   }
   return 0;
+}
+
+/* ref: Client::LayoutEngine::Layer::GameObjectLayoutInstance::vf53 */
+GEN_FRAME uint GEN_THISCALL F_005dd8c0(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
+{
+  GEN_ENTER(0x5dd8c0u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  float param_2 = (float)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  undefined4 local_8;
+  
+  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x5c))(param_1 GEN_EDX_FWD)));
+  if (piVar1 != (int *)0x0) {
+    ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x68))(piVar1 GEN_EDX_ARG,(undefined4)gen_fl2bits(param_2));
+  }
+  uVar2 = param_1[0xe];
+  if (uVar2 != 0xffffffff) {
+    local_8 = CONCAT31((int3)((uint)((int)(uintptr_t)param_1) >> 8),*(undefined1 *)((int)param_1 + 0x11));
+    uVar2 = F_00a1b870(local_8,uVar2);
+    if (((uVar2 != 0) && (*(int *)(uVar2 + 0x7c) == 0)) &&
+       (piVar1 = *(int * PTR32 *)(uVar2 + 0xf0), uVar2 = 0, piVar1 != (int *)0x0)) {
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1 GEN_EDX_ARG,(undefined4)gen_fl2bits(param_2));
+    }
+  }
+  return uVar2;
+}
+
+/* ref: Client::LayoutEngine::Layer::GameObjectLayoutInstance::vf58 */
+GEN_FRAME uint GEN_THISCALL F_005dd930(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5dd930u, gen_a0, gen_a1, 0u, 0u);
+  unsigned int gen_args[2];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  undefined4 * puVar1;
+  int * piVar2;
+  uint uVar3;
+  
+  puVar1 = (*(undefined4 * PTR32 *)&gen_args[1]);
+  uVar3 = *((uint *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x38)));
+  if (uVar3 != 0xffffffff) {
+    (*(undefined4 * PTR32 *)&gen_args[1]) = ((undefined4 *)GEN_TOP(CONCAT31(GEN_PIECE(&(*(undefined4 * PTR32 *)&gen_args[1]), 1, 3),(*(undefined * PTR32 *)&gen_args[0])[0x11])));
+    piVar2 = (int *)F_00a1b870((*(undefined4 * PTR32 *)&gen_args[1]),uVar3);
+    uVar3 = 0;
+    if (piVar2 != (int *)0x0) {
+      uVar3 = ((GEN_TCODE *)*(gen_code32 *)(*piVar2 + 0x40))(piVar2 GEN_EDX_ARG);
+    }
+  }
+  *((undefined4 *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x50))) = *puVar1;
+  *((undefined4 *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x54))) = puVar1[1];
+  *((undefined4 *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x58))) = puVar1[2];
+  return uVar3;
+}
+
+/* ref: Client::LayoutEngine::Layer::GameObjectLayoutInstance::vf60 */
+GEN_FRAME uint GEN_THISCALL F_005dd990(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5dd990u, gen_a0, gen_a1, 0u, 0u);
+  unsigned int gen_args[2];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  int iVar1;
+  uint uVar2;
+  uint uVar3;
+  int * piVar4;
+  
+  uVar3 = (*(uint *)&gen_args[1]);
+  iVar1 = *(int *)((*(int *)&gen_args[0]) + 0x38);
+  if (iVar1 != -1) {
+    (*(uint *)&gen_args[1]) = CONCAT31(GEN_PIECE(&(*(uint *)&gen_args[1]), 1, 3),*(undefined1 *)((*(int *)&gen_args[0]) + 0x11));
+    piVar4 = (int *)F_00a1b870((*(uint *)&gen_args[1]),iVar1);
+    if (piVar4 != (int *)0x0) {
+      F_00a1e160(&(*(uint *)&gen_args[1]),uVar3);
+      ((GEN_TCODE *)*(gen_code32 *)(*piVar4 + 0x48))(piVar4 GEN_EDX_ARG);
+    }
+  }
+  *(undefined4 *)((*(int *)&gen_args[0]) + 0x60) = *(undefined4 *)uVar3;
+  *(undefined4 *)((*(int *)&gen_args[0]) + 100) = *(undefined4 *)(uVar3 + 4);
+  uVar2 = *(uint *)(uVar3 + 8);
+  *(uint *)((*(int *)&gen_args[0]) + 0x68) = uVar2;
+  *(undefined4 *)((*(int *)&gen_args[0]) + 0x6c) = *(undefined4 *)(uVar3 + 0xc);
+  return uVar2;
 }
 

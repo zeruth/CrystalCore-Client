@@ -1,6 +1,6 @@
 {
- "translated": 87050,
- "stubbed": 287,
+ "translated": 87043,
+ "stubbed": 281,
  "suspect": {
   "00414c60": [
    "uStack_58",
@@ -152,6 +152,9 @@
    "uStack_1c",
    "uStack_18",
    "uStack_14"
+  ],
+  "0059ed30": [
+   "this_00"
   ],
   "005c74d0": [
    "local_8"
@@ -362,9 +365,6 @@
   "a cast to an array": 2,
   "undeclared name SUB164": 2,
   "undeclared name SUB148": 2,
-  "type ChannelManagerOnSingleConnectionTmpl_TChatProtoUp_ChatProtoChannel_Network_Application_TChatProtoDown": 2,
-  "type ChannelManagerOnSingleConnectionTmpl_TLobbyProtoUp_LobbyProtoChannel_Network_Application_TLobbyProtoDown": 2,
-  "type ChannelManagerOnSingleConnectionTmpl_TZoneProtoUp_ZoneProtoChannel_Network_Application_TZoneProtoDown": 2,
   "bad instruction data": 1,
   "arithmetic on a code pointer": 1,
   "undeclared name OnCharaSheetsLoaded": 1,
@@ -654,16 +654,10 @@
   "00df34c0": "a register the decompiler lost (extraout_ECX)",
   "00df7f70": "a register the decompiler lost (extraout_ECX)",
   "00df8470": "a register the decompiler lost (extraout_ECX)",
-  "00e339b0": "type ChannelManagerOnSingleConnectionTmpl_TChatProtoUp_ChatProtoChannel_Network_Application_TChatProtoDown",
-  "00e33a00": "type ChannelManagerOnSingleConnectionTmpl_TChatProtoUp_ChatProtoChannel_Network_Application_TChatProtoDown",
-  "00e4f5c0": "type ChannelManagerOnSingleConnectionTmpl_TLobbyProtoUp_LobbyProtoChannel_Network_Application_TLobbyProtoDown",
-  "00e4f610": "type ChannelManagerOnSingleConnectionTmpl_TLobbyProtoUp_LobbyProtoChannel_Network_Application_TLobbyProtoDown",
   "00ea2440": "local of type basic_string<char,std::char_traits<char>,std::allocator<char>_>",
   "00ea96e0": "a register the decompiler lost (extraout_ST0)",
   "00ecb080": "a register the decompiler lost (unaff_EBX)",
   "00ecd440": "a register the decompiler lost (unaff_EBX)",
-  "010508a0": "type ChannelManagerOnSingleConnectionTmpl_TZoneProtoUp_ZoneProtoChannel_Network_Application_TZoneProtoDown",
-  "010508f0": "type ChannelManagerOnSingleConnectionTmpl_TZoneProtoUp_ZoneProtoChannel_Network_Application_TZoneProtoDown",
   "010524c9": "undeclared name SUB161",
   "01052968": "a register the decompiler lost (extraout_ECX)",
   "01070093": "a register the decompiler lost (in_stack_0000000c)"

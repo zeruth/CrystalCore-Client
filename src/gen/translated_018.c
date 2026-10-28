@@ -1,15 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_004fe410 */
-GEN_FRAME uint GEN_THISCALL F_004fe410(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4fe410u, gen_a0, gen_a1, 0u, 0u);
-  uint * in_ecx = (uint *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *in_ecx = param_2;
-  return param_2;
-}
-
 /* ref: FUN_004fe430 */
 GEN_FRAME uint GEN_THISCALL F_004fe430(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -8277,5 +8267,19 @@ GEN_FRAME uint GEN_THISCALL F_00505a60(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   }
   *(undefined4 *)(this + 0x9c) = 0;
   return (-(uint)(*(int *)(this + 0x98) != 0) & 0xb) - 10;
+}
+
+/* ref: Client::System::Resource::Handle::GrassGridDataResourceHandle::vf25 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00505b00(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x505b00u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  if (*(undefined * PTR32 *)(this + 0x3c0) != (undefined *)0x0) {
+    F_00520630(*(undefined * PTR32 *)(this + 0x3c0) GEN_EDX_FWD,3);
+    *(undefined4 *)(this + 0x3c0) = 0;
+  }
+  *(undefined4 *)(this + 0xa0) = 0;
+  *(undefined4 *)(this + 0xa4) = 0;
+  return;
 }
 

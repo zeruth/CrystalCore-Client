@@ -1,15 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_004ed6c0 */
-GEN_FRAME uint GEN_THISCALL F_004ed6c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4ed6c0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0xa8) = param_2;
-  return param_2;
-}
-
 /* ref: Client::Sound::MemoryHandleInterface::vf0 */
 GEN_FRAME uint GEN_THISCALL F_004ed710(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -13938,5 +13928,15 @@ GEN_FRAME unsigned int GEN_THISCALL F_004fe3e0(unsigned int gen_a0 GEN_EDX_PARAM
     *(undefined4 *)((int)this + 0xc) = param_1[3];
   }
   return;
+}
+
+/* ref: FUN_004fe410 */
+GEN_FRAME uint GEN_THISCALL F_004fe410(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x4fe410u, gen_a0, gen_a1, 0u, 0u);
+  uint * in_ecx = (uint *)(uintptr_t)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  *in_ecx = param_2;
+  return param_2;
 }
 

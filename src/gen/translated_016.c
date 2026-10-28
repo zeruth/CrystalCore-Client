@@ -1,16 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_004e2fe0 */
-GEN_FRAME uint F_004e2fe0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x4e2fe0u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 8))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1,0x10);
-  return uVar1;
-}
-
 /* ref: FUN_004e3000 */
 GEN_FRAME uint F_004e3000(unsigned int gen_a0)
 {
@@ -9857,6 +9846,16 @@ GEN_FRAME uint GEN_THISCALL F_004ed6a0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   int in_ecx = (int)gen_a0;
   uint param_2 = (uint)gen_a1;
   *(uint *)(in_ecx + 8) = param_2;
+  return param_2;
+}
+
+/* ref: FUN_004ed6c0 */
+GEN_FRAME uint GEN_THISCALL F_004ed6c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x4ed6c0u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  *(uint *)(in_ecx + 0xa8) = param_2;
   return param_2;
 }
 

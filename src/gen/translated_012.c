@@ -251,9 +251,9 @@ GEN_FRAME uint GEN_THISCALL F_004a06c0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
       REFG(undefined4, 0x13728bc) = REFG(undefined4, 0x13728bc) + 1 & 0x7f;
       uVar2 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x13728c0)), (long)(0));
       if (*(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar5) != (undefined4 *)0x0) {
-        gen_imp_SetEvent((HANDLE)**(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar5));
+        gen_imp_SetEvent(**(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar5));
       }
-      gen_imp_SetEvent(*(HANDLE *)((int)this + 0x24));
+      gen_imp_SetEvent(*(undefined4 *)((int)this + 0x24));
       return 0;
     }
     if ((*(int *)(gen_frame + 0x8)) != 0) goto LAB_004a07bf;
@@ -270,59 +270,6 @@ LAB_004a07bf: ;
     *param_1 = (*(undefined4 *)(gen_frame + 0x4));
   }
   return (uint)puVar6;
-}
-
-/* ref: FUN_004a0704 */
-GEN_NOFRAME uint F_004a0704(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x4a0704u, gen_a0, gen_a1, gen_a2, 0u);
-  uint in_ecx = (uint)gen_a0;
-  int in_ebp = (int)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  int iVar1;
-  undefined4 uVar2;
-  code * pcVar3;
-  int iVar4;
-  undefined * puVar5;
-  
-  iVar4 = in_ecx * 0x58;
-  puVar5 = &REFG(undefined, 0x13728c8) + iVar4;
-  iVar1 = *(int *)(&REFG(undefined, 0x13728f4) + iVar4);
-  *(undefined4 *)(in_ebp - 8) = 0;
-  if (iVar1 == 0) {
-    if (*(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar4) != (undefined4 *)0x0) {
-      gen_imp_SetEvent((HANDLE)**(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar4));
-      in_ecx = REFG(undefined4, 0x13728bc);
-    }
-  }
-  else {
-    uVar2 = *(undefined4 *)(&REFG(undefined, 0x13728f4) + iVar4);
-    pcVar3 = *(gen_code32 *)(&REFG(undefined, 0x13728f0) + iVar4);
-    *(undefined4 *)(in_ebp - 4) = 0;
-    puVar5 = ((undefined *)GEN_TOP((*pcVar3)(uVar2,&REFG(undefined, 0x13728f8) + iVar4,in_ebp - 8,in_ebp - 4)));
-    if (puVar5 == (undefined *)0x0) {
-      REFG(undefined4, 0x13728bc) = REFG(undefined4, 0x13728bc) + 1 & 0x7f;
-      uVar2 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x13728c0)), (long)(0));
-      if (*(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar4) != (undefined4 *)0x0) {
-        gen_imp_SetEvent(**(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar4));
-      }
-      gen_imp_SetEvent(*((undefined4 *)GEN_TOP((*(int *)(in_ebp - 0xc) + 0x24))));
-      return 0;
-    }
-    if (*(int *)(in_ebp - 4) != 0) goto LAB_004a07bf;
-    in_ecx = REFG(undefined4, 0x13728bc);
-    if (*(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar4) != (undefined4 *)0x0) {
-      gen_imp_SetEvent((HANDLE)**(undefined4 * PTR32 *)(&REFG(undefined, 0x1372918) + iVar4));
-      in_ecx = REFG(undefined4, 0x13728bc);
-    }
-  }
-  REFG(undefined4, 0x13728bc) = in_ecx + 1 & 0x7f;
-LAB_004a07bf: ;
-  uVar2 = _InterlockedExchange((volatile long *)(&REFG(undefined4, 0x13728c0)), (long)(0));
-  if (*(undefined4 * PTR32 *)(in_ebp + 8) != (undefined4 *)0x0) {
-    **(undefined4 * PTR32 *)(in_ebp + 8) = *(undefined4 *)(in_ebp - 8);
-  }
-  return (uint)puVar5;
 }
 
 /* ref: FUN_004a07e0 */
@@ -20747,6 +20694,22 @@ GEN_FRAME uint F_004bd3c0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2
   *param_1 = (float)(fVar1 * (float10)*param_2);
   param_1[1] = (float)((float10)param_2[1] * fVar1);
   param_1[2] = (float)(fVar1 * (float10)param_2[2]);
+  return (uint)param_1;
+}
+
+/* ref: FUN_004bd3f0 */
+GEN_FRAME uint F_004bd3f0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
+{
+  GEN_ENTER(0x4bd3f0u, gen_a0, gen_a1, gen_trace_f(gen_a2), 0u);
+  float * param_1 = (float *)(uintptr_t)gen_a0;
+  float * param_2 = (float *)(uintptr_t)gen_a1;
+  float param_3 = (float)gen_a2;
+  float10 fVar1;
+  
+  fVar1 = (float10)param_3;
+  *param_1 = (float)((float10)*param_2 / fVar1);
+  param_1[1] = (float)((float10)param_2[1] / fVar1);
+  param_1[2] = (float)((float10)param_2[2] / fVar1);
   return (uint)param_1;
 }
 
