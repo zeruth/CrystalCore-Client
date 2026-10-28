@@ -409,7 +409,6 @@ static unsigned int W_005da590(unsigned int gen_a0, unsigned int gen_a1) { retur
 static unsigned int W_005e1600(void) { return (unsigned int)(unsigned char)F_005e1600(); }
 static unsigned int W_005e1640(void) { return (unsigned int)(unsigned char)F_005e1640(); }
 static unsigned int W_005e16a0(void) { return (unsigned int)(unsigned char)F_005e16a0(); }
-static double W_005ea960(unsigned int gen_a0, float gen_a1, unsigned int gen_a2, unsigned int gen_a3) { return (double)F_005ea960(gen_a0, gen_a1, gen_a2, gen_a3); }
 static unsigned int W_005ecfe0(unsigned int gen_a0) { return (unsigned int)(unsigned char)F_005ecfe0(gen_a0); }
 static unsigned int W_005ee6d0(void) { return (unsigned int)(unsigned char)F_005ee6d0(); }
 static unsigned int W_005fe4b0(void) { return (unsigned int)(unsigned char)F_005fe4b0(); }
@@ -1300,7 +1299,6 @@ static double W_00c5e740(double gen_a0) { return (double)F_00c5e740(gen_a0); }
 static double W_00c5e75e(double gen_a0, unsigned int gen_a1, unsigned int gen_a2) { return (double)F_00c5e75e(gen_a0, gen_a1, gen_a2); }
 static double W_00c5e9e1(unsigned int gen_a0) { return (double)F_00c5e9e1(gen_a0); }
 static double W_00c5eb1e(unsigned int gen_a0, unsigned int gen_a1) { return (double)F_00c5eb1e(gen_a0, gen_a1); }
-static double W_00c5edb5(unsigned int gen_a0) { return (double)F_00c5edb5(gen_a0); }
 static double W_00c5ee4b(unsigned int gen_a0, unsigned int gen_a1, double gen_a2) { return (double)F_00c5ee4b(gen_a0, gen_a1, gen_a2); }
 static double W_00c678f0(float gen_a0, float gen_a1, float gen_a2, double gen_a3) { return (double)F_00c678f0(gen_a0, gen_a1, gen_a2, gen_a3); }
 static double W_00c6790e(double gen_a0, double gen_a1, double gen_a2, double gen_a3, unsigned int gen_a4, unsigned int gen_a5) { return (double)F_00c6790e(gen_a0, gen_a1, gen_a2, gen_a3, gen_a4, gen_a5); }
@@ -16724,7 +16722,7 @@ const GEN_JUMP g_genJumps[] = {
   {0x5ea6d0u, (void *)F_005ea6d0},
   {0x5ea7c0u, (void *)F_005ea7c0},
   {0x5ea8d0u, (void *)F_005ea8d0},
-  {0x5ea960u, (void *)W_005ea960},
+  {0x5ea960u, (void *)F_005ea960},
   {0x5eab20u, (void *)F_005eab20},
   {0x5eab60u, (void *)F_005eab60},
   {0x5eab80u, (void *)F_005eab80},
@@ -62840,7 +62838,7 @@ const GEN_JUMP g_genJumps[] = {
   {0xc5ed37u, (void *)F_00c5ed37},
   {0xc5ed76u, (void *)F_00c5ed76},
   {0xc5ed93u, (void *)F_00c5ed93},
-  {0xc5edb5u, (void *)W_00c5edb5},
+  {0xc5edb5u, (void *)F_00c5edb5},
   {0xc5edccu, (void *)F_00c5edcc},
   {0xc5ede5u, (void *)F_00c5ede5},
   {0xc5ee28u, (void *)F_00c5ee28},

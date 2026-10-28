@@ -1,5 +1,214 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf48 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d2d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d2d0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf49 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d2e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d2e0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf50 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d2f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d2f0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf51 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d300(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d300u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf52 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d310(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d310u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf53 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d320(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d320u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf54 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d330(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d330u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf55 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d340(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d340u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf56 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d350(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d350u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf57 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d360(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d360u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf58 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d370(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d370u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf59 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d380(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d380u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf60 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d390(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d390u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf61 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d3a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d3a0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf62 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d3b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d3b0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf63 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d3c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d3c0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf64 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d3d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d3d0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf65 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d3e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d3e0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
+/* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf66 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0105d3f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x105d3f0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  return;
+}
+
 /* ref: Application::Network::ZoneProtoChannel::ZoneProtoDownCallbackInterface::vf67 */
 GEN_NOFRAME unsigned int GEN_THISCALL F_0105d400(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -11287,521 +11496,5 @@ GEN_FRAME uint F_01065ef0(unsigned int gen_a0, unsigned int gen_a1, unsigned int
     uVar2 = uVar2 + 4;
   }
   return uVar2;
-}
-
-/* ref: FUN_01065f60 */
-GEN_FRAME uint F_01065f60(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1065f60u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return (-(uint)(param_2 < 200) & 0xffffff38) + 200;
-}
-
-/* ref: FUN_01065f80 */
-GEN_FRAME uint F_01065f80(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1065f80u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  
-  if (param_2 < 2) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[1];
-  param_1[1] = uVar1;
-  return 3;
-}
-
-/* ref: FUN_01065fb0 */
-GEN_FRAME uint F_01065fb0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1065fb0u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  undefined1 uVar2;
-  uint uVar3;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  uVar2 = param_1[2];
-  param_1[3] = uVar1;
-  param_1[2] = param_1[1];
-  param_1[1] = uVar2;
-  uVar3 = 8;
-  if (0xb < param_2) {
-    uVar1 = param_1[8];
-    param_1[8] = param_1[0xb];
-    uVar2 = param_1[10];
-    param_1[0xb] = uVar1;
-    param_1[10] = param_1[9];
-    param_1[9] = uVar2;
-    return 0xc;
-  }
-  if (8 < param_2) {
-    uVar3 = F_0105dfc0(param_2 - 8,param_1 + 8);
-    uVar3 = uVar3 + 8;
-  }
-  return uVar3;
-}
-
-/* ref: FUN_01066020 */
-GEN_FRAME uint F_01066020(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066020u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  undefined1 uVar2;
-  int iVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  uVar2 = param_1[2];
-  param_1[3] = uVar1;
-  param_1[2] = param_1[1];
-  param_1[1] = uVar2;
-  uVar4 = 8;
-  if (0xf < param_2) {
-    iVar6 = 2;
-    iVar3 = 0;
-    do {
-      iVar5 = iVar3;
-      uVar1 = param_1[iVar5 + 8];
-      param_1[iVar5 + 8] = param_1[iVar5 + 0xb];
-      param_1[iVar5 + 0xb] = uVar1;
-      uVar1 = param_1[iVar5 + 9];
-      param_1[iVar5 + 9] = param_1[iVar5 + 10];
-      param_1[iVar5 + 10] = uVar1;
-      iVar6 = iVar6 - 1;
-      iVar3 = iVar5 + 4;
-    } while (iVar6 != 0);
-    return iVar5 + 0xc;
-  }
-  if (8 < param_2) {
-    uVar4 = F_0105dfc0(param_2 - 8,param_1 + 8);
-    uVar4 = uVar4 + 8;
-  }
-  return uVar4;
-}
-
-/* ref: FUN_010660b0 */
-GEN_FRAME uint F_010660b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x10660b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  undefined1 uVar2;
-  int iVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  uVar2 = param_1[2];
-  param_1[3] = uVar1;
-  param_1[2] = param_1[1];
-  param_1[1] = uVar2;
-  uVar4 = 8;
-  if (0x17 < param_2) {
-    iVar6 = 4;
-    iVar3 = 0;
-    do {
-      iVar5 = iVar3;
-      uVar1 = param_1[iVar5 + 8];
-      param_1[iVar5 + 8] = param_1[iVar5 + 0xb];
-      param_1[iVar5 + 0xb] = uVar1;
-      uVar1 = param_1[iVar5 + 9];
-      param_1[iVar5 + 9] = param_1[iVar5 + 10];
-      param_1[iVar5 + 10] = uVar1;
-      iVar6 = iVar6 - 1;
-      iVar3 = iVar5 + 4;
-    } while (iVar6 != 0);
-    return iVar5 + 0xc;
-  }
-  if (8 < param_2) {
-    uVar4 = F_0105dfc0(param_2 - 8,param_1 + 8);
-    uVar4 = uVar4 + 8;
-  }
-  return uVar4;
-}
-
-/* ref: FUN_01066140 */
-GEN_FRAME uint F_01066140(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066140u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  undefined1 uVar2;
-  int iVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  uVar2 = param_1[2];
-  param_1[3] = uVar1;
-  param_1[2] = param_1[1];
-  param_1[1] = uVar2;
-  uVar4 = 8;
-  if (0x27 < param_2) {
-    iVar6 = 8;
-    iVar3 = 0;
-    do {
-      iVar5 = iVar3;
-      uVar1 = param_1[iVar5 + 8];
-      param_1[iVar5 + 8] = param_1[iVar5 + 0xb];
-      param_1[iVar5 + 0xb] = uVar1;
-      uVar1 = param_1[iVar5 + 9];
-      param_1[iVar5 + 9] = param_1[iVar5 + 10];
-      param_1[iVar5 + 10] = uVar1;
-      iVar6 = iVar6 - 1;
-      iVar3 = iVar5 + 4;
-    } while (iVar6 != 0);
-    return iVar5 + 0xc;
-  }
-  if (8 < param_2) {
-    uVar4 = F_0105dfc0(param_2 - 8,param_1 + 8);
-    uVar4 = uVar4 + 8;
-  }
-  return uVar4;
-}
-
-/* ref: FUN_010661d0 */
-GEN_FRAME uint F_010661d0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x10661d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  undefined1 uVar2;
-  int iVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  uVar2 = param_1[2];
-  param_1[3] = uVar1;
-  param_1[2] = param_1[1];
-  param_1[1] = uVar2;
-  uVar4 = 8;
-  if (0x47 < param_2) {
-    iVar6 = 0x10;
-    iVar3 = 0;
-    do {
-      iVar5 = iVar3;
-      uVar1 = param_1[iVar5 + 8];
-      param_1[iVar5 + 8] = param_1[iVar5 + 0xb];
-      param_1[iVar5 + 0xb] = uVar1;
-      uVar1 = param_1[iVar5 + 9];
-      param_1[iVar5 + 9] = param_1[iVar5 + 10];
-      param_1[iVar5 + 10] = uVar1;
-      iVar6 = iVar6 - 1;
-      iVar3 = iVar5 + 4;
-    } while (iVar6 != 0);
-    return iVar5 + 0xc;
-  }
-  if (8 < param_2) {
-    uVar4 = F_0105dfc0(param_2 - 8,param_1 + 8);
-    uVar4 = uVar4 + 8;
-  }
-  return uVar4;
-}
-
-/* ref: FUN_01066260 */
-GEN_FRAME uint F_01066260(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066260u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  undefined1 uVar2;
-  int iVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  uVar2 = param_1[2];
-  param_1[3] = uVar1;
-  param_1[2] = param_1[1];
-  param_1[1] = uVar2;
-  uVar4 = 8;
-  if (0x87 < param_2) {
-    iVar6 = 0x20;
-    iVar3 = 0;
-    do {
-      iVar5 = iVar3;
-      uVar1 = param_1[iVar5 + 8];
-      param_1[iVar5 + 8] = param_1[iVar5 + 0xb];
-      param_1[iVar5 + 0xb] = uVar1;
-      uVar1 = param_1[iVar5 + 9];
-      param_1[iVar5 + 9] = param_1[iVar5 + 10];
-      param_1[iVar5 + 10] = uVar1;
-      iVar6 = iVar6 - 1;
-      iVar3 = iVar5 + 4;
-    } while (iVar6 != 0);
-    return iVar5 + 0xc;
-  }
-  if (8 < param_2) {
-    uVar4 = F_0105dfc0(param_2 - 8,param_1 + 8);
-    uVar4 = uVar4 + 8;
-  }
-  return uVar4;
-}
-
-/* ref: FUN_010662f0 */
-GEN_FRAME unsigned int F_010662f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x10662f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  uint uVar1;
-  int iVar2;
-  
-  uVar1 = 0;
-  iVar2 = 0;
-  do {
-    if (param_2 <= uVar1) {
-      return 0;
-    }
-    iVar2 = iVar2 + 1;
-    uVar1 = uVar1 + 2;
-  } while (iVar2 < 5);
-  return 0;
-}
-
-/* ref: FUN_01066310 */
-GEN_FRAME uint F_01066310(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066310u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  param_1[3] = uVar1;
-  uVar1 = param_1[1];
-  param_1[1] = param_1[2];
-  param_1[2] = uVar1;
-  return 5;
-}
-
-/* ref: FUN_01066340 */
-GEN_FRAME uint F_01066340(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066340u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return (-(uint)(param_2 < 0x28) & 0xffffffd8) + 0x28;
-}
-
-/* ref: FUN_01066360 */
-GEN_FRAME uint F_01066360(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066360u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  param_1[3] = uVar1;
-  uVar1 = param_1[1];
-  param_1[1] = param_1[2];
-  param_1[2] = uVar1;
-  if (param_2 < 6) {
-    return 4;
-  }
-  uVar1 = param_1[4];
-  param_1[4] = param_1[5];
-  param_1[5] = uVar1;
-  return 8 - (param_2 < 8);
-}
-
-/* ref: FUN_010663b0 */
-GEN_FRAME uint F_010663b0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x10663b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  param_1[3] = uVar1;
-  uVar1 = param_1[1];
-  param_1[1] = param_1[2];
-  param_1[2] = uVar1;
-  if (param_2 < 6) {
-    return 4;
-  }
-  uVar1 = param_1[4];
-  param_1[4] = param_1[5];
-  param_1[5] = uVar1;
-  return (-(uint)(param_2 < 0x27) & 0xffffffe0) + 0x27;
-}
-
-/* ref: FUN_01066410 */
-GEN_FRAME uint F_01066410(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066410u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return (-(uint)(param_2 < 0x100) & 0xffffff00) + 0x100;
-}
-
-/* ref: FUN_01066430 */
-GEN_FRAME uint F_01066430(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066430u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  
-  if (param_2 < 4) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[3];
-  param_1[3] = uVar1;
-  uVar1 = param_1[1];
-  param_1[1] = param_1[2];
-  param_1[2] = uVar1;
-  return 4;
-}
-
-/* ref: FUN_01066460 */
-GEN_FRAME uint F_01066460(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066460u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return (-(uint)(param_2 < 0x100) & 0xffffff00) + 0x100;
-}
-
-/* ref: FUN_01066480 */
-GEN_FRAME uint F_01066480(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066480u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return (-(uint)(param_2 < 0xfd8) & 0xfffff028) + 0xfd8;
-}
-
-/* ref: FUN_010664a0 */
-GEN_FRAME uint F_010664a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x10664a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  undefined1 uVar2;
-  uint uVar3;
-  
-  if (param_2 < 2) {
-    return 0;
-  }
-  uVar1 = *param_1;
-  *param_1 = param_1[1];
-  param_1[1] = uVar1;
-  uVar3 = 4;
-  if (7 < param_2) {
-    uVar1 = param_1[4];
-    param_1[4] = param_1[7];
-    uVar2 = param_1[6];
-    param_1[7] = uVar1;
-    param_1[6] = param_1[5];
-    param_1[5] = uVar2;
-    return 8;
-  }
-  if (4 < param_2) {
-    uVar3 = F_0105dfc0(param_2 - 4,param_1 + 4);
-    uVar3 = uVar3 + 4;
-  }
-  return uVar3;
-}
-
-/* ref: FUN_01066500 */
-GEN_FRAME uint F_01066500(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1066500u, gen_a0, gen_a1, 0u, 0u);
-  undefined1 * param_1 = (undefined1 *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  undefined1 uVar1;
-  int iVar2;
-  uint uVar3;
-  int iVar4;
-  int iVar5;
-  
-  if (param_2 < 2) {
-    return 0;
-  }
-  uVar1 = param_1[1];
-  param_1[1] = *param_1;
-  *param_1 = uVar1;
-  uVar3 = 4;
-  if (0xb < param_2) {
-    iVar5 = 2;
-    iVar2 = 0;
-    do {
-      iVar4 = iVar2;
-      uVar1 = param_1[iVar4 + 4];
-      param_1[iVar4 + 4] = param_1[iVar4 + 7];
-      param_1[iVar4 + 7] = uVar1;
-      uVar1 = param_1[iVar4 + 5];
-      param_1[iVar4 + 5] = param_1[iVar4 + 6];
-      param_1[iVar4 + 6] = uVar1;
-      iVar5 = iVar5 - 1;
-      iVar2 = iVar4 + 4;
-    } while (iVar5 != 0);
-    return iVar4 + 8;
-  }
-  if (4 < param_2) {
-    uVar3 = F_0105dfc0(param_2 - 4,param_1 + 4);
-    uVar3 = uVar3 + 4;
-  }
-  return uVar3;
 }
 

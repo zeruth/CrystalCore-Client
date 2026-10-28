@@ -1,5 +1,29 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0055ad10 */
+GEN_FRAME unsigned int GEN_THISCALL F_0055ad10(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x55ad10u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  if ((in_ecx != 0) && (*(char *)(in_ecx + 0x100) = (char)param_2, (char)param_2 != '\0')) {
+    *(byte *)(in_ecx + 0xfe) = *(byte *)(in_ecx + 0xfe) | 0x80;
+  }
+  return;
+}
+
+/* ref: FUN_0055ad30 */
+GEN_FRAME unsigned int GEN_THISCALL F_0055ad30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x55ad30u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  if (in_ecx != 0) {
+    *(undefined2 *)(in_ecx + 0x102) = (undefined2)param_2;
+  }
+  return;
+}
+
 /* ref: FUN_0055ad50 */
 GEN_FRAME uint GEN_THISCALL F_0055ad50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -8893,33 +8917,5 @@ GEN_FRAME unsigned int GEN_THISCALL F_00563870(unsigned int gen_a0 GEN_EDX_PARAM
   }
   *(undefined4 *)((int)this + 0x2f8) = 0;
   return;
-}
-
-/* ref: FUN_005638c0 */
-GEN_FRAME byte GEN_THISCALL F_005638c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5638c0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  byte bVar1;
-  
-  bVar1 = -((*(byte *)(in_ecx + 0x1df) & 8) != 0) & (byte)param_2;
-  *(byte *)(in_ecx + 0x1fb) = bVar1;
-  return bVar1;
-}
-
-/* ref: FUN_005638e0 */
-GEN_FRAME byte GEN_THISCALL F_005638e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5638e0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  byte bVar1;
-  
-  bVar1 = 1;
-  if ((*(char *)(in_ecx + 0x80) != '\x01') || (param_2 == 0x11)) {
-    bVar1 = 0;
-  }
-  return bVar1;
 }
 

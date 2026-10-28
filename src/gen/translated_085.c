@@ -1,5 +1,93 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::RaptureAtkModule::ItemCache::vf0 */
+GEN_FRAME uint GEN_THISCALL F_009088a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9088a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined * pIVar1;
+  int iVar2;
+  undefined * pIVar3;
+  
+  if ((param_1 & 2) == 0) {
+    *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[3])REFP(0x10c3eec));
+    F_0042c880(this + 4 GEN_EDX_FWD);
+    if ((param_1 & 1) != 0) {
+      F_00406ad0(this);
+    }
+  }
+  else {
+    pIVar1 = this - 4;
+    iVar2 = *(int *)pIVar1;
+    pIVar3 = this + iVar2 * 0x68;
+    while (iVar2 = iVar2 - 1, -1 < iVar2) {
+      *(undefined * PTR32 * PTR32 *)(pIVar3 - 0x68) = (*(undefined * PTR32 (*)[3])REFP(0x10c3eec));
+      F_0042c880(pIVar3 - 100 GEN_EDX_ARG);
+      pIVar3 = pIVar3 - 0x68;
+    }
+    this = pIVar1;
+    if ((param_1 & 1) != 0) {
+      F_00406b30(pIVar1);
+      return (uint)pIVar1;
+    }
+  }
+  return (uint)this;
+}
+
+/* ref: FUN_00908920 */
+GEN_FRAME uint GEN_THISCALL F_00908920(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x908920u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  *(undefined4 *)((int)this + (char)param_1 * 4 + 0x40) = param_2;
+  return (int)(char)param_1;
+}
+
+/* ref: FUN_00908940 */
+GEN_FRAME uint GEN_THISCALL F_00908940(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x908940u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  *(uint *)(in_ecx + 0x40) = param_2;
+  *(uint *)(in_ecx + 0x44) = param_2;
+  *(uint *)(in_ecx + 0x48) = param_2;
+  *(uint *)(in_ecx + 0x4c) = param_2;
+  return param_2;
+}
+
+/* ref: Component::GUI2::AtkManagedInterface::vf2 */
+GEN_NOFRAME uint GEN_THISCALL F_00908980(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x908980u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * piVar1;
+  uint uVar2;
+  
+  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD)));
+  uVar2 = 0;
+  if (piVar1 != (int *)0x0) {
+    uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x18))(piVar1 GEN_EDX_ARG,1,0);
+  }
+  return uVar2;
+}
+
+/* ref: Component::GUI2::AtkManagedInterface::vf0 */
+GEN_FRAME uint GEN_THISCALL F_009089a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9089a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[4])REFP(0x10c3f58));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: FUN_009089e0 */
 GEN_FRAME uint GEN_THISCALL F_009089e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -5750,69 +5838,5 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_0090f5f0(unsigned int gen_a0 GEN_EDX_PAR
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   return;
-}
-
-/* ref: Client::UI2::AddonCharaSelectInfo::vf6 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_0090f600(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x90f600u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  return;
-}
-
-/* ref: Client::UI2::AddonCharaMakeClassSelector::TreeListCallback::vf2 */
-GEN_FRAME uint GEN_THISCALL F_0090f620(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
-{
-  GEN_ENTER(0x90f620u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 param_8 = (undefined4)gen_a8;
-  uint uVar1;
-  
-  uVar1 = ((code *)*(gen_code32 *)(this + 8))
-                    (*(undefined4 *)(this + 4),param_1,param_2,param_3,param_4,param_5,param_6,
-                     param_7,param_8);
-  return uVar1;
-}
-
-/* ref: Client::UI2::AddonCharaMakeClassSelector::TreeListCallback::vf0 */
-GEN_FRAME uint GEN_THISCALL F_0090f630(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x90f630u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[4])REFP(0x10a0b64));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_0090f660 */
-GEN_FRAME uint GEN_THISCALL F_0090f660(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x90f660u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0x18c) = param_2;
-  return param_2;
-}
-
-/* ref: FUN_0090f670 */
-GEN_FRAME uint GEN_THISCALL F_0090f670(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x90f670u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 400) = param_2;
-  return param_2;
 }
 

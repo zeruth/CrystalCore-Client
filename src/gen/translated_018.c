@@ -1,5 +1,29 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_004fe450 */
+GEN_FRAME uint GEN_THISCALL F_004fe450(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x4fe450u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  *(uint *)((int)this + 8) = param_1;
+  *(undefined4 *)((int)this + 0xc) = param_2;
+  return param_1;
+}
+
+/* ref: FUN_004fe480 */
+GEN_FRAME uint GEN_THISCALL F_004fe480(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x4fe480u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  *(uint *)((int)this + 0x10) = param_1;
+  *(undefined4 *)((int)this + 0x14) = param_2;
+  return param_1;
+}
+
 /* ref: FUN_004fe4b0 */
 GEN_FRAME uint GEN_THISCALL F_004fe4b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -8990,42 +9014,5 @@ switchD_005067ef_caseD_4: ;
       return 1;
     }
   } while( true );
-}
-
-/* ref: FUN_00506ea0 */
-GEN_FRAME uint GEN_THISCALL F_00506ea0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x506ea0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  ushort uVar1;
-  
-  uVar1 = F_00503630(this GEN_EDX_FWD,param_1);
-  if ((-1 < (short)uVar1) &&
-     (uVar1 = *((ushort *)GEN_TOP((*(int *)((int)this + 0xd4) + 0x22 + (short)uVar1 * 0x28))),
-     -1 < (short)uVar1)) {
-    return *((uint *)GEN_TOP((*((int *)GEN_TOP((*(int *)((int)this + 0xb0) + 0x20))) + (uint)uVar1 * 4)));
-  }
-  return 0;
-}
-
-/* ref: FUN_00506ef0 */
-GEN_FRAME float10 F_00506ef0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x506ef0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  int iVar1;
-  char * _String;
-  double dVar2;
-  
-  if ((*(int *)(param_1 + 0xc0) - (int)*(int * PTR32 *)(param_1 + 0xbc) & 0xfffffffcU) == 0) {
-    iVar1 = 0;
-  }
-  else {
-    iVar1 = **(int * PTR32 *)(param_1 + 0xbc);
-  }
-  _String = (char *)F_0042a990(iVar1 + 0x68 GEN_EDX_ARG);
-  dVar2 = F_00c4acaa(_String);
-  return (float10)(float)dVar2;
 }
 

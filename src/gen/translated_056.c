@@ -1,5 +1,140 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Game::Event::LuaEventHandler::vf58 */
+GEN_FRAME uint GEN_THISCALL F_006f9cb0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6f9cb0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  byte bVar1;
+  uint uVar2;
+  uint uVar3;
+  
+  if (*(int *)(this + 0x60) != 0) {
+    uVar2 = F_006f4000(this GEN_EDX_FWD);
+    return uVar2;
+  }
+  uVar3 = F_00a038b0(*(undefined * PTR32 *)(this + 0x1d0) GEN_EDX_ARG,param_1 + 1);
+  uVar2 = 1;
+  if (uVar3 != 1) {
+    bVar1 = F_00a02270(uVar3);
+    if (bVar1 != 0) {
+      *(uint *)(this + 0x60) = uVar3;
+    }
+    uVar2 = F_006f4000(this GEN_EDX_ARG);
+  }
+  return uVar2;
+}
+
+/* ref: Client::Game::Event::LuaEventHandler::vf59 */
+GEN_FRAME uint GEN_THISCALL F_006f9d00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x6f9d00u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  byte bVar1;
+  uint uVar2;
+  uint uVar3;
+  
+  if (*(int *)(this + 0x60) != 0) {
+    uVar2 = F_006f4000(this GEN_EDX_FWD);
+    return uVar2;
+  }
+  uVar3 = F_00a03900(*(undefined * PTR32 *)(this + 0x1d0) GEN_EDX_ARG,param_2,param_3);
+  uVar2 = 1;
+  if (uVar3 != 1) {
+    bVar1 = F_00a02270(uVar3);
+    if (bVar1 != 0) {
+      *(uint *)(this + 0x60) = uVar3;
+    }
+    uVar2 = F_006f4000(this GEN_EDX_ARG);
+  }
+  return uVar2;
+}
+
+/* ref: Client::Game::Event::LuaEventHandler::vf61 */
+GEN_FRAME uint GEN_THISCALL F_006f9d60(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x6f9d60u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  byte bVar1;
+  uint uVar2;
+  uint uVar3;
+  
+  if (*(int *)(this + 0x60) != 0) {
+    uVar2 = F_006f4000(this GEN_EDX_FWD);
+    return uVar2;
+  }
+  uVar3 = F_00a03970(*(undefined * PTR32 *)(this + 0x1d0) GEN_EDX_ARG,param_2);
+  uVar2 = 1;
+  if (uVar3 != 1) {
+    bVar1 = F_00a02270(uVar3);
+    if (bVar1 != 0) {
+      *(uint *)(this + 0x60) = uVar3;
+    }
+    uVar2 = F_006f4000(this GEN_EDX_ARG);
+  }
+  return uVar2;
+}
+
+/* ref: Client::Game::Event::LuaEventHandler::vf60 */
+GEN_FRAME uint GEN_THISCALL F_006f9db0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x6f9db0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  byte bVar1;
+  uint uVar2;
+  uint uVar3;
+  
+  if (*(int *)(this + 0x60) != 0) {
+    uVar2 = F_006f4000(this GEN_EDX_FWD);
+    return uVar2;
+  }
+  uVar3 = F_00a039e0(*(undefined * PTR32 *)(this + 0x1d0) GEN_EDX_ARG,param_2,param_3);
+  uVar2 = 1;
+  if (uVar3 != 1) {
+    bVar1 = F_00a02270(uVar3);
+    if (bVar1 != 0) {
+      *(uint *)(this + 0x60) = uVar3;
+    }
+    uVar2 = F_006f4000(this GEN_EDX_ARG);
+  }
+  return uVar2;
+}
+
+/* ref: Client::Game::Event::LuaEventHandler::vf62 */
+GEN_NOFRAME uint GEN_THISCALL F_006f9e10(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6f9e10u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  byte bVar1;
+  uint uVar2;
+  uint uVar3;
+  
+  if (*(int *)(this + 0x60) != 0) {
+    uVar2 = F_006f4000(this GEN_EDX_FWD);
+    return uVar2;
+  }
+  uVar3 = F_00a03710(*(undefined * PTR32 *)(this + 0x1d0) GEN_EDX_ARG);
+  uVar2 = 1;
+  if (uVar3 != 1) {
+    bVar1 = F_00a02270(uVar3);
+    if (bVar1 != 0) {
+      *(uint *)(this + 0x60) = uVar3;
+    }
+    uVar2 = F_006f4000(this GEN_EDX_ARG);
+  }
+  return uVar2;
+}
+
 /* ref: Client::Game::Event::LuaEventHandler::vf63 */
 GEN_NOFRAME uint GEN_THISCALL F_006f9e60(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -25701,92 +25836,5 @@ GEN_FRAME uint GEN_THISCALL F_0071d130(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   
   uVar1 = F_00536cc0(this GEN_EDX_FWD,param_1,param_2,param_3,param_4,param_5,param_6,param_7);
   return uVar1;
-}
-
-/* ref: FUN_0071d160 */
-GEN_FRAME uint GEN_THISCALL F_0071d160(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6)
-{
-  GEN_ENTER(0x71d160u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  uint uVar1;
-  
-  uVar1 = F_00536d10(this GEN_EDX_FWD,param_1,param_2,param_3,param_4,param_5,param_6);
-  return uVar1;
-}
-
-/* ref: FUN_0071d1a0 */
-GEN_NOFRAME uint GEN_THISCALL F_0071d1a0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x71d1a0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  *(undefined4 *)this = 9999;
-  *(undefined2 *)((int)this + 4) = 0;
-  *(undefined1 *)((int)this + 6) = 0;
-  *(undefined4 *)((int)this + 8) = 0;
-  *(undefined4 *)((int)this + 0xc) = 0;
-  *(undefined4 *)((int)this + 0x18) = 0;
-  *(undefined4 *)((int)this + 0x1c) = 0;
-  *(undefined1 *)((int)this + 0x14) = 0;
-  *(undefined2 *)((int)this + 0x12) = 30000;
-  *(undefined1 *)((int)this + 0x2f) = 0;
-  *(undefined4 *)((int)this + 0x30) = 0;
-  *(undefined4 *)((int)this + 0x3c) = 0;
-  *(undefined2 *)((int)this + 0x10) = 0;
-  *(undefined4 *)((int)this + 0x20) = 0;
-  *(undefined4 *)((int)this + 0x24) = 0;
-  *(undefined2 *)((int)this + 0x28) = 0;
-  *(undefined4 *)((int)this + 0x2a) = 0;
-  *(undefined1 *)((int)this + 0x2e) = 0;
-  *(undefined4 *)((int)this + 0x34) = 0;
-  *(undefined1 *)((int)this + 0x38) = 0;
-  return (uint)this;
-}
-
-/* ref: FUN_0071d1f0 */
-GEN_FRAME uint GEN_THISCALL F_0071d1f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x71d1f0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  *(uint *)((int)this + 0x18) = param_1;
-  *(undefined4 *)((int)this + 0x1c) = param_2;
-  return param_1;
-}
-
-/* ref: FUN_0071d210 */
-GEN_NOFRAME ushort GEN_THISCALL F_0071d210(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x71d210u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  ushort uVar1;
-  uint uVar2;
-  undefined * this_00;
-  
-  if (*(char *)((int)this + 6) != '\0') {
-    uVar2 = F_00a3a860(this GEN_EDX_FWD);
-    if (uVar2 != 0) {
-      this_00 = (undefined *)F_00a3a860(this GEN_EDX_ARG);
-      uVar1 = F_0071d210(this_00 GEN_EDX_ARG);
-      return uVar1;
-    }
-  }
-  return *(ushort *)((int)this + 0x10);
-}
-
-/* ref: FUN_0071d240 */
-GEN_FRAME ushort GEN_THISCALL F_0071d240(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x71d240u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(ushort *)(in_ecx + 0x10) = (ushort)param_2;
-  return (ushort)param_2;
 }
 

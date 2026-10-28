@@ -1,5 +1,31 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Component::GUI2::AtkComponentBase::vf11 */
+GEN_NOFRAME uint GEN_THISCALL F_005cd100(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x5cd100u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if ((in_ecx != 0) && (*(int *)(in_ecx + 0x70) != 0)) {
+    return *((uint *)GEN_TOP((*(int *)(in_ecx + 0x70) + 0x84))) >> 0x1a & 1;
+  }
+  return 0;
+}
+
+/* ref: Component::GUI2::AtkComponentBase::vf17 */
+GEN_FRAME uint GEN_THISCALL F_005cd120(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x5cd120u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  uint uVar1;
+  byte bVar2;
+  
+  uVar1 = *(uint *)(this + 0x70);
+  bVar2 = F_00570d10(uVar1 GEN_EDX_FWD,param_1,param_2,0);
+  return -(uint)(bVar2 != 0) & uVar1;
+}
+
 /* ref: Component::GUI2::AtkComponentButton::vf18 */
 GEN_NOFRAME uint GEN_THISCALL F_005cd150(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -8661,33 +8687,5 @@ GEN_FRAME uint GEN_THISCALL F_005d46f0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     }
   }
   return (uint)this_01;
-}
-
-/* ref: FUN_005d4760 */
-GEN_FRAME unsigned int GEN_STDCALL F_005d4760(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5d4760u, gen_a0, gen_a1, 0u, 0u);
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  if (param_1 != (undefined *)0x0) {
-    F_005d4320(param_1 GEN_EDX_ARG,param_2);
-  }
-  return;
-}
-
-/* ref: FUN_005d4780 */
-GEN_FRAME uint GEN_THISCALL F_005d4780(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5d4780u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  if ((*(uint *)((int)this + 0x10) >> 5 & 1) != 0) {
-    F_005a0260((undefined *)((int)this + 0x10) GEN_EDX_FWD);
-  }
-  *(undefined4 *)((int)this + 0x10) = 0;
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
 }
 

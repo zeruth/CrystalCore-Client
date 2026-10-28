@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005c4d30 */
+GEN_NOFRAME uint GEN_THISCALL F_005c4d30(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x5c4d30u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  F_005bc040(this GEN_EDX_FWD);
+  return (uint)this;
+}
+
+/* ref: FUN_005c4d40 */
+GEN_FRAME uint GEN_THISCALL F_005c4d40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x5c4d40u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  *param_1 = *(undefined4 *)this;
+  F_005bc040(this GEN_EDX_FWD);
+  return (uint)param_1;
+}
+
 /* ref: FUN_005c4db0 */
 GEN_FRAME byte GEN_THISCALL F_005c4db0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -9344,31 +9365,5 @@ GEN_NOFRAME uint F_005cd0f0(void)
 {
   GEN_ENTER(0x5cd0f0u, 0u, 0u, 0u, 0u);
   return 0;
-}
-
-/* ref: Component::GUI2::AtkComponentBase::vf11 */
-GEN_NOFRAME uint GEN_THISCALL F_005cd100(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x5cd100u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  if ((in_ecx != 0) && (*(int *)(in_ecx + 0x70) != 0)) {
-    return *((uint *)GEN_TOP((*(int *)(in_ecx + 0x70) + 0x84))) >> 0x1a & 1;
-  }
-  return 0;
-}
-
-/* ref: Component::GUI2::AtkComponentBase::vf17 */
-GEN_FRAME uint GEN_THISCALL F_005cd120(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x5cd120u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  uint uVar1;
-  byte bVar2;
-  
-  uVar1 = *(uint *)(this + 0x70);
-  bVar2 = F_00570d10(uVar1 GEN_EDX_FWD,param_1,param_2,0);
-  return -(uint)(bVar2 != 0) & uVar1;
 }
 

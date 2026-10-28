@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00518930 */
+GEN_FRAME uint GEN_STDCALL F_00518930(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x518930u, gen_a0, gen_a1, 0u, 0u);
+  uint * param_1 = (uint *)(uintptr_t)gen_a0;
+  uint * param_2 = (uint *)(uintptr_t)gen_a1;
+  return (uint)(*param_1 < *param_2);
+}
+
+/* ref: FUN_00518950 */
+GEN_FRAME uint GEN_STDCALL F_00518950(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x518950u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 0x24,0x12e);
+  return (uint)uVar1;
+}
+
 /* ref: FUN_00518980 */
 GEN_FRAME uint F_00518980(unsigned int gen_a0)
 {
@@ -4779,25 +4800,5 @@ GEN_NOFRAME uint F_0051cfd0(void)
 {
   GEN_ENTER(0x51cfd0u, 0u, 0u, 0u, 0u);
   return 0x108;
-}
-
-/* ref: Client::System::Resource::Handle::SkeletonParamResourceHandleFactory::vf0 */
-GEN_FRAME uint GEN_THISCALL F_0051cfe0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x51cfe0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10993b0));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::System::Resource::Handle::ResidentPapTableResourceHandleFactory::vf2 */
-GEN_NOFRAME uint F_0051d030(void)
-{
-  GEN_ENTER(0x51d030u, 0u, 0u, 0u, 0u);
-  return 200;
 }
 

@@ -1,5 +1,86 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_004ed760 */
+GEN_FRAME unsigned int GEN_THISCALL F_004ed760(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
+{
+  GEN_ENTER(0x4ed760u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  float param_2 = (float)gen_a1;
+  *(float *)(in_ecx + 0xb8) = param_2;
+  return;
+}
+
+/* ref: Client::Sound::SoundData::vf1 */
+GEN_FRAME byte GEN_THISCALL F_004ed780(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x4ed780u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  int iVar1;
+  byte bVar2;
+  
+  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
+  iVar1 = *(int *)(this + 100);
+  if (iVar1 == 0) {
+    (*(undefined * PTR32 *)(gen_frame + 0x8)) = (undefined *)(int)(*(double *)&REFG(undefined, 0x1097260) * 0.0);
+    F_00cbe1a0(this + 0x20 GEN_EDX_FWD,(uint)&(*(undefined * PTR32 *)(gen_frame + 0x8)));
+    iVar1 = *(int *)(this + 0x18);
+    if (iVar1 == 0) {
+      return 1;
+    }
+    if (0 < *(int *)(iVar1 + 0xac)) {
+      *(int *)(iVar1 + 0xac) = *(int *)(iVar1 + 0xac) - 1;
+    }
+    if (*(int *)(iVar1 + 0xac) != 0) {
+      return 1;
+    }
+    bVar2 = F_00d2d530(*((undefined4 *)GEN_TOP((*(int *)(this + 0x18) + 0xa8))),0);
+    if (bVar2 != 0) {
+      *((undefined4 *)GEN_TOP((*(int *)(this + 0x18) + 0xa8))) = 0;
+      return 1;
+    }
+LAB_004ed82b: ;
+    *((int *)GEN_TOP((*(int *)(this + 0x18) + 0xac))) = *((int *)GEN_TOP((*(int *)(this + 0x18) + 0xac))) + 1;
+    return 0;
+  }
+  if (iVar1 != 1) {
+    if (iVar1 != 2) {
+      return 1;
+    }
+    bVar2 = F_00cbc040(this + 0x20 GEN_EDX_ARG);
+    if (bVar2 != 0) {
+      return 0;
+    }
+    F_004ebcc0(*(undefined * PTR32 *)(REFG(int, 0x1375a64) + 0xcc) GEN_EDX_ARG,*(undefined4 *)(this + 0x70));
+    *(undefined4 *)(this + 0x70) = 0;
+    return 1;
+  }
+  if ((-1 < *(int *)(this + 0x54)) && (*(int *)(this + 0x50) != 0)) {
+    iVar1 = *((int *)GEN_TOP((*(int *)(this + 0x50) + 4)));
+    if (iVar1 != 0) {
+      F_00d2eaf0(iVar1,*(int *)(this + 0x54));
+    }
+    *(undefined4 *)(this + 0x54) = 0xffffffff;
+  }
+  if ((-1 < *(int *)(this + 0x58)) && (iVar1 = *(int *)(this + 0x18), iVar1 != 0)) {
+    if (0 < *(int *)(iVar1 + 0xac)) {
+      *(int *)(iVar1 + 0xac) = *(int *)(iVar1 + 0xac) - 1;
+    }
+    if (*(int *)(iVar1 + 0xac) == 0) {
+      bVar2 = F_00d2d530(*(undefined4 *)(this + 0x58),0);
+      if (bVar2 == 0) goto LAB_004ed82b;
+      *((undefined4 *)GEN_TOP((*(int *)(this + 0x18) + 0xa8))) = 0;
+    }
+    *(undefined4 *)(this + 0x58) = 0xffffffff;
+  }
+  if (*(int *)(this + 0x5c) == 0) {
+    return 1;
+  }
+  F_00406b30(*(int *)(this + 0x5c));
+  *(undefined4 *)(this + 0x5c) = 0;
+  return 1;
+}
+
 /* ref: Client::Sound::SoundData::vf16 */
 GEN_FRAME unsigned int GEN_THISCALL F_004ed8d0(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1, float gen_a2, float gen_a3)
 {
@@ -70,15 +151,15 @@ GEN_FRAME uint GEN_THISCALL F_004ed9b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 }
 
 /* ref: Client::Sound::SoundData::vf29 */
-GEN_FRAME uint GEN_THISCALL F_004eda00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+GEN_FRAME uint GEN_THISCALL F_004eda00(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
 {
-  GEN_ENTER(0x4eda00u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
+  GEN_ENTER(0x4eda00u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  float param_2 = (float)gen_a1;
   uint uVar1;
   
   uVar1 = REFG(undefined4, 0x1375a64);
-  *(undefined4 *)(REFG(undefined4, 0x1375a64) + 0xb8) = param_1;
+  *(float *)(REFG(undefined4, 0x1375a64) + 0xb8) = param_2;
   return uVar1;
 }
 
@@ -13854,29 +13935,5 @@ GEN_FRAME uint GEN_THISCALL F_004fe430(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uint param_2 = (uint)gen_a1;
   *(uint *)(in_ecx + 4) = param_2;
   return param_2;
-}
-
-/* ref: FUN_004fe450 */
-GEN_FRAME uint GEN_THISCALL F_004fe450(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x4fe450u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  *(uint *)((int)this + 8) = param_1;
-  *(undefined4 *)((int)this + 0xc) = param_2;
-  return param_1;
-}
-
-/* ref: FUN_004fe480 */
-GEN_FRAME uint GEN_THISCALL F_004fe480(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x4fe480u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  *(uint *)((int)this + 0x10) = param_1;
-  *(undefined4 *)((int)this + 0x14) = param_2;
-  return param_1;
 }
 

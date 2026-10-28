@@ -1,5 +1,295 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularPitchShiftXA2::vf7 */
+GEN_NOFRAME byte F_00cd1490(void)
+{
+  GEN_ENTER(0xcd1490u, 0u, 0u, 0u, 0u);
+  return 1;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularPitchShiftXA2::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00cd14a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcd14a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  
+  piVar1 = *(int * PTR32 *)(this + 0x50);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[12])REFP(0x112c0a8));
+  if (piVar1 != (int *)0x0) {
+    ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 8))(piVar1 GEN_EDX_FWD);
+    *(undefined4 *)(this + 0x50) = 0;
+    *(undefined4 *)(this + 0x5c) = 0;
+  }
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[12])REFP(0x112c074));
+  F_00cccb40(this + 0x28 GEN_EDX_ARG);
+  F_00cccb40(this + 4 GEN_EDX_ARG);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[9])REFP(0x112a0bc));
+  if ((param_1 & 1) != 0) {
+    F_00406810(this);
+  }
+  return (uint)this;
+}
+
+/* ref: FUN_00cd1500 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00cd1500(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd1500u, gen_a0, 0u, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  *in_ecx = (*(undefined * PTR32 (*)[17])REFP(0x112c104));
+  F_00cccb40(in_ecx + 10 GEN_EDX_FWD);
+  F_00cccb40(in_ecx + 1 GEN_EDX_ARG);
+  *in_ecx = (*(undefined * PTR32 (*)[9])REFP(0x112a0bc));
+  return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::GranularSynthesizerBase::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00cd1530(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcd1530u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[17])REFP(0x112c104));
+  F_00cccb40(this + 0x28 GEN_EDX_FWD);
+  F_00cccb40(this + 4 GEN_EDX_ARG);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[9])REFP(0x112a0bc));
+  if ((param_1 & 1) != 0) {
+    F_00406810(this);
+  }
+  return (uint)this;
+}
+
+/* ref: FUN_00cd1570 */
+GEN_NOFRAME uint GEN_THISCALL F_00cd1570(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd1570u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * this_00;
+  uint uVar1;
+  
+  F_00ce7460(this GEN_EDX_FWD);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[18])REFP(0x112c14c));
+  *(undefined4 *)((int)this + 0x4c) = 0;
+  if ((*(uint *)&REFG(undefined, 0x15d7790) & 1) == 0) {
+    *(uint *)&REFG(undefined, 0x15d7790) = *(uint *)&REFG(undefined, 0x15d7790) | 1;
+    REFG(int * PTR32, 0x15d778c) = (int *)F_004042b0();
+  }
+  this_00 = ((undefined *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x15d778c) + 8))))
+                              (REFG(int * PTR32, 0x15d778c) GEN_EDX_ARG,0x78,"CDev.Engine.Sd.SoundDriver",0,0,0x10)));
+  if (this_00 == (undefined *)0x0) {
+    *(undefined4 *)((int)this + 0x4c) = 0;
+    return (uint)this;
+  }
+  uVar1 = F_00ce7940(this_00 GEN_EDX_ARG);
+  *(uint *)((int)this + 0x4c) = uVar1;
+  return (uint)this;
+}
+
+/* ref: FUN_00cd15e0 */
+GEN_NOFRAME uint GEN_THISCALL F_00cd15e0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd15e0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * piVar1;
+  uint uVar2;
+  
+  piVar1 = *(int * PTR32 *)((int)this + 0x4c);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[18])REFP(0x112c14c));
+  uVar2 = 0;
+  if (piVar1 != (int *)0x0) {
+    uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 8))(piVar1 GEN_EDX_FWD);
+    *(undefined4 *)((int)this + 0x4c) = 0;
+  }
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[17])REFP(0x112c104));
+  F_00cccb40((int)this + 0x28 GEN_EDX_ARG);
+  F_00cccb40((int)this + 4 GEN_EDX_ARG);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[9])REFP(0x112a0bc));
+  return uVar2;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf1 */
+GEN_FRAME unsigned int GEN_THISCALL F_00cd1620(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcd1620u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int * piVar1;
+  
+  if (*(int *)(this + 0x50) != 0) {
+    piVar1 = *(int * PTR32 *)(this + 0x50);
+    if ((char)param_1 != '\0') {
+      ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x10))(piVar1 GEN_EDX_FWD,*(undefined4 *)(this + 0x54),0);
+      return;
+    }
+    ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(this + 0x54),0);
+  }
+  return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf2 */
+GEN_FRAME byte GEN_THISCALL F_00cd1650(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd1650u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  int iVar1;
+  
+  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
+  iVar1 = *(int *)(this + 0x50);
+  (*(undefined * PTR32 *)(gen_frame + 0x8)) = (undefined *)0x1;
+  if (iVar1 != 0) {
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x50) + 0x14))))
+              (*(int * PTR32 *)(this + 0x50) GEN_EDX_ARG,*(undefined4 *)(this + 0x54),&(*(undefined * PTR32 *)(gen_frame + 0x8)));
+  }
+  return (*(undefined * PTR32 *)(gen_frame + 0x8)) == (undefined *)0x0;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00cd1690(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd1690u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float10 extraout_ST0;
+  
+  if (*(int *)(this + 0x4c) != 0) {
+    extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*(int *)(this + 4) + 0x10))))(this + 4);
+    F_00ce7660(*(undefined4 *)(this + 0x4c) GEN_EDX_FWD,(float)extraout_ST0);
+  }
+  return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf17 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00cd16c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcd16c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf14 */
+GEN_NOFRAME byte GEN_THISCALL F_00cd16d0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd16d0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  byte bVar1;
+  
+  if (*(int *)(in_ecx + 0x4c) != 0) {
+    bVar1 = F_00ce76e0(*(int *)(in_ecx + 0x4c) GEN_EDX_FWD);
+    return bVar1;
+  }
+  return 0;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf15 */
+GEN_NOFRAME uint GEN_THISCALL F_00cd16e0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd16e0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  uint uVar1;
+  
+  uVar1 = F_00ce76a0(*(undefined4 *)(in_ecx + 0x4c) GEN_EDX_FWD);
+  return uVar1;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf16 */
+GEN_NOFRAME unsigned int F_00cd16f0(void)
+{
+  GEN_ENTER(0xcd16f0u, 0u, 0u, 0u, 0u);
+  return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf12 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00cd1700(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd1700u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (*(int *)(in_ecx + 0x4c) != 0) {
+    F_00ce76c0(*(int *)(in_ecx + 0x4c) GEN_EDX_FWD);
+    return;
+  }
+  return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf13 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00cd1710(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd1710u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (*(int *)(in_ecx + 0x4c) != 0) {
+    F_00ce76d0(*(int *)(in_ecx + 0x4c) GEN_EDX_FWD);
+    return;
+  }
+  return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf5 */
+GEN_FRAME uint GEN_THISCALL F_00cd1720(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xcd1720u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  uint uVar1;
+  
+  uVar1 = param_2;
+  if (-1 < (int)param_2) {
+    *(undefined4 *)(this + 0x50) = param_1;
+    *(uint *)(this + 0x54) = param_2;
+    ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 4))(this GEN_EDX_FWD,0);
+    uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x24))(this GEN_EDX_ARG);
+  }
+  return uVar1;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf6 */
+GEN_NOFRAME uint GEN_THISCALL F_00cd1750(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd1750u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x4c);
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::GranularSynthesizerXA2::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00cd1760(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcd1760u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  
+  piVar1 = *(int * PTR32 *)(this + 0x4c);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[18])REFP(0x112c14c));
+  if (piVar1 != (int *)0x0) {
+    ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 8))(piVar1 GEN_EDX_FWD);
+    *(undefined4 *)(this + 0x4c) = 0;
+  }
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[17])REFP(0x112c104));
+  F_00cccb40(this + 0x28 GEN_EDX_ARG);
+  F_00cccb40(this + 4 GEN_EDX_ARG);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[9])REFP(0x112a0bc));
+  if ((param_1 & 1) != 0) {
+    F_00406810(this);
+  }
+  return (uint)this;
+}
+
+/* ref: FUN_00cd17c0 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00cd17c0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcd17c0u, gen_a0, 0u, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  *in_ecx = (*(undefined * PTR32 (*)[17])REFP(0x112c1c4));
+  F_00cccb40(in_ecx + 0x25 GEN_EDX_FWD);
+  F_00cccb40(in_ecx + 0x1c GEN_EDX_ARG);
+  F_00cccb40(in_ecx + 0x13 GEN_EDX_ARG);
+  F_00cccb40(in_ecx + 10 GEN_EDX_ARG);
+  F_00cccb40(in_ecx + 1 GEN_EDX_ARG);
+  *in_ecx = (*(undefined * PTR32 (*)[9])REFP(0x112a0bc));
+  return;
+}
+
 /* ref: SQEX::CDev::Engine::Sd::Driver::CompressorBase::vf0 */
 GEN_FRAME uint GEN_THISCALL F_00cd1800(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -10429,278 +10719,5 @@ GEN_FRAME uint GEN_THISCALL F_00cdfd10(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00c457e7("invalid vector<T> subscript");
   }
   return *(int *)this + param_1 * 4;
-}
-
-/* ref: FUN_00cdfd40 */
-GEN_FRAME uint GEN_THISCALL F_00cdfd40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdfd40u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  if ((uint)(*(int *)((int)this + 4) - *(int *)((int)(uintptr_t)this) >> 2) <= param_1) {
-                    
-    F_00c457e7("invalid vector<T> subscript");
-  }
-  return *(int *)this + param_1 * 4;
-}
-
-/* ref: FUN_00cdfd80 */
-GEN_FRAME uint GEN_THISCALL F_00cdfd80(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdfd80u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  *param_2 = *in_ecx;
-  return (uint)param_2;
-}
-
-/* ref: FUN_00cdfd90 */
-GEN_FRAME uint GEN_THISCALL F_00cdfd90(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdfd90u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  *param_2 = *(undefined4 *)(in_ecx + 4);
-  return (uint)param_2;
-}
-
-/* ref: FUN_00cdfda0 */
-GEN_FRAME byte GEN_THISCALL F_00cdfda0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdfda0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  return *(int *)this != *param_1;
-}
-
-/* ref: FUN_00cdfde0 */
-GEN_FRAME uint GEN_STDCALL F_00cdfde0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xcdfde0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00cdfdf0 */
-GEN_FRAME uint GEN_THISCALL F_00cdfdf0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xcdfdf0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  
-  if (param_2 != param_3) {
-    iVar1 = (*(int *)((int)this + 4) - param_3 >> 2) * 4;
-    F_00c46e20(param_2,param_3,iVar1);
-    *(int *)((int)this + 4) = iVar1 + param_2;
-    *param_1 = param_2;
-    return (uint)param_1;
-  }
-  *param_1 = param_2;
-  return (uint)param_1;
-}
-
-/* ref: FUN_00cdfe50 */
-GEN_FRAME uint GEN_STDCALL F_00cdfe50(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdfe50u, gen_a0, gen_a1, 0u, 0u);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  uint uVar1;
-  
-  uVar1 = param_1[1] - *param_1 >> 2;
-  if ((int)uVar1 <= (int)param_2) {
-    return 0;
-  }
-  if (uVar1 <= param_2) {
-                    
-    F_00c457e7("invalid vector<T> subscript");
-  }
-  return *(uint *)(*param_1 + param_2 * 4);
-}
-
-/* ref: FUN_00cdfe80 */
-GEN_FRAME unsigned int GEN_STDCALL F_00cdfe80(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdfe80u, gen_a0, gen_a1, 0u, 0u);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  int iVar1;
-  
-  if ((uint)(param_1[1] - *param_1 >> 2) <= param_2) {
-                    
-    F_00c457e7("invalid vector<T> subscript");
-  }
-  iVar1 = *(int *)(*param_1 + param_2 * 4);
-  if (iVar1 != 0) {
-    F_00406810(iVar1);
-    if ((uint)(param_1[1] - *param_1 >> 2) <= param_2) {
-                    
-      F_00c457e7("invalid vector<T> subscript");
-    }
-    *(undefined4 *)(*param_1 + param_2 * 4) = 0;
-  }
-  return 0;
-}
-
-/* ref: FUN_00cdfef0 */
-GEN_NOFRAME uint GEN_THISCALL F_00cdfef0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xcdfef0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  uVar1 = 0;
-  if (*(int *)this != 0) {
-    uVar1 = F_00406810(*(int *)this);
-  }
-  *(undefined4 *)this = 0;
-  *(undefined4 *)((int)this + 4) = 0;
-  *(undefined4 *)((int)this + 8) = 0;
-  return uVar1;
-}
-
-/* ref: FUN_00cdff20 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00cdff20(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xcdff20u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)this;
-  if (iVar1 != *(int *)((int)this + 4)) {
-    F_00c46e20(iVar1,*(int *)((int)this + 4),0);
-    *(int *)((int)this + 4) = iVar1;
-  }
-  return;
-}
-
-/* ref: FUN_00cdff50 */
-GEN_FRAME unsigned int F_00cdff50(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xcdff50u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  
-  puVar1 = param_3;
-  for (puVar2 = param_1; puVar2 != param_2; puVar2 = puVar2 + 1) {
-    if (puVar1 != (undefined4 *)0x0) {
-      *puVar1 = *puVar2;
-    }
-    puVar1 = puVar1 + 1;
-  }
-  return 0;
-}
-
-/* ref: FUN_00cdff80 */
-GEN_NOFRAME uint GEN_THISCALL F_00cdff80(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xcdff80u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  uVar1 = 0;
-  if (*(int *)this != 0) {
-    uVar1 = F_00406810(*(int *)this);
-  }
-  *(undefined4 *)this = 0;
-  *(undefined4 *)((int)this + 4) = 0;
-  *(undefined4 *)((int)this + 8) = 0;
-  return uVar1;
-}
-
-/* ref: FUN_00cdffb0 */
-GEN_FRAME unsigned int F_00cdffb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xcdffb0u, gen_a0, gen_a1, gen_a2, 0u);
-  int param_1 = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
-  undefined4 * puVar1;
-  
-  if (param_1 != param_2) {
-    puVar1 = param_3;
-    do {
-      if (puVar1 != (undefined4 *)0x0) {
-        *puVar1 = *((undefined4 *)GEN_TOP(((param_1 - (int)param_3) + (int)puVar1)));
-      }
-      puVar1 = puVar1 + 1;
-    } while ((param_1 - (int)param_3) + (int)puVar1 != param_2);
-  }
-  return 0;
-}
-
-/* ref: FUN_00cdffe0 */
-GEN_NOFRAME uint GEN_THISCALL F_00cdffe0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xcdffe0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  uVar1 = 0;
-  if (*(int *)this != 0) {
-    uVar1 = F_00406810(*(int *)this);
-  }
-  *(undefined4 *)this = 0;
-  *(undefined4 *)((int)this + 4) = 0;
-  *(undefined4 *)((int)this + 8) = 0;
-  return uVar1;
-}
-
-/* ref: FUN_00ce0020 */
-GEN_FRAME unsigned int F_00ce0020(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xce0020u, gen_a0, gen_a1, gen_a2, 0u);
-  int param_1 = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
-  undefined4 * puVar1;
-  
-  if (param_1 != param_2) {
-    puVar1 = param_3;
-    do {
-      if (puVar1 != (undefined4 *)0x0) {
-        *puVar1 = *((undefined4 *)GEN_TOP(((param_1 - (int)param_3) + (int)puVar1)));
-      }
-      puVar1 = puVar1 + 1;
-    } while ((param_1 - (int)param_3) + (int)puVar1 != param_2);
-  }
-  return 0;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::Bank::vf27 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00ce0050(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xce0050u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  return;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::Bank::vf28 */
-GEN_NOFRAME uint GEN_THISCALL F_00ce0060(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xce0060u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 0x18);
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::Bank::vf32 */
-GEN_NOFRAME uint F_00ce0070(void)
-{
-  GEN_ENTER(0xce0070u, 0u, 0u, 0u, 0u);
-  return 0;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::Bank::vf33 */
-GEN_NOFRAME unsigned int F_00ce0080(void)
-{
-  GEN_ENTER(0xce0080u, 0u, 0u, 0u, 0u);
-  return;
 }
 

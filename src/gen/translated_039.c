@@ -1,5 +1,41 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::LayoutEngine::Layer::ChairMarkerLayoutInstance::vf23 */
+GEN_NOFRAME uint F_005fffc0(void)
+{
+  GEN_ENTER(0x5fffc0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
+/* ref: Client::LayoutEngine::Layer::PathLayoutInstance::vf68 */
+GEN_NOFRAME byte GEN_THISCALL F_005fffd0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x5fffd0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(byte *)(in_ecx + 100);
+}
+
+/* ref: Client::LayoutEngine::Layer::PathLayoutInstance::vf21 */
+GEN_NOFRAME byte F_005fffe0(void)
+{
+  GEN_ENTER(0x5fffe0u, 0u, 0u, 0u, 0u);
+  return 1;
+}
+
+/* ref: Client::LayoutEngine::Layer::PathLayoutInstance::vf22 */
+GEN_NOFRAME byte F_005ffff0(void)
+{
+  GEN_ENTER(0x5ffff0u, 0u, 0u, 0u, 0u);
+  return 1;
+}
+
+/* ref: Client::LayoutEngine::Layer::PathLayoutInstance::vf24 */
+GEN_NOFRAME uint F_00600000(void)
+{
+  GEN_ENTER(0x600000u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
 /* ref: Client::LayoutEngine::Layer::PathLayoutInstance::vf23 */
 GEN_NOFRAME uint F_00600010(void)
 {
@@ -5410,46 +5446,6 @@ GEN_FRAME uint F_00605080(unsigned int gen_a0)
 GEN_FRAME uint F_00605090(unsigned int gen_a0)
 {
   GEN_ENTER(0x605090u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_006050a0 */
-GEN_FRAME uint F_006050a0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6050a0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_006050b0 */
-GEN_FRAME uint F_006050b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6050b0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_006050c0 */
-GEN_FRAME uint F_006050c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6050c0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_006050d0 */
-GEN_FRAME uint F_006050d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6050d0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_006050e0 */
-GEN_FRAME uint F_006050e0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6050e0u, gen_a0, 0u, 0u, 0u);
   uint param_1 = (uint)gen_a0;
   return param_1;
 }
