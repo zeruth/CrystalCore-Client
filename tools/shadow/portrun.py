@@ -3,7 +3,7 @@ path (CRYSTALCORE_REF, the shadow copy) so the C runtime parses the same command
 environment shadow.ps1 set (inherited untouched). CC_PORT_EXE runs another build of the port
 (cmake-build-release/bin/CrystalCore.exe, CLion's) in place of rhipper.json's. A window capture every 10 s into
 build/pipeline/port-NN.png (tools/winshot.ps1); the run's log in build/pipeline/run.log."""
-import json, os, subprocess, sys, time
+import json, os, shutil, subprocess, sys, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -14,6 +14,11 @@ ref = os.environ.get("CRYSTALCORE_REF") or str(ROOT / cfg["exe"])
 lobby = os.environ.get("CC_LOBBY_PORT")
 args = [x.replace("54994", lobby) if lobby else x for x in cfg["run"]["args"]]
 cmdline = " ".join([f'"{ref}"'] + [f'"{x}"' if " " in x else x for x in args])
+# (by path: shadow.ps1's fixed PATH has neither PowerShell's folder nor git's, and the capture's
+# FileNotFoundError ended a shadow port run at its first frame, 2026-10-28)
+POWERSHELL = os.path.join(os.environ.get("SystemRoot", r"C:\Windows"), "System32", "WindowsPowerShell", "v1.0",
+                          "powershell.exe")
+GIT = shutil.which("git") or os.path.join(os.environ.get("ProgramFiles", r"C:\Program Files"), "Git", "cmd", "git.exe")
 OUT.mkdir(parents=True, exist_ok=True)
 # (this run's captures only: an earlier, longer run's later frames read as this one's)
 for old in OUT.glob("port-*.png"):
@@ -26,7 +31,7 @@ t0, k = time.time(), 0
 while time.time() - t0 < secs and p.poll() is None:
     time.sleep(10)
     if p.poll() is None:
-        subprocess.run(["powershell", "-NoProfile", "-File", str(ROOT / "tools" / "winshot.ps1"), "CrystalCore",
+        subprocess.run([POWERSHELL, "-NoProfile", "-File", str(ROOT / "tools" / "winshot.ps1"), "CrystalCore",
                         str(OUT / f"port-{k:02d}.png")], capture_output=True, timeout=60)
         k += 1
 alive = p.poll() is None
@@ -42,7 +47,7 @@ print("still running after" if alive else f"exited {p.returncode & 0xffffffff:#x
 import hashlib, re
 frames = {hashlib.md5(f.read_bytes()).hexdigest() for f in OUT.glob("port-*.png")}
 crash = re.search(r"exception (\w+) at \w+ \(([^)]*)\)\s*\n\s*0\s+\w+\s+(\S+)", text)
-git = lambda *a: subprocess.run(["git", "-C", str(ROOT), *a], capture_output=True, text=True).stdout.strip()
+git = lambda *a: subprocess.run([GIT, "-C", str(ROOT), *a], capture_output=True, text=True).stdout.strip()
 rec = {"when": time.strftime("%Y-%m-%d %H:%M"), "commit": git("rev-parse", "--short", "HEAD"),
        "dirty_gen": bool(git("status", "--porcelain", "--", "src/gen")), "exe": os.path.basename(exe),
        "secs": round(time.time() - t0), "alive": alive, "exit": None if alive else f"{p.returncode & 0xffffffff:#x}",
