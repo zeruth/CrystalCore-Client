@@ -627,6 +627,8 @@ GEN_FRAME uint GEN_THISCALL F_004be230(unsigned int gen_a0 GEN_EDX_PARAM, float 
   GEN_ENTER(0x4be230u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
   uint param_1 = (uint)gen_a0;
   float param_2 = (float)gen_a1;
+  float gen_stale0;
+  float gen_stale1;
   float fVar1;
   float fVar2;
   float10 fVar3;
@@ -646,18 +648,18 @@ GEN_FRAME uint GEN_THISCALL F_004be230(unsigned int gen_a0 GEN_EDX_PARAM, float 
        ((float)GEN_TOF((fVar4 * (float10)*(float *)(param_1 + 4) - fVar3 * (float10)fVar1)));
   *(float *)(param_1 + 0x14) =
        ((float)GEN_TOF((fVar4 * (float10)*(float *)(param_1 + 0x14) - (float10)fVar2 * fVar3)));
-  *(float *)(param_1 + 0x28) =
+  gen_stale0 = *(float *)(param_1 + 0x28); *(float *)(param_1 + 0x28) =
        ((float)GEN_TOF(((float10)*(float *)(param_1 + 0x28) * fVar4 +
               (float10)*(float *)(param_1 + 0x24) * fVar3)));
-  *(float *)(param_1 + 0x38) =
+  gen_stale1 = *(float *)(param_1 + 0x38); *(float *)(param_1 + 0x38) =
        ((float)GEN_TOF(((float10)*(float *)(param_1 + 0x38) * fVar4 +
               (float10)*(float *)(param_1 + 0x34) * fVar3)));
   *(float *)(param_1 + 0x24) =
        ((float)GEN_TOF(((float10)*(float *)(param_1 + 0x24) * fVar4 -
-              (float10)*(float *)(param_1 + 0x28) * fVar3)));
+              (float10)gen_stale0 * fVar3)));
   *(float *)(param_1 + 0x34) =
        ((float)GEN_TOF((fVar4 * (float10)*(float *)(param_1 + 0x34) -
-              (float10)*(float *)(param_1 + 0x38) * fVar3)));
+              (float10)gen_stale1 * fVar3)));
   return param_1;
 }
 

@@ -3281,7 +3281,7 @@ GEN_NOFRAME uint GEN_THISCALL F_0097e810(unsigned int gen_a0 GEN_EDX_PARAM, unsi
   undefined4 param_8 = (undefined4)gen_a8;
   uint uVar1;
   
-  (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f068))[(int)(*(uint *)((int)this + 0x1d0) >> 0x1a & 1)])))();
+  (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f068))[(int)(*(uint *)((int)this + 0x1d0) >> 0x1a & 1)])))(this);
   uVar1 = (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f070))
                     [*(uint *)((int)this + 0x1d0) >> 0x1b & 1])))
                     (this,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
@@ -3365,7 +3365,7 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_0097e930(unsigned int gen_a0 GEN_EDX_PAR
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int * piVar1;
   
-  (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f048))[(int)(*(uint *)(this + 0x1d0) >> 0x16 & 1)])))();
+  (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f048))[(int)(*(uint *)(this + 0x1d0) >> 0x16 & 1)])))(this);
   for (piVar1 = *(int * PTR32 *)(this + 0x1e0); piVar1 != (int *)0x0; piVar1 = (int *)piVar1[0x7a]) {
     ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x2c))(piVar1 GEN_EDX_ARG);
   }
@@ -3379,7 +3379,7 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_0097e970(unsigned int gen_a0 GEN_EDX_PAR
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int * piVar1;
   
-  (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f050))[(int)(*(uint *)(this + 0x1d0) >> 0x17 & 1)])))();
+  (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f050))[(int)(*(uint *)(this + 0x1d0) >> 0x17 & 1)])))(this);
   for (piVar1 = *(int * PTR32 *)(this + 0x1e0); piVar1 != (int *)0x0; piVar1 = (int *)piVar1[0x7a]) {
     ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x30))(piVar1 GEN_EDX_ARG);
   }
@@ -3803,7 +3803,7 @@ GEN_NOFRAME uint GEN_THISCALL F_0097f220(unsigned int gen_a0 GEN_EDX_PARAM, unsi
   uint uVar1;
   
   uVar1 = (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f0d4))[(int)(*(uint *)((int)this + 0x2ac) >> 0xe & 1)])))
-                    ((undefined4 *)((int)this + 0x98));
+                    (this,(undefined4 *)((int)this + 0x98));
   *(undefined4 *)((int)this + 0x58) = *(undefined4 *)((int)this + 0x98);
   *(undefined4 *)((int)this + 0x5c) = *(undefined4 *)((int)this + 0x9c);
   *(undefined4 *)((int)this + 0x60) = *(undefined4 *)((int)this + 0xa0);
@@ -3820,7 +3820,7 @@ GEN_NOFRAME uint GEN_THISCALL F_0097f260(unsigned int gen_a0 GEN_EDX_PARAM, unsi
   uint uVar1;
   
   uVar1 = (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f0dc))[(int)(*(uint *)((int)this + 0x2ac) >> 0xe & 1)])))
-                    ((undefined4 *)((int)this + 0xa4));
+                    (this,(undefined4 *)((int)this + 0xa4));
   *(undefined4 *)((int)this + 100) = *(undefined4 *)((int)this + 0xa4);
   *(undefined4 *)((int)this + 0x68) = *(undefined4 *)((int)this + 0xa8);
   *(undefined4 *)((int)this + 0x6c) = *(undefined4 *)((int)this + 0xac);

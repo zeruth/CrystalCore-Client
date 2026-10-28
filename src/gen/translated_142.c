@@ -2860,7 +2860,7 @@ GEN_FRAME unsigned int GEN_THISCALL F_00bd2270(unsigned int gen_a0 GEN_EDX_PARAM
     ;
     param_1[0x11] = (int)gen_fl2bits((float)(((float10)GEN_TOD(gen_bits2f(param_1[0x11]))) + (float10)param_2))
     ;
-    (*pcVar1)((undefined4)gen_fl2bits(param_2));
+    (*pcVar1)(param_1,(undefined4)gen_fl2bits(param_2));
   }
   return;
 }

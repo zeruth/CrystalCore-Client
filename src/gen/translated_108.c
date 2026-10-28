@@ -2778,7 +2778,7 @@ GEN_FRAME uint GEN_THISCALL F_00a0c870(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uint uVar1;
   
   uVar1 = (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x1333724))[(int)(*(char *)(param_1 + 5))])))
-                    (param_2,param_3,(undefined4)gen_fl2bits(param_4));
+                    (param_1,param_2,param_3,(undefined4)gen_fl2bits(param_4));
   return uVar1;
 }
 

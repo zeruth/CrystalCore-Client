@@ -10111,13 +10111,13 @@ GEN_NOFRAME uint F_00c17790(unsigned int gen_a0)
   GEN_ENTER(0xc17790u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   uint _Y;
-  double dVar1;
-  float fVar2;
+  float fVar1;
+  double dVar2;
   
   _Y = F_00b9c9b0(param_1,2);
-  fVar2 = F_00b9c8e0(param_1,1);
-  dVar1 = F_00c52a5e((double)fVar2,_Y);
-  F_00b9ade0(param_1,dVar1);
+  fVar1 = F_00b9c8e0(param_1,1);
+  dVar2 = F_00c52a5e((double)fVar1,_Y);
+  F_00b9ade0(param_1,dVar2);
   return 1;
 }
 

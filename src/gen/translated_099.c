@@ -5626,7 +5626,7 @@ GEN_FRAME unsigned int GEN_THISCALL F_0098c490(unsigned int gen_a0 GEN_EDX_PARAM
        ((float)GEN_TOF(((float10)*(float *)(param_1 + 0x1b4) +
               (float10)param_2 * (float10)*(float *)(param_1 + 0x1bc))));
   (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f040))[(int)(*(uint *)(param_1 + 0x1d0) >> 0x15 & 1)])))
-            ((undefined4)gen_fl2bits(param_2));
+            (param_1,(undefined4)gen_fl2bits(param_2));
   local_8 = (int *)0x0;
   piVar1 = *(int * PTR32 *)(param_1 + 0x1e0);
   piVar4 = local_8;
@@ -5958,7 +5958,7 @@ GEN_NOFRAME uint GEN_THISCALL F_0098ca10(unsigned int gen_a0 GEN_EDX_PARAM, unsi
   undefined4 param_8 = (undefined4)gen_a8;
   uint uVar1;
   
-  (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f0ac))[(int)(*(uint *)(this + 0x2ac) >> 9 & 1)])))();
+  (*((code *)GEN_TOP((&REFG(undefined * PTR32, 0x132f0ac))[(int)(*(uint *)(this + 0x2ac) >> 9 & 1)])))(this);
   F_0097f2c0(this GEN_EDX_ARG);
   uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x7c))
                     (this GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
@@ -6074,7 +6074,8 @@ GEN_FRAME uint GEN_THISCALL F_0098cbc0(unsigned int gen_a0 GEN_EDX_PARAM, float 
   (*(float *)(gen_frame + 0xc)) = ((float)GEN_TOF((fVar3 * (float10)*(float *)(param_1 + 0x174))));
   (*(float *)(gen_frame + 0x10)) = ((float)GEN_TOF(((float10)*(float *)(param_1 + 0x178) * fVar3)));
   (*(float *)(gen_frame + 0x14)) = ((float)GEN_TOF((fVar3 * (float10)*(float *)(param_1 + 0x17c))));
-  uVar2 = (*pcVar1)((undefined4)gen_fl2bits(param_2),(undefined4)gen_fl2bits(param_3),&(*(float *)(gen_frame + 0xc)));
+  uVar2 = (*pcVar1)(param_1,(undefined4)gen_fl2bits(param_2),(undefined4)gen_fl2bits(param_3),
+                    &(*(float *)(gen_frame + 0xc)));
   return uVar2;
 }
 
