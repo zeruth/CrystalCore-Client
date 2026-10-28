@@ -20,7 +20,8 @@
     shadow_diff.py (--resync, --small-args, --after).
 #>
 param([Parameter(Mandatory)][ValidateSet("ref", "port")][string]$Which, [int]$Secs = 60, [int]$Max = 30000000,
-      [string]$From = "", [string]$Watch = "", [switch]$Sites, [int]$PerFunction = 100000000)
+      [string]$From = "", [string]$Watch = "", [switch]$Sites, [int]$PerFunction = 100000000,
+      [string]$FakeCursor = "")
 $root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 # (one run at a time: a second shadow reference started beside a running one met the game's own
 # single-instance check, and both recordings were spoiled, 2026-10-27)
@@ -65,6 +66,15 @@ $tag = if ($From) { "-from-" + $From.ToLower().Replace("0x", "") } else { "" }
 # (a watch run records no calls worth keeping: its own file, never the trace a long run made. A
 # watch-only reference run replaced a 300 s -Sites trace with 72 KB, 2026-10-28)
 if ($Watch) { $tag += "-watch" }
+# (-FakeCursor X,Y: the reference's GetCursorPos at that client point, shadow32's --fake-cursor,
+# and the port's virtual cursor there too: the title menu's hover recorded in both, nobody's mouse
+# moved. Its own trace, as a watch run's)
+if ($FakeCursor) {
+    $tag += "-cursor"
+    $xy = $FakeCursor.Split(",")
+    $env:CRYSTALCORE_VCURSOR = "1"
+    $env:CC_INPUT = (1..60 | ForEach-Object { "$($_):move $([int]$xy[0] + ($_ % 2)) $($xy[1])" }) -join "; "
+}
 $env:RHIPPER_PROJECT = $root
 $env:CRYSTALCORE_TRACE = "$b\shadow-port$tag.bin"
 # (fixed, whatever -Max: the variable is in both runs' environment, and 4000000 against 30000000
@@ -95,6 +105,7 @@ if ($Which -eq "ref") {
         # merged run to run, protos32's call-site shapes. With -PerFunction a few, each function's
         # breakpoint retires after its first calls and the reference speeds up)
         if ($Sites) { $extra += @("--sites", (Join-Path $root "data\icall_targets.json"), "--secs", $Secs) }
+        if ($FakeCursor) { $extra += @("--fake-cursor", $FakeCursor, "--secs", $Secs) }
         python (Join-Path $rh "shadow32.py") --exe $shadow --out "$b\shadow-ref$tag.bin" --max $Max `
             --per-function $PerFunction @extra -- @args32
     } finally {
