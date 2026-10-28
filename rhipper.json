@@ -13,6 +13,18 @@
                    "SYS.Region=3", "language=1", "ver=2013.08.09.0001.0000"],
           "with": [["python", "tools/lobby_sink.py", "54994", "{out}/lobby.log"]],
           "screenshot": ["powershell", "-NoProfile", "-File", "tools/winshot.ps1", "CrystalCore", "{out}"]},
+  "gotchas_reviewed": {
+    "timeSetEvent": "its callbacks (0xa01790, 0xd2fac0) take x64's arguments in the same order, each 32-bit value in the low half",
+    "EnumProcessModules": "called with cb 4: at most one HMODULE's low half written",
+    "CreateProcessA": "the launcher's paths only, not the game's boot",
+    "WSAIoctl": "one call, 0x9800000c with a 4-byte int in, nothing out",
+    "SetWindowLongA": "GWL_STYLE (-16) only: a style, no pointer",
+    "SendMessageA": "one call, 0x30d with integer arguments",
+    "CoTaskMemAlloc": "the port's heap is below 4 GB",
+    "SysAllocString": "the port's heap is below 4 GB",
+    "inet_ntoa": "winsock's per-thread buffer, in the port's heap below 4 GB",
+    "freeaddrinfo": "the runtime's own since 6c48b4b"
+  },
   "ghidra": {
     "install": "C:/Users/tyler/tools/ghidra_*",
     "projects": "C:/Users/tyler/tools/ghidra-projects",
