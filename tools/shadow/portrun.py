@@ -32,9 +32,61 @@ log = open(OUT / "run.log", "w", encoding="utf-8", errors="replace")
 exe = os.environ.get("CC_PORT_EXE") or str(ROOT / cfg["run"]["exe"])    # another build of the port (CLion's)
 p = subprocess.Popen(cmdline, executable=exe, cwd=ROOT / cfg["run"]["cwd"],
                      stdout=log, stderr=subprocess.STDOUT, stdin=subprocess.DEVNULL)
+# CC_INPUT="<secs>:move <x> <y>; <secs>:click <x> <y>; <secs>:key <vk>": window messages posted to
+# the game's window at those times from the start, x and y in its client area (1280x720): the title
+# menu's mouse, tried again run to run without anyone at the window (2026-10-28)
+events = []
+for part in filter(None, (s.strip() for s in os.environ.get("CC_INPUT", "").split(";"))):
+    at, _, what = part.partition(":")
+    events.append((float(at), what.split()))
+events.sort(key=lambda e: e[0])
+
+
+def post(what):
+    import ctypes
+    u = ctypes.windll.user32
+    found = []
+    proc = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.c_void_p, ctypes.c_void_p)
+
+    # (by its class, in whichever process: the runtime runs the game in a child of the one started)
+    def each(h, _l):
+        buf = ctypes.create_unicode_buffer(64)
+        u.GetClassNameW(ctypes.c_void_p(h), buf, 64)
+        if buf.value == "FFXIVGAME":
+            found.append(h)
+        return True
+    u.EnumWindows(proc(each), None)
+    if not found:
+        print("input: no game window yet for", what)
+        return
+    h = ctypes.c_void_p(found[0])
+    u.PostMessageW.argtypes = [ctypes.c_void_p, ctypes.c_uint, ctypes.c_size_t, ctypes.c_ssize_t]
+    if what[0] in ("move", "click"):
+        x, y = int(what[1]), int(what[2])
+        lp = (y << 16) | (x & 0xFFFF)
+        u.PostMessageW(h, 0x0200, 0, lp)                         # WM_MOUSEMOVE
+        if what[0] == "click":
+            u.PostMessageW(h, 0x0201, 1, lp)                     # WM_LBUTTONDOWN, MK_LBUTTON
+            time.sleep(0.1)
+            u.PostMessageW(h, 0x0202, 0, lp)                     # WM_LBUTTONUP
+    elif what[0] == "key":
+        vk = int(what[1], 0)
+        u.PostMessageW(h, 0x0100, vk, 1)                         # WM_KEYDOWN
+        time.sleep(0.1)
+        u.PostMessageW(h, 0x0101, vk, 0xC0000001)                # WM_KEYUP
+    print(f"input at {time.time() - t0:.1f}s: {' '.join(what)}")
+
+
 t0, k = time.time(), 0
+next_shot = 10
 while time.time() - t0 < secs and p.poll() is None:
-    time.sleep(10)
+    now = time.time() - t0
+    while events and events[0][0] <= now:
+        post(events.pop(0)[1])
+    if now < next_shot:
+        time.sleep(min(0.25, next_shot - now))
+        continue
+    next_shot += 10
     if p.poll() is None:
         subprocess.run([POWERSHELL, "-NoProfile", "-File", str(ROOT / "tools" / "winshot.ps1"), "CrystalCore",
                         str(OUT / f"port-{k:02d}.png")], capture_output=True, timeout=60)
@@ -73,3 +125,9 @@ rec = {"when": time.strftime("%Y-%m-%d %H:%M"), "commit": git("rev-parse", "--sh
 with open(OUT / "runs.jsonl", "a", encoding="utf-8") as f:
     f.write(json.dumps(rec) + "\n")
 print("runs.jsonl:", json.dumps(rec))
+# (and the run's gotchas: suspect functions that ran, stubs, refusals, risky imports; Rhipper's)
+gotchas = Path(cfg.get("rhipper", "")) / "gotchas.py"
+if gotchas.exists():
+    env = dict(os.environ, RHIPPER_PROJECT=str(ROOT))
+    r = subprocess.run([sys.executable, str(gotchas), str(OUT / "run.log")], capture_output=True, text=True, env=env)
+    print("gotchas:", (r.stdout or r.stderr).strip().replace("\n", "\n  "))
