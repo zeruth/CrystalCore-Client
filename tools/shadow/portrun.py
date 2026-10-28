@@ -15,6 +15,9 @@ lobby = os.environ.get("CC_LOBBY_PORT")
 args = [x.replace("54994", lobby) if lobby else x for x in cfg["run"]["args"]]
 cmdline = " ".join([f'"{ref}"'] + [f'"{x}"' if " " in x else x for x in args])
 OUT.mkdir(parents=True, exist_ok=True)
+# (this run's captures only: an earlier, longer run's later frames read as this one's)
+for old in OUT.glob("port-*.png"):
+    old.unlink()
 log = open(OUT / "run.log", "w", encoding="utf-8", errors="replace")
 exe = os.environ.get("CC_PORT_EXE") or str(ROOT / cfg["run"]["exe"])    # another build of the port (CLion's)
 p = subprocess.Popen(cmdline, executable=exe, cwd=ROOT / cfg["run"]["cwd"],
@@ -30,5 +33,21 @@ alive = p.poll() is None
 if alive:
     subprocess.run(["taskkill", "/T", "/F", "/PID", str(p.pid)], capture_output=True)
 log.close()
-print((OUT / "run.log").read_text(encoding="utf-8", errors="replace")[-3000:])
+text = (OUT / "run.log").read_text(encoding="utf-8", errors="replace")
+print(text[-3000:])
 print("still running after" if alive else f"exited {p.returncode & 0xffffffff:#x} after", f"{time.time() - t0:.0f}s")
+# Each run's outcome, one line in build/pipeline/runs.jsonl: how far the boot got from one fix to
+# the next (alive for how long, where it faulted, how many different frames it drew), by the gen's
+# commit and whether the working tree had changes (probes, hand edits) beyond it.
+import hashlib, re
+frames = {hashlib.md5(f.read_bytes()).hexdigest() for f in OUT.glob("port-*.png")}
+crash = re.search(r"exception (\w+) at \w+ \(([^)]*)\)\s*\n\s*0\s+\w+\s+(\S+)", text)
+git = lambda *a: subprocess.run(["git", "-C", str(ROOT), *a], capture_output=True, text=True).stdout.strip()
+rec = {"when": time.strftime("%Y-%m-%d %H:%M"), "commit": git("rev-parse", "--short", "HEAD"),
+       "dirty_gen": bool(git("status", "--porcelain", "--", "src/gen")), "exe": os.path.basename(exe),
+       "secs": round(time.time() - t0), "alive": alive, "exit": None if alive else f"{p.returncode & 0xffffffff:#x}",
+       "fault": f"{crash.group(3)} {crash.group(1)} {crash.group(2)}" if crash else None,
+       "frames": len(frames), "watch": os.environ.get("CRYSTALCORE_WATCH")}
+with open(OUT / "runs.jsonl", "a", encoding="utf-8") as f:
+    f.write(json.dumps(rec) + "\n")
+print("runs.jsonl:", json.dumps(rec))
