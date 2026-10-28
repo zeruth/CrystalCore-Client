@@ -1,5 +1,37 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::AddonInventoryEventGrid::vf41 */
+GEN_NOFRAME byte GEN_THISCALL F_007a61d0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x7a61d0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  byte bVar1;
+  
+  bVar1 = F_00572e60(this GEN_EDX_FWD,"InventoryGrid",0,6);
+  return bVar1;
+}
+
+/* ref: FUN_007a6230 */
+GEN_FRAME uint GEN_THISCALL F_007a6230(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x7a6230u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  byte bVar1;
+  uint uVar2;
+  undefined * this_00;
+  
+  bVar1 = *(byte *)((int)this + 0x13c);
+  uVar2 = F_0055dcb0();
+  this_00 = (undefined *)F_0057f810(*(undefined * PTR32 *)(uVar2 + 0x14) GEN_EDX_ARG,(uint)bVar1);
+  uVar2 = 0;
+  if (this_00 != (undefined *)0x0) {
+    uVar2 = F_007a5f60(this_00 GEN_EDX_ARG,(uint)*((ushort *)GEN_TOP((*(int *)((int)this + param_1 * 4 + 0x1e4) + 0x9c)))
+                        );
+  }
+  return uVar2;
+}
+
 /* ref: Client::UI2::AddonInventoryEventGrid::vf52 */
 GEN_FRAME byte GEN_THISCALL F_007a6270(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -11764,33 +11796,5 @@ GEN_FRAME uint GEN_THISCALL F_007b2fc0(unsigned int gen_a0 GEN_EDX_PARAM)
   F_005a9110(this GEN_EDX_FWD,1,&(*(undefined4 *)(gen_frame + 0x4)));
   uVar1 = F_005a2670(&(*(undefined4 *)(gen_frame + 0x4)) GEN_EDX_ARG);
   return uVar1;
-}
-
-/* ref: FUN_007b2ff0 */
-GEN_FRAME uint GEN_THISCALL F_007b2ff0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x7b2ff0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined * this_00;
-  uint uVar1;
-  
-  this_00 = (undefined *)F_00559ba0(*param_2 GEN_EDX_FWD);
-  uVar1 = F_0042a990(param_1 * 0x54 + 0x15d0 + (int)this GEN_EDX_ARG);
-  uVar1 = F_00584110(this_00 GEN_EDX_ARG,uVar1);
-  return uVar1;
-}
-
-/* ref: Client::UI2::AddonCabinetWithdraw::vf41 */
-GEN_NOFRAME byte GEN_THISCALL F_007b3070(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x7b3070u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  byte bVar1;
-  
-  bVar1 = F_00572e60(this GEN_EDX_FWD,"CabinetWithdraw",0,6);
-  return bVar1;
 }
 

@@ -65107,7 +65107,7 @@ uint F_00cef390(unsigned int gen_a0);
 uint F_00cef3b0(unsigned int gen_a0);
 uint F_00cef3f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2);
 unsigned int F_00cef770(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, float gen_a3);
-unsigned int GEN_FASTCALL F_00cef7d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, float gen_a4);
+unsigned int F_00cef7d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, float gen_a4);
 uint F_00cef840(unsigned int gen_a0);
 uint F_00cef860(unsigned int gen_a0);
 uint F_00cef8b0(unsigned int gen_a0);

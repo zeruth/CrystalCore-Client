@@ -1,5 +1,33 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_009087a0 */
+GEN_NOFRAME uint GEN_THISCALL F_009087a0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9087a0u, gen_a0, 0u, 0u, 0u);
+  uint in_ecx = (uint)gen_a0;
+  F_0042b630(in_ecx + 0x1c GEN_EDX_FWD);
+  F_0042b630(in_ecx + 0x70 GEN_EDX_ARG);
+  F_0042b630(in_ecx + 0xc4 GEN_EDX_ARG);
+  F_0042b630(in_ecx + 0x118 GEN_EDX_ARG);
+  F_0042b630(in_ecx + 0x16c GEN_EDX_ARG);
+  return in_ecx;
+}
+
+/* ref: FUN_009087e0 */
+GEN_NOFRAME uint GEN_THISCALL F_009087e0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9087e0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  ulonglong uVar1;
+  
+  F_0042c880((undefined *)((int)this + 0x16c) GEN_EDX_FWD);
+  F_0042c880((undefined *)((int)this + 0x118) GEN_EDX_ARG);
+  F_0042c880((undefined *)((int)this + 0xc4) GEN_EDX_ARG);
+  F_0042c880((undefined *)((int)this + 0x70) GEN_EDX_ARG);
+  uVar1 = F_0042c880((undefined *)((int)this + 0x1c) GEN_EDX_ARG);
+  return (uint)uVar1;
+}
+
 /* ref: Client::UI2::RaptureAtkModule::InventoryCache::vf0 */
 GEN_FRAME uint GEN_THISCALL F_00908820(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -5831,32 +5859,6 @@ GEN_FRAME uint GEN_THISCALL F_0090f4f0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 GEN_FRAME uint GEN_THISCALL F_0090f520(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
   GEN_ENTER(0x90f520u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::UI2::AddonConfigCharacterOperation::CCharacter::vf0 */
-GEN_FRAME uint GEN_THISCALL F_0090f550(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x90f550u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::UI2::AddonConfigCharacterOperation::CMouse::vf0 */
-GEN_FRAME uint GEN_THISCALL F_0090f580(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x90f580u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));

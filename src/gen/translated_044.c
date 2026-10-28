@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00625b60 */
+GEN_NOFRAME byte GEN_THISCALL F_00625b60(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x625b60u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  *(undefined1 *)(REFG(int, 0x137127c) + 0xebe1) = *(undefined1 *)(in_ecx + 0x1f);
+  return 1;
+}
+
 /* ref: Client::Graphics::Render::Light::vf4 */
 GEN_NOFRAME uint GEN_THISCALL F_00625b80(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -39085,33 +39094,6 @@ GEN_FRAME unsigned int GEN_THISCALL F_0065f270(unsigned int gen_a0 GEN_EDX_PARAM
   in_ecx[0xc] = (float)((float10)in_ecx[0xc] + fVar1 * fVar2);
   in_ecx[0xd] = (float)(fVar3 * fVar1 + (float10)in_ecx[0xd]);
   in_ecx[0xe] = (float)(fVar1 * fVar4 + (float10)in_ecx[0xe]);
-  return 0;
-}
-
-/* ref: FUN_0065f330 */
-GEN_FRAME unsigned int GEN_THISCALL F_0065f330(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x65f330u, gen_a0, gen_a1, 0u, 0u);
-  float * in_ecx = (float *)(uintptr_t)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  float10 fVar1;
-  
-  fVar1 = (float10)in_ecx[3];
-  *in_ecx = (float)(fVar1 * (float10)*(float *)param_2 + (float10)*in_ecx);
-  in_ecx[1] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 4) + (float10)in_ecx[1])));
-  in_ecx[2] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 8) + (float10)in_ecx[2])));
-  fVar1 = (float10)in_ecx[7];
-  in_ecx[4] = (float)(fVar1 * (float10)*(float *)param_2 + (float10)in_ecx[4]);
-  in_ecx[5] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 4) + (float10)in_ecx[5])));
-  in_ecx[6] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 8) + (float10)in_ecx[6])));
-  fVar1 = (float10)in_ecx[0xb];
-  in_ecx[8] = (float)(fVar1 * (float10)*(float *)param_2 + (float10)in_ecx[8]);
-  in_ecx[9] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 4) + (float10)in_ecx[9])));
-  in_ecx[10] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 8) + (float10)in_ecx[10])));
-  fVar1 = (float10)in_ecx[0xf];
-  in_ecx[0xc] = (float)(fVar1 * (float10)*(float *)param_2 + (float10)in_ecx[0xc]);
-  in_ecx[0xd] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 4) + (float10)in_ecx[0xd])));
-  in_ecx[0xe] = ((float)GEN_TOF((fVar1 * (float10)*(float *)(param_2 + 8) + (float10)in_ecx[0xe])));
   return 0;
 }
 
