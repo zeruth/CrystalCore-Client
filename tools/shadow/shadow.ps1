@@ -16,7 +16,7 @@
     shadow_diff.py (--resync, --small-args, --after).
 #>
 param([Parameter(Mandatory)][ValidateSet("ref", "port")][string]$Which, [int]$Secs = 60, [int]$Max = 30000000,
-      [string]$From = "")
+      [string]$From = "", [string]$Watch = "")
 $root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 # (one run at a time: a second shadow reference started beside a running one met the game's own
 # single-instance check, and both recordings were spoiled, 2026-10-27)
@@ -78,6 +78,9 @@ if ($Which -eq "ref") {
     Push-Location $game
     try {
         $extra = if ($From) { @("--from", $From) } else { @() }
+        # (-Watch GLOBAL:OFF,...: shadow32's hardware write watches, the writer of a field)
+        # (watch only, at full speed: no calls recorded, -Secs ends it)
+        if ($Watch) { $extra += @("--watch", $Watch, "--watch-only", "--secs", $Secs) }
         python (Join-Path $rh "shadow32.py") --exe $shadow --out "$b\shadow-ref$tag.bin" --max $Max `
             --per-function 100000000 @extra -- @args32
     } finally { Pop-Location }
