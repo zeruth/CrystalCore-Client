@@ -62,6 +62,9 @@ $cfg = Get-Content (Join-Path $root "rhipper.json") -Raw | ConvertFrom-Json
 $rh = $cfg.rhipper
 $game = Join-Path $root $cfg.run.cwd
 $tag = if ($From) { "-from-" + $From.ToLower().Replace("0x", "") } else { "" }
+# (a watch run records no calls worth keeping: its own file, never the trace a long run made. A
+# watch-only reference run replaced a 300 s -Sites trace with 72 KB, 2026-10-28)
+if ($Watch) { $tag += "-watch" }
 $env:RHIPPER_PROJECT = $root
 $env:CRYSTALCORE_TRACE = "$b\shadow-port$tag.bin"
 # (fixed, whatever -Max: the variable is in both runs' environment, and 4000000 against 30000000
