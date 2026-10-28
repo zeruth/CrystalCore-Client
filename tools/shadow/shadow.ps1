@@ -85,7 +85,13 @@ if ($Which -eq "ref") {
         if ($Watch) { $extra += @("--watch", $Watch, "--watch-only", "--secs", $Secs) }
         python (Join-Path $rh "shadow32.py") --exe $shadow --out "$b\shadow-ref$tag.bin" --max $Max `
             --per-function 100000000 @extra -- @args32
-    } finally { Pop-Location }
+    } finally {
+        Pop-Location
+        # (the recording done, the reference too: one outlived shadow32's TerminateProcess after a
+        # -Max run, and the next run refused to start beside it, 2026-10-28. Only the shadow copy:
+        # the server worker's ffxiv.exe is another name)
+        Get-Process ffxiv_shadow -ErrorAction SilentlyContinue | Stop-Process -Force -Confirm:$false
+    }
 } else {
     # (-Watch GLOBAL:OFF,...: the same watches in the port's runtime, no calls recorded)
     if ($Watch) {
