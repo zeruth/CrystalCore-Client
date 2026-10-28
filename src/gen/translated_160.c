@@ -1598,6 +1598,56 @@ GEN_FRAME uint GEN_THISCALL F_00cd2200(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   return uVar3;
 }
 
+/* ref: SQEX::CDev::Engine::Sd::Driver::RootSound::vf14 */
+GEN_FRAME uint GEN_THISCALL F_00cd2250(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xcd2250u, gen_a0, gen_trace_f(gen_a1), gen_a2, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  float param_2 = (float)gen_a1;
+  int param_3 = (int)gen_a2;
+  float fVar1;
+  float fVar2;
+  uint uVar3;
+  int * piVar4;
+  int iVar5;
+  float10 extraout_ST0;
+  float10 extraout_ST0_00;
+  float10 extraout_ST0_01;
+  double dVar6;
+  
+  uVar3 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x164))(param_1 GEN_EDX_FWD);
+  if ((char)uVar3 == '\0') {
+    *(undefined1 *)(param_1 + 0x4a) = 0;
+    uVar3 = (uint)param_1[0x3e] >> 3;
+    if ((uVar3 & 1) == 0) {
+      if (param_3 != 0) {
+        uVar3 = F_00cccd90(param_1 + 8 GEN_EDX_ARG,param_2,param_3);
+        return uVar3;
+      }
+      F_00cccbd0(param_1 + 8 GEN_EDX_ARG,param_2);
+      extraout_ST0 = ((gen_fcode *)*(gen_code32 *)(param_1[0xdc] + 0x10))(param_1 + 0xdc);
+      extraout_ST0_00 = ((gen_fcode *)*(gen_code32 *)(param_1[8] + 0x10))(param_1 + 8);
+      fVar1 = gen_bits2f(param_1[0x40]);
+      fVar2 = gen_bits2f(param_1[0x41]);
+      extraout_ST0_01 = ((gen_fcode *)*(gen_code32 *)(param_1[0x4e] + 0x10))(param_1 + 0x4e);
+      uVar3 = (uint)(ulonglong)gen_d2bits(dVar6); dVar6 = extraout_ST0_01;
+      iVar5 = 0;
+      if (0 < param_1[0xaf]) {
+        piVar4 = param_1 + 0xb0;
+        do {
+          uVar3 = F_00cd8a30(*piVar4 GEN_EDX_ARG,((float)GEN_TOF((extraout_ST0_01 *
+                                              (float10)((double)GEN_TOD((((extraout_ST0_00 *
+                                                                 (float10)(double)extraout_ST0) *
+                                                                (float10)fVar1) * (float10)fVar2)))))));
+          iVar5 = iVar5 + 1;
+          piVar4 = piVar4 + 1;
+        } while (iVar5 < param_1[0xaf]);
+      }
+    }
+  }
+  return uVar3;
+}
+
 /* ref: FUN_00cd2330 */
 GEN_FRAME float GEN_THISCALL F_00cd2330(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -1700,6 +1750,39 @@ GEN_FRAME unsigned int GEN_THISCALL F_00cd2440(unsigned int gen_a0 GEN_EDX_PARAM
   return;
 }
 
+/* ref: SQEX::CDev::Engine::Sd::Driver::RootSound::vf19 */
+GEN_FRAME uint GEN_THISCALL F_00cd24c0(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xcd24c0u, gen_a0, gen_trace_f(gen_a1), gen_a2, 0u);
+  int param_1 = (int)gen_a0;
+  float param_2 = (float)gen_a1;
+  int param_3 = (int)gen_a2;
+  float fVar1;
+  uint uVar2;
+  float fVar3;
+  undefined4 * puVar4;
+  int iVar5;
+  float10 extraout_ST0;
+  
+  if (param_3 == 0) {
+    F_00cccbd0(param_1 + 0x44 GEN_EDX_FWD,param_2);
+    extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x44) + 0x10))))(param_1 + 0x44);
+    fVar1 = *(float *)(param_1 + 0x108); fVar3 = extraout_ST0;
+    iVar5 = 0;
+    if (0 < *(int *)(param_1 + 700)) {
+      puVar4 = (undefined4 *)(param_1 + 0x2c0);
+      do {
+        fVar3 = gen_bits2f(F_00cd68a0(*puVar4 GEN_EDX_ARG,(float)(extraout_ST0 * (float10)fVar1)));
+        iVar5 = iVar5 + 1;
+        puVar4 = puVar4 + 1;
+      } while (iVar5 < *(int *)(param_1 + 700));
+    }
+    return (uint)gen_fl2bits(fVar3);
+  }
+  uVar2 = F_00cccd90(param_1 + 0x44 GEN_EDX_ARG,param_2,param_3);
+  return uVar2;
+}
+
 /* ref: SQEX::CDev::Engine::Sd::Driver::RootSound::vf20 */
 GEN_FRAME unsigned int GEN_THISCALL F_00cd2540(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
 {
@@ -1720,6 +1803,40 @@ GEN_FRAME unsigned int GEN_THISCALL F_00cd2540(unsigned int gen_a0 GEN_EDX_PARAM
     } while (iVar1 < *(int *)(param_1 + 700));
   }
   return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::RootSound::vf21 */
+GEN_FRAME uint GEN_THISCALL F_00cd2590(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xcd2590u, gen_a0, gen_trace_f(gen_a1), gen_a2, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  float param_2 = (float)gen_a1;
+  int param_3 = (int)gen_a2;
+  float fVar1;
+  uint uVar2;
+  int * piVar3;
+  int iVar4;
+  float10 extraout_ST0;
+  
+  fVar1 = gen_bits2f(((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x168))(param_1 GEN_EDX_FWD));
+  if ((char)(uint)gen_fl2bits(fVar1) == '\0') {
+    if (param_3 != 0) {
+      uVar2 = F_00cccd90(param_1 + 0x1a GEN_EDX_ARG,param_2,param_3);
+      return uVar2;
+    }
+    F_00cccbd0(param_1 + 0x1a GEN_EDX_ARG,param_2);
+    extraout_ST0 = ((gen_fcode *)*(gen_code32 *)(param_1[0x1a] + 0x10))(param_1 + 0x1a); fVar1 = extraout_ST0;
+    iVar4 = 0;
+    if (0 < param_1[0xaf]) {
+      piVar3 = param_1 + 0xb0;
+      do {
+        fVar1 = gen_bits2f(F_00cd68c0(*piVar3 GEN_EDX_ARG,(float)extraout_ST0));
+        iVar4 = iVar4 + 1;
+        piVar3 = piVar3 + 1;
+      } while (iVar4 < param_1[0xaf]);
+    }
+  }
+  return (uint)gen_fl2bits(fVar1);
 }
 
 /* ref: SQEX::CDev::Engine::Sd::Driver::RootSound::vf22 */
@@ -1768,6 +1885,76 @@ GEN_FRAME unsigned int GEN_THISCALL F_00cd26a0(unsigned int gen_a0 GEN_EDX_PARAM
   float param_2 = (float)gen_a1;
   F_00cccc10(in_ecx + 0x44 GEN_EDX_FWD,param_2);
   return;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::RootSound::vf25 */
+GEN_FRAME uint GEN_THISCALL F_00cd26c0(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
+{
+  GEN_ENTER(0xcd26c0u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  float param_2 = (float)gen_a1;
+  float fVar1;
+  float fVar2;
+  code * pcVar3;
+  uint uVar4;
+  int * piVar5;
+  int iVar6;
+  float10 extraout_ST0;
+  float10 extraout_ST0_00;
+  float10 extraout_ST0_01;
+  double dVar7;
+  
+  uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x164))(param_1 GEN_EDX_FWD);
+  if ((char)uVar4 == '\0') {
+    pcVar3 = *(gen_code32 *)(param_1[0xdc] + 0x10);
+    param_1[0x41] = (int)gen_fl2bits(param_2);
+    extraout_ST0 = (*pcVar3)(param_1 + 0xdc);
+    extraout_ST0_00 = ((gen_fcode *)*(gen_code32 *)(param_1[8] + 0x10))(param_1 + 8);
+    fVar1 = gen_bits2f(param_1[0x40]);
+    fVar2 = gen_bits2f(param_1[0x41]);
+    extraout_ST0_01 = ((gen_fcode *)*(gen_code32 *)(param_1[0x4e] + 0x10))(param_1 + 0x4e);
+    uVar4 = (uint)(ulonglong)gen_d2bits(dVar7); dVar7 = extraout_ST0_01;
+    if (0 < param_1[0xaf]) {
+      piVar5 = param_1 + 0xb0;
+      iVar6 = 0;
+      do {
+        uVar4 = F_00cd8a30(*piVar5 GEN_EDX_ARG,((float)GEN_TOF((extraout_ST0_01 *
+                                            (float10)((double)GEN_TOD((((extraout_ST0_00 *
+                                                               (float10)(double)extraout_ST0) *
+                                                              (float10)fVar1) * (float10)fVar2)))))));
+        iVar6 = iVar6 + 1;
+        piVar5 = piVar5 + 1;
+      } while (iVar6 < param_1[0xaf]);
+    }
+  }
+  return uVar4;
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::RootSound::vf26 */
+GEN_FRAME uint GEN_THISCALL F_00cd2770(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
+{
+  GEN_ENTER(0xcd2770u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  int param_1 = (int)gen_a0;
+  float param_2 = (float)gen_a1;
+  float fVar1;
+  float fVar2;
+  undefined4 * puVar3;
+  int iVar4;
+  float10 extraout_ST0;
+  
+  *(float *)(param_1 + 0x108) = param_2;
+  extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*(int *)(param_1 + 0x44) + 0x10))))(param_1 + 0x44);
+  fVar1 = *(float *)(param_1 + 0x108); fVar2 = extraout_ST0;
+  iVar4 = 0;
+  if (0 < *(int *)(param_1 + 700)) {
+    puVar3 = (undefined4 *)(param_1 + 0x2c0);
+    do {
+      fVar2 = gen_bits2f(F_00cd68a0(*puVar3 GEN_EDX_FWD,(float)(extraout_ST0 * (float10)fVar1)));
+      iVar4 = iVar4 + 1;
+      puVar3 = puVar3 + 1;
+    } while (iVar4 < *(int *)(param_1 + 700));
+  }
+  return (uint)gen_fl2bits(fVar2);
 }
 
 /* ref: SQEX::CDev::Engine::Sd::Driver::RootSound::vf37 */
@@ -4742,6 +4929,7 @@ GEN_FRAME uint GEN_THISCALL F_00cd6630(unsigned int gen_a0 GEN_EDX_PARAM, float 
   bool bVar5;
   float10 extraout_ST0;
   float10 fVar6;
+  double dVar7;
   
   iVar2 = (*(int *)&gen_args[3]);
   iVar1 = (*(int *)&gen_args[2]);
@@ -4756,11 +4944,11 @@ GEN_FRAME uint GEN_THISCALL F_00cd6630(unsigned int gen_a0 GEN_EDX_PARAM, float 
   }
   else {
     iVar1 = (*(int *)&gen_args[0]) + 0x114 + (*(int *)&gen_args[2]) * 0x24;
-    extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*(int *)((*(int *)&gen_args[0]) + 0x114 + (*(int *)&gen_args[2]) * 0x24) + 0x10))))(iVar1); uVar3 = extraout_ST0;
+    extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*(int *)((*(int *)&gen_args[0]) + 0x114 + (*(int *)&gen_args[2]) * 0x24) + 0x10))))(iVar1); dVar7 = extraout_ST0;
     fVar6 = (float10)(*(float *)&gen_args[1]);
     bVar4 = GEN_ISNAN(fVar6) || GEN_ISNAN(extraout_ST0);
     bVar5 = bVar4 || fVar6 == extraout_ST0;
-    uVar3 = CONCAT22((short)(uVar3 >> 0x10),
+    uVar3 = CONCAT22((short)((ulonglong)gen_d2bits(dVar7) >> 0x10),
                      (ushort)!(extraout_ST0 <= fVar6) << 8 | (ushort)bVar4 << 10 |
                      (ushort)bVar5 << 0xe);
     if (bVar4 == bVar5) {
@@ -6492,25 +6680,26 @@ GEN_FRAME uint GEN_THISCALL F_00cd8980(unsigned int gen_a0 GEN_EDX_PARAM, float 
   bool bVar4;
   float10 extraout_ST0;
   float10 fVar5;
-  float fVar6;
+  double dVar6;
+  float fVar7;
   
   iVar1 = (*(int *)&gen_args[2]);
   if ((*(int *)&gen_args[2]) == 0) {
     F_00cccbd0((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x60 GEN_EDX_FWD,(*(float *)&gen_args[1]));
-    fVar6 = F_00cd83d0((*(undefined * PTR32 *)&gen_args[0]) GEN_EDX_ARG);
+    fVar7 = F_00cd83d0((*(undefined * PTR32 *)&gen_args[0]) GEN_EDX_ARG);
     if (*((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4))) != 0) {
       ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4))) + 0x4c))))
-                (*((int * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4))) GEN_EDX_ARG,(undefined4)gen_fl2bits(fVar6));
+                (*((int * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 4))) GEN_EDX_ARG,(undefined4)gen_fl2bits(fVar7));
     }
     (*(int *)&gen_args[2]) = (int)(*(double *)&REFG(undefined, 0x1097260) * 0.0);
-    uVar2 = F_00cbddc0((int)(*(undefined * PTR32 *)&gen_args[0]) + 0xc GEN_EDX_ARG,fVar6,(uint)&(*(int *)&gen_args[2]));
+    uVar2 = F_00cbddc0((int)(*(undefined * PTR32 *)&gen_args[0]) + 0xc GEN_EDX_ARG,fVar7,(uint)&(*(int *)&gen_args[2]));
   }
   else {
-    extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x60))) + 0x10))))((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x60); uVar2 = extraout_ST0;
+    extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x60))) + 0x10))))((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x60); dVar6 = extraout_ST0;
     fVar5 = (float10)(*(float *)&gen_args[1]);
     bVar3 = GEN_ISNAN(fVar5) || GEN_ISNAN(extraout_ST0);
     bVar4 = bVar3 || fVar5 == extraout_ST0;
-    uVar2 = CONCAT22((short)(uVar2 >> 0x10),
+    uVar2 = CONCAT22((short)((ulonglong)gen_d2bits(dVar6) >> 0x10),
                      (ushort)!(extraout_ST0 <= fVar5) << 8 | (ushort)bVar3 << 10 |
                      (ushort)bVar4 << 0xe);
     if (bVar3 == bVar4) {
@@ -10666,130 +10855,5 @@ GEN_FRAME uint GEN_THISCALL F_00cdf180(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   }
   F_00ce1230(this GEN_EDX_ARG);
   return uVar3;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::ToolBank::vf11 */
-GEN_FRAME uint GEN_THISCALL F_00cdf1f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdf1f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  uVar2 = 0;
-  iVar3 = 0;
-  F_00ce11f0(this GEN_EDX_FWD);
-  piVar1 = *(int * PTR32 *)(this + 0x4c);
-  if (piVar1 != *(int * PTR32 *)(this + 0x50)) {
-    while ((uint)*(ushort *)(*piVar1 + 0xc) != param_1 % 1000) {
-      piVar1 = piVar1 + 1;
-      iVar3 = iVar3 + 1;
-      if (piVar1 == *(int * PTR32 *)(this + 0x50)) {
-        F_00ce1230(this GEN_EDX_ARG);
-        return 0;
-      }
-    }
-    uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x18))(this GEN_EDX_ARG,iVar3);
-  }
-  F_00ce1230(this GEN_EDX_ARG);
-  return uVar2;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::ToolBank::vf18 */
-GEN_FRAME unsigned int GEN_THISCALL F_00cdf270(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdf270u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int iVar1;
-  
-  if ((uint)(*(int *)(this + 0x50) - *(int *)(this + 0x4c) >> 2) <= param_1) {
-                    
-    F_00c457e7("invalid vector<T> subscript");
-  }
-  iVar1 = *((int *)GEN_TOP((*(int *)(this + 0x4c) + param_1 * 4)));
-  if (iVar1 != 0) {
-    F_00406810(iVar1);
-    if ((uint)(*(int *)(this + 0x50) - *(int *)(this + 0x4c) >> 2) <= param_1) {
-                    
-      F_00c457e7("invalid vector<T> subscript");
-    }
-    *((undefined4 *)GEN_TOP((*(int *)(this + 0x4c) + param_1 * 4))) = 0;
-  }
-  return 0;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::ToolBank::vf19 */
-GEN_FRAME unsigned int GEN_THISCALL F_00cdf2d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdf2d0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int iVar1;
-  
-  if ((uint)(*(int *)(this + 100) - *(int *)(this + 0x60) >> 2) <= param_1) {
-                    
-    F_00c457e7("invalid vector<T> subscript");
-  }
-  iVar1 = *((int *)GEN_TOP((*(int *)(this + 0x60) + param_1 * 4)));
-  if (iVar1 != 0) {
-    F_00406810(iVar1);
-    if ((uint)(*(int *)(this + 100) - *(int *)(this + 0x60) >> 2) <= param_1) {
-                    
-      F_00c457e7("invalid vector<T> subscript");
-    }
-    *((undefined4 *)GEN_TOP((*(int *)(this + 0x60) + param_1 * 4))) = 0;
-  }
-  return 0;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::ToolBank::vf20 */
-GEN_FRAME unsigned int GEN_THISCALL F_00cdf330(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdf330u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int iVar1;
-  
-  if ((uint)(*(int *)(this + 0x78) - *(int *)(this + 0x74) >> 2) <= param_1) {
-                    
-    F_00c457e7("invalid vector<T> subscript");
-  }
-  iVar1 = *((int *)GEN_TOP((*(int *)(this + 0x74) + param_1 * 4)));
-  if (iVar1 != 0) {
-    F_00406810(iVar1);
-    if ((uint)(*(int *)(this + 0x78) - *(int *)(this + 0x74) >> 2) <= param_1) {
-                    
-      F_00c457e7("invalid vector<T> subscript");
-    }
-    *((undefined4 *)GEN_TOP((*(int *)(this + 0x74) + param_1 * 4))) = 0;
-  }
-  return 0;
-}
-
-/* ref: SQEX::CDev::Engine::Sd::Driver::ToolBank::vf21 */
-GEN_FRAME unsigned int GEN_THISCALL F_00cdf390(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdf390u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int iVar1;
-  
-  if ((uint)(*(int *)(this + 0x8c) - *(int *)(this + 0x88) >> 2) <= param_1) {
-                    
-    F_00c457e7("invalid vector<T> subscript");
-  }
-  iVar1 = *((int *)GEN_TOP((*(int *)(this + 0x88) + param_1 * 4)));
-  if (iVar1 != 0) {
-    F_00406810(iVar1);
-    if ((uint)(*(int *)(this + 0x8c) - *(int *)(this + 0x88) >> 2) <= param_1) {
-                    
-      F_00c457e7("invalid vector<T> subscript");
-    }
-    *((undefined4 *)GEN_TOP((*(int *)(this + 0x88) + param_1 * 4))) = 0;
-  }
-  return 0;
 }
 

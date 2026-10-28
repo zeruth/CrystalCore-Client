@@ -6,13 +6,13 @@ GEN_NOFRAME uint F_00c17790(unsigned int gen_a0)
   GEN_ENTER(0xc17790u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   uint _Y;
-  double dVar1;
-  float fVar2;
+  float fVar1;
+  double dVar2;
   
   _Y = F_00b9c9b0(param_1,2);
-  fVar2 = F_00b9c8e0(param_1,1);
-  dVar1 = F_00c52a5e((double)fVar2,_Y);
-  F_00b9ade0(param_1,dVar1);
+  fVar1 = F_00b9c8e0(param_1,1);
+  dVar2 = F_00c52a5e((double)fVar1,_Y);
+  F_00b9ade0(param_1,dVar2);
   return 1;
 }
 
@@ -1992,13 +1992,13 @@ GEN_NOFRAME uint F_00c1a150(unsigned int gen_a0)
   GEN_ENTER(0xc1a150u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   float10 fVar1;
-  double dVar2;
-  float fVar3;
+  float fVar2;
+  double dVar3;
   
   fVar1 = F_00b9c960(param_1,2,0.0);
-  fVar3 = F_00b9c8e0(param_1,1);
-  dVar2 = F_00c52da0((longlong)fVar3,(longlong)fVar1);
-  F_00b9ade0(param_1,dVar2);
+  fVar2 = F_00b9c8e0(param_1,1);
+  dVar3 = F_00c52da0((longlong)fVar2,(longlong)fVar1);
+  F_00b9ade0(param_1,dVar3);
   return 1;
 }
 

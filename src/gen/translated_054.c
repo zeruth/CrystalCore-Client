@@ -8,13 +8,13 @@ GEN_FRAME uint GEN_THISCALL F_006d25b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uint param_1 = (uint)gen_a1;
   int param_2 = (int)gen_a2;
   undefined4 param_3 = (undefined4)gen_a3;
+  __declspec(align(16)) undefined1 gen_frame[0x20];
   uint uVar1;
   undefined * pvVar2;
   uint uVar3;
   int iVar4;
   int iVar5;
   ulonglong uVar6;
-  int iStackY_20;
   
   if ((param_1 & 0xff) == 0) {
     if ((char)param_3 != '\x04') goto LAB_006d26ba;
@@ -52,11 +52,11 @@ LAB_006d265e: ;
     iVar5 = 0;
     iVar4 = 0;
   }
-  *(longlong *)&iStackY_20 = CONCAT44(iVar4,iVar5);
-  uVar3 = (uint)(*(longlong *)&iStackY_20 / 0x3c);
+  *(longlong *)&(*(int *)(gen_frame + 0x0)) = CONCAT44(iVar4,iVar5);
+  uVar3 = (uint)(*(longlong *)&(*(int *)(gen_frame + 0x0)) / 0x3c);
   ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x278))
             (this GEN_EDX_ARG,*(uint *)(this + 0x338) - uVar3,
-             (*(int *)(this + 0x33c) - (int)((ulonglong)(*(longlong *)&iStackY_20 / 0x3c) >> 0x20))
+             (*(int *)(this + 0x33c) - (int)((ulonglong)(*(longlong *)&(*(int *)(gen_frame + 0x0)) / 0x3c) >> 0x20))
              - (uint)(*(uint *)(this + 0x338) < uVar3));
 LAB_006d26ba: ;
   uVar3 = F_006bd3a0((undefined *)this GEN_EDX_ARG,param_1,param_2,param_3);

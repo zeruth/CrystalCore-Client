@@ -1,5 +1,174 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00d41cb0 */
+GEN_FRAME uint GEN_THISCALL F_00d41cb0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xd41cb0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float * param_1 = (float *)(uintptr_t)gen_a1;
+  float * param_2 = (float *)(uintptr_t)gen_a2;
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  
+  fVar1 = param_1[1];
+  fVar2 = param_1[2];
+  fVar3 = param_1[3];
+  fVar4 = param_2[1];
+  fVar5 = param_2[2];
+  fVar6 = param_2[3];
+  *(float *)this = *(float *)this - *param_1 * *param_2;
+  *(float *)((int)this + 4) = *(float *)((int)this + 4) - fVar1 * fVar4;
+  *(float *)((int)this + 8) = *(float *)((int)this + 8) - fVar2 * fVar5;
+  *(float *)((int)this + 0xc) = *(float *)((int)this + 0xc) - fVar3 * fVar6;
+  return (uint)param_1;
+}
+
+/* ref: FUN_00d41cd0 */
+GEN_FRAME uint GEN_THISCALL F_00d41cd0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xd41cd0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float * param_1 = (float *)(uintptr_t)gen_a1;
+  float * param_2 = (float *)(uintptr_t)gen_a2;
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  
+  fVar1 = param_1[1];
+  fVar2 = param_1[2];
+  fVar3 = param_1[3];
+  fVar4 = param_2[1];
+  fVar5 = param_2[2];
+  fVar6 = param_2[3];
+  *(float *)this = *param_1 * *param_2 + *(float *)this;
+  *(float *)((int)this + 4) = fVar1 * fVar4 + *(float *)((int)this + 4);
+  *(float *)((int)this + 8) = fVar2 * fVar5 + *(float *)((int)this + 8);
+  *(float *)((int)this + 0xc) = fVar3 * fVar6 + *(float *)((int)this + 0xc);
+  return (uint)param_1;
+}
+
+/* ref: FUN_00d41cf0 */
+GEN_FRAME uint GEN_THISCALL F_00d41cf0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xd41cf0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float * param_1 = (float *)(uintptr_t)gen_a1;
+  float * param_2 = (float *)(uintptr_t)gen_a2;
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  
+  fVar1 = param_1[1];
+  fVar2 = param_1[2];
+  fVar3 = param_1[3];
+  fVar4 = param_2[1];
+  fVar5 = param_2[2];
+  fVar6 = param_2[3];
+  *(float *)this = *param_1 - *param_2;
+  *(float *)((int)this + 4) = fVar1 - fVar4;
+  *(float *)((int)this + 8) = fVar2 - fVar5;
+  *(float *)((int)this + 0xc) = fVar3 - fVar6;
+  return (uint)param_1;
+}
+
+/* ref: FUN_00d41d10 */
+GEN_FRAME uint GEN_THISCALL F_00d41d10(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xd41d10u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float * param_1 = (float *)(uintptr_t)gen_a1;
+  float * param_2 = (float *)(uintptr_t)gen_a2;
+  float * param_3 = (float *)(uintptr_t)gen_a3;
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  float fVar7;
+  float fVar8;
+  float fVar9;
+  
+  fVar1 = param_2[1];
+  fVar2 = param_2[2];
+  fVar3 = param_2[3];
+  fVar4 = param_3[1];
+  fVar5 = param_3[2];
+  fVar6 = param_3[3];
+  fVar7 = param_1[1];
+  fVar8 = param_1[2];
+  fVar9 = param_1[3];
+  *(float *)this = *param_2 * *param_3 + *param_1;
+  *(float *)((int)this + 4) = fVar1 * fVar4 + fVar7;
+  *(float *)((int)this + 8) = fVar2 * fVar5 + fVar8;
+  *(float *)((int)this + 0xc) = fVar3 * fVar6 + fVar9;
+  return (uint)param_1;
+}
+
+/* ref: FUN_00d41d30 */
+GEN_FRAME uint GEN_THISCALL F_00d41d30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xd41d30u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 uVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  
+  uVar1 = param_2[1];
+  uVar2 = param_2[2];
+  uVar3 = param_2[3];
+  *in_ecx = *param_2;
+  in_ecx[1] = uVar1;
+  in_ecx[2] = uVar2;
+  in_ecx[3] = uVar3;
+  return (uint)param_2;
+}
+
+/* ref: FUN_00d41d40 */
+GEN_FRAME uint GEN_THISCALL F_00d41d40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xd41d40u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float * param_1 = (float *)(uintptr_t)gen_a1;
+  float * param_2 = (float *)(uintptr_t)gen_a2;
+  float * param_3 = (float *)(uintptr_t)gen_a3;
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  float fVar7;
+  float fVar8;
+  float fVar9;
+  
+  fVar1 = param_2[1];
+  fVar2 = param_2[2];
+  fVar3 = param_2[3];
+  fVar4 = param_3[1];
+  fVar5 = param_3[2];
+  fVar6 = param_3[3];
+  fVar7 = param_1[1];
+  fVar8 = param_1[2];
+  fVar9 = param_1[3];
+  *(float *)this = *param_2 * *param_3 + *param_1;
+  *(float *)((int)this + 4) = fVar1 * fVar4 + fVar7;
+  *(float *)((int)this + 8) = fVar2 * fVar5 + fVar8;
+  *(float *)((int)this + 0xc) = fVar3 * fVar6 + fVar9;
+  return (uint)param_1;
+}
+
 /* ref: FUN_00d41d70 */
 GEN_FRAME uint GEN_THISCALL F_00d41d70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -23715,8 +23884,8 @@ GEN_FRAME uint GEN_THISCALL F_00d6ceb0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   char cVar2;
   bool bVar3;
   char * pcVar4;
-  double dVar5;
-  float fVar6;
+  float fVar5;
+  double dVar6;
   
   bVar1 = *(byte *)((int)this + 0x19);
   pcVar4 = (char *)F_00d6cba0(&(*(char *)(gen_frame + 0x21b)),(uint)bVar1);
@@ -23742,8 +23911,8 @@ LAB_00d6cf1d: ;
   else {
     bVar3 = false;
   }
-  dVar5 = F_00d6cc30((uint)bVar1);
-  if ((double)(*(float *)(gen_frame + 0x214)) < dVar5) {
+  dVar6 = F_00d6cc30((uint)bVar1);
+  if ((double)(*(float *)(gen_frame + 0x214)) < dVar6) {
     F_00da0a80(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x0)),0x200);
     F_00d9fe80(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG,
                  "Quantization may be limiting translation quality.  If artifacts are visible, try increasing the number of translation quantization bits."
@@ -23753,8 +23922,8 @@ LAB_00d6cf1d: ;
                "Animation\\SplineCompressed\\hkaSplineCompressedAnimation.cpp",0x4f);
     F_00d9fda0(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG);
   }
-  dVar5 = F_00d6cc30((uint)*(byte *)((int)this + 0x1a));
-  if ((double)*(float *)((int)this + 8) < dVar5) {
+  dVar6 = F_00d6cc30((uint)*(byte *)((int)this + 0x1a));
+  if ((double)*(float *)((int)this + 8) < dVar6) {
     F_00da0a80(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x0)),0x200);
     F_00d9fe80(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG,
                  "Quantization may be limiting scale quality.  If artifacts are visible, try increasing the number of scale quantization bits."
@@ -23764,8 +23933,8 @@ LAB_00d6cf1d: ;
                "Animation\\SplineCompressed\\hkaSplineCompressedAnimation.cpp",0x54);
     F_00d9fda0(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG);
   }
-  dVar5 = F_00d6cc30((uint)*(byte *)((int)this + 0x1b));
-  if ((double)*(float *)((int)this + 0xc) < dVar5) {
+  dVar6 = F_00d6cc30((uint)*(byte *)((int)this + 0x1b));
+  if ((double)*(float *)((int)this + 0xc) < dVar6) {
     F_00da0a80(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x0)),0x200);
     F_00d9fe80(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG,
                  "Quantization may be limiting float quality.  If artifacts are visible, try increasing the number of float quantization bits."
@@ -23776,8 +23945,8 @@ LAB_00d6cf1d: ;
     F_00d9fda0(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG);
   }
   (*(float *)(gen_frame + 0x214)) = *(float *)this;
-  fVar6 = F_00d6cbd0((uint)*(byte *)((int)this + 0x18));
-  if ((float10)(*(float *)(gen_frame + 0x214)) < (float10)fVar6 * (float10)*(float *)&REFG(undefined, 0x11373f4)) {
+  fVar5 = F_00d6cbd0((uint)*(byte *)((int)this + 0x18));
+  if ((float10)(*(float *)(gen_frame + 0x214)) < (float10)fVar5 * (float10)*(float *)&REFG(undefined, 0x11373f4)) {
     F_00da0a80(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x0)),0x200);
     F_00d9fe80(((undefined1 *)(gen_frame + 0x204)) GEN_EDX_ARG,
                  "Quantization may be limiting rotation quality.  If artifacts are visible, try increasing the number of rotation quantization bits."
@@ -25092,85 +25261,5 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_00d6eb10(unsigned int gen_a0 GEN_EDX_PAR
   undefined4 param_3 = (undefined4)gen_a3;
   undefined4 param_4 = (undefined4)gen_a4;
   return;
-}
-
-/* ref: hkaPredictiveCompressedAnimation::vf7 */
-GEN_NOFRAME uint GEN_THISCALL F_00d6eb20(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xd6eb20u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 0x84);
-}
-
-/* ref: hkaPredictiveCompressedAnimation::vf16 */
-GEN_NOFRAME byte F_00d6eb30(void)
-{
-  GEN_ENTER(0xd6eb30u, 0u, 0u, 0u, 0u);
-  return 1;
-}
-
-/* ref: hkaPredictiveCompressedAnimation::vf17 */
-GEN_NOFRAME uint GEN_THISCALL F_00d6eb40(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xd6eb40u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 0x8c);
-}
-
-/* ref: hkaPredictiveCompressedAnimation::vf18 */
-GEN_FRAME uint GEN_THISCALL F_00d6eb50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xd6eb50u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0x8c) = param_2;
-  return param_2;
-}
-
-/* ref: FUN_00d6eb70 */
-GEN_FRAME unsigned int F_00d6eb70(float gen_a0, float gen_a1, float gen_a2)
-{
-  GEN_ENTER(0xd6eb70u, gen_trace_f(gen_a0), gen_trace_f(gen_a1), gen_trace_f(gen_a2), 0u);
-  float in_xmm0 = (float)gen_a0;
-  float in_xmm1 = (float)gen_a1;
-  float param_3 = (float)gen_a2;
-  return;
-}
-
-/* ref: FUN_00d6eb90 */
-GEN_FRAME unsigned int F_00d6eb90(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xd6eb90u, gen_a0, gen_a1, gen_a2, 0u);
-  int in_eax = (int)gen_a0;
-  int in_ecx = (int)gen_a1;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  int iVar4;
-  
-  if ((in_ecx != 0) && (0 < in_eax)) {
-    iVar3 = (in_eax - 1U >> 4) + 1;
-    do {
-      uVar2 = (uint)*(ushort *)*param_3;
-      *param_3 = (ushort *)*param_3 + 1;
-      iVar4 = in_eax;
-      if (0xf < in_eax) {
-        iVar4 = 0x10;
-      }
-      iVar1 = 0;
-      if (0 < iVar4) {
-        do {
-          *(byte *)(in_ecx + iVar1) = *(byte *)(in_ecx + iVar1) & -((byte)uVar2 & 1);
-          iVar1 = iVar1 + 1;
-          uVar2 = (int)uVar2 >> 1;
-        } while (iVar1 < iVar4);
-      }
-      in_eax = in_eax - 0x10;
-      in_ecx = in_ecx + 0x10;
-      iVar3 = iVar3 - 1;
-    } while (iVar3 != 0);
-  }
-  return 0;
 }
 

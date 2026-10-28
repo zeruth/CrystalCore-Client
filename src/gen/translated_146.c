@@ -10574,14 +10574,14 @@ GEN_NOFRAME uint F_00c17750(unsigned int gen_a0)
   GEN_ENTER(0xc17750u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   __declspec(align(16)) undefined1 gen_frame[0x10];
-  float fVar1;
-  double dVar2;
+  double dVar1;
+  float fVar2;
   int * _Y;
   
   _Y = &(*(int *)(gen_frame + 0xc));
-  fVar1 = F_00b9c8e0(param_1,1);
-  dVar2 = F_00c52990((double)fVar1,_Y);
-  F_00b9ade0(param_1,dVar2);
+  fVar2 = F_00b9c8e0(param_1,1);
+  dVar1 = F_00c52990((double)fVar2,_Y);
+  F_00b9ade0(param_1,dVar1);
   F_00b9ae00(param_1,(*(int *)(gen_frame + 0xc)));
   return 2;
 }

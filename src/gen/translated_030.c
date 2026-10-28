@@ -11500,7 +11500,7 @@ GEN_FRAME uint GEN_THISCALL F_0059a490(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uint param_2 = (uint)gen_a2;
   uint param_3 = (uint)gen_a3;
   uint param_4 = (uint)gen_a4;
-  __declspec(align(16)) undefined1 gen_frame[0x30];
+  __declspec(align(16)) undefined1 gen_frame[0x40];
   uint * puVar1;
   int iVar2;
   undefined4 uVar3;
@@ -11509,7 +11509,6 @@ GEN_FRAME uint GEN_THISCALL F_0059a490(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uint uVar6;
   uint uVar7;
   uint uVar8;
-  ulonglong uStackY_40;
   
   uVar5 = param_2;
   if ((*(uint *)((int)this + 0x1c) <= param_2) &&
@@ -11518,20 +11517,20 @@ GEN_FRAME uint GEN_THISCALL F_0059a490(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     if ((iVar2 == 0) || (*(int *)((int)this + 0xc) < iVar2)) {
       *(int *)((int)this + 0xc) = *(int *)((int)this + 0xc) + 1;
       uVar3 = *(undefined4 *)((int)this + 0xc);
-      (*(undefined2 *)(gen_frame + 0xc)) = 0x3a;
-      (*(int *)(gen_frame + 0x18)) = 0;
-      (*(int *)(gen_frame + 0x18)) = iVar2;
-      (*(undefined4 *)(gen_frame + 0x14)) = 0;
-      (*(undefined4 *)(gen_frame + 0x1c)) = 0;
-      (*(undefined4 *)(gen_frame + 0x20)) = 0;
+      (*(undefined2 *)(gen_frame + 0x1c)) = 0x3a;
+      (*(int *)(gen_frame + 0x28)) = 0;
+      (*(int *)(gen_frame + 0x28)) = iVar2;
       (*(undefined4 *)(gen_frame + 0x24)) = 0;
-      (*(undefined4 *)(gen_frame + 0x28)) = 0;
-      (*(undefined2 *)(gen_frame + 0xe)) = 0;
-      (*(undefined4 *)(gen_frame + 0x14)) = uVar3;
-      F_0059a440(this GEN_EDX_FWD,&(*(undefined2 *)(gen_frame + 0xc)));
+      (*(undefined4 *)(gen_frame + 0x2c)) = 0;
+      (*(undefined4 *)(gen_frame + 0x30)) = 0;
+      (*(undefined4 *)(gen_frame + 0x34)) = 0;
+      (*(undefined4 *)(gen_frame + 0x38)) = 0;
+      (*(undefined2 *)(gen_frame + 0x1e)) = 0;
+      (*(undefined4 *)(gen_frame + 0x24)) = uVar3;
+      F_0059a440(this GEN_EDX_FWD,&(*(undefined2 *)(gen_frame + 0x1c)));
       if (*(int *)((int)this + 8) <= *(int *)((int)this + 0xc)) {
-        (*(undefined2 *)(gen_frame + 0xc)) = 0x3b;
-        F_0059a440(this GEN_EDX_ARG,&(*(undefined2 *)(gen_frame + 0xc)));
+        (*(undefined2 *)(gen_frame + 0x1c)) = 0x3b;
+        F_0059a440(this GEN_EDX_ARG,&(*(undefined2 *)(gen_frame + 0x1c)));
       }
     }
     uVar5 = *(uint *)((int)this + 8);
@@ -11551,9 +11550,9 @@ GEN_FRAME uint GEN_THISCALL F_0059a490(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     if (uVar8 != 0 || uVar7 != 0) {
       uVar5 = *(uint *)((int)this + 0x18);
       uVar6 = uVar8 - uVar5;
-      uStackY_40 = CONCAT44(((uVar7 - *(int *)((int)this + 0x1c)) - (uint)(uVar8 < uVar5)) + param_2
+      (*(ulonglong *)(gen_frame + 0x0)) = CONCAT44(((uVar7 - *(int *)((int)this + 0x1c)) - (uint)(uVar8 < uVar5)) + param_2
                             + (uint)CARRY4(uVar6,param_1),uVar6 + param_1);
-      lVar4 = (uStackY_40 / CONCAT44(uVar7,uVar8)) * (longlong)CONCAT44(uVar7,uVar8);
+      lVar4 = ((*(ulonglong *)(gen_frame + 0x0)) / CONCAT44(uVar7,uVar8)) * (longlong)CONCAT44(uVar7,uVar8);
       if (lVar4 != 0) {
         lVar4 = lVar4 + *(longlong *)((int)this + 0x18);
         *(longlong *)((int)this + 0x18) = lVar4;

@@ -1,8 +1,8 @@
 {
- "translated": 87033,
- "stubbed": 304,
+ "translated": 87041,
+ "stubbed": 296,
  "reasons": {
-  "a register the decompiler lost": 244,
+  "a register the decompiler lost": 236,
   "an SSE lane in a bit mask": 7,
   "demoted": 5,
   "member access through a type C does not have": 4,
@@ -243,14 +243,9 @@
   "00cc6700": "member access through a type C does not have (].D)",
   "00ccd220": "local of type unkbyte10",
   "00ccd2f0": "local of type unkbyte10",
-  "00cd2250": "a register the decompiler lost (extraout_ST0)",
-  "00cd24c0": "a register the decompiler lost (extraout_ST0)",
-  "00cd2590": "a register the decompiler lost (extraout_ST0)",
-  "00cd26c0": "a register the decompiler lost (extraout_ST0)",
-  "00cd2770": "a register the decompiler lost (extraout_ST0)",
   "00cd2c90": "a register the decompiler lost (in_ST0)",
   "00cd4db0": "a register the decompiler lost (extraout_ST0_00)",
-  "00cd50e0": "a register the decompiler lost (extraout_ST0_02)",
+  "00cd50e0": "a register the decompiler lost (extraout_ST0_15)",
   "00cd6c00": "a register the decompiler lost (in_ST0)",
   "00cd74c0": "a register the decompiler lost (extraout_ST0_07)",
   "00cd8c60": "a register the decompiler lost (extraout_ST0_00)",
@@ -276,7 +271,6 @@
   "00cdc4a0": "a register the decompiler lost (extraout_ST0)",
   "00ce1f50": "a register the decompiler lost (extraout_EAX)",
   "00ce8960": "local of type unkbyte10",
-  "00cefae0": "a register the decompiler lost (extraout_ST0)",
   "00cf5f80": "a register the decompiler lost (extraout_ST1)",
   "00d01b90": "undeclared name rsqrtps",
   "00d078f0": "a register the decompiler lost (unaff_EBX)",
@@ -335,8 +329,6 @@
   "010508f0": "type ChannelManagerOnSingleConnectionTmpl_TZoneProtoUp_ZoneProtoChannel_Network_Application_TZoneProtoDown",
   "010524c9": "undeclared name SUB161",
   "01052968": "a register the decompiler lost (extraout_ECX)",
-  "01057440": "a register the decompiler lost (extraout_ST0)",
-  "01057480": "a register the decompiler lost (extraout_ST0)",
   "01070093": "a register the decompiler lost (in_stack_0000000c)"
  }
 }

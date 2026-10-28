@@ -4221,20 +4221,20 @@ GEN_FRAME uint GEN_THISCALL F_00b6dc90(unsigned int gen_a0 GEN_EDX_PARAM)
   uint extraout_EAX = 0;
   bool bVar4;
   float10 fVar5;
-  float fVar6;
-  float fVar7;
+  double dVar6;
+  double dVar7;
   float fVar8;
   float fVar9;
-  double dVar10;
-  double dVar11;
+  float fVar10;
+  float fVar11;
   
   this_00 = (undefined *)F_00424770(REFG(void * PTR32, 0x137104c) GEN_EDX_FWD);
-  fVar6 = F_0053b3a0();
-  dVar10 = F_0053b320();
-  fVar7 = F_0053b3e0();
-  dVar11 = F_0053b360();
-  bVar4 = GEN_ISNAN((float10)fVar7) || GEN_ISNAN((float10)0);
-  if (bVar4 == (bVar4 || (float10)fVar7 == (float10)0)) {
+  fVar8 = F_0053b3a0();
+  dVar6 = F_0053b320();
+  fVar9 = F_0053b3e0();
+  dVar7 = F_0053b360();
+  bVar4 = GEN_ISNAN((float10)fVar9) || GEN_ISNAN((float10)0);
+  if (bVar4 == (bVar4 || (float10)fVar9 == (float10)0)) {
     bVar2 = F_00a34870(this_00 GEN_EDX_ARG,0x11f);
     if (bVar2 != 0) {
       return CONCAT31(extraout_var,bVar2);
@@ -4243,21 +4243,21 @@ GEN_FRAME uint GEN_THISCALL F_00b6dc90(unsigned int gen_a0 GEN_EDX_PARAM)
   bVar2 = F_00a34150(this_00 GEN_EDX_ARG,2,0,0);
   uVar3 = CONCAT31(extraout_var_00,bVar2);
   if (bVar2 == 0) {
-    if ((!((float10)((float)GEN_TOF(ABS((float10)(float)dVar10))) < (float10)((float)GEN_TOF(ABS((float10)fVar6))))) &&
-       (!((float10)((float)GEN_TOF(ABS((float10)(float)dVar11))) < (float10)((float)GEN_TOF(ABS((float10)fVar7)))))) {
+    if ((!((float10)((float)GEN_TOF(ABS((float10)(float)dVar6))) < (float10)((float)GEN_TOF(ABS((float10)fVar8))))) &&
+       (!((float10)((float)GEN_TOF(ABS((float10)(float)dVar7))) < (float10)((float)GEN_TOF(ABS((float10)fVar9)))))) {
       return uVar3;
     }
     uVar3 = F_00414500(*((undefined4 *)GEN_TOP(((int)REFG(void * PTR32, 0x137104c) + 0x10))) GEN_EDX_ARG,
                          *(undefined4 *)((int)this + 0x1c0));
-    fVar6 = *(float *)(uVar3 + 0x14);
+    fVar8 = *(float *)(uVar3 + 0x14);
     fVar1 = (float10)*(float *)&REFG(undefined, 0x133d36c);
     fVar5 = (float10)*(float *)&REFG(undefined, 0x133d368);
-    fVar7 = *((float *)GEN_TOP(((int)REFG(void * PTR32, 0x137104c) + 0x1198)));
-    fVar8 = F_0053b3a0();
-    fVar9 = F_0053b3e0();
-    fVar5 = (float10)((float)GEN_TOF(((float10)(float)((float10)fVar6 * fVar1 + fVar5) * (float10)fVar7)));
-    *(float *)((int)this + 0x10c) = (float)(-fVar5 * (float10)fVar8);
-    *(float *)((int)this + 0x110) = ((float)GEN_TOF(((fVar5 * (float10)fVar9) * (float10)REFG(double, 0x1088108))));
+    fVar9 = *((float *)GEN_TOP(((int)REFG(void * PTR32, 0x137104c) + 0x1198)));
+    fVar10 = F_0053b3a0();
+    fVar11 = F_0053b3e0();
+    fVar5 = (float10)((float)GEN_TOF(((float10)(float)((float10)fVar8 * fVar1 + fVar5) * (float10)fVar9)));
+    *(float *)((int)this + 0x10c) = (float)(-fVar5 * (float10)fVar10);
+    *(float *)((int)this + 0x110) = ((float)GEN_TOF(((fVar5 * (float10)fVar11) * (float10)REFG(double, 0x1088108))));
     uVar3 = extraout_EAX;
   }
   return uVar3;

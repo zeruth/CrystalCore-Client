@@ -10592,8 +10592,8 @@ GEN_FRAME byte GEN_THISCALL F_00ac83b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uint uVar3;
   uint uVar4;
   int * piVar5;
-  double dVar6;
-  float fVar7;
+  float fVar6;
+  double dVar7;
   
   this_00 = REFG(void * PTR32, 0x1379694);
   if ((((*(int *)&gen_args[6]) != 1) && (*((char *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x58))) != '\0')) || (REFG(void * PTR32, 0x1379694) == (undefined *)0x0)) {
@@ -10621,9 +10621,9 @@ GEN_FRAME byte GEN_THISCALL F_00ac83b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
         ((!GEN_ISNAN(*(float *)(*(undefined * PTR32 *)&gen_args[0])) && !GEN_ISNAN(*(float *)&REFG(undefined, 0x1088114))) &&
          !(*(float *)(*(undefined * PTR32 *)&gen_args[0]) <= *(float *)&REFG(undefined, 0x1088114)))) &&
        ((*(char *)(uVar2 + 0x1c) == '\x03' || (*(char *)(uVar2 + 0x1c) == '\x02')))))))) {
-    fVar7 = F_00ac3090((*(undefined * PTR32 *)&gen_args[0]) GEN_EDX_ARG,(*(undefined4 *)&gen_args[1]),(*(int *)&gen_args[2]));
-    dVar6 = F_00ac3060((*(undefined * PTR32 *)&gen_args[0]) GEN_EDX_ARG,(*(undefined4 *)&gen_args[1]),(*(int *)&gen_args[2]));
-    if ((float10)fVar7 - (float10)dVar6 <= (float10)REFG(double, 0x1088108)) {
+    fVar6 = F_00ac3090((*(undefined * PTR32 *)&gen_args[0]) GEN_EDX_ARG,(*(undefined4 *)&gen_args[1]),(*(int *)&gen_args[2]));
+    dVar7 = F_00ac3060((*(undefined * PTR32 *)&gen_args[0]) GEN_EDX_ARG,(*(undefined4 *)&gen_args[1]),(*(int *)&gen_args[2]));
+    if ((float10)fVar6 - (float10)dVar7 <= (float10)REFG(double, 0x1088108)) {
       *((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x60))) = (*(int *)&gen_args[2]);
       *((undefined4 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x5c))) = (*(undefined4 *)&gen_args[1]);
       *((undefined4 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x6c))) = (*(undefined4 *)&gen_args[4]);

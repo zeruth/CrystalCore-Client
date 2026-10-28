@@ -12369,21 +12369,20 @@ GEN_FRAME uint F_0046ff10(unsigned int gen_a0, unsigned int gen_a1, unsigned int
 GEN_FRAME ulonglong F_0046ff40(void)
 {
   GEN_ENTER(0x46ff40u, 0u, 0u, 0u, 0u);
-  __declspec(align(16)) undefined1 gen_frame[0x40];
-  ulonglong uStackY_54;
+  __declspec(align(16)) undefined1 gen_frame[0x60];
   
-  (*(uint *)(gen_frame + 0x38)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x3c);
-  gen_imp_GetSystemTime(&(*(_SYSTEMTIME *)(gen_frame + 0x18)));
-  gen_imp_SystemTimeToFileTime(&(*(_SYSTEMTIME *)(gen_frame + 0x18)),&(*(uint *)(gen_frame + 0x10)));
-  (*(undefined2 *)(gen_frame + 0x36)) = 0;
-  (*(undefined4 *)(gen_frame + 0x28)) = 0x107b2;
-  (*(undefined4 *)(gen_frame + 0x2e)) = 1;
-  (*(undefined4 *)(gen_frame + 0x32)) = 0;
-  (*(undefined2 *)(gen_frame + 0x2c)) = 0;
-  gen_imp_SystemTimeToFileTime(&(*(undefined4 *)(gen_frame + 0x28)),&(*(uint *)(gen_frame + 0x8)));
-  uStackY_54 = CONCAT44(((*(int *)(gen_frame + 0x14)) - (*(int *)(gen_frame + 0xc))) - (uint)((*(uint *)(gen_frame + 0x10)) < (*(uint *)(gen_frame + 0x8))),(*(uint *)(gen_frame + 0x10)) - (*(uint *)(gen_frame + 0x8)));
-  F_00c47745((*(uint *)(gen_frame + 0x38)) ^ (uint)(uint)(gen_frame + 0x3c) GEN_EDX_ARG);
-  return uStackY_54 / 10000;
+  (*(uint *)(gen_frame + 0x58)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x5c);
+  gen_imp_GetSystemTime(&(*(_SYSTEMTIME *)(gen_frame + 0x38)));
+  gen_imp_SystemTimeToFileTime(&(*(_SYSTEMTIME *)(gen_frame + 0x38)),&(*(uint *)(gen_frame + 0x30)));
+  (*(undefined2 *)(gen_frame + 0x56)) = 0;
+  (*(undefined4 *)(gen_frame + 0x48)) = 0x107b2;
+  (*(undefined4 *)(gen_frame + 0x4e)) = 1;
+  (*(undefined4 *)(gen_frame + 0x52)) = 0;
+  (*(undefined2 *)(gen_frame + 0x4c)) = 0;
+  gen_imp_SystemTimeToFileTime(&(*(undefined4 *)(gen_frame + 0x48)),&(*(uint *)(gen_frame + 0x28)));
+  (*(ulonglong *)(gen_frame + 0xc)) = CONCAT44(((*(int *)(gen_frame + 0x34)) - (*(int *)(gen_frame + 0x2c))) - (uint)((*(uint *)(gen_frame + 0x30)) < (*(uint *)(gen_frame + 0x28))),(*(uint *)(gen_frame + 0x30)) - (*(uint *)(gen_frame + 0x28)));
+  F_00c47745((*(uint *)(gen_frame + 0x58)) ^ (uint)(uint)(gen_frame + 0x5c) GEN_EDX_ARG);
+  return (*(ulonglong *)(gen_frame + 0xc)) / 10000;
 }
 
 /* ref: FUN_00470000 */

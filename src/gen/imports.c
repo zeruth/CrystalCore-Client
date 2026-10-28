@@ -666,7 +666,7 @@ unsigned int gen_imp_XInputGetState(int a0, int a1, int a2, int a3, ...) { GEN_R
 gen_real_fn gen_real_XInputSetState;
 unsigned int gen_imp_XInputSetState(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_XInputSetState(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real___WSAFDIsSet;
-unsigned int gen_imp___WSAFDIsSet(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real___WSAFDIsSet(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp___WSAFDIsSet();   /* the runtime's */
 gen_real_fn gen_real_accept;
 unsigned int gen_imp_accept(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_accept(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_bind;
@@ -718,7 +718,7 @@ unsigned int gen_imp_recv(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); r
 gen_real_fn gen_real_recvfrom;
 unsigned int gen_imp_recvfrom(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_recvfrom(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_select;
-unsigned int gen_imp_select(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_select(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_select();   /* the runtime's */
 gen_real_fn gen_real_send;
 unsigned int gen_imp_send(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_send(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_sendto;
@@ -1068,7 +1068,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e5a0u, "XINPUT1_3.dll", "XInputEnable", (void *)gen_imp_XInputEnable, &gen_real_XInputEnable},
   {0x107e59cu, "XINPUT1_3.dll", "XInputGetState", (void *)gen_imp_XInputGetState, &gen_real_XInputGetState},
   {0x107e5a4u, "XINPUT1_3.dll", "XInputSetState", (void *)gen_imp_XInputSetState, &gen_real_XInputSetState},
-  {0x107e580u, "WS2_32.dll", "__WSAFDIsSet", (void *)gen_imp___WSAFDIsSet, &gen_real___WSAFDIsSet},
+  {0x107e580u, "WS2_32.dll", "__WSAFDIsSet", (void *)gen_imp___WSAFDIsSet, 0},
   {0x107e554u, "WS2_32.dll", "accept", (void *)gen_imp_accept, &gen_real_accept},
   {0x107e54cu, "WS2_32.dll", "bind", (void *)gen_imp_bind, &gen_real_bind},
   {0x107e544u, "WS2_32.dll", "closesocket", (void *)gen_imp_closesocket, &gen_real_closesocket},
@@ -1094,7 +1094,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e518u, "WS2_32.dll", "ntohs", (void *)gen_imp_ntohs, &gen_real_ntohs},
   {0x107e560u, "WS2_32.dll", "recv", (void *)gen_imp_recv, &gen_real_recv},
   {0x107e568u, "WS2_32.dll", "recvfrom", (void *)gen_imp_recvfrom, &gen_real_recvfrom},
-  {0x107e584u, "WS2_32.dll", "select", (void *)gen_imp_select, &gen_real_select},
+  {0x107e584u, "WS2_32.dll", "select", (void *)gen_imp_select, 0},
   {0x107e594u, "WS2_32.dll", "send", (void *)gen_imp_send, &gen_real_send},
   {0x107e564u, "WS2_32.dll", "sendto", (void *)gen_imp_sendto, &gen_real_sendto},
   {0x107e538u, "WS2_32.dll", "setsockopt", (void *)gen_imp_setsockopt, &gen_real_setsockopt},

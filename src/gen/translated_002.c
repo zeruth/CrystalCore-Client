@@ -7117,66 +7117,64 @@ GEN_FRAME uint GEN_THISCALL F_00427d20(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 GEN_FRAME ulonglong F_00427d90(void)
 {
   GEN_ENTER(0x427d90u, 0u, 0u, 0u, 0u);
-  __declspec(align(16)) undefined1 gen_frame[0x20];
+  __declspec(align(16)) undefined1 gen_frame[0x30];
   BOOL BVar1;
   undefined4 uVar2;
   undefined4 uVar3;
-  longlong uStackY_2c;
   
-  BVar1 = gen_imp_QueryPerformanceCounter(&(*(LARGE_INTEGER *)(gen_frame + 0x14)));
-  uVar2 = (*(LARGE_INTEGER *)(gen_frame + 0x14)).s.LowPart;
-  uVar3 = (*(LARGE_INTEGER *)(gen_frame + 0x14)).s.HighPart;
+  BVar1 = gen_imp_QueryPerformanceCounter(&(*(LARGE_INTEGER *)(gen_frame + 0x24)));
+  uVar2 = (*(LARGE_INTEGER *)(gen_frame + 0x24)).s.LowPart;
+  uVar3 = (*(LARGE_INTEGER *)(gen_frame + 0x24)).s.HighPart;
   if (BVar1 == 0) {
     uVar2 = 0;
     uVar3 = 0;
   }
   if ((*(uint *)&REFG(undefined, 0x1370c08) & 1) == 0) {
     *(uint *)&REFG(undefined, 0x1370c08) = *(uint *)&REFG(undefined, 0x1370c08) | 1;
-    BVar1 = gen_imp_QueryPerformanceFrequency(&(*(LARGE_INTEGER *)(gen_frame + 0xc)));
+    BVar1 = gen_imp_QueryPerformanceFrequency(&(*(LARGE_INTEGER *)(gen_frame + 0x1c)));
     if (BVar1 == 0) {
       REFG(undefined4, 0x1370c00) = 0;
       REFG(undefined4, 0x1370c04) = 0;
     }
     else {
-      REFG(undefined4, 0x1370c00) = (*(LARGE_INTEGER *)(gen_frame + 0xc)).s.LowPart;
-      REFG(undefined4, 0x1370c04) = (*(LARGE_INTEGER *)(gen_frame + 0xc)).s.HighPart;
+      REFG(undefined4, 0x1370c00) = (*(LARGE_INTEGER *)(gen_frame + 0x1c)).s.LowPart;
+      REFG(undefined4, 0x1370c04) = (*(LARGE_INTEGER *)(gen_frame + 0x1c)).s.HighPart;
     }
   }
-  uStackY_2c = CONCAT44(uVar3,uVar2);
-  return (ulonglong)(uStackY_2c * 1000) / CONCAT44(REFG(undefined4, 0x1370c04),REFG(undefined4, 0x1370c00));
+  (*(longlong *)(gen_frame + 0x4)) = CONCAT44(uVar3,uVar2);
+  return (ulonglong)((*(longlong *)(gen_frame + 0x4)) * 1000) / CONCAT44(REFG(undefined4, 0x1370c04),REFG(undefined4, 0x1370c00));
 }
 
 /* ref: FUN_00427e30 */
 GEN_FRAME ulonglong F_00427e30(void)
 {
   GEN_ENTER(0x427e30u, 0u, 0u, 0u, 0u);
-  __declspec(align(16)) undefined1 gen_frame[0x20];
+  __declspec(align(16)) undefined1 gen_frame[0x30];
   BOOL BVar1;
   undefined4 uVar2;
   undefined4 uVar3;
-  longlong uStackY_2c;
   
-  BVar1 = gen_imp_QueryPerformanceCounter(&(*(LARGE_INTEGER *)(gen_frame + 0x14)));
-  uVar2 = (*(LARGE_INTEGER *)(gen_frame + 0x14)).s.LowPart;
-  uVar3 = (*(LARGE_INTEGER *)(gen_frame + 0x14)).s.HighPart;
+  BVar1 = gen_imp_QueryPerformanceCounter(&(*(LARGE_INTEGER *)(gen_frame + 0x24)));
+  uVar2 = (*(LARGE_INTEGER *)(gen_frame + 0x24)).s.LowPart;
+  uVar3 = (*(LARGE_INTEGER *)(gen_frame + 0x24)).s.HighPart;
   if (BVar1 == 0) {
     uVar2 = 0;
     uVar3 = 0;
   }
   if ((*(uint *)&REFG(undefined, 0x1370c08) & 1) == 0) {
     *(uint *)&REFG(undefined, 0x1370c08) = *(uint *)&REFG(undefined, 0x1370c08) | 1;
-    BVar1 = gen_imp_QueryPerformanceFrequency(&(*(LARGE_INTEGER *)(gen_frame + 0xc)));
+    BVar1 = gen_imp_QueryPerformanceFrequency(&(*(LARGE_INTEGER *)(gen_frame + 0x1c)));
     if (BVar1 == 0) {
       REFG(undefined4, 0x1370c00) = 0;
       REFG(undefined4, 0x1370c04) = 0;
     }
     else {
-      REFG(undefined4, 0x1370c00) = (*(LARGE_INTEGER *)(gen_frame + 0xc)).s.LowPart;
-      REFG(undefined4, 0x1370c04) = (*(LARGE_INTEGER *)(gen_frame + 0xc)).s.HighPart;
+      REFG(undefined4, 0x1370c00) = (*(LARGE_INTEGER *)(gen_frame + 0x1c)).s.LowPart;
+      REFG(undefined4, 0x1370c04) = (*(LARGE_INTEGER *)(gen_frame + 0x1c)).s.HighPart;
     }
   }
-  uStackY_2c = CONCAT44(uVar3,uVar2);
-  return (ulonglong)(uStackY_2c * 1000000) / CONCAT44(REFG(undefined4, 0x1370c04),REFG(undefined4, 0x1370c00));
+  (*(longlong *)(gen_frame + 0x4)) = CONCAT44(uVar3,uVar2);
+  return (ulonglong)((*(longlong *)(gen_frame + 0x4)) * 1000000) / CONCAT44(REFG(undefined4, 0x1370c04),REFG(undefined4, 0x1370c00));
 }
 
 /* ref: FUN_00427ed0 */

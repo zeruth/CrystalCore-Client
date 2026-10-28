@@ -12326,79 +12326,68 @@ GEN_FRAME byte F_004b0a00(unsigned int gen_a0, unsigned int gen_a1)
   GEN_ENTER(0x4b0a00u, gen_a0, gen_a1, 0u, 0u);
   int * param_1 = (int *)(uintptr_t)gen_a0;
   int param_2 = (int)gen_a1;
+  __declspec(align(16)) undefined1 gen_frame[0xa0];
   byte bVar1;
   int iVar2;
   int iVar3;
-  int aiStackY_94 [24];
-  undefined4 uStackY_34;
-  uint uStack_30;
-  int iStack_2c;
-  int iStack_28;
-  undefined4 local_20;
-  undefined4 local_1c;
-  undefined4 local_18;
-  undefined4 local_14;
-  uint local_10;
-  undefined4 local_c;
-  uint local_8;
   
   iVar3 = param_1[1];
-  local_20 = 0;
-  local_1c = 0;
-  local_18 = 0;
-  local_14 = 0;
-  local_10 = 0;
-  local_c = 0;
-  local_8 = 0;
+  (*(undefined4 *)(gen_frame + 0x80)) = 0;
+  (*(undefined4 *)(gen_frame + 0x84)) = 0;
+  (*(undefined4 *)(gen_frame + 0x88)) = 0;
+  (*(undefined4 *)(gen_frame + 0x8c)) = 0;
+  (*(uint *)(gen_frame + 0x90)) = 0;
+  (*(undefined4 *)(gen_frame + 0x94)) = 0;
+  (*(uint *)(gen_frame + 0x98)) = 0;
   if (iVar3 != 0) {
     iVar2 = *param_1 + (int)param_1;
     do {
-      aiStackY_94[*(int *)(iVar2 + 8)] = iVar2;
+      ((int *)(gen_frame + 0xc))[(int)(*(int *)(iVar2 + 8))] = iVar2;
       iVar2 = iVar2 + 0xc;
       iVar3 = iVar3 - 1;
     } while (iVar3 != 0);
   }
-  iStack_28 = param_2 + 0x1c;
-  iStack_2c = param_2;
-  uStack_30 = local_20;
-  uStackY_34 = 0x4b0a52;
-  bVar1 = F_004c3010(local_20,param_2,param_2 + 0x1c);
+  (*(int *)(gen_frame + 0x78)) = param_2 + 0x1c;
+  (*(int *)(gen_frame + 0x74)) = param_2;
+  (*(uint *)(gen_frame + 0x70)) = (*(undefined4 *)(gen_frame + 0x80));
+  (*(undefined4 *)(gen_frame + 0x6c)) = 0x4b0a52;
+  bVar1 = F_004c3010((*(undefined4 *)(gen_frame + 0x80)),param_2,param_2 + 0x1c);
   if (bVar1 != 0) {
-    iStack_28 = param_2 + 0x1e;
-    iStack_2c = param_2 + 4;
-    uStack_30 = local_14;
-    uStackY_34 = 0x4b0a71;
-    bVar1 = F_004c3100(local_14,param_2 + 4,param_2 + 0x1e);
+    (*(int *)(gen_frame + 0x78)) = param_2 + 0x1e;
+    (*(int *)(gen_frame + 0x74)) = param_2 + 4;
+    (*(uint *)(gen_frame + 0x70)) = (*(undefined4 *)(gen_frame + 0x8c));
+    (*(undefined4 *)(gen_frame + 0x6c)) = 0x4b0a71;
+    bVar1 = F_004c3100((*(undefined4 *)(gen_frame + 0x8c)),param_2 + 4,param_2 + 0x1e);
     if (bVar1 != 0) {
-      iStack_28 = param_2 + 0x20;
-      iStack_2c = param_2 + 8;
-      uStack_30 = local_1c;
-      uStackY_34 = 0x4b0a89;
-      bVar1 = F_004c31d0(local_1c,param_2 + 8,param_2 + 0x20);
+      (*(int *)(gen_frame + 0x78)) = param_2 + 0x20;
+      (*(int *)(gen_frame + 0x74)) = param_2 + 8;
+      (*(uint *)(gen_frame + 0x70)) = (*(undefined4 *)(gen_frame + 0x84));
+      (*(undefined4 *)(gen_frame + 0x6c)) = 0x4b0a89;
+      bVar1 = F_004c31d0((*(undefined4 *)(gen_frame + 0x84)),param_2 + 8,param_2 + 0x20);
       if (bVar1 != 0) {
-        iStack_28 = param_2 + 0x22;
-        iStack_2c = param_2 + 0xc;
-        uStack_30 = local_18;
-        uStackY_34 = 0x4b0aa1;
-        bVar1 = F_004c32a0(local_18,param_2 + 0xc,param_2 + 0x22);
+        (*(int *)(gen_frame + 0x78)) = param_2 + 0x22;
+        (*(int *)(gen_frame + 0x74)) = param_2 + 0xc;
+        (*(uint *)(gen_frame + 0x70)) = (*(undefined4 *)(gen_frame + 0x88));
+        (*(undefined4 *)(gen_frame + 0x6c)) = 0x4b0aa1;
+        bVar1 = F_004c32a0((*(undefined4 *)(gen_frame + 0x88)),param_2 + 0xc,param_2 + 0x22);
         if (bVar1 != 0) {
-          iStack_28 = param_2 + 0x24;
-          iStack_2c = param_2 + 0x10;
-          uStack_30 = local_10;
-          uStackY_34 = 0x4b0ab9;
-          bVar1 = F_004c3380(local_10,param_2 + 0x10,param_2 + 0x24);
+          (*(int *)(gen_frame + 0x78)) = param_2 + 0x24;
+          (*(int *)(gen_frame + 0x74)) = param_2 + 0x10;
+          (*(uint *)(gen_frame + 0x70)) = (*(uint *)(gen_frame + 0x90));
+          (*(undefined4 *)(gen_frame + 0x6c)) = 0x4b0ab9;
+          bVar1 = F_004c3380((*(uint *)(gen_frame + 0x90)),param_2 + 0x10,param_2 + 0x24);
           if (bVar1 != 0) {
-            iStack_28 = param_2 + 0x26;
-            iStack_2c = param_2 + 0x14;
-            uStack_30 = local_c;
-            uStackY_34 = 0x4b0ad1;
-            bVar1 = F_004c34c0(local_c,param_2 + 0x14,param_2 + 0x26);
+            (*(int *)(gen_frame + 0x78)) = param_2 + 0x26;
+            (*(int *)(gen_frame + 0x74)) = param_2 + 0x14;
+            (*(uint *)(gen_frame + 0x70)) = (*(undefined4 *)(gen_frame + 0x94));
+            (*(undefined4 *)(gen_frame + 0x6c)) = 0x4b0ad1;
+            bVar1 = F_004c34c0((*(undefined4 *)(gen_frame + 0x94)),param_2 + 0x14,param_2 + 0x26);
             if (bVar1 != 0) {
-              iStack_28 = param_2 + 0x28;
-              iStack_2c = param_2 + 0x18;
-              uStack_30 = local_8;
-              uStackY_34 = 0x4b0ae9;
-              bVar1 = F_004c35c0(local_8,param_2 + 0x18,param_2 + 0x28);
+              (*(int *)(gen_frame + 0x78)) = param_2 + 0x28;
+              (*(int *)(gen_frame + 0x74)) = param_2 + 0x18;
+              (*(uint *)(gen_frame + 0x70)) = (*(uint *)(gen_frame + 0x98));
+              (*(undefined4 *)(gen_frame + 0x6c)) = 0x4b0ae9;
+              bVar1 = F_004c35c0((*(uint *)(gen_frame + 0x98)),param_2 + 0x18,param_2 + 0x28);
               return bVar1 != 0;
             }
           }

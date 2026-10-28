@@ -1,5 +1,83 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0107c610 */
+GEN_NOFRAME uint F_0107c610(void)
+{
+  GEN_ENTER(0x107c610u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00a55930(&REFG(undefined * PTR32, 0x1334920) GEN_EDX_ARG);
+  return uVar1;
+}
+
+/* ref: FUN_0107c620 */
+GEN_NOFRAME uint F_0107c620(void)
+{
+  GEN_ENTER(0x107c620u, 0u, 0u, 0u, 0u);
+  ulonglong uVar1;
+  
+  uVar1 = F_0042c880(&REFG(undefined, 0x14b5010) GEN_EDX_ARG);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_0107c630 */
+GEN_NOFRAME uint F_0107c630(void)
+{
+  GEN_ENTER(0x107c630u, 0u, 0u, 0u, 0u);
+  ulonglong uVar1;
+  
+  uVar1 = F_0042c880(&REFG(undefined, 0x14b4f60) GEN_EDX_ARG);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_0107c640 */
+GEN_NOFRAME uint F_0107c640(void)
+{
+  GEN_ENTER(0x107c640u, 0u, 0u, 0u, 0u);
+  ulonglong uVar1;
+  
+  uVar1 = F_0042c880(&REFG(undefined, 0x14b4fb8) GEN_EDX_ARG);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_0107c650 */
+GEN_NOFRAME uint F_0107c650(void)
+{
+  GEN_ENTER(0x107c650u, 0u, 0u, 0u, 0u);
+  ulonglong uVar1;
+  
+  uVar1 = F_0042c880(&REFG(undefined4, 0x14b5068) GEN_EDX_ARG);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_0107c660 */
+GEN_NOFRAME uint F_0107c660(void)
+{
+  GEN_ENTER(0x107c660u, 0u, 0u, 0u, 0u);
+  ulonglong uVar1;
+  
+  uVar1 = F_0042c880(&REFG(undefined4, 0x14b50c0) GEN_EDX_ARG);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_0107c670 */
+GEN_NOFRAME uint F_0107c670(void)
+{
+  GEN_ENTER(0x107c670u, 0u, 0u, 0u, 0u);
+  ulonglong uVar1;
+  
+  uVar1 = F_0042c880(&REFG(undefined4, 0x14b5118) GEN_EDX_ARG);
+  return (uint)uVar1;
+}
+
+/* ref: FUN_0107c680 */
+GEN_NOFRAME unsigned int F_0107c680(void)
+{
+  GEN_ENTER(0x107c680u, 0u, 0u, 0u, 0u);
+  F_00a9e760(&REFG(undefined, 0x14a9e40) GEN_EDX_ARG);
+  return;
+}
+
 /* ref: FUN_0107c690 */
 GEN_NOFRAME uint F_0107c690(void)
 {
