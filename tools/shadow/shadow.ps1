@@ -6,6 +6,8 @@
 .DESCRIPTION
     shadow.ps1 ref  [-Secs N] [-Max N] [-From 0xADDR]   the reference, from ffxiv_shadow.exe
     shadow.ps1 port [-Secs N]           [-From 0xADDR]   the port, CRYSTALCORE_REF the same copy
+    shadow.ps1 ref -Sites -From 0xADDR -PerFunction 20 -Secs 300   the indirect calls' real targets,
+        merged into data\icall_targets.json (protos32 sizes those call sites by their callees)
     shadow.ps1 ref|port -Watch 1371290:684,814 [-From 0xADDR]   who writes those fields of the object a
         global points to, in each (hardware write watches, nothing recorded; ref arms at -From)
 
@@ -18,7 +20,7 @@
     shadow_diff.py (--resync, --small-args, --after).
 #>
 param([Parameter(Mandatory)][ValidateSet("ref", "port")][string]$Which, [int]$Secs = 60, [int]$Max = 30000000,
-      [string]$From = "", [string]$Watch = "")
+      [string]$From = "", [string]$Watch = "", [switch]$Sites, [int]$PerFunction = 100000000)
 $root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 # (one run at a time: a second shadow reference started beside a running one met the game's own
 # single-instance check, and both recordings were spoiled, 2026-10-27)
@@ -86,8 +88,12 @@ if ($Which -eq "ref") {
         # (-Watch GLOBAL:OFF,...: shadow32's hardware write watches, the writer of a field)
         # (watch only, at full speed: no calls recorded, -Secs ends it)
         if ($Watch) { $extra += @("--watch", $Watch, "--watch-only", "--secs", $Secs) }
+        # (-Sites: each indirect call site and the functions it reached, into data\icall_targets.json,
+        # merged run to run, protos32's call-site shapes. With -PerFunction a few, each function's
+        # breakpoint retires after its first calls and the reference speeds up)
+        if ($Sites) { $extra += @("--sites", (Join-Path $root "data\icall_targets.json"), "--secs", $Secs) }
         python (Join-Path $rh "shadow32.py") --exe $shadow --out "$b\shadow-ref$tag.bin" --max $Max `
-            --per-function 100000000 @extra -- @args32
+            --per-function $PerFunction @extra -- @args32
     } finally {
         Pop-Location
         # (the recording done, the reference too: one outlived shadow32's TerminateProcess after a
