@@ -6,6 +6,8 @@
 .DESCRIPTION
     shadow.ps1 ref  [-Secs N] [-Max N] [-From 0xADDR]   the reference, from ffxiv_shadow.exe
     shadow.ps1 port [-Secs N]           [-From 0xADDR]   the port, CRYSTALCORE_REF the same copy
+    shadow.ps1 ref|port -Watch 1371290:684,814 [-From 0xADDR]   who writes those fields of the object a
+        global points to, in each (hardware write watches, nothing recorded; ref arms at -From)
 
     Both runs: the lobby on 127.0.0.1:$CC_LOBBY_PORT (default 54999, off the server's 54994), the
     game's saved settings put back from build\shadow-mygames, the environment cut to a fixed set (the C runtime
@@ -85,5 +87,10 @@ if ($Which -eq "ref") {
             --per-function 100000000 @extra -- @args32
     } finally { Pop-Location }
 } else {
+    # (-Watch GLOBAL:OFF,...: the same watches in the port's runtime, no calls recorded)
+    if ($Watch) {
+        $env:CRYSTALCORE_WATCH = $Watch
+        $env:CRYSTALCORE_TRACE_FROM = "1"
+    }
     python (Join-Path $PSScriptRoot "portrun.py") $Secs
 }
