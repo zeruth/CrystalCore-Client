@@ -21,8 +21,13 @@ POWERSHELL = os.path.join(os.environ.get("SystemRoot", r"C:\Windows"), "System32
 GIT = shutil.which("git") or os.path.join(os.environ.get("ProgramFiles", r"C:\Program Files"), "Git", "cmd", "git.exe")
 OUT.mkdir(parents=True, exist_ok=True)
 # (this run's captures only: an earlier, longer run's later frames read as this one's)
-for old in OUT.glob("port-*.png"):
+for old in [*OUT.glob("port-*.png"), *OUT.glob("frame-*.png"), *OUT.glob("frame-*.bmp")]:
     old.unlink()
+# (the frames the game drew, its back buffer every 300 presents, ~5 s: the window's capture is black
+# for a Direct3D 9 window, the reference's too, and the port at its title menu read as a black
+# screen, 2026-10-28. CRYSTALCORE_FRAMEDUMP set by the caller is kept; "0" turns it off)
+os.environ.setdefault("CRYSTALCORE_FRAMEDUMP", f"300,{max(1, secs // 5)}")
+os.environ.setdefault("CRYSTALCORE_FRAMEDUMP_OUT", str(OUT / "frame"))
 log = open(OUT / "run.log", "w", encoding="utf-8", errors="replace")
 exe = os.environ.get("CC_PORT_EXE") or str(ROOT / cfg["run"]["exe"])    # another build of the port (CLion's)
 p = subprocess.Popen(cmdline, executable=exe, cwd=ROOT / cfg["run"]["cwd"],
@@ -46,13 +51,25 @@ print("still running after" if alive else f"exited {p.returncode & 0xffffffff:#x
 # commit and whether the working tree had changes (probes, hand edits) beyond it.
 import hashlib, re
 frames = {hashlib.md5(f.read_bytes()).hexdigest() for f in OUT.glob("port-*.png")}
+# (the back buffers as PNGs, and how much of each was lit: the boot's visible progress)
+try:
+    from PIL import Image
+    for b in sorted(OUT.glob("frame-*.bmp")):
+        Image.open(b).convert("RGB").save(b.with_suffix(".png"))
+        b.unlink()
+except ImportError:
+    pass
+drawn = [(int(n), float(lit)) for n, lit in re.findall(r"FRAMEDUMP (\d+): \d+x\d+ .*?, ([\d.]+)% not black", text)]
+if drawn:
+    print("frames drawn (present, % lit):", " ".join(f"{n}:{lit:.0f}%" for n, lit in drawn),
+          f"-> {OUT / 'frame-<n>.png'}")
 crash = re.search(r"exception (\w+) at \w+ \(([^)]*)\)\s*\n\s*0\s+\w+\s+(\S+)", text)
 git = lambda *a: subprocess.run([GIT, "-C", str(ROOT), *a], capture_output=True, text=True).stdout.strip()
 rec = {"when": time.strftime("%Y-%m-%d %H:%M"), "commit": git("rev-parse", "--short", "HEAD"),
        "dirty_gen": bool(git("status", "--porcelain", "--", "src/gen")), "exe": os.path.basename(exe),
        "secs": round(time.time() - t0), "alive": alive, "exit": None if alive else f"{p.returncode & 0xffffffff:#x}",
        "fault": f"{crash.group(3)} {crash.group(1)} {crash.group(2)}" if crash else None,
-       "frames": len(frames), "watch": os.environ.get("CRYSTALCORE_WATCH")}
+       "frames": len(frames), "drawn": [lit for _n, lit in drawn], "watch": os.environ.get("CRYSTALCORE_WATCH")}
 with open(OUT / "runs.jsonl", "a", encoding="utf-8") as f:
     f.write(json.dumps(rec) + "\n")
 print("runs.jsonl:", json.dumps(rec))
