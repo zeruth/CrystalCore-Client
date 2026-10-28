@@ -1,5 +1,1752 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_StartTown::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8d3b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8d3b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_StartTown::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8d430(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8d430u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_StartTown::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8d4c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8d4c0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x134);
+  if (iVar8 != iVar8 + *(int *)(this + 0x138) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x134) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_StartTown::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8d5c0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8d5c0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x134);
+  if (iVar1 != iVar1 + *(int *)(this + 0x138) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_StartTown::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8d620(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8d620u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_StartTown::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8d690(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8d690u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x134);
+  if (iVar1 != iVar1 + *(int *)(this + 0x138) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_StartTown::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8d6d0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8d6d0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x134);
+  if (iVar2 != iVar2 + *(int *)(this + 0x138) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x138) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringChainLevel::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8d730(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8d730u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringChainLevel::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8d7b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8d7b0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringChainLevel::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8d840(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8d840u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x134);
+  if (iVar8 != iVar8 + *(int *)(this + 0x138) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x134) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringChainLevel::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8d940(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8d940u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x134);
+  if (iVar1 != iVar1 + *(int *)(this + 0x138) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringChainLevel::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8d9a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8d9a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringChainLevel::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8da10(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8da10u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x134);
+  if (iVar1 != iVar1 + *(int *)(this + 0x138) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringChainLevel::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8da50(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8da50u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x134);
+  if (iVar2 != iVar2 + *(int *)(this + 0x138) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x138) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringMap::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8dab0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8dab0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringMap::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8db30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8db30u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringMap::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8dbc0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8dbc0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x134);
+  if (iVar8 != iVar8 + *(int *)(this + 0x138) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x134) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringMap::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8dcc0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8dcc0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x134);
+  if (iVar1 != iVar1 + *(int *)(this + 0x138) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringMap::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8dd20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8dd20u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x134);
+  if (iVar3 != iVar3 + *(int *)(this + 0x138) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringMap::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8dd90(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8dd90u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x134);
+  if (iVar1 != iVar1 + *(int *)(this + 0x138) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x134) + *(int *)(this + 0x138) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringMap::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8ddd0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8ddd0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x134);
+  if (iVar2 != iVar2 + *(int *)(this + 0x138) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x138) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringPopPattern::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8de30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8de30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x224);
+  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringPopPattern::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8deb0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8deb0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x224);
+  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringPopPattern::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8df40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8df40u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x224);
+  if (iVar8 != iVar8 + *(int *)(this + 0x228) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x224) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringPopPattern::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8e040(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e040u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x224);
+  if (iVar1 != iVar1 + *(int *)(this + 0x228) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringPopPattern::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e0a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8e0a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x224);
+  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringPopPattern::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8e110(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e110u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x224);
+  if (iVar1 != iVar1 + *(int *)(this + 0x228) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringPopPattern::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8e150(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e150u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x224);
+  if (iVar2 != iVar2 + *(int *)(this + 0x228) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x228) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e1b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8e1b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x164);
+  if (iVar3 != iVar3 + *(int *)(this + 0x168) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e230(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8e230u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x164);
+  if (iVar3 != iVar3 + *(int *)(this + 0x168) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e2c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8e2c0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x164);
+  if (iVar8 != iVar8 + *(int *)(this + 0x168) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x164) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8e3c0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e3c0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x164);
+  if (iVar1 != iVar1 + *(int *)(this + 0x168) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e420(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8e420u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x164);
+  if (iVar3 != iVar3 + *(int *)(this + 0x168) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8e490(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e490u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x164);
+  if (iVar1 != iVar1 + *(int *)(this + 0x168) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8e4d0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e4d0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x164);
+  if (iVar2 != iVar2 + *(int *)(this + 0x168) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x168) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringItemGetFlags::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e530(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8e530u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x164);
+  if (iVar3 != iVar3 + *(int *)(this + 0x168) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringItemGetFlags::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e5b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8e5b0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x164);
+  if (iVar3 != iVar3 + *(int *)(this + 0x168) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringItemGetFlags::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e640(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8e640u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x164);
+  if (iVar8 != iVar8 + *(int *)(this + 0x168) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x164) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringItemGetFlags::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8e740(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e740u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x164);
+  if (iVar1 != iVar1 + *(int *)(this + 0x168) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringItemGetFlags::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e7a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8e7a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x164);
+  if (iVar3 != iVar3 + *(int *)(this + 0x168) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringItemGetFlags::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8e810(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e810u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x164);
+  if (iVar1 != iVar1 + *(int *)(this + 0x168) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x164) + *(int *)(this + 0x168) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringItemGetFlags::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8e850(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8e850u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x164);
+  if (iVar2 != iVar2 + *(int *)(this + 0x168) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x168) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeDivisionOpenFlags::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e8b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8e8b0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeDivisionOpenFlags::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e930(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8e930u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeDivisionOpenFlags::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8e9c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8e9c0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x194);
+  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeDivisionOpenFlags::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8eac0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8eac0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeDivisionOpenFlags::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8eb20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8eb20u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeDivisionOpenFlags::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8eb90(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8eb90u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeDivisionOpenFlags::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8ebd0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8ebd0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x194);
+  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeCreateFlags::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8ec30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8ec30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x284);
+  if (iVar3 != iVar3 + *(int *)(this + 0x288) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x284) + *(int *)(this + 0x288) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeCreateFlags::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8ecb0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8ecb0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x284);
+  if (iVar3 != iVar3 + *(int *)(this + 0x288) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x284) + *(int *)(this + 0x288) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeCreateFlags::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8ed40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8ed40u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x284);
+  if (iVar8 != iVar8 + *(int *)(this + 0x288) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x284) + *(int *)(this + 0x288) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x284) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeCreateFlags::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8ee40(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8ee40u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x284);
+  if (iVar1 != iVar1 + *(int *)(this + 0x288) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x284) + *(int *)(this + 0x288) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeCreateFlags::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8eea0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8eea0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x284);
+  if (iVar3 != iVar3 + *(int *)(this + 0x288) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x284) + *(int *)(this + 0x288) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeCreateFlags::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8ef10(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8ef10u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x284);
+  if (iVar1 != iVar1 + *(int *)(this + 0x288) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x284) + *(int *)(this + 0x288) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_RecipeCreateFlags::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8ef50(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8ef50u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x284);
+  if (iVar2 != iVar2 + *(int *)(this + 0x288) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x288) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8efb0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8efb0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8f030(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8f030u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf4 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8f0c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xe8f0c0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  byte bVar2;
+  int * piVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  
+  iVar8 = *(int *)(this + 0x194);
+  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
+    iVar6 = 0;
+    while( true ) {
+      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
+      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
+      iVar8 = iVar8 + 0x14;
+      iVar6 = iVar6 + 1;
+      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    if (param_2 <= param_3) {
+      uVar4 = param_2 << 0x12;
+      iVar7 = param_2;
+      do {
+        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
+        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
+        *(uint *)(iVar1 + 0x10) =
+             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
+             uVar4 & 0x7ffe0000;
+        bVar2 = (byte)iVar7;
+        iVar7 = iVar7 + 1;
+        uVar4 = uVar4 + 0x20000;
+        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
+      } while (iVar7 <= param_3);
+    }
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf7 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8f1c0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8f1c0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
+        *(undefined4 *)(iVar1 + 0x10) = 0;
+        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
+      }
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf8 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8f220(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8f220u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x194);
+  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if (uVar2 == param_1) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0xc) = 0;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00e8f290(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8f290u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  
+  iVar1 = *(int *)(this + 0x194);
+  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
+    do {
+      *(undefined4 *)(iVar1 + 0xc) = 0;
+      iVar1 = iVar1 + 0x14;
+    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_JournalConfig::vf10 */
+GEN_NOFRAME byte GEN_THISCALL F_00e8f2d0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe8f2d0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(this + 0x194);
+  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
+    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
+    do {
+      if (*(int *)(iVar2 + 0xc) != 0) {
+        return 1;
+      }
+      iVar2 = iVar2 + 0x14;
+    } while (iVar2 != iVar1);
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf6 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8f330(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe8f330u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x2b4);
+  if (iVar3 != iVar3 + *(int *)(this + 0x2b8) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x2b4) + *(int *)(this + 0x2b8) * 0x14) {
+        return 0;
+      }
+    }
+    *(undefined4 *)(iVar3 + 0x10) = 0;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf5 */
+GEN_FRAME unsigned int GEN_THISCALL F_00e8f3b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe8f3b0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint param_2 = (uint)gen_a2;
+  int * piVar1;
+  uint uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(this + 0x2b4);
+  if (iVar3 != iVar3 + *(int *)(this + 0x2b8) * 0x14) {
+    while( true ) {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
+      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
+      iVar3 = iVar3 + 0x14;
+      if (iVar3 == *(int *)(this + 0x2b4) + *(int *)(this + 0x2b8) * 0x14) {
+        return 0;
+      }
+    }
+    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
+    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
+  }
+  return 0;
+}
+
 /* ref: Application::Network::WorkDefinitions::Tag_Sync_LeveProperty::vf4 */
 GEN_FRAME unsigned int GEN_THISCALL F_00e8f440(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -8992,1775 +10739,6 @@ GEN_FRAME unsigned int GEN_THISCALL F_00e99620(unsigned int gen_a0 GEN_EDX_PARAM
     }
     *(undefined4 *)(iVar3 + 0x10) = 0;
     *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbHousePartsItem::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e996a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe996a0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x214);
-  if (iVar3 != iVar3 + *(int *)(this + 0x218) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbHousePartsItem::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99730(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe99730u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x214);
-  if (iVar8 != iVar8 + *(int *)(this + 0x218) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x214) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbHousePartsItem::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e99830(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe99830u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x214);
-  if (iVar1 != iVar1 + *(int *)(this + 0x218) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbHousePartsItem::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99890(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe99890u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x214);
-  if (iVar3 != iVar3 + *(int *)(this + 0x218) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbHousePartsItem::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e99900(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe99900u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x214);
-  if (iVar1 != iVar1 + *(int *)(this + 0x218) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbHousePartsItem::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e99940(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe99940u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x214);
-  if (iVar2 != iVar2 + *(int *)(this + 0x218) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x218) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoLinkshell::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99980(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe99980u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x524);
-  if (iVar3 != iVar3 + *(int *)(this + 0x528) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x524) + *(int *)(this + 0x528) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoLinkshell::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99a00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe99a00u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x524);
-  if (iVar3 != iVar3 + *(int *)(this + 0x528) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x524) + *(int *)(this + 0x528) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoLinkshell::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99a90(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe99a90u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x524);
-  if (iVar8 != iVar8 + *(int *)(this + 0x528) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x524) + *(int *)(this + 0x528) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x524) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoLinkshell::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e99b90(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe99b90u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x524);
-  if (iVar1 != iVar1 + *(int *)(this + 0x528) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x524) + *(int *)(this + 0x528) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoLinkshell::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99bf0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe99bf0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x524);
-  if (iVar3 != iVar3 + *(int *)(this + 0x528) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x524) + *(int *)(this + 0x528) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoLinkshell::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e99c60(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe99c60u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x524);
-  if (iVar1 != iVar1 + *(int *)(this + 0x528) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x524) + *(int *)(this + 0x528) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoLinkshell::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e99ca0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe99ca0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x524);
-  if (iVar2 != iVar2 + *(int *)(this + 0x528) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x528) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFreeCompany::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99ce0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe99ce0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0xb24);
-  if (iVar3 != iVar3 + *(int *)(this + 0xb28) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0xb24) + *(int *)(this + 0xb28) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFreeCompany::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99d60(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe99d60u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0xb24);
-  if (iVar3 != iVar3 + *(int *)(this + 0xb28) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0xb24) + *(int *)(this + 0xb28) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFreeCompany::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99df0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe99df0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0xb24);
-  if (iVar8 != iVar8 + *(int *)(this + 0xb28) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0xb24) + *(int *)(this + 0xb28) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0xb24) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFreeCompany::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e99ef0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe99ef0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0xb24);
-  if (iVar1 != iVar1 + *(int *)(this + 0xb28) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0xb24) + *(int *)(this + 0xb28) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFreeCompany::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e99f50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe99f50u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0xb24);
-  if (iVar3 != iVar3 + *(int *)(this + 0xb28) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0xb24) + *(int *)(this + 0xb28) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFreeCompany::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e99fc0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe99fc0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0xb24);
-  if (iVar1 != iVar1 + *(int *)(this + 0xb28) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0xb24) + *(int *)(this + 0xb28) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFreeCompany::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e9a000(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a000u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0xb24);
-  if (iVar2 != iVar2 + *(int *)(this + 0xb28) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0xb28) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcMember::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a040(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9a040u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x494);
-  if (iVar3 != iVar3 + *(int *)(this + 0x498) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x494) + *(int *)(this + 0x498) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcMember::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a0c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe9a0c0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x494);
-  if (iVar3 != iVar3 + *(int *)(this + 0x498) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x494) + *(int *)(this + 0x498) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcMember::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a150(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe9a150u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x494);
-  if (iVar8 != iVar8 + *(int *)(this + 0x498) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x494) + *(int *)(this + 0x498) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x494) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcMember::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9a250(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a250u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x494);
-  if (iVar1 != iVar1 + *(int *)(this + 0x498) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x494) + *(int *)(this + 0x498) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcMember::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a2b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9a2b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x494);
-  if (iVar3 != iVar3 + *(int *)(this + 0x498) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x494) + *(int *)(this + 0x498) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcMember::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9a320(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a320u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x494);
-  if (iVar1 != iVar1 + *(int *)(this + 0x498) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x494) + *(int *)(this + 0x498) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcMember::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e9a360(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a360u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x494);
-  if (iVar2 != iVar2 + *(int *)(this + 0x498) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x498) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcHierarchy::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a3a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9a3a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcHierarchy::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a420(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe9a420u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcHierarchy::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a4b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe9a4b0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x194);
-  if (iVar8 != iVar8 + *(int *)(this + 0x198) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x194) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcHierarchy::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9a5b0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a5b0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcHierarchy::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a610(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9a610u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcHierarchy::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9a680(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a680u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcHierarchy::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e9a6c0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a6c0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x194);
-  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcActivity::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a700(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9a700u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x224);
-  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcActivity::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a780(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe9a780u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x224);
-  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcActivity::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a810(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe9a810u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x224);
-  if (iVar8 != iVar8 + *(int *)(this + 0x228) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x224) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcActivity::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9a910(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a910u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x224);
-  if (iVar1 != iVar1 + *(int *)(this + 0x228) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcActivity::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9a970(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9a970u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x224);
-  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcActivity::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9a9e0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9a9e0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x224);
-  if (iVar1 != iVar1 + *(int *)(this + 0x228) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcActivity::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e9aa20(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9aa20u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x224);
-  if (iVar2 != iVar2 + *(int *)(this + 0x228) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x228) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemGil::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9aa60(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9aa60u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x214);
-  if (iVar3 != iVar3 + *(int *)(this + 0x218) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemGil::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9aae0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe9aae0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x214);
-  if (iVar3 != iVar3 + *(int *)(this + 0x218) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemGil::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9ab70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe9ab70u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x214);
-  if (iVar8 != iVar8 + *(int *)(this + 0x218) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x214) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemGil::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9ac70(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9ac70u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x214);
-  if (iVar1 != iVar1 + *(int *)(this + 0x218) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemGil::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9acd0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9acd0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x214);
-  if (iVar3 != iVar3 + *(int *)(this + 0x218) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemGil::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9ad40(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9ad40u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x214);
-  if (iVar1 != iVar1 + *(int *)(this + 0x218) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemGil::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e9ad80(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9ad80u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x214);
-  if (iVar2 != iVar2 + *(int *)(this + 0x218) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x218) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemCrystal::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9adc0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9adc0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x214);
-  if (iVar3 != iVar3 + *(int *)(this + 0x218) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemCrystal::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9ae40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe9ae40u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x214);
-  if (iVar3 != iVar3 + *(int *)(this + 0x218) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemCrystal::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9aed0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe9aed0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x214);
-  if (iVar8 != iVar8 + *(int *)(this + 0x218) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x214) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemCrystal::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9afd0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9afd0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x214);
-  if (iVar1 != iVar1 + *(int *)(this + 0x218) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemCrystal::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9b030(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9b030u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x214);
-  if (iVar3 != iVar3 + *(int *)(this + 0x218) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemCrystal::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9b0a0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9b0a0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x214);
-  if (iVar1 != iVar1 + *(int *)(this + 0x218) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x214) + *(int *)(this + 0x218) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbInfoFcChestItemCrystal::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e9b0e0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9b0e0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x214);
-  if (iVar2 != iVar2 + *(int *)(this + 0x218) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x218) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9b120(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9b120u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x914);
-  if (iVar3 != iVar3 + *(int *)(this + 0x918) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9b1a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe9b1a0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x914);
-  if (iVar3 != iVar3 + *(int *)(this + 0x918) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9b230(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe9b230u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x914);
-  if (iVar8 != iVar8 + *(int *)(this + 0x918) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x914) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf7 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9b330(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9b330u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x914);
-  if (iVar1 != iVar1 + *(int *)(this + 0x918) * 0x14) {
-    do {
-      if (((byte)*(undefined4 *)(iVar1 + 0x10) & 7) != 2) {
-        *(undefined4 *)(iVar1 + 0x10) = 0;
-        *(undefined4 *)(iVar1 + 0xc) = 0xffffffff;
-      }
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9b390(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9b390u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x914);
-  if (iVar3 != iVar3 + *(int *)(this + 0x918) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e9b400(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9b400u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x914);
-  if (iVar1 != iVar1 + *(int *)(this + 0x918) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x914) + *(int *)(this + 0x918) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbItemSearch::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e9b440(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe9b440u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x914);
-  if (iVar2 != iVar2 + *(int *)(this + 0x918) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x918) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf6 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9b480(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe9b480u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x224);
-  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0x10) = 0;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf5 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9b500(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe9b500u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint param_2 = (uint)gen_a2;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x224);
-  if (iVar3 != iVar3 + *(int *)(this + 0x228) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if ((uVar2 == param_1) && (((byte)*(undefined4 *)(iVar3 + 0x10) & 7) != 2)) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
-        return 0;
-      }
-    }
-    *(uint *)(iVar3 + 0x10) = (param_2 & 0xffff) * 8 | 1;
-    *(undefined4 *)(iVar3 + 0xc) = 0xffffffff;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbLegacyPlayer::vf4 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e9b590(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xe9b590u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int param_2 = (int)gen_a2;
-  int param_3 = (int)gen_a3;
-  int iVar1;
-  byte bVar2;
-  int * piVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  
-  iVar8 = *(int *)(this + 0x224);
-  if (iVar8 != iVar8 + *(int *)(this + 0x228) * 0x14) {
-    iVar6 = 0;
-    while( true ) {
-      piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar8 + 4) + 4))))(*(int * PTR32 *)(iVar8 + 4) GEN_EDX_FWD)));
-      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0xc))(piVar3 GEN_EDX_ARG,*(undefined4 *)(iVar8 + 8));
-      if ((uVar4 == param_1) && (((byte)*(undefined4 *)(iVar8 + 0x10) & 7) == 2)) break;
-      iVar8 = iVar8 + 0x14;
-      iVar6 = iVar6 + 1;
-      if (iVar8 == *(int *)(this + 0x224) + *(int *)(this + 0x228) * 0x14) {
-        return 0;
-      }
-    }
-    if (param_2 <= param_3) {
-      uVar4 = param_2 << 0x12;
-      iVar7 = param_2;
-      do {
-        iVar5 = (int)(iVar7 + (iVar7 >> 0x1f & 0x1fU)) >> 5;
-        iVar1 = *(int *)(this + 0x224) + (iVar6 + iVar5) * 0x14;
-        *(uint *)(iVar1 + 0x10) =
-             (iVar5 * 0x20 + param_2) * 8 & 0x1fff8U | *(uint *)(iVar1 + 0x10) & 0x80000007 |
-             uVar4 & 0x7ffe0000;
-        bVar2 = (byte)iVar7;
-        iVar7 = iVar7 + 1;
-        uVar4 = uVar4 + 0x20000;
-        *(uint *)(iVar8 + 0xc) = *(uint *)(iVar8 + 0xc) | 1 << (bVar2 & 0x1f);
-      } while (iVar7 <= param_3);
-    }
   }
   return 0;
 }

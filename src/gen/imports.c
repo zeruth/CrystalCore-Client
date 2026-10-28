@@ -510,7 +510,7 @@ unsigned int gen_imp_SendMessageA(int a0, int a1, int a2, int a3, ...) { GEN_RES
 gen_real_fn gen_real_SetCapture;
 unsigned int gen_imp_SetCapture(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_SetCapture(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_SetClassLongA;
-unsigned int gen_imp_SetClassLongA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_SetClassLongA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_SetClassLongA();   /* the runtime's */
 gen_real_fn gen_real_SetClipboardData;
 unsigned int gen_imp_SetClipboardData(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_SetClipboardData(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_SetClipboardViewer;
@@ -990,7 +990,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e408u, "USER32.dll", "SendInput", (void *)gen_imp_SendInput, &gen_real_SendInput},
   {0x107e450u, "USER32.dll", "SendMessageA", (void *)gen_imp_SendMessageA, &gen_real_SendMessageA},
   {0x107e3fcu, "USER32.dll", "SetCapture", (void *)gen_imp_SetCapture, &gen_real_SetCapture},
-  {0x107e478u, "USER32.dll", "SetClassLongA", (void *)gen_imp_SetClassLongA, &gen_real_SetClassLongA},
+  {0x107e478u, "USER32.dll", "SetClassLongA", (void *)gen_imp_SetClassLongA, 0},
   {0x107e40cu, "USER32.dll", "SetClipboardData", (void *)gen_imp_SetClipboardData, &gen_real_SetClipboardData},
   {0x107e458u, "USER32.dll", "SetClipboardViewer", (void *)gen_imp_SetClipboardViewer, &gen_real_SetClipboardViewer},
   {0x107e1a0u, "KERNEL32.dll", "SetConsoleCtrlHandler", (void *)gen_imp_SetConsoleCtrlHandler, &gen_real_SetConsoleCtrlHandler},

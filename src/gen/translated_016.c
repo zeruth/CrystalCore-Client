@@ -1,5 +1,79 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_004e2f10 */
+GEN_FRAME uint F_004e2f10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4e2f10u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 8))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1,0x10);
+  return uVar1;
+}
+
+/* ref: FUN_004e2f30 */
+GEN_FRAME uint F_004e2f30(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4e2f30u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  uint uVar1;
+  
+  uVar1 = 0;
+  if (param_1 != 0) {
+    uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1);
+  }
+  return uVar1;
+}
+
+/* ref: Client::Graphics::Kernel::Device::RenderThread::vf0 */
+GEN_FRAME uint GEN_THISCALL F_004e2f50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x4e2f50u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[6])REFP(0x1096c58));
+  gen_imp_CloseHandle(*(undefined4 *)(this + 0x1c));
+  gen_imp_CloseHandle(*(undefined4 *)(this + 0x18));
+  F_004cf880(this GEN_EDX_ARG);
+  if ((param_1 & 1) != 0) {
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,this);
+  }
+  return (uint)this;
+}
+
+/* ref: FUN_004e2fa0 */
+GEN_FRAME uint F_004e2fa0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4e2fa0u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 8))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1,0x10);
+  return uVar1;
+}
+
+/* ref: FUN_004e2fc0 */
+GEN_FRAME uint F_004e2fc0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4e2fc0u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 8))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1,0x10);
+  return uVar1;
+}
+
+/* ref: FUN_004e2fe0 */
+GEN_FRAME uint F_004e2fe0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4e2fe0u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 8))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1,0x10);
+  return uVar1;
+}
+
 /* ref: FUN_004e3000 */
 GEN_FRAME uint F_004e3000(unsigned int gen_a0)
 {
@@ -7274,7 +7348,6 @@ GEN_FRAME uint GEN_THISCALL F_004ea850(unsigned int gen_a0 GEN_EDX_PARAM, float 
   undefined3 extraout_var_00 = 0;
   int iVar7;
   float fVar8;
-  double dVar9;
   
   uVar4 = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xac);
   (*(uint *)(gen_frame + 0xa8)) = uVar4;
@@ -7286,8 +7359,7 @@ LAB_004eac59: ;
   piVar5 = (int *)F_00d2ccf0();
   uVar4 = 0;
   if (piVar5 != (int *)0x0) {
-    dVar9 = ((gen_fcode *)*(gen_code32 *)(*piVar5 + 0x30))(piVar5,&(*(float *)(gen_frame + 0x18)));
-    uVar4 = (uint)(ulonglong)gen_d2bits(dVar9);
+    uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar5 + 0x30))(piVar5 GEN_EDX_ARG,&(*(float *)(gen_frame + 0x18)));
     (*(float *)(gen_frame + 0x10)) = (*(float *)(gen_frame + 0x18));
     (*(float *)(gen_frame + 0xc)) = (*(float *)(gen_frame + 0x1c));
     (*(float *)(gen_frame + 0x8)) = (*(float *)(gen_frame + 0x20));
@@ -9801,61 +9873,5 @@ GEN_NOFRAME byte GEN_THISCALL F_004ed630(unsigned int gen_a0 GEN_EDX_PARAM)
   GEN_ENTER(0x4ed630u, gen_a0, 0u, 0u, 0u);
   int in_ecx = (int)gen_a0;
   return *(byte *)(in_ecx + 0x6a);
-}
-
-/* ref: Client::Sound::SoundData::vf34 */
-GEN_NOFRAME byte GEN_THISCALL F_004ed640(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x4ed640u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(byte *)(in_ecx + 0x6b);
-}
-
-/* ref: Client::Sound::SoundData::vf40 */
-GEN_NOFRAME uint GEN_THISCALL F_004ed650(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x4ed650u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(uint *)(in_ecx + 0x18);
-}
-
-/* ref: Client::Sound::SoundData::vf41 */
-GEN_FRAME uint GEN_THISCALL F_004ed660(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4ed660u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0x18) = param_2;
-  return param_2;
-}
-
-/* ref: FUN_004ed690 */
-GEN_FRAME uint GEN_THISCALL F_004ed690(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4ed690u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 4) = param_2;
-  return param_2;
-}
-
-/* ref: FUN_004ed6a0 */
-GEN_FRAME uint GEN_THISCALL F_004ed6a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4ed6a0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 8) = param_2;
-  return param_2;
-}
-
-/* ref: FUN_004ed6c0 */
-GEN_FRAME uint GEN_THISCALL F_004ed6c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4ed6c0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  *(uint *)(in_ecx + 0xa8) = param_2;
-  return param_2;
 }
 

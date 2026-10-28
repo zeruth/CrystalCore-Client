@@ -1,5 +1,81 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00605000 */
+GEN_FRAME uint GEN_THISCALL F_00605000(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x605000u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  *(uint *)((int)this + 0x38) = param_1;
+  *(undefined4 *)((int)this + 0x3c) = param_2;
+  return param_1;
+}
+
+/* ref: FUN_00605020 */
+GEN_FRAME uint F_00605020(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605020u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00605030 */
+GEN_FRAME uint F_00605030(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605030u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00605040 */
+GEN_FRAME uint F_00605040(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605040u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00605050 */
+GEN_FRAME uint F_00605050(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605050u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00605060 */
+GEN_FRAME uint F_00605060(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605060u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00605070 */
+GEN_FRAME uint F_00605070(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605070u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00605080 */
+GEN_FRAME uint F_00605080(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605080u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
+/* ref: FUN_00605090 */
+GEN_FRAME uint F_00605090(unsigned int gen_a0)
+{
+  GEN_ENTER(0x605090u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
 /* ref: FUN_006050a0 */
 GEN_FRAME uint F_006050a0(unsigned int gen_a0)
 {
@@ -4821,102 +4897,5 @@ GEN_FRAME uint GEN_THISCALL F_00608eb0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00406ad0(this);
   }
   return (uint)this;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf6 */
-GEN_NOFRAME uint F_00608ee0(void)
-{
-  GEN_ENTER(0x608ee0u, 0u, 0u, 0u, 0u);
-  return 0x80;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf7 */
-GEN_NOFRAME uint GEN_THISCALL F_00608ef0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
-{
-  GEN_ENTER(0x608ef0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 param_8 = (undefined4)gen_a8;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x70) + 0x1c))))
-                    (*(int * PTR32 *)(this + 0x70) GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,
-                     param_8);
-  return uVar1;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf55 */
-GEN_NOFRAME uint GEN_THISCALL F_00608f00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
-{
-  GEN_ENTER(0x608f00u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 param_8 = (undefined4)gen_a8;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x70) + 0xdc))))
-                    (*(int * PTR32 *)(this + 0x70) GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,
-                     param_8);
-  return uVar1;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf57 */
-GEN_NOFRAME uint GEN_THISCALL F_00608f10(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x608f10u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x30;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf59 */
-GEN_NOFRAME uint F_00608f20(void)
-{
-  GEN_ENTER(0x608f20u, 0u, 0u, 0u, 0u);
-  return 0x1302cf0;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf60 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00608f30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x608f30u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  return;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf61 */
-GEN_NOFRAME uint F_00608f40(void)
-{
-  GEN_ENTER(0x608f40u, 0u, 0u, 0u, 0u);
-  return 0x1302c60;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf62 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00608f50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x608f50u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  return;
-}
-
-/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf63 */
-GEN_NOFRAME uint GEN_THISCALL F_00608f60(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x608f60u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x30;
 }
 
