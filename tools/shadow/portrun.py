@@ -28,6 +28,10 @@ for old in [*OUT.glob("port-*.png"), *OUT.glob("frame-*.png"), *OUT.glob("frame-
 # screen, 2026-10-28. CRYSTALCORE_FRAMEDUMP set by the caller is kept; "0" turns it off)
 os.environ.setdefault("CRYSTALCORE_FRAMEDUMP", f"300,{max(1, secs // 5)}")
 os.environ.setdefault("CRYSTALCORE_FRAMEDUMP_OUT", str(OUT / "frame"))
+# (the game reads its cursor through GetCursorPos: with scripted input, CC_INPUT below, the
+# runtime's virtual cursor follows the posted messages, without moving anyone's mouse)
+if os.environ.get("CC_INPUT"):
+    os.environ.setdefault("CRYSTALCORE_VCURSOR", "1")
 log = open(OUT / "run.log", "w", encoding="utf-8", errors="replace")
 exe = os.environ.get("CC_PORT_EXE") or str(ROOT / cfg["run"]["exe"])    # another build of the port (CLion's)
 p = subprocess.Popen(cmdline, executable=exe, cwd=ROOT / cfg["run"]["cwd"],
