@@ -4818,7 +4818,9 @@ GEN_FRAME uint GEN_THISCALL F_00d05ee0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   piVar1 = (int *)F_00d05480(param_1 GEN_EDX_ARG,param_2);
   uVar2 = REFG(undefined4, 0x11299fc);
   if (piVar1 != (int *)0x0) {
-    uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 8))(piVar1 GEN_EDX_ARG,param_3);
+    uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 8))
+                      (piVar1 GEN_EDX_ARG,param_3,(undefined4)gen_fl2bits(param_4),
+                       (undefined4)gen_fl2bits(param_5));
   }
   if (*(char *)((int)param_1 + 0xf0) != '\0') {
     gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)((int)param_1 + 0xd8));

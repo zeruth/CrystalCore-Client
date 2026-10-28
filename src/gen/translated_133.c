@@ -2353,22 +2353,22 @@ GEN_FRAME uint GEN_THISCALL F_00b6b740(unsigned int gen_a0 GEN_EDX_PARAM)
   GEN_ENTER(0xb6b740u, gen_a0, 0u, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint uVar1;
-  float fVar2;
-  float fVar3;
-  double dVar4;
-  double dVar5;
+  double dVar2;
+  double dVar3;
+  float fVar4;
+  float fVar5;
   
-  fVar2 = *(float *)((int)this + 0x10c);
-  if ((GEN_ISNAN(fVar2) != (GEN_ISNAN(fVar2) || fVar2 == 0.0)) &&
-     (fVar2 = *(float *)((int)this + 0x110), GEN_ISNAN(fVar2) != (GEN_ISNAN(fVar2) || fVar2 == 0.0))) {
+  fVar4 = *(float *)((int)this + 0x10c);
+  if ((GEN_ISNAN(fVar4) != (GEN_ISNAN(fVar4) || fVar4 == 0.0)) &&
+     (fVar4 = *(float *)((int)this + 0x110), GEN_ISNAN(fVar4) != (GEN_ISNAN(fVar4) || fVar4 == 0.0))) {
     return 4;
   }
-  fVar2 = F_0053b3a0();
-  dVar4 = F_0053b320();
-  fVar3 = F_0053b3e0();
-  dVar5 = F_0053b360();
-  if ((((!((float10)((float)GEN_TOF(ABS((float10)fVar2))) < (float10)((float)GEN_TOF(ABS((float10)(float)dVar4))))) &&
-       (!((float10)((float)GEN_TOF(ABS((float10)fVar3))) < (float10)((float)GEN_TOF(ABS((float10)(float)dVar5)))))) &&
+  fVar4 = F_0053b3a0();
+  dVar2 = F_0053b320();
+  fVar5 = F_0053b3e0();
+  dVar3 = F_0053b360();
+  if ((((!((float10)((float)GEN_TOF(ABS((float10)fVar4))) < (float10)((float)GEN_TOF(ABS((float10)(float)dVar2))))) &&
+       (!((float10)((float)GEN_TOF(ABS((float10)fVar5))) < (float10)((float)GEN_TOF(ABS((float10)(float)dVar3)))))) &&
       (REFG(int, 0x1375b64) != 1)) &&
      ((uVar1 = F_0053b420(&REFG(undefined, 0x1375b30) GEN_EDX_ARG,0x20), (char)uVar1 == '\0' &&
       (uVar1 = F_0053b420(&REFG(undefined, 0x1375b30) GEN_EDX_ARG,0x21), (char)uVar1 == '\0')))) {

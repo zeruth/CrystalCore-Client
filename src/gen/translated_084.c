@@ -14836,8 +14836,8 @@ GEN_FRAME uint GEN_THISCALL F_008f7430(unsigned int gen_a0 GEN_EDX_PARAM)
   int iVar7;
   undefined * pvVar8;
   int iVar9;
-  float fVar10;
-  double dVar11;
+  double dVar10;
+  float fVar11;
   undefined4 uVar12;
   undefined4 uVar13;
   
@@ -14847,18 +14847,18 @@ GEN_FRAME uint GEN_THISCALL F_008f7430(unsigned int gen_a0 GEN_EDX_PARAM)
   uVar2 = F_00ab2690((uint)REFG(undefined1, 0x14ab29e));
   if ((iVar9 == 0) || (uVar2 == 0)) goto LAB_008f7810;
   (*(uint *)(gen_frame + 0xc)) = 0;
-  dVar11 = F_00ac3060(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,1,6);
+  dVar10 = F_00ac3060(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,1,6);
   uVar2 = extraout_EAX;
-  if ((float10)0 < (float10)(float)dVar11) {
-    fVar10 = F_00ac3090(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,1,6);
-    dVar1 = (double)fVar10;
+  if ((float10)0 < (float10)(float)dVar10) {
+    fVar11 = F_00ac3090(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,1,6);
+    dVar1 = (double)fVar11;
     if (dVar1 < 0.0) {
       dVar1 = dVar1 - REFG(double, 0x1088108);
     }
     else {
       dVar1 = dVar1 + REFG(double, 0x1088108);
     }
-    uVar2 = (uint)(REFG(double, 0x1088108) + (double)(float)dVar11);
+    uVar2 = (uint)(REFG(double, 0x1088108) + (double)(float)dVar10);
     (*(uint *)(gen_frame + 0xc)) = (int)dVar1 - uVar2;
   }
   if (*(uint *)((int)this + 0xc) == (*(uint *)(gen_frame + 0xc))) goto LAB_008f7810;

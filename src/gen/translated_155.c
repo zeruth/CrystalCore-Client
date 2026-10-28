@@ -9170,7 +9170,9 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_00c97620(unsigned int gen_a0 GEN_EDX_PAR
   int * piVar1;
   
   for (piVar1 = *(int * PTR32 *)((int)this + 0xc); piVar1 != (int *)0x0; piVar1 = (int *)piVar1[3]) {
-    ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 4))(piVar1 GEN_EDX_FWD);
+    ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 4))
+              (piVar1 GEN_EDX_ARG,*(undefined4 *)((int)this + 0x14),*(undefined4 *)((int)this + 0x18),
+               *(undefined4 *)((int)this + 0x1c),*(undefined4 *)((int)this + 0x20));
     ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x28))(piVar1 GEN_EDX_ARG);
   }
   return;

@@ -8764,7 +8764,9 @@ GEN_FRAME uint F_00cc4860(unsigned int gen_a0, float gen_a1, float gen_a2, unsig
     uVar2 = CONCAT31(extraout_var,bVar1);
     if ((bVar1 != 0) &&
        (uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0x140))(piVar3 GEN_EDX_ARG,param_1), (char)uVar2 != '\0')) {
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0x94))(piVar3 GEN_EDX_ARG);
+      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0x94))
+                        (piVar3 GEN_EDX_ARG,(undefined4)gen_fl2bits(param_2),(undefined4)gen_fl2bits(param_3),
+                         param_4);
     }
   }
   if (REFG(char, 0x15d86b4) != '\0') {

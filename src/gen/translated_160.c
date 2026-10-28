@@ -4457,6 +4457,9 @@ GEN_FRAME uint GEN_THISCALL F_00cd6780(unsigned int gen_a0 GEN_EDX_PARAM)
   uint in_EAX = 0;
   uint uVar5;
   float fVar6;
+  float fVar7;
+  undefined4 uVar8;
+  int iVar9;
   
   if (*(int *)((int)this + 8) != 0) {
     in_EAX = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 8) + 0xec))))(*(int * PTR32 *)((int)this + 8) GEN_EDX_FWD);
@@ -4465,16 +4468,21 @@ GEN_FRAME uint GEN_THISCALL F_00cd6780(unsigned int gen_a0 GEN_EDX_PARAM)
         uVar5 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this + 8) + 0x16c))))(*(int * PTR32 *)((int)this + 8) GEN_EDX_ARG);
         if ((char)uVar5 == '\0') {
 LAB_00cd67e8: ;
+          fVar7 = *(float *)((int)this + 0xe8);
           fVar1 = *(float *)((int)this + 0xc4);
           iVar2 = **(int * PTR32 *)((int)this + 4);
-          F_00cccde0((undefined *)((int)this + 0xcc) GEN_EDX_ARG);
+          iVar9 = (int)this + 0x1f8;
+          uVar8 = *(undefined4 *)((int)this + 500);
+          fVar6 = F_00cccde0((undefined *)((int)this + 0xcc) GEN_EDX_ARG);
+          fVar7 = (float)((float10)fVar6 + (float10)fVar7);
           fVar6 = F_00cccde0((undefined *)((int)this + 0xa8) GEN_EDX_ARG);
           uVar5 = ((code *)*(gen_code32 *)(iVar2 + 0xb8))
                             (*(undefined4 *)((int)this + 4),
                              (undefined4)
                              gen_fl2bits(((float)GEN_TOF(((((float10)fVar6 + (float10)fVar1) +
                                                  (float10)*(float *)((int)this + 0x1f0)) +
-                                                (float10)*(float *)((int)this + 0x1cc))))));
+                                                (float10)*(float *)((int)this + 0x1cc))))),
+                             (undefined4)gen_fl2bits(fVar7),uVar8,iVar9);
           return uVar5;
         }
         bVar4 = F_00d2cdf0();

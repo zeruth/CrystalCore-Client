@@ -1416,9 +1416,10 @@ GEN_NOFRAME uint GEN_THISCALL F_005df390(unsigned int gen_a0 GEN_EDX_PARAM, unsi
     if (*(int *)(this + 0x30) == 0) {
       iVar4 = *(int *)this;
       pcVar2 = *(gen_code32 *)(iVar4 + 0xfc);
+      puVar5 = &(*(undefined4 *)(gen_frame + 0x4c));
       (*(undefined4 *)(gen_frame + 0x4c)) = *(undefined4 *)(param_1 + 0x30);
-      uVar3 = (*pcVar2)(this,&(*(undefined4 *)(gen_frame + 0x4c)));
-      uVar3 = ((code *)*(gen_code32 *)(iVar4 + 0x6c))(this,uVar3);
+      uVar3 = (*pcVar2)(this);
+      uVar3 = ((code *)*(gen_code32 *)(iVar4 + 0x6c))(this,uVar3,puVar5);
       return uVar3;
     }
   }

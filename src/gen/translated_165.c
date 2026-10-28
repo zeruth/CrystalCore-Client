@@ -2295,7 +2295,9 @@ GEN_FRAME unsigned int F_00d2cf00(float gen_a0, float gen_a1, float gen_a2, unsi
   undefined4 param_4 = (undefined4)gen_a3;
   undefined4 param_5 = (undefined4)gen_a4;
   if (REFG(int * PTR32, 0x15d9358) != (int *)0x0) {
-    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x15d9358) + 0xc0))))(REFG(int * PTR32, 0x15d9358) GEN_EDX_ARG);
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x15d9358) + 0xc0))))
+              (REFG(int * PTR32, 0x15d9358) GEN_EDX_ARG,(undefined4)gen_fl2bits(param_1),(undefined4)gen_fl2bits(param_2),
+               (undefined4)gen_fl2bits(param_3),param_4,param_5);
   }
   return;
 }

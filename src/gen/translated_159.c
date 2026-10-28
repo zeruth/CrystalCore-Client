@@ -9966,6 +9966,8 @@ GEN_FRAME uint GEN_THISCALL F_00cd09c0(unsigned int gen_a0 GEN_EDX_PARAM)
   float10 extraout_ST0;
   float10 extraout_ST0_00;
   float10 extraout_ST0_01;
+  float fVar7;
+  float fVar8;
   
   uVar6 = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x1c);
   (*(uint *)(gen_frame + 0x18)) = uVar6;
@@ -9976,11 +9978,14 @@ GEN_FRAME uint GEN_THISCALL F_00cd09c0(unsigned int gen_a0 GEN_EDX_PARAM)
     piVar2 = ((int *)GEN_TOP((*(int *)(iVar4 + 4) + 0x14 + (int)this)));
     piVar3 = ((int *)GEN_TOP((*(int *)(iVar4 + 4) - 0x10 + (int)this)));
     extraout_ST0 = ((gen_fcode *)*(gen_code32 *)(*piVar1 + 0x10))(piVar1);
-    extraout_ST0_00 = ((gen_fcode *)*(gen_code32 *)(*piVar2 + 0x10))(piVar2,(undefined4)gen_fl2bits((float)extraout_ST0));
-    extraout_ST0_01 = ((gen_fcode *)*(gen_code32 *)(*piVar3 + 0x10))(piVar3,(undefined4)gen_fl2bits((float)extraout_ST0_00));
+    fVar8 = (float)extraout_ST0;
+    extraout_ST0_00 = ((gen_fcode *)*(gen_code32 *)(*piVar2 + 0x10))(piVar2);
+    fVar7 = (float)extraout_ST0_00;
+    extraout_ST0_01 = ((gen_fcode *)*(gen_code32 *)(*piVar3 + 0x10))(piVar3);
     ((code *)*(gen_code32 *)(iVar5 + 0x3c))
               (*((int *)GEN_TOP((*(int *)((int)this - 0x14) + 4))) - 0x14 + (int)this,((undefined1 *)(gen_frame + 0x4)),
-               (undefined4)gen_fl2bits((float)extraout_ST0_01));
+               (undefined4)gen_fl2bits((float)extraout_ST0_01),(undefined4)gen_fl2bits(fVar7),
+               (undefined4)gen_fl2bits(fVar8));
     uVar6 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)((int)this - 0x10) + 0x18))))
                       (*(int * PTR32 *)((int)this - 0x10) GEN_EDX_ARG,*(undefined4 *)((int)this - 0xc),((undefined1 *)(gen_frame + 0x4)),0x14,
                        0);
@@ -10188,7 +10193,7 @@ GEN_FRAME uint GEN_THISCALL F_00cd0c60(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x10) + 8))))(this + 0x10 GEN_EDX_ARG,param_1);
     if (*(int *)(this + 0xf0) == 0) goto LAB_00cd0d29;
     iVar2 = **(int * PTR32 *)(this + 0xf0);
-    extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x10) + 0x10))))(this + 0x10,0);
+    extraout_ST0 = ((gen_fcode *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x10) + 0x10))))(this + 0x10);
     uVar4 = ((code *)*(gen_code32 *)(iVar2 + 0x30))
                       (*(undefined4 *)(this + 0xf0),(undefined4)gen_fl2bits((float)extraout_ST0));
   }
