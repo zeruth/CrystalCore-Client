@@ -1,5 +1,30 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_009ddcd0 */
+GEN_FRAME uint GEN_STDCALL F_009ddcd0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9ddcd0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  if ((REFG(undefined * PTR32, 0x14a0a14) != (code *)0x0) && ((*(int *)&gen_a0) * 4 != 0)) {
+    uVar1 = ((code *)REFG(gen_code32, 0x14a0a14))((*(int *)&gen_a0) * 4,0x10,&REFG(undefined, 0x10daa3c),&REFG(undefined, 0x10daa38),0);
+    return uVar1;
+  }
+  return 0;
+}
+
+/* ref: FUN_009ddd50 */
+GEN_FRAME uint GEN_THISCALL F_009ddd50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x9ddd50u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  *in_ecx = param_2;
+  return (uint)in_ecx;
+}
+
 /* ref: FUN_009ddd60 */
 GEN_FRAME uint GEN_THISCALL F_009ddd60(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -4376,39 +4401,5 @@ GEN_NOFRAME uint GEN_THISCALL F_009e0f80(unsigned int gen_a0 GEN_EDX_PARAM)
   GEN_ENTER(0x9e0f80u, gen_a0, 0u, 0u, 0u);
   int in_ecx = (int)gen_a0;
   return in_ecx + 0xe4;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::DiscParticle::vf15 */
-GEN_NOFRAME uint GEN_THISCALL F_009e0f90(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9e0f90u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 0x150;
-}
-
-/* ref: Apricot::Engine::Instance::InstanceBase::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e0fa0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e0fa0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  uint uVar3;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[31])REFP(0x10dde84));
-  puVar2 = *(undefined4 * PTR32 *)(this + 0x1e0);
-  while (puVar2 != (undefined4 *)0x0) {
-    puVar1 = (undefined4 *)puVar2[0x7a];
-    ((GEN_TCODE *)*(gen_code32 *)*puVar2)(puVar2 GEN_EDX_FWD,1);
-    puVar2 = puVar1;
-  }
-  if ((param_1 & 1) != 0) {
-    uVar3 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar3 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar3;
-  }
-  return (uint)this;
 }
 

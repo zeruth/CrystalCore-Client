@@ -1,5 +1,71 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00b4b1d0 */
+GEN_FRAME unsigned int F_00b4b1d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xb4b1d0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  int * param_2 = (int *)(uintptr_t)gen_a1;
+  int * param_3 = (int *)(uintptr_t)gen_a2;
+  undefined4 param_4 = (undefined4)gen_a3;
+  char cVar1;
+  int * piVar2;
+  int * piVar3;
+  int * piVar4;
+  int iVar5;
+  
+  if (param_1 != param_2) {
+    iVar5 = *param_3;
+    piVar4 = param_1;
+    do {
+      iVar5 = iVar5 + 1;
+      *param_3 = iVar5;
+      if (*(char *)((int)piVar4 + 0x21) == '\0') {
+        piVar2 = (int *)piVar4[2];
+        if (*(char *)((int)piVar2 + 0x21) == '\0') {
+          cVar1 = *(char *)(*piVar2 + 0x21);
+          piVar4 = piVar2;
+          piVar2 = (int *)*piVar2;
+          while (cVar1 == '\0') {
+            cVar1 = *(char *)(*piVar2 + 0x21);
+            piVar4 = piVar2;
+            piVar2 = (int *)*piVar2;
+          }
+        }
+        else {
+          cVar1 = *(char *)(piVar4[1] + 0x21);
+          piVar3 = (int *)piVar4[1];
+          piVar2 = piVar4;
+          while ((piVar4 = piVar3, cVar1 == '\0' && (piVar2 == (int *)piVar4[2]))) {
+            cVar1 = *(char *)(piVar4[1] + 0x21);
+            piVar3 = (int *)piVar4[1];
+            piVar2 = piVar4;
+          }
+        }
+      }
+    } while (piVar4 != param_2);
+  }
+  return;
+}
+
+/* ref: FUN_00b4b240 */
+GEN_FRAME unsigned int GEN_STDCALL F_00b4b240(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xb4b240u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
+  if (param_1 != (undefined4 *)0x0) {
+    *param_1 = *param_2;
+    param_1[2] = param_2[2];
+    param_1[3] = param_2[3];
+    param_1[4] = param_2[4];
+    param_1[5] = param_2[5];
+    param_1[6] = param_2[6];
+    param_1[7] = param_2[7];
+  }
+  return;
+}
+
 /* ref: FUN_00b4b280 */
 GEN_FRAME uint GEN_STDCALL F_00b4b280(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -10442,74 +10508,6 @@ GEN_FRAME uint GEN_THISCALL F_00b55a40(unsigned int gen_a0 GEN_EDX_PARAM, unsign
       uVar2 = uVar1;
     }
     uVar1 = F_00b55800(this GEN_EDX_ARG,uVar2);
-  }
-  return uVar1;
-}
-
-/* ref: FUN_00b55ab0 */
-GEN_FRAME uint GEN_THISCALL F_00b55ab0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xb55ab0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  uint uVar1;
-  uint uVar2;
-  
-  uVar1 = *(int *)((int)this + 4) - *(int *)((int)(uintptr_t)this) >> 2;
-  if (-param_1 - 1U < uVar1) {
-                    
-    F_00c4579a("vector<T> too long");
-  }
-  uVar1 = uVar1 + param_1;
-  uVar2 = *(int *)((int)this + 8) - *(int *)((int)(uintptr_t)this) >> 2;
-  if (uVar2 < uVar1) {
-    if (-(uVar2 >> 1) - 1 < uVar2) {
-      uVar2 = 0;
-      if (uVar1 != 0) {
-        uVar2 = uVar1;
-      }
-      uVar1 = F_00b558b0(this GEN_EDX_ARG,uVar2);
-      return uVar1;
-    }
-    uVar2 = uVar2 + (uVar2 >> 1);
-    if (uVar2 < uVar1) {
-      uVar2 = uVar1;
-    }
-    uVar1 = F_00b558b0(this GEN_EDX_ARG,uVar2);
-  }
-  return uVar1;
-}
-
-/* ref: FUN_00b55b20 */
-GEN_FRAME uint GEN_THISCALL F_00b55b20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xb55b20u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  uint uVar1;
-  uint uVar2;
-  
-  uVar1 = *(int *)((int)this + 4) - *(int *)((int)(uintptr_t)this) >> 2;
-  if (-param_1 - 1U < uVar1) {
-                    
-    F_00c4579a("vector<T> too long");
-  }
-  uVar1 = uVar1 + param_1;
-  uVar2 = *(int *)((int)this + 8) - *(int *)((int)(uintptr_t)this) >> 2;
-  if (uVar2 < uVar1) {
-    if (-(uVar2 >> 1) - 1 < uVar2) {
-      uVar2 = 0;
-      if (uVar1 != 0) {
-        uVar2 = uVar1;
-      }
-      uVar1 = F_00b55960(this GEN_EDX_ARG,uVar2);
-      return uVar1;
-    }
-    uVar2 = uVar2 + (uVar2 >> 1);
-    if (uVar2 < uVar1) {
-      uVar2 = uVar1;
-    }
-    uVar1 = F_00b55960(this GEN_EDX_ARG,uVar2);
   }
   return uVar1;
 }

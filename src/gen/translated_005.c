@@ -4497,6 +4497,7 @@ GEN_FRAME byte GEN_THISCALL F_004471b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 GEN_FRAME uint GEN_THISCALL F_00447240(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
   GEN_ENTER(0x447240u, gen_a0, gen_a1, 0u, 0u);
+  GEN_SUSPECT(0x447240u, "local_8");
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined4 param_1 = (undefined4)gen_a1;
   undefined4 * puVar1;
@@ -5296,6 +5297,7 @@ LAB_00447fa9: ;
 GEN_FRAME uint GEN_THISCALL F_00447fd0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
   GEN_ENTER(0x447fd0u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_SUSPECT(0x447fd0u, "uStack_68, uStack_64, uStack_60, uStack_5c, uStack_58, uStack_54, uStack_50, uStack_4c, uStack_48, uStack_44, uStack_40, uStack_3c, uStack_38, uStack_34, uStack_30, uStack_2c, uStack_28, uStack_24");
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int param_1 = (int)gen_a1;
   int param_2 = (int)gen_a2;
@@ -14710,7 +14712,6 @@ GEN_FRAME uint GEN_THISCALL F_00454650(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   undefined * this_01;
   int * piVar8;
   uint uVar9;
-  undefined4 extraout_ECX;
   byte * pbVar10;
   char * pcVar11;
   undefined4 uVar12;
@@ -14734,9 +14735,8 @@ GEN_FRAME uint GEN_THISCALL F_00454650(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     pbVar10 = (byte *)((int)this + 100);
     F_0042aca0(pbVar10 GEN_EDX_ARG);
     pbVar5 = (byte *)F_0042a990((*(byte * PTR32 *)(gen_frame + 0x28)) GEN_EDX_ARG);
-    extraout_ECX = ((undefined4)(uint)((*(byte * PTR32 *)(gen_frame + 0x28))));
     bVar3 = *pbVar5;
-    uVar12 = CONCAT31((int3)((uint)extraout_ECX >> 8),bVar3);
+    uVar12 = CONCAT31((int3)((uint)((undefined4)(uint)((*(byte * PTR32 *)(gen_frame + 0x28)))) >> 8),bVar3);
     (*(byte * PTR32 *)(gen_frame + 0x28)) = pbVar5;
     while (bVar3 != 0) {
       if ((char)uVar12 == '<') {

@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00722540 */
+GEN_FRAME uint GEN_STDCALL F_00722540(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x722540u, gen_a0, gen_a1, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_004296a0(param_1 * 8,param_2,800);
+  return uVar1;
+}
+
 /* ref: FUN_00722590 */
 GEN_FRAME uint GEN_THISCALL F_00722590(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -4569,27 +4581,6 @@ GEN_FRAME uint F_007268e0(unsigned int gen_a0)
   while (uVar3 = uVar2, cVar1 == '\0') {
     uVar2 = *(uint *)(uVar3 + 8);
     cVar1 = *(char *)(uVar2 + 0xbd);
-    uVar4 = uVar3;
-  }
-  return uVar4;
-}
-
-/* ref: FUN_00726940 */
-GEN_FRAME uint F_00726940(unsigned int gen_a0)
-{
-  GEN_ENTER(0x726940u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  char cVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  
-  cVar1 = *((char *)GEN_TOP((*(uint *)(param_1 + 8) + 0x19)));
-  uVar2 = *(uint *)(param_1 + 8);
-  uVar4 = param_1;
-  while (uVar3 = uVar2, cVar1 == '\0') {
-    uVar2 = *(uint *)(uVar3 + 8);
-    cVar1 = *(char *)(uVar2 + 0x19);
     uVar4 = uVar3;
   }
   return uVar4;

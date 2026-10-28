@@ -1,5 +1,30 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00c6f66c */
+GEN_NOFRAME uint F_00c6f66c(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc6f66cu, gen_a0, 0u, 0u, 0u);
+  int in_ebp = (int)gen_a0;
+  if ((*((int *)GEN_TOP(**(undefined4 * PTR32 *)(in_ebp - 0x14))) != -0x3ffffffb) &&
+     (*((int *)GEN_TOP(**(undefined4 * PTR32 *)(in_ebp - 0x14))) != -0x3fffffe3)) {
+    return 0;
+  }
+  return 1;
+}
+
+/* ref: FUN_00c6f688 */
+GEN_NOFRAME unsigned int F_00c6f688(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc6f688u, gen_a0, 0u, 0u, 0u);
+  int in_ebp = (int)gen_a0;
+  REFG(undefined4, 0x134bdb8) = 0;
+  *(uint *)(in_ebp + 8) = *(uint *)(in_ebp + 8) & 0xffffffbf;
+  MXCSR = *(undefined4 *)(in_ebp + 8);
+  *(undefined4 *)(in_ebp - 4) = 0xfffffffe;
+  *((undefined4 *)GEN_TOP((*(int *)(in_ebp - 0x18) - 4))) = 0xc6f6b0;
+  return;
+}
+
 /* ref: FUN_00c6f6b1 */
 GEN_NOFRAME unsigned int F_00c6f6b1(void)
 {
@@ -18187,38 +18212,6 @@ GEN_NOFRAME uint GEN_THISCALL F_00c81730(unsigned int gen_a0 GEN_EDX_PARAM)
     F_00c8b080(*(undefined * PTR32 *)(this + 0x50) GEN_EDX_FWD);
   }
   ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x70))(this GEN_EDX_ARG);
-  return 0;
-}
-
-/* ref: FUN_00c81750 */
-GEN_NOFRAME uint GEN_STDCALL F_00c81750(unsigned int gen_a0)
-{
-  GEN_ENTER(0xc81750u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  return 0;
-}
-
-/* ref: Client::System::Streaming::TextureRenderer::vf22 */
-GEN_FRAME uint GEN_THISCALL F_00c81760(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xc81760u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint * param_2 = (uint *)(uintptr_t)gen_a2;
-  uint * param_3 = (uint *)(uintptr_t)gen_a3;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x14))(param_1 GEN_EDX_FWD,param_2,param_3);
-  if (-1 < (int)uVar1) {
-    if (((int)param_3[1] <= (int)param_2[1]) &&
-       (((int)param_3[1] < (int)param_2[1] || (*param_3 < *param_2)))) {
-      return 0x80040228;
-    }
-    if (*(int *)(this + 0x18) != 0) {
-      uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x5c))(this GEN_EDX_ARG,param_1,param_2,param_3);
-      return uVar1;
-    }
-  }
   return 0;
 }
 

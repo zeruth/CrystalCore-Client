@@ -1,5 +1,41 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00a88b40 */
+GEN_FRAME unsigned int GEN_STDCALL F_00a88b40(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xa88b40u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
+  int iVar1;
+  undefined4 * puVar2;
+  undefined4 * puVar3;
+  
+  if (param_1 != (undefined4 *)0x0) {
+    puVar2 = param_2;
+    puVar3 = param_1;
+    for (iVar1 = 0xd; iVar1 != 0; iVar1 = iVar1 - 1) {
+      *puVar3 = *puVar2;
+      puVar2 = puVar2 + 1;
+      puVar3 = puVar3 + 1;
+    }
+  }
+  return;
+}
+
+/* ref: FUN_00a88b60 */
+GEN_FRAME uint GEN_STDCALL F_00a88b60(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xa88b60u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
+  if (param_1 != (undefined4 *)0x0) {
+    *param_1 = *param_2;
+    param_1[1] = param_2[1];
+    param_1[2] = param_2[2];
+  }
+  return (uint)param_1;
+}
+
 /* ref: FUN_00a88bb0 */
 GEN_FRAME uint GEN_STDCALL F_00a88bb0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -1769,6 +1805,7 @@ GEN_NOFRAME uint GEN_THISCALL F_00a8a540(unsigned int gen_a0 GEN_EDX_PARAM)
 GEN_FRAME byte GEN_STDCALL F_00a8a560(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10, unsigned int gen_a11, unsigned int gen_a12, unsigned int gen_a13, unsigned int gen_a14, unsigned int gen_a15, unsigned int gen_a16, unsigned int gen_a17, unsigned int gen_a18, unsigned int gen_a19, unsigned int gen_a20, unsigned int gen_a21, unsigned int gen_a22, unsigned int gen_a23, unsigned int gen_a24, unsigned int gen_a25, unsigned int gen_a26, unsigned int gen_a27, unsigned int gen_a28, unsigned int gen_a29, unsigned int gen_a30, unsigned int gen_a31, unsigned int gen_a32, unsigned int gen_a33, unsigned int gen_a34, unsigned int gen_a35, unsigned int gen_a36, unsigned int gen_a37, unsigned int gen_a38, unsigned int gen_a39, unsigned int gen_a40, unsigned int gen_a41)
 {
   GEN_ENTER(0xa8a560u, gen_a0, gen_a1, gen_a2, gen_a3);
+  GEN_SUSPECT(0xa8a560u, "uStack_b0, uStack_ac, uStack_a8, uStack_a4, uStack_a0, uStack_9c, uStack_98, uStack_94, uStack_90, uStack_8c, uStack_88, uStack_84, uStack_80, uStack_7c, uStack_78, uStack_74, uStack_70, uStack_6c, uStack_68, uStack_5c, uStack_58, uStack_54, uStack_50, uStack_4c, uStack_48, uStack_44, uStack_40, uStack_3c, uStack_38, uStack_34, uStack_30, uStack_2c, uStack_28, uStack_24, uStack_20, uStack_1c, uStack_18, uStack_14, uStack_10");
   unsigned int gen_args[42];
   gen_args[0] = gen_a0;
   gen_args[1] = gen_a1;
@@ -5964,30 +6001,6 @@ GEN_FRAME uint GEN_THISCALL F_00a8e4c0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   undefined4 param_2 = (undefined4)gen_a2;
   *param_1 = *(undefined4 *)this;
   F_00928100(this GEN_EDX_FWD);
-  return (uint)param_1;
-}
-
-/* ref: FUN_00a8e4e0 */
-GEN_FRAME uint GEN_THISCALL F_00a8e4e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xa8e4e0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  *param_1 = *(undefined4 *)this;
-  F_00928170(this GEN_EDX_FWD);
-  return (uint)param_1;
-}
-
-/* ref: FUN_00a8e500 */
-GEN_FRAME uint GEN_THISCALL F_00a8e500(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xa8e500u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  *param_1 = *(undefined4 *)this;
-  F_00a88660(this GEN_EDX_FWD);
   return (uint)param_1;
 }
 

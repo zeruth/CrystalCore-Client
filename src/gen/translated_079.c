@@ -1,5 +1,34 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00821de0 */
+GEN_FRAME uint F_00821de0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x821de0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int * param_2 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  if (param_2 != (int *)0x0) {
+    uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_2 + 4))(param_2 GEN_EDX_ARG);
+    if (uVar1 == 1) {
+      uVar1 = F_007c9780(param_2);
+      if (0 < (int)uVar1) {
+        F_007c9860(param_1,1,uVar1 - 1);
+        return uVar1;
+      }
+    }
+    else if (uVar1 == 2) {
+      uVar1 = F_007c9780(param_2);
+      if (0 < (int)uVar1) {
+        F_007c9860(param_1,2,uVar1 - 1);
+      }
+      return uVar1;
+    }
+  }
+  return 0;
+}
+
 /* ref: FUN_00821e50 */
 GEN_NOFRAME uint F_00821e50(void)
 {
@@ -33383,28 +33412,5 @@ GEN_FRAME uint GEN_THISCALL F_0084c070(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   F_0084be80(this GEN_EDX_ARG,(uint)*(ushort *)pAVar1,(*(uint *)(gen_frame + 0x10)),(uint)*(ushort *)pAVar1);
   uVar7 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x7c))(this GEN_EDX_ARG,1);
   return uVar7;
-}
-
-/* ref: FUN_0084c1b0 */
-GEN_FRAME uint GEN_THISCALL F_0084c1b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x84c1b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  ushort uVar1;
-  uint uVar2;
-  undefined4 in_ecx;
-  
-  if (*(int *)((int)this + 0x19c) == 0) {
-    in_ecx = 0;
-  }
-  else {
-    in_ecx = *((undefined4 *)GEN_TOP((*(int *)((int)this + 0x19c) + 0x70)));
-  }
-  uVar1 = F_0055a030(in_ecx GEN_EDX_FWD);
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x4c))
-                    (param_1 GEN_EDX_ARG,(uint)*(ushort *)((int)this + 0x1ec),
-                     (uint)(ushort)(*(short *)((int)this + 0x1ee) - uVar1));
-  return uVar2;
 }
 

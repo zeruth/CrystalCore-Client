@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Game::Event::LeveDirector::vf112 */
+GEN_FRAME uint GEN_THISCALL F_006c37e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6c37e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 4))(param_1 GEN_EDX_FWD);
+  if (uVar1 == 2) {
+    uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 8))(param_1 GEN_EDX_ARG);
+    if ((char)uVar1 != '\x03') {
+      uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 8))(param_1 GEN_EDX_ARG);
+      if ((char)uVar1 != '\x02') {
+        return 0xee10;
+      }
+    }
+  }
+  return 0;
+}
+
 /* ref: Client::Game::Event::LeveDirector::vf128 */
 GEN_FRAME uint GEN_THISCALL F_006c3820(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
 {
@@ -11737,21 +11758,5 @@ GEN_FRAME byte GEN_THISCALL F_006d2550(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     return bVar2;
   }
   return 0;
-}
-
-/* ref: Client::Game::Event::SpecialShopEventHandler::vf5 */
-GEN_FRAME uint GEN_THISCALL F_006d2590(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6d2590u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint in_EAX = 0;
-  uint uVar1;
-  
-  if (REFG(int, 0x1379694) == 0) {
-    return in_EAX & 0xffffff00;
-  }
-  uVar1 = F_006c3410(this GEN_EDX_FWD,param_1);
-  return uVar1;
 }
 

@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_006ae940 */
+GEN_FRAME uint F_006ae940(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
+{
+  GEN_ENTER(0x6ae940u, gen_a0, gen_a1, gen_trace_f(gen_a2), 0u);
+  float * param_1 = (float *)(uintptr_t)gen_a0;
+  float * param_2 = (float *)(uintptr_t)gen_a1;
+  float param_3 = (float)gen_a2;
+  *param_1 = (float)((float10)*param_2 - (float10)param_3);
+  param_1[1] = (float)((float10)param_2[1] - (float10)param_3);
+  return (uint)param_1;
+}
+
 /* ref: FUN_006aea10 */
 GEN_FRAME uint GEN_THISCALL F_006aea10(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, float gen_a2)
 {
@@ -5547,13 +5559,6 @@ GEN_NOFRAME uint F_006b3db0(void)
 GEN_NOFRAME uint F_006b3dc0(void)
 {
   GEN_ENTER(0x6b3dc0u, 0u, 0u, 0u, 0u);
-  return 0;
-}
-
-/* ref: Client::Graphics::Scene::DrawObject::vf49 */
-GEN_NOFRAME uint F_006b3dd0(void)
-{
-  GEN_ENTER(0x6b3dd0u, 0u, 0u, 0u, 0u);
   return 0;
 }
 

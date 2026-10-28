@@ -1,5 +1,34 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00958fc0 */
+GEN_FRAME uint F_00958fc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x958fc0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  int param_1 = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  int param_3 = (int)gen_a2;
+  undefined4 param_4 = (undefined4)gen_a3;
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  uint uVar4;
+  
+  iVar1 = (param_3 - param_1) / 0xc;
+  if (0x28 < iVar1) {
+    iVar1 = iVar1 + 1;
+    iVar2 = (int)(iVar1 + (iVar1 >> 0x1f & 7U)) >> 3;
+    iVar1 = iVar2 * 0xc + param_1;
+    F_00951cb0(param_1,iVar1,iVar2 * 0x18 + param_1,param_4);
+    F_00951cb0(param_2 + iVar2 * -0xc,param_2,iVar2 * 0xc + param_2,param_4);
+    iVar3 = param_3 + iVar2 * -0xc;
+    F_00951cb0(param_3 + iVar2 * -0x18,iVar3,param_3,param_4);
+    uVar4 = F_00951cb0(iVar1,param_2,iVar3,param_4);
+    return uVar4;
+  }
+  uVar4 = F_00951cb0(param_1,param_2,param_3,param_4);
+  return uVar4;
+}
+
 /* ref: FUN_00959070 */
 GEN_FRAME unsigned int F_00959070(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -12620,33 +12649,5 @@ GEN_FRAME uint GEN_THISCALL F_00965bc0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     *(uint *)this = uVar3;
   }
   return uVar3;
-}
-
-/* ref: FUN_00965c90 */
-GEN_FRAME uint GEN_THISCALL F_00965c90(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x965c90u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  uint uVar4;
-  
-  uVar4 = param_1;
-  if ((uint)(*(int *)((int)this + 8) - *(int *)((int)(uintptr_t)this) >> 3) < param_1) {
-    uVar3 = F_004296a0(param_1 * 8,0,400);
-    F_0095d420(*(undefined4 *)this,*(undefined4 *)((int)this + 4),uVar3);
-    iVar1 = *(int *)this;
-    iVar2 = *(int *)((int)this + 4);
-    if (iVar1 != 0) {
-      F_00429760(iVar1,(*(int *)((int)this + 8) - iVar1 >> 3) * 8,400);
-    }
-    uVar4 = uVar3 + (iVar2 - iVar1 >> 3) * 8;
-    *(uint *)this = uVar3;
-    *(uint *)((int)this + 8) = param_1 * 8 + uVar3;
-    *(uint *)((int)this + 4) = uVar4;
-  }
-  return uVar4;
 }
 

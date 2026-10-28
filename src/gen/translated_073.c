@@ -1,5 +1,20 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::AddonCabinet::vf25 */
+GEN_FRAME uint GEN_THISCALL F_007b2fc0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x7b2fc0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  uint uVar1;
+  
+  (*(undefined4 *)(gen_frame + 0x4)) = 3;
+  (*(undefined4 *)(gen_frame + 0x8)) = 0xffffffff;
+  F_005a9110(this GEN_EDX_FWD,1,&(*(undefined4 *)(gen_frame + 0x4)));
+  uVar1 = F_005a2670(&(*(undefined4 *)(gen_frame + 0x4)) GEN_EDX_ARG);
+  return uVar1;
+}
+
 /* ref: FUN_007b2ff0 */
 GEN_FRAME uint GEN_THISCALL F_007b2ff0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -14699,16 +14714,5 @@ GEN_FRAME uint GEN_THISCALL F_007c2360(unsigned int gen_a0 GEN_EDX_PARAM, float 
 LAB_007c2406: ;
   uVar1 = F_005a2370(param_1 GEN_EDX_ARG,param_2);
   return uVar1;
-}
-
-/* ref: Client::UI2::AddonCharaSelectListMenu::vf41 */
-GEN_NOFRAME byte GEN_THISCALL F_007c2420(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x7c2420u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  byte bVar1;
-  
-  bVar1 = F_00572e60(this GEN_EDX_FWD,"CharaSelect_ListMenu",0,6);
-  return bVar1;
 }
 

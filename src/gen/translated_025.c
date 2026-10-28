@@ -1,5 +1,22 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00543c00 */
+GEN_FRAME uint GEN_THISCALL F_00543c00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x543c00u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  uint uVar1;
+  undefined4 uVar2;
+  
+  uVar2 = 0;
+  uVar1 = F_00ab1290(param_1,param_2);
+  uVar1 = F_0053f1e0(this GEN_EDX_ARG,uVar1,param_3,uVar2);
+  return uVar1;
+}
+
 /* ref: FUN_00543c30 */
 GEN_FRAME uint GEN_THISCALL F_00543c30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -5212,7 +5229,6 @@ GEN_NOFRAME uint GEN_THISCALL F_0054aff0(unsigned int gen_a0 GEN_EDX_PARAM)
   undefined * pvVar5;
   int * piVar6;
   undefined * puVar7;
-  int extraout_ECX;
   int iVar8;
   undefined * PTR32 * ppuVar9;
   undefined4 * puVar10;
@@ -5222,10 +5238,9 @@ GEN_NOFRAME uint GEN_THISCALL F_0054aff0(unsigned int gen_a0 GEN_EDX_PARAM)
   (*(uint *)(gen_frame + 0x60c)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x610);
   (*(undefined * PTR32 * PTR32 *)(gen_frame + 0x59c)) = this;
   bVar2 = F_00537540((undefined *)((int)this + 0xa8) GEN_EDX_FWD);
-  extraout_ECX = ((int)(uint)((undefined *)((int)this + 0xa8)));
   uVar3 = CONCAT31(extraout_var,bVar2);
   if (bVar2 != 0) {
-    uVar3 = F_00547d80(this GEN_EDX_ARG,*(int *)(extraout_ECX + 0xeac) * 0x54 + extraout_ECX, (int)this + 0x151c);
+    uVar3 = F_00547d80(this GEN_EDX_ARG,*((int *)GEN_TOP((((int)(uint)((undefined *)((int)this + 0xa8))) + 0xeac))) * 0x54 + ((int)(uint)((undefined *)((int)this + 0xa8))), (int)this + 0x151c);
   }
   if ((REFG(int, 0x1375bbc) != 0) || (REFG(int, 0x1379694) == 0)) goto LAB_0054b4ea;
   (*(undefined * PTR32 * PTR32 *)(gen_frame + 0x5a8)) = REFG(undefined * PTR32 * PTR32, 0x1375b90);
@@ -10839,39 +10854,6 @@ GEN_FRAME byte GEN_THISCALL F_005516b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00553ac0(&(*(undefined4 *)(gen_frame + 0x0)) GEN_EDX_ARG);
     fVar2 = ((float10)GEN_TOD(fcos((float10)param_3)));
     bVar1 = F_00c97340(*(undefined4 *)(param_1 + 8) GEN_EDX_ARG,param_2,param_7,(float)fVar2,param_4,&(*(undefined4 *)(gen_frame + 0x0))
-                         ,(undefined4)gen_fl2bits(param_6));
-    gen_imp_LeaveCriticalSection(lpCriticalSection);
-    return bVar1;
-  }
-  gen_imp_LeaveCriticalSection(lpCriticalSection);
-  return 0;
-}
-
-/* ref: FUN_00551750 */
-GEN_FRAME byte GEN_THISCALL F_00551750(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, float gen_a2, unsigned int gen_a3, unsigned int gen_a4, float gen_a5, unsigned int gen_a6)
-{
-  GEN_ENTER(0x551750u, gen_a0, gen_a1, gen_trace_f(gen_a2), gen_a3);
-  int param_1 = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  float param_3 = (float)gen_a2;
-  undefined4 param_4 = (undefined4)gen_a3;
-  uint param_5 = (uint)gen_a4;
-  float param_6 = (float)gen_a5;
-  undefined4 param_7 = (undefined4)gen_a6;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  LPCRITICAL_SECTION lpCriticalSection;
-  byte bVar1;
-  float10 fVar2;
-  
-  lpCriticalSection = (LPCRITICAL_SECTION)(param_1 + 0xc);
-  gen_imp_EnterCriticalSection(lpCriticalSection);
-  if (*(int *)(param_1 + 8) != 0) {
-    (*(undefined4 *)(gen_frame + 0x0)) = *(undefined4 *)param_5;
-    (*(undefined4 *)(gen_frame + 0x4)) = *(undefined4 *)(param_5 + 4);
-    (*(undefined4 *)(gen_frame + 0x8)) = *(undefined4 *)(param_5 + 8);
-    F_00553ac0(&(*(undefined4 *)(gen_frame + 0x0)) GEN_EDX_ARG);
-    fVar2 = ((float10)GEN_TOD(fcos((float10)param_3)));
-    bVar1 = F_00c97550(*(undefined4 *)(param_1 + 8) GEN_EDX_ARG,param_2,param_7,(float)fVar2,param_4,&(*(undefined4 *)(gen_frame + 0x0))
                          ,(undefined4)gen_fl2bits(param_6));
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return bVar1;

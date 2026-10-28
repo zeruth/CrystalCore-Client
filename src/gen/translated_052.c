@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_006ba9b0 */
+GEN_FRAME uint F_006ba9b0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6ba9b0u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x13c))))
+                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) GEN_EDX_ARG,param_1);
+  return uVar1;
+}
+
 /* ref: FUN_006ba9d0 */
 GEN_FRAME uint F_006ba9d0(unsigned int gen_a0)
 {
@@ -8781,26 +8793,5 @@ GEN_FRAME uint GEN_THISCALL F_006c37b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00a69750(&REFG(undefined4, 0x14b119c) GEN_EDX_FWD);
   }
   return CONCAT31((int3)((uint)in_EAX >> 8),(char)param_2);
-}
-
-/* ref: Client::Game::Event::LeveDirector::vf112 */
-GEN_FRAME uint GEN_THISCALL F_006c37e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6c37e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 4))(param_1 GEN_EDX_FWD);
-  if (uVar1 == 2) {
-    uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 8))(param_1 GEN_EDX_ARG);
-    if ((char)uVar1 != '\x03') {
-      uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 8))(param_1 GEN_EDX_ARG);
-      if ((char)uVar1 != '\x02') {
-        return 0xee10;
-      }
-    }
-  }
-  return 0;
 }
 

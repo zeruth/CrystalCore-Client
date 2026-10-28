@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Graphics::Scene::DrawObject::vf49 */
+GEN_NOFRAME uint F_006b3dd0(void)
+{
+  GEN_ENTER(0x6b3dd0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
 /* ref: Client::Graphics::Scene::DrawObject::vf0 */
 GEN_FRAME uint GEN_THISCALL F_006b3de0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -7760,18 +7767,6 @@ GEN_FRAME uint F_006ba990(unsigned int gen_a0)
   uint uVar1;
   
   uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x138))))
-                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) GEN_EDX_ARG,param_1);
-  return uVar1;
-}
-
-/* ref: FUN_006ba9b0 */
-GEN_FRAME uint F_006ba9b0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6ba9b0u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x13c))))
                     (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) GEN_EDX_ARG,param_1);
   return uVar1;
 }

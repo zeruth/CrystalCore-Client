@@ -1,5 +1,18 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00785580 */
+GEN_NOFRAME uint GEN_THISCALL F_00785580(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x785580u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint uVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10c467c));
+  F_0058d4b0((undefined *)((int)this + 0x180) GEN_EDX_FWD);
+  uVar1 = F_00590600(this GEN_EDX_ARG);
+  return uVar1;
+}
+
 /* ref: Client::UI2::AddonCursor::vf37 */
 GEN_NOFRAME uint GEN_THISCALL F_007855a0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -9698,27 +9711,5 @@ GEN_FRAME uint GEN_THISCALL F_00790250(unsigned int gen_a0 GEN_EDX_PARAM, float 
   uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x4c))(param_1 GEN_EDX_FWD,(int)param_2 & 0xffff,(int)param_3 & 0xffff);
   *(undefined1 *)(param_1 + 0xe9) = 1;
   return uVar1;
-}
-
-/* ref: FUN_00790280 */
-GEN_FRAME uint GEN_THISCALL F_00790280(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x790280u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  byte bVar1;
-  undefined * this_00;
-  undefined3 extraout_var = 0;
-  uint uVar2;
-  undefined4 uVar3;
-  
-  uVar2 = 0;
-  do {
-    uVar3 = param_1;
-    this_00 = (undefined *)F_0055e2f0(this GEN_EDX_FWD,*(undefined4 *)((int)&REFG(undefined4, 0x10c7174) + uVar2));
-    bVar1 = F_0055a300(this_00 GEN_EDX_ARG,uVar3);
-    uVar2 = uVar2 + 4;
-  } while (uVar2 < 0x20);
-  return CONCAT31(extraout_var,bVar1);
 }
 

@@ -1,5 +1,27 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Graphics::PostEffect::PostEffectAdaptLumShader::vf3 */
+GEN_NOFRAME byte GEN_THISCALL F_0067d780(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x67d780u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint uVar1;
+  ulonglong uVar2;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x80) + 0xc))))(this + 0x80 GEN_EDX_FWD);
+  if ((char)uVar1 != '\0') {
+    F_0067aa50((undefined *)this GEN_EDX_ARG);
+    uVar2 = F_0067d330(this GEN_EDX_ARG,"sAdaptedLum");
+    this[0xd0] = SUB81(uVar2,0);
+    this[0xd1] = (undefined1)0x1;
+    if ((*(byte *)(REFG(int, 0x137128c) + 0x1508) & 0x18) != 0) {
+      this[200] = (undefined1)((byte)this[200] | 1);
+      *(undefined4 *)(this + 0xb4) = 0;
+    }
+  }
+  return (byte)this[0x48] >> 3 & 1;
+}
+
 /* ref: Client::Graphics::PostEffect::PostEffectAdaptLumShader::vf5 */
 GEN_FRAME byte GEN_THISCALL F_0067d7f0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -13885,44 +13907,5 @@ GEN_FRAME byte GEN_THISCALL F_0068fad0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     } while (local_8 < *(uint *)((int)this + 0x28));
   }
   return 1;
-}
-
-/* ref: FUN_0068fc50 */
-GEN_FRAME unsigned int GEN_THISCALL F_0068fc50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x68fc50u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  uint uVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  uint local_c;
-  int local_8;
-  
-  uVar2 = *(int *)((int)this + 0x584) + 0x1fU >> 5;
-  local_c = 0;
-  if (uVar2 != 0) {
-    local_8 = 0;
-    do {
-      uVar1 = *((uint *)GEN_TOP((*(int *)((int)this + 0x59c) + local_c * 4)));
-      if (uVar1 != 0) {
-        uVar3 = 0;
-        uVar4 = 1;
-        do {
-          if ((uVar1 & uVar4) != 0) {
-            ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 4))
-                      (param_1 GEN_EDX_ARG,local_8 + uVar3,
-                       *((undefined4 *)GEN_TOP((*(int *)((int)this + 0x580) + (local_8 + uVar3) * 4))));
-          }
-          uVar3 = uVar3 + 1;
-          uVar4 = uVar4 << 1 | (uint)((int)uVar4 < 0);
-        } while (uVar3 < 0x20);
-      }
-      local_8 = local_8 + 0x20;
-      local_c = local_c + 1;
-    } while (local_c < uVar2);
-  }
-  return;
 }
 

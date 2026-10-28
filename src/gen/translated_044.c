@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00625b40 */
+GEN_NOFRAME byte GEN_THISCALL F_00625b40(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x625b40u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  *(undefined1 *)(REFG(int, 0x1487c58) + 0x8018) = *(undefined1 *)(in_ecx + 0x16);
+  return 1;
+}
+
 /* ref: FUN_00625b60 */
 GEN_NOFRAME byte GEN_THISCALL F_00625b60(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -39060,40 +39069,5 @@ GEN_FRAME uint GEN_THISCALL F_0065f1a0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   in_ecx[0xe] = 0;
   in_ecx[0xf] = GEN_FLT_TO(in_ecx[0xf], REFG(float, 0x1087f04));
   return (uint)in_ecx;
-}
-
-/* ref: FUN_0065f270 */
-GEN_FRAME unsigned int GEN_THISCALL F_0065f270(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1, float gen_a2, float gen_a3)
-{
-  GEN_ENTER(0x65f270u, gen_a0, gen_trace_f(gen_a1), gen_trace_f(gen_a2), gen_trace_f(gen_a3));
-  float * in_ecx = (float *)(uintptr_t)gen_a0;
-  float param_2 = (float)gen_a1;
-  float param_3 = (float)gen_a2;
-  float param_4 = (float)gen_a3;
-  float10 fVar1;
-  float10 fVar2;
-  float10 fVar3;
-  float10 fVar4;
-  
-  fVar1 = (float10)in_ecx[3];
-  fVar2 = (float10)param_2;
-  *in_ecx = (float)((float10)*in_ecx + fVar2 * fVar1);
-  fVar3 = (float10)param_3;
-  in_ecx[1] = (float)((float10)in_ecx[1] + fVar3 * fVar1);
-  fVar4 = (float10)param_4;
-  in_ecx[2] = (float)((float10)in_ecx[2] + fVar4 * fVar1);
-  fVar1 = (float10)in_ecx[7];
-  in_ecx[4] = (float)(fVar1 * fVar2 + (float10)in_ecx[4]);
-  in_ecx[5] = (float)(fVar1 * fVar3 + (float10)in_ecx[5]);
-  in_ecx[6] = (float)(fVar1 * fVar4 + (float10)in_ecx[6]);
-  fVar1 = (float10)in_ecx[0xb];
-  in_ecx[8] = (float)(fVar1 * fVar2 + (float10)in_ecx[8]);
-  in_ecx[9] = (float)(fVar1 * fVar3 + (float10)in_ecx[9]);
-  in_ecx[10] = (float)(fVar1 * fVar4 + (float10)in_ecx[10]);
-  fVar1 = (float10)in_ecx[0xf];
-  in_ecx[0xc] = (float)((float10)in_ecx[0xc] + fVar1 * fVar2);
-  in_ecx[0xd] = (float)(fVar3 * fVar1 + (float10)in_ecx[0xd]);
-  in_ecx[0xe] = (float)(fVar1 * fVar4 + (float10)in_ecx[0xe]);
-  return 0;
 }
 

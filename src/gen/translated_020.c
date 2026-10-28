@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005188d0 */
+GEN_FRAME uint F_005188d0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x5188d0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  char cVar1;
+  uint uVar2;
+  uint uVar3;
+  uint uVar4;
+  
+  cVar1 = *((char *)GEN_TOP((*(uint *)(param_1 + 8) + 0x21)));
+  uVar2 = *(uint *)(param_1 + 8);
+  uVar4 = param_1;
+  while (uVar3 = uVar2, cVar1 == '\0') {
+    uVar2 = *(uint *)(uVar3 + 8);
+    cVar1 = *(char *)(uVar2 + 0x21);
+    uVar4 = uVar3;
+  }
+  return uVar4;
+}
+
 /* ref: FUN_005188f0 */
 GEN_FRAME uint F_005188f0(unsigned int gen_a0)
 {
@@ -4801,18 +4822,5 @@ GEN_NOFRAME uint F_0051cf60(void)
 {
   GEN_ENTER(0x51cf60u, 0u, 0u, 0u, 0u);
   return 0x1d4;
-}
-
-/* ref: Client::System::Resource::Handle::AutoShakeIkResourceHandleFactory::vf0 */
-GEN_FRAME uint GEN_THISCALL F_0051cf80(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x51cf80u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10993b0));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
 }
 

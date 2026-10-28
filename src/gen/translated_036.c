@@ -1,5 +1,63 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005d45c0 */
+GEN_FRAME uint GEN_THISCALL F_005d45c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5d45c0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  int iVar1;
+  undefined4 * this_00;
+  uint uVar2;
+  int iVar3;
+  undefined4 * puVar4;
+  undefined4 * puVar5;
+  
+  if ((param_1 & 2) != 0) {
+    iVar1 = *(int *)((int)this - 4);
+    iVar3 = iVar1 - 1;
+    (*(int * PTR32 *)(gen_frame + 0x8)) = (int *)((int)this - 4);
+    if (-1 < iVar3) {
+      puVar4 = (undefined4 *)((int)this + iVar1 * 8 + 4);
+      do {
+        puVar5 = puVar4 - 2;
+        if (((uint)puVar4[-3] >> 5 & 1) != 0) {
+          this_00 = (undefined4 *)*puVar5;
+          if (this_00 != (undefined4 *)0x0) {
+            uVar2 = puVar4[-3] & 0xf;
+            if (uVar2 == 9) {
+              F_00488040(this_00 GEN_EDX_FWD,((undefined1 *)(gen_frame + 0x4)),*this_00,this_00[1]);
+              F_00488dc0(this_00 GEN_EDX_ARG);
+              F_00406ad0(this_00);
+            }
+            else if ((uVar2 == 6) || (uVar2 == 7)) {
+              F_00406ad0(this_00);
+              *puVar5 = 0;
+            }
+          }
+          *puVar5 = 0;
+        }
+        iVar3 = iVar3 - 1;
+        puVar4[-3] = 0;
+        puVar4 = puVar5;
+      } while (-1 < iVar3);
+    }
+    if ((param_1 & 1) != 0) {
+      F_00406b30((*(int * PTR32 *)(gen_frame + 0x8)));
+    }
+    return (uint)(*(int * PTR32 *)(gen_frame + 0x8));
+  }
+  if ((*(uint *)((int)(uintptr_t)this) >> 5 & 1) != 0) {
+    F_005a0260(this GEN_EDX_ARG);
+  }
+  *(undefined4 *)this = 0;
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: Component::GUI2::AtkComponentTextInput::vf0 */
 GEN_FRAME uint GEN_THISCALL F_005d46c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -3870,6 +3928,7 @@ GEN_NOFRAME unsigned int F_005d80e0(void)
 GEN_NOFRAME unsigned int GEN_THISCALL F_005d80f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
   GEN_ENTER(0x5d80f0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_SUSPECT(0x5d80f0u, "local_20, local_1c, local_18");
   int in_ecx = (int)gen_a0;
   undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
   undefined4 uVar1;
@@ -8883,31 +8942,5 @@ GEN_FRAME uint GEN_THISCALL F_005dd850(unsigned int gen_a0 GEN_EDX_PARAM)
     }
   }
   return 0;
-}
-
-/* ref: Client::LayoutEngine::Layer::GameObjectLayoutInstance::vf53 */
-GEN_FRAME uint GEN_THISCALL F_005dd8c0(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
-{
-  GEN_ENTER(0x5dd8c0u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  float param_2 = (float)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  undefined4 local_8;
-  
-  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x5c))(param_1 GEN_EDX_FWD)));
-  if (piVar1 != (int *)0x0) {
-    ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x68))(piVar1 GEN_EDX_ARG,(undefined4)gen_fl2bits(param_2));
-  }
-  uVar2 = param_1[0xe];
-  if (uVar2 != 0xffffffff) {
-    local_8 = CONCAT31((int3)((uint)((int)(uintptr_t)param_1) >> 8),*(undefined1 *)((int)param_1 + 0x11));
-    uVar2 = F_00a1b870(local_8,uVar2);
-    if (((uVar2 != 0) && (*(int *)(uVar2 + 0x7c) == 0)) &&
-       (piVar1 = *(int * PTR32 *)(uVar2 + 0xf0), uVar2 = 0, piVar1 != (int *)0x0)) {
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xd4))(piVar1 GEN_EDX_ARG,(undefined4)gen_fl2bits(param_2));
-    }
-  }
-  return uVar2;
 }
 

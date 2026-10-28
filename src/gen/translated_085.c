@@ -1,5 +1,28 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00908720 */
+GEN_FRAME uint GEN_THISCALL F_00908720(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6)
+{
+  GEN_ENTER(0x908720u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 param_4 = (undefined4)gen_a4;
+  undefined4 param_5 = (undefined4)gen_a5;
+  undefined4 param_6 = (undefined4)gen_a6;
+  *(undefined4 *)this = param_1;
+  *(undefined4 *)((int)this + 8) = param_2;
+  *(undefined4 *)((int)this + 0xc) = param_3;
+  F_0042cbc0((undefined *)((int)this + 0x10) GEN_EDX_FWD,param_4);
+  F_0042b630((int)this + 100 GEN_EDX_ARG);
+  *(undefined1 *)((int)this + 0xb8) = (undefined1)param_5;
+  *(undefined1 *)((int)this + 0xb9) = (undefined1)param_6;
+  *(undefined4 *)((int)this + 0xbc) = 0;
+  *(undefined4 *)((int)this + 0xc0) = 0;
+  return (uint)this;
+}
+
 /* ref: FUN_009087a0 */
 GEN_NOFRAME uint GEN_THISCALL F_009087a0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -5846,19 +5869,6 @@ GEN_FRAME uint GEN_THISCALL F_0090f4c0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 GEN_FRAME uint GEN_THISCALL F_0090f4f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
   GEN_ENTER(0x90f4f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::UI2::AddonConfigCharacterOperation::CCircle::vf0 */
-GEN_FRAME uint GEN_THISCALL F_0090f520(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x90f520u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[5])REFP(0x10cf5e8));

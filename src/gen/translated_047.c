@@ -1,5 +1,65 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0066dd90 */
+GEN_FRAME uint GEN_THISCALL F_0066dd90(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x66dd90u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * puVar1;
+  int iVar2;
+  uint uVar3;
+  int iVar4;
+  int * piVar5;
+  ulonglong uVar6;
+  int local_8;
+  
+  *(undefined4 *)((int)this + 0x18) = 0;
+  *(undefined4 *)((int)this + 0x14) = 0;
+  *(undefined4 *)((int)this + 0x5c) = 0;
+  piVar5 = (int *)((int)this + 0x1c);
+  local_8 = 0x10;
+  do {
+    uVar3 = 0;
+    if (*piVar5 != 0) {
+      uVar3 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 4) + 0x10))))
+                        (*(int * PTR32 *)(REFG(int, 0x1371270) + 4) GEN_EDX_ARG,*piVar5);
+      *piVar5 = 0;
+    }
+    piVar5 = piVar5 + 1;
+    local_8 = local_8 - 1;
+  } while (local_8 != 0);
+  puVar1 = *(undefined4 * PTR32 *)((int)this + 0x10);
+  if (puVar1 != (undefined4 *)0x0) {
+    uVar3 = ((GEN_TCODE *)*(gen_code32 *)*puVar1)(puVar1 GEN_EDX_ARG,1);
+    *(undefined4 *)((int)this + 0x10) = 0;
+  }
+  iVar4 = *(int *)((int)this + 8);
+  if (iVar4 != 0) {
+    uVar3 = 0;
+    do {
+      iVar2 = *(int *)((int)this + 4);
+      *(undefined4 *)(uVar3 + 0x10 + iVar2) = 0;
+      *(undefined4 *)(uVar3 + 0xc + iVar2) = 0;
+      uVar3 = uVar3 + 0x14;
+      iVar4 = iVar4 - 1;
+    } while (iVar4 != 0);
+  }
+  puVar1 = *(undefined4 * PTR32 *)((int)this + 4);
+  if (puVar1 != (undefined4 *)0x0) {
+    if (puVar1[-1] != 0) {
+      uVar3 = ((GEN_TCODE *)*(gen_code32 *)*puVar1)(puVar1 GEN_EDX_ARG,3);
+      *(undefined4 *)((int)this + 4) = 0;
+      *(undefined4 *)((int)this + 8) = 0;
+      return uVar3;
+    }
+    uVar6 = F_00406b30(puVar1 - 1);
+    uVar3 = (uint)uVar6;
+    *(undefined4 *)((int)this + 4) = 0;
+  }
+  *(undefined4 *)((int)this + 8) = 0;
+  return uVar3;
+}
+
 /* ref: FUN_0066de40 */
 GEN_FRAME unsigned int GEN_THISCALL F_0066de40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -15468,27 +15528,5 @@ GEN_FRAME byte GEN_THISCALL F_0067d500(unsigned int gen_a0 GEN_EDX_PARAM)
   }
   F_00c47745((*(uint *)(gen_frame + 0x68)) ^ (uint)(uint)(gen_frame + 0x6c) GEN_EDX_ARG);
   return bVar6;
-}
-
-/* ref: Client::Graphics::PostEffect::PostEffectAdaptLumShader::vf3 */
-GEN_NOFRAME byte GEN_THISCALL F_0067d780(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x67d780u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  ulonglong uVar2;
-  
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)(this + 0x80) + 0xc))))(this + 0x80 GEN_EDX_FWD);
-  if ((char)uVar1 != '\0') {
-    F_0067aa50((undefined *)this GEN_EDX_ARG);
-    uVar2 = F_0067d330(this GEN_EDX_ARG,"sAdaptedLum");
-    this[0xd0] = SUB81(uVar2,0);
-    this[0xd1] = (undefined1)0x1;
-    if ((*(byte *)(REFG(int, 0x137128c) + 0x1508) & 0x18) != 0) {
-      this[200] = (undefined1)((byte)this[200] | 1);
-      *(undefined4 *)(this + 0xb4) = 0;
-    }
-  }
-  return (byte)this[0x48] >> 3 & 1;
 }
 

@@ -1,5 +1,23 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00bc3b20 */
+GEN_FRAME uint GEN_THISCALL F_00bc3b20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbc3b20u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  return (param_2 * 3 + 3) * 0x10 + in_ecx;
+}
+
+/* ref: FUN_00bc3b40 */
+GEN_FRAME float10 F_00bc3b40(float gen_a0)
+{
+  GEN_ENTER(0xbc3b40u, gen_trace_f(gen_a0), 0u, 0u, 0u);
+  float param_1 = (float)gen_a0;
+  return (float10)((float)GEN_TOF((((float10)param_1 * (float10)*(double *)&REFG(undefined, 0x1080228)) /
+                         (float10)*(double *)&REFG(undefined, 0x1080220))));
+}
+
 /* ref: FUN_00bc3b60 */
 GEN_NOFRAME byte GEN_THISCALL F_00bc3b60(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -10032,41 +10050,5 @@ GEN_FRAME byte F_00bcde60(unsigned int gen_a0, unsigned int gen_a1)
   
   bVar1 = F_00b5fea0(*(undefined4 *)(param_1 + 8) GEN_EDX_ARG,*param_2 + (int)param_2);
   return bVar1;
-}
-
-/* ref: FUN_00bcde80 */
-GEN_FRAME byte F_00bcde80(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbcde80u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  int * param_2 = (int *)(uintptr_t)gen_a1;
-  byte bVar1;
-  
-  bVar1 = F_00b5fec0(*param_2 + (int)param_2);
-  return bVar1;
-}
-
-/* ref: FUN_00bcdea0 */
-GEN_FRAME uint GEN_STDCALL F_00bcdea0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xbcdea0u, gen_a0, 0u, 0u, 0u);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  int * piVar1;
-  int iVar2;
-  
-  if (*param_1 == 0x424c4d54) {
-    piVar1 = param_1 + 3;
-    iVar2 = param_1[2];
-    if (iVar2 != 0) {
-      do {
-        iVar2 = iVar2 - 1;
-        if (*piVar1 == *(int *)REFG(undefined * PTR32, 0x1343188)) {
-          return (uint)(piVar1 + 2);
-        }
-        piVar1 = (int *)((int)piVar1 + piVar1[1]);
-      } while (iVar2 != 0);
-    }
-  }
-  return 0;
 }
 

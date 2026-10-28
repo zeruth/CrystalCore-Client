@@ -3017,6 +3017,7 @@ GEN_FRAME unsigned int GEN_THISCALL F_004973b0(unsigned int gen_a0 GEN_EDX_PARAM
 GEN_NOFRAME unsigned int GEN_THISCALL F_00497420(unsigned int gen_a0 GEN_EDX_PARAM)
 {
   GEN_ENTER(0x497420u, gen_a0, 0u, 0u, 0u);
+  GEN_SUSPECT(0x497420u, "uStack_60, uStack_5c, uStack_58, uStack_54, uStack_50, uStack_4c, uStack_48, uStack_44, uStack_40, uStack_3c, uStack_38, uStack_34, uStack_30, uStack_2c, uStack_28, uStack_24, uStack_20");
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined1 gen_out[0x4];
   undefined * pvVar1;
@@ -5895,6 +5896,7 @@ GEN_FRAME uint GEN_THISCALL F_0049a930(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 GEN_FRAME uint GEN_THISCALL F_0049a960(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10, unsigned int gen_a11, unsigned int gen_a12, unsigned int gen_a13, unsigned int gen_a14, unsigned int gen_a15, unsigned int gen_a16, unsigned int gen_a17, unsigned int gen_a18, unsigned int gen_a19, unsigned int gen_a20, unsigned int gen_a21, unsigned int gen_a22)
 {
   GEN_ENTER(0x49a960u, gen_a0, gen_a1, gen_a2, gen_a3);
+  GEN_SUSPECT(0x49a960u, "uStack_60, uStack_5c, uStack_58, uStack_54, uStack_50, uStack_4c, uStack_48, uStack_44, uStack_40, uStack_3c, uStack_38, uStack_34, uStack_30, uStack_2c, uStack_28, uStack_24, uStack_20, uStack_1c, uStack_18, uStack_14");
   unsigned int gen_args[23];
   gen_args[0] = gen_a0;
   gen_args[1] = gen_a1;

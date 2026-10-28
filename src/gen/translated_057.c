@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0071cff0 */
+GEN_FRAME uint GEN_THISCALL F_0071cff0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x71cff0u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  return *(uint *)(in_ecx + 0x2d90 + param_2 * 4);
+}
+
 /* ref: FUN_0071d020 */
 GEN_FRAME uint GEN_THISCALL F_0071d020(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -5164,17 +5173,5 @@ GEN_FRAME uint GEN_THISCALL F_007224b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     return 1;
   }
   return 0;
-}
-
-/* ref: FUN_00722540 */
-GEN_FRAME uint GEN_STDCALL F_00722540(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x722540u, gen_a0, gen_a1, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_004296a0(param_1 * 8,param_2,800);
-  return uVar1;
 }
 

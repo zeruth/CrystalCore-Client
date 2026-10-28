@@ -1,5 +1,27 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00a5c470 */
+GEN_FRAME byte GEN_THISCALL F_00a5c470(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xa5c470u, gen_a0, gen_a1, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  *(byte *)(in_ecx + 0x196) = (byte)param_2;
+  return (byte)param_2;
+}
+
+/* ref: FUN_00a5c480 */
+GEN_FRAME uint GEN_THISCALL F_00a5c480(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xa5c480u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  *(uint *)((int)this + 0x198) = param_1;
+  *(undefined4 *)((int)this + 0x19c) = param_2;
+  return param_1;
+}
+
 /* ref: FUN_00a5c4a0 */
 GEN_FRAME uint GEN_THISCALL F_00a5c4a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -7984,29 +8006,5 @@ GEN_FRAME uint GEN_THISCALL F_00a63c60(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00406ad0(this);
   }
   return (uint)this;
-}
-
-/* ref: Client::Game::Control::MoveControl::GroundAttributeInfo::vf0 */
-GEN_FRAME uint GEN_THISCALL F_00a63d20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xa63d20u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10e6d64));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::Game::Control::MoveControl::MoveControllerSubMemberForPacketMove::vf2 */
-GEN_NOFRAME uint GEN_THISCALL F_00a63d50(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xa63d50u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 4))(this GEN_EDX_FWD,0);
-  return uVar1;
 }
 

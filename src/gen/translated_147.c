@@ -1,18 +1,48 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00c17720 */
+GEN_NOFRAME uint F_00c17720(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc17720u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  float fVar1;
+  
+  fVar1 = F_00b9c8e0(param_1,1);
+  F_00b9ade0(param_1,(double)fVar1 * *(double *)&REFG(undefined, 0x110ea58));
+  return 1;
+}
+
+/* ref: FUN_00c17750 */
+GEN_NOFRAME uint F_00c17750(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc17750u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  double dVar1;
+  float fVar2;
+  int * _Y;
+  
+  _Y = &(*(int *)(gen_frame + 0xc));
+  fVar2 = F_00b9c8e0(param_1,1);
+  dVar1 = F_00c52990((double)fVar2,_Y);
+  F_00b9ade0(param_1,dVar1);
+  F_00b9ae00(param_1,(*(int *)(gen_frame + 0xc)));
+  return 2;
+}
+
 /* ref: FUN_00c17790 */
 GEN_NOFRAME uint F_00c17790(unsigned int gen_a0)
 {
   GEN_ENTER(0xc17790u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   uint _Y;
-  float fVar1;
-  double dVar2;
+  double dVar1;
+  float fVar2;
   
   _Y = F_00b9c9b0(param_1,2);
-  fVar1 = F_00b9c8e0(param_1,1);
-  dVar2 = F_00c52a5e((double)fVar1,_Y);
-  F_00b9ade0(param_1,dVar2);
+  fVar2 = F_00b9c8e0(param_1,1);
+  dVar1 = F_00c52a5e((double)fVar2,_Y);
+  F_00b9ade0(param_1,dVar1);
   return 1;
 }
 
@@ -1992,13 +2022,13 @@ GEN_NOFRAME uint F_00c1a150(unsigned int gen_a0)
   GEN_ENTER(0xc1a150u, gen_a0, 0u, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   float10 fVar1;
-  float fVar2;
-  double dVar3;
+  double dVar2;
+  float fVar3;
   
   fVar1 = F_00b9c960(param_1,2,0.0);
-  fVar2 = F_00b9c8e0(param_1,1);
-  dVar3 = F_00c52da0((longlong)fVar2,(longlong)fVar1);
-  F_00b9ade0(param_1,dVar3);
+  fVar3 = F_00b9c8e0(param_1,1);
+  dVar2 = F_00c52da0((longlong)fVar3,(longlong)fVar1);
+  F_00b9ade0(param_1,dVar2);
   return 1;
 }
 
@@ -11121,50 +11151,6 @@ GEN_NOFRAME uint GEN_THISCALL F_00c24490(unsigned int gen_a0 GEN_EDX_PARAM, unsi
   
   piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 100))(this GEN_EDX_FWD)));
   uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x7c))
-                    (piVar1 GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
-  return uVar2;
-}
-
-/* ref: Client::System::Scheduler::Base::ChildSchedulerTimeline::vf32 */
-GEN_NOFRAME uint GEN_THISCALL F_00c244a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
-{
-  GEN_ENTER(0xc244a0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 param_8 = (undefined4)gen_a8;
-  int * piVar1;
-  uint uVar2;
-  
-  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 100))(this GEN_EDX_FWD)));
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x80))
-                    (piVar1 GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
-  return uVar2;
-}
-
-/* ref: Client::System::Scheduler::Base::ChildSchedulerTimeline::vf33 */
-GEN_FRAME uint GEN_THISCALL F_00c244c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
-{
-  GEN_ENTER(0xc244c0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 param_8 = (undefined4)gen_a8;
-  int * piVar1;
-  uint uVar2;
-  
-  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 100))(this GEN_EDX_FWD)));
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x84))
                     (piVar1 GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
   return uVar2;
 }

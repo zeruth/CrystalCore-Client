@@ -1,5 +1,18 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00746870 */
+GEN_FRAME unsigned int F_00746870(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x746870u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined * param_2 = (undefined *)(uintptr_t)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  if (param_2 != (undefined *)0x0) {
+    F_00738690(param_2 GEN_EDX_ARG,param_3);
+  }
+  return;
+}
+
 /* ref: FUN_00746890 */
 GEN_FRAME unsigned int F_00746890(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -12156,46 +12169,5 @@ GEN_NOFRAME uint GEN_THISCALL F_00751810(unsigned int gen_a0 GEN_EDX_PARAM)
   *(uint *)(uVar1 + 8) = uVar1;
   *(undefined4 *)((int)this + 8) = 0;
   return uVar1;
-}
-
-/* ref: FUN_00751840 */
-GEN_FRAME uint GEN_THISCALL F_00751840(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x751840u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  undefined4 * puVar3;
-  
-  puVar3 = *(undefined4 * PTR32 *)((int)this + 4);
-  if ((param_1 < puVar3) && (puVar1 = *(undefined4 * PTR32 *)this, puVar1 <= param_1)) {
-    if (puVar3 == *(undefined4 * PTR32 *)((int)this + 8)) {
-      F_0074e210(this GEN_EDX_FWD,1);
-    }
-    puVar1 = ((undefined4 *)GEN_TOP((*(int *)this + (((int)param_1 - (int)puVar1) / 0xc) * 0xc)));
-    puVar2 = *(undefined4 * PTR32 *)((int)this + 4);
-    puVar3 = (undefined4 *)0x0;
-    if (puVar2 != (undefined4 *)0x0) {
-      *puVar2 = *puVar1;
-      puVar2[1] = puVar1[1];
-      puVar2[2] = puVar1[2];
-      *(int *)((int)this + 4) = *(int *)((int)this + 4) + 0xc;
-      return (uint)puVar2;
-    }
-  }
-  else {
-    if (puVar3 == *(undefined4 * PTR32 *)((int)this + 8)) {
-      F_0074e210(this GEN_EDX_ARG,1);
-    }
-    puVar3 = *(undefined4 * PTR32 *)((int)this + 4);
-    if (puVar3 != (undefined4 *)0x0) {
-      *puVar3 = *param_1;
-      puVar3[1] = param_1[1];
-      puVar3[2] = param_1[2];
-    }
-  }
-  *(int *)((int)this + 4) = *(int *)((int)this + 4) + 0xc;
-  return (uint)puVar3;
 }
 

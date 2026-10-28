@@ -184,7 +184,7 @@ unsigned int gen_imp_GetCurrentThread(int a0, int a1, int a2, int a3, ...) { GEN
 gen_real_fn gen_real_GetCurrentThreadId;
 unsigned int gen_imp_GetCurrentThreadId(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_GetCurrentThreadId(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_GetCursorPos;
-unsigned int gen_imp_GetCursorPos(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_GetCursorPos(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_GetCursorPos();   /* the runtime's */
 gen_real_fn gen_real_GetDateFormatA;
 unsigned int gen_imp_GetDateFormatA(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_GetDateFormatA(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_GetDiskFreeSpaceExA;
@@ -676,11 +676,11 @@ unsigned int gen_imp_closesocket(int a0, int a1, int a2, int a3, ...) { GEN_REST
 gen_real_fn gen_real_connect;
 unsigned int gen_imp_connect(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_connect(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_freeaddrinfo;
-unsigned int gen_imp_freeaddrinfo(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_freeaddrinfo(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_freeaddrinfo();   /* the runtime's */
 gen_real_fn gen_real_getaddrinfo;
-unsigned int gen_imp_getaddrinfo(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_getaddrinfo(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_getaddrinfo();   /* the runtime's */
 gen_real_fn gen_real_gethostbyname;
-unsigned int gen_imp_gethostbyname(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_gethostbyname(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
+unsigned int gen_imp_gethostbyname();   /* the runtime's */
 gen_real_fn gen_real_gethostname;
 unsigned int gen_imp_gethostname(int a0, int a1, int a2, int a3, ...) { GEN_REST(a3); return (unsigned int)gen_real_gethostname(a0, a1, a2, a3, r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]); }
 gen_real_fn gen_real_getpeername;
@@ -827,7 +827,7 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e1e4u, "KERNEL32.dll", "GetCurrentProcessId", (void *)gen_imp_GetCurrentProcessId, &gen_real_GetCurrentProcessId},
   {0x107e2c0u, "KERNEL32.dll", "GetCurrentThread", (void *)gen_imp_GetCurrentThread, &gen_real_GetCurrentThread},
   {0x107e150u, "KERNEL32.dll", "GetCurrentThreadId", (void *)gen_imp_GetCurrentThreadId, &gen_real_GetCurrentThreadId},
-  {0x107e4b0u, "USER32.dll", "GetCursorPos", (void *)gen_imp_GetCursorPos, &gen_real_GetCursorPos},
+  {0x107e4b0u, "USER32.dll", "GetCursorPos", (void *)gen_imp_GetCursorPos, 0},
   {0x107e1d8u, "KERNEL32.dll", "GetDateFormatA", (void *)gen_imp_GetDateFormatA, &gen_real_GetDateFormatA},
   {0x107e324u, "KERNEL32.dll", "GetDiskFreeSpaceExA", (void *)gen_imp_GetDiskFreeSpaceExA, &gen_real_GetDiskFreeSpaceExA},
   {0x107e308u, "KERNEL32.dll", "GetDiskFreeSpaceExW", (void *)gen_imp_GetDiskFreeSpaceExW, &gen_real_GetDiskFreeSpaceExW},
@@ -1073,9 +1073,9 @@ const GEN_IMPORT g_genImports[] = {
   {0x107e54cu, "WS2_32.dll", "bind", (void *)gen_imp_bind, &gen_real_bind},
   {0x107e544u, "WS2_32.dll", "closesocket", (void *)gen_imp_closesocket, &gen_real_closesocket},
   {0x107e558u, "WS2_32.dll", "connect", (void *)gen_imp_connect, &gen_real_connect},
-  {0x107e58cu, "WS2_32.dll", "freeaddrinfo", (void *)gen_imp_freeaddrinfo, &gen_real_freeaddrinfo},
-  {0x107e588u, "WS2_32.dll", "getaddrinfo", (void *)gen_imp_getaddrinfo, &gen_real_getaddrinfo},
-  {0x107e528u, "WS2_32.dll", "gethostbyname", (void *)gen_imp_gethostbyname, &gen_real_gethostbyname},
+  {0x107e58cu, "WS2_32.dll", "freeaddrinfo", (void *)gen_imp_freeaddrinfo, 0},
+  {0x107e588u, "WS2_32.dll", "getaddrinfo", (void *)gen_imp_getaddrinfo, 0},
+  {0x107e528u, "WS2_32.dll", "gethostbyname", (void *)gen_imp_gethostbyname, 0},
   {0x107e55cu, "WS2_32.dll", "gethostname", (void *)gen_imp_gethostname, &gen_real_gethostname},
   {0x107e570u, "WS2_32.dll", "getpeername", (void *)gen_imp_getpeername, &gen_real_getpeername},
   {0x107e574u, "WS2_32.dll", "getsockname", (void *)gen_imp_getsockname, &gen_real_getsockname},

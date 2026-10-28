@@ -1,5 +1,27 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00790280 */
+GEN_FRAME uint GEN_THISCALL F_00790280(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x790280u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  byte bVar1;
+  undefined * this_00;
+  undefined3 extraout_var = 0;
+  uint uVar2;
+  undefined4 uVar3;
+  
+  uVar2 = 0;
+  do {
+    uVar3 = param_1;
+    this_00 = (undefined *)F_0055e2f0(this GEN_EDX_FWD,*(undefined4 *)((int)&REFG(undefined4, 0x10c7174) + uVar2));
+    bVar1 = F_0055a300(this_00 GEN_EDX_ARG,uVar3);
+    uVar2 = uVar2 + 4;
+  } while (uVar2 < 0x20);
+  return CONCAT31(extraout_var,bVar1);
+}
+
 /* ref: FUN_007902c0 */
 GEN_FRAME uint GEN_THISCALL F_007902c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
 {
@@ -10634,37 +10656,5 @@ GEN_FRAME uint GEN_THISCALL F_0079b660(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     uVar1 = F_0059ead0(*(undefined * PTR32 *)(this + 0x180) GEN_EDX_ARG,0,0,1);
   }
   return uVar1;
-}
-
-/* ref: FUN_0079b6c0 */
-GEN_FRAME unsigned int GEN_THISCALL F_0079b6c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x79b6c0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  undefined * param_2 = (undefined *)(uintptr_t)gen_a2;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  undefined4 uVar1;
-  byte bVar2;
-  undefined * this_00;
-  uint uVar3;
-  
-  if ((param_1 < 100) && (this_00 = (undefined *)F_00561530(param_2 GEN_EDX_FWD,4), this_00 != (undefined *)0x0)) {
-    uVar3 = F_0055dcb0();
-    uVar3 = F_0055b9a0(uVar3 GEN_EDX_ARG);
-    if (*(int *)(uVar3 + 0xac) != 0) {
-      uVar1 = *((undefined4 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(uVar3 + 0xac) + 0x20))) + param_1 * 8)));
-      bVar2 = F_00584440(this_00 GEN_EDX_ARG,uVar1);
-      if (bVar2 != 0) {
-        F_00560760(((undefined4 *)(gen_frame + 0x0)) GEN_EDX_ARG);
-        bVar2 = *(byte *)((int)this + 0x13a);
-        ((undefined4 *)(gen_frame + 0x0))[0] = uVar1;
-        uVar1 = *(undefined4 *)((int)param_2 + 0x1e4);
-        uVar3 = F_0055dcb0();
-        F_00588780((undefined *)(uVar3 + 0xe0) GEN_EDX_ARG,2,(uint)bVar2,uVar1,((undefined4 *)(gen_frame + 0x0)),0,0);
-      }
-    }
-  }
-  return;
 }
 

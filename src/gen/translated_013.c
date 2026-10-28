@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_004bd3f0 */
+GEN_FRAME uint F_004bd3f0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2)
+{
+  GEN_ENTER(0x4bd3f0u, gen_a0, gen_a1, gen_trace_f(gen_a2), 0u);
+  float * param_1 = (float *)(uintptr_t)gen_a0;
+  float * param_2 = (float *)(uintptr_t)gen_a1;
+  float param_3 = (float)gen_a2;
+  float10 fVar1;
+  
+  fVar1 = (float10)param_3;
+  *param_1 = (float)((float10)*param_2 / fVar1);
+  param_1[1] = (float)((float10)param_2[1] / fVar1);
+  param_1[2] = (float)((float10)param_2[2] / fVar1);
+  return (uint)param_1;
+}
+
 /* ref: FUN_004bd420 */
 GEN_FRAME uint F_004bd420(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9504,116 +9520,5 @@ GEN_FRAME uint F_004c7b80(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   *param_1 = *param_2;
   param_1[1] = param_4;
   return (uint)param_1;
-}
-
-/* ref: FUN_004c7bb0 */
-GEN_FRAME int F_004c7bb0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7)
-{
-  GEN_ENTER(0x4c7bb0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  unsigned int gen_args[8];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  gen_args[2] = gen_a2;
-  gen_args[3] = gen_a3;
-  gen_args[4] = gen_a4;
-  gen_args[5] = gen_a5;
-  gen_args[6] = gen_a6;
-  gen_args[7] = gen_a7;
-  __declspec(align(16)) undefined1 gen_frame[0x40];
-  uint uVar1;
-  undefined4 * puVar2;
-  undefined4 * puVar3;
-  undefined4 uVar4;
-  undefined4 uVar5;
-  int iVar6;
-  int iVar7;
-  int * piVar8;
-  int iVar9;
-  uint uVar10;
-  int iVar11;
-  int iVar12;
-  uint uVar13;
-  uint uVar14;
-  uint uVar15;
-  int iVar16;
-  
-  iVar16 = (*(uint *)&gen_args[5]) - (*(uint *)&gen_args[1]);
-  iVar6 = (*(int *)&gen_args[3]) - (*(uint *)&gen_args[1]);
-  (*(int *)(gen_frame + 0x38)) = iVar6;
-  (*(int *)(gen_frame + 0x34)) = iVar16;
-  if ((*(uint *)&gen_args[5]) < (*(uint *)&gen_args[1])) {
-  }
-  iVar7 = 0;
-  iVar9 = iVar16;
-  iVar11 = iVar16;
-  iVar12 = iVar6;
-  if (iVar6 != 0) {
-    do {
-      iVar11 = iVar12;
-      iVar7 = iVar9 / iVar11;
-      iVar12 = iVar9 % iVar11;
-      iVar9 = iVar11;
-    } while (iVar12 != 0);
-    (*(int *)(gen_frame + 0x34)) = iVar11;
-  }
-  if (iVar11 < iVar16) {
-    while (0 < iVar11) {
-      uVar1 = (*(uint *)&gen_args[1]) + iVar11;
-      (*(int *)(gen_frame + 0x24)) = (*(int *)&gen_args[0]);
-      if (iVar6 + uVar1 == (*(uint *)&gen_args[5])) {
-        piVar8 = &(*(int *)&gen_args[0]);
-      }
-      else {
-        (*(int *)(gen_frame + 0x1c)) = (*(int *)&gen_args[0]);
-        (*(uint *)(gen_frame + 0x30)) = uVar1;
-        (*(uint *)(gen_frame + 0x20)) = iVar6 + uVar1;
-        piVar8 = &(*(int *)(gen_frame + 0x1c));
-      }
-      iVar16 = *piVar8;
-      uVar13 = uVar1;
-      uVar15 = piVar8[1];
-      do {
-        uVar10 = uVar15 >> 1;
-        if (*(uint *)(iVar16 + 8) <= uVar10) {
-          uVar10 = uVar10 - *(uint *)(iVar16 + 8);
-        }
-        uVar14 = uVar13 & 1;
-        (*(uint *)(gen_frame + 0x30)) = uVar14;
-        uVar13 = uVar13 >> 1;
-        if (*(uint *)((*(int *)(gen_frame + 0x24)) + 8) <= uVar13) {
-          uVar13 = uVar13 - *(uint *)((*(int *)(gen_frame + 0x24)) + 8);
-        }
-        puVar2 = ((undefined4 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(iVar16 + 4) + uVar10 * 4))) + (uVar15 & 1) * 8)));
-        iVar7 = *((int *)GEN_TOP((*(int *)((*(int *)(gen_frame + 0x24)) + 4) + uVar13 * 4)));
-        uVar4 = *(undefined4 *)(iVar7 + 4 + uVar14 * 8);
-        puVar3 = (undefined4 *)(iVar7 + uVar14 * 8);
-        uVar5 = *puVar3;
-        *puVar3 = *puVar2;
-        puVar3[1] = puVar2[1];
-        puVar2[1] = uVar4;
-        *puVar2 = uVar5;
-        (*(int *)(gen_frame + 0x24)) = iVar16;
-        if (iVar6 < (int)((*(uint *)&gen_args[5]) - uVar15)) {
-          (*(uint *)(gen_frame + 0x30)) = uVar15;
-          (*(int *)(gen_frame + 0x14)) = iVar16;
-          (*(int *)(gen_frame + 0x18)) = uVar15 + iVar6;
-          piVar8 = &(*(int *)(gen_frame + 0x14));
-        }
-        else {
-          (*(uint *)(gen_frame + 0x30)) = (*(uint *)&gen_args[1]);
-          (*(int *)(gen_frame + 0xc)) = (*(int *)&gen_args[0]);
-          (*(int *)(gen_frame + 0x10)) = ((*(uint *)&gen_args[1]) - ((*(uint *)&gen_args[5]) - uVar15)) + iVar6;
-          piVar8 = &(*(int *)(gen_frame + 0xc));
-        }
-        iVar16 = *piVar8;
-        uVar13 = uVar15;
-        uVar15 = piVar8[1];
-      } while (piVar8[1] != uVar1);
-      iVar11 = iVar11 - 1;
-      (*(int *)(gen_frame + 0x34)) = iVar11;
-      iVar7 = (*(int *)&gen_args[0]);
-    }
-  }
-  return iVar7;
 }
 

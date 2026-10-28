@@ -1,5 +1,41 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00bcde80 */
+GEN_FRAME byte F_00bcde80(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbcde80u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int * param_2 = (int *)(uintptr_t)gen_a1;
+  byte bVar1;
+  
+  bVar1 = F_00b5fec0(*param_2 + (int)param_2);
+  return bVar1;
+}
+
+/* ref: FUN_00bcdea0 */
+GEN_FRAME uint GEN_STDCALL F_00bcdea0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xbcdea0u, gen_a0, 0u, 0u, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  int * piVar1;
+  int iVar2;
+  
+  if (*param_1 == 0x424c4d54) {
+    piVar1 = param_1 + 3;
+    iVar2 = param_1[2];
+    if (iVar2 != 0) {
+      do {
+        iVar2 = iVar2 - 1;
+        if (*piVar1 == *(int *)REFG(undefined * PTR32, 0x1343188)) {
+          return (uint)(piVar1 + 2);
+        }
+        piVar1 = (int *)((int)piVar1 + piVar1[1]);
+      } while (iVar2 != 0);
+    }
+  }
+  return 0;
+}
+
 /* ref: FUN_00bcdee0 */
 GEN_FRAME byte F_00bcdee0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -11930,40 +11966,5 @@ GEN_NOFRAME uint F_00bd9a80(void)
     *(undefined4 *)(REFG(undefined4, 0x14c4e78) + 0x18) = *(undefined4 *)(REFG(undefined4, 0x14c4e78) + 0x1c);
   }
   return uVar1;
-}
-
-/* ref: Client::System::Scheduler::Clip::SpecialSelfShadowClip::vf34 */
-GEN_NOFRAME byte GEN_THISCALL F_00bd9a90(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbd9a90u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  return 1;
-}
-
-/* ref: Client::System::Scheduler::Clip::SpecialSelfShadowClip::vf33 */
-GEN_NOFRAME uint GEN_THISCALL F_00bd9aa0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbd9aa0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int iVar1;
-  int * piVar2;
-  uint uVar3;
-  
-  iVar1 = REFG(int, 0x14c4e78);
-  uVar3 = *(uint *)(this + 0x24);
-  if (REFG(int, 0x14c4e78) != 0) {
-    if (*(int *)(uVar3 + 0x10) == 0) {
-      *(undefined4 *)(REFG(int, 0x14c4e78) + 0x18) = *(undefined4 *)(REFG(int, 0x14c4e78) + 0x1c);
-    }
-    piVar2 = (int *)F_0052ed20(REFG(undefined4, 0x1375b00) GEN_EDX_FWD,*((undefined4 *)GEN_TOP((uVar3 + *(int *)(uVar3 + 0xc)))),0,0);
-    uVar3 = 0;
-    if (piVar2 != (int *)0x0) {
-      uVar3 = ((GEN_TCODE *)*(gen_code32 *)(*piVar2 + 0x4c))(piVar2 GEN_EDX_ARG);
-      *(uint *)(iVar1 + 0x18) = uVar3;
-    }
-  }
-  return uVar3;
 }
 

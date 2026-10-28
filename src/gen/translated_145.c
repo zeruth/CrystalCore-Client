@@ -1,5 +1,80 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00bf0a60 */
+GEN_FRAME byte GEN_THISCALL F_00bf0a60(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbf0a60u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  int CVar1;
+  int * piVar2;
+  byte bVar3;
+  int iVar4;
+  int * piVar5;
+  
+  piVar2 = param_1;
+  bVar3 = 0;
+  if (*param_1 != -0x20000000) {
+    piVar5 = (int *)((int)this + 8);
+    param_1 = (int *)0x10;
+    bVar3 = 0;
+    do {
+      CVar1 = piVar2[1];
+      if ((((piVar5[-1] == CVar1) ||
+           ((iVar4 = F_00b767a0(piVar5[-1]), (char)iVar4 != '\0' &&
+            (iVar4 = F_00b767a0(CVar1), (char)iVar4 != '\0')))) && (piVar5[-2] == *piVar2)) &&
+         ((*piVar5 == piVar2[2] && (piVar5[1] == piVar2[3])))) {
+        bVar3 = 1;
+      }
+      piVar5 = piVar5 + 7;
+      param_1 = (int *)((int)param_1 - 1);
+    } while (param_1 != (int *)0x0);
+  }
+  return bVar3;
+}
+
+/* ref: FUN_00bf0ae0 */
+GEN_FRAME uint GEN_THISCALL F_00bf0ae0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbf0ae0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  uint uVar1;
+  undefined4 uVar2;
+  undefined4 * puVar3;
+  undefined4 * puVar4;
+  undefined4 * puVar5;
+  
+  puVar5 = (undefined4 *)0x10;
+  puVar3 = (undefined4 *)0x2;
+  do {
+    if ((((puVar5 < (undefined4 *)0x10) ||
+         (puVar5 = (undefined4 *)((int)puVar3 - 2U),
+         (undefined4 *)((int)puVar3 - 2U) < (undefined4 *)0x10)) ||
+        (puVar5 = (undefined4 *)((int)puVar3 - 1U),
+        (undefined4 *)((int)puVar3 - 1U) < (undefined4 *)0x10)) ||
+       (puVar5 = puVar3, puVar3 < (undefined4 *)0x10)) goto LAB_00bf0b22;
+    puVar5 = (undefined4 *)((int)puVar3 + 1);
+    puVar4 = puVar3 + 1;
+    uVar1 = (int)puVar3 + 2;
+    puVar3 = puVar4;
+  } while (uVar1 < 0x10);
+  if (puVar5 < (undefined4 *)0x10) {
+LAB_00bf0b22: ;
+    *(int *)((int)this + 0x1c0) = *(int *)((int)this + 0x1c0) + 1;
+    uVar2 = *(undefined4 *)((int)this + 0x1c0);
+    puVar4 = (undefined4 *)((int)this + (int)((int)(uintptr_t)puVar5) * 0x1c);
+    *puVar4 = *param_1;
+    puVar4[1] = param_1[1];
+    puVar4[2] = param_1[2];
+    puVar4[3] = param_1[3];
+    puVar4[4] = param_1[4];
+    puVar4[5] = param_1[5];
+    puVar4[6] = uVar2;
+  }
+  return (uint)puVar4;
+}
+
 /* ref: FUN_00bf0b70 */
 GEN_FRAME unsigned int GEN_THISCALL F_00bf0b70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -20194,48 +20269,5 @@ GEN_FRAME uint GEN_THISCALL F_00c0bda0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00406ad0(this);
   }
   return (uint)this;
-}
-
-/* ref: Client::Network::Socket::RUDP2::SYNSegment::vf2 */
-GEN_NOFRAME uint F_00c0bdc0(void)
-{
-  GEN_ENTER(0xc0bdc0u, 0u, 0u, 0u, 0u);
-  return 1;
-}
-
-/* ref: Client::Network::Socket::RUDP2::SYNSegment::vf4 */
-GEN_FRAME byte GEN_THISCALL F_00c0bdd0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xc0bdd0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a1;
-  int param_2 = (int)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD);
-  if ((int)uVar1 <= param_2) {
-    *param_1 = this[4];
-    param_1[1] = this[5];
-    param_1[2] = this[6];
-    param_1[3] = this[7];
-    param_1[4] = (undefined1)((char)this[0xc] << 4);
-    param_1[5] = this[0xd];
-    param_1[6] = this[0xe];
-    param_1[7] = (undefined1)0x0;
-    param_1[8] = this[0x11];
-    param_1[9] = this[0x10];
-    param_1[10] = this[0x13];
-    param_1[0xb] = this[0x12];
-    param_1[0xc] = this[0x15];
-    param_1[0xd] = this[0x14];
-    param_1[0xe] = this[0x17];
-    param_1[0xf] = this[0x16];
-    param_1[0x10] = this[0x18];
-    param_1[0x11] = this[0x19];
-    param_1[0x12] = this[0x1a];
-    param_1[0x13] = this[0x1b];
-    return 1;
-  }
-  return 0;
 }
 

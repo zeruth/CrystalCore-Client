@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Game::Event::SpecialShopEventHandler::vf5 */
+GEN_FRAME uint GEN_THISCALL F_006d2590(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6d2590u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint in_EAX = 0;
+  uint uVar1;
+  
+  if (REFG(int, 0x1379694) == 0) {
+    return in_EAX & 0xffffff00;
+  }
+  uVar1 = F_006c3410(this GEN_EDX_FWD,param_1);
+  return uVar1;
+}
+
 /* ref: Client::Game::Event::LeveDirector::vf29 */
 GEN_FRAME uint GEN_THISCALL F_006d25b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -15647,52 +15663,5 @@ GEN_FRAME uint GEN_THISCALL F_006e2cb0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     }
   }
   return uVar2;
-}
-
-/* ref: FUN_006e2d00 */
-GEN_FRAME uint GEN_THISCALL F_006e2d00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9)
-{
-  GEN_ENTER(0x6e2d00u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 param_8 = (undefined4)gen_a8;
-  undefined4 param_9 = (undefined4)gen_a9;
-  __declspec(align(16)) undefined1 gen_frame[0x60];
-  int iVar1;
-  int * piVar2;
-  uint uVar3;
-  ulonglong uVar4;
-  
-  (*(uint *)(gen_frame + 0x58)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x5c);
-  uVar3 = 0;
-  if (param_1 != 0) {
-    if ((param_1 & 0x80000000) == 0x80000000) {
-      piVar2 = (int *)F_00748af0((undefined *)((int)this + 0x5c) GEN_EDX_FWD,param_1);
-    }
-    else {
-      piVar2 = (int *)F_006dda70(this GEN_EDX_ARG,param_1);
-    }
-    uVar3 = 0;
-    if (piVar2 != (int *)0x0) {
-      F_0042b630(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG);
-      if ((1 < (byte)param_4) && (((byte)param_4 < 4 || ((byte)param_4 == 7)))) {
-        uVar3 = F_00463610(0,param_5,(uint)(byte)param_4);
-        F_0042e430(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG,uVar3);
-      }
-      iVar1 = *piVar2;
-      uVar3 = F_0042a990(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG);
-      ((code *)*(gen_code32 *)(iVar1 + 0x78))(piVar2,uVar3,param_6,param_7,param_8,param_9);
-      uVar4 = F_0042c880(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG);
-      uVar3 = (uint)uVar4;
-    }
-  }
-  F_00c47745((*(uint *)(gen_frame + 0x58)) ^ (uint)(uint)(gen_frame + 0x5c) GEN_EDX_ARG);
-  return uVar3;
 }
 

@@ -1,5 +1,33 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0094f6d0 */
+GEN_FRAME unsigned int F_0094f6d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
+{
+  GEN_ENTER(0x94f6d0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
+  undefined4 param_4 = (undefined4)gen_a3;
+  undefined4 param_5 = (undefined4)gen_a4;
+  undefined4 param_6 = (undefined4)gen_a5;
+  undefined4 * puVar1;
+  undefined4 * puVar2;
+  
+  puVar1 = param_3;
+  for (puVar2 = param_1; puVar2 != param_2; puVar2 = puVar2 + 6) {
+    if (puVar1 != (undefined4 *)0x0) {
+      *puVar1 = *puVar2;
+      puVar1[1] = puVar2[1];
+      puVar1[2] = puVar2[2];
+      puVar1[3] = puVar2[3];
+      puVar1[4] = puVar2[4];
+      puVar1[5] = puVar2[5];
+    }
+    puVar1 = puVar1 + 6;
+  }
+  return 0;
+}
+
 /* ref: FUN_0094f720 */
 GEN_FRAME unsigned int F_0094f720(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -10878,34 +10906,5 @@ GEN_FRAME unsigned int F_00958ef0(unsigned int gen_a0, unsigned int gen_a1, unsi
     } while (puVar6 != param_2);
   }
   return 0;
-}
-
-/* ref: FUN_00958fc0 */
-GEN_FRAME uint F_00958fc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x958fc0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  int param_1 = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  int param_3 = (int)gen_a2;
-  undefined4 param_4 = (undefined4)gen_a3;
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  uint uVar4;
-  
-  iVar1 = (param_3 - param_1) / 0xc;
-  if (0x28 < iVar1) {
-    iVar1 = iVar1 + 1;
-    iVar2 = (int)(iVar1 + (iVar1 >> 0x1f & 7U)) >> 3;
-    iVar1 = iVar2 * 0xc + param_1;
-    F_00951cb0(param_1,iVar1,iVar2 * 0x18 + param_1,param_4);
-    F_00951cb0(param_2 + iVar2 * -0xc,param_2,iVar2 * 0xc + param_2,param_4);
-    iVar3 = param_3 + iVar2 * -0xc;
-    F_00951cb0(param_3 + iVar2 * -0x18,iVar3,param_3,param_4);
-    uVar4 = F_00951cb0(iVar1,param_2,iVar3,param_4);
-    return uVar4;
-  }
-  uVar4 = F_00951cb0(param_1,param_2,param_3,param_4);
-  return uVar4;
 }
 

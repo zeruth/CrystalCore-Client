@@ -1,5 +1,27 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Resource::Handle::HardwareCursorResourceHandle::vf0 */
+GEN_FRAME uint GEN_THISCALL F_0052b820(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x52b820u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  int * piVar1;
+  
+  piVar1 = *(int * PTR32 *)(this + 0x98);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[44])REFP(0x109990c));
+  if (piVar1 != (int *)0x0) {
+    piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_FWD)));
+    ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(this + 0x98));
+    *(undefined4 *)(this + 0x98) = 0;
+  }
+  F_00508230(this GEN_EDX_ARG);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: Client::System::Resource::Handle::CursorResourceHandle::vf15 */
 GEN_NOFRAME uint F_0052b880(void)
 {
@@ -8120,18 +8142,5 @@ GEN_FRAME uint GEN_THISCALL F_005333f0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   in_ecx[1] = param_2;
   in_ecx[2] = (undefined4)gen_fl2bits((float)((float10)param_3 * (float10)param_3));
   return (uint)in_ecx;
-}
-
-/* ref: FUN_00533410 */
-GEN_FRAME uint GEN_THISCALL F_00533410(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x533410u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[2])REFP(0x109ca18));
-  *(undefined4 *)((int)this + 4) = param_1;
-  *(undefined4 *)((int)this + 8) = param_2;
-  return (uint)this;
 }
 

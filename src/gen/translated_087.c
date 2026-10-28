@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00914970 */
+GEN_FRAME uint F_00914970(unsigned int gen_a0)
+{
+  GEN_ENTER(0x914970u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 0x14;
+}
+
 /* ref: FUN_00914980 */
 GEN_FRAME uint F_00914980(unsigned int gen_a0)
 {
@@ -7512,40 +7520,6 @@ GEN_FRAME uint GEN_THISCALL F_0091b0c0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
          (*(byte *)((int)this_00 + 0xfb) ^ *(byte *)((int)this_00 + 0xf9)) & 0x77 ^
          *(byte *)((int)this_00 + 0xf9) | 8;
     *this_00 = (*(undefined * PTR32 (*)[62])REFP(0x10cfe8c));
-    F_005a8d00(this_00 GEN_EDX_ARG,param_2,param_3);
-    uVar1 = F_0057fac0(this GEN_EDX_ARG,this_00,param_1);
-    if (uVar1 != 0) {
-      return (uint)this_00;
-    }
-    ((GEN_TCODE *)*(gen_code32 *)*this_00)(this_00 GEN_EDX_ARG,1);
-  }
-  return 0;
-}
-
-/* ref: FUN_0091b160 */
-GEN_FRAME uint GEN_THISCALL F_0091b160(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x91b160u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  uint uVar1;
-  undefined4 * this_00;
-  undefined4 uVar2;
-  
-  uVar2 = 0;
-  uVar1 = F_00404270();
-  this_00 = (undefined4 *)F_00406bd0(0x180,0,uVar1,uVar2);
-  if (this_00 != (undefined4 *)0x0) {
-    F_005903f0(this_00 GEN_EDX_ARG);
-    *(byte *)((int)this_00 + 0xf9) = *(byte *)((int)this_00 + 0xf9) | 0x84;
-    this_00[0x48] = this_00[0x48] | 0x50;
-    *(byte *)(this_00 + 0x3e) = *(byte *)(this_00 + 0x3e) | 0x80;
-    *(byte *)((int)this_00 + 0xfb) =
-         (*(byte *)((int)this_00 + 0xfb) ^ *(byte *)((int)this_00 + 0xf9)) & 0x77 ^
-         *(byte *)((int)this_00 + 0xf9) | 8;
-    *this_00 = (*(undefined * PTR32 (*)[62])REFP(0x10cff8c));
     F_005a8d00(this_00 GEN_EDX_ARG,param_2,param_3);
     uVar1 = F_0057fac0(this GEN_EDX_ARG,this_00,param_1);
     if (uVar1 != 0) {

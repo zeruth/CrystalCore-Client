@@ -1,5 +1,18 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::LayoutEngine::Layer::SoundLayoutInstance::vf0 */
+GEN_FRAME uint GEN_THISCALL F_0061a650(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x61a650u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  F_005edf50(this GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: FUN_0061a680 */
 GEN_FRAME uint GEN_THISCALL F_0061a680(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -10237,15 +10250,6 @@ GEN_NOFRAME byte GEN_THISCALL F_00625af0(unsigned int gen_a0 GEN_EDX_PARAM)
   F_009d53c0(REFG(void * PTR32, 0x1487c90) GEN_EDX_FWD,(uint)(*(char *)((int)this + 0x29) == '\0'));
   F_00984440(REFG(undefined4, 0x1487c8c) GEN_EDX_ARG,(uint)(*(char *)((int)this + 0x2a) == '\0'));
   F_00984460(REFG(undefined4, 0x1487c8c) GEN_EDX_ARG,(uint)(*(char *)((int)this + 0x2b) == '\0'));
-  return 1;
-}
-
-/* ref: FUN_00625b40 */
-GEN_NOFRAME byte GEN_THISCALL F_00625b40(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x625b40u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  *(undefined1 *)(REFG(int, 0x1487c58) + 0x8018) = *(undefined1 *)(in_ecx + 0x16);
   return 1;
 }
 

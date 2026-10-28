@@ -1,5 +1,42 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005baa90 */
+GEN_FRAME float10 GEN_THISCALL F_005baa90(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1, float gen_a2)
+{
+  GEN_ENTER(0x5baa90u, gen_a0, gen_trace_f(gen_a1), gen_trace_f(gen_a2), 0u);
+  char * in_ecx = (char *)(uintptr_t)gen_a0;
+  float param_2 = (float)gen_a1;
+  float param_3 = (float)gen_a2;
+  char cVar1;
+  bool bVar2;
+  float10 fVar3;
+  
+  cVar1 = *in_ecx;
+  if (cVar1 == '\0') {
+    *(float *)(in_ecx + 0x20) = param_2;
+    return (float10)*(float *)(in_ecx + 0x20);
+  }
+  if (cVar1 == '\x01') {
+    *(float *)(in_ecx + 0x20) =
+         ((float)GEN_TOF((((float10)1 - (float10)*(float *)(in_ecx + 0x14)) * (float10)param_2 +
+                (float10)param_3 * (float10)*(float *)(in_ecx + 0x14))));
+    return (float10)*(float *)(in_ecx + 0x20);
+  }
+  if ((cVar1 == '\x02') &&
+     ((bVar2 = GEN_ISNAN((float10)*(float *)(in_ecx + 0x18)) || GEN_ISNAN((float10)param_2),
+      bVar2 == (bVar2 || (float10)*(float *)(in_ecx + 0x18) == (float10)param_2) ||
+      (bVar2 = GEN_ISNAN((float10)*(float *)(in_ecx + 0x1c)) || GEN_ISNAN((float10)param_3),
+      bVar2 == (bVar2 || (float10)*(float *)(in_ecx + 0x1c) == (float10)param_3))))) {
+    *(float *)(in_ecx + 0x18) = param_2;
+    *(float *)(in_ecx + 0x1c) = param_3;
+    fVar3 = F_0055e870(param_2,param_3,*(float *)(in_ecx + 4),*(float *)(in_ecx + 8),
+                         *(float *)(in_ecx + 0xc),*(float *)(in_ecx + 0x10));
+    *(float *)(in_ecx + 0x20) = (float)fVar3;
+    return (float10)*(float *)(in_ecx + 0x20);
+  }
+  return (float10)*(float *)(in_ecx + 0x20);
+}
+
 /* ref: FUN_005bab70 */
 GEN_FRAME uint GEN_THISCALL F_005bab70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -4657,16 +4694,5 @@ GEN_FRAME uint GEN_STDCALL F_005bf650(unsigned int gen_a0, unsigned int gen_a1)
   
   uVar1 = F_004296a0(param_1 * 4,param_2,400);
   return uVar1;
-}
-
-/* ref: FUN_005bf690 */
-GEN_FRAME uint GEN_THISCALL F_005bf690(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5bf690u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  *(undefined4 *)this = *param_1;
-  *(undefined4 *)((int)this + 4) = param_1[1];
-  return (uint)this;
 }
 

@@ -1,5 +1,55 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Apricot::Engine::Data::Runtime::CylinderModelEmitter::vf0 */
+GEN_NOFRAME uint GEN_THISCALL F_009e53d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e53d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  *(undefined * PTR32 * PTR32 *)(this + 0x8c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x84) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x80) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)(this + 0x74) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x6c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x68) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)(this + 0x5c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x54) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x50) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)(this + 0x44) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x3c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x38) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)(this + 0x2c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x24) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x20) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)(this + 0x14) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0xc) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 8) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[11])REFP(0x10dd3f8));
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::ModelEmitter::vf0 */
+GEN_NOFRAME uint GEN_THISCALL F_009e5430(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e5430u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  *(undefined * PTR32 * PTR32 *)(this + 0x5c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x54) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x50) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)(this + 0x44) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x3c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x38) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)(this + 0x2c) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x24) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0x20) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)(this + 0x14) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 0xc) = (*(undefined * PTR32 (*)[6])REFP(0x10dd20c));
+  *(undefined * PTR32 * PTR32 *)(this + 8) = (*(undefined * PTR32 (*)[6])REFP(0x10dd228));
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[8])REFP(0x10dd428));
+  return (uint)this;
+}
+
 /* ref: Apricot::Engine::Data::Runtime::SphereModelEmitter::vf0 */
 GEN_NOFRAME uint GEN_THISCALL F_009e5470(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -8465,74 +8515,5 @@ GEN_FRAME uint GEN_THISCALL F_009ec970(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     *(undefined4 * PTR32 *)((int)this + 4) = puVar3 + (iVar2 - iVar1 >> 2);
   }
   return (uint)puVar5;
-}
-
-/* ref: FUN_009eca20 */
-GEN_FRAME uint GEN_THISCALL F_009eca20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9eca20u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  uint uVar4;
-  
-  uVar4 = (*(int *)((int)this + 8) - *(int *)this) / 0xa4;
-  if (uVar4 < param_1) {
-    iVar3 = param_1 * 0xa4;
-    if ((REFG(undefined * PTR32, 0x14a0a14) == (code *)0x0) || (iVar3 == 0)) {
-      param_1 = 0;
-    }
-    else {
-      param_1 = ((code *)REFG(gen_code32, 0x14a0a14))(iVar3,0x10,&REFG(undefined, 0x10daa3c),&REFG(undefined, 0x10daa38),0);
-    }
-    F_009ea350(*(undefined4 *)this,*(undefined4 *)((int)this + 4),param_1);
-    iVar1 = *(int *)this;
-    iVar2 = *(int *)((int)this + 4);
-    if ((iVar1 != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) {
-      ((code *)REFG(gen_code32, 0x14a0a18))(iVar1);
-    }
-    *(uint *)((int)this + 8) = iVar3 + param_1;
-    *(uint *)((int)this + 4) = ((iVar2 - iVar1) / 0xa4) * 0xa4 + param_1;
-    *(uint *)this = param_1;
-    uVar4 = param_1;
-  }
-  return uVar4;
-}
-
-/* ref: FUN_009ecaf0 */
-GEN_FRAME uint GEN_THISCALL F_009ecaf0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9ecaf0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  uint uVar4;
-  
-  uVar4 = (*(int *)((int)this + 8) - *(int *)this) / 0x2a;
-  if (uVar4 < param_1) {
-    iVar3 = param_1 * 0x2a;
-    if ((REFG(undefined * PTR32, 0x14a0a14) == (code *)0x0) || (iVar3 == 0)) {
-      param_1 = 0;
-    }
-    else {
-      param_1 = ((code *)REFG(gen_code32, 0x14a0a14))(iVar3,0x10,&REFG(undefined, 0x10daa3c),&REFG(undefined, 0x10daa38),0);
-    }
-    F_009e7310(*(undefined4 *)this,*(undefined4 *)((int)this + 4),param_1,(int)this + 0xc,0,
-                 param_1);
-    iVar1 = *(int *)this;
-    iVar2 = *(int *)((int)this + 4);
-    if ((iVar1 != 0) && (REFG(undefined * PTR32, 0x14a0a18) != (code *)0x0)) {
-      ((code *)REFG(gen_code32, 0x14a0a18))(iVar1);
-    }
-    *(uint *)((int)this + 8) = iVar3 + param_1;
-    *(uint *)((int)this + 4) = ((iVar2 - iVar1) / 0x2a) * 0x2a + param_1;
-    *(uint *)this = param_1;
-    uVar4 = param_1;
-  }
-  return uVar4;
 }
 

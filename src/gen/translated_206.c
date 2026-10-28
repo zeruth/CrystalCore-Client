@@ -1,5 +1,144 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::ThinkLastOrder::vf16 */
+GEN_FRAME byte GEN_THISCALL F_00ffb860(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xffb860u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * param_1 = (undefined *)(uintptr_t)gen_a1;
+  __declspec(align(16)) undefined1 gen_frame[0x80];
+  int * piVar1;
+  uint uVar2;
+  undefined * pvVar3;
+  uint uVar4;
+  undefined * this_00;
+  int iVar5;
+  undefined1 * puVar6;
+  
+  (*(uint *)(gen_frame + 0x78)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x7c);
+  F_00ea81c0(param_1 GEN_EDX_FWD);
+  F_0042cc20(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG,"classname",REFG(undefined4, 0x108cc50));
+  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 4))(this GEN_EDX_ARG)));
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 8))(piVar1 GEN_EDX_ARG);
+  pvVar3 = (undefined *)F_00ea8380(param_1 GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x4)));
+  F_00ea7fb0(pvVar3 GEN_EDX_ARG,uVar2);
+  F_0042c880(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG);
+  F_0042cc20(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG,"classid",REFG(undefined4, 0x108cc50));
+  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 4))(this GEN_EDX_ARG)));
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 4))(piVar1 GEN_EDX_ARG);
+  pvVar3 = (undefined *)F_00ea8380(param_1 GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x4)));
+  F_00ea7e80(pvVar3 GEN_EDX_ARG,uVar2 & 0xffff);
+  F_0042c880(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG);
+  F_0042cc20(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG,"content",REFG(undefined4, 0x108cc50));
+  pvVar3 = (undefined *)F_00ea8380(param_1 GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x4)));
+  F_0042c880(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG);
+  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 4))(this GEN_EDX_ARG)));
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x14))(piVar1 GEN_EDX_ARG);
+  F_00ea8220(pvVar3 GEN_EDX_ARG);
+  F_00ea83e0(pvVar3 GEN_EDX_ARG,uVar2,(int)uVar2 >> 0x1f);
+  uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x5c))(this GEN_EDX_ARG,pvVar3,1);
+  if ((char)uVar4 == '\0') {
+    F_00c47745((*(uint *)(gen_frame + 0x78)) ^ (uint)(uint)(gen_frame + 0x7c) GEN_EDX_ARG);
+    return 0;
+  }
+  F_0042cc20(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG,"memberid",REFG(undefined4, 0x108cc50));
+  pvVar3 = (undefined *)F_00ea8380(param_1 GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x4)));
+  F_0042c880(((undefined1 *)(gen_frame + 0x4)) GEN_EDX_ARG);
+  F_00ea8220(pvVar3 GEN_EDX_ARG);
+  F_00ea83e0(pvVar3 GEN_EDX_ARG,uVar2,(int)uVar2 >> 0x1f);
+  iVar5 = 0;
+  if (0 < (int)uVar2) {
+    do {
+      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 4))(this GEN_EDX_ARG)));
+      uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,iVar5);
+      F_00c472af(((undefined1 *)(gen_frame + 0x58)),0x20,&REFG(undefined, 0x11585f0),uVar4,0);
+      puVar6 = ((undefined1 *)(gen_frame + 0x58));
+      this_00 = (undefined *)F_00e9e450(pvVar3 GEN_EDX_ARG,iVar5,iVar5 >> 0x1f);
+      F_00ea7fb0(this_00 GEN_EDX_ARG,puVar6);
+      iVar5 = iVar5 + 1;
+    } while (iVar5 < (int)uVar2);
+  }
+  F_00c47745((*(uint *)(gen_frame + 0x78)) ^ (uint)(uint)(gen_frame + 0x7c) GEN_EDX_ARG);
+  return 1;
+}
+
+/* ref: Application::Network::WorkDefinitions::GatheringMapWork_TypeInfo::vf1 */
+GEN_NOFRAME uint F_00ffba60(void)
+{
+  GEN_ENTER(0xffba60u, 0u, 0u, 0u, 0u);
+  return 0x2a;
+}
+
+/* ref: Application::Network::WorkDefinitions::GatheringMapWork_TypeInfo::vf2 */
+GEN_NOFRAME uint F_00ffba70(void)
+{
+  GEN_ENTER(0xffba70u, 0u, 0u, 0u, 0u);
+  return (uint)REFG(undefined * PTR32, 0x136bd44);
+}
+
+/* ref: Application::Network::WorkDefinitions::GatheringMapWork_TypeInfo::vf3 */
+GEN_FRAME uint GEN_THISCALL F_00ffba80(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xffba80u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(uint *)(&REFG(undefined, 0x12aff8c) + param_1 * 4);
+}
+
+/* ref: FUN_00ffbaa0 */
+GEN_FRAME uint GEN_STDCALL F_00ffbaa0(unsigned int gen_a0)
+{
+  GEN_ENTER(0xffbaa0u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return *(uint *)(&REFG(undefined, 0x12affa4) + param_1 * 4);
+}
+
+/* ref: Application::Network::WorkDefinitions::GatheringMapWork_TypeInfo::vf4 */
+GEN_FRAME uint GEN_THISCALL F_00ffbac0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xffbac0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint uVar1;
+  uint uVar2;
+  
+  uVar2 = 0;
+  do {
+    uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD,uVar2);
+    if (uVar1 == param_1) {
+      return uVar2;
+    }
+    uVar2 = uVar2 + 1;
+  } while ((int)uVar2 < 6);
+  return 0xffffffff;
+}
+
+/* ref: FUN_00ffbb00 */
+GEN_FRAME uint GEN_STDCALL F_00ffbb00(unsigned int gen_a0)
+{
+  GEN_ENTER(0xffbb00u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 - 0x1a0;
+}
+
+/* ref: Application::Network::WorkDefinitions::GatheringMapWork_TypeInfo::vf6 */
+GEN_FRAME uint GEN_THISCALL F_00ffbb10(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xffbb10u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return (uint)(&REFG(undefined * PTR32, 0x136bd2c))[(int)(param_1)];
+}
+
+/* ref: Application::Network::WorkDefinitions::GatheringMapWork_TypeInfo::vf7 */
+GEN_FRAME uint GEN_THISCALL F_00ffbb30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xffbb30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(uint *)(&REFG(undefined, 0x12aff44) + param_1 * 4);
+}
+
 /* ref: Application::Network::WorkDefinitions::GatheringMapWork_TypeInfo::vf8 */
 GEN_FRAME uint GEN_THISCALL F_00ffbb50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -18943,153 +19082,5 @@ GEN_FRAME uint GEN_THISCALL F_01016b60(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD,param_2);
   *param_5 = uVar1;
   return 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::AttachMateriaRequest_TypeInfo::vf16 */
-GEN_FRAME uint GEN_THISCALL F_01016b80(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7)
-{
-  GEN_ENTER(0x1016b80u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  uint * param_7 = (uint *)(uintptr_t)gen_a7;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD,param_2);
-  *param_7 = uVar1;
-  return 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::AttachMateriaRequest_TypeInfo::vf15 */
-GEN_FRAME uint GEN_THISCALL F_01016ba0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x1016ba0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int param_2 = (int)gen_a2;
-  uint uVar1;
-  uint uVar2;
-  int iVar3;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_FWD,param_1,0,param_2);
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,1,uVar1 + param_2);
-  iVar3 = uVar1 + param_2 + uVar2;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,2,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,3,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,4,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,5,iVar3);
-  return uVar1 + (iVar3 - param_2);
-}
-
-/* ref: Application::Network::WorkDefinitions::AttachMateriaRequest_TypeInfo::vf19 */
-GEN_FRAME uint GEN_THISCALL F_01016c20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x1016c20u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  uint uVar2;
-  int iVar3;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x50))(this GEN_EDX_FWD,0,param_1,param_2);
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x50))(this GEN_EDX_ARG,1,uVar1 + param_1,param_2);
-  iVar3 = uVar1 + param_1 + uVar2;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x50))(this GEN_EDX_ARG,2,iVar3,param_2);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x50))(this GEN_EDX_ARG,3,iVar3,param_2);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x50))(this GEN_EDX_ARG,4,iVar3,param_2);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x50))(this GEN_EDX_ARG,5,iVar3,param_2);
-  return uVar1 + (iVar3 - param_1);
-}
-
-/* ref: FUN_01016ca0 */
-GEN_NOFRAME uint GEN_THISCALL F_01016ca0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x1016ca0u, gen_a0, 0u, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  *in_ecx = (*(undefined * PTR32 (*)[27])REFP(0x12b0af4));
-  in_ecx[1] = 9999;
-  in_ecx[2] = 9999;
-  in_ecx[3] = 0;
-  in_ecx[4] = 0;
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_01016cc0 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_01016cc0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x1016cc0u, gen_a0, 0u, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  *in_ecx = (*(undefined * PTR32 (*)[17])REFP(0x1158514));
-  return;
-}
-
-/* ref: Application::Network::WorkDefinitions::AttachMateriaRequest::vf2 */
-GEN_FRAME uint GEN_THISCALL F_01016cd0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1016cd0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x136c238) + 0x10))))(&REFG(undefined * PTR32, 0x136c238),param_1);
-  return ((int)uVar1 < 0) - 1 & (uint)this;
-}
-
-/* ref: FUN_01016d00 */
-GEN_FRAME uint GEN_THISCALL F_01016d00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x1016d00u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((REFG(undefined * PTR32, 0x136c238) + 0x10))))(&REFG(undefined * PTR32, 0x136c238),param_1);
-  return ((int)uVar1 < 0) - 1 & (uint)this;
-}
-
-/* ref: Application::Network::WorkDefinitions::AttachMateriaRequest::vf4 */
-GEN_FRAME uint GEN_THISCALL F_01016d30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1016d30u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  switch((unsigned int)(uintptr_t)(param_2)) {
-  case 0: ;
-    return in_ecx + 4;
-  case 1: ;
-    return in_ecx + 6;
-  case 2: ;
-    return in_ecx + 8;
-  case 3: ;
-    return in_ecx + 10;
-  case 4: ;
-    return in_ecx + 0xc;
-  case 5: ;
-    return in_ecx + 0x10;
-  default: ;
-    return 0;
-  }
-}
-
-/* ref: Application::Network::WorkDefinitions::AttachMateriaRequest::vf3 */
-GEN_NOFRAME uint GEN_THISCALL F_01016d90(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x1016d90u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  return 0;
 }
 

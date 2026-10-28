@@ -1,5 +1,49 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Scheduler::Base::ChildSchedulerTimeline::vf32 */
+GEN_NOFRAME uint GEN_THISCALL F_00c244a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
+{
+  GEN_ENTER(0xc244a0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 param_4 = (undefined4)gen_a4;
+  undefined4 param_5 = (undefined4)gen_a5;
+  undefined4 param_6 = (undefined4)gen_a6;
+  undefined4 param_7 = (undefined4)gen_a7;
+  undefined4 param_8 = (undefined4)gen_a8;
+  int * piVar1;
+  uint uVar2;
+  
+  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 100))(this GEN_EDX_FWD)));
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x80))
+                    (piVar1 GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
+  return uVar2;
+}
+
+/* ref: Client::System::Scheduler::Base::ChildSchedulerTimeline::vf33 */
+GEN_FRAME uint GEN_THISCALL F_00c244c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
+{
+  GEN_ENTER(0xc244c0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  undefined4 param_4 = (undefined4)gen_a4;
+  undefined4 param_5 = (undefined4)gen_a5;
+  undefined4 param_6 = (undefined4)gen_a6;
+  undefined4 param_7 = (undefined4)gen_a7;
+  undefined4 param_8 = (undefined4)gen_a8;
+  int * piVar1;
+  uint uVar2;
+  
+  piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 100))(this GEN_EDX_FWD)));
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x84))
+                    (piVar1 GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
+  return uVar2;
+}
+
 /* ref: Client::System::Scheduler::Base::ChildSchedulerTimeline::vf34 */
 GEN_NOFRAME uint GEN_THISCALL F_00c244e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
 {
@@ -11291,36 +11335,5 @@ GEN_FRAME uint GEN_THISCALL F_00c31970(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   F_00e351c0(this GEN_EDX_FWD,param_1);
   *(undefined4 *)((int)this + 0x78) = 0;
   return (uint)this;
-}
-
-/* ref: FUN_00c31990 */
-GEN_NOFRAME uint GEN_THISCALL F_00c31990(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xc31990u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint uVar1;
-  
-  if (*(undefined * PTR32 *)((int)this + 0x78) != (undefined *)0x0) {
-    uVar1 = F_00c31900(*(undefined * PTR32 *)((int)this + 0x78) GEN_EDX_FWD);
-    if (uVar1 != 0) {
-      if (*(int *)(uVar1 + 0x20) != 0) {
-        return *((uint *)GEN_TOP((*(int *)(uVar1 + 0x20) + 8)));
-      }
-      return *(uint *)(uVar1 + 0x1c);
-    }
-  }
-  return 0;
-}
-
-/* ref: FUN_00c319e0 */
-GEN_FRAME byte GEN_THISCALL F_00c319e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xc319e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  if ((*(int *)this != 0) && (*(int *)this == *param_1)) {
-    return *(int *)((int)this + 4) == param_1[1];
-  }
-  return 0;
 }
 

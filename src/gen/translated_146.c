@@ -1,5 +1,48 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Network::Socket::RUDP2::SYNSegment::vf2 */
+GEN_NOFRAME uint F_00c0bdc0(void)
+{
+  GEN_ENTER(0xc0bdc0u, 0u, 0u, 0u, 0u);
+  return 1;
+}
+
+/* ref: Client::Network::Socket::RUDP2::SYNSegment::vf4 */
+GEN_FRAME byte GEN_THISCALL F_00c0bdd0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xc0bdd0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * param_1 = (undefined *)(uintptr_t)gen_a1;
+  int param_2 = (int)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD);
+  if ((int)uVar1 <= param_2) {
+    *param_1 = this[4];
+    param_1[1] = this[5];
+    param_1[2] = this[6];
+    param_1[3] = this[7];
+    param_1[4] = (undefined1)((char)this[0xc] << 4);
+    param_1[5] = this[0xd];
+    param_1[6] = this[0xe];
+    param_1[7] = (undefined1)0x0;
+    param_1[8] = this[0x11];
+    param_1[9] = this[0x10];
+    param_1[10] = this[0x13];
+    param_1[0xb] = this[0x12];
+    param_1[0xc] = this[0x15];
+    param_1[0xd] = this[0x14];
+    param_1[0xe] = this[0x17];
+    param_1[0xf] = this[0x16];
+    param_1[0x10] = this[0x18];
+    param_1[0x11] = this[0x19];
+    param_1[0x12] = this[0x1a];
+    param_1[0x13] = this[0x1b];
+    return 1;
+  }
+  return 0;
+}
+
 /* ref: FUN_00c0bed0 */
 GEN_FRAME byte GEN_THISCALL F_00c0bed0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -10554,35 +10597,5 @@ GEN_NOFRAME uint F_00c176f0(unsigned int gen_a0)
   fVar1 = F_00b9c8e0(param_1,1);
   F_00b9ade0(param_1,(double)fVar1 / *(double *)&REFG(undefined, 0x110ea58));
   return 1;
-}
-
-/* ref: FUN_00c17720 */
-GEN_NOFRAME uint F_00c17720(unsigned int gen_a0)
-{
-  GEN_ENTER(0xc17720u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  float fVar1;
-  
-  fVar1 = F_00b9c8e0(param_1,1);
-  F_00b9ade0(param_1,(double)fVar1 * *(double *)&REFG(undefined, 0x110ea58));
-  return 1;
-}
-
-/* ref: FUN_00c17750 */
-GEN_NOFRAME uint F_00c17750(unsigned int gen_a0)
-{
-  GEN_ENTER(0xc17750u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  double dVar1;
-  float fVar2;
-  int * _Y;
-  
-  _Y = &(*(int *)(gen_frame + 0xc));
-  fVar2 = F_00b9c8e0(param_1,1);
-  dVar1 = F_00c52990((double)fVar2,_Y);
-  F_00b9ade0(param_1,dVar1);
-  F_00b9ae00(param_1,(*(int *)(gen_frame + 0xc)));
-  return 2;
 }
 

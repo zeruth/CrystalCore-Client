@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00bb0a30 */
+GEN_FRAME byte GEN_THISCALL F_00bb0a30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbb0a30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  return *(int *)((int)this + 8) == *(int *)(param_1 + 8);
+}
+
+/* ref: FUN_00bb0ae0 */
+GEN_FRAME uint GEN_THISCALL F_00bb0ae0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbb0ae0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: FUN_00bb0b20 */
 GEN_FRAME uint GEN_THISCALL F_00bb0b20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -10079,53 +10100,6 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_00bba120(unsigned int gen_a0 GEN_EDX_PAR
     ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_FWD);
     *(ushort *)((int)this + 0x36) = *(ushort *)((int)this + 0x36) | 1;
   }
-  return;
-}
-
-/* ref: FUN_00bba140 */
-GEN_FRAME unsigned int GEN_THISCALL F_00bba140(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, float gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0xbba140u, gen_a0, gen_a1, gen_trace_f(gen_a2), gen_a3);
-  int param_1 = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  float param_3 = (float)gen_a2;
-  undefined4 param_4 = (undefined4)gen_a3;
-  int * piVar1;
-  int iVar2;
-  int * piVar3;
-  
-  piVar3 = (int *)(param_1 + 0x14);
-  iVar2 = 2;
-  do {
-    piVar1 = (int *)*piVar3;
-    if (piVar1 != (int *)0x0) {
-      ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 8))(piVar1 GEN_EDX_FWD,param_1,param_2,(undefined4)gen_fl2bits(param_3),param_4);
-    }
-    piVar3 = piVar3 + 1;
-    iVar2 = iVar2 - 1;
-  } while (iVar2 != 0);
-  return;
-}
-
-/* ref: FUN_00bba180 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00bba180(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xbba180u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  int * piVar2;
-  int iVar3;
-  
-  piVar2 = (int *)((int)this + 0x14);
-  iVar3 = 2;
-  do {
-    piVar1 = (int *)*piVar2;
-    if (piVar1 != (int *)0x0) {
-      ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x10))(piVar1 GEN_EDX_FWD,this);
-    }
-    piVar2 = piVar2 + 1;
-    iVar3 = iVar3 - 1;
-  } while (iVar3 != 0);
   return;
 }
 

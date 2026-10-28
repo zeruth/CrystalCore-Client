@@ -1,5 +1,37 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0079b6c0 */
+GEN_FRAME unsigned int GEN_THISCALL F_0079b6c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x79b6c0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  undefined * param_2 = (undefined *)(uintptr_t)gen_a2;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  undefined4 uVar1;
+  byte bVar2;
+  undefined * this_00;
+  uint uVar3;
+  
+  if ((param_1 < 100) && (this_00 = (undefined *)F_00561530(param_2 GEN_EDX_FWD,4), this_00 != (undefined *)0x0)) {
+    uVar3 = F_0055dcb0();
+    uVar3 = F_0055b9a0(uVar3 GEN_EDX_ARG);
+    if (*(int *)(uVar3 + 0xac) != 0) {
+      uVar1 = *((undefined4 *)GEN_TOP((*((int *)GEN_TOP((*(int *)(uVar3 + 0xac) + 0x20))) + param_1 * 8)));
+      bVar2 = F_00584440(this_00 GEN_EDX_ARG,uVar1);
+      if (bVar2 != 0) {
+        F_00560760(((undefined4 *)(gen_frame + 0x0)) GEN_EDX_ARG);
+        bVar2 = *(byte *)((int)this + 0x13a);
+        ((undefined4 *)(gen_frame + 0x0))[0] = uVar1;
+        uVar1 = *(undefined4 *)((int)param_2 + 0x1e4);
+        uVar3 = F_0055dcb0();
+        F_00588780((undefined *)(uVar3 + 0xe0) GEN_EDX_ARG,2,(uint)bVar2,uVar1,((undefined4 *)(gen_frame + 0x0)),0,0);
+      }
+    }
+  }
+  return;
+}
+
 /* ref: FUN_0079b770 */
 GEN_FRAME uint GEN_THISCALL F_0079b770(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -10372,42 +10404,5 @@ GEN_NOFRAME uint GEN_THISCALL F_007a60c0(unsigned int gen_a0 GEN_EDX_PARAM)
     uVar1 = F_0059b860(*(undefined * PTR32 *)(uVar2 + 0x14) GEN_EDX_ARG,*(undefined4 *)(uVar1 + 4),0);
   }
   return uVar1;
-}
-
-/* ref: FUN_007a6100 */
-GEN_NOFRAME uint GEN_THISCALL F_007a6100(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x7a6100u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  F_005903f0(this GEN_EDX_FWD);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10cbe04));
-  *(undefined4 *)((int)this + 0x180) = 0;
-  *(undefined4 *)((int)this + 0x184) = 0;
-  *(undefined4 *)((int)this + 0x188) = 0;
-  *(undefined4 *)((int)this + 0x18c) = 0;
-  *(undefined4 *)((int)this + 400) = 0;
-  *(undefined4 *)((int)this + 0x194) = 0;
-  *(undefined4 *)((int)this + 0x198) = 0;
-  *(undefined4 *)((int)this + 0x19c) = 0;
-  *(undefined4 *)((int)this + 0x1a0) = 0;
-  *(undefined4 *)((int)this + 0x1a4) = 0;
-  *(undefined4 *)((int)this + 0x1a8) = 0;
-  *(undefined4 *)((int)this + 0x1ac) = 0;
-  *(undefined4 *)((int)this + 0x1b0) = 0;
-  *(undefined4 *)((int)this + 0x1b4) = 0;
-  *(undefined4 *)((int)this + 0x1b8) = 0;
-  *(undefined4 *)((int)this + 0x1bc) = 0;
-  *(undefined4 *)((int)this + 0x1c0) = 0;
-  *(undefined4 *)((int)this + 0x1c4) = 0;
-  *(undefined4 *)((int)this + 0x1c8) = 0;
-  *(undefined4 *)((int)this + 0x1cc) = 0;
-  *(undefined4 *)((int)this + 0x1d0) = 0;
-  *(undefined4 *)((int)this + 0x1d4) = 0;
-  *(undefined4 *)((int)this + 0x1d8) = 0;
-  *(undefined4 *)((int)this + 0x1dc) = 0;
-  *(undefined4 *)((int)this + 0x1e0) = 0;
-  *(byte *)((int)this + 0xf9) = *(byte *)((int)this + 0xf9) | 0x40;
-  *(byte *)((int)this + 0xf8) = *(byte *)((int)this + 0xf8) | 0x20;
-  return (uint)this;
 }
 

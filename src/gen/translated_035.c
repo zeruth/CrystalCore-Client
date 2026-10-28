@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Component::GUI2::AtkComponentBase::vf9 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_005cd0d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5cd0d0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return;
+}
+
 /* ref: Component::GUI2::AtkComponentBase::vf14 */
 GEN_NOFRAME uint GEN_THISCALL F_005cd0e0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -8596,64 +8605,6 @@ GEN_FRAME uint GEN_THISCALL F_005d4590(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   uint param_1 = (uint)gen_a1;
   F_005a1d20(this GEN_EDX_FWD);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_005d45c0 */
-GEN_FRAME uint GEN_THISCALL F_005d45c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5d45c0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  int iVar1;
-  undefined4 * this_00;
-  uint uVar2;
-  int iVar3;
-  undefined4 * puVar4;
-  undefined4 * puVar5;
-  
-  if ((param_1 & 2) != 0) {
-    iVar1 = *(int *)((int)this - 4);
-    iVar3 = iVar1 - 1;
-    (*(int * PTR32 *)(gen_frame + 0x8)) = (int *)((int)this - 4);
-    if (-1 < iVar3) {
-      puVar4 = (undefined4 *)((int)this + iVar1 * 8 + 4);
-      do {
-        puVar5 = puVar4 - 2;
-        if (((uint)puVar4[-3] >> 5 & 1) != 0) {
-          this_00 = (undefined4 *)*puVar5;
-          if (this_00 != (undefined4 *)0x0) {
-            uVar2 = puVar4[-3] & 0xf;
-            if (uVar2 == 9) {
-              F_00488040(this_00 GEN_EDX_FWD,((undefined1 *)(gen_frame + 0x4)),*this_00,this_00[1]);
-              F_00488dc0(this_00 GEN_EDX_ARG);
-              F_00406ad0(this_00);
-            }
-            else if ((uVar2 == 6) || (uVar2 == 7)) {
-              F_00406ad0(this_00);
-              *puVar5 = 0;
-            }
-          }
-          *puVar5 = 0;
-        }
-        iVar3 = iVar3 - 1;
-        puVar4[-3] = 0;
-        puVar4 = puVar5;
-      } while (-1 < iVar3);
-    }
-    if ((param_1 & 1) != 0) {
-      F_00406b30((*(int * PTR32 *)(gen_frame + 0x8)));
-    }
-    return (uint)(*(int * PTR32 *)(gen_frame + 0x8));
-  }
-  if ((*(uint *)((int)(uintptr_t)this) >> 5 & 1) != 0) {
-    F_005a0260(this GEN_EDX_ARG);
-  }
-  *(undefined4 *)this = 0;
   if ((param_1 & 1) != 0) {
     F_00406ad0(this);
   }

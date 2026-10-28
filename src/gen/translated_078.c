@@ -1,5 +1,99 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_008167c0 */
+GEN_NOFRAME uint GEN_THISCALL F_008167c0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x8167c0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * pvVar1;
+  uint uVar2;
+  int * piVar3;
+  int iVar4;
+  
+  iVar4 = 0;
+  piVar3 = (int *)((int)this + 0x2b0);
+  do {
+    if (*piVar3 != 0) {
+      F_005840a0(*(undefined * PTR32 *)(*piVar3 + 0x70) GEN_EDX_FWD,0x23,iVar4,this,0);
+      pvVar1 = (undefined *)0x0;
+      if (*piVar3 != 0) {
+        pvVar1 = *(undefined * PTR32 *)(*piVar3 + 0x70);
+      }
+      F_005840a0(pvVar1 GEN_EDX_ARG,0x2b,iVar4,this,0);
+      pvVar1 = (undefined *)0x0;
+      if (*piVar3 != 0) {
+        pvVar1 = *(undefined * PTR32 *)(*piVar3 + 0x70);
+      }
+      F_005840a0(pvVar1 GEN_EDX_ARG,0xc,1,this,0);
+    }
+    iVar4 = iVar4 + 1;
+    piVar3 = piVar3 + 1;
+  } while (iVar4 < 0x13);
+  iVar4 = 0;
+  piVar3 = (int *)((int)this + 0x1c0);
+  do {
+    if (*piVar3 != 0) {
+      F_005840a0(*(undefined * PTR32 *)(*piVar3 + 0x70) GEN_EDX_ARG,0x17,iVar4 + 6,this,0);
+      pvVar1 = (undefined *)0x0;
+      if (*piVar3 != 0) {
+        pvVar1 = *(undefined * PTR32 *)(*piVar3 + 0x70);
+      }
+      F_005840a0(pvVar1 GEN_EDX_ARG,0xc,1,this,0);
+    }
+    iVar4 = iVar4 + 1;
+    piVar3 = piVar3 + 1;
+  } while (iVar4 < 0x1c);
+  iVar4 = 0;
+  piVar3 = (int *)((int)this + 0x230);
+  do {
+    if (*piVar3 != 0) {
+      F_005840a0(*(undefined * PTR32 *)(*piVar3 + 0x70) GEN_EDX_ARG,0x1b,iVar4,this,0);
+      pvVar1 = (undefined *)0x0;
+      if (*piVar3 != 0) {
+        pvVar1 = *(undefined * PTR32 *)(*piVar3 + 0x70);
+      }
+      F_005840a0(pvVar1 GEN_EDX_ARG,0x1c,iVar4,this,0);
+      pvVar1 = (undefined *)0x0;
+      if (*piVar3 != 0) {
+        pvVar1 = *(undefined * PTR32 *)(*piVar3 + 0x70);
+      }
+      F_005840a0(pvVar1 GEN_EDX_ARG,0xc,1,this,0);
+    }
+    iVar4 = iVar4 + 1;
+    piVar3 = piVar3 + 1;
+  } while (iVar4 < 10);
+  iVar4 = 0;
+  piVar3 = (int *)((int)this + 600);
+  do {
+    if (*piVar3 != 0) {
+      F_005840a0(*(undefined * PTR32 *)(*piVar3 + 0x70) GEN_EDX_ARG,0x17,iVar4 + 0x22,this,0);
+      pvVar1 = (undefined *)0x0;
+      if (*piVar3 != 0) {
+        pvVar1 = *(undefined * PTR32 *)(*piVar3 + 0x70);
+      }
+      F_005840a0(pvVar1 GEN_EDX_ARG,0xc,1,this,0);
+    }
+    iVar4 = iVar4 + 1;
+    piVar3 = piVar3 + 1;
+  } while (iVar4 < 0x16);
+  iVar4 = 0;
+  piVar3 = (int *)((int)this + 0x2fc);
+  do {
+    uVar2 = 0;
+    if (*piVar3 != 0) {
+      F_005840a0(*(undefined * PTR32 *)(*piVar3 + 0x70) GEN_EDX_ARG,0x19,iVar4,this,0);
+      pvVar1 = (undefined *)0x0;
+      if (*piVar3 != 0) {
+        pvVar1 = *(undefined * PTR32 *)(*piVar3 + 0x70);
+      }
+      uVar2 = F_005840a0(pvVar1 GEN_EDX_ARG,0xc,1,this,0);
+    }
+    iVar4 = iVar4 + 1;
+    piVar3 = piVar3 + 1;
+  } while (iVar4 < 2);
+  return uVar2;
+}
+
 /* ref: FUN_00816930 */
 GEN_FRAME uint GEN_THISCALL F_00816930(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -12145,34 +12239,5 @@ GEN_FRAME uint GEN_THISCALL F_00821dd0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   
   uVar1 = F_0093b900(this GEN_EDX_FWD,param_1,param_2,param_3,param_4,param_5,param_6,param_7);
   return uVar1;
-}
-
-/* ref: FUN_00821de0 */
-GEN_FRAME uint F_00821de0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x821de0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  int * param_2 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  if (param_2 != (int *)0x0) {
-    uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_2 + 4))(param_2 GEN_EDX_ARG);
-    if (uVar1 == 1) {
-      uVar1 = F_007c9780(param_2);
-      if (0 < (int)uVar1) {
-        F_007c9860(param_1,1,uVar1 - 1);
-        return uVar1;
-      }
-    }
-    else if (uVar1 == 2) {
-      uVar1 = F_007c9780(param_2);
-      if (0 < (int)uVar1) {
-        F_007c9860(param_1,2,uVar1 - 1);
-      }
-      return uVar1;
-    }
-  }
-  return 0;
 }
 

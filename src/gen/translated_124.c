@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00ade050 */
+GEN_NOFRAME uint GEN_THISCALL F_00ade050(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xade050u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  uint uVar2;
+  ulonglong uVar3;
+  
+  iVar1 = *(int *)this;
+  uVar2 = 0;
+  if (iVar1 != 0) {
+    uVar3 = F_00429760(iVar1,(*(int *)((int)this + 8) - iVar1 >> 2) * 4,0x2be);
+    uVar2 = (uint)uVar3;
+  }
+  *(undefined4 *)this = 0;
+  *(undefined4 *)((int)this + 4) = 0;
+  *(undefined4 *)((int)this + 8) = 0;
+  return uVar2;
+}
+
+/* ref: FUN_00ade090 */
+GEN_FRAME uint GEN_THISCALL F_00ade090(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xade090u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
+  *param_2 = *in_ecx;
+  return (uint)param_2;
+}
+
 /* ref: FUN_00ade0a0 */
 GEN_FRAME uint GEN_THISCALL F_00ade0a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -7934,26 +7965,6 @@ GEN_FRAME byte GEN_THISCALL F_00ae54b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   int in_ecx = (int)gen_a0;
   undefined4 param_2 = (undefined4)gen_a1;
   *(byte *)(in_ecx + 0x28) = (byte)param_2;
-  return (byte)param_2;
-}
-
-/* ref: FUN_00ae54d0 */
-GEN_FRAME byte GEN_THISCALL F_00ae54d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xae54d0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(byte *)(in_ecx + 0x29) = (byte)param_2;
-  return (byte)param_2;
-}
-
-/* ref: FUN_00ae54f0 */
-GEN_FRAME byte GEN_THISCALL F_00ae54f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xae54f0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(byte *)(in_ecx + 0x2a) = (byte)param_2;
   return (byte)param_2;
 }
 

@@ -7947,6 +7947,7 @@ LAB_00414ba8: ;
 GEN_NOFRAME uint GEN_THISCALL F_00414c60(unsigned int gen_a0 GEN_EDX_PARAM)
 {
   GEN_ENTER(0x414c60u, gen_a0, 0u, 0u, 0u);
+  GEN_SUSPECT(0x414c60u, "uStack_58, uStack_54, uStack_50, uStack_4c, uStack_48, uStack_44, uStack_40, uStack_3c, uStack_38, uStack_34, uStack_30, uStack_2c, uStack_28, uStack_24, uStack_20, uStack_1c, uStack_18, uStack_14, uStack_10");
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   undefined1 gen_out[0x4];
   int iVar1;
@@ -8325,6 +8326,7 @@ GEN_FRAME uint GEN_THISCALL F_00415170(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 GEN_FRAME uint GEN_THISCALL F_00415190(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
   GEN_ENTER(0x415190u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_SUSPECT(0x415190u, "uStack_68, uStack_64, uStack_60, uStack_5c, uStack_58, uStack_54, uStack_50, uStack_4c, uStack_48, uStack_44, uStack_40, uStack_3c, uStack_38, uStack_34, uStack_30, uStack_2c, uStack_28, uStack_24, uStack_20");
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   float * param_1 = (float *)(uintptr_t)gen_a1;
   float * param_2 = (float *)(uintptr_t)gen_a2;
