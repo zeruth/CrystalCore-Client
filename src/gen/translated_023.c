@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Resource::Handle::CursorResourceHandle::vf15 */
+GEN_NOFRAME uint F_0052b880(void)
+{
+  GEN_ENTER(0x52b880u, 0u, 0u, 0u, 0u);
+  return 0xa0;
+}
+
 /* ref: Client::System::Resource::Handle::CursorResourceHandle::vf0 */
 GEN_FRAME uint GEN_THISCALL F_0052b890(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -8126,16 +8133,5 @@ GEN_FRAME uint GEN_THISCALL F_00533410(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   *(undefined4 *)((int)this + 4) = param_1;
   *(undefined4 *)((int)this + 8) = param_2;
   return (uint)this;
-}
-
-/* ref: FUN_00533430 */
-GEN_FRAME uint GEN_THISCALL F_00533430(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x533430u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *in_ecx = (*(undefined * PTR32 (*)[2])REFP(0x109ca24));
-  in_ecx[1] = param_2;
-  return (uint)in_ecx;
 }
 

@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_006baa10 */
+GEN_FRAME uint F_006baa10(unsigned int gen_a0)
+{
+  GEN_ENTER(0x6baa10u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x148))))
+                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) GEN_EDX_ARG,param_1);
+  return uVar1;
+}
+
 /* ref: FUN_006baa30 */
 GEN_FRAME uint F_006baa30(unsigned int gen_a0)
 {
@@ -8788,23 +8800,5 @@ GEN_NOFRAME uint F_006c3860(void)
   GEN_ENTER(0x6c3860u, 0u, 0u, 0u, 0u);
   F_00a69780(&REFG(undefined4, 0x14b119c) GEN_EDX_ARG);
   return 0;
-}
-
-/* ref: Client::Game::Event::LeveDirector::vf146 */
-GEN_NOFRAME uint GEN_THISCALL F_006c3870(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x6c3870u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  uint uVar2;
-  undefined * this_00;
-  undefined4 uVar3;
-  
-  piVar1 = (int *)F_00424750(REFG(undefined4, 0x137104c) GEN_EDX_FWD);
-  uVar3 = 0x18;
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x48))(piVar1 GEN_EDX_ARG);
-  this_00 = (undefined *)F_00763050(uVar2 GEN_EDX_ARG,uVar3);
-  uVar2 = F_00870080(this_00 GEN_EDX_ARG,*(undefined4 *)(this + 0x1d8),2,0);
-  return uVar2;
 }
 

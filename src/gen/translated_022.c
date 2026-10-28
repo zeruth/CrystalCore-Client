@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00523d50 */
+GEN_FRAME byte GEN_THISCALL F_00523d50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x523d50u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  return *(int *)this != *param_1;
+}
+
 /* ref: FUN_00523d70 */
 GEN_FRAME uint GEN_THISCALL F_00523d70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -2757,7 +2766,7 @@ GEN_FRAME unsigned int F_00526410(unsigned int gen_a0, unsigned int gen_a1, unsi
 }
 
 /* ref: FUN_00526440 */
-GEN_FRAME uint F_00526440(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9)
+GEN_FRAME uint F_00526440(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10)
 {
   GEN_ENTER(0x526440u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
@@ -2770,6 +2779,7 @@ GEN_FRAME uint F_00526440(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   int * param_8 = (int *)(uintptr_t)gen_a7;
   undefined4 param_9 = (undefined4)gen_a8;
   uint param_10 = (uint)gen_a9;
+  undefined4 param_11 = (undefined4)gen_a10;
   uint uVar1;
   uint uVar2;
   uint uVar3;
@@ -2819,7 +2829,7 @@ GEN_FRAME uint F_00526440(unsigned int gen_a0, unsigned int gen_a1, unsigned int
 }
 
 /* ref: FUN_005264f0 */
-GEN_FRAME uint F_005264f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9)
+GEN_FRAME uint F_005264f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10)
 {
   GEN_ENTER(0x5264f0u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
@@ -2832,6 +2842,7 @@ GEN_FRAME uint F_005264f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   int * param_8 = (int *)(uintptr_t)gen_a7;
   undefined4 param_9 = (undefined4)gen_a8;
   uint param_10 = (uint)gen_a9;
+  undefined4 param_11 = (undefined4)gen_a10;
   uint uVar1;
   uint uVar2;
   uint uVar3;
@@ -4009,7 +4020,7 @@ GEN_FRAME uint F_005272e0(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   if ((param_2 != (int *)0x0) && ((undefined4 *)*param_2 != (undefined4 *)0x0)) {
     uVar1 = *(undefined4 *)*param_2;
   }
-  F_00526440(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10);
+  F_00526440(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10,param_1);
   return param_1;
 }
 
@@ -4043,7 +4054,7 @@ GEN_FRAME uint F_00527360(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   if ((param_2 != (int *)0x0) && ((undefined4 *)*param_2 != (undefined4 *)0x0)) {
     uVar1 = *(undefined4 *)*param_2;
   }
-  F_005264f0(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10);
+  F_005264f0(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10,param_1);
   return param_1;
 }
 
@@ -8565,12 +8576,5 @@ GEN_FRAME uint GEN_THISCALL F_0052b820(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00406ad0(this);
   }
   return (uint)this;
-}
-
-/* ref: Client::System::Resource::Handle::CursorResourceHandle::vf15 */
-GEN_NOFRAME uint F_0052b880(void)
-{
-  GEN_ENTER(0x52b880u, 0u, 0u, 0u, 0u);
-  return 0xa0;
 }
 

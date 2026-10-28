@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005d46f0 */
+GEN_FRAME uint GEN_THISCALL F_005d46f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x5d46f0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  undefined4 param_3 = (undefined4)gen_a3;
+  uint uVar1;
+  undefined * this_00;
+  undefined4 * this_01;
+  undefined4 uVar2;
+  
+  uVar2 = 0;
+  uVar1 = F_00404270();
+  this_00 = (undefined *)F_00406bd0(0x184,0,uVar1,uVar2);
+  if (this_00 == (undefined *)0x0) {
+    return 0;
+  }
+  this_01 = (undefined4 *)F_00786090(this_00 GEN_EDX_ARG);
+  if (this_01 != (undefined4 *)0x0) {
+    F_005a8d00(this_01 GEN_EDX_ARG,param_2,param_3);
+    uVar1 = F_0057fac0(this GEN_EDX_ARG,this_01,param_1);
+    if (uVar1 == 0) {
+      ((GEN_TCODE *)*(gen_code32 *)*this_01)(this_01 GEN_EDX_ARG,1);
+      return 0;
+    }
+  }
+  return (uint)this_01;
+}
+
 /* ref: FUN_005d4760 */
 GEN_FRAME unsigned int GEN_STDCALL F_005d4760(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -8892,35 +8923,5 @@ GEN_FRAME uint GEN_THISCALL F_005dd930(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   *((undefined4 *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x54))) = puVar1[1];
   *((undefined4 *)GEN_TOP(((*(undefined * PTR32 *)&gen_args[0]) + 0x58))) = puVar1[2];
   return uVar3;
-}
-
-/* ref: Client::LayoutEngine::Layer::GameObjectLayoutInstance::vf60 */
-GEN_FRAME uint GEN_THISCALL F_005dd990(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5dd990u, gen_a0, gen_a1, 0u, 0u);
-  unsigned int gen_args[2];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  int iVar1;
-  uint uVar2;
-  uint uVar3;
-  int * piVar4;
-  
-  uVar3 = (*(uint *)&gen_args[1]);
-  iVar1 = *(int *)((*(int *)&gen_args[0]) + 0x38);
-  if (iVar1 != -1) {
-    (*(uint *)&gen_args[1]) = CONCAT31(GEN_PIECE(&(*(uint *)&gen_args[1]), 1, 3),*(undefined1 *)((*(int *)&gen_args[0]) + 0x11));
-    piVar4 = (int *)F_00a1b870((*(uint *)&gen_args[1]),iVar1);
-    if (piVar4 != (int *)0x0) {
-      F_00a1e160(&(*(uint *)&gen_args[1]),uVar3);
-      ((GEN_TCODE *)*(gen_code32 *)(*piVar4 + 0x48))(piVar4 GEN_EDX_ARG);
-    }
-  }
-  *(undefined4 *)((*(int *)&gen_args[0]) + 0x60) = *(undefined4 *)uVar3;
-  *(undefined4 *)((*(int *)&gen_args[0]) + 100) = *(undefined4 *)(uVar3 + 4);
-  uVar2 = *(uint *)(uVar3 + 8);
-  *(uint *)((*(int *)&gen_args[0]) + 0x68) = uVar2;
-  *(undefined4 *)((*(int *)&gen_args[0]) + 0x6c) = *(undefined4 *)(uVar3 + 0xc);
-  return uVar2;
 }
 

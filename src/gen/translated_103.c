@@ -1,5 +1,168 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Apricot::Engine::Instance::PointBinderInstance::vf5 */
+GEN_NOFRAME uint GEN_THISCALL F_009e1140(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e1140u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x240;
+}
+
+/* ref: Apricot::Engine::Instance::PointBinderInstance::vf6 */
+GEN_NOFRAME uint GEN_THISCALL F_009e1150(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e1150u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x270;
+}
+
+/* ref: Apricot::Engine::Instance::PointBinderInstance::vf7 */
+GEN_NOFRAME uint F_009e1160(void)
+{
+  GEN_ENTER(0x9e1160u, 0u, 0u, 0u, 0u);
+  return 0x14a0a2c;
+}
+
+/* ref: Apricot::Engine::Instance::SplineBinderInstance::vf5 */
+GEN_NOFRAME uint GEN_THISCALL F_009e1170(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e1170u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x270;
+}
+
+/* ref: Apricot::Engine::Instance::SplineBinderInstance::vf6 */
+GEN_NOFRAME uint GEN_THISCALL F_009e1180(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e1180u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x2a0;
+}
+
+/* ref: Apricot::Engine::Instance::SplineBinderInstance::vf7 */
+GEN_NOFRAME uint F_009e1190(void)
+{
+  GEN_ENTER(0x9e1190u, 0u, 0u, 0u, 0u);
+  return 0x14a0a2c;
+}
+
+/* ref: Apricot::Engine::Instance::BindPointPropertyInstance::vf0 */
+GEN_FRAME uint GEN_THISCALL F_009e11a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e11a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x10de010));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Instance::LineParticleInstance::vf0 */
+GEN_FRAME uint GEN_THISCALL F_009e11e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e11e0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint uVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[34])REFP(0x10de01c));
+  if (*(int *)(this + 0x2f0) != 0) {
+    uVar1 = (uint)(*(int *)(this + 0x2f0) - REFG(int, 0x14a09f4)) >> 10;
+    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
+    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
+    REFG(undefined4, 0x14a09e8) = uVar1;
+  }
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[34])REFP(0x10ddf84));
+  F_0097ee40(this GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    uVar1 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
+    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
+    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
+    REFG(undefined4, 0x14a09e8) = uVar1;
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Instance::ModelParticleInstance::vf0 */
+GEN_FRAME uint GEN_THISCALL F_009e1290(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e1290u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint uVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[34])REFP(0x10de0ac));
+  if (*(int *)(this + 0x300) != 0) {
+    uVar1 = (uint)(*(int *)(this + 0x300) - REFG(int, 0x14a09f4)) >> 10;
+    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
+    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
+    REFG(undefined4, 0x14a09e8) = uVar1;
+  }
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[34])REFP(0x10ddf84));
+  F_0097ee40(this GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    uVar1 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
+    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
+    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
+    REFG(undefined4, 0x14a09e8) = uVar1;
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Instance::LightModelParticleInstance::vf0 */
+GEN_FRAME uint GEN_THISCALL F_009e1320(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e1320u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint uVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[34])REFP(0x10de13c));
+  if (*(int *)(this + 0x2f0) != 0) {
+    uVar1 = (uint)(*(int *)(this + 0x2f0) - REFG(int, 0x14a09f4)) >> 10;
+    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
+    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
+    REFG(undefined4, 0x14a09e8) = uVar1;
+  }
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[34])REFP(0x10ddf84));
+  F_0097ee40(this GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    uVar1 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
+    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
+    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
+    REFG(undefined4, 0x14a09e8) = uVar1;
+  }
+  return (uint)this;
+}
+
+/* ref: Apricot::Engine::Instance::PolygonParticleInstance::vf0 */
+GEN_FRAME uint GEN_THISCALL F_009e13a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x9e13a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  uint uVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[34])REFP(0x10de1cc));
+  if (*(int *)(this + 0x2f4) != 0) {
+    uVar1 = (uint)(*(int *)(this + 0x2f4) - REFG(int, 0x14a09f4)) >> 10;
+    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
+    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
+    REFG(undefined4, 0x14a09e8) = uVar1;
+  }
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[34])REFP(0x10ddf84));
+  F_0097ee40(this GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    uVar1 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
+    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
+    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
+    REFG(undefined4, 0x14a09e8) = uVar1;
+  }
+  return (uint)this;
+}
+
 /* ref: Apricot::Engine::Instance::PolyLineParticleInstance::vf0 */
 GEN_FRAME uint GEN_THISCALL F_009e1420(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -5247,258 +5410,5 @@ GEN_NOFRAME uint GEN_THISCALL F_009e55b0(unsigned int gen_a0 GEN_EDX_PARAM, unsi
   
   F_0098b070(this GEN_EDX_FWD);
   return ((uint)(uint)(this));
-}
-
-/* ref: Apricot::Engine::Instance::InstanceGeneratorInstance::vf4 */
-GEN_NOFRAME uint GEN_THISCALL F_009e55d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
-{
-  GEN_ENTER(0x9e55d0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 param_8 = (undefined4)gen_a8;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x1d4) + 0x10))))
-                    (*(int * PTR32 *)(this + 0x1d4) GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7
-                     ,param_8);
-  return uVar1;
-}
-
-/* ref: Apricot::Engine::Instance::InstanceGeneratorInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e55e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e55e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  uint uVar3;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[31])REFP(0x10dde84));
-  puVar2 = *(undefined4 * PTR32 *)(this + 0x1e0);
-  while (puVar2 != (undefined4 *)0x0) {
-    puVar1 = (undefined4 *)puVar2[0x7a];
-    ((GEN_TCODE *)*(gen_code32 *)*puVar2)(puVar2 GEN_EDX_FWD,1);
-    puVar2 = puVar1;
-  }
-  if ((param_1 & 1) != 0) {
-    uVar3 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar3 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar3;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::CameraBinderInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e5650(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e5650u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint uVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[32])REFP(0x10dec44));
-  F_0098b2c0(this GEN_EDX_FWD);
-  if ((param_1 & 1) != 0) {
-    uVar1 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar1;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::LinearBinderInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e56a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e56a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint uVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[32])REFP(0x10deccc));
-  F_0098b2c0(this GEN_EDX_FWD);
-  if ((param_1 & 1) != 0) {
-    uVar1 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar1;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::PointBinderInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e56f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e56f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint uVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[32])REFP(0x10ded54));
-  F_0098b2c0(this GEN_EDX_FWD);
-  if ((param_1 & 1) != 0) {
-    uVar1 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar1;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::SplineBinderInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e5740(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e5740u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  uint uVar1;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[32])REFP(0x10deddc));
-  F_0098b2c0(this GEN_EDX_FWD);
-  if ((param_1 & 1) != 0) {
-    uVar1 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar1 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar1;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::ClipInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e5790(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e5790u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  uint uVar3;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[31])REFP(0x10dde84));
-  puVar2 = *(undefined4 * PTR32 *)(this + 0x1e0);
-  while (puVar2 != (undefined4 *)0x0) {
-    puVar1 = (undefined4 *)puVar2[0x7a];
-    ((GEN_TCODE *)*(gen_code32 *)*puVar2)(puVar2 GEN_EDX_FWD,1);
-    puVar2 = puVar1;
-  }
-  if ((param_1 & 1) != 0) {
-    uVar3 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar3 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar3;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::EndClipInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e5800(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e5800u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  uint uVar3;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[31])REFP(0x10dde84));
-  puVar2 = *(undefined4 * PTR32 *)(this + 0x1e0);
-  while (puVar2 != (undefined4 *)0x0) {
-    puVar1 = (undefined4 *)puVar2[0x7a];
-    ((GEN_TCODE *)*(gen_code32 *)*puVar2)(puVar2 GEN_EDX_FWD,1);
-    puVar2 = puVar1;
-  }
-  if ((param_1 & 1) != 0) {
-    uVar3 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar3 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar3;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::KillClipInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e5870(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e5870u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  uint uVar3;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[31])REFP(0x10dde84));
-  puVar2 = *(undefined4 * PTR32 *)(this + 0x1e0);
-  while (puVar2 != (undefined4 *)0x0) {
-    puVar1 = (undefined4 *)puVar2[0x7a];
-    ((GEN_TCODE *)*(gen_code32 *)*puVar2)(puVar2 GEN_EDX_FWD,1);
-    puVar2 = puVar1;
-  }
-  if ((param_1 & 1) != 0) {
-    uVar3 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar3 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar3;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::RandomTriggerClipInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e58e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e58e0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  uint uVar3;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[31])REFP(0x10dde84));
-  puVar2 = *(undefined4 * PTR32 *)(this + 0x1e0);
-  while (puVar2 != (undefined4 *)0x0) {
-    puVar1 = (undefined4 *)puVar2[0x7a];
-    ((GEN_TCODE *)*(gen_code32 *)*puVar2)(puVar2 GEN_EDX_FWD,1);
-    puVar2 = puVar1;
-  }
-  if ((param_1 & 1) != 0) {
-    uVar3 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar3 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar3;
-  }
-  return (uint)this;
-}
-
-/* ref: Apricot::Engine::Instance::TriggerClipInstance::vf0 */
-GEN_FRAME uint GEN_THISCALL F_009e5950(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9e5950u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined4 * puVar1;
-  undefined4 * puVar2;
-  uint uVar3;
-  
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[31])REFP(0x10dde84));
-  puVar2 = *(undefined4 * PTR32 *)(this + 0x1e0);
-  while (puVar2 != (undefined4 *)0x0) {
-    puVar1 = (undefined4 *)puVar2[0x7a];
-    ((GEN_TCODE *)*(gen_code32 *)*puVar2)(puVar2 GEN_EDX_FWD,1);
-    puVar2 = puVar1;
-  }
-  if ((param_1 & 1) != 0) {
-    uVar3 = (uint)((int)this - REFG(int, 0x14a09f4)) >> 10;
-    *(uint *)(uVar3 * 0x400 + REFG(int, 0x14a09f4)) = REFG(undefined4, 0x14a09e8);
-    REFG(int, 0x14a09f0) = REFG(int, 0x14a09f0) + 1;
-    REFG(undefined4, 0x14a09e8) = uVar3;
-  }
-  return (uint)this;
 }
 

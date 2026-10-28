@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_006b3e30 */
+GEN_FRAME uint GEN_THISCALL F_006b3e30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x6b3e30u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  if ((param_1 & 2) == 0) {
+    if (((param_1 & 1) != 0) && (this != (undefined *)0x0)) {
+      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 0x14) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 0x14) GEN_EDX_FWD,this);
+    }
+  }
+  else {
+    this = (undefined *)((int)this - 4);
+    if (((param_1 & 1) != 0) && (this != (undefined *)0x0)) {
+      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 0x14) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 0x14) GEN_EDX_ARG,this);
+      return (uint)this;
+    }
+  }
+  return (uint)this;
+}
+
 /* ref: FUN_006b3e80 */
 GEN_FRAME uint GEN_THISCALL F_006b3e80(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -7747,18 +7768,6 @@ GEN_FRAME uint F_006ba9f0(unsigned int gen_a0)
   uint uVar1;
   
   uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x144))))
-                    (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) GEN_EDX_ARG,param_1);
-  return uVar1;
-}
-
-/* ref: FUN_006baa10 */
-GEN_FRAME uint F_006baa10(unsigned int gen_a0)
-{
-  GEN_ENTER(0x6baa10u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) + 0x148))))
                     (*(int * PTR32 *)(REFG(int, 0x1488344) + 0x110) GEN_EDX_ARG,param_1);
   return uVar1;
 }

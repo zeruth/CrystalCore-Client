@@ -1,5 +1,19 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0061a6c0 */
+GEN_FRAME uint GEN_THISCALL F_0061a6c0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x61a6c0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  ulonglong uVar1;
+  
+  (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
+  F_00617260(this GEN_EDX_FWD,&(*(undefined * PTR32 *)(gen_frame + 0x8)),**(undefined4 * PTR32 *)((int)this + 4),*(undefined4 * PTR32 *)((int)this + 4));
+  uVar1 = F_00429760(*(undefined4 *)((int)this + 4),0x14,900);
+  return (uint)uVar1;
+}
+
 /* ref: FUN_0061a700 */
 GEN_FRAME uint GEN_THISCALL F_0061a700(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -10228,25 +10242,5 @@ GEN_NOFRAME byte GEN_THISCALL F_00625b60(unsigned int gen_a0 GEN_EDX_PARAM)
   int in_ecx = (int)gen_a0;
   *(undefined1 *)(REFG(int, 0x137127c) + 0xebe1) = *(undefined1 *)(in_ecx + 0x1f);
   return 1;
-}
-
-/* ref: Client::Graphics::Render::Light::vf4 */
-GEN_NOFRAME uint GEN_THISCALL F_00625b80(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x625b80u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * piVar1;
-  uint uVar2;
-  
-  uVar2 = REFG(undefined4, 0x1371284);
-  if (*(undefined * PTR32 *)(REFG(undefined4, 0x1371284) + 0x14) == this) {
-    *(undefined4 *)(REFG(undefined4, 0x1371284) + 0x14) = 0;
-  }
-  piVar1 = *(int * PTR32 *)(this + 0x84);
-  if (piVar1 != (int *)0x0) {
-    uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_FWD);
-    *(undefined4 *)(this + 0x84) = 0;
-  }
-  return uVar2;
 }
 

@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005babb0 */
+GEN_FRAME uint GEN_THISCALL F_005babb0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5babb0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: Component::GUI2::AtkCrest::vf0 */
 GEN_FRAME uint GEN_THISCALL F_005bac70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -4641,14 +4653,6 @@ GEN_FRAME uint GEN_THISCALL F_005bf690(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 GEN_FRAME uint F_005bf6b0(unsigned int gen_a0)
 {
   GEN_ENTER(0x5bf6b0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_005bf6c0 */
-GEN_FRAME uint F_005bf6c0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x5bf6c0u, gen_a0, 0u, 0u, 0u);
   uint param_1 = (uint)gen_a0;
   return param_1;
 }

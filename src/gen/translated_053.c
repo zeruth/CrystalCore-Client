@@ -1,5 +1,23 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Game::Event::LeveDirector::vf146 */
+GEN_NOFRAME uint GEN_THISCALL F_006c3870(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x6c3870u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * piVar1;
+  uint uVar2;
+  undefined * this_00;
+  undefined4 uVar3;
+  
+  piVar1 = (int *)F_00424750(REFG(undefined4, 0x137104c) GEN_EDX_FWD);
+  uVar3 = 0x18;
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0x48))(piVar1 GEN_EDX_ARG);
+  this_00 = (undefined *)F_00763050(uVar2 GEN_EDX_ARG,uVar3);
+  uVar2 = F_00870080(this_00 GEN_EDX_ARG,*(undefined4 *)(this + 0x1d8),2,0);
+  return uVar2;
+}
+
 /* ref: Client::Game::Event::BattleLeveDirector::vf123 */
 GEN_FRAME byte GEN_THISCALL F_006c38b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -11814,33 +11832,5 @@ GEN_FRAME byte GEN_THISCALL F_006d26e0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     } while (iVar4 != 0);
   }
   return bVar1;
-}
-
-/* ref: Client::Game::Event::LeveDirector::vf151 */
-GEN_FRAME unsigned int GEN_THISCALL F_006d2770(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x6d2770u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined * this_00;
-  int iVar1;
-  int local_8;
-  
-  local_8 = (*(int *)(this + 0x2fc) - *(int *)(this + 0x2f8)) / 0x140;
-  if (local_8 != 0) {
-    iVar1 = 0;
-    do {
-      this_00 = ((undefined *)GEN_TOP((*(int *)(this + 0x2f8) + iVar1)));
-      F_0071e040(this_00 GEN_EDX_FWD,param_1);
-      if (*(int *)((int)this_00 + 0x13c) == 0) {
-        *(undefined4 *)((int)this_00 + 0x70) = 0;
-        *(undefined4 *)((int)this_00 + 0x74) = 0;
-        *(undefined4 *)((int)this_00 + 0x78) = 0;
-      }
-      iVar1 = iVar1 + 0x140;
-      local_8 = local_8 - 1;
-    } while (local_8 != 0);
-  }
-  return 0;
 }
 

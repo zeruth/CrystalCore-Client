@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005bf6c0 */
+GEN_FRAME uint F_005bf6c0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x5bf6c0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
 /* ref: FUN_005bf6d0 */
 GEN_FRAME uint F_005bf6d0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -5731,15 +5739,6 @@ GEN_FRAME byte GEN_THISCALL F_005c4c60(unsigned int gen_a0 GEN_EDX_PARAM, unsign
 GEN_FRAME byte GEN_THISCALL F_005c4c90(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
   GEN_ENTER(0x5c4c90u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  return *(int *)this != *param_1;
-}
-
-/* ref: FUN_005c4cc0 */
-GEN_FRAME byte GEN_THISCALL F_005c4cc0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5c4cc0u, gen_a0, gen_a1, 0u, 0u);
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int * param_1 = (int *)(uintptr_t)gen_a1;
   return *(int *)this != *param_1;

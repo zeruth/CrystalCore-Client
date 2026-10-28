@@ -19555,6 +19555,105 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_004bc010(unsigned int gen_a0 GEN_EDX_PAR
   return;
 }
 
+/* ref: FUN_004bc070 */
+GEN_FRAME uint GEN_THISCALL F_004bc070(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
+{
+  GEN_ENTER(0x4bc070u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  float param_1 = (float)gen_a1;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  float fVar1;
+  float * pfVar2;
+  int in_ecx;
+  int iVar3;
+  uint uVar4;
+  undefined4 * puVar5;
+  int iVar6;
+  float10 fVar7;
+  float10 fVar8;
+  ulonglong uVar9;
+  
+  uVar4 = 0;
+  if (*(short *)((int)this + 0x68) != 0) {
+    iVar3 = 0;
+    do {
+      F_004bc010(((undefined *)GEN_TOP((*(int *)((int)this + 0x4c) + iVar3))) GEN_EDX_FWD);
+      uVar4 = uVar4 + 1;
+      iVar3 = iVar3 + 0x4c;
+    } while (uVar4 < *(ushort *)((int)this + 0x68));
+  }
+  *(undefined2 *)((int)this + 0x82) = 0;
+  if ((param_1 == 0.0) ||
+     (fVar1 = gen_bits2f((uint)*(ushort *)((int)this + 0x68)),
+     (uint)gen_fl2bits(fVar1) < (uint)gen_fl2bits(param_1))) {
+    fVar1 = 0.0;
+    if (*(int *)((int)this + 0x4c) != 0) {
+      uVar9 = F_00406b30(*(int *)((int)this + 0x4c));
+      fVar1 = gen_bits2f((uint)uVar9);
+      *(undefined4 *)((int)this + 0x4c) = 0;
+      *(undefined2 *)((int)this + 0x68) = 0;
+    }
+  }
+  if (param_1 != 0.0) {
+    if (*(int *)((int)this + 0x4c) == 0) {
+      fVar1 = gen_bits2f(F_00406bb0(-(uint)((int)((ulonglong)(uint)gen_fl2bits(param_1) * 0x4c >>
+                                                   0x20) != 0) |
+                                      (uint)((ulonglong)(uint)gen_fl2bits(param_1) * 0x4c),0,0));
+      (*(float *)(gen_frame + 0x8)) = fVar1;
+      if (fVar1 == 0.0) {
+        fVar1 = 0.0;
+      }
+      else {
+        iVar3 = (int)gen_fl2bits(param_1) - 1;
+        if (-1 < iVar3) {
+          puVar5 = (undefined4 *)((int)gen_fl2bits(fVar1) + 0x38);
+          do {
+            F_00401500(puVar5 - 6,0xc,2,((code *)REFP(0x4bd230)));
+            *puVar5 = 0;
+            puVar5[1] = 0;
+            puVar5 = puVar5 + 0x13;
+            iVar3 = iVar3 - 1;
+            fVar1 = (*(float *)(gen_frame + 0x8));
+          } while (-1 < iVar3);
+        }
+      }
+      *(float *)((int)this + 0x4c) = fVar1;
+      if (fVar1 == 0.0) {
+        return 0;
+      }
+    }
+    *(short *)((int)this + 0x68) = (short)(uint)gen_fl2bits(param_1);
+    if (param_1 != 0.0) {
+      (*(float *)(gen_frame + 0x4)) = param_1;
+      fVar7 = (float10)(int)gen_fl2bits(param_1);
+      if ((int)gen_fl2bits(param_1) < 0) {
+        fVar7 = fVar7 + (float10)*(float *)&REFG(undefined, 0x1088110);
+      }
+      (*(float *)(gen_frame + 0x8)) = (float)fVar7;
+      iVar6 = 0;
+      (*(float *)(gen_frame + 0x4)) = REFG(float, 0x1087f04);
+      iVar3 = 0;
+      do {
+        in_ecx = *(int *)((int)this + 0x4c) + iVar3;
+        pfVar2 = &(*(float *)(gen_frame + 0x4));
+        if (!((float10)(float)fVar7 < (float10)1)) {
+          pfVar2 = &(*(float *)(gen_frame + 0x8));
+        }
+        fVar8 = (float10)iVar6;
+        if (iVar6 < 0) {
+          fVar8 = fVar8 + (float10)*(float *)&REFG(undefined, 0x1088110);
+        }
+        *(float *)(in_ecx + 0x48) = (float)(fVar8 / (float10)*pfVar2);
+        fVar1 = gen_bits2f(F_004a44a0(in_ecx GEN_EDX_ARG));
+        iVar3 = iVar3 + 0x4c;
+        iVar6 = iVar6 + 0x15180;
+        param_1 = gen_bits2f((int)gen_fl2bits(param_1) - 1);
+      } while (param_1 != 0.0);
+    }
+  }
+  return (uint)gen_fl2bits(fVar1);
+}
+
 /* ref: FUN_004bc1d0 */
 GEN_NOFRAME uint F_004bc1d0(void)
 {
@@ -20595,21 +20694,6 @@ GEN_FRAME uint F_004bd3f0(unsigned int gen_a0, unsigned int gen_a1, float gen_a2
   *param_1 = (float)((float10)*param_2 / fVar1);
   param_1[1] = (float)((float10)param_2[1] / fVar1);
   param_1[2] = (float)((float10)param_2[2] / fVar1);
-  return (uint)param_1;
-}
-
-/* ref: FUN_004bd420 */
-GEN_FRAME uint F_004bd420(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4bd420u, gen_a0, gen_a1, 0u, 0u);
-  uint * param_1 = (uint *)(uintptr_t)gen_a0;
-  uint * param_2 = (uint *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  uVar1 = (uint)gen_fl2bits((float)(REFG(float, 0x10920d0)));
-  *param_1 = *param_2 ^ REFG(uint, 0x10920d0);
-  param_1[1] = param_2[1] ^ uVar1;
-  param_1[2] = param_2[2] ^ uVar1;
   return (uint)param_1;
 }
 

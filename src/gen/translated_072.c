@@ -1,5 +1,27 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::AddonInventoryEventGrid::vf52 */
+GEN_FRAME byte GEN_THISCALL F_007a6270(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x7a6270u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined1 AVar1;
+  uint uVar2;
+  undefined * this_00;
+  
+  if (*param_1 == 2) {
+    AVar1 = this[0x13c];
+    uVar2 = F_0055dcb0();
+    this_00 = (undefined *)F_0057f810(*(undefined * PTR32 *)(uVar2 + 0x14) GEN_EDX_ARG,(uint)(byte)AVar1);
+    if (this_00 != (undefined *)0x0) {
+      F_007a6000(this_00 GEN_EDX_ARG);
+      return 1;
+    }
+  }
+  return 0;
+}
+
 /* ref: FUN_007a62b0 */
 GEN_NOFRAME uint GEN_THISCALL F_007a62b0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -11770,26 +11792,5 @@ GEN_NOFRAME byte GEN_THISCALL F_007b3070(unsigned int gen_a0 GEN_EDX_PARAM)
   
   bVar1 = F_00572e60(this GEN_EDX_FWD,"CabinetWithdraw",0,6);
   return bVar1;
-}
-
-/* ref: FUN_007b3080 */
-GEN_FRAME uint GEN_THISCALL F_007b3080(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x7b3080u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a2;
-  undefined * param_3 = (undefined *)(uintptr_t)gen_a3;
-  undefined * this_00;
-  uint uVar1;
-  
-  this_00 = (undefined *)F_00559ba0(param_2[1] GEN_EDX_FWD);
-  uVar1 = F_00559b90(*param_2 GEN_EDX_ARG);
-  if (uVar1 != 0) {
-    F_005951c0(param_3 GEN_EDX_ARG,*(undefined4 *)(param_1 * 0x60 + 0x1d8 + (int)this),0,uVar1);
-  }
-  uVar1 = F_0042a990(param_1 * 0x60 + 0x184 + (int)this GEN_EDX_ARG);
-  uVar1 = F_00584110(this_00 GEN_EDX_ARG,uVar1);
-  return uVar1;
 }
 

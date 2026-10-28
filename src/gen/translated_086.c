@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::AddonCharaSelectInfo::vf5 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_0090f5f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x90f5f0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  return;
+}
+
 /* ref: Client::UI2::AddonCharaSelectInfo::vf6 */
 GEN_NOFRAME unsigned int GEN_THISCALL F_0090f600(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -4302,18 +4311,6 @@ GEN_FRAME uint GEN_STDCALL F_009149a0(unsigned int gen_a0, unsigned int gen_a1)
   uint uVar1;
   
   uVar1 = F_004296a0(param_1 * 0x18,param_2,400);
-  return uVar1;
-}
-
-/* ref: FUN_009149f0 */
-GEN_FRAME uint GEN_STDCALL F_009149f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0x9149f0u, gen_a0, gen_a1, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_004296a0(param_1 * 4,param_2,400);
   return uVar1;
 }
 

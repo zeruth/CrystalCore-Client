@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00543c30 */
+GEN_FRAME uint GEN_THISCALL F_00543c30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x543c30u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  int * piVar2;
+  undefined8 uVar3;
+  undefined4 uVar4;
+  
+  piVar2 = param_1;
+  do {
+    if (piVar2 == (int *)0x0) {
+      uVar3 = 0xe0000000;
+LAB_00543c7c: ;
+      uVar4 = 0;
+      uVar1 = F_00ab1290((int)uVar3,(int)((ulonglong)uVar3 >> 0x20));
+      uVar1 = F_0053f1e0(this GEN_EDX_ARG,uVar1,param_2,uVar4);
+      return uVar1;
+    }
+    uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*piVar2 + 4))(piVar2 GEN_EDX_ARG);
+    if (uVar1 != 8) {
+      uVar3 = ((gen_lcode *)*(gen_code32 *)*piVar2)(piVar2);
+      goto LAB_00543c7c;
+    }
+    piVar2 = (int *)F_00a356c0(piVar2);
+  } while( true );
+}
+
 /* ref: FUN_00543ca0 */
 GEN_NOFRAME uint GEN_THISCALL F_00543ca0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -10842,48 +10873,6 @@ GEN_FRAME byte GEN_THISCALL F_00551750(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     fVar2 = ((float10)GEN_TOD(fcos((float10)param_3)));
     bVar1 = F_00c97550(*(undefined4 *)(param_1 + 8) GEN_EDX_ARG,param_2,param_7,(float)fVar2,param_4,&(*(undefined4 *)(gen_frame + 0x0))
                          ,(undefined4)gen_fl2bits(param_6));
-    gen_imp_LeaveCriticalSection(lpCriticalSection);
-    return bVar1;
-  }
-  gen_imp_LeaveCriticalSection(lpCriticalSection);
-  return 0;
-}
-
-/* ref: FUN_005517f0 */
-GEN_FRAME byte GEN_THISCALL F_005517f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, float gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7)
-{
-  GEN_ENTER(0x5517f0u, gen_a0, gen_a1, gen_trace_f(gen_a2), gen_a3);
-  unsigned int gen_args[8];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  memcpy(&gen_args[2], &gen_a2, sizeof gen_a2);
-  gen_args[3] = gen_a3;
-  gen_args[4] = gen_a4;
-  gen_args[5] = gen_a5;
-  gen_args[6] = gen_a6;
-  gen_args[7] = gen_a7;
-  __declspec(align(16)) undefined1 gen_frame[0x30];
-  LPCRITICAL_SECTION lpCriticalSection;
-  byte bVar1;
-  float10 fVar2;
-  
-  lpCriticalSection = (LPCRITICAL_SECTION)((*(int *)&gen_args[0]) + 0xc);
-  gen_imp_EnterCriticalSection(lpCriticalSection);
-  *(undefined4 *)((*(uint *)&gen_args[1]) + 0x44) = 0;
-  if (*(int *)((*(int *)&gen_args[0]) + 8) != 0) {
-    (*(undefined4 *)(gen_frame + 0x20)) = *(*(undefined4 * PTR32 *)&gen_args[4]);
-    (*(undefined4 *)(gen_frame + 0x24)) = (*(undefined4 * PTR32 *)&gen_args[4])[1];
-    (*(undefined4 *)(gen_frame + 0x28)) = (*(undefined4 * PTR32 *)&gen_args[4])[2];
-    F_00553ac0(&(*(undefined4 *)(gen_frame + 0x20)) GEN_EDX_ARG);
-    (*(undefined4 *)(gen_frame + 0x0)) = 7;
-    (*(undefined4 *)(gen_frame + 0x4)) = (*(undefined4 *)&gen_args[3]);
-    (*(undefined4 * PTR32 *)(gen_frame + 0x8)) = &(*(undefined4 *)(gen_frame + 0x20));
-    (*(undefined4 * PTR32 *)(gen_frame + 0xc)) = &(*(undefined4 *)&gen_args[5]);
-    fVar2 = ((float10)GEN_TOD(fcos((float10)(*(float *)&gen_args[2]))));
-    (*(float *)(gen_frame + 0x10)) = (float)fVar2;
-    (*(undefined4 *)(gen_frame + 0x14)) = (*(undefined4 *)&gen_args[7]);
-    (*(undefined4 *)(gen_frame + 0x1c)) = 0;
-    bVar1 = F_00c975b0(*(undefined * PTR32 *)((*(int *)&gen_args[0]) + 8) GEN_EDX_ARG,(*(uint *)&gen_args[1]),(*(undefined4 *)&gen_args[6]),&(*(undefined4 *)(gen_frame + 0x0)));
     gen_imp_LeaveCriticalSection(lpCriticalSection);
     return bVar1;
   }

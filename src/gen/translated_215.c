@@ -1,5 +1,101 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_01073df0 */
+GEN_NOFRAME unsigned int F_01073df0(void)
+{
+  GEN_ENTER(0x1073df0u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a68) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a68), REFG(float, 0x1343880));
+  return;
+}
+
+/* ref: FUN_01073e10 */
+GEN_NOFRAME unsigned int F_01073e10(void)
+{
+  GEN_ENTER(0x1073e10u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a6c) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a6c), REFG(float, 0x1343928));
+  return;
+}
+
+/* ref: FUN_01073e30 */
+GEN_NOFRAME unsigned int F_01073e30(void)
+{
+  GEN_ENTER(0x1073e30u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a70) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a70), REFG(float, 0x1343958));
+  return;
+}
+
+/* ref: FUN_01073e50 */
+GEN_NOFRAME unsigned int F_01073e50(void)
+{
+  GEN_ENTER(0x1073e50u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a74) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a74), REFG(float, 0x1343a00));
+  return;
+}
+
+/* ref: FUN_01073e70 */
+GEN_NOFRAME unsigned int F_01073e70(void)
+{
+  GEN_ENTER(0x1073e70u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a78) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a78), REFG(float, 0x1343a30));
+  return;
+}
+
+/* ref: FUN_01073e90 */
+GEN_NOFRAME unsigned int F_01073e90(void)
+{
+  GEN_ENTER(0x1073e90u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a7c) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a7c), REFG(float, 0x1343ad8));
+  return;
+}
+
+/* ref: FUN_01073eb0 */
+GEN_NOFRAME unsigned int F_01073eb0(void)
+{
+  GEN_ENTER(0x1073eb0u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a80) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a80), REFG(float, 0x1343b08));
+  return;
+}
+
+/* ref: FUN_01073ed0 */
+GEN_NOFRAME unsigned int F_01073ed0(void)
+{
+  GEN_ENTER(0x1073ed0u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a84) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a84), REFG(float, 0x1343bb0));
+  return;
+}
+
+/* ref: FUN_01073ef0 */
+GEN_NOFRAME unsigned int F_01073ef0(void)
+{
+  GEN_ENTER(0x1073ef0u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a88) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a88), REFG(float, 0x1343be0));
+  return;
+}
+
+/* ref: FUN_01073f10 */
+GEN_NOFRAME unsigned int F_01073f10(void)
+{
+  GEN_ENTER(0x1073f10u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a8c) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a8c), REFG(float, 0x1343e1c));
+  return;
+}
+
+/* ref: FUN_01073f30 */
+GEN_NOFRAME unsigned int F_01073f30(void)
+{
+  GEN_ENTER(0x1073f30u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a90) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a90), REFG(float, 0x1343e4c));
+  return;
+}
+
+/* ref: FUN_01073f50 */
+GEN_NOFRAME unsigned int F_01073f50(void)
+{
+  GEN_ENTER(0x1073f50u, 0u, 0u, 0u, 0u);
+  *(undefined4 *)&REFG(undefined, 0x14c5a94) = GEN_FLT_TO(*(undefined4 *)&REFG(undefined, 0x14c5a94), REFG(float, 0x1344080));
+  return;
+}
+
 /* ref: FUN_01073f70 */
 GEN_NOFRAME unsigned int F_01073f70(void)
 {
@@ -3746,156 +3842,6 @@ GEN_NOFRAME unsigned int F_010780a0(void)
   GEN_ENTER(0x10780a0u, 0u, 0u, 0u, 0u);
   F_00d92c40(&REFG(undefined, 0x15e2e64) GEN_EDX_ARG,"hkxSparselyAnimatedString",&REFG(undefined, 0x15da420),0x20,0,0,0,0,
                &REFG(undefined * PTR32, 0x114a778),2,0,0,0,2);
-  return;
-}
-
-/* ref: FUN_010780d0 */
-GEN_NOFRAME uint F_010780d0(void)
-{
-  GEN_ENTER(0x10780d0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00ddff20();
-  *(char * PTR32 *)&REFG(undefined, 0x15e2e94) = "hkxSparselyAnimatedString";
-  *(char * PTR32 *)&REFG(undefined, 0x15e2e98) = "!hkxSparselyAnimatedString";
-  *(gen_code32 *)&REFG(undefined, 0x15e2e9c) = ((code *)REFP(0xddff00));
-  *(gen_code32 *)&REFG(undefined, 0x15e2ea0) = ((code *)REFP(0xddfef0));
-  *(uint *)&REFG(undefined, 0x15e2ea4) = uVar1;
-  *(undefined4 *)&REFG(undefined, 0x15e2ea8) = 0x20;
-  return uVar1;
-}
-
-/* ref: FUN_01078110 */
-GEN_NOFRAME unsigned int F_01078110(void)
-{
-  GEN_ENTER(0x1078110u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e2eac) GEN_EDX_ARG,"hkxSparselyAnimatedInt",&REFG(undefined, 0x15da420),0x20,0,0,0,0,&REFG(undefined * PTR32, 0x114a7dc),2
-               ,0,0,0,1);
-  return;
-}
-
-/* ref: FUN_01078140 */
-GEN_NOFRAME uint F_01078140(void)
-{
-  GEN_ENTER(0x1078140u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00de0090();
-  *(char * PTR32 *)&REFG(undefined, 0x15e2edc) = "hkxSparselyAnimatedInt";
-  *(char * PTR32 *)&REFG(undefined, 0x15e2ee0) = "!hkxSparselyAnimatedInt";
-  *(gen_code32 *)&REFG(undefined, 0x15e2ee4) = ((code *)REFP(0xde0070));
-  *(gen_code32 *)&REFG(undefined, 0x15e2ee8) = ((code *)REFP(0xde0060));
-  *(uint *)&REFG(undefined, 0x15e2eec) = uVar1;
-  *(undefined4 *)&REFG(undefined, 0x15e2ef0) = 0x20;
-  return uVar1;
-}
-
-/* ref: FUN_01078180 */
-GEN_NOFRAME unsigned int F_01078180(void)
-{
-  GEN_ENTER(0x1078180u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e2ef4) GEN_EDX_ARG,"hkxSparselyAnimatedBool",&REFG(undefined, 0x15da420),0x20,0,0,0,0,
-               &REFG(undefined * PTR32, 0x114a82c),2,0,0,0,1);
-  return;
-}
-
-/* ref: FUN_010781b0 */
-GEN_NOFRAME uint F_010781b0(void)
-{
-  GEN_ENTER(0x10781b0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00de00f0();
-  *(char * PTR32 *)&REFG(undefined, 0x15e2f24) = "hkxSparselyAnimatedBool";
-  *(char * PTR32 *)&REFG(undefined, 0x15e2f28) = "!hkxSparselyAnimatedBool";
-  *(gen_code32 *)&REFG(undefined, 0x15e2f2c) = ((code *)REFP(0xde00d0));
-  *(gen_code32 *)&REFG(undefined, 0x15e2f30) = ((code *)REFP(0xde00c0));
-  *(uint *)&REFG(undefined, 0x15e2f34) = uVar1;
-  *(undefined4 *)&REFG(undefined, 0x15e2f38) = 0x20;
-  return uVar1;
-}
-
-/* ref: FUN_010781f0 */
-GEN_NOFRAME unsigned int F_010781f0(void)
-{
-  GEN_ENTER(0x10781f0u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e2f3c) GEN_EDX_ARG,"hkxSkinBinding",&REFG(undefined, 0x15da420),0x70,0,0,0,0,&REFG(undefined * PTR32, 0x114a8a8),4,0,0,0,2
-              );
-  return;
-}
-
-/* ref: FUN_01078220 */
-GEN_NOFRAME uint F_01078220(void)
-{
-  GEN_ENTER(0x1078220u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00de0260();
-  *(char * PTR32 *)&REFG(undefined, 0x15e2f6c) = "hkxSkinBinding";
-  *(char * PTR32 *)&REFG(undefined, 0x15e2f70) = "!hkxSkinBinding";
-  *(gen_code32 *)&REFG(undefined, 0x15e2f74) = ((code *)REFP(0xde0240));
-  *(gen_code32 *)&REFG(undefined, 0x15e2f78) = ((code *)REFP(0xde0230));
-  *(uint *)&REFG(undefined, 0x15e2f7c) = uVar1;
-  *(undefined4 *)&REFG(undefined, 0x15e2f80) = 0x70;
-  return uVar1;
-}
-
-/* ref: FUN_01078260 */
-GEN_NOFRAME unsigned int F_01078260(void)
-{
-  GEN_ENTER(0x1078260u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e2f84) GEN_EDX_ARG,"hkxScene",&REFG(undefined, 0x15da420),0xb0,0,0,0,0,&REFG(undefined * PTR32, 0x114a9d0),0xd,
-               &REFG(undefined, 0x114ab08),0,0,1);
-  return;
-}
-
-/* ref: FUN_010782a0 */
-GEN_NOFRAME uint F_010782a0(void)
-{
-  GEN_ENTER(0x10782a0u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00de03f0();
-  *(char * PTR32 *)&REFG(undefined, 0x15e2fb4) = "hkxScene";
-  *(char * PTR32 *)&REFG(undefined, 0x15e2fb8) = "!hkxScene";
-  *(gen_code32 *)&REFG(undefined, 0x15e2fbc) = ((code *)REFP(0xde03c0));
-  *(gen_code32 *)&REFG(undefined, 0x15e2fc0) = ((code *)REFP(0xde03b0));
-  *(uint *)&REFG(undefined, 0x15e2fc4) = uVar1;
-  *(undefined4 *)&REFG(undefined, 0x15e2fc8) = 0xb0;
-  return uVar1;
-}
-
-/* ref: FUN_010782e0 */
-GEN_NOFRAME unsigned int F_010782e0(void)
-{
-  GEN_ENTER(0x10782e0u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e2fcc) GEN_EDX_ARG,"hkxNodeSelectionSet",&REFG(undefined, 0x15e3374),0x24,0,0,0,0,
-               &REFG(undefined * PTR32, 0x114ab98),2,0,0,0,0);
-  return;
-}
-
-/* ref: FUN_01078310 */
-GEN_NOFRAME uint F_01078310(void)
-{
-  GEN_ENTER(0x1078310u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00de17f0();
-  *(char * PTR32 *)&REFG(undefined, 0x15e2ffc) = "hkxNodeSelectionSet";
-  *(char * PTR32 *)&REFG(undefined, 0x15e3000) = "!hkxNodeSelectionSet";
-  *(gen_code32 *)&REFG(undefined, 0x15e3004) = ((code *)REFP(0xde17d0));
-  *(gen_code32 *)&REFG(undefined, 0x15e3008) = ((code *)REFP(0xde17c0));
-  *(uint *)&REFG(undefined, 0x15e300c) = uVar1;
-  *(undefined4 *)&REFG(undefined, 0x15e3010) = 0x24;
-  return uVar1;
-}
-
-/* ref: FUN_01078350 */
-GEN_NOFRAME unsigned int F_01078350(void)
-{
-  GEN_ENTER(0x1078350u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e3014) GEN_EDX_ARG,"hkxMeshUserChannelInfo",&REFG(undefined, 0x15e3374),0x1c,0,0,0,0,&REFG(undefined * PTR32, 0x114ac24),2
-               ,0,0,0,0);
   return;
 }
 

@@ -1,5 +1,16 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00533430 */
+GEN_FRAME uint GEN_THISCALL F_00533430(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x533430u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  *in_ecx = (*(undefined * PTR32 (*)[2])REFP(0x109ca24));
+  in_ecx[1] = param_2;
+  return (uint)in_ecx;
+}
+
 /* ref: FUN_00533450 */
 GEN_FRAME uint GEN_THISCALL F_00533450(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -13377,36 +13388,5 @@ GEN_FRAME uint GEN_THISCALL F_00543c00(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uVar1 = F_00ab1290(param_1,param_2);
   uVar1 = F_0053f1e0(this GEN_EDX_ARG,uVar1,param_3,uVar2);
   return uVar1;
-}
-
-/* ref: FUN_00543c30 */
-GEN_FRAME uint GEN_THISCALL F_00543c30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x543c30u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  int * piVar2;
-  undefined8 uVar3;
-  undefined4 uVar4;
-  
-  piVar2 = param_1;
-  do {
-    if (piVar2 == (int *)0x0) {
-      uVar3 = 0xe0000000;
-LAB_00543c7c: ;
-      uVar4 = 0;
-      uVar1 = F_00ab1290((int)uVar3,(int)((ulonglong)uVar3 >> 0x20));
-      uVar1 = F_0053f1e0(this GEN_EDX_ARG,uVar1,param_2,uVar4);
-      return uVar1;
-    }
-    uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*piVar2 + 4))(piVar2 GEN_EDX_ARG);
-    if (uVar1 != 8) {
-      uVar3 = ((gen_lcode *)*(gen_code32 *)*piVar2)(piVar2);
-      goto LAB_00543c7c;
-    }
-    piVar2 = (int *)F_00a356c0(piVar2);
-  } while( true );
 }
 

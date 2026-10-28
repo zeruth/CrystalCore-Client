@@ -1,5 +1,20 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0079b850 */
+GEN_NOFRAME uint GEN_THISCALL F_0079b850(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x79b850u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint uVar1;
+  
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[71])REFP(0x10c9424));
+  F_0042c880((undefined *)((int)this + 0x214) GEN_EDX_FWD);
+  F_0042c880((undefined *)((int)this + 0x1c0) GEN_EDX_ARG);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[71])REFP(0x10c90bc));
+  uVar1 = F_00590600(this GEN_EDX_ARG);
+  return uVar1;
+}
+
 /* ref: Client::UI2::AddonFreeCompanyMember::vf41 */
 GEN_NOFRAME byte GEN_THISCALL F_0079b890(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -10376,27 +10391,5 @@ GEN_FRAME uint GEN_THISCALL F_007a6230(unsigned int gen_a0 GEN_EDX_PARAM, unsign
                         );
   }
   return uVar2;
-}
-
-/* ref: Client::UI2::AddonInventoryEventGrid::vf52 */
-GEN_FRAME byte GEN_THISCALL F_007a6270(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x7a6270u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int * param_1 = (int *)(uintptr_t)gen_a1;
-  undefined1 AVar1;
-  uint uVar2;
-  undefined * this_00;
-  
-  if (*param_1 == 2) {
-    AVar1 = this[0x13c];
-    uVar2 = F_0055dcb0();
-    this_00 = (undefined *)F_0057f810(*(undefined * PTR32 *)(uVar2 + 0x14) GEN_EDX_ARG,(uint)(byte)AVar1);
-    if (this_00 != (undefined *)0x0) {
-      F_007a6000(this_00 GEN_EDX_ARG);
-      return 1;
-    }
-  }
-  return 0;
 }
 

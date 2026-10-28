@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0092a100 */
+GEN_FRAME byte GEN_THISCALL F_0092a100(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x92a100u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  return *(int *)this == *param_1;
+}
+
 /* ref: FUN_0092a120 */
 GEN_FRAME byte GEN_THISCALL F_0092a120(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -19758,39 +19767,6 @@ GEN_FRAME uint GEN_THISCALL F_0093f200(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   piVar2 = (int *)F_0057f860(this GEN_EDX_FWD,param_1);
   if ((piVar2 == (int *)0x0) || ((*(byte *)((int)piVar2 + 0xfb) & 8) == 0)) {
     piVar2 = (int *)F_0091e190(this GEN_EDX_ARG,param_1,param_2,param_3);
-    if (piVar2 != (int *)0x0) {
-      bVar1 = *(byte *)((int)piVar2 + 0x13a);
-      ((GEN_TCODE *)*(gen_code32 *)(*piVar2 + 0xc))(piVar2 GEN_EDX_ARG,param_4,param_5);
-      return (uint)bVar1;
-    }
-  }
-  else {
-    uVar3 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x28))(this GEN_EDX_ARG,piVar2,param_2,param_3);
-    if ((char)uVar3 != '\0') {
-      ((GEN_TCODE *)*(gen_code32 *)(*piVar2 + 0x14))(piVar2 GEN_EDX_ARG,0);
-      return (uint)*(byte *)((int)piVar2 + 0x13a);
-    }
-  }
-  return 0;
-}
-
-/* ref: FUN_0093f290 */
-GEN_FRAME uint GEN_THISCALL F_0093f290(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
-{
-  GEN_ENTER(0x93f290u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  byte bVar1;
-  int * piVar2;
-  uint uVar3;
-  
-  piVar2 = (int *)F_0057f860(this GEN_EDX_FWD,param_1);
-  if ((piVar2 == (int *)0x0) || ((*(byte *)((int)piVar2 + 0xfb) & 8) == 0)) {
-    piVar2 = (int *)F_0091e200(this GEN_EDX_ARG,param_1,param_2,param_3);
     if (piVar2 != (int *)0x0) {
       bVar1 = *(byte *)((int)piVar2 + 0x13a);
       ((GEN_TCODE *)*(gen_code32 *)(*piVar2 + 0xc))(piVar2 GEN_EDX_ARG,param_4,param_5);

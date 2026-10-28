@@ -1,5 +1,35 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::LayoutEngine::Layer::GameObjectLayoutInstance::vf60 */
+GEN_FRAME uint GEN_THISCALL F_005dd990(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5dd990u, gen_a0, gen_a1, 0u, 0u);
+  unsigned int gen_args[2];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  int iVar1;
+  uint uVar2;
+  uint uVar3;
+  int * piVar4;
+  
+  uVar3 = (*(uint *)&gen_args[1]);
+  iVar1 = *(int *)((*(int *)&gen_args[0]) + 0x38);
+  if (iVar1 != -1) {
+    (*(uint *)&gen_args[1]) = CONCAT31(GEN_PIECE(&(*(uint *)&gen_args[1]), 1, 3),*(undefined1 *)((*(int *)&gen_args[0]) + 0x11));
+    piVar4 = (int *)F_00a1b870((*(uint *)&gen_args[1]),iVar1);
+    if (piVar4 != (int *)0x0) {
+      F_00a1e160(&(*(uint *)&gen_args[1]),uVar3);
+      ((GEN_TCODE *)*(gen_code32 *)(*piVar4 + 0x48))(piVar4 GEN_EDX_ARG);
+    }
+  }
+  *(undefined4 *)((*(int *)&gen_args[0]) + 0x60) = *(undefined4 *)uVar3;
+  *(undefined4 *)((*(int *)&gen_args[0]) + 100) = *(undefined4 *)(uVar3 + 4);
+  uVar2 = *(uint *)(uVar3 + 8);
+  *(uint *)((*(int *)&gen_args[0]) + 0x68) = uVar2;
+  *(undefined4 *)((*(int *)&gen_args[0]) + 0x6c) = *(undefined4 *)(uVar3 + 0xc);
+  return uVar2;
+}
+
 /* ref: Client::LayoutEngine::Layer::GameObjectLayoutInstance::vf62 */
 GEN_FRAME uint GEN_THISCALL F_005dda00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -15194,29 +15224,5 @@ GEN_NOFRAME uint GEN_THISCALL F_005f0cd0(unsigned int gen_a0 GEN_EDX_PARAM)
   }
   F_00c47745((*(uint *)(gen_frame + 0x9c)) ^ (uint)(uint)(gen_frame + 0xa0) GEN_EDX_ARG);
   return uVar4;
-}
-
-/* ref: FUN_005f0f60 */
-GEN_FRAME byte GEN_THISCALL F_005f0f60(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x5f0f60u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  ushort * param_1 = (ushort *)(uintptr_t)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  byte bVar1;
-  
-  if (param_1 == (ushort *)0x0) {
-    *(uint *)((int)this + 8) = (uint)(ushort)param_2;
-    *(ushort *)((int)this + 0x10) = (ushort)param_2;
-    return (byte)(ushort)param_2;
-  }
-  *(uint *)((int)this + 8) = (uint)*param_1;
-  *(ushort *)((int)this + 0x10) = (ushort)param_2;
-  F_005eda50(this GEN_EDX_FWD,(uint)((char)param_1[8] != '\0'));
-  bVar1 = ((*(char *)((int)param_1 + 0x11) != '\0') * '\x02' ^ *(byte *)((int)this + 0x16)) & 2;
-  *(byte *)((int)this + 0x16) = *(byte *)((int)this + 0x16) ^ bVar1;
-  *(ushort *)((int)this + 0x12) = param_1[0xc];
-  *(ushort *)((int)this + 0x14) = param_1[0xd];
-  return bVar1;
 }
 

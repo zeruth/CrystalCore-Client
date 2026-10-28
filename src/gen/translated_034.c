@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005c4cc0 */
+GEN_FRAME byte GEN_THISCALL F_005c4cc0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5c4cc0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  return *(int *)this != *param_1;
+}
+
 /* ref: FUN_005c4d30 */
 GEN_NOFRAME uint GEN_THISCALL F_005c4d30(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -2742,7 +2751,7 @@ GEN_FRAME unsigned int F_005c74d0(unsigned int gen_a0, unsigned int gen_a1)
 }
 
 /* ref: FUN_005c7500 */
-GEN_FRAME uint F_005c7500(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9)
+GEN_FRAME uint F_005c7500(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10)
 {
   GEN_ENTER(0x5c7500u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
@@ -2755,6 +2764,7 @@ GEN_FRAME uint F_005c7500(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   int * param_8 = (int *)(uintptr_t)gen_a7;
   undefined4 param_9 = (undefined4)gen_a8;
   uint param_10 = (uint)gen_a9;
+  undefined4 param_11 = (undefined4)gen_a10;
   uint uVar1;
   uint uVar2;
   uint uVar3;
@@ -2804,7 +2814,7 @@ GEN_FRAME uint F_005c7500(unsigned int gen_a0, unsigned int gen_a1, unsigned int
 }
 
 /* ref: FUN_005c75b0 */
-GEN_FRAME uint F_005c75b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9)
+GEN_FRAME uint F_005c75b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10)
 {
   GEN_ENTER(0x5c75b0u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
@@ -2817,6 +2827,7 @@ GEN_FRAME uint F_005c75b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   int * param_8 = (int *)(uintptr_t)gen_a7;
   undefined4 param_9 = (undefined4)gen_a8;
   uint param_10 = (uint)gen_a9;
+  undefined4 param_11 = (undefined4)gen_a10;
   uint uVar1;
   uint uVar2;
   uint uVar3;
@@ -2860,7 +2871,7 @@ GEN_FRAME uint F_005c75b0(unsigned int gen_a0, unsigned int gen_a1, unsigned int
 }
 
 /* ref: FUN_005c7660 */
-GEN_FRAME uint F_005c7660(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9)
+GEN_FRAME uint F_005c7660(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10)
 {
   GEN_ENTER(0x5c7660u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
@@ -2873,6 +2884,7 @@ GEN_FRAME uint F_005c7660(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   int * param_8 = (int *)(uintptr_t)gen_a7;
   undefined4 param_9 = (undefined4)gen_a8;
   uint param_10 = (uint)gen_a9;
+  undefined4 param_11 = (undefined4)gen_a10;
   uint uVar1;
   uint uVar2;
   uint uVar3;
@@ -2922,7 +2934,7 @@ GEN_FRAME uint F_005c7660(unsigned int gen_a0, unsigned int gen_a1, unsigned int
 }
 
 /* ref: FUN_005c7710 */
-GEN_FRAME uint F_005c7710(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9)
+GEN_FRAME uint F_005c7710(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9, unsigned int gen_a10)
 {
   GEN_ENTER(0x5c7710u, gen_a0, gen_a1, gen_a2, gen_a3);
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
@@ -2935,6 +2947,7 @@ GEN_FRAME uint F_005c7710(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   int * param_8 = (int *)(uintptr_t)gen_a7;
   undefined4 param_9 = (undefined4)gen_a8;
   uint param_10 = (uint)gen_a9;
+  undefined4 param_11 = (undefined4)gen_a10;
   uint uVar1;
   uint uVar2;
   uint uVar3;
@@ -7101,7 +7114,7 @@ GEN_FRAME uint F_005cb340(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   if ((param_2 != (int *)0x0) && ((undefined4 *)*param_2 != (undefined4 *)0x0)) {
     uVar1 = *(undefined4 *)*param_2;
   }
-  F_005c7500(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10);
+  F_005c7500(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10,param_1);
   return param_1;
 }
 
@@ -7135,7 +7148,7 @@ GEN_FRAME uint F_005cb3c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   if ((param_2 != (int *)0x0) && ((undefined4 *)*param_2 != (undefined4 *)0x0)) {
     uVar1 = *(undefined4 *)*param_2;
   }
-  F_005c75b0(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10);
+  F_005c75b0(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10,param_1);
   return param_1;
 }
 
@@ -7169,7 +7182,7 @@ GEN_FRAME uint F_005cb440(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   if ((param_2 != (int *)0x0) && ((undefined4 *)*param_2 != (undefined4 *)0x0)) {
     uVar1 = *(undefined4 *)*param_2;
   }
-  F_005c7660(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10);
+  F_005c7660(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10,param_1);
   return param_1;
 }
 
@@ -7203,7 +7216,7 @@ GEN_FRAME uint F_005cb4c0(unsigned int gen_a0, unsigned int gen_a1, unsigned int
   if ((param_2 != (int *)0x0) && ((undefined4 *)*param_2 != (undefined4 *)0x0)) {
     uVar1 = *(undefined4 *)*param_2;
   }
-  F_005c7710(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10);
+  F_005c7710(param_1,uVar1,0,param_4,uVar2,0,param_7,uVar3,0,param_10,param_1);
   return param_1;
 }
 
@@ -9358,12 +9371,5 @@ GEN_NOFRAME uint GEN_THISCALL F_005cd0e0(unsigned int gen_a0 GEN_EDX_PARAM)
   GEN_ENTER(0x5cd0e0u, gen_a0, 0u, 0u, 0u);
   int in_ecx = (int)gen_a0;
   return *(uint *)(in_ecx + 0x68);
-}
-
-/* ref: Component::GUI2::AtkComponentBase::vf18 */
-GEN_NOFRAME uint F_005cd0f0(void)
-{
-  GEN_ENTER(0x5cd0f0u, 0u, 0u, 0u, 0u);
-  return 0;
 }
 

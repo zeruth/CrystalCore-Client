@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf63 */
+GEN_NOFRAME uint GEN_THISCALL F_00608f60(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x608f60u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 0x30;
+}
+
 /* ref: Client::LayoutEngine::Layer::SoundPointLayoutInstance::vf64 */
 GEN_FRAME uint GEN_THISCALL F_00608f70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
 {
@@ -7255,16 +7263,6 @@ GEN_FRAME uint GEN_THISCALL F_0060f880(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
   undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
   *param_2 = *in_ecx;
-  return (uint)param_2;
-}
-
-/* ref: FUN_0060f890 */
-GEN_FRAME uint GEN_THISCALL F_0060f890(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x60f890u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  *param_2 = *(undefined4 *)(in_ecx + 4);
   return (uint)param_2;
 }
 

@@ -1,5 +1,194 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005a5ee0 */
+GEN_FRAME uint GEN_THISCALL F_005a5ee0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x5a5ee0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint uVar1;
+  undefined * pvVar2;
+  undefined4 * puVar3;
+  
+  uVar1 = F_00404270();
+  switch((unsigned int)(uintptr_t)(param_1)) {
+  case 0: ;
+    pvVar2 = (undefined *)F_00406bd0(0x84,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00581150(pvVar2 GEN_EDX_ARG);
+    break;
+  case 1: ;
+    pvVar2 = (undefined *)F_00406bd0(0x130,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_005814a0(pvVar2 GEN_EDX_ARG);
+    break;
+  case 2: ;
+    pvVar2 = (undefined *)F_00406bd0(0xc0,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_0058a250(pvVar2 GEN_EDX_ARG);
+    break;
+  case 3: ;
+    pvVar2 = (undefined *)F_00406bd0(0x150,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00581900(pvVar2 GEN_EDX_ARG);
+    break;
+  case 4: ;
+    pvVar2 = (undefined *)F_00406bd0(0x138,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00581990(pvVar2 GEN_EDX_ARG);
+    break;
+  case 5: ;
+    pvVar2 = (undefined *)F_00406bd0(0xf0,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00581230(pvVar2 GEN_EDX_ARG);
+    break;
+  case 6: ;
+    pvVar2 = (undefined *)F_00406bd0(0xb0,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_005813a0(pvVar2 GEN_EDX_ARG);
+    break;
+  case 7: ;
+    pvVar2 = (undefined *)F_00406bd0(0x3bc,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_005a3a80(pvVar2 GEN_EDX_ARG);
+    break;
+  case 8: ;
+    pvVar2 = (undefined *)F_00406bd0(0x27c,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00582dd0(pvVar2 GEN_EDX_ARG);
+    break;
+  case 9: ;
+    pvVar2 = (undefined *)F_00406bd0(300,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_005819c0(pvVar2 GEN_EDX_ARG);
+    break;
+  case 10: ;
+    pvVar2 = (undefined *)F_00406bd0(0x98,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00582260(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0xb: ;
+    pvVar2 = (undefined *)F_00406bd0(0x140,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00592620(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0xc: ;
+    pvVar2 = (undefined *)F_00406bd0(0x194,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00589c70(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0xd: ;
+    pvVar2 = (undefined *)F_00406bd0(0xd0,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00582140(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0xe: ;
+    pvVar2 = (undefined *)F_00406bd0(0x228,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00591190(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0xf: ;
+    pvVar2 = (undefined *)F_00406bd0(0xc0,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_005811c0(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0x10: ;
+    pvVar2 = (undefined *)F_00406bd0(0xa4,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00582370(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0x11: ;
+    pvVar2 = (undefined *)F_00406bd0(0xac,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00582450(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0x12: ;
+    pvVar2 = (undefined *)F_00406bd0(0x9c,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_005831b0(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0x13: ;
+    pvVar2 = (undefined *)F_00406bd0(0x94,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00583250(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0x14: ;
+    pvVar2 = (undefined *)F_00406bd0(0x29c,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00583400(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0x15: ;
+    pvVar2 = (undefined *)F_00406bd0(0x9c,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_005835b0(pvVar2 GEN_EDX_ARG);
+    break;
+  case 0x16: ;
+    pvVar2 = (undefined *)F_00406bd0(0x2f0,0,uVar1,0);
+    if (pvVar2 == (undefined *)0x0) {
+      return 0;
+    }
+    puVar3 = (undefined4 *)F_00583630(pvVar2 GEN_EDX_ARG);
+    break;
+  default: ;
+    goto switchD_005a5ef8_default;
+  }
+  if (puVar3 != (undefined4 *)0x0) {
+    uVar1 = F_00a4b3a0(this GEN_EDX_ARG);
+    if (uVar1 < 0x8000) {
+      *(short *)(puVar3 + 0x19) = (short)uVar1;
+      *(undefined4 * PTR32 *)((int)this + uVar1 * 4 + 0x14) = puVar3;
+      return (uint)puVar3;
+    }
+    ((GEN_TCODE *)*(gen_code32 *)*puVar3)(puVar3 GEN_EDX_ARG,1);
+  }
+switchD_005a5ef8_default: ;
+  return 0;
+}
+
 /* ref: FUN_005a62e0 */
 GEN_FRAME uint GEN_THISCALL F_005a62e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8, unsigned int gen_a9)
 {
@@ -16335,18 +16524,6 @@ GEN_FRAME uint GEN_THISCALL F_005bab70(unsigned int gen_a0 GEN_EDX_PARAM, unsign
       F_00406b30(this);
       return (uint)this;
     }
-  }
-  return (uint)this;
-}
-
-/* ref: FUN_005babb0 */
-GEN_FRAME uint GEN_THISCALL F_005babb0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x5babb0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
   }
   return (uint)this;
 }

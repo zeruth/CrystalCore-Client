@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0091fab0 */
+GEN_FRAME uint F_0091fab0(unsigned int gen_a0)
+{
+  GEN_ENTER(0x91fab0u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  return param_1;
+}
+
 /* ref: FUN_0091fac0 */
 GEN_FRAME uint F_0091fac0(unsigned int gen_a0)
 {
@@ -6615,19 +6623,6 @@ GEN_FRAME uint GEN_THISCALL F_00925300(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     iVar1 = iVar1 - 1;
   } while (-1 < iVar1);
   F_00590600(this GEN_EDX_ARG);
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Client::UI2::AddonConfigLogFilter::vf0 */
-GEN_FRAME uint GEN_THISCALL F_00925350(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x925350u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  F_007b8720(this GEN_EDX_FWD);
   if ((param_1 & 1) != 0) {
     F_00406ad0(this);
   }

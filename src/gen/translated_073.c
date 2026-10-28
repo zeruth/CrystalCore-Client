@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_007b3080 */
+GEN_FRAME uint GEN_THISCALL F_007b3080(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x7b3080u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a2;
+  undefined * param_3 = (undefined *)(uintptr_t)gen_a3;
+  undefined * this_00;
+  uint uVar1;
+  
+  this_00 = (undefined *)F_00559ba0(param_2[1] GEN_EDX_FWD);
+  uVar1 = F_00559b90(*param_2 GEN_EDX_ARG);
+  if (uVar1 != 0) {
+    F_005951c0(param_3 GEN_EDX_ARG,*(undefined4 *)(param_1 * 0x60 + 0x1d8 + (int)this),0,uVar1);
+  }
+  uVar1 = F_0042a990(param_1 * 0x60 + 0x184 + (int)this GEN_EDX_ARG);
+  uVar1 = F_00584110(this_00 GEN_EDX_ARG,uVar1);
+  return uVar1;
+}
+
 /* ref: Client::UI2::AddonCabinetWithdraw::vf25 */
 GEN_FRAME uint GEN_THISCALL F_007b30e0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -14756,18 +14777,5 @@ GEN_FRAME uint GEN_THISCALL F_007c2560(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     uVar3 = F_005a2670(&(*(undefined4 *)(gen_frame + 0x4)) GEN_EDX_ARG);
   }
   return uVar3;
-}
-
-/* ref: Client::UI2::AddonCharaSelectListMenu::vf6 */
-GEN_FRAME uint GEN_THISCALL F_007c2610(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x7c2610u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  uint uVar1;
-  
-  uVar1 = F_005b0610(this GEN_EDX_FWD,param_1,1,param_2);
-  return uVar1;
 }
 

@@ -1,5 +1,40 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::RaptureAtkModule::InventoryCache::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00908820(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x908820u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  undefined * pIVar1;
+  int iVar2;
+  undefined * pIVar3;
+  
+  if ((param_1 & 2) == 0) {
+    *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[3])REFP(0x10c3eec));
+    F_0042c880(this + 4 GEN_EDX_FWD);
+    if ((param_1 & 1) != 0) {
+      F_00406ad0(this);
+    }
+  }
+  else {
+    pIVar1 = this - 4;
+    iVar2 = *(int *)pIVar1;
+    pIVar3 = this + iVar2 * 0x70;
+    while (iVar2 = iVar2 - 1, -1 < iVar2) {
+      *(undefined * PTR32 * PTR32 *)(pIVar3 - 0x70) = (*(undefined * PTR32 (*)[3])REFP(0x10c3eec));
+      F_0042c880(pIVar3 - 0x6c GEN_EDX_ARG);
+      pIVar3 = pIVar3 - 0x70;
+    }
+    this = pIVar1;
+    if ((param_1 & 1) != 0) {
+      F_00406b30(pIVar1);
+      return (uint)pIVar1;
+    }
+  }
+  return (uint)this;
+}
+
 /* ref: Client::UI2::RaptureAtkModule::ItemCache::vf0 */
 GEN_FRAME uint GEN_THISCALL F_009088a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -5829,14 +5864,5 @@ GEN_FRAME uint GEN_THISCALL F_0090f580(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00406ad0(this);
   }
   return (uint)this;
-}
-
-/* ref: Client::UI2::AddonCharaSelectInfo::vf5 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_0090f5f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x90f5f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  return;
 }
 

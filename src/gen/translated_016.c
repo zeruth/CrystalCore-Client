@@ -1,5 +1,19 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_004e3000 */
+GEN_FRAME uint F_004e3000(unsigned int gen_a0)
+{
+  GEN_ENTER(0x4e3000u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  uint uVar1;
+  
+  uVar1 = 0;
+  if (param_1 != 0) {
+    uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1);
+  }
+  return uVar1;
+}
+
 /* ref: Client::Graphics::Kernel::Device::CallbackManager::vf0 */
 GEN_FRAME uint GEN_THISCALL F_004e3020(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -9843,18 +9857,5 @@ GEN_FRAME uint GEN_THISCALL F_004ed6c0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uint param_2 = (uint)gen_a1;
   *(uint *)(in_ecx + 0xa8) = param_2;
   return param_2;
-}
-
-/* ref: Client::Sound::MemoryHandleInterface::vf0 */
-GEN_FRAME uint GEN_THISCALL F_004ed710(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x4ed710u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[8])REFP(0x1097898));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
 }
 

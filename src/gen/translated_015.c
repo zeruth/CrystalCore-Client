@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_004d7430 */
+GEN_FRAME uint GEN_THISCALL F_004d7430(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x4d7430u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  __declspec(align(16)) undefined1 gen_frame[0x10];
+  float fVar1;
+  float * pfVar2;
+  float10 fVar3;
+  float10 fVar4;
+  
+  fVar3 = (float10)*(int *)((int)this + 0x90);
+  if (*(int *)((int)this + 0x90) < 0) {
+    fVar3 = fVar3 + (float10)*(float *)&REFG(undefined, 0x1088110);
+  }
+  fVar4 = (float10)*(int *)((int)this + 0x94);
+  if (*(int *)((int)this + 0x94) < 0) {
+    fVar4 = fVar4 + (float10)*(float *)&REFG(undefined, 0x1088110);
+  }
+  (*(float *)(gen_frame + 0x8)) = (float)fVar4;
+  (*(float *)(gen_frame + 0x4)) = REFG(float, 0x1087f04);
+  pfVar2 = &(*(float *)(gen_frame + 0x8));
+  if (!((float10)1 < (float10)(float)fVar4)) {
+    pfVar2 = &(*(float *)(gen_frame + 0x4));
+  }
+  fVar1 = *pfVar2;
+  (*(float *)(gen_frame + 0x8)) = fVar1;
+  *(float *)((int)this + 0x98) = (float)((float10)(float)fVar3 / (float10)fVar1);
+  return (uint)pfVar2;
+}
+
 /* ref: FUN_004d74a0 */
 GEN_NOFRAME uint GEN_THISCALL F_004d74a0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -10811,20 +10842,6 @@ GEN_FRAME uint F_004e2fe0(unsigned int gen_a0)
   uint uVar1;
   
   uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 8))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1,0x10);
-  return uVar1;
-}
-
-/* ref: FUN_004e3000 */
-GEN_FRAME uint F_004e3000(unsigned int gen_a0)
-{
-  GEN_ENTER(0x4e3000u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  uint uVar1;
-  
-  uVar1 = 0;
-  if (param_1 != 0) {
-    uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(REFG(int, 0x1371270) + 8) + 0x10))))(*(int * PTR32 *)(REFG(int, 0x1371270) + 8) GEN_EDX_ARG,param_1);
-  }
   return uVar1;
 }
 

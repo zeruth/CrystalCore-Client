@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00730980 */
+GEN_NOFRAME uint GEN_THISCALL F_00730980(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x730980u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  F_007237a0(this GEN_EDX_FWD);
+  return (uint)this;
+}
+
 /* ref: FUN_007309a0 */
 GEN_NOFRAME uint GEN_THISCALL F_007309a0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -7504,28 +7513,5 @@ GEN_FRAME uint F_00737f90(unsigned int gen_a0, unsigned int gen_a1)
   
   uVar1 = ((GEN_TCODE *)*(gen_code32 *)*param_2)(param_2 GEN_EDX_ARG,0);
   return uVar1;
-}
-
-/* ref: FUN_00737fd0 */
-GEN_FRAME unsigned int F_00737fd0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x737fd0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * param_3 = (undefined4 *)(uintptr_t)gen_a2;
-  int iVar1;
-  undefined4 * puVar2;
-  undefined4 * puVar3;
-  
-  if (param_2 != (undefined4 *)0x0) {
-    puVar2 = param_3;
-    puVar3 = param_2;
-    for (iVar1 = 10; iVar1 != 0; iVar1 = iVar1 - 1) {
-      *puVar3 = *puVar2;
-      puVar2 = puVar2 + 1;
-      puVar3 = puVar3 + 1;
-    }
-  }
-  return;
 }
 

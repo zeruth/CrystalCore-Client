@@ -1,5 +1,94 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::AddonFreeCompanyCrestColor::vf44 */
+GEN_FRAME uint GEN_THISCALL F_008e3e00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x8e3e00u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  __declspec(align(16)) undefined1 gen_frame[0x30];
+  uint uVar1;
+  uint uVar2;
+  undefined * pvVar3;
+  undefined * pvVar4;
+  undefined * pAVar5;
+  
+  uVar1 = F_0055e2f0(this GEN_EDX_FWD,9);
+  if (uVar1 == 0) {
+    uVar1 = 0;
+  }
+  else {
+    uVar1 = F_00559c20(uVar1 GEN_EDX_ARG);
+    if ((uVar1 == 0) || (uVar2 = F_005613a0(uVar1 GEN_EDX_ARG), uVar2 != 1)) {
+      uVar1 = 0;
+    }
+  }
+  pAVar5 = this + 0x180;
+  *(uint *)pAVar5 = uVar1;
+  uVar1 = F_0055e2f0(this GEN_EDX_ARG,8);
+  if (((uVar1 == 0) || (uVar1 = F_00559c20(uVar1 GEN_EDX_ARG), uVar1 == 0)) ||
+     (uVar2 = F_005613a0(uVar1 GEN_EDX_ARG), uVar2 != 1)) {
+    uVar1 = 0;
+  }
+  *(uint *)(this + 0x184) = uVar1;
+  uVar1 = 0;
+  do {
+    pvVar3 = (undefined *)0x0;
+    if (*(uint *)pAVar5 != 0) {
+      pvVar3 = *(undefined * PTR32 *)(*(uint *)pAVar5 + 0x70);
+    }
+    F_00568380(pvVar3 GEN_EDX_ARG,0x17,(uVar1 & 0x7fff) << 0x10,this,0,0);
+    uVar1 = uVar1 + 1;
+    pAVar5 = pAVar5 + 4;
+  } while (uVar1 < 2);
+  uVar1 = F_0055e2f0(this GEN_EDX_ARG,4);
+  if (((uVar1 == 0) || (uVar1 = F_00559c20(uVar1 GEN_EDX_ARG), uVar1 == 0)) ||
+     (uVar2 = F_005613a0(uVar1 GEN_EDX_ARG), uVar2 != 9)) {
+    uVar1 = 0;
+  }
+  *(uint *)(this + 0x188) = uVar1;
+  uVar1 = F_0055e2f0(this GEN_EDX_ARG,7);
+  if (((uVar1 == 0) || (uVar1 = F_00559c20(uVar1 GEN_EDX_ARG), uVar1 == 0)) ||
+     (uVar2 = F_005613a0(uVar1 GEN_EDX_ARG), uVar2 != 9)) {
+    uVar1 = 0;
+  }
+  *(uint *)(this + 0x18c) = uVar1;
+  (*(undefined4 *)(gen_frame + 0x1c)) = 0;
+  (*(undefined4 *)(gen_frame + 0x20)) = 0;
+  (*(undefined4 *)(gen_frame + 0x18)) = 3;
+  (*(uint *)(gen_frame + 0x28)) = 0;
+  (*(undefined * PTR32 *)(gen_frame + 0x24)) = this + 0x188;
+  do {
+    pvVar3 = *(undefined * PTR32 *)(*(undefined * PTR32 *)(gen_frame + 0x24));
+    (*(undefined * PTR32 *)(gen_frame + 0x8)) = this;
+    (*(gen_code32 *)(gen_frame + 0xc)) = ((code *)REFP(0x7fab60));
+    (*(undefined4 *)(gen_frame + 0x10)) = 0;
+    (*(undefined4 *)(gen_frame + 0x14)) = 0;
+    F_00574320(pvVar3 GEN_EDX_ARG,&(*(undefined * PTR32 *)(gen_frame + 0x8)),&(*(undefined4 *)(gen_frame + 0x18)),1,0);
+    uVar1 = (*(uint *)(gen_frame + 0x28));
+    if (pvVar3 == (undefined *)0x0) {
+      pvVar4 = (undefined *)0x0;
+    }
+    else {
+      pvVar4 = *(undefined * PTR32 *)((int)pvVar3 + 0x70);
+    }
+    F_00568380(pvVar4 GEN_EDX_ARG,0x24,((*(uint *)(gen_frame + 0x28)) & 0x7fff) << 0x10 | 1,this,0,0);
+    pvVar4 = (undefined *)0x0;
+    if (pvVar3 != (undefined *)0x0) {
+      pvVar4 = *(undefined * PTR32 *)((int)pvVar3 + 0x70);
+    }
+    F_00568380(pvVar4 GEN_EDX_ARG,0x21,uVar1 << 0x10 | 0x80000001,this,0,0);
+    (*(undefined * PTR32 *)(gen_frame + 0x24)) = (*(undefined * PTR32 *)(gen_frame + 0x24)) + 4;
+    uVar1 = (*(uint *)(gen_frame + 0x28)) + 1;
+    (*(uint *)(gen_frame + 0x28)) = uVar1;
+  } while (uVar1 < 2);
+  F_008db5a0(this GEN_EDX_ARG,param_1,param_2);
+  *(undefined4 *)(this + 0x1bc) = *(undefined4 *)(this + 0x188);
+  uVar1 = F_005a91d0(this GEN_EDX_ARG,1,0x3c);
+  return uVar1;
+}
+
 /* ref: Client::UI2::AddonFreeCompanyCrestColor::vf46 */
 GEN_FRAME byte GEN_THISCALL F_008e3fe0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -26486,40 +26575,5 @@ GEN_NOFRAME uint GEN_THISCALL F_009087e0(unsigned int gen_a0 GEN_EDX_PARAM)
   F_0042c880((undefined *)((int)this + 0x70) GEN_EDX_ARG);
   uVar1 = F_0042c880((undefined *)((int)this + 0x1c) GEN_EDX_ARG);
   return (uint)uVar1;
-}
-
-/* ref: Client::UI2::RaptureAtkModule::InventoryCache::vf0 */
-GEN_FRAME uint GEN_THISCALL F_00908820(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x908820u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  undefined * pIVar1;
-  int iVar2;
-  undefined * pIVar3;
-  
-  if ((param_1 & 2) == 0) {
-    *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[3])REFP(0x10c3eec));
-    F_0042c880(this + 4 GEN_EDX_FWD);
-    if ((param_1 & 1) != 0) {
-      F_00406ad0(this);
-    }
-  }
-  else {
-    pIVar1 = this - 4;
-    iVar2 = *(int *)pIVar1;
-    pIVar3 = this + iVar2 * 0x70;
-    while (iVar2 = iVar2 - 1, -1 < iVar2) {
-      *(undefined * PTR32 * PTR32 *)(pIVar3 - 0x70) = (*(undefined * PTR32 (*)[3])REFP(0x10c3eec));
-      F_0042c880(pIVar3 - 0x6c GEN_EDX_ARG);
-      pIVar3 = pIVar3 - 0x70;
-    }
-    this = pIVar1;
-    if ((param_1 & 1) != 0) {
-      F_00406b30(pIVar1);
-      return (uint)pIVar1;
-    }
-  }
-  return (uint)this;
 }
 

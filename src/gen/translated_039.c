@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::LayoutEngine::Layer::ChairMarkerLayoutInstance::vf24 */
+GEN_NOFRAME uint F_005fffb0(void)
+{
+  GEN_ENTER(0x5fffb0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
 /* ref: Client::LayoutEngine::Layer::ChairMarkerLayoutInstance::vf23 */
 GEN_NOFRAME uint F_005fffc0(void)
 {
@@ -5438,14 +5445,6 @@ GEN_FRAME uint F_00605070(unsigned int gen_a0)
 GEN_FRAME uint F_00605080(unsigned int gen_a0)
 {
   GEN_ENTER(0x605080u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
-}
-
-/* ref: FUN_00605090 */
-GEN_FRAME uint F_00605090(unsigned int gen_a0)
-{
-  GEN_ENTER(0x605090u, gen_a0, 0u, 0u, 0u);
   uint param_1 = (uint)gen_a0;
   return param_1;
 }

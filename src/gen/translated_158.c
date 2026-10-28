@@ -1,5 +1,253 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00cbab30 */
+GEN_FRAME uint GEN_THISCALL F_00cbab30(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbab30u, gen_a0, gen_a1, 0u, 0u);
+  __declspec(align(16)) undefined1 gen_frame[0x12c];
+  unsigned int *gen_args = (unsigned int *)(gen_frame + 0x124);
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  uint uVar1;
+  undefined4 * puVar2;
+  
+  (*(volatile undefined4 *)(gen_frame + 0x118)) = 0xffffffff;
+  (*(gen_code32 *)(gen_frame + 0x114)) = ((code *)REFP(0x10706e9));
+  (*(undefined * PTR32 *)(gen_frame + 0x110)) = (*((void * PTR32 *)GEN_TOP((uintptr_t)(gen_teb32() + 0x0))));
+  uVar1 = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x11c);
+  (*(uint *)(gen_frame + 0x10c)) = uVar1;
+  (*((void * PTR32 *)GEN_TOP((uintptr_t)(gen_teb32() + 0x0)))) = &(*(undefined * PTR32 *)(gen_frame + 0x110));
+  if (setjmp(*gen_eh_landing((unsigned int)(uintptr_t)(&(*(undefined * PTR32 *)(gen_frame + 0x110)))))) { return (uint)(uintptr_t)gen_eh_resume(); }
+  puVar2 = ((undefined4 *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x15d7724) + 4))))(REFG(int * PTR32, 0x15d7724) GEN_EDX_ARG,0x1c,0)));
+  (*(undefined4 * PTR32 *)(gen_frame + 0x8)) = puVar2;
+  (*(volatile undefined4 *)(gen_frame + 0x118)) = 0;
+  if (puVar2 == (undefined4 *)0x0) {
+    puVar2 = (undefined4 *)0x0;
+  }
+  else {
+    puVar2[1] = 0;
+    puVar2[2] = 0;
+    (*(undefined1 *)((char *)&(*(volatile undefined4 *)(gen_frame + 0x118)) + 0)) = 1;
+    (*(volatile undefined4 *)(gen_frame + 0x118)) = 1;
+    *puVar2 = (*(undefined * PTR32 (*)[1])REFP(0x1129978));
+    F_00cb4120(puVar2 + 3 GEN_EDX_ARG);
+  }
+  puVar2[1] = (int)(*(undefined * PTR32 *)&gen_args[0]) + 0x34;
+  puVar2[2] = *((undefined4 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x3c)));
+  (*(volatile undefined4 *)(gen_frame + 0x118)) = 0xffffffff;
+  if (*((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x3c))) != 0) {
+    *((undefined4 * PTR32 *)GEN_TOP((*((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x3c))) + 4))) = puVar2;
+  }
+  *((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x4c))) = *((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x4c))) + 1;
+  *((undefined4 * PTR32 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x3c))) = puVar2;
+  F_00c472af(((char *)(gen_frame + 0xc)),0x100,"%s_%d%s.exd",*((undefined4 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x14))),
+             *((undefined4 *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x1c))),
+             (&REFG(undefined * PTR32, 0x134c2d0))[(int)(*((int *)GEN_TOP((*((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x10))) + 0x10))))],uVar1);
+  *((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x28))) = *((int *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0x28))) + 1;
+  *(char *)(puVar2 + 6) = (char)(*(undefined4 *)&gen_args[1]);
+  uVar1 = ((code *)*((gen_code32 *)GEN_TOP((REFG(int * PTR32, 0x15d7724)[1] + 4))))
+                    (REFG(int * PTR32, 0x15d7724) + 1,((char *)(gen_frame + 0xc)),(int)(*(undefined * PTR32 *)&gen_args[0]) + 0xc,puVar2,0,0,
+                     (uint)((char)(*(undefined4 *)&gen_args[1]) == '\0'));
+  (*((void * PTR32 *)GEN_TOP((uintptr_t)(gen_teb32() + 0x0)))) = (*(undefined * PTR32 *)(gen_frame + 0x110));
+  F_00c47745((*(uint *)(gen_frame + 0x10c)) ^ (uint)(uint)(gen_frame + 0x11c) GEN_EDX_ARG);
+  return uVar1;
+}
+
+/* ref: FUN_00cbac50 */
+GEN_FRAME uint GEN_THISCALL F_00cbac50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbac50u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  __declspec(align(16)) undefined1 gen_frame[0x110];
+  uint uVar1;
+  uint uVar2;
+  
+  (*(uint *)(gen_frame + 0x108)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x10c);
+  uVar1 = F_00cba420(this GEN_EDX_FWD,0,param_1);
+  uVar2 = 0;
+  if (uVar1 != 0) {
+    F_00c472af(((char *)(gen_frame + 0x8)),0x100,"%s_%d%s.exd",*(undefined4 *)((int)this + 0x14),
+               *(undefined4 *)((int)this + 0x1c),
+               (&REFG(undefined * PTR32, 0x134c2d0))[(int)(*((int *)GEN_TOP((*(int *)((int)this + 0x10) + 0x10))))]);
+    *(int *)((int)this + 0x28) = *(int *)((int)this + 0x28) + 1;
+    uVar2 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)(REFG(int, 0x15d7724) + 4) + 4))))
+                      (REFG(int, 0x15d7724) + 4 GEN_EDX_ARG,((char *)(gen_frame + 0x8)),(int)this + 0xc,uVar1,0,0,0);
+  }
+  F_00c47745((*(uint *)(gen_frame + 0x108)) ^ (uint)(uint)(gen_frame + 0x10c) GEN_EDX_ARG);
+  return uVar2;
+}
+
+/* ref: FUN_00cbace0 */
+GEN_FRAME uint GEN_THISCALL F_00cbace0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbace0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  F_00cba710(this GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x15d7724) + 8))))(REFG(int * PTR32, 0x15d7724) GEN_EDX_ARG,this);
+  }
+  return (uint)this;
+}
+
+/* ref: FUN_00cbad10 */
+GEN_FRAME uint GEN_THISCALL F_00cbad10(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbad10u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  __declspec(align(16)) undefined1 gen_frame[0x20];
+  byte bVar1;
+  uint uVar2;
+  undefined4 * puVar3;
+  undefined4 * puVar4;
+  bool bVar5;
+  
+  (*(uint *)(gen_frame + 0x18)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x1c);
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0xc))(param_1 GEN_EDX_FWD);
+  bVar5 = (char)uVar2 == '\0';
+  puVar3 = ((undefined4 *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x18))(param_1 GEN_EDX_ARG)));
+  F_00cb4360(((undefined1 *)(gen_frame + 0xc)) GEN_EDX_ARG,puVar3 + 3);
+  if (*(short *)((int)puVar3 + 0x12) == -1) {
+    if (bVar5) {
+      F_00cba7f0((undefined *)((int)this - 0xc) GEN_EDX_ARG,param_1);
+    }
+    if (puVar3[1] != 0) {
+      *(undefined4 *)(puVar3[1] + 8) = puVar3[2];
+    }
+    if (puVar3[2] != 0) {
+      *(undefined4 *)(puVar3[2] + 4) = puVar3[1];
+    }
+    *(int *)((int)this + 0x40) = *(int *)((int)this + 0x40) - 1;
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)(REFG(int, 0x15d7724) + 4) + 8))))(REFG(int, 0x15d7724) + 4 GEN_EDX_ARG,param_1);
+    puVar3 = ((undefined4 *)GEN_TOP(((GEN_TCODE *)*(gen_code32 *)*puVar3)(puVar3 GEN_EDX_ARG,1)));
+  }
+  else {
+    puVar4 = *(undefined4 * PTR32 *)((int)this + 0x30);
+    puVar3 = (undefined4 *)((int)this + 0x34);
+    if (puVar4 != puVar3) {
+      do {
+        bVar1 = F_00cb4170(puVar4 + 3 GEN_EDX_ARG,((undefined1 *)(gen_frame + 0xc)));
+        if (bVar1 != 0) {
+          if (bVar5) {
+            F_00cb9cd0((undefined *)((int)this - 0xc) GEN_EDX_ARG,param_1,puVar4 + 3);
+          }
+          if (puVar4 != (undefined4 *)0x0) {
+            if (puVar4[1] != 0) {
+              *(undefined4 *)(puVar4[1] + 8) = puVar4[2];
+            }
+            if (puVar4[2] != 0) {
+              *(undefined4 *)(puVar4[2] + 4) = puVar4[1];
+            }
+            *(int *)((int)this + 0x40) = *(int *)((int)this + 0x40) - 1;
+            ((GEN_TCODE *)*(gen_code32 *)*puVar4)(puVar4 GEN_EDX_ARG,1);
+          }
+          puVar3 = ((undefined4 *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)(REFG(int, 0x15d7724) + 4) + 8))))(REFG(int, 0x15d7724) + 4 GEN_EDX_ARG,param_1)));
+          break;
+        }
+        if (puVar4 != (undefined4 *)0x0) {
+          puVar4 = (undefined4 *)puVar4[2];
+        }
+        puVar3 = (undefined4 *)((int)this + 0x34);
+      } while (puVar4 != puVar3);
+    }
+  }
+  *(int *)((int)this + 0x1c) = *(int *)((int)this + 0x1c) - 1;
+  if (!bVar5) {
+    puVar3 = *(undefined4 * PTR32 *)((int)this + 4);
+    *(undefined1 *)((int)this + 0x24) = 1;
+    *(undefined1 *)((int)puVar3 + 0x81) = 1;
+  }
+  F_00c47745((*(uint *)(gen_frame + 0x18)) ^ (uint)(uint)(gen_frame + 0x1c) GEN_EDX_ARG);
+  return (uint)puVar3;
+}
+
+/* ref: FUN_00cbae50 */
+GEN_FRAME float10 GEN_THISCALL F_00cbae50(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcbae50u, gen_a0, 0u, 0u, 0u);
+  int * in_ecx = (int *)(uintptr_t)gen_a0;
+  return (float10)(float)((float10)*in_ecx / (float10)*(double *)&REFG(undefined, 0x1097260));
+}
+
+/* ref: FUN_00cbaea0 */
+GEN_FRAME uint GEN_THISCALL F_00cbaea0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbaea0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  *in_ecx = (*(undefined * PTR32 (*)[1])REFP(0x11299a4));
+  in_ecx[1] = param_2;
+  uVar1 = F_00d2cce0();
+  in_ecx[2] = uVar1;
+  return (uint)in_ecx;
+}
+
+/* ref: FUN_00cbaed0 */
+GEN_NOFRAME uint GEN_THISCALL F_00cbaed0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcbaed0u, gen_a0, 0u, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  *in_ecx = (*(undefined * PTR32 (*)[1])REFP(0x11299a4));
+  in_ecx[1] = 0xffffffff;
+  in_ecx[2] = 0;
+  return (uint)in_ecx;
+}
+
+/* ref: FUN_00cbaef0 */
+GEN_FRAME uint GEN_THISCALL F_00cbaef0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbaef0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[1])REFP(0x11299a4));
+  *(undefined4 *)((int)this + 4) = *(undefined4 *)(param_1 + 4);
+  *(undefined4 *)((int)this + 8) = *(undefined4 *)(param_1 + 8);
+  return (uint)this;
+}
+
+/* ref: FUN_00cbaf10 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00cbaf10(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xcbaf10u, gen_a0, 0u, 0u, 0u);
+  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
+  *in_ecx = (*(undefined * PTR32 (*)[1])REFP(0x11299a4));
+  return;
+}
+
+/* ref: FUN_00cbaf20 */
+GEN_FRAME uint GEN_THISCALL F_00cbaf20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbaf20u, gen_a0, gen_a1, 0u, 0u);
+  uint in_ecx = (uint)gen_a0;
+  uint param_2 = (uint)gen_a1;
+  if (in_ecx != param_2) {
+    *(undefined4 *)(in_ecx + 4) = *(undefined4 *)(param_2 + 4);
+  }
+  return in_ecx;
+}
+
+/* ref: FUN_00cbaf40 */
+GEN_FRAME byte F_00cbaf40(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbaf40u, gen_a0, gen_a1, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  return *(int *)(param_1 + 4) == *(int *)(param_2 + 4);
+}
+
+/* ref: FUN_00cbaf60 */
+GEN_FRAME byte F_00cbaf60(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xcbaf60u, gen_a0, gen_a1, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  int param_2 = (int)gen_a1;
+  return *(int *)(param_1 + 4) != *(int *)(param_2 + 4);
+}
+
 /* ref: FUN_00cbaf80 */
 GEN_NOFRAME uint GEN_THISCALL F_00cbaf80(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -9633,410 +9881,5 @@ GEN_FRAME uint F_00cc5940(unsigned int gen_a0)
   }
   F_00c47745((*(uint *)(gen_frame + 0x118)) ^ (uint)(uint)(gen_frame + 0x11c) GEN_EDX_ARG);
   return uVar5;
-}
-
-/* ref: FUN_00cc5d00 */
-GEN_FRAME uint F_00cc5d00(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcc5d00u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00cc53a0(param_1,0,param_2);
-  return uVar1;
-}
-
-/* ref: FUN_00cc5d20 */
-GEN_FRAME uint F_00cc5d20(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
-{
-  GEN_ENTER(0xcc5d20u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  undefined4 param_4 = (undefined4)gen_a3;
-  int param_5 = (int)gen_a4;
-  __declspec(align(16)) undefined1 gen_frame[0x810];
-  uint extraout_EAX = 0;
-  
-  (*(uint *)(gen_frame + 0x808)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x80c);
-  if (param_5 == 0) {
-    F_00c472ec(((undefined1 *)(gen_frame + 0x8)),0x800,0x7ff,"%s(%d): <assert> (%s) %s\n",param_3,param_4);
-  }
-  else {
-    F_00c472ec(((undefined1 *)(gen_frame + 0x8)),0x800,0x7ff,"%s(%d):[%s] <assert> (%s) %s\n",param_3,param_4,param_5);
-  }
-  F_00cbee70(((undefined1 *)(gen_frame + 0x8)),6);
-  *(undefined4 *)&REFG(undefined, 0x0) = 0;
-  F_00c47745((*(uint *)(gen_frame + 0x808)) ^ (uint)(uint)(gen_frame + 0x80c) GEN_EDX_ARG);
-  return extraout_EAX;
-}
-
-/* ref: FUN_00cc5dc0 */
-GEN_FRAME unsigned int F_00cc5dc0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xcc5dc0u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  __declspec(align(16)) undefined1 gen_frame[0x40];
-  uint * puVar1;
-  uint * puVar2;
-  uint uVar3;
-  uint uVar4;
-  int iVar5;
-  uint * this;
-  int iVar6;
-  int iVar7;
-  
-  ((int *)(gen_frame + 0x14))[9] = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x3c);
-  (*(int *)(gen_frame + 0xc)) = param_1;
-  if ((*(uint *)&REFG(undefined, 0x15d8618) & 1) == 0) {
-    *(uint *)&REFG(undefined, 0x15d8618) = *(uint *)&REFG(undefined, 0x15d8618) | 1;
-    F_00ccaf80(&REFG(char, 0x15d7798) GEN_EDX_ARG);
-  }
-  if (REFG(char, 0x15d7798) == '\0') {
-    uVar3 = *(uint *)(param_1 + 4);
-  }
-  else {
-    uVar3 = REFG(undefined4, 0x15d860c);
-    if ((*(uint *)&REFG(undefined, 0x15d8618) & 1) == 0) {
-      *(uint *)&REFG(undefined, 0x15d8618) = *(uint *)&REFG(undefined, 0x15d8618) | 1;
-      F_00ccaf80(&REFG(char, 0x15d7798) GEN_EDX_ARG);
-      uVar3 = REFG(undefined4, 0x15d860c);
-    }
-  }
-  REFG(undefined4, 0x15d862c) = uVar3;
-  uVar4 = -(uint)((int)((ulonglong)uVar3 * 0x278 >> 0x20) != 0) | (uint)((ulonglong)uVar3 * 0x278);
-  if ((*(uint *)&REFG(undefined, 0x15d7790) & 1) == 0) {
-    *(uint *)&REFG(undefined, 0x15d7790) = *(uint *)&REFG(undefined, 0x15d7790) | 1;
-    REFG(int * PTR32, 0x15d778c) = (int *)F_004042b0();
-  }
-  puVar2 = ((uint *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x15d778c) + 8))))
-                             (REFG(int * PTR32, 0x15d778c) GEN_EDX_ARG,-(uint)(0xfffffffb < uVar4) | uVar4 + 4,
-                              "CDev.Engine.Sd.SoundDriver",0,0,0x10)));
-  if (puVar2 == (uint *)0x0) {
-    REFG(uint * PTR32, 0x15d8630) = (uint *)0x0;
-    iVar6 = param_1;
-    puVar1 = REFG(uint * PTR32, 0x15d8630);
-  }
-  else {
-    *puVar2 = uVar3;
-    this = puVar2 + 1;
-    iVar6 = (*(int *)(gen_frame + 0xc));
-    while (uVar3 = uVar3 - 1, puVar1 = puVar2 + 1, (*(int *)(gen_frame + 0xc)) = iVar6, -1 < (int)uVar3) {
-      F_00cd7250(this GEN_EDX_ARG);
-      this = this + 0x9e;
-      iVar6 = (*(int *)(gen_frame + 0xc));
-    }
-  }
-  REFG(uint * PTR32, 0x15d8630) = puVar1;
-  uVar3 = *(uint *)(iVar6 + 0x40) & ((int)*(uint *)(iVar6 + 0x40) < 0) - 1;
-  if (*(char *)(iVar6 + 0x1bf) == '\0') {
-    uVar3 = 0;
-  }
-  else {
-    (*(uint *)(gen_frame + 0x8)) = uVar3;
-    puVar2 = &REFG(undefined4, 0x15d862c);
-    if ((int)uVar3 <= (int)REFG(undefined4, 0x15d862c)) {
-      puVar2 = &(*(uint *)(gen_frame + 0x8));
-    }
-    uVar3 = *puVar2;
-  }
-  iVar6 = 0;
-  if (0 < (int)REFG(undefined4, 0x15d862c)) {
-    iVar7 = 0;
-    do {
-      F_00cd61f0(((undefined *)GEN_TOP((iVar7 + (int)REFG(uint * PTR32, 0x15d8630)))) GEN_EDX_ARG,iVar6,*(undefined4 *)((*(int *)(gen_frame + 0xc)) + 0x10),
-                   (uint)(iVar6 < (int)uVar3));
-      iVar6 = iVar6 + 1;
-      iVar7 = iVar7 + 0x278;
-    } while (iVar6 < (int)REFG(undefined4, 0x15d862c));
-  }
-  F_00d2fdb0(&REFG(undefined, 0x15d8634) GEN_EDX_ARG,0x188);
-  iVar6 = 0x398;
-  ((int *)(gen_frame + 0x14))[1] = 0x420;
-  ((int *)(gen_frame + 0x14))[3] = 0x420;
-  ((int *)(gen_frame + 0x14))[5] = 0x3a8;
-  ((int *)(gen_frame + 0x14))[6] = 0x3a8;
-  (*(undefined4 *)(gen_frame + 0x10)) = 0x398;
-  ((int *)(gen_frame + 0x14))[0] = 0x398;
-  ((int *)(gen_frame + 0x14))[2] = 0x430;
-  ((int *)(gen_frame + 0x14))[4] = 0x398;
-  ((int *)(gen_frame + 0x14))[7] = 0x398;
-  ((int *)(gen_frame + 0x14))[8] = 0;
-  iVar7 = 0x398;
-  iVar5 = 1;
-  do {
-    if (iVar7 < iVar6) {
-      iVar7 = iVar6;
-    }
-    iVar6 = ((int *)(gen_frame + 0x14))[(int)(iVar5)];
-    iVar5 = iVar5 + 1;
-  } while (iVar6 != 0);
-  (*(char * PTR32 *)(gen_frame + 0x4)) = "CDev.Engine.Sd.SoundDriver";
-  (*(uint *)(gen_frame + 0x8)) = 0x10;
-  F_00cc6930(&REFG(undefined4, 0x15d8668) GEN_EDX_ARG,iVar7,REFG(undefined4, 0x15d862c),&(*(char * PTR32 *)(gen_frame + 0x4)),0x10,1);
-  F_00c47745(((int *)(gen_frame + 0x14))[9] ^ (uint)(uint)(gen_frame + 0x3c) GEN_EDX_ARG);
-  return;
-}
-
-/* ref: FUN_00cc5fc0 */
-GEN_FRAME uint F_00cc5fc0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
-{
-  GEN_ENTER(0xcc5fc0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  uint * param_2 = (uint *)(uintptr_t)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  undefined4 param_4 = (undefined4)gen_a3;
-  undefined4 param_5 = (undefined4)gen_a4;
-  __declspec(align(16)) undefined1 gen_frame[0xa0];
-  undefined4 uVar1;
-  undefined4 * puVar2;
-  byte bVar3;
-  uint uVar4;
-  uint uVar5;
-  char cVar6;
-  int * piVar7;
-  uint uVar8;
-  int iVar9;
-  
-  piVar7 = (int *)0x0;
-  REFG(char, 0x15d8698) = REFG(char, 0x15d867c);
-  if (REFG(char, 0x15d867c) != '\0') {
-    gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x15d8680));
-  }
-  puVar2 = REFG(undefined4 * PTR32, 0x15d866c);
-  if (REFG(undefined4 * PTR32, 0x15d866c) == (undefined4 *)0x0) {
-    if (REFG(char, 0x15d8698) == '\0') {
-      return 0;
-    }
-    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x15d8680));
-    return 0;
-  }
-  uVar1 = *REFG(undefined4 * PTR32, 0x15d866c);
-  (*(undefined4 * PTR32 *)(gen_frame + 0x98)) = REFG(undefined4 * PTR32, 0x15d866c);
-  REFG(undefined4 * PTR32, 0x15d866c) = (undefined4 *)uVar1;
-  if (REFG(char, 0x15d8698) != '\0') {
-    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x15d8680));
-  }
-  if (puVar2 == (undefined4 *)0x0) {
-    return 0;
-  }
-  uVar4 = (uint)((int)puVar2 - *(int *)&REFG(undefined, 0x15d8670)) / REFG(undefined4, 0x15d8674);
-  uVar5 = F_00cc1d90();
-  uVar4 = uVar5 << 9 | uVar4;
-  uVar5 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 4))(param_1 GEN_EDX_ARG);
-  if (uVar5 == 3) {
-    (*(uint *)(gen_frame + 0x84)) = 0;
-    (*(uint *)(gen_frame + 0x88)) = 0;
-    (*(uint *)(gen_frame + 0x8c)) = 0;
-    (*(uint *)(gen_frame + 0x90)) = 0;
-    F_00cde2f0(&(*(undefined1 *)(gen_frame + 0x97)) GEN_EDX_ARG);
-    bVar3 = F_00cc2aa0(4,&(*(uint *)(gen_frame + 0x84)),0);
-    if (bVar3 == 0) {
-      F_00cc6810(&REFG(undefined4, 0x15d8668) GEN_EDX_ARG,(*(undefined4 * PTR32 *)(gen_frame + 0x98)));
-      return 0;
-    }
-    piVar7 = (int *)F_00cded50((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,&(*(uint *)(gen_frame + 0x84)),4,param_3,&(*(undefined1 *)(gen_frame + 0x97)),param_4);
-    goto LAB_00cc60c8;
-  }
-  if ((*(byte *)(param_1 + 0x12) & 8) != 0) {
-    ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x88))(param_1 GEN_EDX_ARG);
-    if ((*(uint *)&REFG(undefined, 0x15d8620) & 1) == 0) {
-      *(uint *)&REFG(undefined, 0x15d8620) = *(uint *)&REFG(undefined, 0x15d8620) | 1;
-      REFG(undefined * PTR32, 0x15d861c) = ((code *)REFP(0xcc5d20));
-    }
-    ((code *)REFG(gen_code32, 0x15d861c))("!\"[sd][Driver][WIN][PS3][X360][VITA] streaming only can use with Stream EX!!\""
-                    ,"","SoundContainer.cpp",0x161,
-                    "SQEX::CDev::Engine::Sd::Driver::SoundContainer::AddSound");
-    goto LAB_00cc60c8;
-  }
-  uVar5 = *param_2;
-  (*(uint *)(gen_frame + 0x88)) = param_2[1];
-  uVar8 = param_2[3];
-  (*(uint *)(gen_frame + 0x8c)) = param_2[2];
-  (*(uint *)(gen_frame + 0x84)) = uVar5;
-  (*(uint *)(gen_frame + 0x90)) = uVar8;
-  cVar6 = (char)(uVar5 >> 0x18);
-  if (cVar6 == -0x80) {
-LAB_00cc61ff: ;
-    F_00cc6810(&REFG(undefined4, 0x15d8668) GEN_EDX_ARG,(*(undefined4 * PTR32 *)(gen_frame + 0x98)));
-    return 0;
-  }
-  uVar8 = 1;
-  if (((1 < (byte)uVar5) && (cVar6 != '\x02')) && (cVar6 != '\x05')) {
-    uVar8 = uVar5 & 0xff;
-  }
-  (*(int *)(gen_frame + 0x4)) = 0;
-  F_00c48350(((undefined1 *)(gen_frame + 0x8)),0,0x7c);
-  bVar3 = F_00cc2aa0(uVar8,&(*(int *)(gen_frame + 0x4)),0);
-  if (bVar3 == 0) goto LAB_00cc61ff;
-  switch((unsigned int)(uintptr_t)((*(uint *)(gen_frame + 0x84)) >> 0x18)) {
-  case 1: ;
-  case 0xf: ;
-    piVar7 = (int *)F_00cd38f0((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,1,param_3,param_4);
-    break;
-  case 2: ;
-  case 0xc: ;
-    piVar7 = (int *)F_00cdd250((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,param_3,param_4);
-    break;
-  case 3: ;
-    piVar7 = (int *)F_00cde150((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,1,param_3,param_4);
-    break;
-  case 4: ;
-    piVar7 = (int *)F_00cdcb70((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,param_3,param_4);
-    break;
-  case 5: ;
-  case 0xd: ;
-    piVar7 = (int *)F_00cdc690((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,param_3,param_4);
-    break;
-  case 6: ;
-    piVar7 = (int *)F_00cdda70((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,param_3,param_4);
-    break;
-  case 7: ;
-    piVar7 = (int *)F_00cddc70((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,param_3,param_4);
-    break;
-  default: ;
-    goto LAB_00cc6384;
-  case 0xb: ;
-    piVar7 = (int *)F_00cd38f0((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,1,param_3,param_4);
-    ((GEN_TCODE *)*(gen_code32 *)(*piVar7 + 0x1a4))(piVar7 GEN_EDX_ARG);
-    break;
-  case 0xe: ;
-    piVar7 = (int *)F_00cdc550((*(undefined4 * PTR32 *)(gen_frame + 0x98)) GEN_EDX_ARG,uVar4,param_1,param_2,&(*(int *)(gen_frame + 0x4)),uVar8,param_3,param_4);
-    break;
-  case 0x10: ;
-LAB_00cc6384: ;
-    F_00cc6810(&REFG(undefined4, 0x15d8668) GEN_EDX_ARG,(*(undefined4 * PTR32 *)(gen_frame + 0x98)));
-    iVar9 = 0;
-    if (uVar8 != 0) {
-      do {
-        if (*(int *)(((undefined1 *)(gen_frame + 0x8)) + iVar9 * 4 - 4) != 0) {
-          F_00cd8630(*(int *)(((undefined1 *)(gen_frame + 0x8)) + iVar9 * 4 - 4) GEN_EDX_ARG);
-          *(undefined4 *)(((undefined1 *)(gen_frame + 0x8)) + iVar9 * 4 - 4) = 0;
-        }
-        iVar9 = iVar9 + 1;
-      } while (iVar9 < (int)uVar8);
-    }
-    return 0;
-  }
-LAB_00cc60c8: ;
-  if (REFG(char, 0x15d86b4) != '\0') {
-    gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x15d869c));
-  }
-  F_00d2fe00(&REFG(undefined, 0x15d8634) GEN_EDX_ARG,piVar7);
-  if (REFG(char, 0x15d86b4) != '\0') {
-    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)&REFG(undefined, 0x15d869c));
-  }
-  if (piVar7 != (int *)0x0) {
-    uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar7 + 0x1a8))(piVar7 GEN_EDX_ARG);
-    if ((char)uVar4 == '\0') {
-      ((GEN_TCODE *)*(gen_code32 *)(*piVar7 + 0x10))(piVar7 GEN_EDX_ARG,0);
-    }
-    ((GEN_TCODE *)*(gen_code32 *)(*piVar7 + 0x58))(piVar7 GEN_EDX_ARG,*(undefined4 *)&REFG(undefined, 0x134c6f4));
-    *(undefined1 *)((int)piVar7 + 0x1c5) = (undefined1)param_5;
-  }
-  return (uint)piVar7;
-}
-
-/* ref: FUN_00cc6400 */
-GEN_FRAME uint F_00cc6400(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcc6400u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  uint uVar3;
-  
-  piVar1 = (int *)*param_2;
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)*param_1 + 0xc0))((int *)*param_1 GEN_EDX_ARG);
-  uVar3 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc0))(piVar1 GEN_EDX_ARG);
-  return (uVar2 & 0xff) - (uVar3 & 0xff);
-}
-
-/* ref: FUN_00cc6440 */
-GEN_FRAME uint F_00cc6440(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcc6440u, gen_a0, gen_a1, 0u, 0u);
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
-  uint _NumOfElements;
-  
-  if ((param_1 != (undefined *)0x0) && ((*(int *)&gen_a1) != 0)) {
-    _NumOfElements = F_00cc5520(param_1,(*(int *)&gen_a1));
-    if (_NumOfElements == 0) {
-      return 0;
-    }
-    F_00c4f040(param_1,_NumOfElements,4,((code *)REFP(0xcc6400)));
-    return _NumOfElements;
-  }
-  return 0;
-}
-
-/* ref: FUN_00cc6490 */
-GEN_FRAME uint F_00cc6490(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcc6490u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  return param_2;
-}
-
-/* ref: FUN_00cc64a0 */
-GEN_FRAME uint F_00cc64a0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcc64a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;
-  uint uVar1;
-  
-  if ((*(uint *)&REFG(undefined, 0x15d7790) & 1) == 0) {
-    *(uint *)&REFG(undefined, 0x15d7790) = *(uint *)&REFG(undefined, 0x15d7790) | 1;
-    REFG(int * PTR32, 0x15d778c) = (int *)F_004042b0();
-  }
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*REFG(int * PTR32, 0x15d778c) + 8))))(REFG(int * PTR32, 0x15d778c) GEN_EDX_ARG,param_1,*param_2,0,0,param_2[1]);
-  return uVar1;
-}
-
-/* ref: FUN_00cc64f0 */
-GEN_FRAME uint F_00cc64f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0xcc64f0u, gen_a0, 0u, 0u, 0u);
-  int param_1 = (int)gen_a0;
-  uint uVar1;
-  
-  uVar1 = 0;
-  if (param_1 != 0) {
-    uVar1 = F_00406810(param_1);
-  }
-  return uVar1;
-}
-
-/* ref: FUN_00cc6510 */
-GEN_NOFRAME uint GEN_THISCALL F_00cc6510(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xcc6510u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  gen_imp_InitializeCriticalSection(this);
-  *(undefined1 *)((int)this + 0x18) = 1;
-  return (uint)this;
-}
-
-/* ref: FUN_00cc6530 */
-GEN_FRAME byte GEN_THISCALL F_00cc6530(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcc6530u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  *(byte *)(in_ecx + 0x18) = (byte)param_2;
-  return (byte)param_2;
-}
-
-/* ref: FUN_00cc6560 */
-GEN_FRAME uint GEN_THISCALL F_00cc6560(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcc6560u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  int param_2 = (int)gen_a1;
-  return *(int *)(in_ecx + 0xc) * param_2 + *(int *)(in_ecx + 8);
 }
 

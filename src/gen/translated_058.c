@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00722620 */
+GEN_FRAME uint GEN_STDCALL F_00722620(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0x722620u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  int param_2 = (int)gen_a1;
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 4,800);
+  return (uint)uVar1;
+}
+
 /* ref: FUN_00722670 */
 GEN_FRAME uint GEN_THISCALL F_00722670(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -4599,26 +4611,5 @@ GEN_FRAME uint F_007269b0(unsigned int gen_a0)
     uVar4 = uVar3;
   }
   return uVar4;
-}
-
-/* ref: FUN_007269d0 */
-GEN_FRAME uint F_007269d0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x7269d0u, gen_a0, 0u, 0u, 0u);
-  int * param_1 = (int *)(uintptr_t)gen_a0;
-  char cVar1;
-  int * piVar2;
-  int * piVar3;
-  int * piVar4;
-  
-  cVar1 = *(char *)(*param_1 + 0x15);
-  piVar2 = (int *)*param_1;
-  piVar4 = param_1;
-  while (piVar3 = piVar2, cVar1 == '\0') {
-    piVar2 = (int *)*piVar3;
-    cVar1 = *(char *)((int)piVar2 + 0x15);
-    piVar4 = piVar3;
-  }
-  return (uint)piVar4;
 }
 
