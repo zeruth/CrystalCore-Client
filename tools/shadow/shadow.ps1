@@ -22,6 +22,9 @@ param([Parameter(Mandatory)][ValidateSet("ref", "port")][string]$Which, [int]$Se
 $root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 # (one run at a time: a second shadow reference started beside a running one met the game's own
 # single-instance check, and both recordings were spoiled, 2026-10-27)
+for ($k = 0; $k -lt 20 -and (Get-Process ffxiv_shadow, CrystalCore -ErrorAction SilentlyContinue); $k++) {
+    Start-Sleep 1                              # (one still exiting from the run before this one)
+}
 if (Get-Process ffxiv_shadow, CrystalCore -ErrorAction SilentlyContinue) {
     throw "a shadow run (ffxiv_shadow or CrystalCore) is still running: stop it first"
 }
