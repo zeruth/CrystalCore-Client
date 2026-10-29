@@ -1,5 +1,62 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: _GetRangeOfTrysToCheck */
+GEN_NOFRAME undefined * F_00c55064(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
+{
+  GEN_ENTER(0xc55064u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
+  int param_2 = (int)gen_a1;
+  uint * param_4 = (uint *)(uintptr_t)gen_a3;
+  uint * param_5 = (uint *)(uintptr_t)gen_a4;
+  undefined * pTVar1;
+  uint uVar2;
+  uint uVar3;
+  uint uVar4;
+  uint uVar5;
+  
+  pTVar1 = (*(undefined * PTR32 *)(((char *)(param_1) + 16)));
+  uVar5 = (*(uint *)(((char *)(param_1) + 12)));
+  uVar2 = uVar5;
+  uVar3 = uVar5;
+  while (uVar4 = uVar2, -1 < param_2) {
+    if (uVar5 == 0xffffffff) {
+                    
+      F_00c5aace();
+    }
+    uVar5 = uVar5 - 1;
+    if ((((*((int *)GEN_TOP(((((char *)(pTVar1) + (uVar5) * 20) + 4))))) < (*(int *)&gen_a2)) && ((*(int *)&gen_a2) <= (*((int *)GEN_TOP(((((char *)(pTVar1) + (uVar5) * 20) + 8))))))) ||
+       (uVar2 = uVar4, uVar5 == 0xffffffff)) {
+      param_2 = param_2 - 1;
+      uVar2 = uVar5;
+      uVar3 = uVar4;
+    }
+  }
+  uVar5 = uVar5 + 1;
+  *param_4 = uVar5;
+  *param_5 = uVar3;
+  if ((uVar3 <= (*(uint *)(((char *)(param_1) + 12)))) && (uVar5 <= uVar3)) {
+    return pTVar1 + (uVar5) * 20;
+  }
+                    
+  F_00c5aace();
+}
+
+/* ref: __CreateFrameInfo */
+GEN_NOFRAME uint F_00c550d7(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xc550d7u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined * p_Var1;
+  
+  *param_1 = param_2;
+  p_Var1 = F_00c5b37a();
+  param_1[1] = (*(void * PTR32 *)(((char *)(p_Var1) + 152)));
+  p_Var1 = F_00c5b37a();
+  (*(void * PTR32 *)(((char *)(p_Var1) + 152))) = param_1;
+  return (uint)param_1;
+}
+
 /* ref: __IsExceptionObjectToBeDestroyed */
 GEN_NOFRAME uint F_00c55103(unsigned int gen_a0)
 {
@@ -19708,29 +19765,5 @@ GEN_NOFRAME float10 F_00c6e2be(double gen_a0, unsigned int gen_a1, unsigned int 
   }
   F_00c6bf0e(&(*(uint *)&gen_args[2]),&(*(uint *)&gen_args[2]),&(*(uint *)&gen_args[2]),0x3eb);
   return (float10)*(double *)&(*(uint *)&gen_args[2]);
-}
-
-/* ref: __alloca_probe_16 */
-GEN_NOFRAME uint F_00c6e590(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xc6e590u, gen_a0, gen_a1, 0u, 0u);
-  uint in_eax = (uint)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = 4 - in_eax & 0xf;
-  return in_eax + uVar1 | -(uint)CARRY4(in_eax,uVar1);
-}
-
-/* ref: __alloca_probe_8 */
-GEN_NOFRAME uint F_00c6e5a6(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xc6e5a6u, gen_a0, gen_a1, 0u, 0u);
-  uint in_eax = (uint)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = 4 - in_eax & 7;
-  return in_eax + uVar1 | -(uint)CARRY4(in_eax,uVar1);
 }
 

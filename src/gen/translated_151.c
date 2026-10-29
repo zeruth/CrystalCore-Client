@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00c48ccf */
+GEN_NOFRAME uint F_00c48ccf(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc48ccfu, gen_a0, 0u, 0u, 0u);
+  undefined * in_esi = (undefined *)(uintptr_t)gen_a0;
+  uint extraout_EAX = 0;
+  
+  F_00c509aa(in_esi);
+  return extraout_EAX;
+}
+
+/* ref: __getc_nolock */
+GEN_NOFRAME uint F_00c48cd7(unsigned int gen_a0)
+{
+  GEN_ENTER(0xc48cd7u, gen_a0, 0u, 0u, 0u);
+  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
+  int * piVar1;
+  byte bVar2;
+  uint uVar3;
+  
+  piVar1 = &(*(int *)(((char *)(param_1) + 4)));
+  *piVar1 = *piVar1 - 1;
+  if (-1 < *piVar1) {
+    bVar2 = *(*(char * PTR32 *)((char *)(param_1)));
+    (*(char * PTR32 *)((char *)(param_1))) = (*(char * PTR32 *)((char *)(param_1))) + 1;
+    return (uint)bVar2;
+  }
+  uVar3 = F_00c5cf59(param_1);
+  return uVar3;
+}
+
 /* ref: __fread_nolock_s */
 GEN_NOFRAME gen_size32 F_00c48cf7(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
 {
@@ -13745,62 +13776,5 @@ GEN_NOFRAME int F_00c54fc5(unsigned int gen_a0, unsigned int gen_a1, unsigned in
                     
   _Var1 = ((code *)(*(gen_code32 *)(gen_frame + 0x8)))();
   return _Var1;
-}
-
-/* ref: _GetRangeOfTrysToCheck */
-GEN_NOFRAME undefined * F_00c55064(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
-{
-  GEN_ENTER(0xc55064u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
-  int param_2 = (int)gen_a1;
-  uint * param_4 = (uint *)(uintptr_t)gen_a3;
-  uint * param_5 = (uint *)(uintptr_t)gen_a4;
-  undefined * pTVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  uint uVar5;
-  
-  pTVar1 = (*(undefined * PTR32 *)(((char *)(param_1) + 16)));
-  uVar5 = (*(uint *)(((char *)(param_1) + 12)));
-  uVar2 = uVar5;
-  uVar3 = uVar5;
-  while (uVar4 = uVar2, -1 < param_2) {
-    if (uVar5 == 0xffffffff) {
-                    
-      F_00c5aace();
-    }
-    uVar5 = uVar5 - 1;
-    if ((((*((int *)GEN_TOP(((((char *)(pTVar1) + (uVar5) * 20) + 4))))) < (*(int *)&gen_a2)) && ((*(int *)&gen_a2) <= (*((int *)GEN_TOP(((((char *)(pTVar1) + (uVar5) * 20) + 8))))))) ||
-       (uVar2 = uVar4, uVar5 == 0xffffffff)) {
-      param_2 = param_2 - 1;
-      uVar2 = uVar5;
-      uVar3 = uVar4;
-    }
-  }
-  uVar5 = uVar5 + 1;
-  *param_4 = uVar5;
-  *param_5 = uVar3;
-  if ((uVar3 <= (*(uint *)(((char *)(param_1) + 12)))) && (uVar5 <= uVar3)) {
-    return pTVar1 + (uVar5) * 20;
-  }
-                    
-  F_00c5aace();
-}
-
-/* ref: __CreateFrameInfo */
-GEN_NOFRAME uint F_00c550d7(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xc550d7u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  undefined * p_Var1;
-  
-  *param_1 = param_2;
-  p_Var1 = F_00c5b37a();
-  param_1[1] = (*(void * PTR32 *)(((char *)(p_Var1) + 152)));
-  p_Var1 = F_00c5b37a();
-  (*(void * PTR32 *)(((char *)(p_Var1) + 152))) = param_1;
-  return (uint)param_1;
 }
 

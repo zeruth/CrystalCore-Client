@@ -1,5 +1,55 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00e47f00 */
+GEN_FRAME uint F_00e47f00(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe47f00u, gen_a0, 0u, 0u, 0u);
+  int param_1 = (int)gen_a0;
+  return param_1 + 0x14;
+}
+
+/* ref: FUN_00e47f10 */
+GEN_FRAME uint F_00e47f10(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe47f10u, gen_a0, 0u, 0u, 0u);
+  uint param_1 = (uint)gen_a0;
+  char cVar1;
+  uint uVar2;
+  uint uVar3;
+  uint uVar4;
+  
+  cVar1 = *((char *)GEN_TOP((*(uint *)(param_1 + 8) + 0x15)));
+  uVar2 = *(uint *)(param_1 + 8);
+  uVar4 = param_1;
+  while (uVar3 = uVar2, cVar1 == '\0') {
+    uVar2 = *(uint *)(uVar3 + 8);
+    cVar1 = *(char *)(uVar2 + 0x15);
+    uVar4 = uVar3;
+  }
+  return uVar4;
+}
+
+/* ref: FUN_00e47f30 */
+GEN_FRAME uint F_00e47f30(unsigned int gen_a0)
+{
+  GEN_ENTER(0xe47f30u, gen_a0, 0u, 0u, 0u);
+  int * param_1 = (int *)(uintptr_t)gen_a0;
+  char cVar1;
+  int * piVar2;
+  int * piVar3;
+  int * piVar4;
+  
+  cVar1 = *(char *)(*param_1 + 0x15);
+  piVar2 = (int *)*param_1;
+  piVar4 = param_1;
+  while (piVar3 = piVar2, cVar1 == '\0') {
+    piVar2 = (int *)*piVar3;
+    cVar1 = *(char *)((int)piVar2 + 0x15);
+    piVar4 = piVar3;
+  }
+  return (uint)piVar4;
+}
+
 /* ref: FUN_00e47f50 */
 GEN_FRAME uint F_00e47f50(unsigned int gen_a0)
 {
@@ -10013,31 +10063,5 @@ GEN_FRAME uint GEN_THISCALL F_00e507e0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   
   uVar1 = F_00ea7eb0(this GEN_EDX_FWD,param_1,param_2);
   return uVar1;
-}
-
-/* ref: FUN_00e50800 */
-GEN_FRAME uint GEN_THISCALL F_00e50800(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe50800u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00ea7fb0(this GEN_EDX_FWD,param_1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::FirstAttackGroup_TypeInfo::vf1 */
-GEN_NOFRAME uint F_00e508d0(void)
-{
-  GEN_ENTER(0xe508d0u, 0u, 0u, 0u, 0u);
-  return 10;
-}
-
-/* ref: Application::Network::WorkDefinitions::FirstAttackGroup_TypeInfo::vf2 */
-GEN_NOFRAME uint F_00e508e0(void)
-{
-  GEN_ENTER(0xe508e0u, 0u, 0u, 0u, 0u);
-  return (uint)REFG(undefined * PTR32, 0x135adb4);
 }
 

@@ -1,5 +1,22 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00ba4e00 */
+GEN_FRAME uint GEN_THISCALL F_00ba4e00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xba4e00u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 * puVar1;
+  
+  puVar1 = (undefined4 *)F_004296a0(0x2c,0,0x2c0);
+  *puVar1 = *(undefined4 *)((int)this + 4);
+  puVar1[1] = *(undefined4 *)((int)this + 4);
+  puVar1[2] = *(undefined4 *)((int)this + 4);
+  *(undefined2 *)(puVar1 + 10) = 0;
+  F_00ba4c30((int)this + 0xd,puVar1 + 3,param_1);
+  return (uint)puVar1;
+}
+
 /* ref: FUN_00ba4e50 */
 GEN_FRAME uint GEN_THISCALL F_00ba4e50(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -10242,17 +10259,5 @@ GEN_FRAME uint GEN_THISCALL F_00bb01a0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00406ad0(this);
   }
   return (uint)this;
-}
-
-/* ref: FUN_00bb01e0 */
-GEN_FRAME uint GEN_THISCALL F_00bb01e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbb01e0u, gen_a0, gen_a1, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  uint param_2 = (uint)gen_a1;
-  uint uVar1;
-  
-  uVar1 = _InterlockedExchange((volatile long *)(((uint *)(in_ecx + 0x98))), (long)(param_2));
-  return uVar1;
 }
 

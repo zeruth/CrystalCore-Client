@@ -1,5 +1,31 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00e50800 */
+GEN_FRAME uint GEN_THISCALL F_00e50800(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xe50800u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_00ea7fb0(this GEN_EDX_FWD,param_1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::FirstAttackGroup_TypeInfo::vf1 */
+GEN_NOFRAME uint F_00e508d0(void)
+{
+  GEN_ENTER(0xe508d0u, 0u, 0u, 0u, 0u);
+  return 10;
+}
+
+/* ref: Application::Network::WorkDefinitions::FirstAttackGroup_TypeInfo::vf2 */
+GEN_NOFRAME uint F_00e508e0(void)
+{
+  GEN_ENTER(0xe508e0u, 0u, 0u, 0u, 0u);
+  return (uint)REFG(undefined * PTR32, 0x135adb4);
+}
+
 /* ref: Application::Network::WorkDefinitions::FirstAttackGroup_TypeInfo::vf3 */
 GEN_FRAME uint GEN_THISCALL F_00e508f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -18732,32 +18758,5 @@ GEN_FRAME uint GEN_THISCALL F_00e69830(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   undefined * this = (undefined *)(uintptr_t)gen_a0;
   int param_1 = (int)gen_a1;
   return (uint)(&REFG(undefined * PTR32, 0x135b1dc))[(int)(param_1)];
-}
-
-/* ref: Application::Network::WorkDefinitions::Hater_TypeInfo::vf7 */
-GEN_FRAME uint GEN_THISCALL F_00e69850(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe69850u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return *(uint *)(&REFG(undefined, 0x1158df8) + param_1 * 4);
-}
-
-/* ref: Application::Network::WorkDefinitions::Hater_TypeInfo::vf8 */
-GEN_FRAME uint GEN_THISCALL F_00e69870(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe69870u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return *(uint *)(&REFG(undefined, 0x1158e08) + param_1 * 4);
-}
-
-/* ref: Application::Network::WorkDefinitions::Hater_TypeInfo::vf9 */
-GEN_FRAME uint GEN_THISCALL F_00e69890(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe69890u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  return *(uint *)(&REFG(undefined, 0x15e3804) + param_1 * 4);
 }
 

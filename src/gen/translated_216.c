@@ -1,5 +1,30 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_01076e30 */
+GEN_NOFRAME unsigned int F_01076e30(void)
+{
+  GEN_ENTER(0x1076e30u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15e0920) GEN_EDX_ARG,"hkcdDynamicTreeCodecRawUlong",&REFG(undefined, 0x15e0980),0x30,0,0,0,0,0,0,0,0,0,0);
+  return;
+}
+
+/* ref: FUN_01076e60 */
+GEN_NOFRAME unsigned int F_01076e60(void)
+{
+  GEN_ENTER(0x1076e60u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15e0950) GEN_EDX_ARG,"hkcdDynamicTreeCodecRawUint",&REFG(undefined, 0x15e09b0),0x30,0,0,0,0,0,0,0,0,0,0);
+  return;
+}
+
+/* ref: FUN_01076e90 */
+GEN_NOFRAME unsigned int F_01076e90(void)
+{
+  GEN_ENTER(0x1076e90u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15e0980) GEN_EDX_ARG,"hkcdDynamicTreeCodecRawunsignedlong",0,0x30,0,0,0,0,&REFG(undefined * PTR32, 0x113f730),
+               3,0,0,0,0);
+  return;
+}
+
 /* ref: FUN_01076ec0 */
 GEN_NOFRAME unsigned int F_01076ec0(void)
 {
@@ -4849,33 +4874,6 @@ GEN_NOFRAME unsigned int F_0107c020(void)
 {
   GEN_ENTER(0x107c020u, 0u, 0u, 0u, 0u);
   REFG(undefined * PTR32, 0x1323b64) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[2])REFP(0x10904d0))));
-  return;
-}
-
-/* ref: FUN_0107c030 */
-GEN_NOFRAME unsigned int F_0107c030(void)
-{
-  GEN_ENTER(0x107c030u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x1323b74) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[2])REFP(0x10904d0))));
-  return;
-}
-
-/* ref: FUN_0107c040 */
-GEN_NOFRAME unsigned int F_0107c040(void)
-{
-  GEN_ENTER(0x107c040u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x1323b84) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[2])REFP(0x10904d0))));
-  return;
-}
-
-/* ref: FUN_0107c050 */
-GEN_NOFRAME unsigned int F_0107c050(void)
-{
-  GEN_ENTER(0x107c050u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x1323b94) =
        ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[2])REFP(0x10904d0))));
   return;
 }

@@ -5622,7 +5622,7 @@ GEN_NOFRAME uint GEN_THISCALL F_009f08d0(unsigned int gen_a0 GEN_EDX_PARAM)
   
   uVar1 = 0;
   if ((code *)*(gen_code32 *)((int)this + 0x18) != (code *)0x0) {
-    uVar1 = ((code *)*(gen_code32 *)((int)this + 0x18))();
+    uVar1 = ((code *)*(gen_code32 *)((int)this + 0x18))(*(undefined4 *)((int)this + 0x10));
   }
   return uVar1;
 }

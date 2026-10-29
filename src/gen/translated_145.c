@@ -1,5 +1,30 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Scheduler::Instance::CharacterObject::vf19 */
+GEN_NOFRAME uint GEN_THISCALL F_00bef260(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xbef260u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint uVar1;
+  undefined * this_00;
+  
+  uVar1 = *(uint *)(this + 0x84);
+  if (uVar1 == 0xffffffff) {
+    if (*(int *)(this + 0x80) != -1) {
+      this_00 = (undefined *)F_00ae0db0(&REFG(undefined, 0x14c0920) GEN_EDX_FWD,*(int *)(this + 0x80));
+      if (this_00 != (undefined *)0x0) {
+        uVar1 = F_00a5f290(this_00 GEN_EDX_ARG);
+        return uVar1;
+      }
+    }
+  }
+  else if ((uVar1 < 0x158) && (((undefined *)GEN_TOP((&REFG(undefined4, 0x14a31f0))[(int)(uVar1)])) != (undefined *)0x0)) {
+    uVar1 = F_00a5f290(((undefined *)GEN_TOP((&REFG(undefined4, 0x14a31f0))[(int)(uVar1)])) GEN_EDX_ARG);
+    return uVar1;
+  }
+  return 0;
+}
+
 /* ref: Client::System::Scheduler::Instance::CharacterObject::vf30 */
 GEN_NOFRAME uint GEN_THISCALL F_00bef2b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -19918,17 +19943,5 @@ GEN_NOFRAME uint GEN_THISCALL F_00c09af0(unsigned int gen_a0 GEN_EDX_PARAM)
     }
   }
   return in_EAX;
-}
-
-/* ref: FUN_00c09b50 */
-GEN_FRAME uint GEN_THISCALL F_00c09b50(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xc09b50u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_00c09930(this GEN_EDX_FWD,param_1);
-  return uVar1;
 }
 

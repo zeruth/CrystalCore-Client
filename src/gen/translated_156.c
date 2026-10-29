@@ -1,5 +1,59 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00c976f0 */
+GEN_NOFRAME byte GEN_THISCALL F_00c976f0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xc976f0u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int iVar1;
+  undefined4 * puVar2;
+  
+  iVar1 = *(int *)((int)this + 0x10);
+  while (iVar1 != 0) {
+    puVar2 = *(undefined4 * PTR32 *)((int)this + 0xc);
+    if (puVar2 != (undefined4 *)0x0) {
+      *(undefined4 *)((int)this + 0xc) = puVar2[3];
+      if (puVar2[2] != 0) {
+        *(undefined4 *)(puVar2[2] + 0xc) = puVar2[3];
+      }
+      if (puVar2[3] != 0) {
+        *(undefined4 *)(puVar2[3] + 8) = puVar2[2];
+      }
+      puVar2[2] = 0;
+      puVar2[3] = 0;
+      *(int *)((int)this + 0x10) = *(int *)((int)this + 0x10) - 1;
+      ((GEN_TCODE *)*(gen_code32 *)*puVar2)(puVar2 GEN_EDX_FWD,0);
+      F_00ca2140(puVar2,&REFG(undefined, 0x1128ff5),this);
+    }
+    iVar1 = *(int *)((int)this + 0x10);
+  }
+  return 1;
+}
+
+/* ref: FUN_00c97760 */
+GEN_NOFRAME uint GEN_THISCALL F_00c97760(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xc97760u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined * this_00;
+  uint uVar1;
+  
+  this_00 = (undefined *)F_00ca2100(0x18,&REFG(undefined, 0x1128ff6),this);
+  if (this_00 == (undefined *)0x0) {
+    uVar1 = 0;
+  }
+  else {
+    uVar1 = F_00c97b80(this_00 GEN_EDX_ARG,this);
+  }
+  *(undefined4 *)(uVar1 + 0xc) = *(undefined4 *)((int)this + 0xc);
+  if (*(int *)((int)this + 0xc) != 0) {
+    *((uint *)GEN_TOP((*(int *)((int)this + 0xc) + 8))) = uVar1;
+  }
+  *(int *)((int)this + 0x10) = *(int *)((int)this + 0x10) + 1;
+  *(uint *)((int)this + 0xc) = uVar1;
+  return uVar1;
+}
+
 /* ref: FUN_00c977a0 */
 GEN_FRAME unsigned int GEN_THISCALL F_00c977a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -12537,45 +12591,5 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_00cb1a30(unsigned int gen_a0 GEN_EDX_PAR
   undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
   *in_ecx = (*(undefined * PTR32 (*)[2])REFP(0x1128e54));
   return;
-}
-
-/* ref: FUN_00cb1a40 */
-GEN_FRAME uint GEN_THISCALL F_00cb1a40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
-{
-  GEN_ENTER(0xcb1a40u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  uint uVar1;
-  
-  *(int *)((int)this + 0x3ec) = *(int *)((int)this + 0x3ec) + 1;
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)(REFG(int, 0x15d7724) + 4) + 4))))
-                    (REFG(int, 0x15d7724) + 4 GEN_EDX_ARG,param_1,(int)this + 4,param_5,param_3,param_4,param_2);
-  return uVar1;
-}
-
-/* ref: FUN_00cb1a80 */
-GEN_FRAME uint GEN_THISCALL F_00cb1a80(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7, unsigned int gen_a8)
-{
-  GEN_ENTER(0xcb1a80u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 param_8 = (undefined4)gen_a8;
-  uint uVar1;
-  
-  *(int *)((int)this + 0x3ec) = *(int *)((int)this + 0x3ec) - 1;
-  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)(REFG(int, 0x15d7724) + 4) + 8))))
-                    (REFG(int, 0x15d7724) + 4 GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,
-                     param_8);
-  return uVar1;
 }
 

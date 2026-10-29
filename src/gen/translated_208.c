@@ -1,5 +1,88 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::SyncGatheringItemGetFlags_TypeInfo::vf12 */
+GEN_FRAME uint GEN_THISCALL F_01026700(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
+{
+  GEN_ENTER(0x1026700u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  int param_3 = (int)gen_a3;
+  int param_4 = (int)gen_a4;
+  int param_5 = (int)gen_a5;
+  int iVar1;
+  uint uVar2;
+  int * piVar3;
+  uint uVar4;
+  uint uVar5;
+  uint uVar6;
+  
+  uVar4 = (((param_4 - param_3) + 1U & 0xffff) >> 5) + 1;
+  uVar6 = 0;
+  iVar1 = uVar4 * 4 + 9;
+  uVar5 = 0;
+  if (uVar4 != 0) {
+    do {
+      uVar2 = *(uint *)(param_5 + uVar5 * 4);
+      if ((uVar2 & 1) != 0) {
+        uVar6 = uVar6 + 1;
+      }
+      if ((uVar2 & 2) != 0) {
+        uVar6 = uVar6 + 1;
+      }
+      if ((uVar2 & 4) != 0) {
+        uVar6 = uVar6 + 1;
+      }
+      if ((uVar2 & 8) != 0) {
+        uVar6 = uVar6 + 1;
+      }
+      if ((uVar2 & 0x10) != 0) {
+        uVar6 = uVar6 + 1;
+      }
+      if ((uVar2 & 0x20) != 0) {
+        uVar6 = uVar6 + 1;
+      }
+      if ((uVar2 & 0x40) != 0) {
+        uVar6 = uVar6 + 1;
+      }
+      if ((char)uVar2 < '\0') {
+        uVar6 = uVar6 + 1;
+      }
+      uVar5 = uVar5 + 1;
+    } while (uVar5 < uVar4);
+  }
+  piVar3 = *(int * PTR32 *)(&REFG(undefined, 0x15e3e50) + param_1 * 4);
+  if (piVar3 == (int *)0x0) {
+    return (uVar6 & 0xffff) * *(int *)(&REFG(undefined, 0x12b0cbc) + param_1 * 4) + iVar1;
+  }
+  uVar4 = ((GEN_TCODE *)*(gen_code32 *)(*piVar3 + 0x2c))(piVar3 GEN_EDX_FWD);
+  return uVar4 * (uVar6 & 0xffff) + iVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::SyncGatheringItemGetFlags_TypeInfo::vf11 */
+GEN_NOFRAME uint GEN_THISCALL F_01026790(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x1026790u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x38))(this GEN_EDX_FWD,0);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::SyncGatheringItemGetFlags_TypeInfo::vf15 */
+GEN_FRAME uint GEN_THISCALL F_010267a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0x10267a0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_FWD,param_1,0,param_2);
+  return uVar1;
+}
+
 /* ref: Application::Network::WorkDefinitions::SyncGatheringItemGetFlags_TypeInfo::vf19 */
 GEN_FRAME uint GEN_THISCALL F_010267c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -12214,68 +12297,5 @@ GEN_FRAME uint GEN_THISCALL F_01035ce0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   }
   uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x44))(this GEN_EDX_FWD,puVar1,0);
   return uVar2;
-}
-
-/* ref: Application::Network::WorkDefinitions::SyncGatheringItemGetFlags::vf19 */
-GEN_FRAME uint GEN_THISCALL F_01035d00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1035d00u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * puVar1;
-  uint uVar2;
-  
-  puVar1 = param_1;
-  if (0xf < (uint)param_1[5]) {
-    puVar1 = (undefined4 *)*param_1;
-  }
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_FWD,puVar1,0);
-  return uVar2;
-}
-
-/* ref: Application::Network::WorkDefinitions::SyncGatheringItemGetFlags::vf21 */
-GEN_FRAME uint GEN_THISCALL F_01035d20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x1035d20u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
-  undefined4 * puVar1;
-  uint uVar2;
-  
-  puVar1 = param_1;
-  if (0xf < (uint)param_1[5]) {
-    puVar1 = (undefined4 *)*param_1;
-  }
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x50))(this GEN_EDX_FWD,puVar1);
-  return uVar2;
-}
-
-/* ref: Application::Network::WorkDefinitions::SyncRecipeDivisionOpenFlags_TypeInfo::vf18 */
-GEN_FRAME uint GEN_THISCALL F_01035d40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
-{
-  GEN_ENTER(0x1035d40u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int param_1 = (int)gen_a1;
-  int param_2 = (int)gen_a2;
-  uint * param_3 = (uint *)(uintptr_t)gen_a3;
-  uint uVar1;
-  uint * puVar2;
-  int iVar3;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD,param_2);
-  *param_3 = uVar1;
-  puVar2 = param_3 + 1;
-  if (param_2 == 0) {
-    *(undefined1 *)puVar2 = 0;
-    *(undefined2 *)((int)param_3 + 5) = 0x50;
-    puVar2 = (uint *)((int)param_3 + 7);
-    iVar3 = 0;
-    do {
-      *(undefined1 *)puVar2 = *(undefined1 *)(iVar3 + 4 + param_1);
-      iVar3 = iVar3 + 1;
-      puVar2 = (uint *)((int)puVar2 + 1);
-    } while (iVar3 < 0x50);
-  }
-  return (int)puVar2 - (int)param_3;
 }
 

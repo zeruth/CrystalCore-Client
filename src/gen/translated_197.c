@@ -1,5 +1,44 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbTerritory_TypeInfo::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00eb0bb0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xeb0bb0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[10])REFP(0x1159938));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbUniqueIdData_TypeInfo::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00eb0be0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xeb0be0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[10])REFP(0x1159938));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbDefault_def_false_TypeInfo::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00eb0c10(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xeb0c10u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[10])REFP(0x1159938));
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: Application::Network::WorkDefinitions::Tag_DbInnerClass_InnerClassNoArray_TypeInfo::vf0 */
 GEN_FRAME uint GEN_THISCALL F_00eb0c40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -9285,27 +9324,5 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_00eb8750(unsigned int gen_a0 GEN_EDX_PAR
   F_00eb1d30(this GEN_EDX_FWD);
   *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[7])REFP(0x11598e8));
   return;
-}
-
-/* ref: PoolAllocator_USetParameterInfo_WorkDefinitions_Network_Application_BC::vf1 */
-GEN_NOFRAME uint F_00eb8770(void)
-{
-  GEN_ENTER(0xeb8770u, 0u, 0u, 0u, 0u);
-  return 0x5555555;
-}
-
-/* ref: PoolAllocator_USetParameterInfo_WorkDefinitions_Network_Application_BC::vf2 */
-GEN_NOFRAME uint GEN_THISCALL F_00eb8780(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xeb8780u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return *(int *)(in_ecx + 0x378) << 5;
-}
-
-/* ref: PoolAllocator_USetParameterInfo_WorkDefinitions_Network_Application_BC::vf3 */
-GEN_NOFRAME uint F_00eb8790(void)
-{
-  GEN_ENTER(0xeb8790u, 0u, 0u, 0u, 0u);
-  return 0x30;
 }
 

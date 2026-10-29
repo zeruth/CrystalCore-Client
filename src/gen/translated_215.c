@@ -1,5 +1,50 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_01073170 */
+GEN_NOFRAME uint F_01073170(void)
+{
+  GEN_ENTER(0x1073170u, 0u, 0u, 0u, 0u);
+  short sVar1;
+  uint uVar2;
+  short sVar3;
+  short sVar4;
+  
+  sVar1 = (short)REFG(undefined4, 0x133a594) + *(short *)&REFG(undefined, 0x14c1ec0);
+  sVar3 = (short)((uint)REFG(undefined4, 0x133a594) >> 0x10) + sVar1;
+  *(undefined4 *)&REFG(undefined, 0x14c1ec0) = CONCAT22(sVar1,*(short *)&REFG(undefined, 0x14c1ec0));
+  sVar1 = (short)REFG(undefined4, 0x133a598) + sVar3;
+  sVar4 = (short)((uint)REFG(undefined4, 0x133a598) >> 0x10) + sVar1;
+  *(undefined4 *)&REFG(undefined, 0x14c1ec4) = CONCAT22(sVar1,sVar3);
+  sVar1 = (short)REFG(undefined4, 0x133a59c) + sVar4;
+  sVar3 = (short)((uint)REFG(undefined4, 0x133a59c) >> 0x10) + sVar1;
+  *(undefined4 *)&REFG(undefined, 0x14c1ec8) = CONCAT22(sVar1,sVar4);
+  *(int *)&REFG(undefined, 0x14c1ecc) = CONCAT22(*(undefined2 *)&REFG(undefined, 0x14c1ece),sVar3);
+  uVar2 = REFG(int, 0x133a5a0) + *(int *)&REFG(undefined, 0x14c1ecc);
+  *(int *)&REFG(undefined, 0x14c1ecc) = CONCAT22((short)uVar2,sVar3);
+  return uVar2;
+}
+
+/* ref: FUN_010731f0 */
+GEN_NOFRAME uint F_010731f0(void)
+{
+  GEN_ENTER(0x10731f0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107c870)));
+  return uVar1;
+}
+
+/* ref: FUN_01073200 */
+GEN_NOFRAME uint F_01073200(void)
+{
+  GEN_ENTER(0x1073200u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  F_0042b630(&REFG(undefined, 0x14c4c10) GEN_EDX_ARG);
+  uVar1 = F_00c47de6(((code *)REFP(0x107c840)));
+  return uVar1;
+}
+
 /* ref: FUN_01073220 */
 GEN_NOFRAME uint F_01073220(void)
 {
@@ -3631,31 +3676,6 @@ GEN_NOFRAME unsigned int F_01076e00(void)
 {
   GEN_ENTER(0x1076e00u, 0u, 0u, 0u, 0u);
   F_00d92c40(&REFG(undefined, 0x15e08f0) GEN_EDX_ARG,"hkcdDynamicTreeCodec18",0,0x12,0,0,0,0,&REFG(undefined * PTR32, 0x113f700),2,0,0,0,0);
-  return;
-}
-
-/* ref: FUN_01076e30 */
-GEN_NOFRAME unsigned int F_01076e30(void)
-{
-  GEN_ENTER(0x1076e30u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e0920) GEN_EDX_ARG,"hkcdDynamicTreeCodecRawUlong",&REFG(undefined, 0x15e0980),0x30,0,0,0,0,0,0,0,0,0,0);
-  return;
-}
-
-/* ref: FUN_01076e60 */
-GEN_NOFRAME unsigned int F_01076e60(void)
-{
-  GEN_ENTER(0x1076e60u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e0950) GEN_EDX_ARG,"hkcdDynamicTreeCodecRawUint",&REFG(undefined, 0x15e09b0),0x30,0,0,0,0,0,0,0,0,0,0);
-  return;
-}
-
-/* ref: FUN_01076e90 */
-GEN_NOFRAME unsigned int F_01076e90(void)
-{
-  GEN_ENTER(0x1076e90u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15e0980) GEN_EDX_ARG,"hkcdDynamicTreeCodecRawunsignedlong",0,0x30,0,0,0,0,&REFG(undefined * PTR32, 0x113f730),
-               3,0,0,0,0);
   return;
 }
 

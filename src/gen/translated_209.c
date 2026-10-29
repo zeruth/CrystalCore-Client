@@ -1,5 +1,68 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::SyncGatheringItemGetFlags::vf19 */
+GEN_FRAME uint GEN_THISCALL F_01035d00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x1035d00u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 * puVar1;
+  uint uVar2;
+  
+  puVar1 = param_1;
+  if (0xf < (uint)param_1[5]) {
+    puVar1 = (undefined4 *)*param_1;
+  }
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_FWD,puVar1,0);
+  return uVar2;
+}
+
+/* ref: Application::Network::WorkDefinitions::SyncGatheringItemGetFlags::vf21 */
+GEN_FRAME uint GEN_THISCALL F_01035d20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0x1035d20u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;
+  undefined4 * puVar1;
+  uint uVar2;
+  
+  puVar1 = param_1;
+  if (0xf < (uint)param_1[5]) {
+    puVar1 = (undefined4 *)*param_1;
+  }
+  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x50))(this GEN_EDX_FWD,puVar1);
+  return uVar2;
+}
+
+/* ref: Application::Network::WorkDefinitions::SyncRecipeDivisionOpenFlags_TypeInfo::vf18 */
+GEN_FRAME uint GEN_THISCALL F_01035d40(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0x1035d40u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int param_1 = (int)gen_a1;
+  int param_2 = (int)gen_a2;
+  uint * param_3 = (uint *)(uintptr_t)gen_a3;
+  uint uVar1;
+  uint * puVar2;
+  int iVar3;
+  
+  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD,param_2);
+  *param_3 = uVar1;
+  puVar2 = param_3 + 1;
+  if (param_2 == 0) {
+    *(undefined1 *)puVar2 = 0;
+    *(undefined2 *)((int)param_3 + 5) = 0x50;
+    puVar2 = (uint *)((int)param_3 + 7);
+    iVar3 = 0;
+    do {
+      *(undefined1 *)puVar2 = *(undefined1 *)(iVar3 + 4 + param_1);
+      iVar3 = iVar3 + 1;
+      puVar2 = (uint *)((int)puVar2 + 1);
+    } while (iVar3 < 0x50);
+  }
+  return (int)puVar2 - (int)param_3;
+}
+
 /* ref: Application::Network::WorkDefinitions::SyncRecipeDivisionOpenFlags_TypeInfo::vf17 */
 GEN_FRAME uint GEN_THISCALL F_01035d90(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
 {
@@ -16271,46 +16334,5 @@ GEN_FRAME uint GEN_THISCALL F_01048870(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     F_00406ad0(this);
   }
   return (uint)this;
-}
-
-/* ref: FUN_010488a0 */
-GEN_FRAME uint GEN_THISCALL F_010488a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0x10488a0u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  undefined4 param_3 = (undefined4)gen_a2;
-  F_01050b90(in_ecx GEN_EDX_FWD,param_3);
-  *in_ecx = (*(undefined * PTR32 (*)[1])REFP(0x12b1ee4));
-  in_ecx[4] = param_2;
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_010488f0 */
-GEN_FRAME uint F_010488f0(unsigned int gen_a0)
-{
-  GEN_ENTER(0x10488f0u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  __declspec(align(16)) undefined1 gen_frame[0x10];
-  uint uVar1;
-  
-  if (param_1 == 0) {
-    return 0;
-  }
-  if ((param_1 < 0x15555556) && (uVar1 = F_004069f0(param_1 * 0xc), uVar1 != 0)) {
-    return uVar1;
-  }
-  (*(undefined4 *)(gen_frame + 0x8)) = 0;
-  (*(undefined * PTR32 * PTR32 *)(gen_frame + 0x4)) = (*(undefined * PTR32 (*)[3])REFP(0x1090534));
-                    
-  F_0046e060(&(*(undefined * PTR32 * PTR32 *)(gen_frame + 0x4)) GEN_EDX_ARG);
-}
-
-/* ref: FUN_01048940 */
-GEN_FRAME uint F_01048940(unsigned int gen_a0)
-{
-  GEN_ENTER(0x1048940u, gen_a0, 0u, 0u, 0u);
-  uint param_1 = (uint)gen_a0;
-  return param_1;
 }
 

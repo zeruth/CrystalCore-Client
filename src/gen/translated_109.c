@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Unlock */
+GEN_NOFRAME uint GEN_THISCALL F_00a15d50(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xa15d50u, gen_a0, 0u, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint extraout_EAX = 0;
+  uint uVar1;
+  
+  uVar1 = 0;
+  if (*(undefined * PTR32 *)((int)this + 0x54) != (undefined *)0x0) {
+    F_00c509aa(*(undefined * PTR32 *)((int)this + 0x54));
+    uVar1 = extraout_EAX;
+  }
+  return uVar1;
+}
+
 /* ref: basic_filebuf_DU_char_traits_D_std_std::vf13 */
 GEN_NOFRAME uint GEN_THISCALL F_00a15d60(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -14345,25 +14361,6 @@ GEN_FRAME uint GEN_THISCALL F_00a27640(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uVar1 = F_00a24d30((*(undefined * PTR32 *)&gen_args[0]) GEN_EDX_FWD,(*(undefined4 *)&gen_args[1]),(*(undefined4 *)&gen_args[3]),&(*(undefined4 *)&gen_args[3]),1);
   if (uVar1 != 0) {
     F_00a21c80((*(undefined4 *)&gen_args[4]),0x11,(*(undefined4 *)&gen_args[3]));
-  }
-  return uVar1;
-}
-
-/* ref: FUN_00a27680 */
-GEN_FRAME uint GEN_THISCALL F_00a27680(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
-{
-  GEN_ENTER(0xa27680u, gen_a0, gen_a1, gen_a2, gen_a3);
-  unsigned int gen_args[5];
-  gen_args[0] = gen_a0;
-  gen_args[1] = gen_a1;
-  gen_args[2] = gen_a2;
-  gen_args[3] = gen_a3;
-  gen_args[4] = gen_a4;
-  uint uVar1;
-  
-  uVar1 = F_00a24d30((*(undefined * PTR32 *)&gen_args[0]) GEN_EDX_FWD,(*(undefined4 *)&gen_args[1]),(*(undefined4 *)&gen_args[3]),&(*(undefined4 *)&gen_args[3]),1);
-  if (uVar1 != 0) {
-    F_00a21c80((*(undefined4 *)&gen_args[4]),0x12,(*(undefined4 *)&gen_args[3]));
   }
   return uVar1;
 }

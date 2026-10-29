@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00b550c0 */
+GEN_FRAME uint GEN_THISCALL F_00b550c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
+{
+  GEN_ENTER(0xb550c0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  int param_2 = (int)gen_a2;
+  int param_3 = (int)gen_a3;
+  int iVar1;
+  
+  if (param_2 != param_3) {
+    iVar1 = (*(int *)((int)this + 4) - param_3 >> 2) * 4;
+    F_00c46e20(param_2,param_3,iVar1);
+    *(int *)((int)this + 4) = iVar1 + param_2;
+    *param_1 = param_2;
+    return (uint)param_1;
+  }
+  *param_1 = param_2;
+  return (uint)param_1;
+}
+
 /* ref: FUN_00b55120 */
 GEN_FRAME uint GEN_THISCALL F_00b55120(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
@@ -9978,12 +9999,5 @@ GEN_NOFRAME unsigned int F_00b5e4c0(void)
 {
   GEN_ENTER(0xb5e4c0u, 0u, 0u, 0u, 0u);
   return;
-}
-
-/* ref: Client::System::Scheduler::Clip::BaseClip::vf19 */
-GEN_NOFRAME byte F_00b5e4d0(void)
-{
-  GEN_ENTER(0xb5e4d0u, 0u, 0u, 0u, 0u);
-  return 1;
 }
 

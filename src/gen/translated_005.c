@@ -3836,8 +3836,8 @@ GEN_FRAME uint GEN_THISCALL F_00446690(unsigned int gen_a0 GEN_EDX_PARAM)
   undefined4 in_EAX = 0;
   uint uVar2;
   uint uVar3;
-  double dVar4;
-  float fVar5;
+  float fVar4;
+  double dVar5;
   
   switch((unsigned int)(uintptr_t)(*(undefined1 *)((int)this + 9))) {
   case 1: ;
@@ -3861,10 +3861,10 @@ GEN_FRAME uint GEN_THISCALL F_00446690(unsigned int gen_a0 GEN_EDX_PARAM)
   }
   bVar1 = F_00ac2f60(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,uVar2,*(undefined4 *)((int)this + 4));
   if ((bVar1 != 0) &&
-     (fVar5 = F_00ac3090(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,uVar2,*(undefined4 *)((int)this + 4)),
-     (float10)0 < (float10)fVar5)) {
-    dVar4 = F_00ac3060(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,uVar2,*(undefined4 *)((int)this + 4));
-    uVar3 = uVar3 | (int)(((float10)dVar4 * (float10)*(double *)&REFG(undefined, 0x1088118)) / (float10)fVar5 +
+     (fVar4 = F_00ac3090(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,uVar2,*(undefined4 *)((int)this + 4)),
+     (float10)0 < (float10)fVar4)) {
+    dVar5 = F_00ac3060(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,uVar2,*(undefined4 *)((int)this + 4));
+    uVar3 = uVar3 | (int)(((float10)dVar5 * (float10)*(double *)&REFG(undefined, 0x1088118)) / (float10)fVar4 +
                          (float10)REFG(double, 0x1088108));
   }
   return uVar3;

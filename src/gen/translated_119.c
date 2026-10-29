@@ -1,5 +1,23 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00aa1290 */
+GEN_FRAME float GEN_THISCALL F_00aa1290(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xaa1290u, gen_a0, gen_a1, 0u, 0u);
+  unsigned int gen_args[2];
+  gen_args[0] = gen_a0;
+  gen_args[1] = gen_a1;
+  uint uVar1;
+  float fVar2;
+  
+  uVar1 = F_0053a4e0(((undefined *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0xa10))) GEN_EDX_FWD);
+  if (uVar1 == 0) {
+    return REFG(float, 0x10e79e4);
+  }
+  fVar2 = F_0053a600(((undefined *)GEN_TOP(((int)(*(undefined * PTR32 *)&gen_args[0]) + 0xa10))) GEN_EDX_ARG,-(uint)((*(uint *)&gen_args[1]) != 0xffffffff) & (*(uint *)&gen_args[1]));
+  return fVar2;
+}
+
 /* ref: FUN_00aa12d0 */
 GEN_FRAME byte GEN_THISCALL F_00aa12d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -13269,20 +13287,6 @@ GEN_FRAME uint F_00ab2200(unsigned int gen_a0)
   uint uVar1;
   
   uVar1 = F_0052ff60(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8) GEN_EDX_ARG,0x55,param_1);
-  if (uVar1 == 0) {
-    return 0;
-  }
-  return *(uint *)(uVar1 + 4);
-}
-
-/* ref: FUN_00ab2230 */
-GEN_FRAME uint F_00ab2230(unsigned int gen_a0)
-{
-  GEN_ENTER(0xab2230u, gen_a0, 0u, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  uint uVar1;
-  
-  uVar1 = F_0052ff60(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8) GEN_EDX_ARG,0x26,param_1);
   if (uVar1 == 0) {
     return 0;
   }

@@ -1,5 +1,42 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00b99bd0 */
+GEN_FRAME uint GEN_THISCALL F_00b99bd0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
+{
+  GEN_ENTER(0xb99bd0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  int * param_1 = (int *)(uintptr_t)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  uint param_3 = (uint)gen_a3;
+  undefined4 param_4 = (undefined4)gen_a4;
+  uint uVar1;
+  undefined4 * this_00;
+  
+  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 0x14))(param_1 GEN_EDX_FWD);
+  if (param_3 < uVar1) {
+    uVar1 = param_3;
+  }
+  this_00 = (undefined4 *)F_00406b90(0x30,0,0);
+  if (this_00 == (undefined4 *)0x0) {
+    this_00 = (undefined4 *)0x0;
+  }
+  else {
+    F_00cb4700(this_00 GEN_EDX_ARG,uVar1,0);
+    this_00[5] = uVar1;
+    this_00[6] = this;
+    *this_00 = (*(undefined * PTR32 (*)[2])REFP(0x1101d50));
+    this_00[7] = param_1;
+    this_00[8] = param_4;
+    this_00[9] = 0;
+    *(undefined2 *)(this_00 + 10) = 0;
+    *(undefined1 *)(this_00 + 0xb) = 0;
+  }
+  *(undefined2 *)(this_00 + 10) = (undefined2)param_3;
+  this_00[9] = param_2;
+  F_00b9a1e0(this_00 GEN_EDX_ARG);
+  return (uint)this_00;
+}
+
 /* ref: FUN_00b99c60 */
 GEN_FRAME uint GEN_THISCALL F_00b99c60(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -11045,23 +11082,6 @@ GEN_FRAME uint GEN_THISCALL F_00ba4db0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   puVar1[2] = *(undefined4 *)((int)this + 4);
   *(undefined2 *)(puVar1 + 10) = 0;
   F_00ba4b90((int)this + 0xd,puVar1 + 3,param_1);
-  return (uint)puVar1;
-}
-
-/* ref: FUN_00ba4e00 */
-GEN_FRAME uint GEN_THISCALL F_00ba4e00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xba4e00u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 * puVar1;
-  
-  puVar1 = (undefined4 *)F_004296a0(0x2c,0,0x2c0);
-  *puVar1 = *(undefined4 *)((int)this + 4);
-  puVar1[1] = *(undefined4 *)((int)this + 4);
-  puVar1[2] = *(undefined4 *)((int)this + 4);
-  *(undefined2 *)(puVar1 + 10) = 0;
-  F_00ba4c30((int)this + 0xd,puVar1 + 3,param_1);
   return (uint)puVar1;
 }
 

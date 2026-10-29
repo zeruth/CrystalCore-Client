@@ -1,5 +1,50 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Array_USetParameterInfo_WorkDefinitions_Network_Application_DH::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00ec0640(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xec0640u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this =
+       (*(undefined * PTR32 (*)[1])REFP(0x115d5dc));
+  F_00ebd310((undefined *)((int)this + 4) GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Array_USetParameterInfo_WorkDefinitions_Network_Application_CM::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00ec0670(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xec0670u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this =
+       (*(undefined * PTR32 (*)[1])REFP(0x115d5e4));
+  F_00ebd3a0((undefined *)((int)this + 4) GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
+/* ref: Array_USetParameterInfo_WorkDefinitions_Network_Application_DN::vf0 */
+GEN_FRAME uint GEN_THISCALL F_00ec06a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xec06a0u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  uint param_1 = (uint)gen_a1;
+  *(undefined * PTR32 * PTR32 *)this =
+       (*(undefined * PTR32 (*)[1])REFP(0x115d5ec));
+  F_00ebd430((undefined *)((int)this + 4) GEN_EDX_FWD);
+  if ((param_1 & 1) != 0) {
+    F_00406ad0(this);
+  }
+  return (uint)this;
+}
+
 /* ref: Array_USetParameterInfo_WorkDefinitions_Network_Application_P::vf0 */
 GEN_FRAME uint GEN_THISCALL F_00ec06d0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
@@ -13217,68 +13262,5 @@ GEN_FRAME uint GEN_THISCALL F_00ece1f0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   } while (cVar1 != '\0');
   F_00bb56c0(param_1 GEN_EDX_FWD,pcVar2,(int)pcVar3 - (int)(pcVar2 + 1));
   return (uint)param_1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_Parameter::vf0 */
-GEN_FRAME uint GEN_THISCALL F_00ece230(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xece230u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[11])REFP(0x115d994));
-  *(undefined * PTR32 * PTR32 *)(this + 0x1a0) = (*(undefined * PTR32 (*)[3])REFP(0x1159910));
-  *(undefined * PTR32 * PTR32 *)(this + 0x84) =
-       (*(undefined * PTR32 (*)[1])REFP(0x115d52c));
-  F_00ebc740(this + 0x88 GEN_EDX_FWD);
-  *(undefined * PTR32 * PTR32 *)(this + 4) = (*(undefined * PTR32 (*)[5])REFP(0x115d680));
-  F_00ebfe20(this + 8 GEN_EDX_ARG);
-  *(undefined * PTR32 * PTR32 *)(this + 4) = (*(undefined * PTR32 (*)[5])REFP(0x1159920));
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[11])REFP(0x1159964));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_StartTown::vf0 */
-GEN_FRAME uint GEN_THISCALL F_00ece290(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xece290u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[11])REFP(0x115d9c4));
-  *(undefined * PTR32 * PTR32 *)(this + 0x140) = (*(undefined * PTR32 (*)[3])REFP(0x1159910));
-  *(undefined * PTR32 * PTR32 *)(this + 0x84) =
-       (*(undefined * PTR32 (*)[1])REFP(0x115d534));
-  F_00ebc7d0(this + 0x88 GEN_EDX_FWD);
-  *(undefined * PTR32 * PTR32 *)(this + 4) = (*(undefined * PTR32 (*)[5])REFP(0x115d680));
-  F_00ebfe20(this + 8 GEN_EDX_ARG);
-  *(undefined * PTR32 * PTR32 *)(this + 4) = (*(undefined * PTR32 (*)[5])REFP(0x1159920));
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[11])REFP(0x1159964));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringChainLevel::vf0 */
-GEN_FRAME uint GEN_THISCALL F_00ece2f0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xece2f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[11])REFP(0x115d9f4));
-  *(undefined * PTR32 * PTR32 *)(this + 0x140) = (*(undefined * PTR32 (*)[3])REFP(0x1159910));
-  *(undefined * PTR32 * PTR32 *)(this + 0x84) =
-       (*(undefined * PTR32 (*)[1])REFP(0x115d534));
-  F_00ebc7d0(this + 0x88 GEN_EDX_FWD);
-  *(undefined * PTR32 * PTR32 *)(this + 4) = (*(undefined * PTR32 (*)[5])REFP(0x115d680));
-  F_00ebfe20(this + 8 GEN_EDX_ARG);
-  *(undefined * PTR32 * PTR32 *)(this + 4) = (*(undefined * PTR32 (*)[5])REFP(0x1159920));
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[11])REFP(0x1159964));
-  if ((param_1 & 1) != 0) {
-    F_00406ad0(this);
-  }
-  return (uint)this;
 }
 

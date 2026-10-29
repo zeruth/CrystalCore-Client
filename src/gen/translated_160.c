@@ -1,5 +1,23 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::ReverbXA2::vf14 */
+GEN_NOFRAME uint GEN_THISCALL F_00ccf560(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xccf560u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return *(uint *)(in_ecx + 0x80);
+}
+
+/* ref: SQEX::CDev::Engine::Sd::Driver::XA2::ReverbXA2::vf5 */
+GEN_NOFRAME unsigned int GEN_THISCALL F_00ccf570(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xccf570u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  undefined4 param_2 = (undefined4)gen_a2;
+  return;
+}
+
 /* ref: SQEX::CDev::Engine::Sd::Driver::XA2::ReverbXA2::vf6 */
 GEN_NOFRAME uint F_00ccf580(void)
 {
@@ -12143,46 +12161,6 @@ GEN_FRAME uint GEN_THISCALL F_00cdcb30(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   if ((param_1 & 1) != 0) {
     F_00406810(this);
   }
-  return (uint)this;
-}
-
-/* ref: FUN_00cdcb60 */
-GEN_FRAME ushort F_00cdcb60(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xcdcb60u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  ushort uVar1;
-  
-  uVar1 = F_00a4b890(param_1,param_2);
-  return uVar1;
-}
-
-/* ref: FUN_00cdcb70 */
-GEN_FRAME uint GEN_THISCALL F_00cdcb70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7)
-{
-  GEN_ENTER(0xcdcb70u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  undefined4 param_7 = (undefined4)gen_a7;
-  undefined4 uVar1;
-  undefined4 uVar2;
-  undefined4 * puVar3;
-  
-  F_00cdd250(this GEN_EDX_FWD,param_1,param_2,param_3,param_4,param_5,param_6,param_7);
-  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[109])REFP(0x112dcdc));
-  puVar3 = (undefined4 *)F_00ce9850(param_3,3);
-  uVar1 = *puVar3;
-  *(undefined4 *)((int)this + 0x420) = uVar1;
-  uVar2 = puVar3[1];
-  *(undefined4 *)((int)this + 0x428) = uVar1;
-  *(undefined4 *)((int)this + 0x424) = uVar2;
-  *(undefined1 *)((int)this + 0x42c) = 0;
   return (uint)this;
 }
 

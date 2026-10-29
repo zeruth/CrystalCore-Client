@@ -1,5 +1,38 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMarket_TypeInfo::vf9 */
+GEN_FRAME uint GEN_THISCALL F_00e88270(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe88270u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int * param_2 = (int *)(uintptr_t)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_2 + 4))(param_2 GEN_EDX_FWD);
+  uVar1 = F_00e833a0(param_1,uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMarket::vf1 */
+GEN_NOFRAME uint GEN_THISCALL F_00e88290(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe88290u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 4;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMarket::vf2 */
+GEN_NOFRAME uint GEN_THISCALL F_00e882a0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe882a0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (in_ecx != -0xa4) {
+    return in_ecx + 0x2e0;
+  }
+  return 0;
+}
+
 /* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMarket::vf3 */
 GEN_NOFRAME uint F_00e882d0(void)
 {
@@ -5272,70 +5305,6 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_00e8d240(unsigned int gen_a0 GEN_EDX_PAR
       }
       iVar1 = iVar1 + 0x14;
     } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_Parameter::vf8 */
-GEN_FRAME unsigned int GEN_THISCALL F_00e8d2a0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xe8d2a0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint param_1 = (uint)gen_a1;
-  int * piVar1;
-  uint uVar2;
-  int iVar3;
-  
-  iVar3 = *(int *)(this + 0x194);
-  if (iVar3 != iVar3 + *(int *)(this + 0x198) * 0x14) {
-    while( true ) {
-      piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(iVar3 + 4) + 4))))(*(int * PTR32 *)(iVar3 + 4) GEN_EDX_FWD)));
-      uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*piVar1 + 0xc))(piVar1 GEN_EDX_ARG,*(undefined4 *)(iVar3 + 8));
-      if (uVar2 == param_1) break;
-      iVar3 = iVar3 + 0x14;
-      if (iVar3 == *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14) {
-        return 0;
-      }
-    }
-    *(undefined4 *)(iVar3 + 0xc) = 0;
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_Parameter::vf9 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00e8d310(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe8d310u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  
-  iVar1 = *(int *)(this + 0x194);
-  if (iVar1 != iVar1 + *(int *)(this + 0x198) * 0x14) {
-    do {
-      *(undefined4 *)(iVar1 + 0xc) = 0;
-      iVar1 = iVar1 + 0x14;
-    } while (iVar1 != *(int *)(this + 0x194) + *(int *)(this + 0x198) * 0x14);
-  }
-  return 0;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_Sync_Parameter::vf10 */
-GEN_NOFRAME byte GEN_THISCALL F_00e8d350(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe8d350u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  int iVar1;
-  int iVar2;
-  
-  iVar2 = *(int *)(this + 0x194);
-  if (iVar2 != iVar2 + *(int *)(this + 0x198) * 0x14) {
-    iVar1 = iVar2 + *(int *)(this + 0x198) * 0x14;
-    do {
-      if (*(int *)(iVar2 + 0xc) != 0) {
-        return 1;
-      }
-      iVar2 = iVar2 + 0x14;
-    } while (iVar2 != iVar1);
   }
   return 0;
 }

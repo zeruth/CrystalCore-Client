@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::CharaPc_TypeInfo::vf5 */
+GEN_NOFRAME uint F_00fb9440(void)
+{
+  GEN_ENTER(0xfb9440u, 0u, 0u, 0u, 0u);
+  return 0xa2;
+}
+
+/* ref: Application::Network::WorkDefinitions::CharaPc::vf1 */
+GEN_NOFRAME uint F_00fb9450(void)
+{
+  GEN_ENTER(0xfb9450u, 0u, 0u, 0u, 0u);
+  return 0x136aef0;
+}
+
+/* ref: Application::Network::WorkDefinitions::PcTempWork_TypeInfo::vf5 */
+GEN_NOFRAME uint F_00fb9460(void)
+{
+  GEN_ENTER(0xfb9460u, 0u, 0u, 0u, 0u);
+  return 2;
+}
+
 /* ref: Application::Network::WorkDefinitions::PcTempWork::vf1 */
 GEN_NOFRAME uint F_00fb9470(void)
 {
@@ -20137,73 +20158,5 @@ GEN_NOFRAME uint GEN_THISCALL F_00fd8330(unsigned int gen_a0 GEN_EDX_PARAM)
   uVar9 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x38))(this GEN_EDX_ARG,8);
   uVar10 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x38))(this GEN_EDX_ARG,9);
   return uVar10 + uVar1 + uVar2 + uVar3 + uVar4 + uVar5 + uVar6 + uVar7 + uVar8 + uVar9;
-}
-
-/* ref: Application::Network::WorkDefinitions::CalcResultParam_TypeInfo::vf17 */
-GEN_FRAME uint GEN_THISCALL F_00fd83c0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5)
-{
-  GEN_ENTER(0xfd83c0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  uint * param_5 = (uint *)(uintptr_t)gen_a5;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD,param_2);
-  *param_5 = uVar1;
-  return 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::CalcResultParam_TypeInfo::vf16 */
-GEN_FRAME uint GEN_THISCALL F_00fd83e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6, unsigned int gen_a7)
-{
-  GEN_ENTER(0xfd83e0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  undefined4 param_2 = (undefined4)gen_a2;
-  undefined4 param_3 = (undefined4)gen_a3;
-  undefined4 param_4 = (undefined4)gen_a4;
-  undefined4 param_5 = (undefined4)gen_a5;
-  undefined4 param_6 = (undefined4)gen_a6;
-  uint * param_7 = (uint *)(uintptr_t)gen_a7;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0xc))(this GEN_EDX_FWD,param_2);
-  *param_7 = uVar1;
-  return 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::CalcResultParam_TypeInfo::vf15 */
-GEN_FRAME uint GEN_THISCALL F_00fd8400(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xfd8400u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int param_2 = (int)gen_a2;
-  uint uVar1;
-  uint uVar2;
-  int iVar3;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_FWD,param_1,0,param_2);
-  uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,1,uVar1 + param_2);
-  iVar3 = uVar1 + param_2 + uVar2;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,2,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,3,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,4,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,5,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,6,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,7,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,8,iVar3);
-  iVar3 = iVar3 + uVar1;
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*(int *)this + 0x48))(this GEN_EDX_ARG,param_1,9,iVar3);
-  return uVar1 + (iVar3 - param_2);
 }
 

@@ -1,5 +1,28 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00bcd470 */
+GEN_FRAME unsigned int GEN_THISCALL F_00bcd470(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
+{
+  GEN_ENTER(0xbcd470u, gen_a0, gen_a1, 0u, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  char * param_1 = (char *)(uintptr_t)gen_a1;
+  char * pcVar1;
+  char cVar2;
+  char * pcVar3;
+  
+  *(char * PTR32 *)((int)this + 4) = param_1;
+  *(undefined2 *)this = 0;
+  cVar2 = *param_1;
+  pcVar3 = param_1;
+  while (cVar2 != '\0') {
+    *(short *)this = *(short *)this + (short)cVar2;
+    pcVar1 = pcVar3 + 1;
+    pcVar3 = pcVar3 + 1;
+    cVar2 = *pcVar1;
+  }
+  return 0;
+}
+
 /* ref: FUN_00bcd4b0 */
 GEN_NOFRAME uint GEN_THISCALL F_00bcd4b0(unsigned int gen_a0 GEN_EDX_PARAM)
 {
@@ -11701,49 +11724,5 @@ LAB_00bd8be5: ;
       return (uint)pbVar2;
     }
   } while( true );
-}
-
-/* ref: FUN_00bd8c30 */
-GEN_FRAME uint GEN_STDCALL F_00bd8c30(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xbd8c30u, gen_a0, gen_a1, 0u, 0u);
-  undefined * param_1 = (undefined *)(uintptr_t)gen_a0;
-  int * param_2 = (int *)(uintptr_t)gen_a1;
-  byte bVar1;
-  byte * pbVar2;
-  uint uVar3;
-  byte * pbVar4;
-  int iVar5;
-  byte * pbVar6;
-  bool bVar7;
-  
-  uVar3 = (param_2[1] - *param_2) / 0x54;
-  if (2 < uVar3) {
-    pbVar2 = (byte *)F_0042a990(*param_2 + 0xa8 GEN_EDX_ARG);
-    pbVar4 = REFG(undefined * PTR32, 0x1108c84);
-    pbVar6 = pbVar2;
-    do {
-      bVar1 = *pbVar4;
-      bVar7 = bVar1 < *pbVar6;
-      if (bVar1 != *pbVar6) {
-LAB_00bd8c90: ;
-        iVar5 = (1 - (uint)bVar7) - (uint)(bVar7 != 0);
-        goto LAB_00bd8c95;
-      }
-      if (bVar1 == 0) break;
-      bVar1 = pbVar4[1];
-      bVar7 = bVar1 < pbVar6[1];
-      if (bVar1 != pbVar6[1]) goto LAB_00bd8c90;
-      pbVar4 = pbVar4 + 2;
-      pbVar6 = pbVar6 + 2;
-    } while (bVar1 != 0);
-    iVar5 = 0;
-LAB_00bd8c95: ;
-    if (iVar5 != 0) {
-      return (uint)pbVar2;
-    }
-    uVar3 = F_00aaa5b0(param_1 GEN_EDX_ARG,REFG(undefined4, 0x1108c88));
-  }
-  return uVar3;
 }
 

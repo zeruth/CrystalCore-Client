@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Scheduler::Clip::BaseClip::vf19 */
+GEN_NOFRAME byte F_00b5e4d0(void)
+{
+  GEN_ENTER(0xb5e4d0u, 0u, 0u, 0u, 0u);
+  return 1;
+}
+
 /* ref: Client::System::Scheduler::Clip::BaseClip::vf20 */
 GEN_NOFRAME unsigned int F_00b5e4e0(void)
 {
@@ -8893,18 +8900,6 @@ GEN_FRAME uint GEN_STDCALL F_00b678c0(unsigned int gen_a0, unsigned int gen_a1, 
   undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
   undefined4 param_2 = (undefined4)gen_a1;
   undefined4 param_3 = (undefined4)gen_a2;
-  *param_1 = GEN_FLT_TO(*param_1, REFG(float, 0x1375ac0));
-  param_1[1] = GEN_FLT_TO(param_1[1], REFG(float, 0x1375ac4));
-  param_1[2] = GEN_FLT_TO(param_1[2], REFG(float, 0x1375ac8));
-  return (uint)param_1;
-}
-
-/* ref: FUN_00b678f0 */
-GEN_FRAME uint GEN_STDCALL F_00b678f0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xb678f0u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
   *param_1 = GEN_FLT_TO(*param_1, REFG(float, 0x1375ac0));
   param_1[1] = GEN_FLT_TO(param_1[1], REFG(float, 0x1375ac4));
   param_1[2] = GEN_FLT_TO(param_1[2], REFG(float, 0x1375ac8));

@@ -1,6 +1,6 @@
 {
- "translated": 87108,
- "stubbed": 216,
+ "translated": 87111,
+ "stubbed": 213,
  "suspect": {
   "00414c60": [
    "uStack_58",
@@ -351,7 +351,7 @@
   ]
  },
  "reasons": {
-  "a register the decompiler lost": 164,
+  "a register the decompiler lost": 161,
   "an SSE lane in a bit mask": 7,
   "demoted": 5,
   "member access through a type C does not have": 4,
@@ -435,7 +435,6 @@
   "009f5ea0": "an SSE lane in a bit mask",
   "009f8140": "an SSE lane in a bit mask",
   "009ff590": "a register the decompiler lost (in_stack_0000000c)",
-  "00a0d2f0": "a register the decompiler lost (extraout_EAX)",
   "00a55f80": "a register the decompiler lost (extraout_EAX)",
   "00aa4bb0": "a register the decompiler lost (extraout_EAX)",
   "00ab1510": "a register the decompiler lost (extraout_EAX)",
@@ -475,7 +474,6 @@
   "00bfedc0": "undeclared name rcpps",
   "00c1c6f0": "a register the decompiler lost (in_stack_00000004)",
   "00c1c770": "a register the decompiler lost (in_stack_00000004)",
-  "00c1f250": "a register the decompiler lost (extraout_EAX)",
   "00c45f56": "demoted: C2143: syntax error: missing ';' before 'constant' | this[4] = (((code *)REFP(0xc45f56)))0x0;",
   "00c4630f": "demoted: C2143: syntax error: missing ';' before 'constant' | *this = (((code *)REFP(0xc4630f)))0x0;",
   "00c47930": "a register the decompiler lost (unaff_retaddr)",
@@ -540,7 +538,6 @@
   "00cc6700": "member access through a type C does not have (].D)",
   "00ccd220": "local of type unkbyte10",
   "00ccd2f0": "local of type unkbyte10",
-  "00ce1f50": "a register the decompiler lost (extraout_EAX)",
   "00ce8960": "local of type unkbyte10",
   "00d01b90": "undeclared name rsqrtps",
   "00d078f0": "a register the decompiler lost (unaff_EBX)",

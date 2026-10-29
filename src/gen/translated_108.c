@@ -5361,6 +5361,38 @@ LAB_00a0d2cb: ;
   return (uint)param_1;
 }
 
+/* ref: FUN_00a0d2f0 */
+GEN_FRAME uint F_00a0d2f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xa0d2f0u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  undefined4 param_3 = (undefined4)gen_a2;
+  __declspec(align(16)) undefined1 gen_frame[0x110];
+  HRESULT HVar1;
+  uint extraout_EAX = 0;
+  uint uVar2;
+  uint extraout_EAX_00 = 0;
+  
+  (*(uint *)(gen_frame + 0x108)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x10c);
+  HVar1 = gen_imp_CoInitialize((LPVOID)0x0);
+  (*(bool *)(gen_frame + 0x7)) = HVar1 == 0;
+  (*(int * PTR32 *)(gen_frame + 0x0)) = (int *)0x0;
+  HVar1 = gen_imp_CoCreateInstance((undefined *)&REFG(undefined, 0x10e35c8),(GEN_LPANY)0x0,1,(undefined *)&REFG(undefined, 0x10e35d8),&(*(int * PTR32 *)(gen_frame + 0x0)));
+  F_00a14000(((CHAR *)(gen_frame + 0x8)),"[%s,%d], %s, hr = 0x%x\n",param_2,param_3,param_1,HVar1);
+  gen_imp_OutputDebugStringA(((CHAR *)(gen_frame + 0x8)));
+  uVar2 = extraout_EAX;
+  if ((-1 < HVar1) && (uVar2 = 0, (*(int * PTR32 *)(gen_frame + 0x0)) != (int *)0x0)) {
+    uVar2 = ((GEN_TCODE *)*(gen_code32 *)(*(*(int * PTR32 *)(gen_frame + 0x0)) + 8))((*(int * PTR32 *)(gen_frame + 0x0)) GEN_EDX_ARG);
+  }
+  if ((*(bool *)(gen_frame + 0x7)) != false) {
+    gen_imp_CoUninitialize();
+    uVar2 = extraout_EAX_00;
+  }
+  F_00c47745((*(uint *)(gen_frame + 0x108)) ^ (uint)(uint)(gen_frame + 0x10c) GEN_EDX_ARG);
+  return uVar2;
+}
+
 /* ref: FUN_00a0d3b0 */
 GEN_FRAME uint F_00a0d3b0(void)
 {
@@ -10892,21 +10924,5 @@ GEN_NOFRAME unsigned int GEN_THISCALL F_00a15d40(unsigned int gen_a0 GEN_EDX_PAR
     F_00c50937(*(undefined * PTR32 *)((int)this + 0x54));
   }
   return;
-}
-
-/* ref: Unlock */
-GEN_NOFRAME uint GEN_THISCALL F_00a15d50(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xa15d50u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  uint extraout_EAX = 0;
-  uint uVar1;
-  
-  uVar1 = 0;
-  if (*(undefined * PTR32 *)((int)this + 0x54) != (undefined *)0x0) {
-    F_00c509aa(*(undefined * PTR32 *)((int)this + 0x54));
-    uVar1 = extraout_EAX;
-  }
-  return uVar1;
 }
 

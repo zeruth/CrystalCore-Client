@@ -1,5 +1,19 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00ab2230 */
+GEN_FRAME uint F_00ab2230(unsigned int gen_a0)
+{
+  GEN_ENTER(0xab2230u, gen_a0, 0u, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  uint uVar1;
+  
+  uVar1 = F_0052ff60(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8) GEN_EDX_ARG,0x26,param_1);
+  if (uVar1 == 0) {
+    return 0;
+  }
+  return *(uint *)(uVar1 + 4);
+}
+
 /* ref: FUN_00ab2260 */
 GEN_FRAME uint F_00ab2260(unsigned int gen_a0)
 {
@@ -9245,21 +9259,6 @@ GEN_FRAME uint F_00abbb60(unsigned int gen_a0, unsigned int gen_a1)
 GEN_FRAME uint F_00abbb90(unsigned int gen_a0, unsigned int gen_a1)
 {
   GEN_ENTER(0xabbb90u, gen_a0, gen_a1, 0u, 0u);
-  undefined4 param_1 = (undefined4)gen_a0;
-  undefined4 param_2 = (undefined4)gen_a1;
-  uint uVar1;
-  
-  uVar1 = F_0052ff60(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8) GEN_EDX_ARG,param_1,param_2);
-  if (uVar1 == 0) {
-    return 0;
-  }
-  return *(uint *)(uVar1 + 4);
-}
-
-/* ref: FUN_00abbbc0 */
-GEN_FRAME uint F_00abbbc0(unsigned int gen_a0, unsigned int gen_a1)
-{
-  GEN_ENTER(0xabbbc0u, gen_a0, gen_a1, 0u, 0u);
   undefined4 param_1 = (undefined4)gen_a0;
   undefined4 param_2 = (undefined4)gen_a1;
   uint uVar1;

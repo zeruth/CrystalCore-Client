@@ -1,5 +1,20 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00abbbc0 */
+GEN_FRAME uint F_00abbbc0(unsigned int gen_a0, unsigned int gen_a1)
+{
+  GEN_ENTER(0xabbbc0u, gen_a0, gen_a1, 0u, 0u);
+  undefined4 param_1 = (undefined4)gen_a0;
+  undefined4 param_2 = (undefined4)gen_a1;
+  uint uVar1;
+  
+  uVar1 = F_0052ff60(*(undefined * PTR32 *)(REFG(int, 0x137104c) + 0x25d8) GEN_EDX_ARG,param_1,param_2);
+  if (uVar1 == 0) {
+    return 0;
+  }
+  return *(uint *)(uVar1 + 4);
+}
+
 /* ref: FUN_00abbbf0 */
 GEN_FRAME uint F_00abbbf0(unsigned int gen_a0, unsigned int gen_a1)
 {
@@ -9210,22 +9225,5 @@ GEN_FRAME byte GEN_THISCALL F_00ac58b0(unsigned int gen_a0 GEN_EDX_PARAM, unsign
     }
   }
   return 0;
-}
-
-/* ref: FUN_00ac59f0 */
-GEN_NOFRAME unsigned int GEN_THISCALL F_00ac59f0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xac59f0u, gen_a0, 0u, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  if (*(undefined * PTR32 *)((int)this + 0x80) != (undefined *)0x0) {
-    F_009bc530(*(undefined * PTR32 *)((int)this + 0x80) GEN_EDX_FWD,1);
-    *(undefined4 *)((int)this + 0x80) = 0;
-  }
-  if (*(undefined * PTR32 *)((int)this + 0x84) != (undefined *)0x0) {
-    F_009bc530(*(undefined * PTR32 *)((int)this + 0x84) GEN_EDX_ARG,1);
-    *(undefined4 *)((int)this + 0x84) = 0;
-  }
-  *(undefined4 *)((int)this + 0x70) = 0;
-  return;
 }
 

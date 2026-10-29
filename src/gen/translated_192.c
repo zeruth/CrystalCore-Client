@@ -1,5 +1,38 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags_TypeInfo::vf9 */
+GEN_FRAME uint GEN_THISCALL F_00e84290(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
+{
+  GEN_ENTER(0xe84290u, gen_a0, gen_a1, gen_a2, 0u);
+  undefined * this = (undefined *)(uintptr_t)gen_a0;
+  undefined4 param_1 = (undefined4)gen_a1;
+  int * param_2 = (int *)(uintptr_t)gen_a2;
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_2 + 4))(param_2 GEN_EDX_FWD);
+  uVar1 = F_00e833a0(param_1,uVar1);
+  return uVar1;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf1 */
+GEN_NOFRAME uint GEN_THISCALL F_00e842b0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe842b0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  return in_ecx + 4;
+}
+
+/* ref: Application::Network::WorkDefinitions::Tag_Sync_GatheringDivisionOpenFlags::vf2 */
+GEN_NOFRAME uint GEN_THISCALL F_00e842c0(unsigned int gen_a0 GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xe842c0u, gen_a0, 0u, 0u, 0u);
+  int in_ecx = (int)gen_a0;
+  if (in_ecx != -0x84) {
+    return in_ecx + 0x170;
+  }
+  return 0;
+}
+
 /* ref: FUN_00e842e0 */
 GEN_NOFRAME uint F_00e842e0(void)
 {
@@ -4637,38 +4670,5 @@ GEN_FRAME uint GEN_THISCALL F_00e88250(unsigned int gen_a0 GEN_EDX_PARAM, unsign
   uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_1 + 8))(param_1 GEN_EDX_FWD);
   uVar1 = F_00e83330(uVar1,param_2);
   return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMarket_TypeInfo::vf9 */
-GEN_FRAME uint GEN_THISCALL F_00e88270(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
-{
-  GEN_ENTER(0xe88270u, gen_a0, gen_a1, gen_a2, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  undefined4 param_1 = (undefined4)gen_a1;
-  int * param_2 = (int *)(uintptr_t)gen_a2;
-  uint uVar1;
-  
-  uVar1 = ((GEN_TCODE *)*(gen_code32 *)(*param_2 + 4))(param_2 GEN_EDX_FWD);
-  uVar1 = F_00e833a0(param_1,uVar1);
-  return uVar1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMarket::vf1 */
-GEN_NOFRAME uint GEN_THISCALL F_00e88290(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe88290u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  return in_ecx + 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::Tag_DbStore_DbCharaItemMarket::vf2 */
-GEN_NOFRAME uint GEN_THISCALL F_00e882a0(unsigned int gen_a0 GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe882a0u, gen_a0, 0u, 0u, 0u);
-  int in_ecx = (int)gen_a0;
-  if (in_ecx != -0xa4) {
-    return in_ecx + 0x2e0;
-  }
-  return 0;
 }
 
