@@ -1,5 +1,105 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Scheduler::Instance::VfxObject::vf44 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bee6e0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0xbee6e0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  GEN_PIN(uint param_2 = (uint)gen_a1;)
+  *((uint *)GEN_TOP((in_ecx + 0x80))) = param_2;
+  return param_2;
+}
+
+/* ref: Client::System::Scheduler::Instance::VfxObject::vf11 */
+GEN_OWN GEN_NOFRAME uint F_00bee6f0(void)
+{
+  GEN_ENTER(0xbee6f0u, 0u, 0u, 0u, 0u);
+  return 0x110d253;
+}
+
+/* ref: FUN_00bee700 */
+GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_00bee700(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xbee700u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  int * piVar1;
+  undefined4 * puVar2;
+  
+  piVar1 = *((int * PTR32 *)GEN_TOP(((int)this + 0x80)));
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[45])REFP(0x110d25c));
+  if (piVar1 != ((int *)GEN_TOP(0x0))) {
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar1 + 4))))(piVar1 GEN_EDX_FWD);
+    puVar2 = *((undefined4 * PTR32 *)GEN_TOP(((int)this + 0x80)));
+    if (puVar2 != ((undefined4 *)GEN_TOP(0x0))) {
+      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP(*puVar2)))(puVar2 GEN_EDX_ARG,1);
+      *((undefined4 *)GEN_TOP(((int)this + 0x80))) = 0;
+    }
+  }
+  F_00b61c10(this GEN_EDX_ARG);
+  return;
+}
+
+/* ref: Client::System::Scheduler::Instance::VfxObject::vf13 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00bee740(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xbee740u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return *((uint *)GEN_TOP((in_ecx + 0x80)));
+}
+
+/* ref: Client::System::Scheduler::Instance::VfxObject::vf12 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00bee750(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xbee750u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return *((uint *)GEN_TOP((in_ecx + 0x80)));
+}
+
+/* ref: Client::System::Scheduler::Instance::VfxObject::vf0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bee760(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0xbee760u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
+  GEN_PIN(byte param_2 = (byte)gen_a1;)
+  int * piVar1;
+  undefined4 * puVar2;
+  
+  piVar1 = ((int *)GEN_TOP(param_1[0x20]));
+  *param_1 = (*(undefined * PTR32 (*)[45])REFP(0x110d25c));
+  if (piVar1 != ((int *)GEN_TOP(0x0))) {
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar1 + 4))))(piVar1 GEN_EDX_FWD);
+    puVar2 = ((undefined4 *)GEN_TOP(param_1[0x20]));
+    if (puVar2 != ((undefined4 *)GEN_TOP(0x0))) {
+      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP(*puVar2)))(puVar2 GEN_EDX_ARG,1);
+      param_1[0x20] = 0;
+    }
+  }
+  F_00b61c10(param_1 GEN_EDX_ARG);
+  if ((param_2 & 1) != 0) {
+    F_00406ad0(param_1);
+  }
+  return (uint)param_1;
+}
+
+/* ref: FUN_00bee7c0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bee7c0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0xbee7c0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  F_00b61bd0(this GEN_EDX_FWD,param_1);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[45])REFP(0x110d344));
+  *((undefined4 *)GEN_TOP(((int)this + 0x80))) = 0;
+  return (uint)this;
+}
+
+/* ref: Client::System::Scheduler::Instance::BgObject::vf20 */
+GEN_OWN GEN_NOFRAME unsigned int F_00bee7f0(void)
+{
+  GEN_ENTER(0xbee7f0u, 0u, 0u, 0u, 0u);
+  return;
+}
+
 /* ref: Client::System::Scheduler::Instance::BgObject::vf42 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bee800(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
@@ -1110,7 +1210,6 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_00bef7a0(GEN_P(undefined * this, unsigned 
   int iVar2;
   int * this_00;
   uint uVar3;
-  float10 fVar4;
   undefined4 local_8;
   
   cVar1 = *((char *)GEN_TOP(((int)this + 0x71)));
@@ -1122,8 +1221,7 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_00bef7a0(GEN_P(undefined * this, unsigned 
     }
   }
   *((undefined1 *)GEN_TOP(((int)this + 0x90))) = 1;
-  fVar4 = F_00a5f1d0(this_00 GEN_EDX_ARG);
-  *((float *)GEN_TOP(((int)this + 0x98))) = (float)fVar4;
+  *((int *)GEN_TOP(((int)this + 0x98))) = this_00[0x2d];
   *(undefined1 *)(this_00 + 0x4d8) = 0;
   cVar1 = *((char *)GEN_TOP(((int)this + 0x68)));
   local_8 = CONCAT31((int3)((uint)((int)(uintptr_t)this) >> 8),cVar1);
@@ -19140,176 +19238,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07d20(GEN_P(undefined * this, unsigned 
     uVar1 = -(uint)(iVar2 != 0x2733);
   }
   return uVar1;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf9 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07d50(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char * param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0xc07d50u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(char * param_1 = (char *)(uintptr_t)gen_a1;)
-  GEN_PIN(int param_2 = (int)gen_a2;)
-  uint uVar1;
-  int iVar2;
-  
-  uVar1 = gen_imp_recv(*(SOCKET *)(this + 4),param_1,param_2,0);
-  if (uVar1 == 0xffffffff) {
-    iVar2 = gen_imp_WSAGetLastError();
-    uVar1 = (iVar2 != 0x2733) - 2;
-  }
-  return uVar1;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf10 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07d90(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char * param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2), GEN_P(undefined * param_3, unsigned int gen_a3), GEN_P(int param_4, unsigned int gen_a4))
-{
-  GEN_ENTER(0xc07d90u, gen_a0, gen_a1, gen_a2, gen_a3);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(char * param_1 = (char *)(uintptr_t)gen_a1;)
-  GEN_PIN(int param_2 = (int)gen_a2;)
-  GEN_PIN(undefined * param_3 = (undefined *)(uintptr_t)gen_a3;)
-  GEN_PIN(int param_4 = (int)gen_a4;)
-  uint uVar1;
-  int iVar2;
-  
-  uVar1 = gen_imp_sendto(*(SOCKET *)(this + 4),param_1,param_2,0,param_3,param_4);
-  if (uVar1 == 0xffffffff) {
-    iVar2 = gen_imp_WSAGetLastError();
-    uVar1 = -(uint)(iVar2 != 0x2733);
-  }
-  return uVar1;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf11 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07dd0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char * param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2), GEN_P(undefined * param_3, unsigned int gen_a3), GEN_P(int * param_4, unsigned int gen_a4))
-{
-  GEN_ENTER(0xc07dd0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(char * param_1 = (char *)(uintptr_t)gen_a1;)
-  GEN_PIN(int param_2 = (int)gen_a2;)
-  GEN_PIN(undefined * param_3 = (undefined *)(uintptr_t)gen_a3;)
-  GEN_PIN(int * param_4 = (int *)(uintptr_t)gen_a4;)
-  uint uVar1;
-  
-  uVar1 = gen_imp_recvfrom(*(SOCKET *)(this + 4),param_1,param_2,0,param_3,param_4);
-  if (uVar1 == 0xffffffff) {
-    gen_imp_WSAGetLastError();
-    uVar1 = 0xffffffff;
-  }
-  return uVar1;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf17 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07e10(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xc07e10u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_FRAME_DECL_TOP(0xc, 4, 4);
-  SOCKET s;
-  int iVar1;
-  
-  s = *(SOCKET *)(this + 4);
-  (*(uint *)(gen_frame + 0x4)) = 0;
-  (*(int *)(gen_frame + 0x0)) = 4;
-  iVar1 = gen_imp_getsockopt(s,0xffff,0x1007,(char *)&(*(uint *)(gen_frame + 0x4)),&(*(int *)(gen_frame + 0x0)));
-  if (iVar1 < 0) {
-    return 0xffffffff;
-  }
-  return (*(uint *)(gen_frame + 0x4));
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf12 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07e60(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined * param_1, unsigned int gen_a1), GEN_P(int * param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0xc07e60u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a1;)
-  GEN_PIN(int * param_2 = (int *)(uintptr_t)gen_a2;)
-  int iVar1;
-  
-  iVar1 = gen_imp_getpeername(*(SOCKET *)(this + 4),param_1,param_2);
-  if (iVar1 == 0) {
-    return 0;
-  }
-  iVar1 = gen_imp_WSAGetLastError();
-  if ((iVar1 != -1) && (iVar1 != 0x2736)) {
-    return (-(uint)(iVar1 != 0x2749) & 0xffffe8b7) + 0x2749;
-  }
-  return 0x2736;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf13 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07eb0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined * param_1, unsigned int gen_a1), GEN_P(int * param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0xc07eb0u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a1;)
-  GEN_PIN(int * param_2 = (int *)(uintptr_t)gen_a2;)
-  int iVar1;
-  
-  iVar1 = gen_imp_getsockname(*(SOCKET *)(this + 4),param_1,param_2);
-  if (iVar1 == 0) {
-    return 0;
-  }
-  iVar1 = gen_imp_WSAGetLastError();
-  if (iVar1 != -1) {
-    if (iVar1 == 0x2726) {
-      return 0x2726;
-    }
-    if (iVar1 != 0x2736) {
-      return 0x1000;
-    }
-  }
-  return 0x2736;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf14 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07f10(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xc07f10u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  unsigned int gen_args[1];
-  gen_args[0] = gen_a1;
-  int iVar1;
-  
-  iVar1 = gen_imp_setsockopt(*(SOCKET *)(this + 4),0xffff,0x1005,(char *)&(*(undefined4 *)&gen_args[0]),4);
-  if (iVar1 == 0) {
-    return 0;
-  }
-  iVar1 = gen_imp_WSAGetLastError();
-  if (iVar1 != -1) {
-    if (iVar1 == 0x2726) {
-      return 0x2726;
-    }
-    if (iVar1 != 0x2736) {
-      return 0x1000;
-    }
-  }
-  return 0x2736;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf15 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07f70(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0xc07f70u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  unsigned int gen_args[1];
-  gen_args[0] = gen_a1;
-  int iVar1;
-  
-  iVar1 = gen_imp_setsockopt(*(SOCKET *)(this + 4),0xffff,0x1006,(char *)&(*(undefined4 *)&gen_args[0]),4);
-  if (iVar1 == 0) {
-    return 0;
-  }
-  iVar1 = gen_imp_WSAGetLastError();
-  if (iVar1 != -1) {
-    if (iVar1 == 0x2726) {
-      return 0x2726;
-    }
-    if (iVar1 != 0x2736) {
-      return 0x1000;
-    }
-  }
-  return 0x2736;
 }
 

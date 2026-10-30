@@ -1,5 +1,45 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf36 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4ea0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e4ea0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return (int)(char)(*((char *)GEN_TOP((in_ecx + 0x28))) * '\x04') >> 6;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf37 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4eb0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e4eb0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return (int)*((char *)GEN_TOP((in_ecx + 0x24)));
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf38 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4ec0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e4ec0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return (int)*((char *)GEN_TOP((in_ecx + 0x28))) >> 6;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf39 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4ed0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e4ed0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return (int)*((char *)GEN_TOP((in_ecx + 0x25)));
+}
+
+/* ref: Apricot::Engine::Data::Runtime::Particle::vf40 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4ee0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e4ee0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return (int)*((char *)GEN_TOP((in_ecx + 0x26)));
+}
+
 /* ref: Apricot::Engine::Data::Runtime::Particle::vf41 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4ef0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -8037,45 +8077,5 @@ GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_009ebae0(GEN_P(int in_ecx, unsigned int 
   GEN_ENTER(0x9ebae0u, gen_a0, 0u, 0u, 0u);
   GEN_PIN(int in_ecx = (int)gen_a0;)
   return *((byte *)GEN_TOP((in_ecx + 4)));
-}
-
-/* ref: Apricot::Engine::Data::Communicator::TextureProperty_Color2::vf3 */
-GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_009ebaf0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9ebaf0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return *((byte *)GEN_TOP((in_ecx + 5)));
-}
-
-/* ref: Apricot::Engine::Data::Communicator::TextureProperty_Color2::vf4 */
-GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_009ebb00(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9ebb00u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return *((byte *)GEN_TOP((in_ecx + 6)));
-}
-
-/* ref: Apricot::Engine::Data::Communicator::TextureProperty_Color2::vf11 */
-GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_009ebb10(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9ebb10u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return *((byte *)GEN_TOP((in_ecx + 7)));
-}
-
-/* ref: Apricot::Engine::Data::Communicator::TextureProperty_Color2::vf5 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009ebb20(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9ebb20u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return *((uint *)GEN_TOP((in_ecx + 8)));
-}
-
-/* ref: Apricot::Engine::Data::Communicator::TextureProperty_Color2::vf6 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009ebb30(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9ebb30u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return *((uint *)GEN_TOP((in_ecx + 0xc)));
 }
 

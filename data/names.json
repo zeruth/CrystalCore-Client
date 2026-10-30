@@ -97,6 +97,6 @@
   "0xa4f660": {"name": "OnDiscoveryReply", "evidence": "PacketDispatcher case 0x84 (down 0x28c, byte table @0xba6358): 0xab91b0(0x14b5268, part u8 @0, Map row u32 @4)"},
   "0xab91b0": {"name": "RevealMapPart", "evidence": "clears the wait (+0xc80), looks the Map row up (sheet 0x58) and sets its part (0xaaf5f0 with the row's +0x1c slot and +0x22 table); seen with Sapphire's DiscoveryReply layout"},
   "0xab5410": {"name": "ReadDiscovery", "evidence": "from the player's status: @0xf7 320 bytes (0xab0f60: 160 map slots x 16 parts, bit 1 << (p & 7)) and @0x237 80 bytes (0xab0fb0: 20 x 32)"},
-  "0xa666f0": {"ns": "Client::Game::Character::BattleChara", "name": "GetSubKind", "evidence": "returns +0x2f03, the spawn's @0x31 (0xaac200); tested == 1 with a parent's id (0xa9f2c0) and == 3 with the player as owner (0xab0... target logic), Sapphire's BattleNpcSubKind Part and Chocobo"}
+  "0xa666f0": {"ns": "Client::Game::Character::BattleChara", "name": "GetSubKind", "evidence": "returns +0x2f03, the spawn's @0x31 (0xaac200); tested == 1 with a parent's id (0xa9f2c0) and == 3 with the player as owner (0xaa3a30), Sapphire's BattleNpcSubKind Part and Chocobo"}
  }
 }

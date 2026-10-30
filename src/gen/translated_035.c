@@ -1,5 +1,32 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005cccc0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_005cccc0(GEN_P(undefined * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x5cccc0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(byte param_2 = (byte)gen_a1;)
+  F_005c8de0(param_1 GEN_EDX_FWD);
+  if ((param_2 & 1) != 0) {
+    F_00406ad0(param_1);
+  }
+  return (uint)param_1;
+}
+
+/* ref: FUN_005cccf0 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_005cccf0(GEN_P(undefined4 * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x5cccf0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;)
+  in_ecx[7] = 0;
+  in_ecx[0x20] = 0;
+  in_ecx[0x21] = 0;
+  in_ecx[0x22] = 0;
+  in_ecx[2] = 0;
+  *in_ecx = (*(undefined * PTR32 (*)[3])REFP(0x10a0ee4));
+  return (uint)in_ecx;
+}
+
 /* ref: FUN_005ccd20 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_005ccd20(GEN_P(undefined4 * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -8555,21 +8582,5 @@ GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_005d4280(GEN_P(undefined * this, unsigne
   GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
   GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
   return 0;
-}
-
-/* ref: Component::GUI2::AtkModule::vf58 */
-GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_005d4290(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x5d4290u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  return;
-}
-
-/* ref: Component::GUI2::AtkModule::vf59 */
-GEN_OWN GEN_NOFRAME unsigned int F_005d42a0(void)
-{
-  GEN_ENTER(0x5d42a0u, 0u, 0u, 0u, 0u);
-  return;
 }
 

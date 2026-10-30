@@ -1,5 +1,27 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::LayoutEngine::Layer::LineVfxLayoutInstance::vf0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00608cc0(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x608cc0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
+  GEN_PIN(byte param_2 = (byte)gen_a1;)
+  *param_1 = (*(undefined * PTR32 (*)[68])REFP(0x10a31b4));
+  F_009945a0(param_1 + 0x1d GEN_EDX_FWD);
+  *param_1 = (*(undefined * PTR32 (*)[68])REFP(0x10a2a84));
+  if ((param_2 & 1) != 0) {
+    F_00406ad0(param_1);
+  }
+  return (uint)param_1;
+}
+
+/* ref: Client::LayoutEngine::Layer::DoorRangeLayoutInstance::vf6 */
+GEN_OWN GEN_NOFRAME uint F_00608cf0(void)
+{
+  GEN_ENTER(0x608cf0u, 0u, 0u, 0u, 0u);
+  return 0x70;
+}
+
 /* ref: Client::LayoutEngine::Layer::DoorRangeLayoutInstance::vf0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00608d00(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
@@ -6978,61 +7000,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0060f080(GEN_P(int in_ecx, unsigned int ge
   GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;)
   *param_2 = *((undefined4 *)GEN_TOP((in_ecx + 4)));
   return (uint)param_2;
-}
-
-/* ref: FUN_0060f0e0 */
-GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_0060f0e0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int * param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x60f0e0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a1;)
-  char cVar1;
-  int * piVar2;
-  int * piVar3;
-  
-  cVar1 = *((char *)GEN_TOP(((int)param_1 + 0x21)));
-  piVar3 = param_1;
-  while (cVar1 == '\0') {
-    F_0060f0e0(this GEN_EDX_FWD,((int *)GEN_TOP(piVar3[2])));
-    piVar2 = ((int *)GEN_TOP(*piVar3));
-    F_00429760(piVar3,0x28,900);
-    piVar3 = piVar2;
-    cVar1 = *((char *)GEN_TOP(((int)piVar2 + 0x21)));
-  }
-  return;
-}
-
-/* ref: FUN_0060f120 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_0060f120(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x60f120u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(int param_1 = (int)gen_a1;)
-  int * piVar1;
-  int * piVar2;
-  
-  piVar2 = *((int * PTR32 *)GEN_TOP((param_1 + 8)));
-  *((int *)GEN_TOP((param_1 + 8))) = *piVar2;
-  if (*((char *)GEN_TOP((*piVar2 + 0x21))) == '\0') {
-    *((int *)GEN_TOP((*piVar2 + 4))) = param_1;
-  }
-  piVar2[1] = *((int *)GEN_TOP((param_1 + 4)));
-  if (param_1 == *((int *)GEN_TOP((*((int *)GEN_TOP(((int)this + 4))) + 4)))) {
-    *((int * PTR32 *)GEN_TOP((*((int *)GEN_TOP(((int)this + 4))) + 4))) = piVar2;
-    *piVar2 = param_1;
-    *((int * PTR32 *)GEN_TOP((param_1 + 4))) = piVar2;
-    return (uint)piVar2;
-  }
-  piVar1 = *((int * PTR32 *)GEN_TOP((param_1 + 4)));
-  if (param_1 == *piVar1) {
-    *piVar1 = (int)piVar2;
-    *piVar2 = param_1;
-    *((int * PTR32 *)GEN_TOP((param_1 + 4))) = piVar2;
-    return (uint)piVar2;
-  }
-  piVar1[2] = (int)piVar2;
-  *piVar2 = param_1;
-  *((int * PTR32 *)GEN_TOP((param_1 + 4))) = piVar2;
-  return (uint)piVar2;
 }
 
