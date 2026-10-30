@@ -1,5 +1,37 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0076a460 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_0076a460(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
+{
+  GEN_ENTER(0x76a460u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(uint param_1 = (uint)gen_a1;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
+  ushort uVar1;
+  uint uVar2;
+  undefined * pvVar3;
+  
+  if (param_1 == 0) {
+    return 0;
+  }
+  if (*((char *)GEN_TOP((param_1 + 0xa4))) != '\0') {
+    if ((REFG(undefined1, 0x14b4ec1) & 0x20) != 0) {
+      pvVar3 = *((undefined * PTR32 *)GEN_TOP(((int)this + 0x250)));
+      if ((*((char *)GEN_TOP(((int)pvVar3 + 6))) == '\0') || (uVar2 = F_00a3a860(pvVar3 GEN_EDX_FWD), uVar2 == 0)) {
+        uVar1 = *((ushort *)GEN_TOP(((int)pvVar3 + 0x10)));
+      }
+      else {
+        pvVar3 = ((undefined *)GEN_TOP(F_00a3a860(pvVar3 GEN_EDX_ARG)));
+        uVar1 = F_0071d210(pvVar3 GEN_EDX_ARG);
+      }
+      uVar2 = F_0076a3e0(this GEN_EDX_ARG,0x11,0x1153,uVar1 < 10000);
+      return uVar2;
+    }
+    return param_1;
+  }
+  return param_1;
+}
+
 /* ref: FUN_0076a4e0 */
 GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_0076a4e0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -13581,16 +13613,5 @@ GEN_OWN GEN_FRAME uint GEN_STDCALL F_00778f00(GEN_P(uint param_1, unsigned int g
     return *(uint *)(&REFG(undefined, 0x10c4510) + param_1 * 4);
   }
   return 0;
-}
-
-/* ref: FUN_00778f20 */
-GEN_OWN GEN_FRAME uint GEN_STDCALL F_00778f20(GEN_P(uint param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x778f20u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(uint param_1 = (uint)gen_a0;)
-  if ((-1 < (int)param_1) && (param_1 < 0xb)) {
-    return *(uint *)(&REFG(undefined, 0x10c4530) + param_1 * 4);
-  }
-  return 0xffffffff;
 }
 

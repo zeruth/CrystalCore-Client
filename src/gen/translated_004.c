@@ -1,5 +1,24 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI::Info::InfoProxyCommonlist::vf10 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00435a90(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x435a90u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_1 = (int)gen_a1;)
+  uint uVar1;
+  uint * puVar2;
+  
+  uVar1 = F_00ab1c90((uint)*((ushort *)GEN_TOP((param_1 + 10))));
+  if (uVar1 != 0) {
+    puVar2 = ((uint *)GEN_TOP(F_00ab2750((uint)*((ushort *)GEN_TOP((uVar1 + 0x20))))));
+    if (puVar2 != ((uint *)GEN_TOP(0x0))) {
+      return (*puVar2 & 0xffffff) + (int)puVar2;
+    }
+  }
+  return 0x108d04e;
+}
+
 /* ref: Client::UI::Info::InfoProxyCommonlist::vf11 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00435ad0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
 {
@@ -11436,35 +11455,6 @@ GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_00441680(GEN_P(int param_1, unsigned int
     bVar1 = F_00974da0(this GEN_EDX_ARG,uVar2,uVar3,uVar4);
     if (bVar1 != 0) {
       return 1;
-    }
-  }
-  return 0;
-}
-
-/* ref: FUN_00441750 */
-GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_00441750(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x441750u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  GEN_PIN(char param_2 = (char)gen_a1;)
-  GEN_FRAME_DECL(0xc38, 8);
-  byte bVar1;
-  undefined * this;
-  
-  (*(uint *)(gen_frame + 0xc24)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc28);
-  if ((*((int *)GEN_TOP((param_1 + 0x18))) != 0 || *((int *)GEN_TOP((param_1 + 0x1c))) != 0) &&
-     ((byte)(param_2 - 3U) < 0xc)) {
-    this = ((undefined *)GEN_TOP(F_00424810(REFG(undefined4, 0x137104c) GEN_EDX_FWD)));
-    if (this != ((undefined *)GEN_TOP(0x0))) {
-      (*(undefined4 *)(gen_frame + 0x1c)) = *((undefined4 *)GEN_TOP((param_1 + 0x1c)));
-      (*(undefined4 *)(gen_frame + 0x18)) = *((undefined4 *)GEN_TOP((param_1 + 0x18)));
-      (*(undefined4 *)(gen_frame + 0x0)) = 0x115;
-      (*(undefined4 *)(gen_frame + 0x4)) = 0x20;
-      (*(char *)(gen_frame + 0x20)) = param_2;
-      bVar1 = F_00974da0(this GEN_EDX_ARG,&(*(undefined4 *)(gen_frame + 0x0)),0,0);
-      if (bVar1 != 0) {
-        return 1;
-      }
     }
   }
   return 0;

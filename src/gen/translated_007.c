@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00471490 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00471490(GEN_P(uint in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x471490u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(uint in_ecx = (uint)gen_a0;)
+  F_0042b630(in_ecx GEN_EDX_FWD);
+  return in_ecx;
+}
+
 /* ref: FUN_004714b0 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_004714b0(GEN_P(uint in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -4659,15 +4668,5 @@ GEN_OWN GEN_FRAME uint GEN_STDCALL F_004759e0(GEN_P(undefined4 * param_1, unsign
     *param_1 = *param_2;
   }
   return (uint)param_1;
-}
-
-/* ref: FUN_00475a00 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00475a00(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x475a00u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;)
-  *(undefined4 *)this = *param_1;
-  return (uint)this;
 }
 

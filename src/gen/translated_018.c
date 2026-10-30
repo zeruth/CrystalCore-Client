@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::File::FileManager::vf1 */
+GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_004fdcb0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x4fdcb0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  byte bVar1;
+  
+  bVar1 = F_004fd8a0(this GEN_EDX_FWD);
+  return bVar1;
+}
+
 /* ref: Client::System::File::FileThread::vf5 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_004fdcc0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
@@ -8010,26 +8022,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_005053b0(GEN_P(undefined * this, unsigned 
   GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
   GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
   return *((uint *)GEN_TOP((*((int *)GEN_TOP((*((int *)GEN_TOP(((int)this + 0xb0))) + 0x20))) + (uint)(ushort)param_1 * 4)));
-}
-
-/* ref: FUN_005053d0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_005053d0(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x5053d0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  GEN_PIN(uint param_2 = (uint)gen_a1;)
-  int iVar1;
-  double dVar3;
-  ushort local_8;
-  
-  iVar1 = *((int *)GEN_TOP((*((int *)GEN_TOP((*((int *)GEN_TOP((param_1 + 0xb0))) + 0x14))) + (param_2 & 0xffff) * 4)));
-  if (iVar1 != 0) {
-    dVar3 = (GEN_X87MATH(((double)((float)GEN_TOF(((float10)*((float *)GEN_TOP((iVar1 + 0xc))) * (float10)*(double *)&REFG(undefined, 0x1088070))))),0xe));
-    local_8 = gen_x87_cw | 0xc00;
-    gen_set_x87_cw((unsigned short)local_8);
-    gen_set_x87_cw((unsigned short)gen_x87_cw);
-    return (int)TRUNC(dVar3) & 0xffff;
-  }
-  return 0;
 }
 

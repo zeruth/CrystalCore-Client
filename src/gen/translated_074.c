@@ -1,5 +1,18 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_007c1810 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_007c1810(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x7c1810u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  F_005903f0(this GEN_EDX_FWD);
+  *((byte *)GEN_TOP(((int)this + 0xfa))) = *((byte *)GEN_TOP(((int)this + 0xfa))) | 0x40;
+  *((byte *)GEN_TOP(((int)this + 0xf8))) = *((byte *)GEN_TOP(((int)this + 0xf8))) | 0x80;
+  *((byte *)GEN_TOP(((int)this + 0xfb))) = *((byte *)GEN_TOP(((int)this + 0xfb))) | 0x48;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[62])REFP(0x10d048c));
+  return (uint)this;
+}
+
 /* ref: Client::UI2::AddonCharaSelectLegacy::vf37 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_007c1860(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -10921,46 +10934,6 @@ LAB_007cd5b8: ;
     piVar4 = piVar4 + 1;
     if (0xd < iVar6) {
       return 0;
-    }
-  } while( true );
-}
-
-/* ref: FUN_007cd5d0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_007cd5d0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x7cd5d0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  uint uVar1;
-  int iVar2;
-  uint uVar3;
-  int * piVar4;
-  int iVar5;
-  int iVar6;
-  
-  ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)this + 4))) + 0x3c))))(*((int * PTR32 *)GEN_TOP(((int)this + 4))) GEN_EDX_FWD);
-  iVar6 = 0;
-  piVar4 = ((int *)GEN_TOP(((int)this + 0x4c)));
-  do {
-    uVar1 = F_0043d160(iVar6);
-    uVar3 = 0;
-    iVar2 = 0;
-    do {
-      iVar5 = *((int *)GEN_TOP(((int)&REFG(undefined4, 0x10bfb4c) + uVar3))) + iVar2;
-      if ((int)uVar1 < iVar5) {
-        iVar2 = uVar1 - iVar2;
-        goto LAB_007cd618;
-      }
-      uVar3 = uVar3 + 4;
-      iVar2 = iVar5;
-    } while (uVar3 < 0x14);
-    iVar2 = 0;
-LAB_007cd618: ;
-    *piVar4 = iVar2;
-    iVar6 = iVar6 + 1;
-    piVar4 = piVar4 + 1;
-    if (0xd < iVar6) {
-      *((undefined1 *)GEN_TOP(((int)this + 0xc))) = 1;
-      return (uint)this;
     }
   } while( true );
 }

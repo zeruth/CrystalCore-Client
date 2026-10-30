@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Resource::Handle::EquipmentDeformerParameterResourceHandleFactory::vf2 */
+GEN_OWN GEN_NOFRAME uint F_0051cd30(void)
+{
+  GEN_ENTER(0x51cd30u, 0u, 0u, 0u, 0u);
+  return 0xa0;
+}
+
 /* ref: Client::System::Resource::Handle::EquipmentDeformerParameterResourceHandleFactory::vf0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0051cd40(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
@@ -7803,20 +7810,6 @@ GEN_OWN GEN_FRAME unsigned int GEN_STDCALL F_00523ac0(GEN_P(undefined * this, un
 GEN_OWN GEN_FRAME unsigned int GEN_STDCALL F_00523ae0(GEN_P(undefined * this, unsigned int gen_a0), GEN_P(undefined * param_1, unsigned int gen_a1), GEN_P(undefined * param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x523ae0u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a1;)
-  GEN_PIN(undefined * param_2 = (undefined *)(uintptr_t)gen_a2;)
-  if (param_1 != ((undefined *)GEN_TOP(0x0))) {
-    *(undefined4 *)param_1 = *(undefined4 *)param_2;
-    *(undefined4 *)(param_1 + 4) = *(undefined4 *)(param_2 + 4);
-  }
-  return 0;
-}
-
-/* ref: std::allocator<std::_Container_proxy>::construct_00523b00 */
-GEN_OWN GEN_FRAME unsigned int GEN_STDCALL F_00523b00(GEN_P(undefined * this, unsigned int gen_a0), GEN_P(undefined * param_1, unsigned int gen_a1), GEN_P(undefined * param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0x523b00u, gen_a0, gen_a1, gen_a2, 0u);
   GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
   GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a1;)
   GEN_PIN(undefined * param_2 = (undefined *)(uintptr_t)gen_a2;)

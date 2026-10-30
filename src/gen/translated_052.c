@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf13 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_006ba5f0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x6ba5f0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  return 0;
+}
+
 /* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf15 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_006ba600(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
@@ -8297,21 +8306,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_006c27d0(GEN_P(undefined * this, unsigned 
   *(undefined1 *)(param_1 + 1) = 0;
   *param_1 = 2;
   return (uint)param_1;
-}
-
-/* ref: FUN_006c2860 */
-GEN_OWN GEN_NOFRAME uint GEN_STDCALL F_006c2860(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x6c2860u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a0;)
-  GEN_PIN(undefined4 param_2 = (undefined4)gen_a1;)
-  uint uVar1;
-  
-  uVar1 = F_00a51200(0x42,2,0,0,0);
-  if ((char)uVar1 == '\0') {
-    return uVar1;
-  }
-  uVar1 = F_00a4a760(&REFG(undefined, 0x14a7360) GEN_EDX_ARG,0x1a,1);
-  return CONCAT31((int3)(uVar1 >> 8),1);
 }
 

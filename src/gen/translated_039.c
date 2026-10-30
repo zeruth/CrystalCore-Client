@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::LayoutEngine::Layer::RangeLayoutInstance::vf23 */
+GEN_OWN GEN_NOFRAME uint F_005ffdb0(void)
+{
+  GEN_ENTER(0x5ffdb0u, 0u, 0u, 0u, 0u);
+  return 0;
+}
+
 /* ref: Client::LayoutEngine::Layer::RangeLayoutInstance::vf25 */
 GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_005ffdc0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3))
 {
@@ -5240,28 +5247,6 @@ GEN_OWN GEN_FRAME unsigned int F_00604af0(GEN_P(int * param_1, unsigned int gen_
     for (iVar3 = param_2; iVar3 != 0; iVar3 = iVar3 - 1) {
       ((GEN_TCODE *)*((gen_code32 *)GEN_TOP(*puVar1)))(puVar1 GEN_EDX_ARG,0);
       puVar1 = puVar1 + 0x30;
-    }
-    piVar2 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*param_1 + 0xc))))(param_1 GEN_EDX_ARG)));
-    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 0xc))))(piVar2 GEN_EDX_ARG,param_1);
-  }
-  return;
-}
-
-/* ref: FUN_00604b40 */
-GEN_OWN GEN_FRAME unsigned int F_00604b40(GEN_P(int * param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x604b40u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a0;)
-  GEN_PIN(int param_2 = (int)gen_a1;)
-  undefined4 * puVar1;
-  int * piVar2;
-  int iVar3;
-  
-  if (param_1 != ((int *)GEN_TOP(0x0))) {
-    puVar1 = ((undefined4 *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*param_1 + 4))))(param_1 GEN_EDX_ARG)));
-    for (iVar3 = param_2; iVar3 != 0; iVar3 = iVar3 - 1) {
-      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP(*puVar1)))(puVar1 GEN_EDX_ARG,0);
-      puVar1 = puVar1 + 0x28;
     }
     piVar2 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*param_1 + 0xc))))(param_1 GEN_EDX_ARG)));
     ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 0xc))))(piVar2 GEN_EDX_ARG,param_1);

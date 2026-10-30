@@ -1,5 +1,17 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Sound::SoundData::vf25 */
+GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_004ed3f0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x4ed3f0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  if (*(int *)(this + 100) == 0) {
+    F_00cbcbc0(this + 0x20 GEN_EDX_FWD);
+    return;
+  }
+  return;
+}
+
 /* ref: Client::Sound::SoundData::vf26 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_004ed400(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float param_2, float gen_a1), GEN_P(undefined4 param_3, unsigned int gen_a2))
 {
@@ -13786,17 +13798,5 @@ GEN_OWN_GS GEN_FRAME unsigned int GEN_THISCALL F_004fda90(GEN_P(undefined * para
 LAB_004fdc83: ;
   gen_imp_WaitForSingleObject(*((HANDLE *)GEN_TOP(((int)param_1 + 0xcc))),0xffffffff);
   return;
-}
-
-/* ref: Client::System::File::FileManager::vf1 */
-GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_004fdcb0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x4fdcb0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  byte bVar1;
-  
-  bVar1 = F_004fd8a0(this GEN_EDX_FWD);
-  return bVar1;
 }
 

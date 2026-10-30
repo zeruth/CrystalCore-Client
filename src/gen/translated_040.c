@@ -1,5 +1,27 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00604b40 */
+GEN_OWN GEN_FRAME unsigned int F_00604b40(GEN_P(int * param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x604b40u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_2 = (int)gen_a1;)
+  undefined4 * puVar1;
+  int * piVar2;
+  int iVar3;
+  
+  if (param_1 != ((int *)GEN_TOP(0x0))) {
+    puVar1 = ((undefined4 *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*param_1 + 4))))(param_1 GEN_EDX_ARG)));
+    for (iVar3 = param_2; iVar3 != 0; iVar3 = iVar3 - 1) {
+      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP(*puVar1)))(puVar1 GEN_EDX_ARG,0);
+      puVar1 = puVar1 + 0x28;
+    }
+    piVar2 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*param_1 + 0xc))))(param_1 GEN_EDX_ARG)));
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 0xc))))(piVar2 GEN_EDX_ARG,param_1);
+  }
+  return;
+}
+
 /* ref: FUN_00604b90 */
 GEN_OWN GEN_FRAME unsigned int F_00604b90(GEN_P(int * param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1))
 {
@@ -5032,18 +5054,5 @@ GEN_OWN GEN_NOFRAME uint F_00608c80(void)
 {
   GEN_ENTER(0x608c80u, 0u, 0u, 0u, 0u);
   return 0x70;
-}
-
-/* ref: Client::LayoutEngine::Layer::NaviMeshRangeLayoutInstance::vf0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00608c90(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x608c90u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
-  GEN_PIN(byte param_2 = (byte)gen_a1;)
-  *param_1 = (*(undefined * PTR32 (*)[68])REFP(0x10a2a84));
-  if ((param_2 & 1) != 0) {
-    F_00406ad0(param_1);
-  }
-  return (uint)param_1;
 }
 

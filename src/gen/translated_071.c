@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::AddonFreeCompanyMenuBase::vf25 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_0079ac90(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x79ac90u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_FRAME_DECL_TOP(0xc, 4, 4);
+  uint uVar1;
+  
+  (*(undefined4 *)(gen_frame + 0x0)) = 0;
+  F_005a2710(&(*(undefined4 *)(gen_frame + 0x0)) GEN_EDX_FWD,3);
+  (*(undefined4 *)(gen_frame + 0x4)) = 0xffffffff;
+  F_005a9110(this GEN_EDX_ARG,1,&(*(undefined4 *)(gen_frame + 0x0)));
+  uVar1 = F_005a2670(&(*(undefined4 *)(gen_frame + 0x0)) GEN_EDX_ARG);
+  return uVar1;
+}
+
 /* ref: Client::UI2::AddonFreeCompanyMenuBase::vf2 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0079acd0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3), GEN_P(undefined4 param_4, unsigned int gen_a4))
 {
@@ -10412,37 +10428,6 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_007a5760(GEN_P(undefined * this, unsigne
   uVar2 = F_0057f810(*((undefined * PTR32 *)GEN_TOP((uVar2 + 0x14))) GEN_EDX_ARG,(uint)bVar1);
   if (uVar2 != 0) {
     return *((uint *)GEN_TOP((uVar2 + 0x204)));
-  }
-  return 0;
-}
-
-/* ref: Client::UI2::AddonInventoryGrid::vf52 */
-GEN_OWN GEN_FRAME byte GEN_THISCALL F_007a5790(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int * param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x7a5790u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a1;)
-  undefined1 AVar1;
-  uint uVar2;
-  undefined * pvVar3;
-  
-  if (*param_1 == 2) {
-    AVar1 = this[0x13c];
-    uVar2 = F_0055dcb0();
-    pvVar3 = ((undefined *)GEN_TOP(F_0057f810(*((undefined * PTR32 *)GEN_TOP((uVar2 + 0x14))) GEN_EDX_ARG,(uint)(byte)AVar1)));
-    if (pvVar3 != ((undefined *)GEN_TOP(0x0))) {
-      F_007a5470(pvVar3 GEN_EDX_ARG);
-      return 1;
-    }
-  }
-  else if (*param_1 == 5) {
-    AVar1 = this[0x13c];
-    uVar2 = F_0055dcb0();
-    pvVar3 = ((undefined *)GEN_TOP(F_0057f810(*((undefined * PTR32 *)GEN_TOP((uVar2 + 0x14))) GEN_EDX_ARG,(uint)(byte)AVar1)));
-    if (pvVar3 != ((undefined *)GEN_TOP(0x0))) {
-      F_007a51f0(pvVar3 GEN_EDX_ARG);
-      return 1;
-    }
   }
   return 0;
 }

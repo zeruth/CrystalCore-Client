@@ -68068,7 +68068,7 @@ double GEN_THISCALL F_00d8c510(GEN_P(undefined * this, unsigned int gen_a0) GEN_
 float GEN_THISCALL F_00d8c520(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM);
 uint GEN_THISCALL F_00d8c530(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1));
 float F_00d8c560(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1));
-double F_00d8c590(unsigned int gen_a0, unsigned int gen_a1);
+double F_00d8c590(GEN_P(float * param_1, unsigned int gen_a0), GEN_P(float * param_2, unsigned int gen_a1));
 double F_00d8c5c0(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1));
 uint F_00d8c5f0(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2);
 unsigned int F_00d8c630(GEN_P(int param_1, unsigned int gen_a0), GEN_P(int * param_2, unsigned int gen_a1), GEN_P(undefined4 param_3, unsigned int gen_a2));
@@ -68082,7 +68082,7 @@ float10 F_00d8cc60(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(int par
 uint F_00d8cf30(unsigned int gen_a0, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4, unsigned int gen_a5, unsigned int gen_a6);
 uint F_00d8d050(GEN_P(int param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1), GEN_P(int * param_3, unsigned int gen_a2), GEN_P(int * param_4, unsigned int gen_a3), GEN_P(float param_5, float gen_a4), GEN_P(int param_6, unsigned int gen_a5), GEN_P(float * param_7, unsigned int gen_a6), GEN_P(int param_8, unsigned int gen_a7), GEN_P(float param_9, float gen_a8));
 uint F_00d8d5d0(GEN_P(int * param_1, unsigned int gen_a0), GEN_P(float * param_2, unsigned int gen_a1), GEN_P(int * param_3, unsigned int gen_a2), GEN_P(int * param_4, unsigned int gen_a3), GEN_P(int param_5, unsigned int gen_a4));
-unsigned int F_00d8e100(GEN_P(int param_1, unsigned int gen_a0), GEN_P(int * param_2, unsigned int gen_a1), GEN_P(int * param_3, unsigned int gen_a2));
+unsigned int F_00d8e100(GEN_P(int param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1), GEN_P(int * param_3, unsigned int gen_a2));
 uint F_00d8e240(GEN_P(float * param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1), GEN_P(int * param_3, unsigned int gen_a2), GEN_P(undefined4 param_4, unsigned int gen_a3), GEN_P(int param_5, unsigned int gen_a4), GEN_P(int * param_6, unsigned int gen_a5), GEN_P(int * param_7, unsigned int gen_a6), GEN_P(float param_8, float gen_a7), GEN_P(undefined4 param_9, unsigned int gen_a8));
 uint F_00d8e940(GEN_P(int * param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1));
 uint F_00d8ea90(GEN_P(int * param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1));

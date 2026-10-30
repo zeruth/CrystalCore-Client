@@ -1,5 +1,18 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Game::Event::CraftEventHandler::vf0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00750dd0(GEN_P(undefined * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x750dd0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(byte param_2 = (byte)gen_a1;)
+  F_006e04e0(param_1 GEN_EDX_FWD);
+  if ((param_2 & 1) != 0) {
+    F_00406ad0(param_1);
+  }
+  return (uint)param_1;
+}
+
 /* ref: Client::Game::Event::ShopEventHandler::vf0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00750e00(GEN_P(undefined * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
@@ -9794,27 +9807,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0075a5c0(GEN_P(undefined * this, unsigned 
   }
   *param_1 = param_2;
   return (uint)param_1;
-}
-
-/* ref: FUN_0075a630 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0075a630(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x75a630u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  undefined * pvVar1;
-  undefined * this_00;
-  
-  this_00 = *(undefined * PTR32 *)this;
-  if (this_00 != ((undefined *)GEN_TOP(0x0))) {
-    pvVar1 = *((undefined * PTR32 *)GEN_TOP(((int)this + 4)));
-    for (; this_00 != pvVar1; this_00 = ((undefined *)GEN_TOP(((int)this_00 + 0x10)))) {
-      F_00750930(this_00 GEN_EDX_FWD);
-    }
-    F_00429760(*(int *)this,*((int *)GEN_TOP(((int)this + 8))) - *(int *)this & 0xfffffff0,800);
-  }
-  *(undefined4 *)this = 0;
-  *((undefined4 *)GEN_TOP(((int)this + 4))) = 0;
-  *((undefined4 *)GEN_TOP(((int)this + 8))) = 0;
-  return 0;
 }
 

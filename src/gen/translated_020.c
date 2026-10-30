@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00518790 */
+GEN_OWN GEN_FRAME uint F_00518790(GEN_P(int param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0x518790u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  return param_1 + 4;
+}
+
 /* ref: FUN_005187a0 */
 GEN_OWN GEN_FRAME uint F_005187a0(GEN_P(int param_1, unsigned int gen_a0))
 {
@@ -4825,12 +4833,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0051cce0(GEN_P(undefined4 * param_1, unsig
     F_00406ad0(param_1);
   }
   return (uint)param_1;
-}
-
-/* ref: Client::System::Resource::Handle::EquipmentDeformerParameterResourceHandleFactory::vf2 */
-GEN_OWN GEN_NOFRAME uint F_0051cd30(void)
-{
-  GEN_ENTER(0x51cd30u, 0u, 0u, 0u, 0u);
-  return 0xa0;
 }
 

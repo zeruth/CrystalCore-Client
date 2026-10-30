@@ -1,5 +1,42 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_009790e0 */
+GEN_OWN GEN_FRAME uint F_009790e0(GEN_P(int param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x9790e0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a1;)
+  uint uVar1;
+  
+  if ((REFG(undefined * PTR32, 0x14a0a14) != ((code *)GEN_TOP(0x0))) && (param_1 != 0)) {
+    uVar1 = ((code *)REFG(gen_code32, 0x14a0a14))(param_1,param_2,&REFG(undefined, 0x10daa3c),&REFG(undefined, 0x10daa38),0);
+    return uVar1;
+  }
+  return 0;
+}
+
+/* ref: FUN_00979110 */
+GEN_OWN GEN_FRAME unsigned int F_00979110(GEN_P(int param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0x979110u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  if ((REFG(undefined * PTR32, 0x14a0a18) != ((code *)GEN_TOP(0x0))) && (param_1 != 0)) {
+    ((code *)REFG(gen_code32, 0x14a0a18))(param_1);
+  }
+  return;
+}
+
+/* ref: FUN_00979130 */
+GEN_OWN GEN_FRAME float10 F_00979130(GEN_P(float param_1, float gen_a0))
+{
+  GEN_ENTER(0x979130u, gen_trace_f(gen_a0), 0u, 0u, 0u);
+  GEN_PIN(float param_1 = (float)gen_a0;)
+  float10 fVar2;
+  
+  fVar2 = ((float10)GEN_TOD(pow((float10)param_1,(float10)*(double *)&REFG(undefined, 0x10a1918))));
+  return (float10)(float)fVar2;
+}
+
 /* ref: FUN_00979150 */
 GEN_OWN GEN_FRAME unsigned int F_00979150(GEN_P(uint param_1, unsigned int gen_a0), GEN_P(float * param_2, unsigned int gen_a1), GEN_P(float * param_3, unsigned int gen_a2), GEN_P(float * param_4, unsigned int gen_a3), GEN_P(float * param_5, unsigned int gen_a4), GEN_P(float * param_6, unsigned int gen_a5), GEN_P(float * param_7, unsigned int gen_a6), GEN_P(float * param_8, unsigned int gen_a7), GEN_P(float * param_9, unsigned int gen_a8))
 {
@@ -8630,68 +8667,5 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_00983240(GEN_P(undefined * this, unsigned 
     } while (0 < iVar2);
   }
   return 1;
-}
-
-/* ref: Apricot::ApricotListenner::vf13 */
-GEN_OWN GEN_FRAME byte GEN_THISCALL F_00983290(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0x983290u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(int param_1 = (int)gen_a1;)
-  GEN_PIN(int param_2 = (int)gen_a2;)
-  uint uVar1;
-  int iVar2;
-  int iVar3;
-  
-  if (0 < param_2) {
-    iVar2 = param_2;
-    iVar3 = param_1;
-    do {
-      uVar1 = F_00ba7650(this + 0x78 GEN_EDX_FWD,iVar3,iVar2);
-      if ((int)uVar1 < 1) {
-        ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 0x2c))))(this GEN_EDX_ARG);
-        return 0;
-      }
-      iVar2 = iVar2 - uVar1;
-      iVar3 = iVar3 + uVar1;
-    } while (0 < iVar2);
-  }
-  return 1;
-}
-
-/* ref: Apricot::ApricotListenner::vf11 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009832e0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9832e0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  uint uVar1;
-  
-  F_00ba74d0(this + 0x78 GEN_EDX_FWD);
-  uVar1 = F_00ba74d0(this + 0x50 GEN_EDX_ARG);
-  return uVar1;
-}
-
-/* ref: Apricot::ApricotListenner::vf10 */
-GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_00983300(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x983300u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  undefined * this_00;
-  uint uVar1;
-  
-  ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 0x2c))))(this GEN_EDX_FWD);
-  this_00 = this + 0x50;
-  uVar1 = F_00baba80(this_00 GEN_EDX_ARG);
-  if (uVar1 == 0) {
-    uVar1 = F_00baba80(this + 0x78 GEN_EDX_ARG);
-    if (uVar1 == 0) {
-      uVar1 = F_00ba8460(this_00 GEN_EDX_ARG,0xd431);
-      if (uVar1 == 0) {
-        uVar1 = F_00babc10(this_00 GEN_EDX_ARG,this + 0x78);
-        return 0 < (int)uVar1;
-      }
-    }
-  }
-  return 0;
 }
 

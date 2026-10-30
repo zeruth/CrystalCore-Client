@@ -1,5 +1,54 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00bc1000 */
+GEN_OWN GEN_FRAME byte GEN_THISCALL F_00bc1000(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3))
+{
+  GEN_ENTER(0xbc1000u, gen_a0, gen_a1, gen_a2, gen_a3);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
+  GEN_PIN(undefined4 param_3 = (undefined4)gen_a3;)
+  byte in_AL = 0;
+  uint uVar1;
+  
+  if (*((int *)GEN_TOP(((int)this + 0x4c))) != 0) {
+    uVar1 = F_00a05080(*((int *)GEN_TOP(((int)this + 0x4c))) GEN_EDX_FWD,param_2,(undefined1)param_3);
+    in_AL = (byte)uVar1;
+  }
+  return in_AL;
+}
+
+/* ref: FUN_00bc1020 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00bc1020(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0xbc1020u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  uint in_EAX = 0;
+  
+  if (*((undefined * PTR32 *)GEN_TOP(((int)this + 0x4c))) != ((undefined *)GEN_TOP(0x0))) {
+    in_EAX = F_00a05870(*((undefined * PTR32 *)GEN_TOP(((int)this + 0x4c))) GEN_EDX_FWD);
+  }
+  return in_EAX;
+}
+
+/* ref: FUN_00bc1030 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bc1030(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
+{
+  GEN_ENTER(0xbc1030u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
+  uint in_EAX = 0;
+  uint uVar1;
+  
+  if (*((int *)GEN_TOP(((int)this + 0x4c))) != 0) {
+    uVar1 = F_00a05810(param_1,param_2);
+    return uVar1;
+  }
+  return in_EAX;
+}
+
 /* ref: FUN_00bc1050 */
 GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_00bc1050(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
 {
@@ -10344,39 +10393,6 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bcbd80(GEN_P(float * in_ecx, unsigned in
   GEN_PIN(float * param_2 = (float *)(uintptr_t)gen_a1;)
   *in_ecx = (float)((float10)*param_2 + (float10)*in_ecx);
   in_ecx[1] = (float)((float10)param_2[1] + (float10)in_ecx[1]);
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_00bcbda0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bcbda0(GEN_P(float * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float * param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0xbcbda0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(float * in_ecx = (float *)(uintptr_t)gen_a0;)
-  GEN_PIN(float * param_2 = (float *)(uintptr_t)gen_a1;)
-  *in_ecx = (float)((float10)*in_ecx - (float10)*param_2);
-  in_ecx[1] = (float)((float10)in_ecx[1] - (float10)param_2[1]);
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_00bcbdc0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bcbdc0(GEN_P(float * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float * param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0xbcbdc0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(float * in_ecx = (float *)(uintptr_t)gen_a0;)
-  GEN_PIN(float * param_2 = (float *)(uintptr_t)gen_a1;)
-  *in_ecx = (float)((float10)*param_2 + (float10)*in_ecx);
-  in_ecx[1] = (float)((float10)param_2[1] + (float10)in_ecx[1]);
-  return (uint)in_ecx;
-}
-
-/* ref: FUN_00bcbde0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bcbde0(GEN_P(float * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float * param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0xbcbde0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(float * in_ecx = (float *)(uintptr_t)gen_a0;)
-  GEN_PIN(float * param_2 = (float *)(uintptr_t)gen_a1;)
-  *in_ecx = (float)((float10)*in_ecx - (float10)*param_2);
-  in_ecx[1] = (float)((float10)in_ecx[1] - (float10)param_2[1]);
   return (uint)in_ecx;
 }
 

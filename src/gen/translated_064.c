@@ -1,5 +1,32 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00745fc0 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00745fc0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x745fc0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  char cVar1;
+  int * piVar2;
+  int * piVar3;
+  uint uVar4;
+  
+  piVar2 = *((int * PTR32 *)GEN_TOP((*((int *)GEN_TOP(((int)this + 4))) + 4)));
+  cVar1 = *((char *)GEN_TOP(((int)piVar2 + 0x15)));
+  while (cVar1 == '\0') {
+    F_0073e1a0(this GEN_EDX_FWD,piVar2[2]);
+    piVar3 = ((int *)GEN_TOP(*piVar2));
+    F_00429760(piVar2,0x18,800);
+    piVar2 = piVar3;
+    cVar1 = *((char *)GEN_TOP(((int)piVar3 + 0x15)));
+  }
+  *((int *)GEN_TOP((*((int *)GEN_TOP(((int)this + 4))) + 4))) = *((int *)GEN_TOP(((int)this + 4)));
+  *((undefined4 *)GEN_TOP(*((undefined4 *)GEN_TOP(((int)this + 4))))) = *((undefined4 *)GEN_TOP(((int)this + 4)));
+  uVar4 = *((uint *)GEN_TOP(((int)this + 4)));
+  *((uint *)GEN_TOP((uVar4 + 8))) = uVar4;
+  *((undefined4 *)GEN_TOP(((int)this + 8))) = 0;
+  return uVar4;
+}
+
 /* ref: FUN_00746060 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00746060(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_1, unsigned int gen_a1))
 {
@@ -12009,19 +12036,6 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00750d60(GEN_P(undefined4 * param_1, unsig
     }
   }
   F_006df660(param_1 GEN_EDX_ARG);
-  if ((param_2 & 1) != 0) {
-    F_00406ad0(param_1);
-  }
-  return (uint)param_1;
-}
-
-/* ref: Client::Game::Event::CraftEventHandler::vf0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00750dd0(GEN_P(undefined * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x750dd0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(byte param_2 = (byte)gen_a1;)
-  F_006e04e0(param_1 GEN_EDX_FWD);
   if ((param_2 & 1) != 0) {
     F_00406ad0(param_1);
   }

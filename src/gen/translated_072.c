@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::UI2::AddonInventoryGrid::vf52 */
+GEN_OWN GEN_FRAME byte GEN_THISCALL F_007a5790(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int * param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x7a5790u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a1;)
+  undefined1 AVar1;
+  uint uVar2;
+  undefined * pvVar3;
+  
+  if (*param_1 == 2) {
+    AVar1 = this[0x13c];
+    uVar2 = F_0055dcb0();
+    pvVar3 = ((undefined *)GEN_TOP(F_0057f810(*((undefined * PTR32 *)GEN_TOP((uVar2 + 0x14))) GEN_EDX_ARG,(uint)(byte)AVar1)));
+    if (pvVar3 != ((undefined *)GEN_TOP(0x0))) {
+      F_007a5470(pvVar3 GEN_EDX_ARG);
+      return 1;
+    }
+  }
+  else if (*param_1 == 5) {
+    AVar1 = this[0x13c];
+    uVar2 = F_0055dcb0();
+    pvVar3 = ((undefined *)GEN_TOP(F_0057f810(*((undefined * PTR32 *)GEN_TOP((uVar2 + 0x14))) GEN_EDX_ARG,(uint)(byte)AVar1)));
+    if (pvVar3 != ((undefined *)GEN_TOP(0x0))) {
+      F_007a51f0(pvVar3 GEN_EDX_ARG);
+      return 1;
+    }
+  }
+  return 0;
+}
+
 /* ref: FUN_007a5800 */
 GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_007a5800(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined1 param_2, unsigned int gen_a1))
 {
@@ -11638,88 +11669,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_007b2240(GEN_P(undefined * this, unsigned 
   } while (iVar2 != 0);
   bVar1 = F_0056b630(this GEN_EDX_ARG,0x18ab8,7,0,9,0,0);
   return CONCAT31(extraout_var,bVar1);
-}
-
-/* ref: FUN_007b22b0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_007b22b0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
-{
-  GEN_ENTER(0x7b22b0u, gen_a0, gen_a1, 0u, 0u);
-  undefined * this = (undefined *)(uintptr_t)gen_a0;
-  unsigned int gen_args[1];
-  gen_args[0] = gen_a1;
-  GEN_FRAME_DECL_TOP(0x8, 8, 4);
-  byte bVar1;
-  ushort uVar2;
-  undefined3 extraout_var = 0;
-  int iVar4;
-  int * piVar5;
-  undefined4 uVar6;
-  uint uVar3;
-  
-  (*(undefined * PTR32 *)(gen_frame + 0x0)) = this;
-  *((undefined1 *)GEN_TOP(((int)this + 0x2a6))) = 0;
-  *((undefined4 *)GEN_TOP(((int)this + 0x2ac))) = 0;
-  F_0056e4d0((*(undefined4 *)&gen_args[0]) GEN_EDX_FWD,*((undefined1 *)GEN_TOP(((int)this + 0x2a7))));
-  piVar5 = ((int *)GEN_TOP(((int)this + 0x180)));
-  iVar4 = 0xd;
-  do {
-    if (*piVar5 != 0) {
-      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*((int *)GEN_TOP(*piVar5)) + 0x28))))(((int *)GEN_TOP(*piVar5)) GEN_EDX_ARG,1);
-    }
-    piVar5 = piVar5 + 1;
-    iVar4 = iVar4 - 1;
-  } while (iVar4 != 0);
-  if (*((char *)GEN_TOP(((int)this + 0x2a4))) == '\0') {
-    F_0056b780(this GEN_EDX_ARG,3);
-  }
-  else {
-    uVar6 = *((undefined4 *)GEN_TOP(((int)this + 0x28c)));
-    (*(undefined * PTR32 *)(gen_frame + 0x0)) = ((undefined *)GEN_TOP(0x0));
-    (*(undefined4 *)&gen_args[0]) = 0;
-    F_0055e3d0(this GEN_EDX_ARG,&(*(undefined * PTR32 *)(gen_frame + 0x0)),&(*(undefined4 *)&gen_args[0]),uVar6);
-    uVar2 = F_0055a030(*((undefined4 *)GEN_TOP(((int)this + 0x28c))) GEN_EDX_ARG);
-    (*(undefined4 *)&gen_args[0]) = CONCAT22((*(undefined2 *)((char *)&(*(undefined4 *)&gen_args[0]) + 2)),(short)(*(undefined4 *)&gen_args[0]) + (uVar2 >> 1));
-    F_0056b630(this GEN_EDX_ARG,0x18a89,0,3,4,(*(undefined * PTR32 *)(gen_frame + 0x0)),(*(undefined4 *)&gen_args[0]));
-  }
-  F_0056b780(this GEN_EDX_ARG,0);
-  uVar3 = *((uint *)GEN_TOP(((int)this + 0x29c)));
-  switch((unsigned int)(uintptr_t)(uVar3)) {
-  case 0: ;
-  case 2: ;
-    uVar6 = 0x18ac6;
-    break;
-  case 1: ;
-    uVar6 = 0x18aa8;
-    break;
-  case 3: ;
-    uVar6 = 0x18ac8;
-    break;
-  case 4: ;
-    uVar6 = 0x18acb;
-    break;
-  case 5: ;
-    uVar6 = 0x18acd;
-    break;
-  case 6: ;
-    uVar6 = 0x18ac9;
-    break;
-  case 7: ;
-    uVar6 = 0x18aca;
-    break;
-  case 8: ;
-    uVar6 = 0x18acc;
-    break;
-  case 9: ;
-    uVar6 = 0x18ae1;
-    break;
-  default: ;
-    goto switchD_007b236f_default;
-  }
-  bVar1 = F_0056b630(this GEN_EDX_ARG,uVar6,7,0,9,0,0);
-  uVar3 = CONCAT31(extraout_var,bVar1);
-switchD_007b236f_default: ;
-  *((undefined1 *)GEN_TOP(((int)this + 0x2a5))) = 0;
-  *((undefined1 *)GEN_TOP(((int)this + 0x2a8))) = 1;
-  return uVar3;
 }
 

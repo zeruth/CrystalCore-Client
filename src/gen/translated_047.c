@@ -1,5 +1,15 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0066d020 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_0066d020(GEN_P(undefined4 * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x66d020u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;)
+  *param_2 = *in_ecx;
+  return (uint)param_2;
+}
+
 /* ref: FUN_0066d030 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0066d030(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_2, unsigned int gen_a1))
 {
@@ -14614,107 +14624,5 @@ LAB_0067aef1: ;
     }
   }
   return uVar8;
-}
-
-/* ref: Client::Graphics::PostEffect::PostEffectRepeatShader::vf5 */
-GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_0067b0e0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x67b0e0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  int * piVar1;
-  int iVar2;
-  int iVar3;
-  int iVar4;
-  int * piVar5;
-  char cVar6;
-  uint uVar7;
-  undefined * pPVar8;
-  int * piVar9;
-  uint local_8;
-  
-  piVar9 = *(int * PTR32 *)(this + 0x1c);
-  piVar1 = *(int * PTR32 *)(this + 0x18);
-  if (piVar9 != ((int *)GEN_TOP(0x0))) {
-    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar9 + 0xc))))(piVar9 GEN_EDX_FWD);
-  }
-  *(undefined4 *)(this + 0x1c) = 0;
-  this[0x42] = (undefined1)0x0;
-  uVar7 = 0;
-  pPVar8 = this + 0x18;
-  do {
-    if (*(int *)pPVar8 == 0) break;
-    cVar6 = (char)uVar7;
-    uVar7 = uVar7 + 1;
-    pPVar8 = pPVar8 + 4;
-    this[0x42] = (undefined1)(cVar6 + '\x01');
-  } while (uVar7 < 4);
-  iVar2 = *(int *)(this + 0x5c);
-  iVar3 = *(int *)(this + 0x10);
-  local_8 = 0;
-  if (*(int *)(this + 0x58) != 0) {
-    do {
-      if (local_8 == 0) {
-        piVar9 = *(int * PTR32 *)(this + 0x14);
-      }
-      else {
-        piVar9 = *((int * PTR32 *)GEN_TOP((this + (local_8 - 1 & 1) * 4 + 0x50)));
-      }
-      iVar4 = *(int *)(this + 0x5c);
-      if (piVar9 != ((int *)GEN_TOP(0x0))) {
-        ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar9 + 8))))(piVar9 GEN_EDX_ARG);
-      }
-      iVar4 = iVar4 * 0xc;
-      if (*((int *)GEN_TOP((iVar4 + 4 + *(int *)(this + 0x10)))) != 0) {
-        piVar5 = *((int * PTR32 *)GEN_TOP((iVar4 + 4 + *(int *)(this + 0x10))));
-        ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar5 + 0xc))))(piVar5 GEN_EDX_ARG);
-      }
-      *((int * PTR32 *)GEN_TOP((iVar4 + 4 + *(int *)(this + 0x10)))) = piVar9;
-      *((uint *)GEN_TOP((iVar4 + 8 + *(int *)(this + 0x10)))) = *((uint *)GEN_TOP((iVar3 + 8 + iVar2 * 0xc))) & 0xfffffff;
-      if (local_8 == *(int *)(this + 0x58) - 1U) {
-        if (piVar1 != ((int *)GEN_TOP(0x0))) {
-          ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar1 + 8))))(piVar1 GEN_EDX_ARG);
-        }
-        piVar9 = *(int * PTR32 *)(this + 0x18);
-        if (piVar9 != ((int *)GEN_TOP(0x0))) {
-          ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar9 + 0xc))))(piVar9 GEN_EDX_ARG);
-        }
-        *(int * PTR32 *)(this + 0x18) = piVar1;
-        this[0x42] = (undefined1)0x0;
-        uVar7 = 0;
-        pPVar8 = this + 0x18;
-        do {
-          if (*(int *)pPVar8 == 0) break;
-          cVar6 = (char)uVar7;
-          uVar7 = uVar7 + 1;
-          pPVar8 = pPVar8 + 4;
-          this[0x42] = (undefined1)(cVar6 + '\x01');
-        } while (uVar7 < 4);
-      }
-      else {
-        piVar9 = *((int * PTR32 *)GEN_TOP((this + (local_8 & 1) * 4 + 0x50)));
-        if (piVar9 != ((int *)GEN_TOP(0x0))) {
-          ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar9 + 8))))(piVar9 GEN_EDX_ARG);
-        }
-        piVar5 = *(int * PTR32 *)(this + 0x18);
-        if (piVar5 != ((int *)GEN_TOP(0x0))) {
-          ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar5 + 0xc))))(piVar5 GEN_EDX_ARG);
-        }
-        *(int * PTR32 *)(this + 0x18) = piVar9;
-        this[0x42] = (undefined1)0x0;
-        uVar7 = 0;
-        pPVar8 = this + 0x18;
-        do {
-          if (*(int *)pPVar8 == 0) break;
-          cVar6 = (char)uVar7;
-          uVar7 = uVar7 + 1;
-          pPVar8 = pPVar8 + 4;
-          this[0x42] = (undefined1)(cVar6 + '\x01');
-        } while (uVar7 < 4);
-      }
-      F_0067acb0((undefined *)this GEN_EDX_ARG);
-      local_8 = local_8 + 1;
-    } while (local_8 < *(uint *)(this + 0x58));
-  }
-  return 0;
 }
 

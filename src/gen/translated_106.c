@@ -1,5 +1,39 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_009f08d0 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009f08d0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9f08d0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  uint uVar1;
+  
+  uVar1 = 0;
+  if (*((gen_code32 *)GEN_TOP(((int)this + 0x18))) != ((code *)GEN_TOP(0x0))) {
+    uVar1 = ((code *)*((gen_code32 *)GEN_TOP(((int)this + 0x18))))(*((undefined4 *)GEN_TOP(((int)this + 0x10))));
+  }
+  return uVar1;
+}
+
+/* ref: FUN_009f08e0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_009f08e0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x9f08e0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  GEN_PIN(uint param_2 = (uint)gen_a1;)
+  *((uint *)GEN_TOP((in_ecx + 0x10))) = param_2;
+  return param_2;
+}
+
+/* ref: FUN_009f0900 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_009f0900(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x9f0900u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  GEN_PIN(int param_2 = (int)gen_a1;)
+  *((undefined1 *)GEN_TOP((in_ecx + 0x20 + param_2 * 0x30))) = 0;
+  return param_2 * 6;
+}
+
 /* ref: FUN_009f0920 */
 GEN_OWN GEN_FRAME byte GEN_THISCALL F_009f0920(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_2, unsigned int gen_a1))
 {
@@ -12224,118 +12258,5 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009fe1e0(GEN_P(undefined * this, unsigne
   *((undefined4 *)GEN_TOP(((int)this + 8))) = 0x80000000;
   *(undefined4 *)this = 0;
   return uVar1;
-}
-
-/* ref: FUN_009fe220 */
-GEN_OWN GEN_FRAME uint F_009fe220(GEN_P(uint param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1), GEN_P(undefined4 param_3, unsigned int gen_a2), GEN_P(undefined4 param_4, unsigned int gen_a3), GEN_P(undefined4 param_5, unsigned int gen_a4))
-{
-  GEN_ENTER(0x9fe220u, gen_a0, gen_a1, gen_a2, gen_a3);
-  GEN_PIN(uint param_1 = (uint)gen_a0;)
-  GEN_PIN(undefined4 param_2 = (undefined4)gen_a1;)
-  GEN_PIN(undefined4 param_3 = (undefined4)gen_a2;)
-  GEN_PIN(undefined4 param_4 = (undefined4)gen_a3;)
-  GEN_PIN(undefined4 param_5 = (undefined4)gen_a4;)
-  F_009fcba0(param_1,param_2,param_3,param_4,param_5);
-  return param_1;
-}
-
-/* ref: FUN_009fe250 */
-GEN_OWN GEN_FRAME uint F_009fe250(GEN_P(undefined4 * param_1, unsigned int gen_a0), GEN_P(int * param_2, unsigned int gen_a1), GEN_P(int * param_3, unsigned int gen_a2), GEN_P(code * param_4, unsigned int gen_a3), GEN_P(int param_5, unsigned int gen_a4), GEN_P(float param_6, float gen_a5), GEN_P(undefined4 param_7, unsigned int gen_a6))
-{
-  GEN_ENTER(0x9fe250u, gen_a0, gen_a1, gen_a2, gen_a3);
-  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
-  GEN_PIN(int * param_2 = (int *)(uintptr_t)gen_a1;)
-  GEN_PIN(int * param_3 = (int *)(uintptr_t)gen_a2;)
-  GEN_PIN(code * param_4 = (code *)(uintptr_t)gen_a3;)
-  GEN_PIN(int param_5 = (int)gen_a4;)
-  GEN_PIN(float param_6 = (float)gen_a5;)
-  GEN_PIN(undefined4 param_7 = (undefined4)gen_a6;)
-  char cVar1;
-  int * piVar2;
-  int * piVar3;
-  int * piVar4;
-  
-  piVar3 = param_2;
-  while (piVar3 != param_3) {
-    (*param_4)(piVar3[3] + param_5,(undefined4)gen_fl2bits(param_6));
-    if (*((char *)GEN_TOP(((int)piVar3 + 0x11))) == '\0') {
-      piVar2 = ((int *)GEN_TOP(piVar3[2]));
-      if (*((char *)GEN_TOP(((int)piVar2 + 0x11))) == '\0') {
-        cVar1 = *((char *)GEN_TOP((*piVar2 + 0x11)));
-        piVar3 = piVar2;
-        piVar2 = ((int *)GEN_TOP(*piVar2));
-        while (cVar1 == '\0') {
-          cVar1 = *((char *)GEN_TOP((*piVar2 + 0x11)));
-          piVar3 = piVar2;
-          piVar2 = ((int *)GEN_TOP(*piVar2));
-        }
-      }
-      else {
-        cVar1 = *((char *)GEN_TOP((piVar3[1] + 0x11)));
-        piVar4 = ((int *)GEN_TOP(piVar3[1]));
-        piVar2 = piVar3;
-        while ((piVar3 = piVar4, cVar1 == '\0' && (piVar2 == ((int *)GEN_TOP(piVar3[2]))))) {
-          cVar1 = *((char *)GEN_TOP((piVar3[1] + 0x11)));
-          piVar4 = ((int *)GEN_TOP(piVar3[1]));
-          piVar2 = piVar3;
-        }
-      }
-    }
-  }
-  *param_1 = param_4;
-  param_1[1] = param_5;
-  param_1[2] = (undefined4)gen_fl2bits(param_6);
-  param_1[3] = param_7;
-  return (uint)param_1;
-}
-
-/* ref: FUN_009fe2e0 */
-GEN_OWN GEN_FRAME int F_009fe2e0(GEN_P(int * param_1, unsigned int gen_a0), GEN_P(int * param_2, unsigned int gen_a1), GEN_P(undefined4 param_3, unsigned int gen_a2))
-{
-  GEN_ENTER(0x9fe2e0u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a0;)
-  GEN_PIN(int * param_2 = (int *)(uintptr_t)gen_a1;)
-  GEN_PIN(undefined4 param_3 = (undefined4)gen_a2;)
-  char cVar1;
-  int * piVar2;
-  int iVar3;
-  int * piVar4;
-  int * piVar5;
-  
-  iVar3 = 0;
-  piVar2 = param_1;
-  do {
-    do {
-      while( true ) {
-        do {
-          piVar5 = piVar2;
-          if (piVar5 == param_2) {
-            return iVar3;
-          }
-          if (*((int *)GEN_TOP((*((int *)GEN_TOP((piVar5[3] + 0x1c))) + 0x78))) == 1) {
-            iVar3 = iVar3 + 1;
-          }
-          piVar2 = piVar5;
-        } while (*((char *)GEN_TOP(((int)piVar5 + 0x11))) != '\0');
-        piVar2 = ((int *)GEN_TOP(piVar5[2]));
-        if (*((char *)GEN_TOP(((int)piVar2 + 0x11))) != '\0') break;
-        cVar1 = *((char *)GEN_TOP((*piVar2 + 0x11)));
-        piVar5 = ((int *)GEN_TOP(*piVar2));
-        while (cVar1 == '\0') {
-          cVar1 = *((char *)GEN_TOP((*piVar5 + 0x11)));
-          piVar2 = piVar5;
-          piVar5 = ((int *)GEN_TOP(*piVar5));
-        }
-      }
-      piVar2 = ((int *)GEN_TOP(piVar5[1]));
-    } while (*((char *)GEN_TOP(((int)piVar2 + 0x11))) != '\0');
-    do {
-      piVar4 = piVar2;
-      piVar2 = piVar4;
-      if (piVar5 != ((int *)GEN_TOP(piVar4[2]))) break;
-      piVar2 = ((int *)GEN_TOP(piVar4[1]));
-      piVar5 = piVar4;
-    } while (*((char *)GEN_TOP(((int)piVar2 + 0x11))) == '\0');
-  } while( true );
 }
 

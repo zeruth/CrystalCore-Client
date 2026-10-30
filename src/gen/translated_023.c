@@ -1,5 +1,12 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Resource::Handle::LayerGroupResourceHandle::vf15 */
+GEN_OWN GEN_NOFRAME uint F_0052b570(void)
+{
+  GEN_ENTER(0x52b570u, 0u, 0u, 0u, 0u);
+  return 0xa0;
+}
+
 /* ref: Client::System::Resource::Handle::LayerGroupResourceHandle::vf0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0052b580(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
@@ -8103,13 +8110,5 @@ GEN_OWN GEN_NOFRAME float GEN_STDCALL F_00533110(GEN_P(float * param_1, unsigned
   fVar5 = (float)((float10)(*(double *)(gen_frame + 0x28)) - (float10)fVar5 / (float10)*(double *)&REFG(undefined, 0x10920c0));
   (*(float *)(gen_frame + 0x3c)) = fVar5;
   return fVar5;
-}
-
-/* ref: FUN_00533210 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00533210(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x533210u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return in_ecx + 0x3000;
 }
 

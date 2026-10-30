@@ -1,6 +1,6 @@
 {
- "translated": 87226,
- "stubbed": 80,
+ "translated": 87230,
+ "stubbed": 76,
  "suspect": {
   "00414c60": [
    "uStack_50",
@@ -119,9 +119,8 @@
   ]
  },
  "reasons": {
-  "a register the decompiler lost": 66,
+  "a register the decompiler lost": 65,
   "local of type unkuint9": 4,
-  "the caller's stack beyond its arguments": 3,
   "no signature": 2,
   "undeclared name fscale": 2,
   "undeclared name f2xm1": 1,
@@ -129,12 +128,9 @@
   "local of type unkbyte10": 1
  },
  "stubs": {
-  "00421540": "the caller's stack beyond its arguments (stack0x0000000c)",
   "005e5e60": "a register the decompiler lost (unaff_EDI)",
   "006c74f0": "a register the decompiler lost (in_stack_00000004)",
   "00770580": "a register the decompiler lost (unaff_BL)",
-  "00828fe0": "the caller's stack beyond its arguments (stack0x00000004)",
-  "008290f0": "the caller's stack beyond its arguments (stack0x00000004)",
   "0086f550": "a register the decompiler lost (unaff_ESI)",
   "009ff590": "a register the decompiler lost (in_stack_0000000c)",
   "00b2f1e0": "no signature",
@@ -203,7 +199,6 @@
   "00d359a0": "local of type unkuint9",
   "00d35c70": "local of type unkuint9",
   "00d85b30": "local of type unkbyte10",
-  "00d8c590": "a register the decompiler lost (extraout_ST1)",
   "00d8c6d0": "a register the decompiler lost (extraout_ST1)",
   "00d8ca30": "a register the decompiler lost (extraout_ST1)",
   "00d8cae0": "a register the decompiler lost (extraout_ST1)",

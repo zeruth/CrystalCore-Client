@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Component::GUI2::AtkModule::vf57 */
+GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_005d4280(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x5d4280u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  return 0;
+}
+
 /* ref: Component::GUI2::AtkModule::vf58 */
 GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_005d4290(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
@@ -8726,23 +8735,5 @@ LAB_005dcec0: ;
     uVar4 = F_005dc190(this GEN_EDX_ARG,*((undefined4 *)GEN_TOP(((int)this + 0x40))),((undefined1 *)(gen_frame + 0x0)));
   }
   return uVar4;
-}
-
-/* ref: FUN_005dcf40 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_005dcf40(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x5dcf40u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  uint uVar1;
-  
-  *((undefined4 *)GEN_TOP(((int)this + 0x2c))) = 0;
-  uVar1 = F_005dc190(this GEN_EDX_FWD,*((undefined4 *)GEN_TOP(((int)this + 0x38))),(int)this + 0x50);
-  if (*((char *)GEN_TOP(((int)this + 0x35))) != '\0') {
-    uVar1 = F_005dc190(this GEN_EDX_ARG,*((undefined4 *)GEN_TOP(((int)this + 0x3c))),(int)this + 0x60);
-  }
-  if (*((char *)GEN_TOP(((int)this + 0x36))) != '\0') {
-    uVar1 = F_005dc190(this GEN_EDX_ARG,*((undefined4 *)GEN_TOP(((int)this + 0x40))),(int)this + 0x70);
-  }
-  return uVar1;
 }
 

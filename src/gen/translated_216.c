@@ -1,5 +1,39 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_01075970 */
+GEN_LIB GEN_NOFRAME unsigned int F_01075970(void)
+{
+  GEN_ENTER(0x1075970u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9b50) GEN_EDX_ARG,((char *)REFP(0x113947c)),0,0x10,0,0,0,0,&REFG(undefined * PTR32, 0x11393c8),2,
+               0,0,0,0);
+  return;
+}
+
+/* ref: FUN_010759a0 */
+GEN_LIB GEN_NOFRAME unsigned int F_010759a0(void)
+{
+  GEN_ENTER(0x10759a0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9b80) GEN_EDX_ARG,((char *)REFP(0x11394c8)),0,0xc,0,0,0,0,&REFG(undefined * PTR32, 0x11393f8),1,0,0,0,0);
+  return;
+}
+
+/* ref: FUN_010759d0 */
+GEN_LIB GEN_NOFRAME uint F_010759d0(void)
+{
+  GEN_ENTER(0x10759d0u, 0u, 0u, 0u, 0u);
+  *(undefined * PTR32 *)&REFG(undefined, 0x13518d8) = REFG(undefined * PTR32, 0x1351820);
+  return (uint)REFG(undefined * PTR32, 0x1351820);
+}
+
+/* ref: FUN_010759e0 */
+GEN_LIB GEN_NOFRAME unsigned int F_010759e0(void)
+{
+  GEN_ENTER(0x10759e0u, 0u, 0u, 0u, 0u);
+  F_00d92c40(&REFG(undefined, 0x15d9bb0) GEN_EDX_ARG,((char *)REFP(0x1139550)),0,0x24,0,0,
+               &REFG(undefined * PTR32, 0x1139428),1,&REFG(undefined * PTR32, 0x1351888),9,0,0,0,0);
+  return;
+}
+
 /* ref: FUN_01075a10 */
 GEN_LIB GEN_NOFRAME uint F_01075a10(void)
 {
@@ -4706,46 +4740,6 @@ GEN_LIB GEN_NOFRAME uint F_0107b630(void)
   uint uVar1;
   
   uVar1 = F_00c47de6(((code *)REFP(0x107d6d0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b640 */
-GEN_LIB GEN_NOFRAME uint F_0107b640(void)
-{
-  GEN_ENTER(0x107b640u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6e0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b650 */
-GEN_LIB GEN_NOFRAME uint F_0107b650(void)
-{
-  GEN_ENTER(0x107b650u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d6f0)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b660 */
-GEN_LIB GEN_NOFRAME uint F_0107b660(void)
-{
-  GEN_ENTER(0x107b660u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d700)));
-  return uVar1;
-}
-
-/* ref: FUN_0107b670 */
-GEN_LIB GEN_NOFRAME uint F_0107b670(void)
-{
-  GEN_ENTER(0x107b670u, 0u, 0u, 0u, 0u);
-  uint uVar1;
-  
-  uVar1 = F_00c47de6(((code *)REFP(0x107d710)));
   return uVar1;
 }
 

@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_006c2860 */
+GEN_OWN GEN_NOFRAME uint GEN_STDCALL F_006c2860(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x6c2860u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a0;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a1;)
+  uint uVar1;
+  
+  uVar1 = F_00a51200(0x42,2,0,0,0);
+  if ((char)uVar1 == '\0') {
+    return uVar1;
+  }
+  uVar1 = F_00a4a760(&REFG(undefined, 0x14a7360) GEN_EDX_ARG,0x1a,1);
+  return CONCAT31((int3)(uVar1 >> 8),1);
+}
+
 /* ref: FUN_006c2890 */
 GEN_OWN GEN_NOFRAME uint GEN_STDCALL F_006c2890(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1))
 {
@@ -11430,36 +11446,5 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_006d0f80(GEN_P(undefined * this, unsigned 
     return 1;
   }
   return 0;
-}
-
-/* ref: FUN_006d0fd0 */
-GEN_OWN GEN_NOFRAME uint F_006d0fd0(void)
-{
-  GEN_ENTER(0x6d0fd0u, 0u, 0u, 0u, 0u);
-  byte bVar1;
-  uint in_EAX = 0;
-  undefined3 extraout_var = 0;
-  int * piVar2;
-  uint uVar3;
-  
-  if (((REFG(void * PTR32, 0x1488760) != ((undefined *)GEN_TOP(0x0))) && (REFG(int, 0x1324194) != 0)) &&
-     (*((char *)GEN_TOP(((int)REFG(void * PTR32, 0x1488760) + 0x1bee))) == '\0')) {
-    bVar1 = F_006c1d30(REFG(void * PTR32, 0x1488760) GEN_EDX_ARG);
-    in_EAX = CONCAT31(extraout_var,bVar1);
-    if (bVar1 != 0) {
-      piVar2 = ((int *)GEN_TOP(F_00424750(REFG(undefined4, 0x137104c) GEN_EDX_ARG)));
-      if (REFG(int, 0x13241c4) != 0) {
-        piVar2 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 0x1c))))(piVar2 GEN_EDX_ARG)));
-        ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 0x54))))(piVar2 GEN_EDX_ARG,REFG(int, 0x13241c4),0);
-        *(undefined4 *)&REFG(undefined, 0x13241c0) = 0;
-      }
-      in_EAX = F_006c1620(REFG(void * PTR32, 0x1488760) GEN_EDX_ARG);
-      if (*((char *)GEN_TOP(((int)REFG(void * PTR32, 0x1488760) + 0x1bf8))) != '\0') {
-        uVar3 = F_006c1990(REFG(void * PTR32, 0x1488760) GEN_EDX_ARG);
-        return uVar3;
-      }
-    }
-  }
-  return in_EAX;
 }
 

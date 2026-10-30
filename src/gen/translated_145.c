@@ -1,5 +1,50 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00bee640 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bee640(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0xbee640u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  F_00b61bd0(this GEN_EDX_FWD,param_1);
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[45])REFP(0x110d25c));
+  *((undefined4 *)GEN_TOP(((int)this + 0x80))) = 0;
+  return (uint)this;
+}
+
+/* ref: Client::System::Scheduler::Instance::VfxObject::vf42 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bee670(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0xbee670u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  uint uVar1;
+  
+  uVar1 = F_00a1e4c0(param_1,((char *)REFP(0x110d228)));
+  *(uint *)(this + 0x80) = uVar1;
+  return uVar1;
+}
+
+/* ref: Client::System::Scheduler::Instance::VfxObject::vf43 */
+GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_00bee6a0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0xbee6a0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  int * piVar1;
+  undefined4 * puVar2;
+  
+  piVar1 = *(int * PTR32 *)(this + 0x80);
+  if (piVar1 != ((int *)GEN_TOP(0x0))) {
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar1 + 4))))(piVar1 GEN_EDX_FWD);
+    puVar2 = *(undefined4 * PTR32 *)(this + 0x80);
+    if (puVar2 != ((undefined4 *)GEN_TOP(0x0))) {
+      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP(*puVar2)))(puVar2 GEN_EDX_ARG,1);
+      *(undefined4 *)(this + 0x80) = 0;
+    }
+  }
+  return;
+}
+
 /* ref: Client::System::Scheduler::Instance::VfxObject::vf44 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00bee6e0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
 {
@@ -19181,62 +19226,6 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07c80(GEN_P(undefined * this, unsigned 
   uint uVar1;
   
   uVar1 = gen_imp_listen(*(SOCKET *)(this + 4),param_1);
-  return uVar1;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf6 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00c07ca0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xc07ca0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  uint uVar1;
-  int iVar2;
-  
-  uVar1 = gen_imp_accept(*(SOCKET *)(this + 4),((undefined *)GEN_TOP(0x0)),((int *)GEN_TOP(0x0)));
-  if (uVar1 == 0xffffffff) {
-    iVar2 = gen_imp_WSAGetLastError();
-    if (((iVar2 != 0x2714) && (iVar2 != 0x2733)) && (iVar2 != 0x2745)) {
-      return 0xffffffff;
-    }
-    uVar1 = 0;
-  }
-  return uVar1;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf7 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07ce0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined * param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3))
-{
-  GEN_ENTER(0xc07ce0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a1;)
-  GEN_PIN(int param_2 = (int)gen_a2;)
-  GEN_PIN(undefined4 param_3 = (undefined4)gen_a3;)
-  uint uVar1;
-  int iVar2;
-  
-  uVar1 = gen_imp_connect(*(SOCKET *)(this + 4),param_1,param_2);
-  if (uVar1 == 0xffffffff) {
-    iVar2 = gen_imp_WSAGetLastError();
-    uVar1 = (iVar2 != 0x2733) - 2;
-  }
-  return uVar1;
-}
-
-/* ref: Client::Network::Socket::SocketWinsock::vf8 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00c07d20(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char * param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0xc07d20u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(char * param_1 = (char *)(uintptr_t)gen_a1;)
-  GEN_PIN(int param_2 = (int)gen_a2;)
-  uint uVar1;
-  int iVar2;
-  
-  uVar1 = gen_imp_send(*(SOCKET *)(this + 4),param_1,param_2,0);
-  if ((int)uVar1 < 0) {
-    iVar2 = gen_imp_WSAGetLastError();
-    uVar1 = -(uint)(iVar2 != 0x2733);
-  }
   return uVar1;
 }
 

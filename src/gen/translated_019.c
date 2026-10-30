@@ -1,5 +1,26 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005053d0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_005053d0(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x5053d0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  GEN_PIN(uint param_2 = (uint)gen_a1;)
+  int iVar1;
+  double dVar3;
+  ushort local_8;
+  
+  iVar1 = *((int *)GEN_TOP((*((int *)GEN_TOP((*((int *)GEN_TOP((param_1 + 0xb0))) + 0x14))) + (param_2 & 0xffff) * 4)));
+  if (iVar1 != 0) {
+    dVar3 = (GEN_X87MATH(((double)((float)GEN_TOF(((float10)*((float *)GEN_TOP((iVar1 + 0xc))) * (float10)*(double *)&REFG(undefined, 0x1088070))))),0xe));
+    local_8 = gen_x87_cw | 0xc00;
+    gen_set_x87_cw((unsigned short)local_8);
+    gen_set_x87_cw((unsigned short)gen_x87_cw);
+    return (int)TRUNC(dVar3) & 0xffff;
+  }
+  return 0;
+}
+
 /* ref: Client::System::Resource::Handle::ElementIdResourceHandle::vf25 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00505440(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -16761,13 +16782,5 @@ GEN_OWN GEN_FRAME uint F_00518780(GEN_P(uint param_1, unsigned int gen_a0))
   GEN_ENTER(0x518780u, gen_a0, 0u, 0u, 0u);
   GEN_PIN(uint param_1 = (uint)gen_a0;)
   return param_1;
-}
-
-/* ref: FUN_00518790 */
-GEN_OWN GEN_FRAME uint F_00518790(GEN_P(int param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x518790u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  return param_1 + 4;
 }
 

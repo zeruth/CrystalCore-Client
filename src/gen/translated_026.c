@@ -1,5 +1,14 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00550d80 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00550d80(GEN_P(int * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x550d80u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int * in_ecx = (int *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_2 = (int)gen_a1;)
+  return *in_ecx + param_2 * 0xc;
+}
+
 /* ref: FUN_00550e10 */
 GEN_OWN GEN_FRAME float10 F_00550e10(GEN_P(float param_1, float gen_a0))
 {
@@ -8992,62 +9001,6 @@ GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_0055a7e0(GEN_P(int in_ecx, unsigne
       }
     }
     *((float *)GEN_TOP((in_ecx + 0x78))) = param_2;
-  }
-  return;
-}
-
-/* ref: FUN_0055a830 */
-GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_0055a830(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x55a830u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  uint uVar1;
-  uint uVar2;
-  ushort local_8;
-  
-  if (this != ((undefined *)GEN_TOP(0x0))) {
-    uVar2 = 0;
-    switch((unsigned int)(uintptr_t)(param_1)) {
-    case 0: ;
-    case 3: ;
-    case 6: ;
-      uVar2 = 0;
-      break;
-    case 1: ;
-    case 4: ;
-    case 7: ;
-      local_8 = gen_x87_cw | 0xc00;
-      gen_set_x87_cw((unsigned short)local_8);
-      uVar2 = (int)TRUNC((double)*((ushort *)GEN_TOP(((int)this + 0x7c))) * REFG(double, 0x1088108)) & 0xffff;
-      gen_set_x87_cw((unsigned short)gen_x87_cw);
-      break;
-    case 2: ;
-    case 5: ;
-    case 8: ;
-      uVar2 = (uint)*((ushort *)GEN_TOP(((int)this + 0x7c)));
-    }
-    uVar1 = 0;
-    switch((unsigned int)(uintptr_t)(param_1)) {
-    case 0: ;
-    case 1: ;
-    case 2: ;
-      uVar1 = 0;
-      break;
-    case 3: ;
-    case 4: ;
-    case 5: ;
-      local_8 = gen_x87_cw | 0xc00;
-      gen_set_x87_cw((unsigned short)local_8);
-      uVar1 = (int)TRUNC((double)*((ushort *)GEN_TOP(((int)this + 0x7e))) * REFG(double, 0x1088108)) & 0xffff;
-      gen_set_x87_cw((unsigned short)gen_x87_cw);
-      break;
-    case 6: ;
-    case 7: ;
-    case 8: ;
-      uVar1 = (uint)*((ushort *)GEN_TOP(((int)this + 0x7e)));
-    }
-    F_00559a00(this GEN_EDX_FWD,(float)uVar2,(float)uVar1);
   }
   return;
 }
