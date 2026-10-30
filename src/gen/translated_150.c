@@ -1,5 +1,27 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00c40b20 */
+GEN_OWN GEN_FRAME uint F_00c40b20(GEN_P(float param_1, float gen_a0))
+{
+  GEN_ENTER(0xc40b20u, gen_trace_f(gen_a0), 0u, 0u, 0u);
+  GEN_PIN(float param_1 = (float)gen_a0;)
+  if (GEN_ISNAN(param_1)) {
+    return 1;
+  }
+  return 0;
+}
+
+/* ref: FUN_00c40b40 */
+GEN_OWN GEN_FRAME byte F_00c40b40(GEN_P(float param_1, float gen_a0))
+{
+  GEN_ENTER(0xc40b40u, gen_trace_f(gen_a0), 0u, 0u, 0u);
+  GEN_PIN(float param_1 = (float)gen_a0;)
+  if (REFG(double, 0x10909a0) < (double)param_1) {
+    return 1;
+  }
+  return (!GEN_ISNAN(REFG(double, 0x10909a8)) && !GEN_ISNAN((double)param_1)) && !(REFG(double, 0x10909a8) <= (double)param_1);
+}
+
 /* ref: FUN_00c40b80 */
 GEN_OWN GEN_FRAME uint F_00c40b80(GEN_P(float param_1, float gen_a0))
 {
@@ -8788,59 +8810,5 @@ GEN_LIB GEN_NOFRAME uint F_00c47c96(void)
   
   uVar1 = F_00c47b1b(0,1,1);
   return uVar1;
-}
-
-/* ref: __amsg_exit */
-GEN_LIB GEN_NOFRAME unsigned int F_00c47ca5(GEN_P(int param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0xc47ca5u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  F_00c5593d();
-  F_00c5578e(param_1);
-                    
-  F_00c47c71(0xff);
-}
-
-/* ref: __onexit_nolock */
-GEN_LIB GEN_NOFRAME uint F_00c47cc3(GEN_P(uint param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0xc47cc3u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(uint param_1 = (uint)gen_a0;)
-  undefined4 * _Memory;
-  undefined4 * puVar1;
-  gen_size32 sVar2;
-  gen_size32 sVar3;
-  PVOID pvVar4;
-  int iVar5;
-  
-  _Memory = gen_imp_DecodePointer(REFG(undefined4, 0x15e52dc));
-  puVar1 = gen_imp_DecodePointer(REFG(undefined4, 0x15e52d8));
-  if ((puVar1 < _Memory) || (iVar5 = (int)puVar1 - (int)_Memory, iVar5 + 4U < 4)) {
-    return 0;
-  }
-  sVar2 = F_00c5b8b9(_Memory);
-  if (sVar2 < iVar5 + 4U) {
-    sVar3 = 0x800;
-    if (sVar2 < 0x800) {
-      sVar3 = sVar2;
-    }
-    if ((sVar3 + sVar2 < sVar2) ||
-       (pvVar4 = F_00c54cbf(_Memory,sVar3 + sVar2), pvVar4 == ((undefined *)GEN_TOP(0x0)))) {
-      if (sVar2 + 0x10 < sVar2) {
-        return 0;
-      }
-      pvVar4 = F_00c54cbf(_Memory,sVar2 + 0x10);
-      if (pvVar4 == ((undefined *)GEN_TOP(0x0))) {
-        return 0;
-      }
-    }
-    puVar1 = ((undefined4 *)GEN_TOP(((int)pvVar4 + (iVar5 >> 2) * 4)));
-    REFG(undefined4, 0x15e52dc) = gen_imp_EncodePointer(pvVar4);
-  }
-  pvVar4 = gen_imp_EncodePointer(param_1);
-  *puVar1 = pvVar4;
-  pvVar4 = gen_imp_EncodePointer(puVar1 + 1);
-  REFG(undefined4, 0x15e52d8) = pvVar4;
-  return param_1;
 }
 

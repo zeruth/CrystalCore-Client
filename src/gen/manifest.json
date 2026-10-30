@@ -1,6 +1,6 @@
 {
- "translated": 87205,
- "stubbed": 105,
+ "translated": 87209,
+ "stubbed": 97,
  "suspect": {
   "00414c60": [
    "uStack_50",
@@ -119,7 +119,7 @@
   ]
  },
  "reasons": {
-  "a register the decompiler lost": 89,
+  "a register the decompiler lost": 81,
   "local of type unkuint9": 4,
   "the caller's stack beyond its arguments": 2,
   "no signature": 2,
@@ -132,17 +132,11 @@
  },
  "stubs": {
   "004022b0": "a register the decompiler lost (unaff_EDI)",
-  "00410044": "a register the decompiler lost (in_SF)",
-  "0048b290": "a register the decompiler lost (unaff_EDI)",
-  "0048b500": "a register the decompiler lost (unaff_EDI)",
-  "0048b7a0": "a register the decompiler lost (unaff_EDI)",
   "00545bb0": "a register the decompiler lost (extraout_EAX_00)",
   "005a0ab0": "a register the decompiler lost (extraout_EAX_01)",
   "005e5e60": "a register the decompiler lost (unaff_EDI)",
   "0062e0b0": "the caller's stack beyond its arguments (stack0x0000000a)",
   "006c74f0": "a register the decompiler lost (in_stack_00000004)",
-  "006e7550": "a register the decompiler lost (unaff_retaddr)",
-  "0076e390": "a register the decompiler lost (unaff_BL)",
   "00770580": "a register the decompiler lost (unaff_BL)",
   "007cb370": "a register the decompiler lost (unaff_SI)",
   "007d3710": "a register the decompiler lost (unaff_ESI)",
@@ -215,7 +209,6 @@
   "00c7b9fd": "a register the decompiler lost (extraout_ST0)",
   "00c7e440": "a register the decompiler lost (unaff_EBX)",
   "00cd9930": "the caller's stack beyond its arguments (stack0x0000000b)",
-  "00cddf40": "a register the decompiler lost (extraout_ST0)",
   "00d356c0": "local of type unkuint9",
   "00d357c0": "local of type unkuint9",
   "00d359a0": "local of type unkuint9",
@@ -233,7 +226,6 @@
   "00db45f0": "a register the decompiler lost (in_edx)",
   "00dbf920": "member access through a type C does not have (in.S)",
   "00de59e0": "member access through a type C does not have (hkxEnvironment.c)",
-  "00deab00": "a register the decompiler lost (unaff_ESI)",
   "01052968": "a register the decompiler lost (extraout_ECX)",
   "01070093": "a register the decompiler lost (in_stack_0000000c)"
  }

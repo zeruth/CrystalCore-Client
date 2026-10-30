@@ -1,5 +1,67 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Sound::SoundData::vf26 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_004ed400(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float param_2, float gen_a1), GEN_P(undefined4 param_3, unsigned int gen_a2))
+{
+  GEN_ENTER(0x4ed400u, gen_a0, gen_trace_f(gen_a1), gen_a2, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  GEN_PIN(float param_2 = (float)gen_a1;)
+  GEN_PIN(undefined4 param_3 = (undefined4)gen_a2;)
+  GEN_FRAME_DECL_TOP(0x10, 0, 4);
+  int iVar1;
+  uint uVar2;
+  
+  iVar1 = *((int *)GEN_TOP((param_1 + 100)));
+  if (iVar1 != 0) {
+    if (iVar1 == 1) {
+      uVar2 = F_00d2dd80(((undefined1 *)(gen_frame + 0x0)),*((undefined4 *)GEN_TOP((param_1 + 0x58))));
+      uVar2 = F_00cbeb80(uVar2 GEN_EDX_ARG,param_2,param_3);
+      F_00cbe3b0(((undefined1 *)(gen_frame + 0x0)) GEN_EDX_ARG);
+      return uVar2;
+    }
+    if (iVar1 - 2U != 0) {
+      return iVar1 - 2U;
+    }
+  }
+  uVar2 = F_00cbcd10(param_1 + 0x20 GEN_EDX_ARG,param_2,param_3);
+  return uVar2;
+}
+
+/* ref: Client::Sound::SoundData::vf27 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_004ed470(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x4ed470u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  uint uVar1;
+  
+  if ((*(int *)(this + 100) != 0) && (uVar1 = *(int *)(this + 100) - 2, uVar1 != 0)) {
+    return uVar1;
+  }
+  uVar1 = F_00cbce00(this + 0x20 GEN_EDX_FWD,param_1);
+  return uVar1;
+}
+
+/* ref: Client::Sound::SoundData::vf28 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_004ed490(GEN_P(undefined4 param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float param_2, float gen_a1))
+{
+  GEN_ENTER(0x4ed490u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a0;)
+  GEN_PIN(float param_2 = (float)gen_a1;)
+  GEN_FRAME_DECL_TOP(0x1c, 4, 4);
+  uint uVar1;
+  undefined4 uVar2;
+  
+  F_00d2ddd0(((undefined1 *)(gen_frame + 0x0)),5);
+  F_00cbb3e0(((undefined1 *)(gen_frame + 0x0)) GEN_EDX_ARG,1);
+  uVar2 = 0;
+  uVar1 = F_00cbb250(((undefined1 *)(gen_frame + 0x0)) GEN_EDX_ARG,((undefined1 *)(gen_frame + 0x10)));
+  uVar1 = F_00cbb950(uVar1 GEN_EDX_ARG,param_2,uVar2);
+  F_00cbb890(((undefined1 *)(gen_frame + 0x10)) GEN_EDX_ARG);
+  F_00cbaf10(((undefined1 *)(gen_frame + 0x0)) GEN_EDX_ARG);
+  return uVar1;
+}
+
 /* ref: Client::Sound::SoundData::vf30 */
 GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_004ed4e0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
@@ -13736,198 +13798,5 @@ GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_004fdcb0(GEN_P(undefined * this, unsigne
   
   bVar1 = F_004fd8a0(this GEN_EDX_FWD);
   return bVar1;
-}
-
-/* ref: Client::System::File::FileThread::vf5 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_004fdcc0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x4fdcc0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  int iVar1;
-  undefined * this_00;
-  byte bVar2;
-  DWORD DVar3;
-  int * piVar4;
-  uint uVar5;
-  int iVar6;
-  int * piVar7;
-  int iVar8;
-  undefined4 local_10;
-  
-  F_004f91f0(this GEN_EDX_FWD);
-  this_00 = REFG(void * PTR32, 0x1375ae8);
-  DVar3 = gen_imp_GetCurrentThreadId();
-  *(DWORD *)(this + 0xb8) = DVar3;
-  while( true ) {
-    while (F_004cee80(), *(int *)(this + 0xc0) != 0) {
-      F_004fd040(this GEN_EDX_ARG);
-      if (this[0x14] != (undefined1)0x0) goto LAB_004fe05f;
-      do {
-        iVar6 = _InterlockedExchange((volatile long *)((((int *)GEN_TOP(((int)this_00 + 0xbc))))), (long)(1));
-      } while (iVar6 != 0);
-      iVar8 = 0;
-      iVar6 = 7;
-      piVar4 = ((int *)GEN_TOP(((int)this_00 + 0x34)));
-      do {
-        piVar7 = ((int *)GEN_TOP(*piVar4));
-        iVar6 = iVar6 - 1;
-        if (piVar7 != ((int *)GEN_TOP(0x0))) {
-          _InterlockedExchange((volatile long *)((((undefined4 *)GEN_TOP(((int)this_00 + 0xbc))))), (long)(0));
-          gen_imp_WaitForSingleObject(*((HANDLE *)GEN_TOP(((int)this_00 + 200))),0xffffffff);
-          goto LAB_004fdddc;
-        }
-        iVar8 = iVar8 + 1;
-        piVar4 = piVar4 + 3;
-      } while (iVar6 != 0);
-      _InterlockedExchange((volatile long *)((((undefined4 *)GEN_TOP(((int)this_00 + 0xbc))))), (long)(0));
-      F_004cee80();
-    }
-    gen_imp_WaitForSingleObject(*((HANDLE *)GEN_TOP(((int)this_00 + 200))),0xffffffff);
-    if (this[0x14] != (undefined1)0x0) break;
-    do {
-      iVar6 = _InterlockedExchange((volatile long *)((((int *)GEN_TOP(((int)this_00 + 0xbc))))), (long)(1));
-    } while (iVar6 != 0);
-    iVar8 = 0;
-    iVar6 = 7;
-    piVar4 = ((int *)GEN_TOP(((int)this_00 + 0x34)));
-    do {
-      piVar7 = ((int *)GEN_TOP(*piVar4));
-      iVar6 = iVar6 - 1;
-      if (piVar7 != ((int *)GEN_TOP(0x0))) {
-        _InterlockedExchange((volatile long *)((((undefined4 *)GEN_TOP(((int)this_00 + 0xbc))))), (long)(0));
-        goto LAB_004fdddc;
-      }
-      iVar8 = iVar8 + 1;
-      piVar4 = piVar4 + 3;
-    } while (iVar6 != 0);
-    _InterlockedExchange((volatile long *)((((undefined4 *)GEN_TOP(((int)this_00 + 0xbc))))), (long)(0));
-    iVar8 = 0;
-LAB_004fdddc: ;
-    iVar6 = *piVar7;
-    if (iVar6 == 6) {
-      F_009f15d0(5);
-      F_009f0540(0);
-      if ((*piVar7 == 0xb) && ((char)piVar7[0x3b] != '\0')) {
-        if (piVar7[0x3a] != 0) {
-          F_00406b30(piVar7[0x3a]);
-          piVar7[0x3a] = 0;
-        }
-        *(undefined1 *)(piVar7 + 0x3b) = 0;
-      }
-      do {
-        iVar6 = _InterlockedExchange((volatile long *)((((int *)GEN_TOP(((int)this_00 + 0xbc))))), (long)(1));
-      } while (iVar6 != 0);
-      iVar6 = piVar7[0xe];
-      iVar1 = piVar7[0xf];
-      if (iVar6 == 0) {
-        *((int *)GEN_TOP(((int)this_00 + iVar8 * 0xc + 0x34))) = iVar1;
-      }
-      else {
-        *((int *)GEN_TOP((iVar6 + 0x3c))) = iVar1;
-      }
-      if (iVar1 == 0) {
-        *((int *)GEN_TOP(((int)this_00 + iVar8 * 0xc + 0x38))) = iVar6;
-      }
-      else {
-        *((int *)GEN_TOP((iVar1 + 0x38))) = iVar6;
-      }
-      piVar4 = ((int *)GEN_TOP(((int)this_00 + (iVar8 * 3 + 0xf) * 4)));
-      *piVar4 = *piVar4 - 1;
-      iVar6 = *((int *)GEN_TOP(((int)this_00 + 0xb0)));
-      if (iVar6 == 0) {
-        *((int * PTR32 *)GEN_TOP(((int)this_00 + 0xac))) = piVar7;
-      }
-      else {
-        *((int * PTR32 *)GEN_TOP((iVar6 + 0x3c))) = piVar7;
-      }
-      piVar7[0xe] = iVar6;
-      piVar7[0xf] = 0;
-      *((int *)GEN_TOP(((int)this_00 + 0xb4))) = *((int *)GEN_TOP(((int)this_00 + 0xb4))) + 1;
-      *((int * PTR32 *)GEN_TOP(((int)this_00 + 0xb0))) = piVar7;
-      _InterlockedExchange((volatile long *)((((undefined4 *)GEN_TOP(((int)this_00 + 0xbc))))), (long)(0));
-      if (iVar8 == 3) {
-        gen_imp_SetEvent(*((HANDLE *)GEN_TOP(((int)this_00 + 0xcc))));
-      }
-    }
-    else if (iVar6 == 7) {
-      bVar2 = F_004fa8d0(piVar7);
-      if (bVar2 != 0) {
-        if ((*piVar7 == 0xb) && ((char)piVar7[0x3b] != '\0')) {
-          if (piVar7[0x3a] != 0) {
-            F_00406b30(piVar7[0x3a]);
-            piVar7[0x3a] = 0;
-          }
-          *(undefined1 *)(piVar7 + 0x3b) = 0;
-        }
-        F_004fa350(this_00 GEN_EDX_ARG,iVar8,piVar7,10,0);
-        if (iVar8 == 3) {
-          gen_imp_SetEvent(*((HANDLE *)GEN_TOP(((int)this_00 + 0xcc))));
-        }
-      }
-    }
-    else if (iVar6 == 8) {
-      (*((code *)GEN_TOP(piVar7[0x10])))(piVar7[0x11],piVar7 + 0x12,piVar7);
-      iVar6 = ((piVar7[8] << 6) >> 6) * 0x20 + *((int *)GEN_TOP((REFG(int, 0x1375ae4) + 8 + (piVar7[8] >> 0x1c) * 4)));
-      piVar4 = ((int *)GEN_TOP((REFG(int, 0x1375ae4) + 4)));
-      do {
-        iVar1 = _InterlockedExchange((volatile long *)(piVar4), (long)(1));
-      } while (iVar1 != 0);
-      local_10 = 1;
-      if (((*((char *)GEN_TOP((iVar6 + 8))) != '\0') && (local_10 = 2, *((char *)GEN_TOP((iVar6 + 9))) != '\0')) &&
-         (*((int *)GEN_TOP((iVar6 + 0xc))) != 0)) {
-        F_00406ad0(*((undefined4 *)GEN_TOP((iVar6 + 0xc))));
-        *((undefined4 *)GEN_TOP((iVar6 + 0xc))) = 0;
-        *((undefined1 *)GEN_TOP((iVar6 + 9))) = 0;
-      }
-      *((undefined4 *)GEN_TOP((iVar6 + 4))) = local_10;
-      _InterlockedExchange((volatile long *)(piVar4), (long)(0));
-      if ((*piVar7 == 0xb) && ((char)piVar7[0x3b] != '\0')) {
-        if (piVar7[0x3a] != 0) {
-          F_00406b30(piVar7[0x3a]);
-          piVar7[0x3a] = 0;
-        }
-        *(undefined1 *)(piVar7 + 0x3b) = 0;
-      }
-      F_004fa350(this_00 GEN_EDX_ARG,iVar8,piVar7,10,0);
-      if (iVar8 == 3) {
-        gen_imp_SetEvent(*((HANDLE *)GEN_TOP(((int)this_00 + 0xcc))));
-      }
-    }
-    else {
-      if (iVar6 < 9) {
-        bVar2 = F_004fa4b0(piVar7);
-      }
-      else {
-        bVar2 = F_004fd6e0(this GEN_EDX_ARG,piVar7,iVar8,(uint)(iVar8 == 3));
-      }
-      if (bVar2 != 0) {
-        F_004fb400(this_00 GEN_EDX_ARG,iVar8,piVar7);
-      }
-    }
-  }
-LAB_004fe05f: ;
-  uVar5 = F_009f1600(0);
-  return uVar5;
-}
-
-/* ref: FUN_004fe0f0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_004fe0f0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x4fe0f0u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  GEN_PIN(uint param_2 = (uint)gen_a1;)
-  *((uint *)GEN_TOP((in_ecx + 0x2c))) = param_2;
-  return param_2;
-}
-
-/* ref: FUN_004fe100 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_004fe100(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x4fe100u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  GEN_PIN(uint param_2 = (uint)gen_a1;)
-  *((uint *)GEN_TOP((in_ecx + 0x30))) = param_2;
-  return param_2;
 }
 

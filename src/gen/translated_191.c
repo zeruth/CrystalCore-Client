@@ -1,5 +1,33 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::Gambit::vf1 */
+GEN_LIB GEN_NOFRAME uint F_00e67b70(void)
+{
+  GEN_ENTER(0xe67b70u, 0u, 0u, 0u, 0u);
+  return 0x135ae40;
+}
+
+/* ref: Application::Network::WorkDefinitions::BuddyWork_TypeInfo::vf5 */
+GEN_LIB GEN_NOFRAME uint F_00e67b80(void)
+{
+  GEN_ENTER(0xe67b80u, 0u, 0u, 0u, 0u);
+  return 9;
+}
+
+/* ref: Application::Network::WorkDefinitions::BuddyWork::vf1 */
+GEN_LIB GEN_NOFRAME uint F_00e67b90(void)
+{
+  GEN_ENTER(0xe67b90u, 0u, 0u, 0u, 0u);
+  return 0x135ae44;
+}
+
+/* ref: Application::Network::WorkDefinitions::EventStateWork_TypeInfo::vf5 */
+GEN_LIB GEN_NOFRAME uint F_00e67ba0(void)
+{
+  GEN_ENTER(0xe67ba0u, 0u, 0u, 0u, 0u);
+  return 5;
+}
+
 /* ref: Application::Network::WorkDefinitions::EventStateWork::vf1 */
 GEN_LIB GEN_NOFRAME uint F_00e67bb0(void)
 {
@@ -19367,52 +19395,6 @@ GEN_LIB GEN_FRAME uint GEN_THISCALL F_00e828c0(GEN_P(undefined4 * param_1, unsig
   GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
   GEN_PIN(byte param_2 = (byte)gen_a1;)
   *param_1 = (*(undefined * PTR32 (*)[21])REFP(0x11584bc));
-  if ((param_2 & 1) != 0) {
-    F_00406ad0(param_1);
-  }
-  return (uint)param_1;
-}
-
-/* ref: Application::Network::WorkDefinitions::Hater::vf1 */
-GEN_LIB GEN_NOFRAME uint F_00e828f0(void)
-{
-  GEN_ENTER(0xe828f0u, 0u, 0u, 0u, 0u);
-  return 0x135b28c;
-}
-
-/* ref: Application::Network::WorkDefinitions::Hater::vf0 */
-GEN_LIB GEN_FRAME uint GEN_THISCALL F_00e82900(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0xe82900u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
-  GEN_PIN(byte param_2 = (byte)gen_a1;)
-  *param_1 = (*(undefined * PTR32 (*)[17])REFP(0x1158514));
-  if ((param_2 & 1) != 0) {
-    F_00406ad0(param_1);
-  }
-  return (uint)param_1;
-}
-
-/* ref: Application::Network::WorkDefinitions::ClassWork_TypeInfo::vf0 */
-GEN_LIB GEN_FRAME uint GEN_THISCALL F_00e82930(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0xe82930u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
-  GEN_PIN(byte param_2 = (byte)gen_a1;)
-  *param_1 = (*(undefined * PTR32 (*)[21])REFP(0x11584bc));
-  if ((param_2 & 1) != 0) {
-    F_00406ad0(param_1);
-  }
-  return (uint)param_1;
-}
-
-/* ref: Application::Network::WorkDefinitions::ClassWork::vf0 */
-GEN_LIB GEN_FRAME uint GEN_THISCALL F_00e82960(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0xe82960u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
-  GEN_PIN(byte param_2 = (byte)gen_a1;)
-  *param_1 = (*(undefined * PTR32 (*)[17])REFP(0x1158514));
   if ((param_2 & 1) != 0) {
     F_00406ad0(param_1);
   }

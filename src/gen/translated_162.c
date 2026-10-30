@@ -1,5 +1,31 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00ce58d0 */
+GEN_LIB GEN_NOFRAME unsigned int GEN_STDCALL F_00ce58d0(GEN_P(undefined4 param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0xce58d0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a0;)
+  return;
+}
+
+/* ref: FUN_00ce58e0 */
+GEN_LIB GEN_FRAME uint GEN_STDCALL F_00ce58e0(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(uint param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0xce58e0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a0;)
+  GEN_PIN(uint param_2 = (uint)gen_a1;)
+  return param_2;
+}
+
+/* ref: FUN_00ce58f0 */
+GEN_LIB GEN_FRAME uint GEN_STDCALL F_00ce58f0(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(uint param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0xce58f0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a0;)
+  GEN_PIN(uint param_2 = (uint)gen_a1;)
+  return param_2;
+}
+
 /* ref: SQEX::CDev::Engine::Sd::Driver::XA2::XAPOAudioBounce::vf14 */
 GEN_LIB GEN_FRAME uint GEN_THISCALL F_00ce5900(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
@@ -18152,78 +18178,5 @@ GEN_LIB GEN_FRAME uint GEN_THISCALL F_00cf9a30(GEN_P(undefined4 * param_1, unsig
     F_00406810(param_1 - 1);
   }
   return (uint)(param_1 - 1);
-}
-
-/* ref: FUN_00cf9a80 */
-GEN_LIB GEN_NOFRAME unsigned int GEN_THISCALL F_00cf9a80(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xcf9a80u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  *((undefined1 *)GEN_TOP(((int)this + 0x28))) = 1;
-  gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)((int)this + 0x10));
-  *((undefined4 *)GEN_TOP(((int)this + 8))) = *(undefined4 *)this;
-  *((undefined4 *)GEN_TOP(((int)this + 0xc))) = *((undefined4 *)GEN_TOP(((int)this + 4)));
-  if (*((char *)GEN_TOP(((int)this + 0x28))) != '\0') {
-    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)((int)this + 0x10));
-  }
-  return 0;
-}
-
-/* ref: FUN_00cf9ab0 */
-GEN_LIB GEN_FRAME uint GEN_THISCALL F_00cf9ab0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1), GEN_P(uint param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0xcf9ab0u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(int param_1 = (int)gen_a1;)
-  GEN_PIN(uint param_2 = (uint)gen_a2;)
-  LPCRITICAL_SECTION lpCriticalSection;
-  int iVar1;
-  int iVar2;
-  uint uVar3;
-  uint uVar4;
-  
-  if (param_1 == 0) {
-    return 0;
-  }
-  lpCriticalSection = (LPCRITICAL_SECTION)((int)this + 0x10);
-  *((undefined1 *)GEN_TOP(((int)this + 0x28))) = 1;
-  gen_imp_EnterCriticalSection(lpCriticalSection);
-  iVar2 = *((int *)GEN_TOP(((int)this + 8)));
-  if (iVar2 == 0) {
-    if (*((char *)GEN_TOP(((int)this + 0x28))) != '\0') {
-      gen_imp_LeaveCriticalSection(lpCriticalSection);
-    }
-    return 0;
-  }
-  uVar4 = ((iVar2 - 1 + param_2) / param_2) * param_2;
-  iVar1 = uVar4 + param_1;
-  uVar3 = iVar1 - iVar2;
-  if (*((uint *)GEN_TOP(((int)this + 0xc))) < uVar3) {
-    if (*((char *)GEN_TOP(((int)this + 0x28))) != '\0') {
-      gen_imp_LeaveCriticalSection(lpCriticalSection);
-    }
-    return 0;
-  }
-  *((int *)GEN_TOP(((int)this + 8))) = iVar1;
-  *((uint *)GEN_TOP(((int)this + 0xc))) = *((uint *)GEN_TOP(((int)this + 0xc))) - uVar3;
-  if (*((char *)GEN_TOP(((int)this + 0x28))) != '\0') {
-    gen_imp_LeaveCriticalSection(lpCriticalSection);
-  }
-  return uVar4;
-}
-
-/* ref: FUN_00cf9b60 */
-GEN_LIB GEN_NOFRAME unsigned int GEN_THISCALL F_00cf9b60(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xcf9b60u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  *((undefined1 *)GEN_TOP(((int)this + 0xcc))) = 1;
-  gen_imp_EnterCriticalSection((LPCRITICAL_SECTION)((int)this + 0xb4));
-  *((undefined4 *)GEN_TOP(((int)this + 0xac))) = *((undefined4 *)GEN_TOP(((int)this + 0xa4)));
-  *((undefined4 *)GEN_TOP(((int)this + 0xb0))) = *((undefined4 *)GEN_TOP(((int)this + 0xa8)));
-  if (*((char *)GEN_TOP(((int)this + 0xcc))) != '\0') {
-    gen_imp_LeaveCriticalSection((LPCRITICAL_SECTION)((int)this + 0xb4));
-  }
-  return 0;
 }
 

@@ -1,5 +1,38 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00979780 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00979780(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3), GEN_P(undefined4 param_4, unsigned int gen_a4), GEN_P(undefined4 param_5, unsigned int gen_a5), GEN_P(undefined4 param_6, unsigned int gen_a6), GEN_P(undefined4 param_7, unsigned int gen_a7), GEN_P(undefined4 param_8, unsigned int gen_a8))
+{
+  GEN_ENTER(0x979780u, gen_a0, gen_a1, gen_a2, gen_a3);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
+  GEN_PIN(undefined4 param_3 = (undefined4)gen_a3;)
+  GEN_PIN(undefined4 param_4 = (undefined4)gen_a4;)
+  GEN_PIN(undefined4 param_5 = (undefined4)gen_a5;)
+  GEN_PIN(undefined4 param_6 = (undefined4)gen_a6;)
+  GEN_PIN(undefined4 param_7 = (undefined4)gen_a7;)
+  GEN_PIN(undefined4 param_8 = (undefined4)gen_a8;)
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)this + 0x18))))
+                    (*(int * PTR32 *)this GEN_EDX_ARG,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8);
+  return uVar1;
+}
+
+/* ref: FUN_009797a0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_009797a0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x9797a0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_1 = (int)gen_a1;)
+  uint uVar1;
+  
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)this + 0x30))))
+                    (*(int * PTR32 *)this GEN_EDX_ARG,param_1,*((undefined4 *)GEN_TOP(((int)this + param_1 * 4 + 0xc))));
+  return uVar1;
+}
+
 /* ref: FUN_009797d0 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009797d0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -8537,44 +8570,5 @@ GEN_OWN GEN_NOFRAME uint F_00983520(void)
 {
   GEN_ENTER(0x983520u, 0u, 0u, 0u, 0u);
   return 0;
-}
-
-/* ref: Apricot::ApricotListenner::vf26 */
-GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_00983530(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x983530u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  *((undefined4 *)GEN_TOP((in_ecx + 0xd0))) = 0;
-  *((undefined4 *)GEN_TOP((in_ecx + 0xd4))) = 0;
-  *((undefined4 *)GEN_TOP((in_ecx + 0xd8))) = 0;
-  *((undefined4 *)GEN_TOP((in_ecx + 0xdc))) = 0;
-  *((undefined4 *)GEN_TOP((in_ecx + 0xe0))) = 0;
-  *((undefined4 *)GEN_TOP((in_ecx + 0xe4))) = 0;
-  *((undefined4 *)GEN_TOP((in_ecx + 0xe8))) = 0;
-  return;
-}
-
-/* ref: Apricot::ApricotListenner::vf27 */
-GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_00983570(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float param_2, float gen_a1), GEN_P(float * param_3, unsigned int gen_a2), GEN_P(float * param_4, unsigned int gen_a3))
-{
-  GEN_ENTER(0x983570u, gen_a0, gen_trace_f(gen_a1), gen_a2, gen_a3);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  GEN_PIN(float param_2 = (float)gen_a1;)
-  GEN_PIN(float * param_3 = (float *)(uintptr_t)gen_a2;)
-  GEN_PIN(float * param_4 = (float *)(uintptr_t)gen_a3;)
-  float10 fVar1;
-  
-  fVar1 = (float10)param_2;
-  if ((float10)*((float *)GEN_TOP((in_ecx + 0xd0))) < fVar1) {
-    *((float *)GEN_TOP((in_ecx + 0xd0))) = param_2;
-    *((float *)GEN_TOP((in_ecx + 0xd4))) = (float)((float10)*param_3 * fVar1);
-    *((float *)GEN_TOP((in_ecx + 0xd8))) = (float)((float10)param_3[1] * fVar1);
-    *((float *)GEN_TOP((in_ecx + 0xdc))) = (float)((float10)param_3[2] * fVar1);
-    *((float *)GEN_TOP((in_ecx + 0xe0))) = (float)((float10)*param_4 * fVar1);
-    *((float *)GEN_TOP((in_ecx + 0xe4))) = (float)((float10)param_4[1] * fVar1);
-    *((float *)GEN_TOP((in_ecx + 0xe8))) = (float)(fVar1 * (float10)param_4[2]);
-    return;
-  }
-  return;
 }
 

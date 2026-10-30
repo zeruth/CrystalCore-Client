@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Apricot::Engine::Data::Communicator::TextureProperty_Color2::vf7 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009ebb40(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9ebb40u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return *((uint *)GEN_TOP((in_ecx + 0x10)));
+}
+
+/* ref: Apricot::Engine::Data::Communicator::TextureProperty_Color2::vf8 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009ebb50(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9ebb50u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return *((uint *)GEN_TOP((in_ecx + 0x14)));
+}
+
 /* ref: Apricot::Engine::Data::Communicator::TextureProperty_Color2::vf9 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009ebb60(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -5893,29 +5909,5 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_009f0a00(GEN_P(undefined * this, unsigned 
   GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
   GEN_PIN(short * param_1 = (short *)(uintptr_t)gen_a1;)
   return *(short *)this == *param_1;
-}
-
-/* ref: FUN_009f0a50 */
-GEN_OWN GEN_FRAME float GEN_THISCALL F_009f0a50(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte * param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x9f0a50u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(byte * param_1 = (byte *)(uintptr_t)gen_a1;)
-  return *((float *)GEN_TOP(((int)this + ((uint)param_1[1] + (uint)*param_1 * 4) * 4 + 0xc)));
-}
-
-/* ref: FUN_009f0a70 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009f0a70(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9f0a70u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  uint uVar1;
-  
-  uVar1 = 0;
-  if (*((int *)GEN_TOP(((int)this + 0x58))) != 0) {
-    uVar1 = F_0050c620(*((int *)GEN_TOP(((int)this + 0x58))),0,0);
-    *((undefined4 *)GEN_TOP(((int)this + 0x58))) = 0;
-  }
-  return uVar1;
 }
 

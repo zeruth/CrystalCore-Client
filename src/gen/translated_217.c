@@ -1,5 +1,45 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0107b790 */
+GEN_LIB GEN_NOFRAME uint F_0107b790(void)
+{
+  GEN_ENTER(0x107b790u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107d830)));
+  return uVar1;
+}
+
+/* ref: FUN_0107b7a0 */
+GEN_LIB GEN_NOFRAME uint F_0107b7a0(void)
+{
+  GEN_ENTER(0x107b7a0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107d840)));
+  return uVar1;
+}
+
+/* ref: FUN_0107b7b0 */
+GEN_LIB GEN_NOFRAME uint F_0107b7b0(void)
+{
+  GEN_ENTER(0x107b7b0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107d850)));
+  return uVar1;
+}
+
+/* ref: FUN_0107b7c0 */
+GEN_LIB GEN_NOFRAME uint F_0107b7c0(void)
+{
+  GEN_ENTER(0x107b7c0u, 0u, 0u, 0u, 0u);
+  uint uVar1;
+  
+  uVar1 = F_00c47de6(((code *)REFP(0x107d860)));
+  return uVar1;
+}
+
 /* ref: FUN_0107b7d0 */
 GEN_LIB GEN_NOFRAME uint F_0107b7d0(void)
 {
@@ -3898,42 +3938,6 @@ GEN_LIB GEN_NOFRAME unsigned int F_0107d8d0(void)
 {
   GEN_ENTER(0x107d8d0u, 0u, 0u, 0u, 0u);
   REFG(undefined * PTR32, 0x136c540) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
-  return;
-}
-
-/* ref: FUN_0107d8e0 */
-GEN_LIB GEN_NOFRAME unsigned int F_0107d8e0(void)
-{
-  GEN_ENTER(0x107d8e0u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x136c544) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
-  return;
-}
-
-/* ref: FUN_0107d8f0 */
-GEN_LIB GEN_NOFRAME unsigned int F_0107d8f0(void)
-{
-  GEN_ENTER(0x107d8f0u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x136c548) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
-  return;
-}
-
-/* ref: FUN_0107d900 */
-GEN_LIB GEN_NOFRAME unsigned int F_0107d900(void)
-{
-  GEN_ENTER(0x107d900u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x136c54c) =
-       ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
-  return;
-}
-
-/* ref: FUN_0107d910 */
-GEN_LIB GEN_NOFRAME unsigned int F_0107d910(void)
-{
-  GEN_ENTER(0x107d910u, 0u, 0u, 0u, 0u);
-  REFG(undefined * PTR32, 0x136c550) =
        ((undefined *)GEN_TOP((*(undefined * PTR32 (*)[21])REFP(0x11584bc))));
   return;
 }

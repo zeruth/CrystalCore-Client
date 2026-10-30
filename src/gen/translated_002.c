@@ -7389,18 +7389,26 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00427ff0(GEN_P(undefined * this, unsigned 
 }
 
 /* ref: FUN_00428080 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00428080(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char param_2, unsigned int gen_a1))
+GEN_OWN GEN_FRAME ulonglong GEN_THISCALL F_00428080(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x428080u, gen_a0, gen_a1, 0u, 0u);
   GEN_PIN(int param_1 = (int)gen_a0;)
   GEN_PIN(char param_2 = (char)gen_a1;)
+  uint uVar1;
+  uint uVar2;
+  
   if ((*((char *)GEN_TOP((param_1 + 0x20))) == '\0') && (*((char *)GEN_TOP((param_1 + 0x21))) == '\0')) {
+    uVar1 = *((uint *)GEN_TOP((param_1 + 0x18)));
     if (param_2 != '\0') {
-      return *((int *)GEN_TOP((param_1 + 0x18))) + *((int *)GEN_TOP((param_1 + 8))) + 0xa8c0;
+      uVar2 = uVar1 + *((uint *)GEN_TOP((param_1 + 8)));
+      return CONCAT44(*((int *)GEN_TOP((param_1 + 0x1c))) + *((int *)GEN_TOP((param_1 + 0xc))) +
+                      (uint)CARRY4(uVar1,*((uint *)GEN_TOP((param_1 + 8)))) + (uint)(0xffff573f < uVar2),
+                      uVar2 + 0xa8c0);
     }
-    return *((int *)GEN_TOP((param_1 + 0x18))) + *((int *)GEN_TOP((param_1 + 8)));
+    return CONCAT44(*((int *)GEN_TOP((param_1 + 0x1c))) + *((int *)GEN_TOP((param_1 + 0xc))) +
+                    (uint)CARRY4(uVar1,*((uint *)GEN_TOP((param_1 + 8)))),uVar1 + *((uint *)GEN_TOP((param_1 + 8))));
   }
-  return *((uint *)GEN_TOP((param_1 + 0x18)));
+  return *((ulonglong *)GEN_TOP((param_1 + 0x18)));
 }
 
 /* ref: Common::Game::Time::GameTime::vf0 */

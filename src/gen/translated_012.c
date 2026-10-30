@@ -1,5 +1,57 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_004a0160 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_004a0160(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x4a0160u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(uint param_1 = (uint)gen_a1;)
+  int iVar1;
+  
+  iVar1 = *((int *)GEN_TOP(((int)this + 0x48)));
+  *((uint *)GEN_TOP(((int)this + 0x48))) = param_1;
+  if (iVar1 != 0) {
+    *((uint *)GEN_TOP((iVar1 + 0x1c))) = param_1;
+  }
+  *((int *)GEN_TOP((param_1 + 0x20))) = iVar1;
+  *((int *)GEN_TOP((param_1 + 0x1c))) = (int)this + 0x28;
+  return param_1;
+}
+
+/* ref: Client::System::Framework::TaskManager::RootTask::vf1 */
+GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_004a0180(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x4a0180u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  int * piVar1;
+  int * piVar2;
+  
+  piVar2 = *(int * PTR32 *)(this + 0x20);
+  while (piVar2 != ((int *)GEN_TOP(0x0))) {
+    piVar1 = ((int *)GEN_TOP(piVar2[8]));
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 4))))(piVar2 GEN_EDX_FWD,param_1);
+    piVar2 = piVar1;
+  }
+  return;
+}
+
+/* ref: FUN_004a01b0 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_004a01b0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
+{
+  GEN_ENTER(0x4a01b0u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
+  uint uVar1;
+  
+  uVar1 = *((uint *)GEN_TOP(((int)this + 0x50)));
+  if (uVar1 != 0) {
+    *((undefined4 *)GEN_TOP(((int)this + 0x50))) = *((undefined4 *)GEN_TOP((uVar1 + 0x20)));
+  }
+  return uVar1;
+}
+
 /* ref: FUN_004a01c0 */
 GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_004a01c0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -20635,50 +20687,5 @@ GEN_OWN GEN_FRAME uint F_004bd0d0(GEN_P(undefined4 param_1, unsigned int gen_a0)
     ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 0xc))))(piVar2 GEN_EDX_ARG);
   }
   return 0;
-}
-
-/* ref: FUN_004bd110 */
-GEN_OWN GEN_FRAME uint F_004bd110(unsigned int gen_a0)
-{
-  GEN_ENTER(0x4bd110u, gen_a0, 0u, 0u, 0u);
-  unsigned int gen_args[1];
-  gen_args[0] = gen_a0;
-  undefined2 * puVar1;
-  
-  puVar1 = (*(undefined2 * PTR32 *)&gen_args[0]);
-  (*((undefined2 *)GEN_TOP(((char *)&(*(undefined2 * PTR32 *)&gen_args[0]) + 0)))) = CONCAT11(*(undefined1 *)(*(undefined2 * PTR32 *)&gen_args[0]),*((undefined1 *)GEN_TOP(((int)(*(undefined2 * PTR32 *)&gen_args[0]) + 1))));
-  *puVar1 = (*((undefined2 *)GEN_TOP(((char *)&(*(undefined2 * PTR32 *)&gen_args[0]) + 0))));
-  return (uint)puVar1;
-}
-
-/* ref: FUN_004bd130 */
-GEN_OWN GEN_FRAME uint F_004bd130(GEN_P(undefined4 * param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x4bd130u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
-  undefined1 * puVar1;
-  undefined1 * puVar2;
-  undefined1 * puVar3;
-  undefined4 * puVar4;
-  
-  puVar4 = param_1;
-  puVar1 = ((undefined1 *)GEN_TOP(((int)param_1 + 3)));
-  puVar2 = ((undefined1 *)GEN_TOP(((int)param_1 + 2)));
-  puVar3 = ((undefined1 *)GEN_TOP(((int)param_1 + 1)));
-  param_1 = ((undefined4 *)GEN_TOP(CONCAT13(*(undefined1 *)puVar4,CONCAT12(*puVar3,CONCAT11(*puVar2,*puVar1)))));
-  *puVar4 = param_1;
-  return (uint)puVar4;
-}
-
-/* ref: FUN_004bd160 */
-GEN_OWN GEN_FRAME uint F_004bd160(GEN_P(uint * param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x4bd160u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(uint * param_1 = (uint *)(uintptr_t)gen_a0;)
-  uint uVar1;
-  
-  uVar1 = *param_1;
-  *param_1 = (uVar1 & 0xff0000 | uVar1 >> 0x10) >> 8 | (uVar1 & 0xff00 | uVar1 << 0x10) << 8;
-  return uVar1 << 0x10;
 }
 

@@ -1,5 +1,32 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf18 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_006ba630(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x6ba630u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  return 0;
+}
+
+/* ref: FUN_006ba640 */
+GEN_OWN GEN_FRAME uint F_006ba640(GEN_P(int param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0x6ba640u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  GEN_FRAME_DECL_TOP(0x14, 12, 4);
+  int iVar1;
+  
+  ((uint *)(gen_frame + 0x0))[3] = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x10);
+  if ((param_1 < 0) || (iVar1 = param_1, 2 < param_1)) {
+    iVar1 = 0;
+  }
+  ((uint *)(gen_frame + 0x0))[0] = 0x3c;
+  ((uint *)(gen_frame + 0x0))[1] = 0x1e;
+  ((uint *)(gen_frame + 0x0))[2] = 0x5a;
+  return ((uint *)(gen_frame + 0x0))[(int)(iVar1)];
+}
+
 /* ref: FUN_006ba6b0 */
 GEN_OWN GEN_FRAME uint F_006ba6b0(GEN_P(undefined4 param_1, unsigned int gen_a0))
 {
@@ -6128,7 +6155,7 @@ GEN_OWN GEN_FRAME byte F_006bfef0(GEN_P(int param_1, unsigned int gen_a0), GEN_P
   return 0;
 }
 
-/* ref: FUN_006bff20 */
+/* ref: Global::QuestPreviousQuestsDone */
 GEN_OWN_GS GEN_FRAME byte GEN_THISCALL F_006bff20(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x6bff20u, gen_a0, gen_a1, 0u, 0u);
@@ -6179,7 +6206,7 @@ GEN_OWN_GS GEN_FRAME byte GEN_THISCALL F_006bff20(GEN_P(undefined * this, unsign
   return 0;
 }
 
-/* ref: FUN_006c0040 */
+/* ref: Global::QuestLocked */
 GEN_OWN GEN_FRAME byte GEN_THISCALL F_006c0040(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x6c0040u, gen_a0, gen_a1, 0u, 0u);
@@ -6373,7 +6400,7 @@ GEN_OWN GEN_FRAME ushort F_006c0340(GEN_P(int param_1, unsigned int gen_a0))
   return (ushort)*((byte *)GEN_TOP((param_1 + 0xb91))) + *((short *)GEN_TOP((param_1 + 0xb84)));
 }
 
-/* ref: FUN_006c0360 */
+/* ref: Global::GetQuestRewardExp */
 GEN_OWN GEN_FRAME uint F_006c0360(GEN_P(int param_1, unsigned int gen_a0))
 {
   GEN_ENTER(0x6c0360u, gen_a0, 0u, 0u, 0u);
@@ -8472,30 +8499,6 @@ GEN_OWN GEN_NOFRAME byte GEN_STDCALL F_006c2930(GEN_P(undefined * param_1, unsig
       }
     }
   }
-  return 0;
-}
-
-/* ref: Client::Game::Event::GCShopEventHandler::vf110 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_006c2e50(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x6c2e50u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  uint uVar1;
-  
-  uVar1 = F_00ab0230(0xcd1,param_1);
-  return uVar1;
-}
-
-/* ref: Client::Game::Event::GCShopEventHandler::vf128 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_006c2e70(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3), GEN_P(undefined4 param_4, unsigned int gen_a4))
-{
-  GEN_ENTER(0x6c2e70u, gen_a0, gen_a1, gen_a2, gen_a3);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
-  GEN_PIN(undefined4 param_3 = (undefined4)gen_a3;)
-  GEN_PIN(undefined4 param_4 = (undefined4)gen_a4;)
   return 0;
 }
 

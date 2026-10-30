@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00666260 */
+GEN_OWN GEN_FRAME uint F_00666260(GEN_P(uint param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0x666260u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(uint param_1 = (uint)gen_a0;)
+  return param_1;
+}
+
+/* ref: FUN_00666270 */
+GEN_OWN GEN_FRAME uint F_00666270(GEN_P(uint param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0x666270u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(uint param_1 = (uint)gen_a0;)
+  return param_1;
+}
+
 /* ref: FUN_00666280 */
 GEN_OWN GEN_FRAME uint F_00666280(GEN_P(gen_v16 * param_1, unsigned int gen_a0))
 {
@@ -7097,39 +7113,5 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0066d0b0(GEN_P(undefined * this, unsigne
   *((undefined4 *)GEN_TOP(((int)this + 4))) = 0;
   *((undefined4 *)GEN_TOP(((int)this + 8))) = 0;
   return uVar2;
-}
-
-/* ref: FUN_0066d100 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0066d100(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x66d100u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  int iVar1;
-  uint uVar2;
-  ulonglong uVar3;
-  
-  iVar1 = *(int *)this;
-  uVar2 = 0;
-  if (iVar1 != 0) {
-    uVar3 = F_00429760(iVar1,(*((int *)GEN_TOP(((int)this + 8))) - iVar1 >> 2) * 4,0xd8);
-    uVar2 = (uint)uVar3;
-  }
-  *(undefined4 *)this = 0;
-  *((undefined4 *)GEN_TOP(((int)this + 4))) = 0;
-  *((undefined4 *)GEN_TOP(((int)this + 8))) = 0;
-  return uVar2;
-}
-
-/* ref: FUN_0066d140 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_0066d140(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined2 * param_1, unsigned int gen_a1), GEN_P(undefined4 * param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0x66d140u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined2 * param_1 = (undefined2 *)(uintptr_t)gen_a1;)
-  GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a2;)
-  *(undefined2 *)this = *param_1;
-  *((undefined4 *)GEN_TOP(((int)this + 4))) = *param_2;
-  *((undefined4 *)GEN_TOP(((int)this + 8))) = param_2[1];
-  return (uint)this;
 }
 

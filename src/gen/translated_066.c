@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0075a830 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0075a830(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x75a830u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  uint uVar1;
+  
+  F_00759ab0(this GEN_EDX_FWD,*((undefined4 *)GEN_TOP((*((int *)GEN_TOP(((int)this + 4))) + 4))));
+  *((int *)GEN_TOP((*((int *)GEN_TOP(((int)this + 4))) + 4))) = *((int *)GEN_TOP(((int)this + 4)));
+  *((undefined4 *)GEN_TOP(*((undefined4 *)GEN_TOP(((int)this + 4))))) = *((undefined4 *)GEN_TOP(((int)this + 4)));
+  uVar1 = *((uint *)GEN_TOP(((int)this + 4)));
+  *((uint *)GEN_TOP((uVar1 + 8))) = uVar1;
+  *((undefined4 *)GEN_TOP(((int)this + 8))) = 0;
+  return uVar1;
+}
+
 /* ref: FUN_0075a860 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0075a860(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined1 * param_3, unsigned int gen_a3))
 {
@@ -13961,22 +13977,5 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0076a5a0(GEN_P(undefined * this, unsigne
     }
   }
   return uVar1;
-}
-
-/* ref: FUN_0076a5f0 */
-GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_0076a5f0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x76a5f0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  int * piVar1;
-  
-  if (*((int *)GEN_TOP(((int)this + 0xc))) != 0) {
-    piVar1 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)this + 4))) + 0x1c))))(*((int * PTR32 *)GEN_TOP(((int)this + 4))) GEN_EDX_FWD)));
-    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar1 + 0x54))))(piVar1 GEN_EDX_ARG,*((undefined4 *)GEN_TOP(((int)this + 0xc))),0);
-    *((undefined4 *)GEN_TOP(((int)this + 0xc))) = 0;
-    F_00a3d7c0(&REFG(undefined, 0x14a4230) GEN_EDX_ARG,*((undefined4 *)GEN_TOP(((int)this + 0x254))),(uint)*((ushort *)GEN_TOP(((int)this + 600)))
-                );
-  }
-  return;
 }
 

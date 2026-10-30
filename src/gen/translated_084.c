@@ -1,5 +1,47 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_008def50 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_008def50(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x8def50u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_1 = (int)gen_a1;)
+  uint uVar1;
+  int iVar2;
+  
+  iVar2 = 0;
+  if (param_1 == *((int *)GEN_TOP(((int)this + 0x338c)))) {
+    iVar2 = *((int *)GEN_TOP(((int)this + 0x338c)));
+  }
+  uVar1 = F_008de330(this GEN_EDX_FWD,5,0,iVar2,param_1,(float)(float10)0,(float)(float10)0);
+  return uVar1;
+}
+
+/* ref: FUN_008def80 */
+GEN_OWN GEN_FRAME byte GEN_THISCALL F_008def80(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2), GEN_P(int param_3, unsigned int gen_a3))
+{
+  GEN_ENTER(0x8def80u, gen_a0, gen_a1, gen_a2, gen_a3);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_1 = (int)gen_a1;)
+  GEN_PIN(int param_2 = (int)gen_a2;)
+  GEN_PIN(int param_3 = (int)gen_a3;)
+  int iVar1;
+  
+  if (param_1 != 1) {
+    return 0;
+  }
+  *((int *)GEN_TOP(((int)this + 0x33bc))) = param_3;
+  if (param_3 != 0) {
+    *((uint *)GEN_TOP(((int)this + 0x33b0))) = *((uint *)GEN_TOP(((int)this + 0x33b0))) | 0x400;
+  }
+  iVar1 = 0;
+  if (param_2 == *((int *)GEN_TOP(((int)this + 0x338c)))) {
+    iVar1 = *((int *)GEN_TOP(((int)this + 0x338c)));
+  }
+  F_008de330(this GEN_EDX_FWD,5,0,iVar1,param_2,(float)(float10)0,(float)(float10)0);
+  return 1;
+}
+
 /* ref: FUN_008defe0 */
 GEN_OWN_GS GEN_FRAME byte GEN_STDCALL F_008defe0(GEN_P(undefined * param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1), GEN_P(undefined * param_3, unsigned int gen_a2))
 {
@@ -19257,8 +19299,8 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_008f7430(GEN_P(undefined * this, unsigned 
   int iVar7;
   undefined * pvVar8;
   int iVar9;
-  float fVar10;
-  double dVar11;
+  double dVar10;
+  float fVar11;
   undefined4 uVar12;
   undefined4 uVar13;
   
@@ -19273,18 +19315,18 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_008f7430(GEN_P(undefined * this, unsigned 
     return 0;
   }
   (*(uint *)(gen_frame + 0x0)) = 0;
-  dVar11 = F_00ac3060(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,1,6);
+  dVar10 = F_00ac3060(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,1,6);
   uVar2 = extraout_EAX;
-  if ((float10)0 < (float10)(float)dVar11) {
-    fVar10 = F_00ac3090(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,1,6);
-    dVar1 = (double)fVar10;
+  if ((float10)0 < (float10)(float)dVar10) {
+    fVar11 = F_00ac3090(&REFG(undefined, 0x14bcf40) GEN_EDX_ARG,1,6);
+    dVar1 = (double)fVar11;
     if (dVar1 < 0.0) {
       dVar1 = GEN_X87(dVar1 - REFG(double, 0x1088108));
     }
     else {
       dVar1 = GEN_X87(dVar1 + REFG(double, 0x1088108));
     }
-    uVar2 = (uint)(REFG(double, 0x1088108) + (double)(float)dVar11);
+    uVar2 = (uint)(REFG(double, 0x1088108) + (double)(float)dVar10);
     (*(uint *)(gen_frame + 0x0)) = (int)dVar1 - uVar2;
   }
   if (*((uint *)GEN_TOP(((int)this + 0xc))) == (*(uint *)(gen_frame + 0x0))) {
@@ -31063,32 +31105,5 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_00907590(GEN_P(int in_ecx, unsigned int ge
   GEN_PIN(int in_ecx = (int)gen_a0;)
   GEN_PIN(byte param_2 = (byte)gen_a1;)
   return (*((byte *)GEN_TOP((in_ecx + 0x230bf))) & param_2) != 0;
-}
-
-/* ref: FUN_009075f0 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009075f0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9075f0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  uint uVar1;
-  
-  F_0042e430(((undefined *)GEN_TOP(((int)this + 0xc4))) GEN_EDX_FWD,&REFG(undefined1, 0x107fc63));
-  uVar1 = F_0042e430(((undefined *)GEN_TOP(((int)this + 0x118))) GEN_EDX_ARG,&REFG(undefined1, 0x107fc63));
-  return uVar1;
-}
-
-/* ref: FUN_00907620 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00907620(GEN_P(undefined4 * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x907620u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;)
-  *in_ecx = (*(undefined * PTR32 (*)[3])REFP(0x10c3eec));
-  F_0042b630(in_ecx + 1 GEN_EDX_FWD);
-  in_ecx[0x16] = 0;
-  in_ecx[0x17] = 0;
-  in_ecx[0x18] = 0;
-  *(undefined2 *)(in_ecx + 0x19) = 0;
-  *((undefined1 *)GEN_TOP(((int)in_ecx + 0x66))) = 0;
-  return (uint)in_ecx;
 }
 

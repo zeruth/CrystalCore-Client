@@ -1,5 +1,65 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: hkDataObjectDict::vf7 */
+GEN_LIB GEN_FRAME uint GEN_THISCALL F_00e0fe00(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0xe0fe00u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_1 = (int)gen_a1;)
+  return param_1 + 1;
+}
+
+/* ref: hkDataObjectDict::vf25 */
+GEN_LIB GEN_FRAME uint GEN_THISCALL F_00e0fe10(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_1, unsigned int gen_a1), GEN_P(undefined4 * param_2, unsigned int gen_a2))
+{
+  GEN_ENTER(0xe0fe10u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;)
+  GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a2;)
+  *param_2 = *param_1;
+  param_2[1] = 0;
+  param_2[2] = param_1[4];
+  param_2[3] = param_1[5];
+  return (uint)param_2;
+}
+
+/* ref: FUN_00e0fe40 */
+GEN_LIB GEN_FRAME uint GEN_THISCALL F_00e0fe40(GEN_P(int * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0xe0fe40u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int * in_ecx = (int *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_2 = (int)gen_a1;)
+  return param_2 * 0x10 + *in_ecx;
+}
+
+/* ref: FUN_00e0fe80 */
+GEN_LIB GEN_FRAME uint GEN_THISCALL F_00e0fe80(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2))
+{
+  GEN_ENTER(0xe0fe80u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_1 = (int)gen_a1;)
+  GEN_PIN(int param_2 = (int)gen_a2;)
+  uint uVar1;
+  uint uVar2;
+  int * piVar3;
+  
+  uVar1 = 0;
+  if (0 < *((int *)GEN_TOP(((int)this + 0x14)))) {
+    uVar2 = uVar1;
+    piVar3 = *((int * PTR32 *)GEN_TOP(((int)this + 0x10)));
+    while (*piVar3 != param_1) {
+      uVar2 = uVar2 + 1;
+      piVar3 = piVar3 + 4;
+      if (*((int *)GEN_TOP(((int)this + 0x14))) <= (int)uVar2) {
+        return uVar2;
+      }
+    }
+    uVar1 = uVar2 * 2;
+    (*((int * PTR32 *)GEN_TOP(((int)this + 0x10))))[uVar2 * 4] = param_2;
+  }
+  return uVar1;
+}
+
 /* ref: hkDataObjectDict::vf6 */
 GEN_LIB GEN_FRAME byte GEN_THISCALL F_00e0fec0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
 {
@@ -8382,48 +8442,5 @@ GEN_LIB GEN_NOFRAME uint GEN_THISCALL F_00e171f0(GEN_P(undefined * this, unsigne
   
   uVar1 = F_010596b0(this + 8 GEN_EDX_FWD);
   return uVar1;
-}
-
-/* ref: hkMemoryResourceHandle::vf8 */
-GEN_LIB GEN_FRAME unsigned int GEN_THISCALL F_00e17200(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0xe17200u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
-  F_01059680(this + 8 GEN_EDX_FWD,param_1,param_2);
-  return;
-}
-
-/* ref: hkMemoryResourceHandle::vf4 */
-GEN_LIB GEN_NOFRAME uint GEN_THISCALL F_00e17210(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0xe17210u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  GEN_PIN(undefined4 param_2 = (undefined4)gen_a1;)
-  undefined * puVar1;
-  
-  puVar1 = ((undefined *)GEN_TOP((*((uint *)GEN_TOP((in_ecx + 0xc))) & 0xfffffffe)));
-  if (puVar1 == ((undefined *)GEN_TOP(0x0))) {
-    puVar1 = &REFG(undefined, 0x114c8d4);
-  }
-  return (uint)puVar1;
-}
-
-/* ref: hkMemoryResourceHandle::vf6 */
-GEN_LIB GEN_NOFRAME uint GEN_THISCALL F_00e17220(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0xe17220u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return *((uint *)GEN_TOP((in_ecx + 8)));
-}
-
-/* ref: hkMemoryResourceContainer::vf4 */
-GEN_LIB GEN_NOFRAME uint GEN_THISCALL F_00e17230(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0xe17230u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  GEN_PIN(undefined4 param_2 = (undefined4)gen_a1;)
-  return *((uint *)GEN_TOP((in_ecx + 8))) & 0xfffffffe;
 }
 

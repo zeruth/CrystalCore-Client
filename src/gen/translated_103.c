@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Apricot::Engine::Data::Runtime::LineParticle::vf4 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e0be0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e0be0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return in_ecx + 0x8c;
+}
+
+/* ref: Apricot::Engine::Data::Runtime::ModelParticle::vf1 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e0bf0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x9e0bf0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return *((uint *)GEN_TOP((in_ecx + 0xc))) >> 8 & 1;
+}
+
 /* ref: Apricot::Engine::Data::Runtime::ModelParticle::vf2 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e0c00(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -5250,21 +5266,5 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4ee0(GEN_P(int in_ecx, unsigned int 
   GEN_ENTER(0x9e4ee0u, gen_a0, 0u, 0u, 0u);
   GEN_PIN(int in_ecx = (int)gen_a0;)
   return (int)*((char *)GEN_TOP((in_ecx + 0x26)));
-}
-
-/* ref: Apricot::Engine::Data::Runtime::Particle::vf41 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4ef0(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9e4ef0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return *((byte *)GEN_TOP((in_ecx + 0x29))) >> 5 & 1;
-}
-
-/* ref: Apricot::Engine::Data::Runtime::Particle::vf42 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_009e4f00(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x9e4f00u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return *((uint *)GEN_TOP((in_ecx + 0x1c8)));
 }
 

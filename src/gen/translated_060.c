@@ -1,5 +1,28 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0072b300 */
+GEN_OWN GEN_FRAME byte F_0072b300(void)
+{
+  GEN_ENTER(0x72b300u, 0u, 0u, 0u, 0u);
+  undefined4 unaff_ECX = 0;
+  
+  return (byte)((uint)unaff_ECX >> 0x18);
+}
+
+/* ref: FUN_0072b310 */
+GEN_OWN GEN_FRAME uint F_0072b310(GEN_P(int param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1), GEN_P(int param_3, unsigned int gen_a2))
+{
+  GEN_ENTER(0x72b310u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  GEN_PIN(int param_2 = (int)gen_a1;)
+  GEN_PIN(int param_3 = (int)gen_a2;)
+  int iVar1;
+  
+  iVar1 = (param_2 - param_1 >> 2) * 4;
+  F_00c46e20(param_3,param_1,iVar1);
+  return iVar1 + param_3;
+}
+
 /* ref: FUN_0072b350 */
 GEN_OWN GEN_FRAME byte F_0072b350(void)
 {
@@ -5303,39 +5326,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00730320(GEN_P(undefined4 * in_ecx, unsign
   GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;)
   *param_2 = *in_ecx;
   return (uint)param_2;
-}
-
-/* ref: FUN_00730330 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_00730330(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x730330u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;)
-  *param_2 = *((undefined4 *)GEN_TOP((in_ecx + 4)));
-  return (uint)param_2;
-}
-
-/* ref: FUN_00730340 */
-GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_00730340(GEN_P(int param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1), GEN_P(char param_3, unsigned int gen_a2))
-{
-  GEN_ENTER(0x730340u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  GEN_PIN(uint param_2 = (uint)gen_a1;)
-  GEN_PIN(char param_3 = (char)gen_a2;)
-  uint * puVar1;
-  uint uVar2;
-  
-  if (0x1c < param_2) {
-                    
-    F_00c457e7(((char *)REFP(0x10b92dc)));
-  }
-  uVar2 = 1 << ((byte)param_2 & 0x1f);
-  puVar1 = ((uint *)GEN_TOP((param_1 + (param_2 >> 5) * 4)));
-  if (param_3 != '\0') {
-    *puVar1 = *puVar1 | uVar2;
-    return 0;
-  }
-  *puVar1 = *puVar1 & ~uVar2;
-  return 0;
 }
 

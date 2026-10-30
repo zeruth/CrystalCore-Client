@@ -1,5 +1,61 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_010723a0 */
+GEN_LIB GEN_NOFRAME uint F_010723a0(void)
+{
+  GEN_ENTER(0x10723a0u, 0u, 0u, 0u, 0u);
+  *(gen_code32 *)&REFG(undefined, 0x14a0ca8) = ((code *)REFP(0x97cbb0));
+  *(gen_code32 *)&REFG(undefined, 0x14a0cb0) = ((code *)REFP(0x97cbd0));
+  *(undefined4 *)&REFG(undefined, 0x14a0cac) = 0;
+  *(undefined4 *)&REFG(undefined, 0x14a0cb4) = 0;
+  *(gen_code32 *)&REFG(undefined, 0x14a0cb8) = ((code *)REFP(0x989540));
+  *(undefined4 *)&REFG(undefined, 0x14a0cbc) = 0;
+  return 0x989540;
+}
+
+/* ref: FUN_010723e0 */
+GEN_LIB GEN_NOFRAME uint F_010723e0(void)
+{
+  GEN_ENTER(0x10723e0u, 0u, 0u, 0u, 0u);
+  *(gen_code32 *)&REFG(undefined, 0x14a0cc0) = ((code *)REFP(0x97cbf0));
+  *(gen_code32 *)&REFG(undefined, 0x14a0cc8) = ((code *)REFP(0x97cc10));
+  *(undefined4 *)&REFG(undefined, 0x14a0cc4) = 0;
+  *(undefined4 *)&REFG(undefined, 0x14a0ccc) = 0;
+  *(gen_code32 *)&REFG(undefined, 0x14a0cd0) = ((code *)REFP(0x97cc10));
+  *(undefined4 *)&REFG(undefined, 0x14a0cd4) = 0;
+  return 0x97cc10;
+}
+
+/* ref: FUN_01072420 */
+GEN_LIB GEN_NOFRAME uint F_01072420(void)
+{
+  GEN_ENTER(0x1072420u, 0u, 0u, 0u, 0u);
+  *(gen_code32 *)&REFG(undefined, 0x14a0cd8) = ((code *)REFP(0x97ccd0));
+  *(gen_code32 *)&REFG(undefined, 0x14a0ce0) = ((code *)REFP(0x97cd00));
+  *(undefined4 *)&REFG(undefined, 0x14a0cdc) = 0;
+  *(undefined4 *)&REFG(undefined, 0x14a0ce4) = 0;
+  *(gen_code32 *)&REFG(undefined, 0x14a0ce8) = ((code *)REFP(0x97cd00));
+  *(undefined4 *)&REFG(undefined, 0x14a0cec) = 0;
+  return 0x97cd00;
+}
+
+/* ref: FUN_01072460 */
+GEN_LIB GEN_NOFRAME uint F_01072460(void)
+{
+  GEN_ENTER(0x1072460u, 0u, 0u, 0u, 0u);
+  *(gen_code32 *)&REFG(undefined, 0x14a0cf0) = ((code *)REFP(0x9bdda0));
+  *(gen_code32 *)&REFG(undefined, 0x14a0cf8) = ((code *)REFP(0x97cfe0));
+  *(gen_code32 *)&REFG(undefined, 0x14a0d00) = ((code *)REFP(0x9ab960));
+  *(gen_code32 *)&REFG(undefined, 0x14a0d08) = ((code *)REFP(0x9aba80));
+  *(undefined4 *)&REFG(undefined, 0x14a0cf4) = 0;
+  *(undefined4 *)&REFG(undefined, 0x14a0cfc) = 0;
+  *(undefined4 *)&REFG(undefined, 0x14a0d04) = 0;
+  *(undefined4 *)&REFG(undefined, 0x14a0d0c) = 0;
+  *(gen_code32 *)&REFG(undefined, 0x14a0d10) = ((code *)REFP(0x97d010));
+  *(undefined4 *)&REFG(undefined, 0x14a0d14) = 0;
+  return 0x97d010;
+}
+
 /* ref: FUN_010724c0 */
 GEN_LIB GEN_NOFRAME uint F_010724c0(void)
 {
@@ -3678,41 +3734,6 @@ GEN_LIB GEN_NOFRAME unsigned int F_01075c60(void)
 {
   GEN_ENTER(0x1075c60u, 0u, 0u, 0u, 0u);
   F_00d92c40(&REFG(undefined, 0x15d9da8) GEN_EDX_ARG,((char *)REFP(0x1139b38)),0,4,0,0,0,0,&REFG(undefined * PTR32, 0x113993c),1,0,0,0,0);
-  return;
-}
-
-/* ref: FUN_01075c90 */
-GEN_LIB GEN_NOFRAME uint F_01075c90(void)
-{
-  GEN_ENTER(0x1075c90u, 0u, 0u, 0u, 0u);
-  *(undefined * PTR32 *)&REFG(undefined, 0x1351c48) = REFG(undefined * PTR32, 0x13519cc);
-  return (uint)REFG(undefined * PTR32, 0x13519cc);
-}
-
-/* ref: FUN_01075ca0 */
-GEN_LIB GEN_NOFRAME unsigned int F_01075ca0(void)
-{
-  GEN_ENTER(0x1075ca0u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15d9dd8) GEN_EDX_ARG,((char *)REFP(0x1139b68)),0,1,0,0,&REFG(undefined * PTR32, 0x113996c),1,
-               &REFG(undefined * PTR32, 0x1351c40),1,0,0,0,0);
-  return;
-}
-
-/* ref: FUN_01075cd0 */
-GEN_LIB GEN_NOFRAME unsigned int F_01075cd0(void)
-{
-  GEN_ENTER(0x1075cd0u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15d9e08) GEN_EDX_ARG,((char *)REFP(0x1139b98)),0,4,0,0,0,0,&REFG(undefined * PTR32, 0x1139980),1,0,0,
-               0,0);
-  return;
-}
-
-/* ref: FUN_01075d00 */
-GEN_LIB GEN_NOFRAME unsigned int F_01075d00(void)
-{
-  GEN_ENTER(0x1075d00u, 0u, 0u, 0u, 0u);
-  F_00d92c40(&REFG(undefined, 0x15d9e38) GEN_EDX_ARG,((char *)REFP(0x1139bd0)),0,4,0,0,0,0,&REFG(undefined * PTR32, 0x1139998),1
-               ,0,0,0,0);
   return;
 }
 

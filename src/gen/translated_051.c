@@ -1,5 +1,24 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Graphics::Scene::DrawObject::vf14 */
+GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_006b3c20(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
+{
+  GEN_ENTER(0x6b3c20u, gen_a0, gen_a1, gen_a2, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
+  return 0;
+}
+
+/* ref: Client::Graphics::Scene::DrawObject::vf23 */
+GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_006b3c30(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x6b3c30u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  return;
+}
+
 /* ref: Client::Graphics::Scene::DrawObject::vf24 */
 GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_006b3c40(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
@@ -7662,32 +7681,5 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_006ba620(GEN_P(undefined * this, unsigne
   GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
   GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
   return 0;
-}
-
-/* ref: Client::Game::Event::EventSceneModuleSkipImpl::vf18 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_006ba630(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x6ba630u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  return 0;
-}
-
-/* ref: FUN_006ba640 */
-GEN_OWN GEN_FRAME uint F_006ba640(GEN_P(int param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x6ba640u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  GEN_FRAME_DECL_TOP(0x14, 12, 4);
-  int iVar1;
-  
-  ((uint *)(gen_frame + 0x0))[3] = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x10);
-  if ((param_1 < 0) || (iVar1 = param_1, 2 < param_1)) {
-    iVar1 = 0;
-  }
-  ((uint *)(gen_frame + 0x0))[0] = 0x3c;
-  ((uint *)(gen_frame + 0x0))[1] = 0x1e;
-  ((uint *)(gen_frame + 0x0))[2] = 0x5a;
-  return ((uint *)(gen_frame + 0x0))[(int)(iVar1)];
 }
 

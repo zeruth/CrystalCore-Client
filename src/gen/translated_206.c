@@ -1,5 +1,33 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::GatheringWork_TypeInfo::vf5 */
+GEN_LIB GEN_NOFRAME uint F_00ff3650(void)
+{
+  GEN_ENTER(0xff3650u, 0u, 0u, 0u, 0u);
+  return 0x15;
+}
+
+/* ref: Application::Network::WorkDefinitions::GatheringWork::vf1 */
+GEN_LIB GEN_NOFRAME uint F_00ff3660(void)
+{
+  GEN_ENTER(0xff3660u, 0u, 0u, 0u, 0u);
+  return 0x136b858;
+}
+
+/* ref: Application::Network::WorkDefinitions::RetainerList_TypeInfo::vf5 */
+GEN_LIB GEN_NOFRAME uint F_00ff3670(void)
+{
+  GEN_ENTER(0xff3670u, 0u, 0u, 0u, 0u);
+  return 4;
+}
+
+/* ref: Application::Network::WorkDefinitions::RetainerList::vf1 */
+GEN_LIB GEN_NOFRAME uint F_00ff3680(void)
+{
+  GEN_ENTER(0xff3680u, 0u, 0u, 0u, 0u);
+  return 0x136b85c;
+}
+
 /* ref: Application::Network::WorkDefinitions::NpcTradeItem_TypeInfo::vf5 */
 GEN_LIB GEN_NOFRAME uint F_00ff3690(void)
 {
@@ -20085,33 +20113,5 @@ GEN_LIB GEN_NOFRAME uint F_01011370(void)
 {
   GEN_ENTER(0x1011370u, 0u, 0u, 0u, 0u);
   return 0x136bdb4;
-}
-
-/* ref: Application::Network::WorkDefinitions::RetainerListTemporary_TypeInfo::vf5 */
-GEN_LIB GEN_NOFRAME uint F_01011380(void)
-{
-  GEN_ENTER(0x1011380u, 0u, 0u, 0u, 0u);
-  return 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::RetainerListTemporary::vf1 */
-GEN_LIB GEN_NOFRAME uint F_01011390(void)
-{
-  GEN_ENTER(0x1011390u, 0u, 0u, 0u, 0u);
-  return 0x136bdb8;
-}
-
-/* ref: Application::Network::WorkDefinitions::RequestAction_TypeInfo::vf5 */
-GEN_LIB GEN_NOFRAME uint F_010113a0(void)
-{
-  GEN_ENTER(0x10113a0u, 0u, 0u, 0u, 0u);
-  return 8;
-}
-
-/* ref: Application::Network::WorkDefinitions::RequestAction::vf1 */
-GEN_LIB GEN_NOFRAME uint F_010113b0(void)
-{
-  GEN_ENTER(0x10113b0u, 0u, 0u, 0u, 0u);
-  return 0x136bdbc;
 }
 

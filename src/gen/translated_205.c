@@ -1,5 +1,559 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Application::Network::WorkDefinitions::ChocoboTaxi::vf21 */
+GEN_LIB GEN_FRAME uint GEN_THISCALL F_00fcba80(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0xfcba80u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a1;)
+  undefined4 * puVar1;
+  uint uVar2;
+  
+  puVar1 = param_1;
+  if (0xf < (uint)param_1[5]) {
+    puVar1 = ((undefined4 *)GEN_TOP(*param_1));
+  }
+  uVar2 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 0x50))))(this GEN_EDX_FWD,puVar1);
+  return uVar2;
+}
+
+/* ref: FUN_00fcbaa0 */
+GEN_LIB GEN_FRAME uint GEN_THISCALL F_00fcbaa0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0xfcbaa0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[27])REFP(0x12aef84));
+  F_00fca8f0(this GEN_EDX_FWD,param_1);
+  return (uint)this;
+}
+
+/* ref: Application::Network::WorkDefinitions::RetainerInfoListWork_TypeInfo::vf20 */
+GEN_LIB GEN_FRAME uint GEN_THISCALL F_00fcbac0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(uint * param_2, unsigned int gen_a2), GEN_P(int param_3, unsigned int gen_a3))
+{
+  GEN_ENTER(0xfcbac0u, gen_a0, gen_a1, gen_a2, gen_a3);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_PIN(uint * param_2 = (uint *)(uintptr_t)gen_a2;)
+  GEN_PIN(int param_3 = (int)gen_a3;)
+  uint uVar1;
+  uint uVar2;
+  uint * puVar3;
+  
+  uVar2 = *param_2;
+  uVar1 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 0xc))))(this GEN_EDX_FWD,param_1);
+  puVar3 = param_2;
+  if (uVar2 == uVar1) {
+    puVar3 = param_2 + 1;
+    switch((unsigned int)(uintptr_t)(param_1)) {
+    case 0: ;
+      *((uint *)GEN_TOP((param_3 + 8))) = *puVar3;
+      *((uint *)GEN_TOP((param_3 + 0xc))) = param_2[2];
+      return 0xc;
+    case 1: ;
+      uVar2 = F_00e68ea0(puVar3,param_3 + 0x10,0x20);
+      return (uint)((int)puVar3 + (uVar2 - (int)param_2));
+    case 2: ;
+      *((uint *)GEN_TOP((param_3 + 0x30))) = *puVar3;
+      *((uint *)GEN_TOP((param_3 + 0x34))) = param_2[2];
+      return 0xc;
+    case 3: ;
+      *((char *)GEN_TOP((param_3 + 0x38))) = (char)*puVar3;
+      return 5;
+    case 4: ;
+      *((char *)GEN_TOP((param_3 + 0x39))) = (char)*puVar3;
+      return 5;
+    case 5: ;
+      *((char *)GEN_TOP((param_3 + 0x3a))) = (char)*puVar3;
+      puVar3 = ((uint *)GEN_TOP(((int)param_2 + 5)));
+    }
+  }
+  return (int)puVar3 - (int)param_2;
+}
+
+/* ref: Application::Network::WorkDefinitions::Cast::vf20 */
+GEN_LIB_GS GEN_FRAME byte GEN_THISCALL F_00fcbbb0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char * param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0xfcbbb0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(char * param_1 = (char *)(uintptr_t)gen_a1;)
+  GEN_FRAME_DECL_GS(0x78, 8, 4);
+  char cVar1;
+  code * pcVar2;
+  int * piVar3;
+  uint uVar4;
+  char * pcVar5;
+  int iVar6;
+  char * pcVar7;
+  char * pcVar8;
+  char * pcVar9;
+  char * pcVar10;
+  uint uVar11;
+  char * PTR32 * ppcVar12;
+  undefined * pCVar13;
+  char * PTR32 * ppcVar14;
+  ulonglong uVar15;
+  float fVar16;
+  
+  GEN_COOKIE((*(uint *)(gen_frame + 0x70)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x74));
+  pcVar9 = param_1 + 1;
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_FWD)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 4))))(piVar3 GEN_EDX_ARG);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,((char *)REFP(0x115856c)),uVar4 & 0xffff,0);
+  pcVar5 = ((char *)(gen_frame + 0x30));
+  do {
+    cVar1 = *pcVar5;
+    pcVar5 = pcVar5 + 1;
+  } while (cVar1 != '\0');
+  iVar6 = F_00c4b813(pcVar9,((char *)(gen_frame + 0x30)),(gen_size32)(pcVar5 + (-1 - (int)(((char *)(gen_frame + 0x30)) + 1))));
+  if (iVar6 != 0) {
+    return 0;
+  }
+  uVar4 = F_00fb9ad0(pcVar9,((char *)REFP(0x1158af0)));
+  if (uVar4 == 0) {
+    return 0;
+  }
+  pcVar5 = ((char *)GEN_TOP((uVar4 + 0xb)));
+  pcVar10 = param_1;
+  do {
+    pcVar7 = pcVar10;
+    pcVar10 = pcVar7 + 1;
+  } while (*pcVar7 != '\0');
+  iVar6 = 1;
+  for (pcVar10 = pcVar9; pcVar8 = pcVar7 - 1, pcVar10 < pcVar7 - 1; pcVar10 = pcVar10 + 1) {
+    if (*pcVar10 == '{') {
+      iVar6 = iVar6 + 1;
+    }
+    else if ((*pcVar10 == '}') && (iVar6 = iVar6 - 1, pcVar8 = pcVar10, iVar6 == 0)) break;
+  }
+  pcVar9 = ((char *)GEN_TOP(F_00e50750(pcVar9,((char *)REFP(0x1158ae0)),pcVar8)));
+  if (pcVar9 == ((char *)GEN_TOP(0x0))) {
+    return 0;
+  }
+  ((char * PTR32 *)(gen_frame + 0x14))[1] = pcVar9 + 0xc;
+  pcVar2 = *((gen_code32 *)GEN_TOP((*(int *)this + 4)));
+  ((char * PTR32 *)(gen_frame + 0x14))[0] = pcVar9;
+  piVar3 = ((int *)GEN_TOP((*pcVar2)(this)));
+  pcVar10 = ((char *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0x14))))(piVar3 GEN_EDX_ARG)));
+  (*(char * PTR32 *)(gen_frame + 0x10)) = pcVar10;
+  (*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)) = ((char * PTR32 *)GEN_TOP(0x0));
+  (*(char * PTR32 * PTR32 *)(gen_frame + 0x20)) = ((char * PTR32 *)GEN_TOP(0x0));
+  (*(char * PTR32 * PTR32 *)(gen_frame + 0x24)) = ((char * PTR32 *)GEN_TOP(0x0));
+  F_00e69310(((char * PTR32 *)(gen_frame + 0x14)) + 2 GEN_EDX_ARG,pcVar10);
+  (*(char * PTR32 *)(gen_frame + 0x2c)) = pcVar5;
+  pcVar10 = ((char * PTR32 *)(gen_frame + 0x14))[1];
+  ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x20));
+  if (pcVar5 != pcVar9) {
+    do {
+      cVar1 = *pcVar5;
+      if (cVar1 == '\"') {
+        pcVar5 = pcVar5 + 1;
+        (*(char * PTR32 *)(gen_frame + 0x2c)) = pcVar5;
+        if ((&(*(char * PTR32 *)(gen_frame + 0x2c)) < ppcVar14) && ((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)) <= &(*(char * PTR32 *)(gen_frame + 0x2c)))) {
+          iVar6 = (int)&(*(char * PTR32 *)(gen_frame + 0x2c)) - (int)(*(char * PTR32 * PTR32 *)(gen_frame + 0x1c));
+          if (ppcVar14 == (*(char * PTR32 * PTR32 *)(gen_frame + 0x24))) {
+            F_00e693e0(((char * PTR32 *)(gen_frame + 0x14)) + 2 GEN_EDX_ARG,1);
+            ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x20));
+          }
+          if (ppcVar14 != ((char * PTR32 *)GEN_TOP(0x0))) {
+            *ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[iVar6 >> 2];
+          }
+        }
+        else {
+          if (ppcVar14 == (*(char * PTR32 * PTR32 *)(gen_frame + 0x24))) {
+            F_00e693e0(((char * PTR32 *)(gen_frame + 0x14)) + 2 GEN_EDX_ARG,1);
+            ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x20));
+          }
+          if (ppcVar14 != ((char * PTR32 *)GEN_TOP(0x0))) {
+            *ppcVar14 = pcVar5;
+          }
+        }
+        ppcVar14 = ppcVar14 + 1;
+        (*(char * PTR32 * PTR32 *)(gen_frame + 0x20)) = ppcVar14;
+        pcVar5 = ((char *)GEN_TOP(F_00c51da0(pcVar5,0x22)));
+        pcVar10 = ((char * PTR32 *)(gen_frame + 0x14))[1];
+      }
+      else {
+        if (cVar1 == '{') {
+          (*(char * PTR32 *)(gen_frame + 0x2c)) = pcVar5;
+          F_00e695d0(((char * PTR32 *)(gen_frame + 0x14)) + 2 GEN_EDX_ARG,&(*(char * PTR32 *)(gen_frame + 0x2c)));
+          pcVar5 = (*(char * PTR32 *)(gen_frame + 0x2c)) + 1;
+          iVar6 = 1;
+          if (pcVar5 == pcVar10) goto LAB_00fcc4df;
+          do {
+            if (*pcVar5 == '{') {
+              iVar6 = iVar6 + 1;
+            }
+            else if ((*pcVar5 == '}') && (iVar6 = iVar6 - 1, iVar6 == 0)) break;
+            pcVar5 = pcVar5 + 1;
+          } while (pcVar5 != pcVar10);
+        }
+        else {
+          if (cVar1 != '[') goto LAB_00fcbdf3;
+          cVar1 = pcVar5[1];
+          (*(char * PTR32 *)(gen_frame + 0x2c)) = pcVar5 + 1;
+          iVar6 = 1;
+          if (cVar1 == '\"') {
+LAB_00fcbdbb: ;
+            (*(char * PTR32 *)(gen_frame + 0x2c)) = pcVar5 + 2;
+          }
+          else if (cVar1 == '[') {
+            iVar6 = 2;
+            goto LAB_00fcbdbb;
+          }
+          F_00e695d0(((char * PTR32 *)(gen_frame + 0x14)) + 2 GEN_EDX_ARG,&(*(char * PTR32 *)(gen_frame + 0x2c)));
+          for (pcVar5 = (*(char * PTR32 *)(gen_frame + 0x2c)); pcVar5 != pcVar10; pcVar5 = pcVar5 + 1) {
+            if (*pcVar5 == '[') {
+              iVar6 = iVar6 + 1;
+            }
+            else if ((*pcVar5 == ']') && (iVar6 = iVar6 - 1, iVar6 == 0)) break;
+          }
+        }
+        ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x20));
+        if (iVar6 == 1) goto LAB_00fcc4df;
+      }
+LAB_00fcbdf3: ;
+      pcVar5 = pcVar5 + 1;
+      (*(char * PTR32 *)(gen_frame + 0x2c)) = pcVar5;
+    } while (pcVar5 != ((char * PTR32 *)(gen_frame + 0x14))[0]);
+  }
+  pcVar9 = (*(char * PTR32 *)(gen_frame + 0x10));
+  pcVar5 = ((char *)GEN_TOP(((int)ppcVar14 - (int)((int)(uintptr_t)(*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))) >> 2)));
+  (*(char * PTR32 *)(gen_frame + 0x2c)) = pcVar5;
+  if ((int)(*(char * PTR32 *)(gen_frame + 0x10)) < (int)pcVar5) {
+LAB_00fcc4df: ;
+    if ((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)) != ((char * PTR32 *)GEN_TOP(0x0))) {
+      F_00406ad0((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)));
+    }
+    return 0;
+  }
+  (*(char * PTR32 * PTR32 *)(gen_frame + 0x0)) = ((char * PTR32 *)GEN_TOP(0x0));
+  (*(char * PTR32 * PTR32 *)(gen_frame + 0x4)) = ((char * PTR32 *)GEN_TOP(0x0));
+  (*(char * PTR32 * PTR32 *)(gen_frame + 0x8)) = ((char * PTR32 *)GEN_TOP(0x0));
+  F_00e69310(&(*(char * PTR32 * PTR32 *)(gen_frame + 0x0)) GEN_EDX_ARG,(*(char * PTR32 *)(gen_frame + 0x10)));
+  cVar1 = *((char * PTR32 *)(gen_frame + 0x14))[1];
+  ((char * PTR32 *)(gen_frame + 0x14))[0] = ((char * PTR32 *)(gen_frame + 0x14))[1];
+  ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x0));
+  ppcVar12 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x4));
+  pcVar5 = ((char * PTR32 *)(gen_frame + 0x14))[1];
+  while (((char * PTR32 *)(gen_frame + 0x14))[0] = pcVar5, cVar1 != ']') {
+    if (*pcVar5 == '\"') {
+      if ((((char * PTR32 *)(gen_frame + 0x14)) < ppcVar12) && (ppcVar14 <= ((char * PTR32 *)(gen_frame + 0x14)))) {
+        iVar6 = (int)((char * PTR32 *)(gen_frame + 0x14)) - (int)ppcVar14;
+        if (ppcVar12 == (*(char * PTR32 * PTR32 *)(gen_frame + 0x8))) {
+          uVar4 = (int)ppcVar12 - (int)((int)(uintptr_t)ppcVar14) >> 2;
+          if (0x3ffffffe < uVar4) {
+LAB_00fcbf79: ;
+                    
+            F_00c4579a(((char *)REFP(0x108497c)));
+          }
+          uVar4 = uVar4 + 1;
+          uVar11 = (int)(*(char * PTR32 * PTR32 *)(gen_frame + 0x8)) - (int)((int)(uintptr_t)ppcVar14) >> 2;
+          if (uVar11 < uVar4) {
+            if (0x3fffffff - (uVar11 >> 1) < uVar11) {
+              uVar11 = 0;
+            }
+            else {
+              uVar11 = uVar11 + (uVar11 >> 1);
+            }
+            if (uVar11 < uVar4) {
+              uVar11 = uVar4;
+            }
+            F_00e69310(&(*(char * PTR32 * PTR32 *)(gen_frame + 0x0)) GEN_EDX_ARG,uVar11);
+            ppcVar12 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x4));
+            ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x0));
+          }
+        }
+        if (ppcVar12 != ((char * PTR32 *)GEN_TOP(0x0))) {
+          *ppcVar12 = ppcVar14[iVar6 >> 2];
+        }
+      }
+      else {
+        if (ppcVar12 == (*(char * PTR32 * PTR32 *)(gen_frame + 0x8))) {
+          uVar4 = (int)ppcVar12 - (int)((int)(uintptr_t)ppcVar14) >> 2;
+          if (0x3ffffffe < uVar4) goto LAB_00fcbf79;
+          uVar4 = uVar4 + 1;
+          uVar11 = (int)(*(char * PTR32 * PTR32 *)(gen_frame + 0x8)) - (int)((int)(uintptr_t)ppcVar14) >> 2;
+          if (uVar11 < uVar4) {
+            if (0x3fffffff - (uVar11 >> 1) < uVar11) {
+              uVar11 = 0;
+            }
+            else {
+              uVar11 = uVar11 + (uVar11 >> 1);
+            }
+            if (uVar11 < uVar4) {
+              uVar11 = uVar4;
+            }
+            F_00e69310(&(*(char * PTR32 * PTR32 *)(gen_frame + 0x0)) GEN_EDX_ARG,uVar11);
+            ppcVar12 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x4));
+            ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x0));
+          }
+        }
+        if (ppcVar12 != ((char * PTR32 *)GEN_TOP(0x0))) {
+          *ppcVar12 = pcVar5;
+        }
+      }
+      ppcVar12 = ppcVar12 + 1;
+      (*(char * PTR32 * PTR32 *)(gen_frame + 0x4)) = ppcVar12;
+      pcVar5 = ((char *)GEN_TOP(F_00c51da0(((char * PTR32 *)(gen_frame + 0x14))[0] + 1,0x22)));
+      ((char * PTR32 *)(gen_frame + 0x14))[0] = pcVar5;
+      if (pcVar5 == ((char *)GEN_TOP(0x0))) {
+        if (ppcVar14 != ((char * PTR32 *)GEN_TOP(0x0))) {
+          F_00406ad0(ppcVar14);
+        }
+        if ((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)) == ((char * PTR32 *)GEN_TOP(0x0))) {
+          return 0;
+        }
+        F_00406ad0((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)));
+        return 0;
+      }
+    }
+    pcVar5 = pcVar5 + 1;
+    cVar1 = *pcVar5;
+    ((char * PTR32 *)(gen_frame + 0x14))[0] = pcVar5;
+    pcVar9 = (*(char * PTR32 *)(gen_frame + 0x10));
+  }
+  pcVar5 = ((char *)GEN_TOP(((int)ppcVar12 - (int)((int)(uintptr_t)ppcVar14) >> 2)));
+  (*(char * PTR32 *)(gen_frame + 0x10)) = pcVar5;
+  if ((int)pcVar9 < (int)pcVar5) {
+    if (ppcVar14 != ((char * PTR32 *)GEN_TOP(0x0))) {
+      F_00406ad0(ppcVar14);
+    }
+    if ((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)) == ((char * PTR32 *)GEN_TOP(0x0))) {
+      return 0;
+    }
+    F_00406ad0((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)));
+    return 0;
+  }
+  if ((*(char * PTR32 *)(gen_frame + 0x2c)) != pcVar5) {
+    if (ppcVar14 != ((char * PTR32 *)GEN_TOP(0x0))) {
+      F_00406ad0(ppcVar14);
+    }
+    if ((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)) == ((char * PTR32 *)GEN_TOP(0x0))) {
+      return 0;
+    }
+    F_00406ad0((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)));
+    return 0;
+  }
+  pcVar2 = *((gen_code32 *)GEN_TOP((*(int *)this + 4)));
+  piVar3 = ((int *)GEN_TOP((*pcVar2)(this)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,0);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) goto LAB_00fcc36f;
+    uVar15 = F_00e50570((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10]);
+    *(int *)(this + 4) = (int)uVar15;
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,1);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) goto LAB_00fcc36f;
+    uVar15 = F_00e50570((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10]);
+    *(int *)(this + 8) = (int)uVar15;
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,2);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) goto LAB_00fcc36f;
+    uVar15 = F_00e50570((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10]);
+    *(int *)(this + 0xc) = (int)uVar15;
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,3);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) goto LAB_00fcc36f;
+    uVar15 = F_00e50570((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10]);
+    *(int *)(this + 0x10) = (int)uVar15;
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,4);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) goto LAB_00fcc36f;
+    fVar16 = F_00e50660((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10]);
+    *(float *)(this + 0x14) = fVar16;
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,5);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) goto LAB_00fcc36f;
+    uVar15 = F_00e50570((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10]);
+    *(int *)(this + 0x18) = (int)uVar15;
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,6);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) goto LAB_00fcc36f;
+    this[0x1c] = (undefined1)(*(*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10] != '0');
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,7);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) goto LAB_00fcc36f;
+    this[0x1d] = (undefined1)(*(*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10] != '0');
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,8);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar10 = ((char *)GEN_TOP(0x0));
+    if (pcVar5 != ((char *)GEN_TOP(0x0))) {
+      pcVar10 = ((char *)GEN_TOP(0x0));
+      do {
+        if (pcVar9 == ppcVar14[(int)pcVar10]) break;
+        pcVar10 = pcVar10 + 1;
+      } while (pcVar10 < pcVar5);
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar10) {
+LAB_00fcc36f: ;
+      if (ppcVar14 != ((char * PTR32 *)GEN_TOP(0x0))) {
+        F_00406ad0(ppcVar14);
+      }
+      if ((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)) == ((char * PTR32 *)GEN_TOP(0x0))) {
+        return 0;
+      }
+      F_00406ad0((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)));
+      return 0;
+    }
+    this[0x1e] = (undefined1)(*(*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar10] != '0');
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,9);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar5 = ((char *)GEN_TOP(0x0));
+    if ((*(char * PTR32 *)(gen_frame + 0x10)) != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == (*(char * PTR32 * PTR32 *)(gen_frame + 0x0))[(int)pcVar5]) break;
+        pcVar5 = pcVar5 + 1;
+      } while (pcVar5 < (*(char * PTR32 *)(gen_frame + 0x10)));
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar5) {
+      if ((*(char * PTR32 * PTR32 *)(gen_frame + 0x0)) != ((char * PTR32 *)GEN_TOP(0x0))) {
+        F_00406ad0((*(char * PTR32 * PTR32 *)(gen_frame + 0x0)));
+      }
+      if ((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)) == ((char * PTR32 *)GEN_TOP(0x0))) {
+        return 0;
+      }
+      F_00406ad0((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c)));
+      return 0;
+    }
+    pcVar9 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar5];
+    pCVar13 = this + 0x20;
+    iVar6 = 3;
+    do {
+      fVar16 = F_00e50660(pcVar9);
+      *(float *)pCVar13 = fVar16;
+      uVar4 = F_00c51da0(pcVar9,0x2c);
+      pCVar13 = pCVar13 + 4;
+      iVar6 = iVar6 - 1;
+      pcVar9 = ((char *)GEN_TOP((uVar4 + 2)));
+    } while (iVar6 != 0);
+  }
+  piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*(int *)this + 4))))(this GEN_EDX_ARG)));
+  uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0xc))))(piVar3 GEN_EDX_ARG,10);
+  F_00c472af(((char *)(gen_frame + 0x30)),0x40,&REFG(undefined, 0x1158ad8),uVar4);
+  pcVar9 = ((char *)GEN_TOP(F_00fb9ad0(((char * PTR32 *)(gen_frame + 0x14))[1],((char *)(gen_frame + 0x30)))));
+  ppcVar12 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x1c));
+  ppcVar14 = (*(char * PTR32 * PTR32 *)(gen_frame + 0x0));
+  if (pcVar9 != ((char *)GEN_TOP(0x0))) {
+    pcVar5 = ((char *)GEN_TOP(0x0));
+    if ((*(char * PTR32 *)(gen_frame + 0x10)) != ((char *)GEN_TOP(0x0))) {
+      do {
+        if (pcVar9 == (*(char * PTR32 * PTR32 *)(gen_frame + 0x0))[(int)pcVar5]) break;
+        pcVar5 = pcVar5 + 1;
+      } while (pcVar5 < (*(char * PTR32 *)(gen_frame + 0x10)));
+    }
+    if ((*(char * PTR32 *)(gen_frame + 0x2c)) <= pcVar5) {
+      if ((*(char * PTR32 * PTR32 *)(gen_frame + 0x0)) != ((char * PTR32 *)GEN_TOP(0x0))) {
+        F_00406ad0((*(char * PTR32 * PTR32 *)(gen_frame + 0x0)));
+      }
+      goto LAB_00fcc4df;
+    }
+    fVar16 = F_00e50660((*(char * PTR32 * PTR32 *)(gen_frame + 0x1c))[(int)pcVar5]);
+    *(float *)(this + 0x30) = fVar16;
+  }
+  if (ppcVar14 != ((char * PTR32 *)GEN_TOP(0x0))) {
+    F_00406ad0(ppcVar14);
+  }
+  if (ppcVar12 != ((char * PTR32 *)GEN_TOP(0x0))) {
+    F_00406ad0(ppcVar12);
+  }
+  return 1;
+}
+
 /* ref: Application::Network::WorkDefinitions::ResistGroup::vf20 */
 GEN_LIB_GS GEN_FRAME byte GEN_THISCALL F_00fcc550(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char * param_1, unsigned int gen_a1))
 {
@@ -25548,33 +26102,5 @@ GEN_LIB GEN_NOFRAME uint F_00ff3640(void)
 {
   GEN_ENTER(0xff3640u, 0u, 0u, 0u, 0u);
   return 0x136b854;
-}
-
-/* ref: Application::Network::WorkDefinitions::GatheringWork_TypeInfo::vf5 */
-GEN_LIB GEN_NOFRAME uint F_00ff3650(void)
-{
-  GEN_ENTER(0xff3650u, 0u, 0u, 0u, 0u);
-  return 0x15;
-}
-
-/* ref: Application::Network::WorkDefinitions::GatheringWork::vf1 */
-GEN_LIB GEN_NOFRAME uint F_00ff3660(void)
-{
-  GEN_ENTER(0xff3660u, 0u, 0u, 0u, 0u);
-  return 0x136b858;
-}
-
-/* ref: Application::Network::WorkDefinitions::RetainerList_TypeInfo::vf5 */
-GEN_LIB GEN_NOFRAME uint F_00ff3670(void)
-{
-  GEN_ENTER(0xff3670u, 0u, 0u, 0u, 0u);
-  return 4;
-}
-
-/* ref: Application::Network::WorkDefinitions::RetainerList::vf1 */
-GEN_LIB GEN_NOFRAME uint F_00ff3680(void)
-{
-  GEN_ENTER(0xff3680u, 0u, 0u, 0u, 0u);
-  return 0x136b85c;
 }
 

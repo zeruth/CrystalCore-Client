@@ -1,5 +1,21 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00c30a40 */
+GEN_OWN GEN_FRAME uint F_00c30a40(GEN_P(uint param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0xc30a40u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(uint param_1 = (uint)gen_a0;)
+  return param_1;
+}
+
+/* ref: FUN_00c30a50 */
+GEN_OWN GEN_FRAME uint F_00c30a50(GEN_P(int param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0xc30a50u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  return param_1 + 4;
+}
+
 /* ref: FUN_00c30a60 */
 GEN_OWN GEN_FRAME uint F_00c30a60(GEN_P(int param_1, unsigned int gen_a0))
 {
@@ -13987,27 +14003,5 @@ GEN_OWN GEN_FRAME uint F_00c40a80(GEN_P(uint param_1, unsigned int gen_a0), GEN_
     return (uVar1 - iVar2) + 0x3f;
   }
   return 0x41 - iVar2;
-}
-
-/* ref: FUN_00c40b20 */
-GEN_OWN GEN_FRAME uint F_00c40b20(GEN_P(float param_1, float gen_a0))
-{
-  GEN_ENTER(0xc40b20u, gen_trace_f(gen_a0), 0u, 0u, 0u);
-  GEN_PIN(float param_1 = (float)gen_a0;)
-  if (GEN_ISNAN(param_1)) {
-    return 1;
-  }
-  return 0;
-}
-
-/* ref: FUN_00c40b40 */
-GEN_OWN GEN_FRAME byte F_00c40b40(GEN_P(float param_1, float gen_a0))
-{
-  GEN_ENTER(0xc40b40u, gen_trace_f(gen_a0), 0u, 0u, 0u);
-  GEN_PIN(float param_1 = (float)gen_a0;)
-  if (REFG(double, 0x10909a0) < (double)param_1) {
-    return 1;
-  }
-  return (!GEN_ISNAN(REFG(double, 0x10909a8)) && !GEN_ISNAN((double)param_1)) && !(REFG(double, 0x10909a8) <= (double)param_1);
 }
 
