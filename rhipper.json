@@ -4,6 +4,7 @@
   "exe": "archive/installs/beta-672261/game/ffxiv.exe",
   "arch": "x86",
   "image_base": "0x400000",
+  "jobs": 2,
   "sources": ["src"],
   "gen": "src/gen",
   "build": {"dir": "build/cmake", "config": "Release", "gen_target": "gen", "target": "CrystalCore"},

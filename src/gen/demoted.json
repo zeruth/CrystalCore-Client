@@ -1,7 +1,1 @@
-{
- "0040ea50": "C2143: syntax error: missing ';' before 'constant' | this[uVar1] = (((code *)REFP(0xc4630f)))0x0;",
- "00b76850": "C2059: syntax error: 'return' | return (uint)(gen_fl2bits((float)(((float10)GEN_TOD(gen_bits2f(param_3))) + (float10)REFG(double, 0x1094800))));",
- "00c45f56": "C2143: syntax error: missing ';' before 'constant' | this[4] = (((code *)REFP(0xc45f56)))0x0;",
- "00c4630f": "C2143: syntax error: missing ';' before 'constant' | *this = (((code *)REFP(0xc4630f)))0x0;",
- "00d15130": "C2440: 'type cast': cannot convert from 'float' to 'HGDIOBJ' | (*(HGDIOBJ *)(gen_frame + 0x8c)) = (HGDIOBJ)(float)fVar12;"
-}
+{}

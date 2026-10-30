@@ -37,7 +37,10 @@ foreach(flags CMAKE_C_FLAGS_DEBUG CMAKE_C_FLAGS_RELWITHDEBINFO)
   string(REGEX REPLACE "[/-](RTC[1csu]+|Od)( |$)" "" ${flags} "${${flags}}")
 endforeach()
 
-target_compile_options(gen PRIVATE /W1 /bigobj /O2 /GS- /TC /Zi
+# (GEN_OPT: the translation's optimization, /O2; another for an experiment, `-DGEN_OPT=/Od` in a
+# build directory of its own: unoptimized, every load and store where the C has it)
+set(GEN_OPT "/O2" CACHE STRING "the translated code's optimization")
+target_compile_options(gen PRIVATE /W1 /bigobj ${GEN_OPT} /GS- /TC /Zi
   /we4013 /wd4022 /wd4024 /wd4028 /wd4047 /wd4090 /wd4133 /wd4146 /wd4244 /wd4305 /wd4311 /wd4312
   /wd4554 /wd4700 /wd4715 /wd4716)
 
