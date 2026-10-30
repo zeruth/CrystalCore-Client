@@ -1,5 +1,94 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::Sound::SoundData::vf30 */
+GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_004ed4e0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x4ed4e0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  int iVar1;
+  
+  if (this[0x6c] != (undefined1)0x0) {
+    return;
+  }
+  iVar1 = *(int *)(this + 100);
+  this[0x68] = (undefined1)0x0;
+  if (iVar1 != 0) {
+    if (iVar1 == 1) {
+      F_004ecf80(*(undefined * PTR32 *)(this + 0x50) GEN_EDX_FWD,*(undefined4 *)(this + 0x54),param_1);
+      this[0x6c] = (undefined1)0x1;
+      return;
+    }
+    if (iVar1 != 2) goto LAB_004ed50a;
+  }
+  F_00cbdbf0(this + 0x20 GEN_EDX_ARG,param_1);
+LAB_004ed50a: ;
+  this[0x6c] = (undefined1)0x1;
+  return;
+}
+
+/* ref: Client::Sound::SoundData::vf31 */
+GEN_OWN_GS GEN_FRAME uint GEN_THISCALL F_004ed530(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x4ed530u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_FRAME_DECL_GS(0x408, 8, 4);
+  int iVar1;
+  byte bVar2;
+  uint uVar3;
+  uint uVar4;
+  uint3 uVar5;
+  uint uVar6;
+  
+  GEN_COOKIE((*(uint *)(gen_frame + 0x400)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x404));
+  iVar1 = *(int *)(this + 100);
+  if (iVar1 == 0) {
+    uVar3 = 0;
+    if (*(int *)(this + 0x18) != 0) {
+LAB_004ed55c: ;
+      bVar2 = F_00cbc040(this + 0x20 GEN_EDX_FWD);
+      if (bVar2 != 0) {
+        uVar3 = F_00cbc220(this + 0x20 GEN_EDX_ARG);
+        if (uVar3 == REFG(undefined4, 0x11299d8)) {
+          return 1;
+        }
+      }
+      return 0;
+    }
+  }
+  else if (iVar1 == 1) {
+    uVar3 = 0;
+    if (*(int *)(this + 0x18) != 0) {
+      uVar4 = F_00d2eba0(((int *)(gen_frame + 0x0)),0x100);
+      uVar6 = 0;
+      uVar3 = 0;
+      if (uVar4 != 0) {
+        do {
+          uVar5 = (uint3)(uVar4 >> 8);
+          if (((int *)(gen_frame + 0x0))[(int)(uVar6)] == *(int *)(this + 0x58)) {
+            return CONCAT31(uVar5,1);
+          }
+          uVar6 = uVar6 + 1;
+        } while (uVar6 < uVar4);
+        return (uint)uVar5 << 8;
+      }
+    }
+  }
+  else {
+    uVar3 = iVar1 - 2;
+    if (uVar3 == 0) goto LAB_004ed55c;
+  }
+  return uVar3 & 0xffffff00;
+}
+
+/* ref: Client::Sound::SoundData::vf32 */
+GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_004ed620(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x4ed620u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  return *((byte *)GEN_TOP((in_ecx + 0x6c)));
+}
+
 /* ref: Client::Sound::SoundData::vf33 */
 GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_004ed630(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -13840,37 +13929,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_004fe100(GEN_P(int in_ecx, unsigned int ge
   GEN_PIN(uint param_2 = (uint)gen_a1;)
   *((uint *)GEN_TOP((in_ecx + 0x30))) = param_2;
   return param_2;
-}
-
-/* ref: FUN_004fe1f0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_004fe1f0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(uint param_3, unsigned int gen_a3))
-{
-  GEN_ENTER(0x4fe1f0u, gen_a0, gen_a1, gen_a2, gen_a3);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
-  GEN_PIN(uint param_3 = (uint)gen_a3;)
-  *((undefined4 *)GEN_TOP(((int)this + 0xc))) = param_1;
-  *((undefined4 *)GEN_TOP(((int)this + 0x10))) = param_2;
-  *((uint *)GEN_TOP(((int)this + 0x14))) = param_3;
-  return param_3;
-}
-
-/* ref: FUN_004fe230 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_004fe230(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x4fe230u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  GEN_PIN(uint param_2 = (uint)gen_a1;)
-  *((uint *)GEN_TOP((in_ecx + 0x18))) = param_2;
-  return param_2;
-}
-
-/* ref: FUN_004fe250 */
-GEN_OWN GEN_FRAME byte GEN_STDCALL F_004fe250(GEN_P(int param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x4fe250u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  return 8 < param_1;
 }
 

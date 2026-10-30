@@ -786,6 +786,20 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00401d80(GEN_P(undefined4 * param_1, unsig
   return (uint)param_1;
 }
 
+/* ref: FUN_00401db0 */
+GEN_OWN_GS GEN_FRAME byte GEN_THISCALL F_00401db0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x401db0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_FRAME_DECL_GS(0x408, 8, 4);
+  
+  GEN_COOKIE((*(uint *)(gen_frame + 0x400)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0x404));
+  F_00401be0(((undefined1 *)(gen_frame + 0x0)),&REFG(undefined, 0x1080530),param_1);
+  F_00c473c8((int)this + 4,0x4000,((undefined1 *)(gen_frame + 0x0)));
+  return 1;
+}
+
 /* ref: FUN_00401e10 */
 GEN_OWN GEN_FRAME byte F_00401e10(void)
 {
@@ -10613,39 +10627,6 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0040d140(GEN_P(undefined * this, unsigned 
   } while (local_8 != 0);
   uVar2 = *((uint *)GEN_TOP(((int)this + 4))) ^ uVar2;
   *param_1 = *(uint *)this ^ uVar1;
-  *param_2 = uVar2;
-  return uVar2;
-}
-
-/* ref: Global::BlowfishEncryptBlock */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_0040d1d0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint * param_1, unsigned int gen_a1), GEN_P(uint * param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0x40d1d0u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(uint * param_1 = (uint *)(uintptr_t)gen_a1;)
-  GEN_PIN(uint * param_2 = (uint *)(uintptr_t)gen_a2;)
-  uint uVar1;
-  uint uVar2;
-  uint uVar3;
-  uint * puVar4;
-  int local_8;
-  
-  uVar2 = *param_1;
-  local_8 = 0x10;
-  uVar3 = *param_2;
-  puVar4 = this;
-  do {
-    uVar1 = uVar2 ^ *puVar4;
-    puVar4 = puVar4 + 1;
-    uVar2 = (*((int *)GEN_TOP(((int)this + (uVar1 >> 0x18) * 4 + 0x48))) +
-             *((int *)GEN_TOP(((int)this + (uVar1 >> 0x10 & 0xff) * 4 + 0x448))) ^
-            *((uint *)GEN_TOP(((int)this + (uVar1 >> 8 & 0xff) * 4 + 0x848)))) +
-            *((int *)GEN_TOP(((int)this + (uVar1 & 0xff) * 4 + 0xc48))) ^ uVar3;
-    local_8 = local_8 - 1;
-    uVar3 = uVar1;
-  } while (local_8 != 0);
-  uVar2 = *((uint *)GEN_TOP(((int)this + 0x40))) ^ uVar2;
-  *param_1 = *((uint *)GEN_TOP(((int)this + 0x44))) ^ uVar1;
   *param_2 = uVar2;
   return uVar2;
 }

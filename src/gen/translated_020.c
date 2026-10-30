@@ -1,5 +1,47 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_005187e0 */
+GEN_OWN GEN_FRAME uint F_005187e0(GEN_P(int * param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0x5187e0u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a0;)
+  char cVar1;
+  int * piVar2;
+  int * piVar3;
+  int * piVar4;
+  
+  cVar1 = *((char *)GEN_TOP((*param_1 + 0x15)));
+  piVar2 = ((int *)GEN_TOP(*param_1));
+  piVar4 = param_1;
+  while (piVar3 = piVar2, cVar1 == '\0') {
+    piVar2 = ((int *)GEN_TOP(*piVar3));
+    cVar1 = *((char *)GEN_TOP(((int)piVar2 + 0x15)));
+    piVar4 = piVar3;
+  }
+  return (uint)piVar4;
+}
+
+/* ref: FUN_00518820 */
+GEN_OWN GEN_FRAME uint GEN_STDCALL F_00518820(GEN_P(uint * param_1, unsigned int gen_a0), GEN_P(uint * param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x518820u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(uint * param_1 = (uint *)(uintptr_t)gen_a0;)
+  GEN_PIN(uint * param_2 = (uint *)(uintptr_t)gen_a1;)
+  return (uint)(*param_1 < *param_2);
+}
+
+/* ref: FUN_00518840 */
+GEN_OWN GEN_FRAME uint GEN_STDCALL F_00518840(GEN_P(undefined4 param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x518840u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a0;)
+  GEN_PIN(int param_2 = (int)gen_a1;)
+  ulonglong uVar1;
+  
+  uVar1 = F_00429760(param_1,param_2 * 0x18,0x12e);
+  return (uint)uVar1;
+}
+
 /* ref: FUN_00518870 */
 GEN_OWN GEN_FRAME uint F_00518870(GEN_P(int param_1, unsigned int gen_a0))
 {
@@ -4786,32 +4828,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0051cda0(GEN_P(undefined4 * param_1, unsig
     F_00406ad0(param_1);
   }
   return (uint)param_1;
-}
-
-/* ref: Client::System::Resource::Handle::WeaponAttachOffsetExistResourceHandleFactory::vf2 */
-GEN_OWN GEN_NOFRAME uint F_0051cdf0(void)
-{
-  GEN_ENTER(0x51cdf0u, 0u, 0u, 0u, 0u);
-  return 0xa0;
-}
-
-/* ref: Client::System::Resource::Handle::WeaponAttachOffsetExistResourceHandleFactory::vf0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_0051ce00(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x51ce00u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
-  GEN_PIN(byte param_2 = (byte)gen_a1;)
-  *param_1 = (*(undefined * PTR32 (*)[1])REFP(0x10993b0));
-  if ((param_2 & 1) != 0) {
-    F_00406ad0(param_1);
-  }
-  return (uint)param_1;
-}
-
-/* ref: Client::System::Resource::Handle::SkeletonResourceHandleFactory::vf2 */
-GEN_OWN GEN_NOFRAME uint F_0051ce50(void)
-{
-  GEN_ENTER(0x51ce50u, 0u, 0u, 0u, 0u);
-  return 0x110;
 }
 
