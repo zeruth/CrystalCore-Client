@@ -1,17 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_005bf250 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_005bf250(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
-{
-  GEN_ENTER(0x5bf250u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
-  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
-  *(undefined4 *)this = param_2;
-  *((undefined4 *)GEN_TOP(((int)this + 4))) = param_1;
-  return (uint)this;
-}
-
 /* ref: FUN_005bf270 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_005bf270(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
 {
@@ -806,7 +794,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_005bfd40(GEN_P(undefined * this, unsigned 
   int iVar2;
   
   piVar1 = ((int *)GEN_TOP(((int)this + 0x29c)));
-  iVar2 = _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(param_1));
+  iVar2 = _InterlockedExchangeAdd((volatile gen_long *)(piVar1), (gen_long)(param_1));
   if (*((uint *)GEN_TOP(((int)this + 0x284))) <
       (uint)(*((int *)GEN_TOP(((int)this + 0x298))) + *((int *)GEN_TOP(((int)this + 0x29c))))) {
     return 0;
@@ -874,9 +862,9 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_005bfe10(GEN_P(undefined * this, unsigned 
   }
   iVar4 = *((int *)GEN_TOP(((int)this + 0x10)));
   piVar1 = ((int *)GEN_TOP((iVar4 + 0x298)));
-  iVar3 = _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(0x800));
+  iVar3 = _InterlockedExchangeAdd((volatile gen_long *)(piVar1), (gen_long)(0x800));
   if (*((uint *)GEN_TOP((iVar4 + 0x284))) < (uint)(*((int *)GEN_TOP((iVar4 + 0x29c))) * 3 + *piVar1)) {
-    _InterlockedExchangeAdd((volatile long *)(piVar1), (long)(-0x800));
+    _InterlockedExchangeAdd((volatile gen_long *)(piVar1), (gen_long)(-0x800));
     return 0;
   }
   puVar5 = ((undefined4 *)GEN_TOP((*((int *)GEN_TOP((iVar4 + 0x290))) + iVar3)));
@@ -907,7 +895,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_005bfeb0(GEN_P(undefined * this, unsigned 
   if (*piVar1 == 0) {
     iVar4 = *((int *)GEN_TOP(((int)this + 0x10)));
     puVar2 = ((uint *)GEN_TOP((iVar4 + 0x29c)));
-    uVar3 = _InterlockedExchangeAdd((volatile long *)(puVar2), (long)(0x400));
+    uVar3 = _InterlockedExchangeAdd((volatile gen_long *)(puVar2), (gen_long)(0x400));
     if (*((uint *)GEN_TOP((iVar4 + 0x284))) < *puVar2 * 3 + *((int *)GEN_TOP((iVar4 + 0x298)))) {
       LOCK();
       uVar3 = *puVar2;
@@ -1156,7 +1144,7 @@ GEN_OWN GEN_NOFRAME byte F_005c0310(void)
   return 0;
 }
 
-/* ref: Client::System::Input::SoftKeyboardDevice::vf0 */
+/* ref: Client::System::Input::SoftKeyboardDevice::ScalarDeletingDestructor */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_005c0320(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x5c0320u, gen_a0, gen_a1, 0u, 0u);
@@ -5309,9 +5297,9 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_005c4220(GEN_P(undefined * this, unsigned 
   iVar4 = *((int *)GEN_TOP(((int)this + (int)(&REFG(undefined * PTR32, 0x10a0c2c))[(int)(param_1)] * 0x10 + 0x24c)));
   iVar2 = (int)(&REFG(undefined * PTR32, 0x10a0c2c))[(int)(param_1)] * 0x10;
   puVar1 = ((uint *)GEN_TOP(((int)this + iVar2 + 600)));
-  uVar3 = _InterlockedExchangeAdd((volatile long *)(puVar1), (long)(iVar4 * 0x4000));
+  uVar3 = _InterlockedExchangeAdd((volatile gen_long *)(puVar1), (gen_long)(iVar4 * 0x4000));
   if (*((uint *)GEN_TOP(((int)this + iVar2 + 0x254))) < *puVar1) {
-    _InterlockedExchangeAdd((volatile long *)(puVar1), (long)(iVar4 * -0x4000));
+    _InterlockedExchangeAdd((volatile gen_long *)(puVar1), (gen_long)(iVar4 * -0x4000));
     return 0;
   }
   return *((int *)GEN_TOP(((int)this + 0x294))) + *((int *)GEN_TOP(((int)this + iVar2 + 0x250))) + uVar3;
@@ -5495,7 +5483,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_005c4510(GEN_P(int * param_1, unsigned int
   return (uint)param_1;
 }
 
-/* ref: FUN_005c4550 */
+/* ref: Global::PushClearCommand */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_005c4550(GEN_P(undefined * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_2, unsigned int gen_a1), GEN_P(undefined4 param_3, unsigned int gen_a2), GEN_P(float param_4, float gen_a3), GEN_P(undefined4 param_5, unsigned int gen_a4), GEN_P(undefined4 * param_6, unsigned int gen_a5))
 {
   GEN_ENTER(0x5c4550u, gen_a0, gen_a1, gen_a2, gen_trace_f(gen_a3));
@@ -5736,6 +5724,16 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_005c48f0(GEN_P(undefined4 * in_ecx, unsign
   GEN_PIN(undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;)
   GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;)
   *param_2 = *in_ecx;
+  return (uint)param_2;
+}
+
+/* ref: FUN_005c4900 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_005c4900(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x5c4900u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int in_ecx = (int)gen_a0;)
+  GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;)
+  *param_2 = *((undefined4 *)GEN_TOP((in_ecx + 4)));
   return (uint)param_2;
 }
 

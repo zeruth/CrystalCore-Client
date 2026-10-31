@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CrystalCore</string>
+
+    <!-- the launcher's dress -->
+    <string name="brand">CrystalCore</string>
+    <string name="tagline">A Realm Reborn · 2013 beta client</string>
+    <string name="section_install">The realm\'s data</string>
+    <string name="section_patches">Patches</string>
+    <string name="section_progress">Progress</string>
+    <string name="section_log">Record</string>
+    <string name="section_storage">Storage</string>
+    <string name="section_total">Total</string>
+    <string name="key_downloaded">downloaded</string>
+    <string name="key_applied">applied</string>
+    <string name="installer_brief">Game %1$s, build %2$d: the A Realm Reborn beta client CrystalCore ports, built from %3$d patches off Square Enix\'s patch server. No disc needed.\n\n%4$s</string>
+    <string name="storage_used">Used %1$s</string>
+    <string name="storage_needed">Needed ~%1$s</string>
+    <string name="storage_free">Free %1$s</string>
+    <string name="total_detail">%1$s / %2$s downloaded · %3$s applied</string>
+    <string name="patch_downloading">%1$d%%</string>
+    <string name="patch_checking">checking</string>
+    <string name="patch_applying">applying %1$d%%</string>
+    <string name="patch_waiting">waiting for network</string>
+    <string name="section_server">Server</string>
+    <string name="section_tools">Tools</string>
+
+    <!-- installer -->
+    <string name="installer_title">CrystalCore installer</string>
+    <string name="installer_summary">Game %1$s (build %2$d), the FINAL FANTASY XIV: A Realm Reborn beta client CrystalCore ports.\n\n%3$d patches from Square Enix\'s patch server, %4$s, applied in order to an empty folder:\n%5$s\n\nSpace needed: about %6$s. Free: %7$s.</string>
+    <string name="installer_no_space">Not enough free space.</string>
+    <string name="keep_downloads">Keep the patch files after applying them (about 10 GB more)</string>
+    <string name="install">Install</string>
+    <string name="resume">Continue</string>
+    <string name="stop">Stop</string>
+    <string name="patch_applied">applied</string>
+    <string name="patch_downloaded">downloaded</string>
+    <string name="patch_partial">%1$d%%</string>
+    <string name="install_idle">Ready to install</string>
+    <string name="install_preparing">Preparing…</string>
+    <string name="install_step">%3$s  ·  %1$d/%2$d</string>
+    <string name="install_failed_title">The install stopped with an error</string>
+    <string name="install_stopped_title">The install is paused</string>
+    <string name="install_done_title">CrystalCore is installed</string>
+    <string name="install_channel">Install progress</string>
+    <string name="install_stopped">Stopped. Tap Continue to pick up where it left off.</string>
+    <string name="install_timed_out">Android paused the install after its time limit for background downloads. Open CrystalCore and tap Continue to pick up where it left off.</string>
+
+    <!-- launcher -->
+    <string name="launcher_info">Game %1$s (build %2$d), installed in:\n%3$s</string>
+    <string name="lobby_label">Lobby server</string>
+    <string name="lobby_hint">host:port</string>
+    <string name="lobby_help">The CrystalCore server the game logs in through (DEV.LobbyHost and DEV.LobbyPort): a computer on your network, not 127.0.0.1, which is the phone itself.</string>
+    <string name="lobby_invalid">Expected host or host:port</string>
+    <string name="play">Play</string>
+    <string name="reverify">Re-verify install</string>
+    <string name="logs">Logs</string>
+    <string name="verifying">Checking ffxiv.exe…</string>
+    <string name="verify_ok">Game %1$s checked: ffxiv.exe %2$s</string>
+    <string name="verify_failed">The install does not check out</string>
+    <string name="open_installer">Open the installer</string>
+    <string name="last_exit">Last run: exit code %1$d (0x%2$08X), %3$s</string>
+    <string name="crash_title">The game stopped unexpectedly</string>
+    <string name="crash_saved">Saved to the logs as %1$s</string>
+</resources>

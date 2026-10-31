@@ -7751,7 +7751,7 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00615a40(GEN_P(undefined * this, unsigne
   return uVar4;
 }
 
-/* ref: FUN_00615aa0 */
+/* ref: Global::MapFind */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00615aa0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_1, unsigned int gen_a1), GEN_P(uint * param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x615aa0u, gen_a0, gen_a1, gen_a2, 0u);
@@ -7784,7 +7784,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00615aa0(GEN_P(undefined * this, unsigned 
   return (uint)param_1;
 }
 
-/* ref: FUN_00615b10 */
+/* ref: Global::VectorTidy_00615b10 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00615b10(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
   GEN_ENTER(0x615b10u, gen_a0, 0u, 0u, 0u);
@@ -8038,7 +8038,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00615e50(GEN_P(undefined * this, unsigned 
   return (uint)param_1;
 }
 
-/* ref: FUN_00615ec0 */
+/* ref: Global::MapFind_00615ec0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00615ec0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_1, unsigned int gen_a1), GEN_P(uint * param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x615ec0u, gen_a0, gen_a1, gen_a2, 0u);
@@ -8071,7 +8071,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00615ec0(GEN_P(undefined * this, unsigned 
   return (uint)param_1;
 }
 
-/* ref: FUN_00615f30 */
+/* ref: Global::VectorTidy_00615f30 */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00615f30(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
   GEN_ENTER(0x615f30u, gen_a0, 0u, 0u, 0u);
@@ -10102,7 +10102,7 @@ LAB_00617c73: ;
   } while( true );
 }
 
-/* ref: FUN_00617d20 */
+/* ref: Global::TreeInsertNode_00617d20 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00617d20(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3)
 {
   GEN_ENTER(0x617d20u, gen_a0, gen_a1, gen_a2, gen_a3);
@@ -12475,7 +12475,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00619bb0(GEN_P(undefined * this, unsigned 
   return (uint)param_1;
 }
 
-/* ref: FUN_00619c50 */
+/* ref: Global::TreeInsertKey_00619c50 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00619c50(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1), GEN_P(undefined4 * param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x619c50u, gen_a0, gen_a1, gen_a2, 0u);

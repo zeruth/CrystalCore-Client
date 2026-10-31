@@ -386,7 +386,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_004360d0(GEN_P(int in_ecx, unsigned int ge
   return 0;
 }
 
-/* ref: FUN_004360f0 */
+/* ref: Global::FindEntry */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_004360f0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2), GEN_P(uint param_3, unsigned int gen_a3))
 {
   GEN_ENTER(0x4360f0u, gen_a0, gen_a1, gen_a2, gen_a3);
@@ -571,7 +571,7 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_00436380(GEN_P(int in_ecx, unsigned int ge
   return param_2;
 }
 
-/* ref: FUN_004363a0 */
+/* ref: Global::SetId64At0x20MarkDirty */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_004363a0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x4363a0u, gen_a0, gen_a1, gen_a2, 0u);
@@ -586,7 +586,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_004363a0(GEN_P(undefined * this, unsigned 
   return param_1;
 }
 
-/* ref: FUN_004363d0 */
+/* ref: Global::SetId64At0x18MarkDirty */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_004363d0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x4363d0u, gen_a0, gen_a1, gen_a2, 0u);
@@ -601,7 +601,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_004363d0(GEN_P(undefined * this, unsigned 
   return param_1;
 }
 
-/* ref: FUN_00436400 */
+/* ref: Global::SetByteAt0x29MarkDirty */
 GEN_OWN GEN_FRAME byte GEN_THISCALL F_00436400(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x436400u, gen_a0, gen_a1, 0u, 0u);
@@ -10915,7 +10915,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00440af0(GEN_P(undefined * this, unsigned 
   return uVar2;
 }
 
-/* ref: FUN_00440b80 */
+/* ref: Global::ReadListPageAndRequestNext */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00440b80(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(ushort * param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x440b80u, gen_a0, gen_a1, 0u, 0u);

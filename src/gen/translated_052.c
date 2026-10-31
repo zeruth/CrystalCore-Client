@@ -4763,12 +4763,10 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_006be850(GEN_P(undefined * this, unsigne
   GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
   uint in_EAX = 0;
   int * piVar1;
-  int iVar2;
   
-  iVar2 = *((byte *)GEN_TOP(((int)this + 0x144))) - 1;
-  if (0 < iVar2) {
+  if (0 < (int)(*((byte *)GEN_TOP(((int)this + 0x144))) - 1)) {
     piVar1 = ((int *)GEN_TOP(F_00424750(REFG(undefined4, 0x137104c) GEN_EDX_FWD)));
-    in_EAX = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar1 + 0xe0))))(piVar1 GEN_EDX_ARG,iVar2);
+    in_EAX = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar1 + 0xe0))))(piVar1 GEN_EDX_ARG);
   }
   return in_EAX;
 }

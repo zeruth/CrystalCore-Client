@@ -1,5 +1,34 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_006f6d40 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_006f6d40(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x6f6d40u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  int iVar1;
+  uint uVar2;
+  
+  iVar1 = (int)this + 8;
+  uVar2 = F_006f0080(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
+  *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
+  uVar2 = F_006eedf0(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
+  *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
+  uVar2 = F_006ef0b0(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
+  *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
+  uVar2 = F_006ef540(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
+  *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
+  uVar2 = F_006efa40(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
+  *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
+  uVar2 = F_00b912c0(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
+  *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
+  uVar2 = F_006f0710(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
+  *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
+  uVar2 = F_006ef6e0(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
+  *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
+  return uVar2;
+}
+
 /* ref: FUN_006f6dc0 */
 GEN_OWN GEN_FRAME byte GEN_THISCALL F_006f6dc0(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2)
 {
@@ -26854,52 +26883,5 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0071b680(GEN_P(undefined * this, unsigne
   uVar2 = F_006eebe0(*((undefined4 *)GEN_TOP(((int)this + 4))),iVar1);
   *((int *)GEN_TOP(((int)this + 0x28))) = *((int *)GEN_TOP(((int)this + 0x28))) + uVar2;
   return uVar2;
-}
-
-/* ref: Client::Game::Event::EventHandlerModule::vf4 */
-GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_0071b740(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x71b740u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  char cVar1;
-  int * piVar2;
-  int * piVar3;
-  uint uVar4;
-  int * piVar5;
-  
-  F_0071b680(this GEN_EDX_FWD,1);
-  piVar5 = ((int *)GEN_TOP(**(int * PTR32 *)(this + 0x30)));
-  if (piVar5 != *(int * PTR32 *)(this + 0x30)) {
-    do {
-      uVar4 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*((int *)GEN_TOP(piVar5[4])) + 8))))(((int *)GEN_TOP(piVar5[4])) GEN_EDX_ARG);
-      if ((char)uVar4 != '\0') {
-        ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*((int *)GEN_TOP(piVar5[4])) + 0x84))))(((int *)GEN_TOP(piVar5[4])) GEN_EDX_ARG);
-      }
-      if (*((char *)GEN_TOP(((int)piVar5 + 0x15))) == '\0') {
-        piVar2 = ((int *)GEN_TOP(piVar5[2]));
-        if (*((char *)GEN_TOP(((int)piVar2 + 0x15))) == '\0') {
-          cVar1 = *((char *)GEN_TOP((*piVar2 + 0x15)));
-          piVar5 = piVar2;
-          piVar2 = ((int *)GEN_TOP(*piVar2));
-          while (cVar1 == '\0') {
-            cVar1 = *((char *)GEN_TOP((*piVar2 + 0x15)));
-            piVar5 = piVar2;
-            piVar2 = ((int *)GEN_TOP(*piVar2));
-          }
-        }
-        else {
-          cVar1 = *((char *)GEN_TOP((piVar5[1] + 0x15)));
-          piVar3 = ((int *)GEN_TOP(piVar5[1]));
-          piVar2 = piVar5;
-          while ((piVar5 = piVar3, cVar1 == '\0' && (piVar2 == ((int *)GEN_TOP(piVar5[2]))))) {
-            cVar1 = *((char *)GEN_TOP((piVar5[1] + 0x15)));
-            piVar3 = ((int *)GEN_TOP(piVar5[1]));
-            piVar2 = piVar5;
-          }
-        }
-      }
-    } while (piVar5 != *(int * PTR32 *)(this + 0x30));
-  }
-  return 0;
 }
 

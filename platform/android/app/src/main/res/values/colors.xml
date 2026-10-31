@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the 2013 launcher's palette: night-blue depths, aether-blue crystal, aged gold trim -->
+    <color name="night_deep">#FF03070F</color>
+    <color name="night">#FF081426</color>
+    <color name="night_high">#FF12284A</color>
+    <color name="panel">#D90A1628</color>
+    <color name="panel_edge">#FF2B4366</color>
+    <color name="gold">#FFC8A962</color>
+    <color name="gold_dim">#FF7D6A3F</color>
+    <color name="gold_text">#FFEADFC0</color>
+    <color name="crystal">#FF5FB6F0</color>
+    <color name="crystal_deep">#FF1E5E9E</color>
+    <color name="crystal_glow">#5539A0F0</color>
+    <color name="text">#FFDCE6F2</color>
+    <color name="text_dim">#FF8EA2BC</color>
+    <color name="text_mono">#FFA9CDEB</color>
+    <color name="warn">#FFE8A15A</color>
+    <color name="ic_launcher_background">#FF081426</color>
+</resources>

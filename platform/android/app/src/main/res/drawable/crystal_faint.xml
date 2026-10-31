@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- crystal_mark as the background's watermark: the same crystal, barely there. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="96dp"
+    android:alpha="0.09"
+    android:viewportWidth="60"
+    android:viewportHeight="96">
+    <path android:fillColor="#FF9ED8FF" android:pathData="M30,2 L12,34 L30,48 Z" />
+    <path android:fillColor="#FF5FB6F0" android:pathData="M30,2 L48,34 L30,48 Z" />
+    <path android:fillColor="#FF3A8ED6" android:pathData="M12,34 L30,94 L30,48 Z" />
+    <path android:fillColor="#FF1E5E9E" android:pathData="M48,34 L30,94 L30,48 Z" />
+    <path
+        android:pathData="M30,2 L48,34 L30,94 L12,34 Z"
+        android:strokeWidth="1.6"
+        android:strokeColor="#FFC8A962"
+        android:strokeLineJoin="round" />
+</vector>

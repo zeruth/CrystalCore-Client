@@ -1,25 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_00542a30 */
-GEN_OWN GEN_FRAME float10 GEN_THISCALL F_00542a30(GEN_P(int * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float param_2, float gen_a1))
-{
-  GEN_ENTER(0x542a30u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
-  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a0;)
-  GEN_PIN(float param_2 = (float)gen_a1;)
-  float10 fVar1;
-  
-  fVar1 = GEN_X87((float10)(float)((float10)param_2 - ((float10)GEN_TOD(gen_bits2f(param_1[4])))));
-  if ((!(fVar1 < ((float10)GEN_TOD(gen_bits2f(param_1[7]))))) && ((*((byte *)GEN_TOP((*param_1 + 0xe))) >> 1 & 1) == 0)) {
-    *(undefined1 *)(param_1 + 5) = 1;
-    return ((float10)GEN_TOD(gen_bits2f(param_1[8])));
-  }
-  if ((char)param_1[9] != '\0') {
-    return GEN_X87((float10)(float)(((float10)GEN_TOD(gen_bits2f(param_1[6]))) * (float10)*(double *)&REFG(undefined, 0x1088070) +
-                           ((float10)GEN_TOD(gen_bits2f(param_1[6]))) * fVar1));
-  }
-  return GEN_X87((float10)(float)(fVar1 * ((float10)GEN_TOD(gen_bits2f(param_1[6])))));
-}
-
 /* ref: FUN_00542aa0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00542aa0(unsigned int gen_a0 GEN_EDX_PARAM, float gen_a1)
 {
@@ -7918,7 +7898,7 @@ GEN_OWN GEN_FRAME float10 F_0054ce10(GEN_P(uint param_1, unsigned int gen_a0), G
                          (float10)*((float *)GEN_TOP((param_1 + 4))) * (float10)param_2[1])))));
 }
 
-/* ref: FUN_0054ce40 */
+/* ref: Global::Vector3Cross */
 GEN_OWN GEN_FRAME byte F_0054ce40(GEN_P(float * param_1, unsigned int gen_a0), GEN_P(uint param_2, unsigned int gen_a1), GEN_P(uint param_3, unsigned int gen_a2))
 {
   GEN_ENTER(0x54ce40u, gen_a0, gen_a1, gen_a2, 0u);
@@ -8974,7 +8954,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0054e100(GEN_P(undefined * this, unsigned 
   return (uint)this;
 }
 
-/* ref: FUN_0054e180 */
+/* ref: Global::GetBoneIndex */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0054e180(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x54e180u, gen_a0, gen_a1, 0u, 0u);
@@ -8989,7 +8969,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0054e180(GEN_P(undefined * this, unsigned 
   return uVar1;
 }
 
-/* ref: FUN_0054e1a0 */
+/* ref: Global::GetBoneMatrix */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0054e1a0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x54e1a0u, gen_a0, gen_a1, gen_a2, 0u);
@@ -9811,7 +9791,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0054efa0(GEN_P(float * param_1, unsigned i
   return (uint)param_1;
 }
 
-/* ref: FUN_0054f010 */
+/* ref: Global::MatrixFromScaleRotationTranslation */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0054f010(GEN_P(undefined4 * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float * param_2, unsigned int gen_a1), GEN_P(uint param_3, unsigned int gen_a2), GEN_P(undefined4 * param_4, unsigned int gen_a3))
 {
   GEN_ENTER(0x54f010u, gen_a0, gen_a1, gen_a2, gen_a3);
@@ -10373,7 +10353,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0054f9d0(GEN_P(int param_1, unsigned int g
   return uVar1;
 }
 
-/* ref: FUN_0054fa20 */
+/* ref: Global::MatrixFromTransform */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0054fa20(GEN_P(float * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float * param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x54fa20u, gen_a0, gen_a1, 0u, 0u);
@@ -11497,5 +11477,14 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00550d70(GEN_P(undefined4 * in_ecx, unsign
   GEN_PIN(undefined4 param_3 = (undefined4)gen_a2;)
   *in_ecx = param_3;
   return (uint)in_ecx;
+}
+
+/* ref: FUN_00550d80 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00550d80(GEN_P(int * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x550d80u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int * in_ecx = (int *)(uintptr_t)gen_a0;)
+  GEN_PIN(int param_2 = (int)gen_a1;)
+  return *in_ecx + param_2 * 0xc;
 }
 

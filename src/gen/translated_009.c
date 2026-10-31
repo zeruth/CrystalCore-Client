@@ -1879,11 +1879,11 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0047dea0(GEN_P(undefined * param_1, unsign
   GEN_ENTER(0x47dea0u, gen_a0, gen_a1, 0u, 0u);
   GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a0;)
   GEN_PIN(byte param_2 = (byte)gen_a1;)
-  *((undefined * PTR32 * PTR32 *)GEN_TOP(((int)param_1 + 0x850))) = (*(undefined * PTR32 (*)[9])REFP(0x1090a64));
-  if (*((int *)GEN_TOP(((int)param_1 + 0x864))) != 0) {
-    F_00406810(*((int *)GEN_TOP(((int)param_1 + 0x864))));
-    *((undefined4 *)GEN_TOP(((int)param_1 + 0x864))) = 0;
-    *((undefined4 *)GEN_TOP(((int)param_1 + 0x868))) = 0;
+  *(undefined * PTR32 * PTR32 *)(param_1 + 0x850) = (*(undefined * PTR32 (*)[9])REFP(0x1090a64));
+  if (*(int *)(param_1 + 0x864) != 0) {
+    F_00406810(*(int *)(param_1 + 0x864));
+    *(undefined4 *)(param_1 + 0x864) = 0;
+    *(undefined4 *)(param_1 + 0x868) = 0;
   }
   F_00a34020(param_1 GEN_EDX_ARG);
   if ((param_2 & 1) != 0) {
@@ -3430,7 +3430,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0047f5e0(GEN_P(undefined * this, unsigned 
   return (uint)this;
 }
 
-/* ref: Utf8StringBasicStreamBuf_Utf8StringBasicStream_DU_char_traits_D_std::vf0 */
+/* ref: Utf8StringBasicStreamBuf_Utf8StringBasicStream_DU_char_traits_D_std::ScalarDeletingDestructor */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0047f610(GEN_P(undefined * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x47f610u, gen_a0, gen_a1, 0u, 0u);
@@ -5952,7 +5952,7 @@ GEN_OWN GEN_FRAME uint F_004815d0(GEN_P(int param_1, unsigned int gen_a0), GEN_P
   return (uint)this;
 }
 
-/* ref: FUN_00481610 */
+/* ref: Client::System::String::Utf8StringBasicStream::~Utf8StringBasicStream */
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00481610(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
   GEN_ENTER(0x481610u, gen_a0, 0u, 0u, 0u);

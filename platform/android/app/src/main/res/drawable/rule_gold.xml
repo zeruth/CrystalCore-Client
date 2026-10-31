@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The rule under a heading: gold fading out at both ends. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="0"
+        android:centerColor="@color/gold"
+        android:endColor="#00C8A962"
+        android:startColor="#00C8A962" />
+    <size android:height="1dp" />
+</shape>

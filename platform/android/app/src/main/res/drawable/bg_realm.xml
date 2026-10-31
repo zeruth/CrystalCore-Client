@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The window: a night sky going down to black, the aether's glow above, a crystal faint in it. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:angle="270"
+                android:centerColor="@color/night"
+                android:endColor="@color/night_deep"
+                android:startColor="@color/night_high" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:centerX="0.5"
+                android:centerY="0.18"
+                android:endColor="#00000000"
+                android:gradientRadius="80%p"
+                android:startColor="@color/crystal_glow"
+                android:type="radial" />
+        </shape>
+    </item>
+    <item
+        android:width="260dp"
+        android:height="416dp"
+        android:drawable="@drawable/crystal_faint"
+        android:gravity="center_horizontal|top"
+        android:top="-40dp" />
+</layer-list>

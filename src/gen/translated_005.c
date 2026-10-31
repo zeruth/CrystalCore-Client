@@ -1381,8 +1381,9 @@ GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_004432e0(GEN_P(undefined * this, unsigne
   
   (*(uint *)(gen_frame + 0xc24)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc28);
   if ((((*((int *)GEN_TOP(((int)this + 0x20))) != 0 || *((int *)GEN_TOP(((int)this + 0x24))) != 0) &&
-       (param_1 != 0 || param_2 != 0)) && (uVar2 = F_004360f0(this GEN_EDX_FWD,param_1,param_2,0), uVar2 != 0)
-      ) && (this_00 = ((undefined *)GEN_TOP(F_00424810(REFG(undefined4, 0x137104c) GEN_EDX_ARG))), this_00 != ((undefined *)GEN_TOP(0x0)))) {
+       (param_1 != 0 || param_2 != 0)) &&
+      (uVar2 = F_004360f0(this GEN_EDX_FWD,param_1,param_2,0), uVar2 != 0)) &&
+     (this_00 = ((undefined *)GEN_TOP(F_00424810(REFG(undefined4, 0x137104c) GEN_EDX_ARG))), this_00 != ((undefined *)GEN_TOP(0x0)))) {
     uVar4 = 0;
     uVar3 = 0;
     uVar2 = F_00470b60(((undefined1 *)(gen_frame + 0x0)) GEN_EDX_ARG,*((undefined4 *)GEN_TOP(((int)this + 0x20))),
@@ -1447,8 +1448,9 @@ GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_00443490(GEN_P(undefined * this, unsigne
   
   (*(uint *)(gen_frame + 0xc24)) = REFG(undefined4, 0x134ab78) ^ (uint)(uint)(gen_frame + 0xc28);
   if ((((*((int *)GEN_TOP(((int)this + 0x20))) != 0 || *((int *)GEN_TOP(((int)this + 0x24))) != 0) &&
-       (param_1 != 0 || param_2 != 0)) && (uVar2 = F_004360f0(this GEN_EDX_FWD,param_1,param_2,0), uVar2 != 0)
-      ) && (this_00 = ((undefined *)GEN_TOP(F_00424810(REFG(undefined4, 0x137104c) GEN_EDX_ARG))), this_00 != ((undefined *)GEN_TOP(0x0)))) {
+       (param_1 != 0 || param_2 != 0)) &&
+      (uVar2 = F_004360f0(this GEN_EDX_FWD,param_1,param_2,0), uVar2 != 0)) &&
+     (this_00 = ((undefined *)GEN_TOP(F_00424810(REFG(undefined4, 0x137104c) GEN_EDX_ARG))), this_00 != ((undefined *)GEN_TOP(0x0)))) {
     uVar4 = 0;
     uVar3 = 0;
     uVar2 = F_00470e50(((undefined1 *)(gen_frame + 0x0)) GEN_EDX_ARG,*((undefined4 *)GEN_TOP(((int)this + 0x20))),
@@ -15390,7 +15392,7 @@ GEN_OWN_GS GEN_FRAME byte GEN_THISCALL F_004557a0(GEN_P(undefined * this, unsign
   return (*(bool *)(gen_frame + 0x2f));
 }
 
-/* ref: FUN_00455aa0 */
+/* ref: Global::ParseKeybindRecords */
 GEN_OWN_GS GEN_FRAME byte GEN_THISCALL F_00455aa0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char * param_1, unsigned int gen_a1), GEN_P(int param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x455aa0u, gen_a0, gen_a1, gen_a2, 0u);
@@ -15436,7 +15438,7 @@ GEN_OWN_GS GEN_FRAME byte GEN_THISCALL F_00455aa0(GEN_P(undefined * this, unsign
   return 1;
 }
 
-/* ref: FUN_00455b90 */
+/* ref: Global::OnUserFileRead */
 GEN_OWN GEN_FRAME byte GEN_THISCALL F_00455b90(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1, unsigned int gen_a2, unsigned int gen_a3, unsigned int gen_a4)
 {
   GEN_ENTER(0x455b90u, gen_a0, gen_a1, gen_a2, gen_a3);
@@ -15470,7 +15472,7 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_00455b90(unsigned int gen_a0 GEN_EDX_PARAM
   return 1;
 }
 
-/* ref: FUN_00455c20 */
+/* ref: Global::WriteKeybindRecords */
 GEN_OWN_GS GEN_FRAME uint GEN_THISCALL F_00455c20(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2))
 {
   GEN_ENTER(0x455c20u, gen_a0, gen_a1, gen_a2, 0u);
@@ -16063,7 +16065,8 @@ LAB_00456676: ;
               }
               if (uVar9 < uVar10) {
                 uVar6 = 0;
-                if ((uVar10 != 0) && (uVar6 = F_004069f0(uVar10), uVar6 == 0)) goto LAB_00456aaa;
+                if ((uVar10 != 0) && (uVar6 = F_004069f0(uVar10), uVar6 == 0))
+                goto LAB_00456aaa;
                 F_00c46e20(uVar6,uVar7,(*(uint *)(gen_frame + 0x38)));
                 if (uVar7 != 0) {
                   F_00406ad0(uVar7);
@@ -16198,7 +16201,8 @@ LAB_00456891: ;
               }
               if (uVar9 < uVar10) {
                 uVar6 = 0;
-                if ((uVar10 != 0) && (uVar6 = F_004069f0(uVar10), uVar6 == 0)) goto LAB_00456aaa;
+                if ((uVar10 != 0) && (uVar6 = F_004069f0(uVar10), uVar6 == 0))
+                goto LAB_00456aaa;
                 F_00c46e20(uVar6,uVar7,(*(uint *)(gen_frame + 0x38)));
                 if (uVar7 != 0) {
                   F_00406ad0(uVar7);

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Square Enix's patch server serves the 2013 patches over plain HTTP only (each patch is checked by
+     size or SHA-1, and every ZiPatch chunk by its CRC). Everything else stays HTTPS-only. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">patch-dl.ffxiv.com</domain>
+    </domain-config>
+</network-security-config>

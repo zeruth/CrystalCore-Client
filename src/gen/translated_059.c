@@ -1,5 +1,13 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00726520 */
+GEN_OWN GEN_FRAME uint F_00726520(GEN_P(int param_1, unsigned int gen_a0))
+{
+  GEN_ENTER(0x726520u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(int param_1 = (int)gen_a0;)
+  return param_1 + 0x21;
+}
+
 /* ref: FUN_00726530 */
 GEN_OWN GEN_FRAME uint F_00726530(GEN_P(int param_1, unsigned int gen_a0))
 {
@@ -5791,14 +5799,6 @@ GEN_OWN GEN_FRAME uint F_0072b260(GEN_P(int param_1, unsigned int gen_a0), GEN_P
 GEN_OWN GEN_FRAME uint F_0072b290(GEN_P(uint param_1, unsigned int gen_a0))
 {
   GEN_ENTER(0x72b290u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(uint param_1 = (uint)gen_a0;)
-  return param_1;
-}
-
-/* ref: FUN_0072b2a0 */
-GEN_OWN GEN_FRAME uint F_0072b2a0(GEN_P(uint param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x72b2a0u, gen_a0, 0u, 0u, 0u);
   GEN_PIN(uint param_1 = (uint)gen_a0;)
   return param_1;
 }

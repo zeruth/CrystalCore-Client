@@ -1,5 +1,36 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: Client::System::Configuration::CharamakeAvatarSaveDataContainer::ContainerInterface::ScalarDeletingDestructor */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_009072c0(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x9072c0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
+  GEN_PIN(byte param_2 = (byte)gen_a1;)
+  *param_1 = (*(undefined * PTR32 (*)[11])REFP(0x10c3e70));
+  if ((param_2 & 1) != 0) {
+    F_00406ad0(param_1);
+  }
+  return (uint)param_1;
+}
+
+/* ref: Client::System::Configuration::CharamakeAvatarSaveDataContainer::FixedContainer::ScalarDeletingDestructor */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_009072f0(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x9072f0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 * param_1 = (undefined4 *)(uintptr_t)gen_a0;)
+  GEN_PIN(byte param_2 = (byte)gen_a1;)
+  *param_1 = (*(undefined * PTR32 (*)[11])REFP(0x10c3ea0));
+  if (param_1[0xc82] != 0) {
+    F_00406b30(param_1[0xc82]);
+    param_1[0xc82] = 0;
+  }
+  *param_1 = (*(undefined * PTR32 (*)[11])REFP(0x10c3e70));
+  if ((param_2 & 1) != 0) {
+    F_00406ad0(param_1);
+  }
+  return (uint)param_1;
+}
+
 /* ref: FUN_00907350 */
 GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_00907350(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char param_2, unsigned int gen_a1))
 {
@@ -1358,7 +1389,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00909050(GEN_P(undefined * this, unsigned 
         iVar4 = sVar1 - iVar4;
         F_005623b0(*((undefined * PTR32 *)GEN_TOP(((int)this + 0x1a0))) GEN_EDX_ARG,iVar4);
         uVar3 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)this + 0x1a0))) + 0x74))))
-                          (*((int * PTR32 *)GEN_TOP(((int)this + 0x1a0))) GEN_EDX_ARG,iVar4,0);
+                          (*((int * PTR32 *)GEN_TOP(((int)this + 0x1a0))) GEN_EDX_ARG,iVar4);
         return uVar3;
       }
       uVar3 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)this + 0x1a0))) + 0x78))))(*((int * PTR32 *)GEN_TOP(((int)this + 0x1a0))) GEN_EDX_ARG);
@@ -3787,7 +3818,7 @@ GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_0090c100(GEN_P(undefined * this, u
   return 0;
 }
 
-/* ref: Application::Network::LogoutCallbackInterface::vf0 */
+/* ref: Application::Network::LogoutCallbackInterface::ScalarDeletingDestructor */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090c160(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x90c160u, gen_a0, gen_a1, 0u, 0u);
@@ -3800,7 +3831,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090c160(GEN_P(undefined4 * param_1, unsig
   return (uint)param_1;
 }
 
-/* ref: Application::Network::ZoneLoginCallbackInterface::vf0 */
+/* ref: Application::Network::ZoneLoginCallbackInterface::ScalarDeletingDestructor */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090c1b0(GEN_P(undefined4 * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x90c1b0u, gen_a0, gen_a1, 0u, 0u);
@@ -5342,7 +5373,7 @@ GEN_OWN GEN_NOFRAME uint F_0090e0d0(void)
   return 0x135ae50;
 }
 
-/* ref: Application::Network::LobbyProtoChannel::CharaMake::vf0 */
+/* ref: Application::Network::LobbyProtoChannel::CharaMake::ScalarDeletingDestructor */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090e0f0(GEN_P(uint param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x90e0f0u, gen_a0, gen_a1, 0u, 0u);
@@ -5394,7 +5425,7 @@ GEN_OWN GEN_NOFRAME uint F_0090e190(void)
   return 0x135b2a0;
 }
 
-/* ref: Application::Network::LobbyProtoChannel::CharaRemake::vf0 */
+/* ref: Application::Network::LobbyProtoChannel::CharaRemake::ScalarDeletingDestructor */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090e1b0(GEN_P(uint param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x90e1b0u, gen_a0, gen_a1, 0u, 0u);
@@ -5468,7 +5499,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090e2b0(GEN_P(undefined * this, unsigned 
   return (uint)this;
 }
 
-/* ref: FUN_0090e2d0 */
+/* ref: Application::Network::LobbyProtoChannel::CharaRemake::CharaRemakeCopy */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090e2d0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x90e2d0u, gen_a0, gen_a1, 0u, 0u);
@@ -5709,50 +5740,5 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0090e610(GEN_P(uint in_ecx, unsigned int
   F_0042b630(in_ecx GEN_EDX_FWD);
   F_0042b630(in_ecx + 0x54 GEN_EDX_ARG);
   return in_ecx;
-}
-
-/* ref: FUN_0090e630 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0090e630(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x90e630u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  ulonglong uVar1;
-  
-  F_0042c880(((undefined *)GEN_TOP(((int)this + 0x54))) GEN_EDX_FWD);
-  uVar1 = F_0042c880(this GEN_EDX_ARG);
-  return (uint)uVar1;
-}
-
-/* ref: Component::GUI2::AtkSimpleTween::vf0 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090e650(GEN_P(int * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
-{
-  GEN_ENTER(0x90e650u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a0;)
-  GEN_PIN(byte param_2 = (byte)gen_a1;)
-  int * piVar1;
-  int iVar2;
-  int * this;
-  
-  if ((param_2 & 2) == 0) {
-    F_0058d4b0(param_1 GEN_EDX_FWD);
-    if ((param_2 & 1) != 0) {
-      F_00406ad0(param_1);
-    }
-  }
-  else {
-    piVar1 = param_1 - 1;
-    iVar2 = *piVar1;
-    this = param_1 + iVar2 * 0xc;
-    while (iVar2 = iVar2 - 1, -1 < iVar2) {
-      this = this - 0xc;
-      F_0058d4b0(this GEN_EDX_ARG);
-    }
-    param_1 = piVar1;
-    if ((param_2 & 1) != 0) {
-      F_00406b30(piVar1);
-      return (uint)piVar1;
-    }
-  }
-  return (uint)param_1;
 }
 

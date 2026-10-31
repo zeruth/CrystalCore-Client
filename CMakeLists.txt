@@ -22,7 +22,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # ---- the translation ----------------------------------------------------------------------------
 file(GLOB GEN_SOURCES CONFIGURE_DEPENDS ${CMAKE_SOURCE_DIR}/src/gen/*.c)
-add_library(gen OBJECT ${GEN_SOURCES})
+# (and the functions the project writes itself, rhipper.json "own_functions": declared in
+# translated.h, defined here)
+file(GLOB OWN_SOURCES CONFIGURE_DEPENDS ${CMAKE_SOURCE_DIR}/src/own/*.c)
+add_library(gen OBJECT ${GEN_SOURCES} ${OWN_SOURCES})
 target_include_directories(gen PRIVATE ${CMAKE_SOURCE_DIR}/src/gen)
 # Pointer-width conversions are the memory model, not mistakes: an int holding a 32-bit address
 # widened to a pointer (C4312), a pointer narrowed into a 4-byte slot (C4311, C4244), int and

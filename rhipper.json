@@ -7,6 +7,17 @@
   "jobs": 2,
   "sources": ["src"],
   "gen": "src/gen",
+  "own_functions": {
+    "0xc6fe98": "x87 exp core, its form in bh beside st0 (src/own/x87_own.c)",
+    "0xc6fec9": "x87 e + 1/e by the form in bh (src/own/x87_own.c)",
+    "0xc6fdf0": "x87 sinh fragment on its dispatcher's frame (src/own/x87_own.c)",
+    "0xc6fe09": "x87 tanh fragment on its dispatcher's frame (src/own/x87_own.c)",
+    "0xc6fe42": "x87 cosh fragment on its dispatcher's frame (src/own/x87_own.c)",
+    "0xc5e9e1": {"why": "x87 exp fragment on its dispatcher's frame, its st0 the result (src/own/x87_own.c)",
+                 "decl": "float10 F_00c5e9e1(double gen_a0, unsigned int gen_a1)"},
+    "0xd8ca30": "a bounds test keeping its bound on the x87 stack across its calls (src/own/x87_own.c)",
+    "0xd8cae0": "a bounds test keeping its bound on the x87 stack across its calls (src/own/x87_own.c)"
+  },
   "build": {"dir": "build/cmake", "config": "Release", "gen_target": "gen", "target": "CrystalCore"},
   "run": {"exe": "build/cmake/bin/Release/CrystalCore.exe", "cwd": "archive/installs/beta-672261/game",
           "args": ["DEV.TestSID=0", "DEV.UseSqPack=1", "DEV.DataPathType=1", "DEV.LobbyHost01=127.0.0.1",

@@ -4,5 +4,8 @@ archive/*
 .reference/
 build/
 cmake-build-*/
+.gradle/
+.cxx/
+local.properties
 .idea/
 __pycache__/

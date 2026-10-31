@@ -8,6 +8,11 @@
    The runtime overrides the ones whose structures differ between x86 and x64. */
 #include <stdint.h>
 #include <stdarg.h>
+#if defined(__LP64__) || defined(_LP64)
+typedef int gen_long; typedef unsigned int gen_ulong;
+#else
+typedef long gen_long; typedef unsigned long gen_ulong;
+#endif
 #define GEN_REST(last) intptr_t r[10]; va_list ap; va_start(ap, last); \
     for (int k = 0; k < 10; k++) r[k] = va_arg(ap, int); va_end(ap)
 typedef intptr_t (*gen_real_fn)(intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t, intptr_t,

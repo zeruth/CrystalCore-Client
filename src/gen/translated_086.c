@@ -1,5 +1,50 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0090e630 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0090e630(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x90e630u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  ulonglong uVar1;
+  
+  F_0042c880(((undefined *)GEN_TOP(((int)this + 0x54))) GEN_EDX_FWD);
+  uVar1 = F_0042c880(this GEN_EDX_ARG);
+  return (uint)uVar1;
+}
+
+/* ref: Component::GUI2::AtkSimpleTween::vf0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090e650(GEN_P(int * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x90e650u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a0;)
+  GEN_PIN(byte param_2 = (byte)gen_a1;)
+  int * piVar1;
+  int iVar2;
+  int * this;
+  
+  if ((param_2 & 2) == 0) {
+    F_0058d4b0(param_1 GEN_EDX_FWD);
+    if ((param_2 & 1) != 0) {
+      F_00406ad0(param_1);
+    }
+  }
+  else {
+    piVar1 = param_1 - 1;
+    iVar2 = *piVar1;
+    this = param_1 + iVar2 * 0xc;
+    while (iVar2 = iVar2 - 1, -1 < iVar2) {
+      this = this - 0xc;
+      F_0058d4b0(this GEN_EDX_ARG);
+    }
+    param_1 = piVar1;
+    if ((param_2 & 1) != 0) {
+      F_00406b30(piVar1);
+      return (uint)piVar1;
+    }
+  }
+  return (uint)param_1;
+}
+
 /* ref: FUN_0090e6c0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0090e6c0(GEN_P(uint param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
@@ -4487,21 +4532,5 @@ GEN_OWN GEN_FRAME uint F_00913db0(GEN_P(uint param_1, unsigned int gen_a0))
   GEN_ENTER(0x913db0u, gen_a0, 0u, 0u, 0u);
   GEN_PIN(uint param_1 = (uint)gen_a0;)
   return param_1;
-}
-
-/* ref: FUN_00913dc0 */
-GEN_OWN GEN_FRAME uint F_00913dc0(GEN_P(int param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x913dc0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  return param_1 + 4;
-}
-
-/* ref: FUN_00913dd0 */
-GEN_OWN GEN_FRAME uint F_00913dd0(GEN_P(int param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x913dd0u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  return param_1 + 8;
 }
 

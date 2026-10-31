@@ -1,5 +1,15 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_007302c0 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_007302c0(GEN_P(undefined4 * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_2, unsigned int gen_a1))
+{
+  GEN_ENTER(0x7302c0u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined4 * in_ecx = (undefined4 *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 * param_2 = (undefined4 *)(uintptr_t)gen_a1;)
+  *param_2 = *in_ecx;
+  return (uint)param_2;
+}
+
 /* ref: FUN_007302d0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_007302d0(GEN_P(undefined4 * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 * param_2, unsigned int gen_a1))
 {
@@ -7257,28 +7267,6 @@ GEN_OWN GEN_FRAME uint F_007375b0(GEN_P(undefined4 param_1, unsigned int gen_a0)
                CONCAT31(CONCAT21(CONCAT11(*((undefined1 *)GEN_TOP((iVar1 + 0x1e2))),
                                           *((undefined1 *)GEN_TOP((iVar1 + 0x1e3)))),
                                  *((undefined1 *)GEN_TOP((iVar1 + 0x1e4)))),*((undefined1 *)GEN_TOP((iVar1 + 0x1e5)))));
-  F_00a01890(((byte *)(gen_frame + 0x0)) GEN_EDX_ARG);
-  return 1;
-}
-
-/* ref: FUN_00737630 */
-GEN_OWN GEN_FRAME uint F_00737630(GEN_P(undefined4 param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x737630u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined4 param_1 = (undefined4)gen_a0;)
-  GEN_FRAME_DECL_TOP(0x24, 12, 4);
-  int iVar1;
-  uint uVar2;
-  int * piVar3;
-  
-  F_00a01860(((byte *)(gen_frame + 0x0)) GEN_EDX_ARG,param_1);
-  uVar2 = F_00a01d20(((byte *)(gen_frame + 0x0)) GEN_EDX_ARG,1);
-  piVar3 = ((int *)GEN_TOP(F_00b9c710((*(undefined4 *)((char *)((byte *)(gen_frame + 0x0)) + 8)),1,uVar2)));
-  iVar1 = *piVar3;
-  F_00b9ae00((*(undefined4 *)((char *)((byte *)(gen_frame + 0x0)) + 8)),
-               CONCAT31(CONCAT21(CONCAT11(*((undefined1 *)GEN_TOP((iVar1 + 0x1de))),
-                                          *((undefined1 *)GEN_TOP((iVar1 + 0x1df)))),
-                                 *((undefined1 *)GEN_TOP((iVar1 + 0x1e0)))),*((undefined1 *)GEN_TOP((iVar1 + 0x1e1)))));
   F_00a01890(((byte *)(gen_frame + 0x0)) GEN_EDX_ARG);
   return 1;
 }

@@ -1,5 +1,22 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_007a5760 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_007a5760(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x7a5760u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  byte bVar1;
+  uint uVar2;
+  
+  bVar1 = *((byte *)GEN_TOP(((int)this + 0x13c)));
+  uVar2 = F_0055dcb0();
+  uVar2 = F_0057f810(*((undefined * PTR32 *)GEN_TOP((uVar2 + 0x14))) GEN_EDX_ARG,(uint)bVar1);
+  if (uVar2 != 0) {
+    return *((uint *)GEN_TOP((uVar2 + 0x204)));
+  }
+  return 0;
+}
+
 /* ref: Client::UI2::AddonInventoryGrid::vf52 */
 GEN_OWN GEN_FRAME byte GEN_THISCALL F_007a5790(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int * param_1, unsigned int gen_a1))
 {
@@ -11641,33 +11658,5 @@ GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_007b21e0(GEN_P(undefined * param_1
     F_0056b630(param_1 GEN_EDX_ARG,0x18ac6,7,0,9,0,0);
   }
   return;
-}
-
-/* ref: FUN_007b2240 */
-GEN_OWN GEN_FRAME uint GEN_THISCALL F_007b2240(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x7b2240u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(int param_1 = (int)gen_a1;)
-  byte bVar1;
-  undefined3 extraout_var = 0;
-  int iVar2;
-  int * piVar3;
-  
-  *((undefined1 *)GEN_TOP(((int)this + 0x2a6))) = 1;
-  *((byte *)GEN_TOP(((int)this + 0x2a7))) = *((byte *)GEN_TOP((param_1 + 0xaa))) >> 4 & 1;
-  *((int *)GEN_TOP(((int)this + 0x2ac))) = param_1;
-  F_0056e4d0(param_1 GEN_EDX_FWD,0);
-  piVar3 = ((int *)GEN_TOP(((int)this + 0x180)));
-  iVar2 = 0xd;
-  do {
-    if (*piVar3 != 0) {
-      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*((int *)GEN_TOP(*piVar3)) + 0x28))))(((int *)GEN_TOP(*piVar3)) GEN_EDX_ARG,0);
-    }
-    piVar3 = piVar3 + 1;
-    iVar2 = iVar2 - 1;
-  } while (iVar2 != 0);
-  bVar1 = F_0056b630(this GEN_EDX_ARG,0x18ab8,7,0,9,0,0);
-  return CONCAT31(extraout_var,bVar1);
 }
 

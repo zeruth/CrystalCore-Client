@@ -1199,7 +1199,7 @@ GEN_OWN GEN_FRAME uint GEN_STDCALL F_00600c90(GEN_P(undefined4 param_1, unsigned
   return (uint)uVar1;
 }
 
-/* ref: FUN_00600cc0 */
+/* ref: Global::ContainsIndex */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00600cc0(GEN_P(uint * in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x600cc0u, gen_a0, gen_a1, 0u, 0u);
@@ -2955,7 +2955,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00602640(GEN_P(undefined4 * in_ecx, unsign
   return (uint)in_ecx;
 }
 
-/* ref: FUN_00602660 */
+/* ref: Global::AllocateArray40_00602660 */
 GEN_OWN GEN_FRAME uint GEN_STDCALL F_00602660(GEN_P(int param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x602660u, gen_a0, gen_a1, 0u, 0u);
@@ -2967,7 +2967,7 @@ GEN_OWN GEN_FRAME uint GEN_STDCALL F_00602660(GEN_P(int param_1, unsigned int ge
   return uVar1;
 }
 
-/* ref: FUN_006026a0 */
+/* ref: Global::GetSlot */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_006026a0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(uint param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x6026a0u, gen_a0, gen_a1, 0u, 0u);
@@ -2996,7 +2996,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_006026a0(GEN_P(undefined * this, unsigned 
   return 0;
 }
 
-/* ref: FUN_00602700 */
+/* ref: Global::SetFlag0 */
 GEN_OWN GEN_FRAME byte GEN_THISCALL F_00602700(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x602700u, gen_a0, gen_a1, 0u, 0u);
@@ -3009,7 +3009,7 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_00602700(GEN_P(int in_ecx, unsigned int ge
   return bVar1;
 }
 
-/* ref: FUN_00602720 */
+/* ref: Global::SetFlag1 */
 GEN_OWN GEN_FRAME byte GEN_THISCALL F_00602720(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(char param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x602720u, gen_a0, gen_a1, 0u, 0u);
@@ -3042,7 +3042,7 @@ GEN_OWN GEN_FRAME uint F_00602770(GEN_P(int param_1, unsigned int gen_a0))
   return param_1 + 0x10;
 }
 
-/* ref: FUN_00602780 */
+/* ref: Global::AllocatePointerArray */
 GEN_OWN GEN_FRAME uint GEN_STDCALL F_00602780(GEN_P(int param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x602780u, gen_a0, gen_a1, 0u, 0u);
@@ -3084,7 +3084,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_006027f0(GEN_P(undefined * this, unsigned 
   return (uint)param_1;
 }
 
-/* ref: FUN_00602870 */
+/* ref: Global::AllocateArray160 */
 GEN_OWN GEN_FRAME uint GEN_STDCALL F_00602870(GEN_P(int param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x602870u, gen_a0, gen_a1, 0u, 0u);

@@ -1,5 +1,24 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00821a60 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00821a60(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3), GEN_P(undefined4 param_4, unsigned int gen_a4), GEN_P(undefined4 param_5, unsigned int gen_a5), GEN_P(undefined4 param_6, unsigned int gen_a6), GEN_P(undefined4 param_7, unsigned int gen_a7))
+{
+  GEN_ENTER(0x821a60u, gen_a0, gen_a1, gen_a2, gen_a3);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
+  GEN_PIN(undefined4 param_3 = (undefined4)gen_a3;)
+  GEN_PIN(undefined4 param_4 = (undefined4)gen_a4;)
+  GEN_PIN(undefined4 param_5 = (undefined4)gen_a5;)
+  GEN_PIN(undefined4 param_6 = (undefined4)gen_a6;)
+  GEN_PIN(undefined4 param_7 = (undefined4)gen_a7;)
+  uint uVar1;
+  
+  uVar1 = F_00938bb0(this GEN_EDX_FWD,REFG(undefined * PTR32, 0x13280e4),param_2,param_3,param_4,param_5,
+                       param_6,param_7);
+  return uVar1;
+}
+
 /* ref: FUN_00821a90 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00821a90(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3), GEN_P(undefined4 param_4, unsigned int gen_a4), GEN_P(undefined4 param_5, unsigned int gen_a5), GEN_P(undefined4 param_6, unsigned int gen_a6), GEN_P(undefined4 param_7, unsigned int gen_a7))
 {
@@ -4792,7 +4811,7 @@ GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_00827130(GEN_P(undefined * this,
     uVar1 = *((undefined4 *)GEN_TOP(((int)this + 0x14)));
     *((undefined4 *)GEN_TOP(((int)this + 0x14))) = 0;
     piVar3 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)this + 4))) + 0x1c))))(*((int * PTR32 *)GEN_TOP(((int)this + 4))) GEN_EDX_ARG)));
-    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0x54))))(piVar3 GEN_EDX_ARG,uVar1,0);
+    ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar3 + 0x54))))(piVar3 GEN_EDX_ARG,uVar1);
   }
   return;
 }
@@ -8268,7 +8287,7 @@ override_jmp_0082b62d_case_2: ;
     if (uVar1 != 0) {
 LAB_0082b65c: ;
       piVar2 = ((int *)GEN_TOP(((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)this + 4))) + 0x1c))))(*((int * PTR32 *)GEN_TOP(((int)this + 4))) GEN_EDX_ARG)));
-      uVar3 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 100))))(piVar2 GEN_EDX_ARG,uVar1,1);
+      uVar3 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((*piVar2 + 100))))(piVar2 GEN_EDX_ARG,uVar1);
     }
   }
   return uVar3;
@@ -21464,8 +21483,7 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0083c670(GEN_P(undefined * this, unsigne
     if (uVar4 <= uVar3) {
       uVar3 = uVar4 - 1;
     }
-    uVar3 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)this + 0x1c8))) + 0x74))))
-                      (*((int * PTR32 *)GEN_TOP(((int)this + 0x1c8))) GEN_EDX_ARG,uVar3,0);
+    uVar3 = ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**((int * PTR32 *)GEN_TOP(((int)this + 0x1c8))) + 0x74))))(*((int * PTR32 *)GEN_TOP(((int)this + 0x1c8))) GEN_EDX_ARG,uVar3);
   }
   return uVar3;
 }
@@ -29988,33 +30006,5 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00846ea0(GEN_P(undefined * this, unsigned 
     iVar2 = iVar2 - 1;
   } while (-1 < iVar2);
   return uVar1;
-}
-
-/* ref: Client::UI2::AddonColorantColoringSelector::vf60 */
-GEN_OWN GEN_FRAME byte GEN_THISCALL F_00846f60(GEN_P(undefined * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_2, unsigned int gen_a1), GEN_P(char param_3, unsigned int gen_a2))
-{
-  GEN_ENTER(0x846f60u, gen_a0, gen_a1, gen_a2, 0u);
-  GEN_PIN(undefined * param_1 = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(int param_2 = (int)gen_a1;)
-  GEN_PIN(char param_3 = (char)gen_a2;)
-  int iVar1;
-  int iVar2;
-  
-  if (param_2 == 0xf) {
-    iVar2 = (*((int *)GEN_TOP(((int)param_1 + 0xae0))) + 1) % 7;
-    iVar1 = iVar2;
-  }
-  else {
-    if (param_2 != 0x10) {
-      return 0;
-    }
-    iVar2 = (*((int *)GEN_TOP(((int)param_1 + 0xae0))) + 6) % 7;
-    iVar1 = iVar2 - 6;
-  }
-  if ((iVar1 == 0) && (param_3 != '\0')) {
-    return 0;
-  }
-  F_00846ea0(param_1 GEN_EDX_FWD,iVar2);
-  return 1;
 }
 

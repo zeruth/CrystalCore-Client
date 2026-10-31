@@ -1,43 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_005ccc40 */
-GEN_OWN GEN_FRAME unsigned int GEN_THISCALL F_005ccc40(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
-{
-  GEN_ENTER(0x5ccc40u, gen_a0, gen_a1, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  GEN_PIN(int param_1 = (int)gen_a1;)
-  uint uVar1;
-  undefined4 uVar2;
-  uint uVar3;
-  uint uVar4;
-  
-  if (param_1 != 0) {
-    if (*((int *)GEN_TOP((param_1 + 0xc))) == 0) {
-      uVar4 = 0;
-    }
-    else {
-      uVar4 = (uint)*((ushort *)GEN_TOP((param_1 + 0x1a))) + *((int *)GEN_TOP((*((int *)GEN_TOP((param_1 + 0xc))) + 4)));
-    }
-    uVar3 = 0;
-    if (uVar4 != 0) {
-      do {
-        uVar1 = F_00578ee0(((undefined *)GEN_TOP((param_1 + 4))) GEN_EDX_FWD,uVar3);
-        if ((uVar1 == 0) ||
-           (*((uint *)GEN_TOP((uVar1 + 0x84))) = *((uint *)GEN_TOP((uVar1 + 0x84))) & 0xfdffffff,
-           *((ushort *)GEN_TOP((uVar1 + 0x18))) < 1000)) {
-          uVar2 = 0;
-        }
-        else {
-          uVar2 = *((undefined4 *)GEN_TOP((uVar1 + 0x8c)));
-        }
-        F_005ccc40(this GEN_EDX_ARG,uVar2);
-        uVar3 = uVar3 + 1;
-      } while (uVar3 < uVar4);
-    }
-  }
-  return;
-}
-
 /* ref: FUN_005cccc0 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_005cccc0(GEN_P(undefined * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(byte param_2, unsigned int gen_a1))
 {
@@ -602,7 +564,7 @@ GEN_OWN GEN_NOFRAME unsigned int GEN_THISCALL F_005cd2d0(GEN_P(undefined * this,
   return;
 }
 
-/* ref: FUN_005cd300 */
+/* ref: Global::ListPushBack */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_005cd300(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int * param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x5cd300u, gen_a0, gen_a1, 0u, 0u);
@@ -8608,6 +8570,15 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_005d4260(GEN_P(undefined * this, unsigne
 GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_005d4270(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x5d4270u, gen_a0, gen_a1, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  return 0;
+}
+
+/* ref: Component::GUI2::AtkModule::vf57 */
+GEN_OWN GEN_NOFRAME byte GEN_THISCALL F_005d4280(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1))
+{
+  GEN_ENTER(0x5d4280u, gen_a0, gen_a1, 0u, 0u);
   GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
   GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
   return 0;

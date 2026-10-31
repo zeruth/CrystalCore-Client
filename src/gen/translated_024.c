@@ -1,13 +1,5 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
-/* ref: FUN_00533210 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_00533210(GEN_P(int in_ecx, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x533210u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int in_ecx = (int)gen_a0;)
-  return in_ecx + 0x3000;
-}
-
 /* ref: FUN_00533220 */
 GEN_OWN GEN_FRAME uint F_00533220(GEN_P(uint param_1, unsigned int gen_a0), GEN_P(uint param_2, unsigned int gen_a1))
 {
@@ -6663,7 +6655,7 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_0053a6b0(GEN_P(undefined * this, unsigned 
   return bVar1;
 }
 
-/* ref: FUN_0053a8a0 */
+/* ref: Global::GetBoneMatrixByName */
 GEN_OWN GEN_NOFRAME byte F_0053a8a0(GEN_P(undefined * param_1, unsigned int gen_a0), GEN_P(undefined4 param_2, unsigned int gen_a1), GEN_P(undefined4 * param_3, unsigned int gen_a2))
 {
   GEN_ENTER(0x53a8a0u, gen_a0, gen_a1, gen_a2, 0u);
@@ -12928,5 +12920,25 @@ LAB_00542950: ;
   *((undefined1 *)GEN_TOP(((int)this + 0x14))) = 0;
   *((undefined1 *)GEN_TOP(((int)this + 0x80))) = 0;
   return *((uint *)GEN_TOP(((int)this + 0xc)));
+}
+
+/* ref: FUN_00542a30 */
+GEN_OWN GEN_FRAME float10 GEN_THISCALL F_00542a30(GEN_P(int * param_1, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(float param_2, float gen_a1))
+{
+  GEN_ENTER(0x542a30u, gen_a0, gen_trace_f(gen_a1), 0u, 0u);
+  GEN_PIN(int * param_1 = (int *)(uintptr_t)gen_a0;)
+  GEN_PIN(float param_2 = (float)gen_a1;)
+  float10 fVar1;
+  
+  fVar1 = GEN_X87((float10)(float)((float10)param_2 - ((float10)GEN_TOD(gen_bits2f(param_1[4])))));
+  if ((!(fVar1 < ((float10)GEN_TOD(gen_bits2f(param_1[7]))))) && ((*((byte *)GEN_TOP((*param_1 + 0xe))) >> 1 & 1) == 0)) {
+    *(undefined1 *)(param_1 + 5) = 1;
+    return ((float10)GEN_TOD(gen_bits2f(param_1[8])));
+  }
+  if ((char)param_1[9] != '\0') {
+    return GEN_X87((float10)(float)(((float10)GEN_TOD(gen_bits2f(param_1[6]))) * (float10)*(double *)&REFG(undefined, 0x1088070) +
+                           ((float10)GEN_TOD(gen_bits2f(param_1[6]))) * fVar1));
+  }
+  return GEN_X87((float10)(float)(fVar1 * ((float10)GEN_TOD(gen_bits2f(param_1[6])))));
 }
 

@@ -1,5 +1,23 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_00721b70 */
+GEN_OWN GEN_FRAME uint GEN_THISCALL F_00721b70(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3), GEN_P(undefined4 param_4, unsigned int gen_a4))
+{
+  GEN_ENTER(0x721b70u, gen_a0, gen_a1, gen_a2, gen_a3);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  GEN_PIN(undefined4 param_1 = (undefined4)gen_a1;)
+  GEN_PIN(undefined4 param_2 = (undefined4)gen_a2;)
+  GEN_PIN(undefined4 param_3 = (undefined4)gen_a3;)
+  GEN_PIN(undefined4 param_4 = (undefined4)gen_a4;)
+  F_00cb4700(this GEN_EDX_FWD,param_3,param_4);
+  *((undefined4 *)GEN_TOP(((int)this + 0x14))) = param_3;
+  *(undefined * PTR32 * PTR32 *)this =
+       (*(undefined * PTR32 (*)[2])REFP(0x10b92b0));
+  *((undefined4 *)GEN_TOP(((int)this + 0x18))) = param_1;
+  *((undefined4 *)GEN_TOP(((int)this + 0x1c))) = param_2;
+  return (uint)this;
+}
+
 /* ref: CallbackSheetWaiter_VGatheringLeveDirector_Event_Game_Client_Game::vf1 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00721bb0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(undefined4 param_1, unsigned int gen_a1), GEN_P(undefined4 param_2, unsigned int gen_a2), GEN_P(undefined4 param_3, unsigned int gen_a3))
 {
@@ -4603,13 +4621,5 @@ GEN_OWN GEN_FRAME uint F_00726510(GEN_P(int param_1, unsigned int gen_a0))
   GEN_ENTER(0x726510u, gen_a0, 0u, 0u, 0u);
   GEN_PIN(int param_1 = (int)gen_a0;)
   return param_1 + 0x20;
-}
-
-/* ref: FUN_00726520 */
-GEN_OWN GEN_FRAME uint F_00726520(GEN_P(int param_1, unsigned int gen_a0))
-{
-  GEN_ENTER(0x726520u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(int param_1 = (int)gen_a0;)
-  return param_1 + 0x21;
 }
 

@@ -1,5 +1,19 @@
 #include "translated.h"
 #pragma warning(disable: 4024 4047 4133 4244 4305 4311 4312 4700 4715 4716 4717 4022 4028 4090 4146 4554 4033)
+/* ref: FUN_0079ac50 */
+GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_0079ac50(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
+{
+  GEN_ENTER(0x79ac50u, gen_a0, 0u, 0u, 0u);
+  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
+  F_005903f0(this GEN_EDX_FWD);
+  *((byte *)GEN_TOP(((int)this + 0xfb))) = *((byte *)GEN_TOP(((int)this + 0xfb))) | 8;
+  *((byte *)GEN_TOP(((int)this + 0xf8))) = *((byte *)GEN_TOP(((int)this + 0xf8))) | 0x20;
+  *((byte *)GEN_TOP(((int)this + 0xf9))) = *((byte *)GEN_TOP(((int)this + 0xf9))) | 0x40;
+  *((byte *)GEN_TOP(((int)this + 0xfa))) = *((byte *)GEN_TOP(((int)this + 0xfa))) | 0x40;
+  *(undefined * PTR32 * PTR32 *)this = (*(undefined * PTR32 (*)[71])REFP(0x10c90bc));
+  return (uint)this;
+}
+
 /* ref: Client::UI2::AddonFreeCompanyMenuBase::vf25 */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0079ac90(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
@@ -7069,7 +7083,7 @@ GEN_OWN GEN_FRAME byte GEN_THISCALL F_007a22b0(GEN_P(undefined * this, unsigned 
     } while (iVar5 != 0);
     if (*(int *)(this + 0x180) != 0) {
       F_0059ead0(*(int *)(this + 0x180) GEN_EDX_FWD,6,0,1);
-      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x180) + 0x74))))(*(int * PTR32 *)(this + 0x180) GEN_EDX_ARG,0,0);
+      ((GEN_TCODE *)*((gen_code32 *)GEN_TOP((**(int * PTR32 *)(this + 0x180) + 0x74))))(*(int * PTR32 *)(this + 0x180) GEN_EDX_ARG,0);
     }
     return 1;
   }
@@ -10413,22 +10427,5 @@ GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_007a5740(GEN_P(undefined * this, unsigne
   uVar2 = F_0055dcb0();
   uVar2 = F_0057f810(*((undefined * PTR32 *)GEN_TOP((uVar2 + 0x14))) GEN_EDX_ARG,(uint)bVar1);
   return uVar2;
-}
-
-/* ref: FUN_007a5760 */
-GEN_OWN GEN_NOFRAME uint GEN_THISCALL F_007a5760(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
-{
-  GEN_ENTER(0x7a5760u, gen_a0, 0u, 0u, 0u);
-  GEN_PIN(undefined * this = (undefined *)(uintptr_t)gen_a0;)
-  byte bVar1;
-  uint uVar2;
-  
-  bVar1 = *((byte *)GEN_TOP(((int)this + 0x13c)));
-  uVar2 = F_0055dcb0();
-  uVar2 = F_0057f810(*((undefined * PTR32 *)GEN_TOP((uVar2 + 0x14))) GEN_EDX_ARG,(uint)bVar1);
-  if (uVar2 != 0) {
-    return *((uint *)GEN_TOP((uVar2 + 0x204)));
-  }
-  return 0;
 }
 

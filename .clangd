@@ -1,0 +1,7 @@
+# The generated translation (src/gen, translate32.py's) is rewritten by every pipeline run: clangd's
+# background index left out of it, so no indexer holds its files mapped while translate writes them.
+# A file opened in the editor is still analyzed.
+If:
+  PathMatch: src/gen/.*
+Index:
+  Background: Skip

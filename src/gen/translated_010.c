@@ -3393,7 +3393,7 @@ GEN_OWN GEN_FRAME unsigned int F_00485d90(GEN_P(undefined * param_1, unsigned in
   return;
 }
 
-/* ref: FUN_00485dc0 */
+/* ref: Global::UninitializedCopyRange58 */
 GEN_OWN GEN_FRAME uint F_00485dc0(GEN_P(int param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1), GEN_P(undefined * param_3, unsigned int gen_a2))
 {
   GEN_ENTER(0x485dc0u, gen_a0, gen_a1, gen_a2, 0u);
@@ -3432,7 +3432,7 @@ GEN_OWN GEN_FRAME uint F_00485e00(GEN_P(undefined4 param_1, unsigned int gen_a0)
   return uVar1;
 }
 
-/* ref: FUN_00485e30 */
+/* ref: Global::DestroyRange150 */
 GEN_OWN GEN_FRAME unsigned int F_00485e30(GEN_P(int param_1, unsigned int gen_a0), GEN_P(int param_2, unsigned int gen_a1), GEN_P(undefined4 param_3, unsigned int gen_a2), GEN_P(undefined4 param_4, unsigned int gen_a3))
 {
   GEN_ENTER(0x485e30u, gen_a0, gen_a1, gen_a2, gen_a3);
@@ -3457,7 +3457,7 @@ GEN_OWN GEN_FRAME unsigned int F_00485e30(GEN_P(int param_1, unsigned int gen_a0
   return 0;
 }
 
-/* ref: FUN_00485e80 */
+/* ref: Global::ConstructIdStringPair */
 GEN_OWN GEN_FRAME uint GEN_STDCALL F_00485e80(GEN_P(undefined4 * param_1, unsigned int gen_a0), GEN_P(undefined4 * param_2, unsigned int gen_a1))
 {
   GEN_ENTER(0x485e80u, gen_a0, gen_a1, 0u, 0u);
@@ -4393,7 +4393,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00486d50(GEN_P(undefined * this, unsigned 
   return param_1;
 }
 
-/* ref: FUN_00486dd0 */
+/* ref: Client::System::String::Utf8StringBasicStream::Utf8StringBasicStream */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00486dd0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM, GEN_P(int param_1, unsigned int gen_a1))
 {
   GEN_ENTER(0x486dd0u, gen_a0, gen_a1, 0u, 0u);
@@ -7903,7 +7903,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0048a850(GEN_P(undefined * this, unsigned 
   return (uint)uVar1;
 }
 
-/* ref: FUN_0048a890 */
+/* ref: Global::DestroyTree */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0048a890(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
   GEN_ENTER(0x48a890u, gen_a0, 0u, 0u, 0u);
@@ -7917,7 +7917,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_0048a890(GEN_P(undefined * this, unsigned 
   return (uint)uVar1;
 }
 
-/* ref: FUN_0048a8d0 */
+/* ref: Global::~PadDeviceInfo */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_0048a8d0(GEN_P(undefined * this, unsigned int gen_a0) GEN_EDX_PARAM)
 {
   GEN_ENTER(0x48a8d0u, gen_a0, 0u, 0u, 0u);
@@ -12187,7 +12187,7 @@ GEN_OWN GEN_FRAME uint GEN_THISCALL F_00491cd0(GEN_P(undefined * param_1, unsign
   return (uint)param_1;
 }
 
-/* ref: FUN_00491d00 */
+/* ref: Global::Assign */
 GEN_OWN GEN_FRAME uint GEN_THISCALL F_00491d00(unsigned int gen_a0 GEN_EDX_PARAM, unsigned int gen_a1)
 {
   GEN_ENTER(0x491d00u, gen_a0, gen_a1, 0u, 0u);
